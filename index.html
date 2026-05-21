@@ -324,6 +324,7 @@ nav {
       <button class="tab active" onclick="showTab('today',event)">Journal</button>
       <button class="tab" onclick="showTab('trends',event)">Tendances</button>
       <button class="tab" onclick="showTab('business',event)">Business</button>
+      <button class="tab" onclick="showTab('tasks',event)">Tâches</button>
       <button class="tab" onclick="showTab('records',event)">Records</button>
     </div>
   </div>
@@ -733,6 +734,21 @@ nav {
   </div>
 
 </div><!-- end business -->
+
+<!-- ══════════════ TASKS ══════════════ -->
+<div id="tab-tasks" class="section">
+
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div class="sdiv" style="margin:0;flex:1">Tâches à faire</div>
+    <div style="font-size:12px;color:var(--muted)">Mis à jour via Telegram</div>
+  </div>
+
+  <div id="tasks-urgent" style="margin-bottom:16px"></div>
+  <div id="tasks-haute" style="margin-bottom:16px"></div>
+  <div id="tasks-normale" style="margin-bottom:16px"></div>
+  <div id="tasks-done" style="margin-bottom:16px"></div>
+
+</div><!-- end tasks -->
 
 <!-- ══════════════ RECORDS ══════════════ -->
 <div id="tab-records" class="section">
@@ -1187,6 +1203,52 @@ function renderRecords(days){
   $('r-avg-score').textContent=last7Avg.toFixed(0);
 }
 
+// ── TASKS TAB ──────────────────────────────────────────────────────
+function renderTasks(tasks){
+  const prioCfg = {
+    urgent: { label: 'URGENT', color: '#ef4444', icon: '🔴' },
+    haute:  { label: 'HAUTE PRIORITÉ', color: '#eab308', icon: '🟡' },
+    normale:{ label: 'NORMALE', color: '#3b82f6', icon: '🔵' },
+  };
+
+  const groups = { urgent: [], haute: [], normale: [], done: [] };
+  (tasks || []).forEach(t => {
+    if(t.statut === 'done') groups.done.push(t);
+    else groups[t.priorite] = groups[t.priorite] || [];
+    if(t.statut !== 'done') (groups[t.priorite] || groups.normale).push(t);
+  });
+
+  const renderGroup = (id, taskList, cfg) => {
+    const el = $(id);
+    if(!taskList.length){ el.innerHTML = ''; return; }
+    el.innerHTML = `
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:${cfg.color};margin-bottom:8px">${cfg.icon} ${cfg.label} (${taskList.length})</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        ${taskList.map(t => `
+          <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-left:3px solid ${cfg.color};border-radius:10px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px">
+            <div style="flex:1">
+              <div style="font-size:14px;font-weight:600;margin-bottom:4px;color:${t.statut==='done'?'#475569':'#e2e8f0'};${t.statut==='done'?'text-decoration:line-through':''}">${t.titre}</div>
+              ${t.contexte?`<div style="font-size:12px;color:#64748b">${t.contexte}</div>`:''}
+              <div style="font-size:11px;color:#475569;margin-top:6px">Ajouté le ${t.date_ajout}${t.echeance?' · Échéance : '+t.echeance:''}</div>
+            </div>
+            ${t.statut==='done'?'<div style="color:#22c55e;font-size:18px">✓</div>':''}
+          </div>`).join('')}
+      </div>`;
+  };
+
+  renderGroup('tasks-urgent', groups.urgent, prioCfg.urgent);
+  renderGroup('tasks-haute', groups.haute, prioCfg.haute);
+  renderGroup('tasks-normale', groups.normale||[], prioCfg.normale);
+
+  const doneCfg = { label: 'TERMINÉES', color: '#475569', icon: '✓' };
+  renderGroup('tasks-done', groups.done, doneCfg);
+
+  // If empty
+  if(!tasks || tasks.length === 0){
+    $('tasks-urgent').innerHTML = '<div style="font-size:13px;color:var(--muted)">Aucune tâche. Envoie-moi tes tâches sur Telegram et elles apparaîtront ici.</div>';
+  }
+}
+
 // ── BUSINESS TAB ──────────────────────────────────────────────────────
 function renderBusinessTab(data){
   // CRM
@@ -1373,6 +1435,7 @@ async function init(){
     renderHeatmap(data.days);
     renderRecords(data.days);
     renderBusinessTab(data);
+    renderTasks(data.tasks);
 
   } catch(e){
     console.error(e);

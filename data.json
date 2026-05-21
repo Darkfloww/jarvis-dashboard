@@ -7,6 +7,26 @@
     "patrimoine": 5230,
     "client": "Didier (~1500-1750€/mois)"
   },
+  "tasks": [
+    {
+      "id": 1,
+      "titre": "Demander à Papa de recommander la carte SIM Réunion",
+      "priorite": "urgent",
+      "statut": "todo",
+      "contexte": "Carte SIM perdue à KL. Opérateur de l'île.",
+      "date_ajout": "2026-05-21",
+      "echeance": ""
+    },
+    {
+      "id": 2,
+      "titre": "Poster le carousel Instagram voyage KL / Chine",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "Photos esthétiques style Alex Faust. Demander à Jarvis de faire les slides.",
+      "date_ajout": "2026-05-21",
+      "echeance": ""
+    }
+  ],
   "crm": {
     "prospects": []
   },
