@@ -291,14 +291,14 @@ nav{
       <button class="tab" onclick="showTab('trends',event)">Tendances</button>
       <button class="tab" onclick="showTab('business',event)">Business</button>
       <button class="tab" onclick="showTab('corps',event)">Corps</button>
-      <button class="tab" onclick="showTab('tasks',event)">T\u00e2ches</button>
+      <button class="tab" onclick="showTab('tasks',event)">Tâches</button>
       <button class="tab" onclick="showTab('records',event)">Records</button>
     </div>
   </div>
   <div class="nav-right">
     <div class="pill live"><div class="pulse"></div>Live</div>
-    <div class="pill" id="nav-location">\u2014</div>
-    <div class="pill" id="nav-date">\u2014</div>
+    <div class="pill" id="nav-location">—</div>
+    <div class="pill" id="nav-date">—</div>
   </div>
 </nav>
 
@@ -308,15 +308,15 @@ nav{
   <div id="date-nav" style="margin-bottom:20px;position:relative">
     <div style="display:flex;align-items:center;gap:10px">
       <button id="date-picker-btn" onclick="toggleCalendar()" style="display:flex;align-items:center;gap:8px;padding:9px 16px;background:var(--glass);backdrop-filter:blur(20px);border:1px solid var(--border-card);border-radius:12px;color:var(--text);font-size:13px;cursor:pointer;transition:border-color .2s">
-        <span>\ud83d\udcc5</span><span id="selected-date-label">Aujourd'hui</span><span id="cal-arrow" style="color:var(--muted);font-size:11px;transition:transform .2s">\u25bc</span>
+        <span>📅</span><span id="selected-date-label">Aujourd'hui</span><span id="cal-arrow" style="color:var(--muted);font-size:11px;transition:transform .2s">▼</span>
       </button>
       <div id="selected-score-badge" style="font-size:13px;font-weight:700;padding:6px 14px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--text2)">&mdash;/100</div>
     </div>
     <div id="calendar-popup" style="display:none;position:absolute;top:50px;left:0;z-index:100;background:rgba(8,6,20,0.92);backdrop-filter:blur(52px);-webkit-backdrop-filter:blur(52px);border:1px solid var(--border-hi);border-radius:18px;padding:18px;min-width:290px;box-shadow:0 32px 80px rgba(0,0,0,0.85)">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
-        <button onclick="calNav(-1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:6px 12px;cursor:pointer">\u2039</button>
+        <button onclick="calNav(-1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:6px 12px;cursor:pointer">‹</button>
         <div id="cal-month-label" style="font-size:14px;font-weight:700;text-align:center"></div>
-        <button onclick="calNav(1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:6px 12px;cursor:pointer">\u203a</button>
+        <button onclick="calNav(1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:6px 12px;cursor:pointer">›</button>
       </div>
       <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px">
         <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">L</div>
