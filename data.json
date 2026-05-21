@@ -186,11 +186,12 @@
       {
         "month": "2026-05",
         "revenus_total": 5230,
-        "commissions_didier": 0,
+        "revenus_perso_net": 1600,
+        "commissions_didier": 1000,
         "commissions_closeGuard": 0,
         "commissions_kenzo": 0,
         "depenses": 4620,
-        "patrimoine_fin": 0,
+        "patrimoine_fin": 5678,
         "nb_transactions": 370
       }
     ]
