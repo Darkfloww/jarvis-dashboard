@@ -37,7 +37,19 @@
     }
   ],
   "crm": {
-    "prospects": []
+    "prospects": [
+      {
+        "id": 1,
+        "name": "Dayyan",
+        "platform": "Instagram",
+        "handle": "@dayyaandm",
+        "contacted": "2026-05-21",
+        "status": "call_scheduled",
+        "next_action": "Appel lundi",
+        "next_action_date": "2026-05-25",
+        "notes": "Call booké lundi 26 mai"
+      }
+    ]
   },
   "finance": {
     "target_mensuel": 20000,
@@ -275,7 +287,7 @@
         "calls_closes": 0,
         "commission_estimee": 0,
         "delivery_done": true,
-        "recap": "Appel CloseGuard pricing, appel Didier delivery, call Diane booké lundi",
+        "recap": "Appel CloseGuard pricing, appel Didier delivery, call Dayyan (@dayyaandm) booké lundi",
         "score": 14
       },
       "physique": {
