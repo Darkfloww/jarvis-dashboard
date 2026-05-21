@@ -178,6 +178,7 @@ def parse_daily_log_entry(date_str):
         "energie": extract_int("Énergie") or extract_int("Energie"),
         "focus": extract_int("Focus"),
         "screen_time_reseaux_min": extract_int("Screen time"),
+        "no_pmo": extract_bool("No PMO"),
         "score": extract_int("score_mental", 0)
     }
 

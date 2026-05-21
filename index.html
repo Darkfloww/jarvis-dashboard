@@ -725,6 +725,14 @@
         <div class="label">Screen time réseaux</div>
         <div class="value" id="m-screen">—</div>
       </div>
+      <div class="metric-row">
+        <div class="label">No PMO</div>
+        <div class="value" id="m-nopmo">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Streak rétention</div>
+        <div class="value" id="m-streak" style="font-size:18px; font-weight:800;">— jours</div>
+      </div>
       <div class="progress-bar"><div class="progress-fill" id="m-progress" style="width:0%; --accent: var(--cyan); --accent2: var(--blue);"></div></div>
     </div>
 
@@ -1036,12 +1044,23 @@ function renderDailyMetrics(day) {
   document.getElementById('m-energie').innerHTML = m.energie ? `<span style="color:${m.energie >= 7 ? '#22c55e' : m.energie >= 5 ? '#eab308' : '#ef4444'}">${m.energie} / 10</span>` : '—';
   document.getElementById('m-focus').innerHTML = m.focus ? `<span style="color:${m.focus >= 7 ? '#22c55e' : m.focus >= 5 ? '#eab308' : '#ef4444'}">${m.focus} / 10</span>` : '—';
   document.getElementById('m-screen').innerHTML = m.screen_time_reseaux_min ? `<span style="color:${m.screen_time_reseaux_min > 120 ? '#ef4444' : m.screen_time_reseaux_min > 60 ? '#eab308' : '#22c55e'}">${formatTime(m.screen_time_reseaux_min)}</span>` : '—';
+  document.getElementById('m-nopmo').innerHTML = m.no_pmo !== undefined ? boolTag(m.no_pmo) : '—';
   document.getElementById('m-progress').style.width = (m.score / 10 * 100) + '%';
 
   // Social
   document.getElementById('so-ihv').textContent = so.interaction_hv || '—';
   document.getElementById('so-content').innerHTML = so.contenu_poste !== undefined ? boolTag(so.contenu_poste) : '—';
   document.getElementById('so-progress').style.width = (so.score / 5 * 100) + '%';
+}
+
+function calcStreak(days) {
+  let streak = 0;
+  for (let i = days.length - 1; i >= 0; i--) {
+    if (days[i].mental?.no_pmo === true) streak++;
+    else if (days[i].mental?.no_pmo === false) break;
+    // if null/undefined (no data), don't break streak
+  }
+  return streak;
 }
 
 function renderChecklist(day) {
@@ -1055,6 +1074,7 @@ function renderChecklist(day) {
     { label: '3h+ deep work', done: (day.cognitif?.deep_work_heures || 0) >= 3 },
     { label: 'Couché avant 01h', done: day.physique?.coucher ? day.physique.coucher < '01:00' : false },
     { label: 'Screen time < 1h', done: (day.mental?.screen_time_reseaux_min || 999) < 60 },
+    { label: 'No PMO', done: day.mental?.no_pmo === true },
     { label: '2.5L eau', done: (day.physique?.eau_litres || 0) >= 2.5 },
     { label: 'Contenu posté', done: day.social?.contenu_poste === true }
   ];
@@ -1221,6 +1241,12 @@ async function init() {
     renderChecklist(today);
     renderWeekChart(data.days);
     renderActivityChart(today.activitywatch);
+
+    // Streak
+    const streak = calcStreak(data.days);
+    const streakEl = document.getElementById('m-streak');
+    streakEl.textContent = streak + ' jour' + (streak > 1 ? 's' : '');
+    streakEl.style.color = streak >= 30 ? '#a855f7' : streak >= 14 ? '#22c55e' : streak >= 7 ? '#eab308' : '#e2e8f0';
 
   } catch(e) {
     console.error('Erreur chargement data:', e);
