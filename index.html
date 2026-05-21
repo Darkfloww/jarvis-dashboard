@@ -1039,8 +1039,12 @@ function renderAlerts(day,streak){
   };
   if(day.spirituel?.fajr===false)
     add('','☾','<strong>Fajr manqué.</strong> Tout commence là. Couche-toi à une heure qui te permet de te lever pour Fajr.');
-  if(day.physique?.nutrition_clean===false)
-    
+  const goyLevel=day.physique?.goyslop_level||(day.physique?.nutrition_clean===false?'critique':day.physique?.nutrition_clean===true?'aucun':null);
+  if(goyLevel && goyLevel!=='aucun'){
+    const goyItems=day.physique?.goyslop_items?.join(', ')||'';
+    const isSlip=goyLevel==='slip';
+    add(isSlip?'warn':'','🍔',`<strong>Goyslop ${goyLevel}${goyItems?' : '+goyItems:''}.</strong> ${isSlip?'Mini-slip — reste sur le bon chemin.':'Règle absolue : viande, poisson, oeufs, légumes, riz uniquement.'}`);
+  }
   const st=day.mental?.screen_time_reseaux_min||0;
   if(st>120) add('warn','📱',`<strong>${fmt(st)} de réseaux sociaux.</strong> Critique — c'est du temps direct volé à ton ascension.`);
   else if(st>60) add('warn','📱',`<strong>${fmt(st)} de réseaux.</strong> Au-dessus de l'objectif 1h. À réduire.`);
