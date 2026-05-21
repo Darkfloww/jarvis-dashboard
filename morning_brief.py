@@ -182,6 +182,38 @@ def build_brief(data):
         lines.append("⚡ Streak No PMO : 0 — aujourd'hui ça recommence.")
     lines.append("")
 
+    # TASK REMINDERS
+    tasks = data.get("tasks", [])
+    due_soon = []
+    for t in tasks:
+        if t.get("statut") == "done":
+            continue
+        echeance = t.get("echeance", "")
+        if not echeance:
+            continue
+        try:
+            from datetime import datetime
+            due = date.fromisoformat(echeance)
+            delta = (due - date.today()).days
+            if delta <= 3:
+                due_soon.append((t, delta))
+        except Exception:
+            pass
+
+    if due_soon:
+        lines.append("📋 <b>TÂCHES — ÉCHÉANCES PROCHES</b>")
+        for t, delta in due_soon:
+            if delta < 0:
+                timing = f"⚠ En retard de {abs(delta)} jour(s) !"
+            elif delta == 0:
+                timing = "⚠ À faire AUJOURD'HUI"
+            elif delta == 1:
+                timing = "Demain"
+            else:
+                timing = f"Dans {delta} jours ({t['echeance']})"
+            lines.append(f"  → {t['titre']} — {timing}")
+        lines.append("")
+
     # CLOSER
     lines.append("— JARVIS")
 
