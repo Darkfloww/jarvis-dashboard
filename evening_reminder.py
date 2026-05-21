@@ -38,6 +38,7 @@ Envoie-moi un vocal avec toutes ces réponses dans l'ordre :
 → Énergie de la journée (1-10) ?
 → Focus (1-10) ?
 → No PMO ? (oui/non)
+→ NSDR ? (oui/non — 10min allongé audio YouTube)
 
 📲 <b>SOCIAL</b>
 → Interaction haute valeur (réseau, mentor, partenaire) ?

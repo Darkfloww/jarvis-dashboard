@@ -520,6 +520,7 @@ nav {
       <div class="mrow"><div class="lbl">Focus</div><div class="val" id="mn-focus">—/10</div></div>
       <div class="mrow"><div class="lbl">Screen time réseaux</div><div class="val" id="mn-screen">—</div></div>
       <div class="mrow"><div class="lbl">No PMO</div><div class="val" id="mn-pmo">—</div></div>
+      <div class="mrow"><div class="lbl">NSDR (10min)</div><div class="val" id="mn-nsdr">—</div></div>
       <div class="mrow"><div class="lbl">Streak rétention</div>
         <div class="val" id="mn-streak" style="font-size:16px;font-weight:800;">—j</div>
       </div>
@@ -1212,6 +1213,7 @@ function renderMetrics(day){
   $('mn-focus').innerHTML=m.focus?`<span style="color:${colVal(m.focus,7,5)}">${m.focus}/10</span>`:'—/10';
   $('mn-screen').innerHTML=m.screen_time_reseaux_min?`<span style="color:${m.screen_time_reseaux_min>120?'#ef4444':m.screen_time_reseaux_min>60?'#eab308':'#22c55e'}">${fmt(m.screen_time_reseaux_min)}</span>`:'—';
   $('mn-pmo').innerHTML=m.no_pmo!==undefined?boolTag(m.no_pmo):'—';
+  if($('mn-nsdr')) $('mn-nsdr').innerHTML=m.nsdr!==undefined?boolTag(m.nsdr):'—';
   $('mn-p').style.width=(m.score||0)/10*100+'%';
 
   // Social
@@ -1265,6 +1267,7 @@ function renderChecklist(day){
     {l:'Couché avant 01h',done:day.physique?.coucher?day.physique.coucher<'01:00'||day.physique.coucher>'20:00':false},
     {l:'Screen < 1h',done:(day.mental?.screen_time_reseaux_min||999)<60},
     {l:'No PMO',done:day.mental?.no_pmo===true},
+    {l:'NSDR 10min',done:day.mental?.nsdr===true},
   ];
   const done=checks.filter(c=>c.done).length;
   $('check-score').textContent=`${done}/${checks.length}`;
