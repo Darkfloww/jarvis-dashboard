@@ -358,6 +358,7 @@ nav {
       <button class="tab active" onclick="showTab('today',event)">Journal</button>
       <button class="tab" onclick="showTab('trends',event)">Tendances</button>
       <button class="tab" onclick="showTab('business',event)">Business</button>
+      <button class="tab" onclick="showTab('corps',event)">Corps</button>
       <button class="tab" onclick="showTab('tasks',event)">Tâches</button>
       <button class="tab" onclick="showTab('records',event)">Records</button>
     </div>
@@ -764,19 +765,35 @@ nav {
     <div id="fin-roadmap" style="display:flex;gap:8px;flex-wrap:wrap"></div>
   </div>
 
+
+</div><!-- end business -->
+
+<!-- ══════════════ CORPS ══════════════ -->
+<div id="tab-corps" class="section">
+
   <div class="sdiv">Programme d'entraînement — Haut du corps</div>
-  <div class="card">
+  <div class="card" style="margin-bottom:16px">
     <div class="card-hd">
       <div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div>
       <div class="card-score" id="train-freq">4 séances/sem</div>
     </div>
     <div id="train-programme" style="margin-bottom:14px"></div>
     <div id="train-sessions">
-      <div style="font-size:13px;color:var(--muted)">Aucune session log. Ce soir dis-moi si t'as été à la salle.</div>
+      <div style="font-size:13px;color:var(--muted)">Aucune séance log. Ce soir dis-moi si t'as été à la salle.</div>
     </div>
   </div>
 
-</div><!-- end business -->
+  <div class="sdiv">Objectifs physiques</div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="mrow"><div class="lbl">Objectif</div><div class="val" style="font-size:11px;max-width:200px;text-align:right">Pecs, épaules, bras, dos, abdos+obliques</div></div>
+    <div class="mrow"><div class="lbl">Fréquence cible</div><div class="val">4 séances/semaine</div></div>
+    <div class="mrow"><div class="lbl">No goyslop</div><div class="val" style="font-size:11px;text-align:right">Viande/poisson/oeufs/légumes/riz uniquement</div></div>
+    <div class="mrow"><div class="lbl">Hydratation</div><div class="val">2.5L/jour min</div></div>
+    <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val">Tous les jours</div></div>
+    <div class="mrow"><div class="lbl">No PMO</div><div class="val">Streak actuel : <span id="corps-streak" style="color:var(--cyan);font-weight:800">—j</span></div></div>
+  </div>
+
+</div><!-- end corps -->
 
 <!-- ══════════════ TASKS ══════════════ -->
 <div id="tab-tasks" class="section">
@@ -1273,6 +1290,38 @@ function renderRecords(days){
   $('r-avg-score').textContent=last7Avg.toFixed(0);
 }
 
+// ── CORPS TAB ──────────────────────────────────────────────────────
+function renderCorpsTab(data, allDays){
+  const training = data.training || {};
+  if($('train-freq')) $('train-freq').textContent = training.frequence || '4 séances/sem';
+
+  const detail = training.programme_detail || {};
+  if(Object.keys(detail).length > 0 && $('train-programme')){
+    $('train-programme').innerHTML = Object.entries(detail).map(([type, exos])=>`
+      <div style="margin-bottom:10px">
+        <div style="font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">${type}</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.8">${exos.join(' · ')}</div>
+      </div>`).join('');
+  }
+
+  const sessions = training.sessions || [];
+  if($('train-sessions')){
+    if(sessions.length === 0){
+      $('train-sessions').innerHTML = '<div style="border-top:1px solid var(--border);padding-top:12px;font-size:13px;color:var(--muted)">Aucune séance log. Ce soir dis-moi si t\'as été à la salle.</div>';
+    } else {
+      const last5 = sessions.slice(-5).reverse();
+      $('train-sessions').innerHTML = '<div style="border-top:1px solid var(--border);padding-top:12px">'+last5.map(s => `
+        <div class="mrow">
+          <div class="lbl">${s.date} — <span style="color:var(--red);font-weight:600">${s.type}</span></div>
+          <div class="val" style="font-size:11px">${s.notes||''}</div>
+        </div>`).join('')+'</div>';
+    }
+  }
+
+  const streak = calcStreak(allDays);
+  if($('corps-streak')) $('corps-streak').textContent = streak + 'j';
+}
+
 // ── TASKS TAB ──────────────────────────────────────────────────────
 function renderTasks(tasks){
   const prioCfg = {
@@ -1395,9 +1444,9 @@ function renderBusinessTab(data){
     </div>`;
   }).join('');
 
-  // Training
-  const training = data.training || {};
-  $('train-freq').textContent = training.frequence || '4 séances/sem';
+  // Training moved to Corps tab
+  const _training = data.training || {};
+  if($('train-freq')) $('train-freq').textContent = _training.frequence || '4 séances/sem';
 
   const detail = training.programme_detail || {};
   if(Object.keys(detail).length > 0){
@@ -1510,6 +1559,7 @@ async function init(){
     renderHeatmap(data.days);
     renderRecords(data.days);
     renderBusinessTab(data);
+    renderCorpsTab(data, data.days);
     renderTasks(data.tasks);
     renderFinanceChart(data);
 
