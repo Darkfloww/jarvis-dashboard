@@ -714,14 +714,20 @@ nav {
     </div>
   </div>
 
-  <div class="sdiv">Programme d'entraînement</div>
+  <div class="sdiv">Roadmap financière — 20 000€/mois en novembre 2026</div>
+  <div class="card" style="margin-bottom:16px">
+    <div id="fin-roadmap" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+  </div>
+
+  <div class="sdiv">Programme d'entraînement — Haut du corps</div>
   <div class="card">
     <div class="card-hd">
-      <div class="card-title"><div class="dot" style="background:var(--red)"></div> Training Log</div>
-      <div class="card-score" id="train-prog">—</div>
+      <div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div>
+      <div class="card-score" id="train-freq">4 séances/sem</div>
     </div>
+    <div id="train-programme" style="margin-bottom:14px"></div>
     <div id="train-sessions">
-      <div style="font-size:13px;color:var(--muted)">Aucune session enregistrée. Définis ton programme et je tracke la progression.</div>
+      <div style="font-size:13px;color:var(--muted)">Aucune session log. Ce soir dis-moi si t'as été à la salle.</div>
     </div>
   </div>
 
@@ -762,11 +768,11 @@ nav {
   <div class="card">
     <div class="mrow">
       <div class="lbl">Revenue mensuel cible</div>
-      <div class="val" style="color:var(--yellow)">À définir</div>
+      <div class="val" style="color:var(--yellow)">20 000€/mois (nov. 2026)</div>
     </div>
     <div class="mrow">
       <div class="lbl">Patrimoine target</div>
-      <div class="val" style="color:var(--yellow)">À définir</div>
+      <div class="val" style="color:var(--yellow)">À définir après 20k/mois</div>
     </div>
     <div class="mrow">
       <div class="lbl">Streak No PMO target</div>
@@ -1234,19 +1240,47 @@ function renderBusinessTab(data){
   $('cg-mrr').textContent = (cg.mrr || 0) + '€';
   $('cg-notes').textContent = cg.notes || '—';
 
+  // Finance roadmap
+  const roadmap = data.finance?.roadmap || [];
+  const currentMonthStr = new Date().toISOString().slice(0,7);
+  $('fin-roadmap').innerHTML = roadmap.map(r => {
+    const monthLabel = new Date(r.month+'-15').toLocaleDateString('fr-FR',{month:'short',year:'2-digit'});
+    const actual = data.finance?.months?.find(m=>m.month===r.month)?.revenus_total || 0;
+    const isPast = r.month < currentMonthStr;
+    const isCurrent = r.month === currentMonthStr;
+    const pct = Math.min(actual/r.target*100,100).toFixed(0);
+    const col = isPast ? (actual >= r.target ? '#22c55e' : '#ef4444') : isCurrent ? '#eab308' : '#475569';
+    return `<div style="flex:1;min-width:80px;background:rgba(255,255,255,.03);border-radius:8px;padding:10px;text-align:center;border:1px solid ${col}33">
+      <div style="font-size:10px;color:#64748b;margin-bottom:4px">${monthLabel}</div>
+      <div style="font-size:14px;font-weight:800;color:${col}">${r.target>=1000?r.target/1000+'k':r.target}€</div>
+      ${isCurrent?`<div style="font-size:10px;color:#94a3b8;margin-top:2px">${actual}€ actuels</div>`:''}
+      ${isPast?`<div style="font-size:10px;color:${col};margin-top:2px">${actual>=r.target?'✓ Atteint':'✗ Raté'}</div>`:''}
+    </div>`;
+  }).join('');
+
   // Training
   const training = data.training || {};
-  $('train-prog').textContent = training.programme || 'À définir';
+  $('train-freq').textContent = training.frequence || '4 séances/sem';
+
+  const detail = training.programme_detail || {};
+  if(Object.keys(detail).length > 0){
+    $('train-programme').innerHTML = Object.entries(detail).map(([type, exos])=>`
+      <div style="margin-bottom:10px">
+        <div style="font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">${type}</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.8">${exos.join(' · ')}</div>
+      </div>`).join('');
+  }
+
   const sessions = training.sessions || [];
   if(sessions.length === 0){
-    $('train-sessions').innerHTML = '<div style="font-size:13px;color:var(--muted)">Dis-moi ton programme (PPL / Push-Pull-Legs / Full Body) et je commence à traquer les séances.</div>';
+    $('train-sessions').innerHTML = '<div style="font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px">Aucune séance log. Ce soir dis-moi si t\'as été à la salle et quel type.</div>';
   } else {
     const last5 = sessions.slice(-5).reverse();
-    $('train-sessions').innerHTML = last5.map(s => `
+    $('train-sessions').innerHTML = '<div style="border-top:1px solid var(--border);padding-top:12px">'+last5.map(s => `
       <div class="mrow">
-        <div class="lbl">${s.date} — ${s.type}</div>
+        <div class="lbl">${s.date} — <span style="color:var(--red);font-weight:600">${s.type}</span></div>
         <div class="val" style="font-size:11px">${s.notes||''}</div>
-      </div>`).join('');
+      </div>`).join('')+'</div>';
   }
 }
 
