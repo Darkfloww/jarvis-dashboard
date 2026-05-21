@@ -1118,7 +1118,6 @@ function renderMetrics(day){
   $('ph-sleeph').textContent=p.heures_sommeil?p.heures_sommeil+'h':'—h';
   $('ph-goyslop').innerHTML=p.nutrition_clean!==undefined?boolTag(p.nutrition_clean):'—';
   $('ph-repas').textContent=p.repas||'—';
-  $('ph-eau').textContent=p.eau_litres?p.eau_litres+'L / 2.5L':'— / 2.5L';
   $('ph-p').style.width=(p.score||0)/20*100+'%';
 
   // Spirituel
@@ -1192,7 +1191,6 @@ function renderChecklist(day){
     {l:'Duolingo russe',done:day.cognitif?.duolingo_russe===true},
     {l:'Couché avant 01h',done:day.physique?.coucher?day.physique.coucher<'01:00'||day.physique.coucher>'20:00':false},
     {l:'Screen < 1h',done:(day.mental?.screen_time_reseaux_min||999)<60},
-    {l:'2.5L eau',done:(day.physique?.eau_litres||0)>=2.5},
     {l:'No PMO',done:day.mental?.no_pmo===true},
   ];
   const done=checks.filter(c=>c.done).length;

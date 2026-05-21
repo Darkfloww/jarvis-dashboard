@@ -22,7 +22,6 @@ Envoie-moi un vocal avec toutes ces réponses dans l'ordre :
 → Gym ? (oui/non + type de séance)
 → À quelle heure tu t'es réveillé ce matin ? (ex: "9h30")
 → No goyslop ? (oui/non + ce que t'as mangé)
-→ Eau (litres approximatif) ?
 
 🕌 <b>SPIRITUEL</b>
 → Fajr ? (oui/non)
