@@ -31,6 +31,7 @@ Envoie-moi un vocal avec toutes ces réponses dans l'ordre :
 
 🧠 <b>COGNITIF</b>
 → Heures de deep work ?
+→ Duolingo russe ? (oui/non + combien de minutes)
 → Qu'est-ce que t'as appris ou appliqué aujourd'hui ?
 
 ⚡ <b>MENTAL</b>

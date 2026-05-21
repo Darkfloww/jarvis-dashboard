@@ -169,6 +169,8 @@ def parse_daily_log_entry(date_str):
     # Cognitif
     result["cognitif"] = {
         "deep_work_heures": extract_float("Deep work"),
+        "duolingo_russe": extract_bool("Duolingo russe"),
+        "duolingo_minutes": extract_int("Duolingo russe"),
         "apprentissage": extract("Apprentissage"),
         "score": extract_int("score_cognitif", 0)
     }
