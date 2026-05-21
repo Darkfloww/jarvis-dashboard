@@ -352,9 +352,33 @@ nav{
       <div class="kpi-sub">objectif : 2/j</div>
     </div>
     <div class="kpi" style="--kpi-color:var(--green)">
-      <div class="kpi-label">Commission perso</div>
+      <div class="kpi-label">Revenue ce mois</div>
       <div class="kpi-value" id="k-commission-perso">—€</div>
-      <div class="kpi-sub">ce mois / <span id="k-patrimoine" style="color:var(--orange)">—€</span> patrimoine</div>
+      <div class="kpi-sub" id="k-velocity-sub">/ <span id="k-patrimoine" style="color:var(--orange)">—€</span> patrimoine</div>
+    </div>
+  </div>
+
+  <!-- STREAKS ROW -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow-x:auto;" class="fade-up">
+    <div style="padding:18px 24px;border-right:1px solid var(--border);min-width:100px">
+      <div class="kpi-label">Streak Fajr</div>
+      <div style="font-size:28px;font-weight:700;color:var(--green);font-variant-numeric:tabular-nums;letter-spacing:-0.03em;line-height:1.1;margin:6px 0 4px" id="s-fajr">—</div>
+      <div class="kpi-sub">jours</div>
+    </div>
+    <div style="padding:18px 24px;border-right:1px solid var(--border);min-width:100px">
+      <div class="kpi-label">Streak No PMO</div>
+      <div style="font-size:28px;font-weight:700;color:var(--cyan);font-variant-numeric:tabular-nums;letter-spacing:-0.03em;line-height:1.1;margin:6px 0 4px" id="s-pmo">—</div>
+      <div class="kpi-sub">jours</div>
+    </div>
+    <div style="padding:18px 24px;border-right:1px solid var(--border);min-width:100px">
+      <div class="kpi-label">Streak DMs</div>
+      <div style="font-size:28px;font-weight:700;color:var(--orange);font-variant-numeric:tabular-nums;letter-spacing:-0.03em;line-height:1.1;margin:6px 0 4px" id="s-dms">—</div>
+      <div class="kpi-sub">jours avec 1+ DM</div>
+    </div>
+    <div style="padding:18px 24px;min-width:100px">
+      <div class="kpi-label">Streak Gym</div>
+      <div style="font-size:28px;font-weight:700;color:var(--red);font-variant-numeric:tabular-nums;letter-spacing:-0.03em;line-height:1.1;margin:6px 0 4px" id="s-gym">—</div>
+      <div class="kpi-sub">jours consécutifs</div>
     </div>
   </div>
 
@@ -521,10 +545,15 @@ nav{
     <div class="card" style="--c:var(--purple)"><div class="card-title"><div class="dot"></div> Sommeil (h) — 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-sleep"></canvas></div></div>
   </div>
   <div class="sdiv">Heatmap des scores</div>
-  <div class="card">
+  <div class="card" style="margin-bottom:12px">
     <div style="display:flex;gap:4px;margin-bottom:8px;"><div style="font-size:9px;color:var(--text2)">Dim</div><div style="font-size:9px;color:var(--text2);margin-left:auto">Aujourd'hui →</div></div>
     <div class="heatmap" id="heatmap"></div>
     <div style="display:flex;gap:16px;margin-top:12px;font-size:9px;color:var(--text2)"><span style="color:var(--green)">● 80+</span><span style="color:var(--yellow)">● 60-79</span><span style="color:var(--red)">● &lt;60</span><span>● Vide</span></div>
+  </div>
+
+  <div class="sdiv">Correlation Engine — Facteurs de performance</div>
+  <div class="card">
+    <div id="correlations-content"><div style="font-size:12px;color:var(--text2)">Calcul en cours...</div></div>
   </div>
 </div>
 
@@ -535,6 +564,38 @@ nav{
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-size:12px;color:var(--text2)">Tous tes prospects actifs. Mis à jour via le check-in soir.</div><div class="card-score" id="crm-count">0 prospects</div></div>
     <div id="crm-table"><div style="font-size:12px;color:var(--text2);padding:12px 0">Aucun prospect enregistré.</div></div>
   </div>
+  <!-- REVENUE VELOCITY -->
+  <div class="card" style="--c:var(--yellow);margin-bottom:12px" id="velocity-card">
+    <div class="card-hd">
+      <div class="card-title"><div class="dot"></div> Revenue Velocity</div>
+      <div id="velocity-badge" style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;border:1px solid var(--border);color:var(--text2)">—</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px">
+      <div style="text-align:center">
+        <div style="font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Ce mois</div>
+        <div style="font-size:26px;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums" id="vel-current">—€</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Target</div>
+        <div style="font-size:26px;font-weight:800;color:var(--text2);font-variant-numeric:tabular-nums" id="vel-target">—€</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Jours restants</div>
+        <div style="font-size:26px;font-weight:800;color:var(--yellow);font-variant-numeric:tabular-nums" id="vel-days">—</div>
+      </div>
+    </div>
+    <div style="margin-bottom:10px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+        <div style="font-size:11px;color:var(--text2)" id="vel-pct-lbl">0% du target</div>
+        <div style="font-size:11px;font-weight:700" id="vel-needed">—€/j nécessaire</div>
+      </div>
+      <div style="height:2px;background:var(--border);border-radius:2px;overflow:hidden">
+        <div id="vel-bar" style="height:100%;width:0%;background:var(--green);border-radius:2px;transition:width 1.4s cubic-bezier(0.4,0,0.2,1)"></div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:var(--text2)" id="vel-insight">—</div>
+  </div>
+
   <div class="g2">
     <div class="card" style="--c:var(--green)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Revenus — Mai 2026</div></div>
@@ -1495,6 +1556,139 @@ function renderFeedback(day, allDays){
   }).join('');
 }
 
+// ── STREAKS ──────────────────────────────────────────────────────
+function renderStreaksRow(data) {
+  const s = data.streaks || {};
+  const set = (id, val, col) => {
+    const el = $(id);
+    if (!el) return;
+    el.textContent = val !== undefined ? val : '—';
+    if (col) el.style.color = col;
+  };
+  const streakCol = (v, great, good) => v >= great ? '#34d399' : v >= good ? '#fbbf24' : '#f5f5f5';
+  set('s-fajr', s.fajr ?? '—', streakCol(s.fajr || 0, 7, 3));
+  set('s-pmo', s.nopmo ?? '—', streakCol(s.nopmo || 0, 14, 7));
+  set('s-dms', s.dms ?? '—', streakCol(s.dms || 0, 5, 2));
+  set('s-gym', s.gym ?? '—', streakCol(s.gym || 0, 5, 2));
+}
+
+// ── REVENUE VELOCITY ──────────────────────────────────────────────────────
+function renderRevenueVelocity(data) {
+  const v = data.revenue_velocity;
+  if (!v) return;
+
+  const set = (id, txt) => { const el=$(id); if(el) el.textContent = txt; };
+  const setHTML = (id, html) => { const el=$(id); if(el) el.innerHTML = html; };
+
+  set('vel-current', v.current_commission.toLocaleString('fr-FR') + '€');
+  set('vel-target', v.monthly_target.toLocaleString('fr-FR') + '€');
+  set('vel-days', v.days_remaining + 'j');
+
+  const pct = Math.min(v.pct_target, 100);
+  const bar = $('vel-bar');
+  if (bar) {
+    bar.style.width = pct + '%';
+    bar.style.background = pct >= 100 ? '#34d399' : pct >= 60 ? '#fbbf24' : '#ef4444';
+  }
+
+  set('vel-pct-lbl', pct + '% du target atteint');
+  set('vel-needed', v.daily_velocity_needed.toLocaleString('fr-FR') + '€/j nécessaire');
+
+  const badge = $('velocity-badge');
+  if (badge) {
+    badge.textContent = v.on_track ? 'En avance' : 'En retard';
+    badge.style.color = v.on_track ? '#34d399' : '#f87171';
+    badge.style.borderColor = v.on_track ? 'rgba(52,211,153,.3)' : 'rgba(248,113,113,.3)';
+  }
+
+  const remaining = v.monthly_target - v.current_commission;
+  let insight = '';
+  if (v.current_commission === 0) {
+    insight = 'Aucune commission enregistrée ce mois. Rentre les données dans ton check-in soir.';
+  } else if (v.on_track) {
+    insight = `Run rate : ${v.daily_run_rate}€/j. À ce rythme → ${Math.round(v.daily_run_rate * v.days_in_month).toLocaleString('fr-FR')}€ en fin de mois.`;
+  } else {
+    insight = `Il te manque ${remaining.toLocaleString('fr-FR')}€ en ${v.days_remaining} jours. Nécessite ${v.daily_velocity_needed}€/j.`;
+  }
+  set('vel-insight', insight);
+
+  // Update commission KPI
+  if ($('k-commission-perso')) $('k-commission-perso').textContent = v.current_commission.toLocaleString('fr-FR') + '€';
+  if ($('k-velocity-sub')) $('k-velocity-sub').innerHTML = `<span style="color:${pct>=60?'#34d399':'#f87171'};font-weight:700">${pct}%</span> du target ${v.current_month}`;
+}
+
+// ── CORRELATION ENGINE ──────────────────────────────────────────────────────
+function pearsonCorr(xs, ys) {
+  const n = xs.length;
+  if (n < 3) return null;
+  const mx = xs.reduce((a, b) => a + b, 0) / n;
+  const my = ys.reduce((a, b) => a + b, 0) / n;
+  let num = 0, dx = 0, dy = 0;
+  for (let i = 0; i < n; i++) {
+    const dxi = xs[i] - mx, dyi = ys[i] - my;
+    num += dxi * dyi;
+    dx += dxi * dxi;
+    dy += dyi * dyi;
+  }
+  const denom = Math.sqrt(dx * dy);
+  return denom === 0 ? 0 : +(num / denom).toFixed(3);
+}
+
+function renderCorrelations(days) {
+  const el = $('correlations-content');
+  if (!el) return;
+
+  const daysWithData = days.filter(d => (d.score || 0) > 0);
+  const MIN_DAYS = 10;
+
+  if (daysWithData.length < MIN_DAYS) {
+    el.innerHTML = `<div style="font-size:12px;color:var(--text2);padding:4px 0">
+      ${daysWithData.length}/${MIN_DAYS} jours de données avec check-in nécessaires.
+      Encore <b style="color:var(--text)">${MIN_DAYS - daysWithData.length} jour(s)</b> avant les insights.
+    </div>`;
+    return;
+  }
+
+  const scores = daysWithData.map(d => d.score || 0);
+  const factors = [
+    { name: 'Sommeil (h)', col: '#a78bfa', vals: daysWithData.map(d => d.physique?.heures_sommeil || 0) },
+    { name: 'Fajr', col: '#34d399', vals: daysWithData.map(d => d.spirituel?.fajr === true ? 1 : 0) },
+    { name: 'Gym', col: '#f87171', vals: daysWithData.map(d => d.physique?.gym === true ? 1 : 0) },
+    { name: 'DMs outreach', col: '#fb923c', vals: daysWithData.map(d => d.business?.dms || 0) },
+    { name: 'Deep work (h)', col: '#60a5fa', vals: daysWithData.map(d => d.cognitif?.deep_work_heures || 0) },
+    { name: 'Screen time (inv)', col: '#f87171', vals: daysWithData.map(d => -(d.mental?.screen_time_reseaux_min || 0)) },
+    { name: 'No PMO', col: '#22d3ee', vals: daysWithData.map(d => d.mental?.no_pmo === true ? 1 : 0) },
+  ];
+
+  const results = factors
+    .map(f => ({ ...f, r: pearsonCorr(scores, f.vals) }))
+    .filter(f => f.r !== null)
+    .sort((a, b) => Math.abs(b.r) - Math.abs(a.r));
+
+  const maxAbs = Math.max(...results.map(f => Math.abs(f.r)), 0.01);
+
+  const corrLabel = r => r > 0.5 ? 'Fort +' : r > 0.2 ? 'Modéré +' : r > -0.2 ? 'Neutre' : r > -0.5 ? 'Modéré −' : 'Fort −';
+  const corrCol = r => r > 0.3 ? '#34d399' : r > 0 ? '#a3e635' : r > -0.3 ? '#fb923c' : '#f87171';
+
+  el.innerHTML = `
+    <div style="margin-bottom:14px;font-size:11px;color:var(--text2)">${daysWithData.length} jours analysés · Corrélation avec le score total /100</div>
+    ${results.map(f => {
+      const pct = (Math.abs(f.r) / maxAbs * 100).toFixed(0);
+      const col = corrCol(f.r);
+      return `<div style="display:flex;align-items:center;gap:14px;padding:9px 0;border-bottom:1px solid var(--border)">
+        <div style="min-width:130px;font-size:12px;color:var(--text2)">${f.name}</div>
+        <div style="flex:1;height:1px;background:var(--border);border-radius:1px;overflow:visible;position:relative">
+          <div style="height:100%;width:${pct}%;background:${col};border-radius:1px;transition:width 1.4s cubic-bezier(0.4,0,0.2,1)"></div>
+        </div>
+        <div style="min-width:46px;text-align:right;font-size:12px;font-weight:700;color:${col};font-variant-numeric:tabular-nums">${f.r > 0 ? '+' : ''}${f.r}</div>
+        <div style="min-width:68px;font-size:10px;color:${col};text-align:right;font-weight:600">${corrLabel(f.r)}</div>
+      </div>`;
+    }).join('')}
+    <div style="margin-top:14px;font-size:11px;color:var(--text2);border-top:1px solid var(--border);padding-top:10px">
+      Corrélation de Pearson · r > 0.5 = fort impact positif · r &lt; -0.5 = fort impact négatif sur ton score
+    </div>`;
+}
+
 // ── INIT ──────────────────────────────────────────────────────
 async function init(){
   try {
@@ -1528,6 +1722,9 @@ async function init(){
     try { renderCorpsTab(data, data.days); } catch(e){ console.error('corps',e); }
     try { renderTasks(data.tasks); } catch(e){ console.error('tasks',e); }
     try { renderFinanceChart(data); } catch(e){ console.error('finance',e); }
+    try { renderStreaksRow(data); } catch(e){ console.error('streaks',e); }
+    try { renderRevenueVelocity(data); } catch(e){ console.error('velocity',e); }
+    try { renderCorrelations(data.days); } catch(e){ console.error('correlations',e); }
 
   } catch(e){
     console.error(e);

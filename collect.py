@@ -11,6 +11,7 @@ import re
 import subprocess
 import urllib.request
 import urllib.error
+import calendar
 from datetime import datetime, date
 from pathlib import Path
 
@@ -204,6 +205,81 @@ def parse_daily_log_entry(date_str):
     return result
 
 
+def calc_streaks(days):
+    """Calculate consecutive streaks for key behaviors."""
+    def streak_bool(key1, key2):
+        s = 0
+        for d in reversed(days):
+            val = d.get(key1, {}).get(key2)
+            if val is True:
+                s += 1
+            elif val is False:
+                break
+        return s
+
+    def streak_num(key1, key2, threshold):
+        s = 0
+        for d in reversed(days):
+            val = d.get(key1, {}).get(key2) or 0
+            score = d.get("score", 0)
+            if val >= threshold:
+                s += 1
+            elif score > 0:
+                break
+        return s
+
+    return {
+        "nopmo": streak_bool("mental", "no_pmo"),
+        "fajr": streak_bool("spirituel", "fajr"),
+        "gym": streak_bool("physique", "gym"),
+        "dms": streak_num("business", "dms", 1),
+    }
+
+
+def calc_revenue_velocity(data):
+    """Calculate revenue velocity vs monthly target."""
+    today = date.today()
+    current_month = today.strftime("%Y-%m")
+
+    roadmap = data.get("finance", {}).get("roadmap", [])
+    monthly_target = next(
+        (r["target"] for r in roadmap if r["month"] == current_month),
+        data.get("finance", {}).get("target_mensuel", 5000)
+    )
+
+    current_month_fin = next(
+        (m for m in data.get("finance", {}).get("months", []) if m.get("month") == current_month), {}
+    )
+    current_commission = current_month_fin.get("revenus_perso_net", 0) or 0
+
+    if current_commission == 0:
+        days_this_month = [d for d in data.get("days", []) if d.get("date", "").startswith(current_month)]
+        current_commission = sum(d.get("business", {}).get("commission_estimee", 0) or 0 for d in days_this_month)
+
+    days_in_month = calendar.monthrange(today.year, today.month)[1]
+    days_elapsed = today.day
+    days_remaining = days_in_month - days_elapsed
+
+    needed = max(0, monthly_target - current_commission)
+    daily_velocity_needed = round(needed / max(days_remaining, 1))
+    daily_run_rate = round(current_commission / days_elapsed) if days_elapsed > 0 else 0
+    daily_target = monthly_target / days_in_month
+    pct = round(current_commission / monthly_target * 100) if monthly_target > 0 else 0
+
+    return {
+        "current_month": current_month,
+        "current_commission": current_commission,
+        "monthly_target": monthly_target,
+        "days_elapsed": days_elapsed,
+        "days_remaining": days_remaining,
+        "days_in_month": days_in_month,
+        "pct_target": pct,
+        "daily_velocity_needed": daily_velocity_needed,
+        "daily_run_rate": daily_run_rate,
+        "on_track": daily_run_rate >= daily_target,
+    }
+
+
 def update_data():
     today = str(date.today())
     data = load_existing_data()
@@ -265,6 +341,12 @@ def update_data():
         print(f"  Added new entry for {today}")
 
     data["lastUpdated"] = today
+
+    # Streaks (calculated on updated days)
+    data["streaks"] = calc_streaks(data.get("days", []))
+
+    # Revenue velocity
+    data["revenue_velocity"] = calc_revenue_velocity(data)
 
     # Write
     with open(DATA_JSON, "w") as f:

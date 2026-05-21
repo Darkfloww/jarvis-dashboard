@@ -35,6 +35,60 @@ def avg(vals):
     return round(sum(v) / len(v), 1) if v else 0
 
 
+def detect_patterns(week_days, all_days):
+    """Detect behavioral patterns from daily data."""
+    if not week_days:
+        return {}
+
+    scored = [d for d in week_days if d.get("score", 0) > 0]
+    if len(scored) < 3:
+        return {}
+
+    scored_sorted = sorted(scored, key=lambda d: d.get("score", 0))
+    bottom = scored_sorted[:max(1, len(scored_sorted)//3)]
+    top = scored_sorted[-(max(1, len(scored_sorted)//3)):]
+
+    def rate(days_list, condition):
+        return sum(1 for d in days_list if condition(d)) / len(days_list) if days_list else 0
+
+    conditions = {
+        "Fajr fait": lambda d: d.get("spirituel", {}).get("fajr") is True,
+        "Gym fait": lambda d: d.get("physique", {}).get("gym") is True,
+        "2+ DMs": lambda d: (d.get("business", {}).get("dms") or 0) >= 2,
+        "Screen < 1h": lambda d: (d.get("mental", {}).get("screen_time_reseaux_min") or 999) < 60,
+        "Deep work 2h+": lambda d: (d.get("cognitif", {}).get("deep_work_heures") or 0) >= 2,
+        "No PMO": lambda d: d.get("mental", {}).get("no_pmo") is True,
+    }
+
+    insights = []
+    for label, cond in conditions.items():
+        top_rate = rate(top, cond)
+        bot_rate = rate(bottom, cond)
+        diff = top_rate - bot_rate
+        if diff >= 0.4:
+            insights.append(f"{label} : {round(top_rate*100)}% des meilleurs jours vs {round(bot_rate*100)}% des pires")
+
+    # Projections
+    total_dms = sum(d.get("business", {}).get("dms", 0) or 0 for d in week_days)
+    dm_per_week = total_dms
+    dm_projection = round(dm_per_week * 4)
+
+    # Weakest pillar this week
+    pilliers = [("Business", "business", 30), ("Physique", "physique", 20),
+                ("Spirituel", "spirituel", 20), ("Cognitif", "cognitif", 15),
+                ("Mental", "mental", 10), ("Social", "social", 5)]
+    pillar_scores = [(n, avg([d.get(k, {}).get("score", 0) for d in week_days]) / mx
+                      ) for n, k, mx in pilliers]
+    weakest = min(pillar_scores, key=lambda x: x[1])
+
+    return {
+        "insights": insights,
+        "dm_projection_monthly": dm_projection,
+        "weakest_pillar": weakest[0],
+        "weakest_pct": round(weakest[1] * 100),
+    }
+
+
 def build_weekly_review(data):
     today = date.today()
     last_7 = [(today - timedelta(days=i)).isoformat() for i in range(6, -1, -1)]
@@ -131,6 +185,26 @@ def build_weekly_review(data):
     lines.append(f"  Pillier le plus faible : {min_pillar[0]} — priorité #1")
     lines.append("  Continue l'outreach daily sans exception")
     lines.append("")
+
+    # PATTERN DETECTION
+    patterns = detect_patterns(week_days, data.get("days", []))
+    if patterns.get("insights"):
+        lines.append("<b>Patterns détectés cette semaine :</b>")
+        for insight in patterns["insights"]:
+            lines.append(f"  ✦ {insight}")
+        lines.append("")
+
+    if patterns.get("dm_projection_monthly"):
+        lines.append(f"📈 <b>Projection :</b> à ce rythme DMs ({total_dms}/sem), "
+                     f"~{patterns['dm_projection_monthly']} DMs/mois → estime les calls potentiels.")
+        lines.append("")
+
+    if patterns.get("weakest_pillar"):
+        lines.append(f"<b>Décision unique pour la semaine :</b>")
+        lines.append(f"  Pillier {patterns['weakest_pillar']} à {patterns['weakest_pct']}% de son max.")
+        lines.append(f"  Une seule chose à faire : définir 1 action concrète pour ce pillier et l'exécuter chaque jour.")
+        lines.append("")
+
     lines.append("— JARVIS")
 
     return "\n".join(lines)

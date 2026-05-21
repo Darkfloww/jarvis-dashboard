@@ -391,5 +391,23 @@
         "score": 0
       }
     }
-  ]
+  ],
+  "streaks": {
+    "nopmo": 0,
+    "fajr": 0,
+    "gym": 1,
+    "dms": 0
+  },
+  "revenue_velocity": {
+    "current_month": "2026-05",
+    "current_commission": 1600,
+    "monthly_target": 1750,
+    "days_elapsed": 22,
+    "days_remaining": 9,
+    "days_in_month": 31,
+    "pct_target": 91,
+    "daily_velocity_needed": 17,
+    "daily_run_rate": 73,
+    "on_track": true
+  }
 }
