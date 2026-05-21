@@ -373,11 +373,33 @@ nav {
 <!-- ══════════════ TODAY ══════════════ -->
 <div id="tab-today" class="section active">
 
-  <!-- DATE NAVIGATOR — Journal only -->
-  <div id="date-nav" style="margin-bottom:20px;background:var(--glass);border:1px solid var(--border);border-radius:var(--r);padding:14px 16px">
-    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:10px">Navigateur de dates — clique sur un jour pour voir son journal</div>
-    <div style="overflow-x:auto;padding-bottom:4px">
-      <div id="date-chips" style="display:flex;gap:6px;min-width:max-content;padding:2px"></div>
+  <!-- DATE PICKER — Journal only -->
+  <div id="date-nav" style="margin-bottom:20px;position:relative">
+    <div style="display:flex;align-items:center;gap:10px">
+      <button id="date-picker-btn" onclick="toggleCalendar()" style="display:flex;align-items:center;gap:8px;padding:9px 16px;background:var(--glass);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:13px;cursor:pointer">
+        <span>📅</span><span id="selected-date-label">Aujourd'hui</span><span id="cal-arrow" style="color:var(--muted);font-size:11px;transition:transform .2s">▼</span>
+      </button>
+      <div id="selected-score-badge" style="font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;background:rgba(255,255,255,.06);color:var(--text2)">—/100</div>
+    </div>
+    <div id="calendar-popup" style="display:none;position:absolute;top:46px;left:0;z-index:100;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--r);padding:16px;min-width:280px;box-shadow:0 20px 50px rgba(0,0,0,.6)">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <button onclick="calNav(-1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:6px;color:var(--text);padding:5px 12px;cursor:pointer">‹</button>
+        <div id="cal-month-label" style="font-size:14px;font-weight:700;text-align:center"></div>
+        <button onclick="calNav(1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:6px;color:var(--text);padding:5px 12px;cursor:pointer">›</button>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:6px">
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">L</div>
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">M</div>
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">M</div>
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">J</div>
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">V</div>
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">S</div>
+        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:700;padding:3px">D</div>
+      </div>
+      <div id="cal-days" style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px"></div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;gap:10px;font-size:10px;color:var(--muted)">
+        <span>🟣 80+</span><span>🟡 60-79</span><span>🔴 &lt;60</span><span>⚫ Vide</span>
+      </div>
     </div>
   </div>
 
@@ -924,45 +946,98 @@ function showTab(name,e){
   if(e) e.target.classList.add('active');
 }
 
-// ── DATE NAV ──────────────────────────────────────────────────────
-let _allDays=[], _selectedIdx=0;
+// ── DATE PICKER CALENDAR ──────────────────────────────────────────────────────
+let _allDays=[], _selectedIdx=0, _calYear=new Date().getFullYear(), _calMonth=new Date().getMonth();
+let _daysMap={};
+let _calOpen=false;
 
-function renderDateNav(days, selectedIdx){
-  const container=$('date-chips');
+function toggleCalendar(){
+  _calOpen=!_calOpen;
+  $('calendar-popup').style.display=_calOpen?'block':'none';
+  $('cal-arrow').style.transform=_calOpen?'rotate(180deg)':'';
+  if(_calOpen) renderCalendar();
+}
+
+function calNav(dir){
+  _calMonth+=dir;
+  if(_calMonth>11){_calMonth=0;_calYear++;}
+  if(_calMonth<0){_calMonth=11;_calYear--;}
+  renderCalendar();
+}
+
+function renderCalendar(){
+  const label=['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'][_calMonth];
+  $('cal-month-label').textContent=`${label} ${_calYear}`;
+
   const today=new Date().toISOString().slice(0,10);
-  container.innerHTML=days.map((d,i)=>{
-    const dt=new Date(d.date+'T12:00:00');
-    const isToday=d.date===today;
-    const s=d.score||0;
-    const scoreCol=s>0?(s>=80?'#a855f7':s>=60?'#eab308':'#ef4444'):'#475569';
-    const dayLbl=isToday?'Aujourd\'hui':dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'});
-    return `<div class="date-chip ${i===selectedIdx?'selected':''} ${isToday?'today-chip':''}"
-      onclick="selectDay(${i})" id="chip-${i}">
-      <span>${dayLbl}</span>
-      <span class="chip-score" style="color:${scoreCol}">${s>0?s+'/100':'—'}</span>
-      <div class="chip-dot" style="background:${scoreCol}"></div>
+  const selected=_allDays[_selectedIdx]?.date;
+
+  // First day of month (0=Sun, need to convert to Mon-based)
+  const firstDay=new Date(_calYear,_calMonth,1).getDay();
+  const startOffset=(firstDay===0)?6:firstDay-1; // Mon=0
+  const daysInMonth=new Date(_calYear,_calMonth+1,0).getDate();
+
+  let html='';
+  // Empty cells before first day
+  for(let i=0;i<startOffset;i++) html+=`<div></div>`;
+
+  for(let d=1;d<=daysInMonth;d++){
+    const dateStr=`${_calYear}-${String(_calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const dayData=_daysMap[dateStr];
+    const isToday=dateStr===today;
+    const isSelected=dateStr===selected;
+    const hasData=!!dayData;
+    const score=dayData?.score||0;
+    const scoreDot=score>=80?'#a855f7':score>=60?'#eab308':score>0?'#ef4444':'#475569';
+
+    let bg=isSelected?'rgba(168,85,247,.3)':isToday?'rgba(255,255,255,.08)':'rgba(255,255,255,.03)';
+    let border=isSelected?'1px solid #a855f7':isToday?'1px solid rgba(255,255,255,.2)':'1px solid transparent';
+    let cursor=hasData?'pointer':'default';
+    let onclick=hasData?`selectDate('${dateStr}')`:'';
+
+    html+=`<div onclick="${onclick}" style="text-align:center;padding:5px 2px;border-radius:6px;background:${bg};border:${border};cursor:${cursor}">
+      <div style="font-size:12px;font-weight:${isToday?700:400};color:${hasData?'#e2e8f0':'#475569'}">${d}</div>
+      ${hasData?`<div style="width:5px;height:5px;border-radius:50%;background:${scoreDot};margin:2px auto 0"></div>`:'<div style="height:7px"></div>'}
     </div>`;
-  }).join('');
-  // Scroll to selected
-  setTimeout(()=>{
-    const el=$('chip-'+selectedIdx);
-    if(el) el.scrollIntoView({inline:'center',behavior:'smooth'});
-  },50);
+  }
+
+  $('cal-days').innerHTML=html;
+}
+
+function selectDate(dateStr){
+  const idx=_allDays.findIndex(d=>d.date===dateStr);
+  if(idx<0) return;
+  selectDay(idx);
+  toggleCalendar();
 }
 
 function selectDay(idx){
   _selectedIdx=idx;
   const day=_allDays[idx];
-  // Update chips
-  document.querySelectorAll('.date-chip').forEach((c,i)=>{
-    c.classList.toggle('selected',i===idx);
-  });
-  // Re-render today section with selected day
   renderDayView(day, _allDays);
 }
 
+// Close calendar when clicking outside
+document.addEventListener('click', e=>{
+  if(_calOpen && !$('date-nav').contains(e.target)){
+    _calOpen=false;
+    $('calendar-popup').style.display='none';
+    $('cal-arrow').style.transform='';
+  }
+});
+
 function renderDayView(day, allDays){
   const dt=new Date(day.date+'T12:00:00');
+  const todayStr=new Date().toISOString().slice(0,10);
+  const isToday=day.date===todayStr;
+
+  // Update date picker button
+  $('selected-date-label').textContent=isToday?'Aujourd\'hui':dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'});
+  const score=day.score||0;
+  const scoreEl=$('selected-score-badge');
+  scoreEl.textContent=(score>0?score:'—')+'/100';
+  scoreEl.style.color=score>0?colScore(score):'#475569';
+
   $('h-date').textContent=day.note||(dt.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}));
   $('h-feedback').textContent=day.feedback||'Check-in ce soir.';
   $('nav-date').textContent=dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'long'});
@@ -1700,7 +1775,13 @@ async function init(){
     const data=await load();
     _allDays=data.days;
     _selectedIdx=data.days.length-1;
+    _daysMap=Object.fromEntries(data.days.map(d=>[d.date,d]));
     const today=data.days[_selectedIdx];
+
+    // Set calendar to today's month
+    const todayDate=new Date(today.date+'T12:00:00');
+    _calYear=todayDate.getFullYear();
+    _calMonth=todayDate.getMonth();
 
     // Static nav
     $('nav-location').textContent=data.profile?.location||'—';
@@ -1709,9 +1790,6 @@ async function init(){
     const curM=new Date().toISOString().slice(0,7);
     const curMonthData=(data.finance?.months||[]).find(m=>m.month===curM);
     if($('k-commission-perso')) $('k-commission-perso').textContent=(curMonthData?.revenus_perso_net||0).toLocaleString('fr-FR')+'€';
-
-    // Date nav
-    renderDateNav(data.days, _selectedIdx);
 
     // Render today view
     renderDayView(today, data.days);
