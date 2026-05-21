@@ -683,14 +683,18 @@ nav {
     </div>
   </div>
 
-  <div class="g2">
+  <div class="g3">
     <div class="card" style="--c:var(--orange)">
       <div class="card-title"><div class="dot"></div> DMs outreach — 7 jours</div>
-      <div class="ch" style="height:160px;margin-top:12px"><canvas id="t-dms"></canvas></div>
+      <div class="ch" style="height:140px;margin-top:12px"><canvas id="t-dms"></canvas></div>
     </div>
     <div class="card" style="--c:var(--blue)">
       <div class="card-title"><div class="dot"></div> Deep Work (h) — 7 jours</div>
-      <div class="ch" style="height:160px;margin-top:12px"><canvas id="t-dw"></canvas></div>
+      <div class="ch" style="height:140px;margin-top:12px"><canvas id="t-dw"></canvas></div>
+    </div>
+    <div class="card" style="--c:var(--purple)">
+      <div class="card-title"><div class="dot"></div> Sommeil (h) — 7 jours</div>
+      <div class="ch" style="height:140px;margin-top:12px"><canvas id="t-sleep"></canvas></div>
     </div>
   </div>
 
@@ -791,6 +795,26 @@ nav {
     <div class="mrow"><div class="lbl">Hydratation</div><div class="val">2.5L/jour min</div></div>
     <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val">Tous les jours</div></div>
     <div class="mrow"><div class="lbl">No PMO</div><div class="val">Streak actuel : <span id="corps-streak" style="color:var(--cyan);font-weight:800">—j</span></div></div>
+  </div>
+
+  <div class="sdiv">Sommeil — 7 jours</div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="g2" style="margin-bottom:12px;gap:8px">
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:12px;text-align:center">
+        <div style="font-size:10px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:1px">Coucher moyen</div>
+        <div style="font-size:22px;font-weight:800;color:var(--purple)" id="sleep-avg-bed">—</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:12px;text-align:center">
+        <div style="font-size:10px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:1px">Réveil moyen</div>
+        <div style="font-size:22px;font-weight:800;color:var(--cyan)" id="sleep-avg-wake">—</div>
+      </div>
+    </div>
+    <div class="ch" style="height:150px"><canvas id="sleepChart"></canvas></div>
+  </div>
+
+  <div class="sdiv">Log sommeil récent</div>
+  <div class="card" id="sleep-log-card">
+    <div style="font-size:13px;color:var(--muted)">Données disponibles après les premiers check-ins.</div>
   </div>
 
 </div><!-- end corps -->
@@ -1232,6 +1256,7 @@ function renderTrends(days){
   // DMs + DW
   miniChart('t-dms',labels,last7.map(d=>d.business?.dms||0),'#f97316');
   miniChart('t-dw',labels,last7.map(d=>d.cognitif?.deep_work_heures||0),'#3b82f6');
+  miniChart('t-sleep',labels,last7.map(d=>d.physique?.heures_sommeil||0),'#a855f7',12);
 }
 
 function renderFinanceChart(data){
@@ -1291,6 +1316,96 @@ function renderRecords(days){
 }
 
 // ── CORPS TAB ──────────────────────────────────────────────────────
+function timeToFloat(t){
+  if(!t) return null;
+  const m = t.match(/(\d{1,2})[h:](\d{0,2})/);
+  if(!m) return null;
+  let h = parseInt(m[1]), min = m[2]?parseInt(m[2]):0;
+  // Normalize: bedtimes after midnight (0-6h) shift to 24+
+  if(h < 6) h += 24;
+  return h + min/60;
+}
+
+function floatToTime(f){
+  if(!f) return '—';
+  const h = Math.floor(f) % 24;
+  const m = Math.round((f % 1) * 60);
+  return `${h}h${String(m).padStart(2,'0')}`;
+}
+
+function renderSleepSection(allDays){
+  const last7 = allDays.slice(-7);
+  const labels = last7.map(d => new Date(d.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'}));
+
+  const bedTimes = last7.map(d => timeToFloat(d.physique?.coucher));
+  const wakeTimes = last7.map(d => {
+    let wt = timeToFloat(d.physique?.lever);
+    return wt;
+  });
+  const hours = last7.map(d => d.physique?.heures_sommeil || null);
+
+  // Averages
+  const validBed = bedTimes.filter(v=>v!==null);
+  const validWake = wakeTimes.filter(v=>v!==null);
+  if($('sleep-avg-bed')) $('sleep-avg-bed').textContent = validBed.length ? floatToTime(validBed.reduce((a,b)=>a+b,0)/validBed.length) : '—';
+  if($('sleep-avg-wake')) $('sleep-avg-wake').textContent = validWake.length ? floatToTime(validWake.reduce((a,b)=>a+b,0)/validWake.length) : '—';
+
+  // Sleep hours chart
+  const c = $('sleepChart');
+  if(c && hours.some(h=>h)){
+    const ctx = c.getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Heures de sommeil',
+          data: hours,
+          backgroundColor: hours.map(h => !h?'transparent':h>=7?'rgba(168,85,247,.4)':h>=6?'rgba(234,179,8,.4)':'rgba(239,68,68,.4)'),
+          borderColor: hours.map(h => !h?'transparent':h>=7?'#a855f7':h>=6?'#eab308':'#ef4444'),
+          borderWidth: 1, borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false },
+          tooltip: { backgroundColor: 'rgba(5,5,8,.95)', borderColor: 'rgba(255,255,255,.1)', borderWidth: 1,
+            callbacks: { label: c => `${c.parsed.y}h de sommeil` } }
+        },
+        scales: {
+          y: { min: 0, max: 12, grid: { color: 'rgba(255,255,255,.04)' },
+            ticks: { color: '#475569', font: { size: 10 }, callback: v => v+'h' },
+            border: { display: false } },
+          x: { grid: { display: false }, ticks: { color: '#475569', font: { size: 10 } }, border: { display: false } }
+        }
+      }
+    });
+  }
+
+  // Sleep log
+  const logEl = $('sleep-log-card');
+  if(logEl){
+    const daysWithSleep = last7.filter(d => d.physique?.coucher || d.physique?.lever).reverse();
+    if(!daysWithSleep.length){
+      logEl.innerHTML = '<div style="font-size:13px;color:var(--muted)">Données disponibles après les premiers check-ins.</div>';
+    } else {
+      logEl.innerHTML = daysWithSleep.map(d=>{
+        const dt = new Date(d.date+'T12:00:00');
+        const lbl = dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'});
+        const h = d.physique?.heures_sommeil;
+        const col = !h?'#475569':h>=7?'#22c55e':h>=6?'#eab308':'#ef4444';
+        return `<div class="mrow">
+          <div class="lbl">${lbl}</div>
+          <div class="val" style="font-size:12px">
+            ${d.physique?.coucher||'?'} → ${d.physique?.lever||'?'}
+            ${h?`<span style="color:${col};margin-left:8px;font-weight:700">${h}h</span>`:''}
+          </div>
+        </div>`;
+      }).join('');
+    }
+  }
+}
+
 function renderCorpsTab(data, allDays){
   const training = data.training || {};
   if($('train-freq')) $('train-freq').textContent = training.frequence || '4 séances/sem';
@@ -1320,6 +1435,8 @@ function renderCorpsTab(data, allDays){
 
   const streak = calcStreak(allDays);
   if($('corps-streak')) $('corps-streak').textContent = streak + 'j';
+
+  renderSleepSection(allDays);
 }
 
 // ── TASKS TAB ──────────────────────────────────────────────────────

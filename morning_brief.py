@@ -214,7 +214,13 @@ def build_brief(data):
             lines.append(f"  → {t['titre']} — {timing}")
         lines.append("")
 
+    # SLEEP QUESTION
+    lines.append("")
+    lines.append("😴 <b>Question sommeil :</b> À quelle heure t'es couché hier soir ?")
+    lines.append("(Réponds directement ici, ex: \"2h30\")")
+
     # CLOSER
+    lines.append("")
     lines.append("— JARVIS")
 
     return "\n".join(lines)

@@ -20,7 +20,7 @@ Envoie-moi un vocal avec toutes ces réponses dans l'ordre :
 
 🏋️ <b>PHYSIQUE</b>
 → Gym ? (oui/non + type de séance)
-→ Couché à quelle heure hier soir, levé à quelle heure ?
+→ À quelle heure tu t'es réveillé ce matin ? (ex: "9h30")
 → No goyslop ? (oui/non + ce que t'as mangé)
 → Eau (litres approximatif) ?
 
