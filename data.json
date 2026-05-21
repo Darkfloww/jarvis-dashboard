@@ -13,12 +13,26 @@
       "score": 0,
       "note": "J1 — Setup JARVIS System",
       "feedback": "Premier check-in ce soir. Système en place.",
+      "jarvis_feedback": {
+        "business_recap": "",
+        "score_volume": 0,
+        "score_leverage": 0,
+        "score_direction": 0,
+        "score_total": 0,
+        "feedback_text": "Check-in pas encore reçu pour aujourd'hui.",
+        "what_good": [],
+        "what_bad": [],
+        "actions_demain": [],
+        "niveau": "—",
+        "timestamp": ""
+      },
       "business": {
         "dms": 0,
         "calls_bookes": 0,
         "calls_closes": 0,
         "commission_estimee": 0,
         "delivery_done": null,
+        "recap": "",
         "score": 0
       },
       "physique": {

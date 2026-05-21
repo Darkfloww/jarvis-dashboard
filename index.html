@@ -524,6 +524,44 @@ nav {
 
   </div>
 
+  <!-- JARVIS FEEDBACK -->
+  <div class="sdiv">Feedback JARVIS — Business</div>
+  <div class="card" style="--c:var(--yellow);margin-bottom:16px" id="feedback-card">
+    <div class="card-hd">
+      <div class="card-title"><div class="dot"></div> Analyse business du jour</div>
+      <div id="fb-niveau" style="font-size:12px;font-weight:700;padding:3px 10px;border-radius:6px;background:rgba(255,255,255,.06)">—</div>
+    </div>
+    <div id="fb-scores" style="display:flex;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+      <div style="flex:1;min-width:80px;background:rgba(255,255,255,.03);border-radius:8px;padding:10px;text-align:center">
+        <div style="font-size:20px;font-weight:800;color:var(--orange)" id="fb-s-vol">—</div>
+        <div style="font-size:10px;color:var(--muted)">Volume /10</div>
+      </div>
+      <div style="flex:1;min-width:80px;background:rgba(255,255,255,.03);border-radius:8px;padding:10px;text-align:center">
+        <div style="font-size:20px;font-weight:800;color:var(--purple)" id="fb-s-lev">—</div>
+        <div style="font-size:10px;color:var(--muted)">Leverage /12</div>
+      </div>
+      <div style="flex:1;min-width:80px;background:rgba(255,255,255,.03);border-radius:8px;padding:10px;text-align:center">
+        <div style="font-size:20px;font-weight:800;color:var(--blue)" id="fb-s-dir">—</div>
+        <div style="font-size:10px;color:var(--muted)">Direction /8</div>
+      </div>
+      <div style="flex:1;min-width:80px;background:rgba(255,255,255,.03);border-radius:8px;padding:10px;text-align:center">
+        <div style="font-size:20px;font-weight:800;color:var(--yellow)" id="fb-s-tot">—</div>
+        <div style="font-size:10px;color:var(--muted)">Total /30</div>
+      </div>
+    </div>
+    <div id="fb-text" style="font-size:13px;line-height:1.7;color:var(--text2);margin-bottom:14px;white-space:pre-wrap;border-left:2px solid var(--yellow);padding-left:12px">—</div>
+    <div id="fb-good" style="margin-bottom:10px"></div>
+    <div id="fb-bad" style="margin-bottom:10px"></div>
+    <div id="fb-actions"></div>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px" id="fb-ts">—</div>
+  </div>
+
+  <!-- FEEDBACK HISTORY -->
+  <div class="sdiv">Historique des feedbacks</div>
+  <div class="card" style="margin-bottom:16px">
+    <div id="feedback-history" style="display:flex;flex-direction:column;gap:8px"></div>
+  </div>
+
   <!-- JARVIS RULES -->
   <div class="sdiv">Règles JARVIS actives</div>
   <div class="card">
@@ -994,6 +1032,68 @@ function renderRecords(days){
   $('r-avg-score').textContent=last7Avg.toFixed(0);
 }
 
+// ── FEEDBACK ──────────────────────────────────────────────────────
+function renderFeedback(day, allDays){
+  const fb=day.jarvis_feedback;
+  if(!fb || !fb.feedback_text || fb.feedback_text==='Check-in pas encore reçu pour aujourd\'hui.'){
+    $('fb-text').textContent='Check-in pas encore reçu — envoie ton recap business ce soir sur Telegram.';
+    $('fb-text').style.color='#475569';
+    return;
+  }
+
+  const col=fb.score_total>=24?'#22c55e':fb.score_total>=16?'#eab308':'#ef4444';
+  const niv=fb.niveau||'—';
+  const nivEl=$('fb-niveau');
+  nivEl.textContent=niv;
+  nivEl.style.color=col;
+  nivEl.style.background=col+'22';
+  nivEl.style.borderColor=col+'44';
+
+  $('fb-s-vol').textContent=fb.score_volume||'—';
+  $('fb-s-lev').textContent=fb.score_leverage||'—';
+  $('fb-s-dir').textContent=fb.score_direction||'—';
+  $('fb-s-tot').textContent=fb.score_total||'—';
+  $('fb-s-tot').style.color=col;
+
+  $('fb-text').textContent=fb.feedback_text||'—';
+  $('fb-text').style.color='#e2e8f0';
+
+  const good=fb.what_good||[];
+  $('fb-good').innerHTML=good.length?`
+    <div style="margin-bottom:6px;font-size:11px;font-weight:700;color:#22c55e;text-transform:uppercase;letter-spacing:1px">✓ Ce qui est bien</div>
+    ${good.map(g=>`<div style="font-size:13px;color:#94a3b8;padding:4px 0;padding-left:16px">• ${g}</div>`).join('')}`:'';
+
+  const bad=fb.what_bad||[];
+  $('fb-bad').innerHTML=bad.length?`
+    <div style="margin-bottom:6px;margin-top:10px;font-size:11px;font-weight:700;color:#ef4444;text-transform:uppercase;letter-spacing:1px">✗ Ce qui cloche</div>
+    ${bad.map(b=>`<div style="font-size:13px;color:#94a3b8;padding:4px 0;padding-left:16px">• ${b}</div>`).join('')}`:'';
+
+  const actions=fb.actions_demain||[];
+  $('fb-actions').innerHTML=actions.length?`
+    <div style="margin-bottom:6px;margin-top:10px;font-size:11px;font-weight:700;color:#3b82f6;text-transform:uppercase;letter-spacing:1px">→ Actions demain</div>
+    ${actions.map((a,i)=>`<div style="font-size:13px;color:#e2e8f0;padding:4px 0;padding-left:16px">${i+1}. ${a}</div>`).join('')}`:'';
+
+  $('fb-ts').textContent=fb.timestamp?'Feedback généré le '+fb.timestamp:'';
+
+  // History
+  const hist=$('feedback-history');
+  const withFeedback=allDays.filter(d=>d.jarvis_feedback?.score_total>0).reverse();
+  if(!withFeedback.length){
+    hist.innerHTML='<div style="font-size:13px;color:#475569">Aucun feedback enregistré — commence ce soir.</div>';
+    return;
+  }
+  hist.innerHTML=withFeedback.slice(0,30).map(d=>{
+    const f=d.jarvis_feedback, dt=new Date(d.date);
+    const c=f.score_total>=24?'#22c55e':f.score_total>=16?'#eab308':'#ef4444';
+    return `<div style="display:flex;align-items:center;gap:14px;padding:10px;background:rgba(255,255,255,.02);border-radius:8px;border:1px solid rgba(255,255,255,.05)">
+      <div style="min-width:80px;font-size:12px;color:#64748b">${dt.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})}</div>
+      <div style="font-size:20px;font-weight:800;min-width:40px;color:${c}">${f.score_total||0}</div>
+      <div style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${c}22;color:${c};min-width:70px">${f.niveau||'—'}</div>
+      <div style="font-size:12px;color:#94a3b8;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${f.feedback_text?.slice(0,120)||'—'}…</div>
+    </div>`;
+  }).join('');
+}
+
 // ── INIT ──────────────────────────────────────────────────────
 async function init(){
   try {
@@ -1021,6 +1121,7 @@ async function init(){
     renderTrends(data.days);
     renderHeatmap(data.days);
     renderRecords(data.days);
+    renderFeedback(today, data.days);
 
   } catch(e){
     console.error(e);
