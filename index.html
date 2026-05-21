@@ -10,30 +10,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:      #030209;
-  --surface: rgba(255,255,255,0.04);
-  --glass:   rgba(255,255,255,0.04);
-  --glass-hi:rgba(255,255,255,0.07);
-  --glass-nav:rgba(6,4,16,0.78);
-  --border:  rgba(255,255,255,0.08);
-  --border-hi:rgba(255,255,255,0.16);
-  --border-card:rgba(255,255,255,0.09);
-  --muted:   rgba(248,250,252,0.15);
+  --bg:      #000000;
+  --surface: rgba(255,255,255,0.03);
+  --border:  rgba(255,255,255,0.07);
+  --border-hi: rgba(255,255,255,0.14);
+  --muted:   rgba(255,255,255,0.18);
 
-  --green:  #2ff4a8;
-  --red:    #ff6b6b;
+  --green:  #34d399;
+  --red:    #f87171;
   --yellow: #fbbf24;
   --blue:   #60a5fa;
   --cyan:   #22d3ee;
   --orange: #fb923c;
   --pink:   #f472b6;
   --purple: #a78bfa;
-  --accent: #f8fafc;
 
-  --text:  #f0f2f8;
-  --text2: rgba(240,242,248,0.42);
-  --r:     16px;
-  --r-sm:  10px;
+  --text:   #f5f5f5;
+  --text2:  rgba(245,245,245,0.38);
+  --text3:  rgba(245,245,245,0.20);
+  --r:      12px;
+  --r-sm:   8px;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;min-width:0;}
@@ -50,240 +46,279 @@ body{
   font-feature-settings:'kern' 1,'ss01' 1;
 }
 
-/* AMBIENT BACKGROUND */
-.ambient-bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;max-width:100vw;-webkit-transform:translateZ(0);transform:translateZ(0);}
-.orb{position:absolute;border-radius:50%;filter:blur(110px);}
-.orb-1{width:700px;height:700px;background:radial-gradient(circle,rgba(120,50,250,0.38) 0%,transparent 70%);top:-260px;left:-180px;animation:drift1 22s ease-in-out infinite alternate;}
-.orb-2{width:580px;height:580px;background:radial-gradient(circle,rgba(29,78,216,0.28) 0%,transparent 70%);top:35%;right:-160px;animation:drift2 28s ease-in-out infinite alternate;}
-.orb-3{width:480px;height:480px;background:radial-gradient(circle,rgba(5,150,105,0.22) 0%,transparent 70%);bottom:-80px;left:38%;animation:drift3 19s ease-in-out infinite alternate;}
-.orb-4{width:380px;height:380px;background:radial-gradient(circle,rgba(159,68,211,0.18) 0%,transparent 70%);top:62%;left:12%;}
-@keyframes drift1{from{transform:translate(0,0)}to{transform:translate(55px,35px)}}
-@keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-38px,55px)}}
-@keyframes drift3{from{transform:translate(0,0)}to{transform:translate(28px,-48px)}}
+.wrap{max-width:1320px;margin:0 auto;padding:28px 40px;}
 
-.wrap{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:24px 32px;}
-
-/* NAV */
+/* NAV — transparent, minimal */
 nav{
-  position:sticky;top:14px;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
-  padding:10px 14px;
-  background:var(--glass-nav);
-  backdrop-filter:blur(52px) saturate(180%);
-  -webkit-backdrop-filter:blur(52px) saturate(180%);
-  border:1px solid var(--border-hi);
-  border-radius:22px;
-  margin-bottom:28px;
-  box-shadow:0 8px 40px rgba(0,0,0,0.65),inset 0 1px 0 rgba(255,255,255,0.09);
-  flex-wrap:wrap;gap:10px;
+  padding:0 0 28px;
+  border-bottom:1px solid var(--border);
+  margin-bottom:48px;
+  flex-wrap:wrap;gap:16px;
+  position:sticky;top:0;z-index:100;
+  background:rgba(0,0,0,0.85);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  padding:16px 0;
 }
-.nav-left{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
-.logo{font-size:12px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:var(--text);white-space:nowrap;}
-.nav-tabs{display:flex;gap:2px;background:rgba(255,255,255,0.05);border-radius:13px;padding:3px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.nav-left{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+.logo{
+  font-size:11px;font-weight:700;letter-spacing:0.25em;
+  text-transform:uppercase;color:var(--text);white-space:nowrap;
+}
+.nav-tabs{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 .nav-tabs::-webkit-scrollbar{display:none;}
-.tab{padding:7px 16px;background:none;border:none;border-radius:10px;color:var(--text2);font-size:12px;font-weight:500;cursor:pointer;transition:all .2s cubic-bezier(0.4,0,0.2,1);white-space:nowrap;flex-shrink:0;}
-.tab:hover:not(.active){color:rgba(240,242,248,0.72);}
-.tab.active{background:rgba(255,255,255,0.14);backdrop-filter:blur(8px);color:var(--text);box-shadow:0 1px 6px rgba(0,0,0,0.35),inset 0 1px 0 rgba(255,255,255,0.14);}
+.tab{
+  padding:6px 14px;background:none;border:none;border-radius:6px;
+  color:var(--text2);font-size:12px;font-weight:400;
+  cursor:pointer;transition:color .15s;white-space:nowrap;flex-shrink:0;
+}
+.tab:hover{color:rgba(245,245,245,0.7);}
+.tab.active{color:var(--text);background:rgba(255,255,255,0.06);}
 .nav-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
-.pill{padding:6px 14px;border-radius:100px;font-size:11px;font-weight:500;background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--text2);}
-.pill.live{border-color:rgba(47,244,168,0.3);color:var(--green);display:flex;align-items:center;gap:6px;background:rgba(47,244,168,0.05);}
-.pulse{width:5px;height:5px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;}
-@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(47,244,168,0.45)}50%{opacity:.4;box-shadow:0 0 0 5px rgba(47,244,168,0)}}
+.pill{
+  padding:5px 12px;border-radius:100px;font-size:11px;font-weight:400;
+  background:transparent;border:1px solid var(--border);color:var(--text2);
+}
+.pill.live{border-color:rgba(52,211,153,0.3);color:var(--green);display:flex;align-items:center;gap:6px;}
+.pulse{width:4px;height:4px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* SECTIONS */
 .section{display:none;}
 .section.active{display:block;}
 
-/* KPI ROW */
-.kpi-row{display:flex;gap:10px;margin-bottom:20px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;}
+/* KPI ROW — numbers float on black, no card boxes */
+.kpi-row{
+  display:flex;gap:0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  margin-bottom:64px;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
 .kpi-row::-webkit-scrollbar{display:none;}
 .kpi{
-  flex:1;flex-shrink:0;min-width:140px;
-  padding:18px 20px;
-  background:var(--glass);
-  backdrop-filter:blur(28px) saturate(140%);
-  -webkit-backdrop-filter:blur(28px) saturate(140%);
-  border:1px solid var(--border-card);
-  border-radius:var(--r);
-  box-shadow:0 4px 20px rgba(0,0,0,0.32),inset 0 1px 0 rgba(255,255,255,0.07);
-  transition:border-color .2s;
+  flex:1;flex-shrink:0;min-width:130px;
+  padding:32px 28px;
+  border-right:1px solid var(--border);
+  background:transparent;
 }
-.kpi:hover{border-color:rgba(255,255,255,0.15);}
-.kpi-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.11em;color:var(--text2);margin-bottom:10px;}
-.kpi-value{font-size:32px;font-weight:800;line-height:1;color:var(--kpi-color,var(--text));font-variant-numeric:tabular-nums;letter-spacing:-0.03em;}
-.kpi-sub{font-size:11px;color:var(--text2);margin-top:6px;}
+.kpi:last-child{border-right:none;}
+.kpi-label{
+  font-size:9px;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.14em;color:var(--text2);margin-bottom:12px;
+}
+.kpi-value{
+  font-size:36px;font-weight:700;line-height:1;
+  color:var(--kpi-color,var(--text));
+  font-variant-numeric:tabular-nums;letter-spacing:-0.03em;
+}
+.kpi-sub{font-size:11px;color:var(--text2);margin-top:8px;}
 
 /* ALERTS */
-.alert-bar{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
-.alert{display:flex;align-items:flex-start;gap:14px;padding:12px 16px;border-radius:var(--r-sm);background:rgba(255,107,107,0.04);border:1px solid rgba(255,107,107,0.16);font-size:12px;line-height:1.6;backdrop-filter:blur(16px);}
-.alert.warn{background:rgba(251,191,36,0.04);border-color:rgba(251,191,36,0.16);}
-.alert.info{background:rgba(96,165,250,0.04);border-color:rgba(96,165,250,0.16);}
-.alert-icon{font-size:14px;margin-top:1px;flex-shrink:0;}
+.alert-bar{display:flex;flex-direction:column;gap:6px;margin-bottom:24px;}
+.alert{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:12px 16px;border-radius:var(--r-sm);
+  background:transparent;border:1px solid rgba(248,113,113,0.12);
+  font-size:12px;line-height:1.6;
+}
+.alert.warn{border-color:rgba(251,191,36,0.12);}
+.alert.info{border-color:rgba(96,165,250,0.12);}
+.alert-icon{font-size:13px;margin-top:1px;flex-shrink:0;}
 
-/* GLASS CARDS */
+/* CARDS — minimal, content on black */
 .card{
-  background:var(--glass);
-  backdrop-filter:blur(36px) saturate(150%);
-  -webkit-backdrop-filter:blur(36px) saturate(150%);
-  border:1px solid var(--border-card);
+  background:transparent;
+  border:1px solid var(--border);
   border-radius:var(--r);
-  padding:22px;
-  box-shadow:0 4px 28px rgba(0,0,0,0.38),inset 0 1px 0 rgba(255,255,255,0.08);
+  padding:24px;
   transition:border-color .2s;
 }
-.card:hover{border-color:rgba(255,255,255,0.14);}
-.card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
-.card-title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--text2);display:flex;align-items:center;gap:8px;}
-.dot{width:5px;height:5px;border-radius:50%;background:var(--c,var(--text2));box-shadow:0 0 7px var(--c,transparent);}
-.card-score{font-size:11px;font-weight:600;padding:4px 12px;border-radius:100px;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--text2);font-variant-numeric:tabular-nums;}
+.card:hover{border-color:var(--border-hi);}
+.card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;}
+.card-title{
+  font-size:9px;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.14em;color:var(--text2);
+  display:flex;align-items:center;gap:8px;
+}
+.dot{width:4px;height:4px;border-radius:50%;background:var(--c,var(--text2));}
+.card-score{
+  font-size:11px;font-weight:500;padding:3px 10px;border-radius:100px;
+  background:transparent;border:1px solid var(--border);color:var(--text2);
+  font-variant-numeric:tabular-nums;
+}
 
 /* METRIC ROW */
-.mrow{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:12px;}
+.mrow{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 0;border-bottom:1px solid var(--border);font-size:12px;
+}
 .mrow:last-child{border-bottom:none;}
 .mrow .lbl{color:var(--text2);}
 .mrow .val{font-weight:600;font-variant-numeric:tabular-nums;}
 
 /* TAGS */
-.tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:100px;font-size:10px;font-weight:600;border:1px solid;}
-.tag.yes{border-color:rgba(47,244,168,0.3);color:var(--green);background:rgba(47,244,168,0.07);}
-.tag.no{border-color:rgba(255,107,107,0.3);color:var(--red);background:rgba(255,107,107,0.07);}
-.tag.warn{border-color:rgba(251,191,36,0.3);color:var(--yellow);background:rgba(251,191,36,0.07);}
+.tag{
+  display:inline-flex;align-items:center;
+  padding:2px 9px;border-radius:100px;
+  font-size:10px;font-weight:600;border:1px solid;
+}
+.tag.yes{border-color:rgba(52,211,153,0.3);color:var(--green);}
+.tag.no{border-color:rgba(248,113,113,0.3);color:var(--red);}
+.tag.warn{border-color:rgba(251,191,36,0.3);color:var(--yellow);}
 
 /* PROGRESS BAR */
-.pbar{height:4px;background:rgba(255,255,255,0.07);border-radius:2px;margin-top:16px;overflow:hidden;}
-.pfill{height:100%;border-radius:2px;transition:width 1.2s cubic-bezier(0.4,0,0.2,1);}
+.pbar{height:1px;background:var(--border);border-radius:1px;margin-top:18px;overflow:hidden;}
+.pfill{height:100%;border-radius:1px;transition:width 1.2s cubic-bezier(0.4,0,0.2,1);}
 
 /* GRIDS */
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
-.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px;}
-.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px;}
-.g6p{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:14px;}
-.g13{display:grid;grid-template-columns:1fr 3fr;gap:14px;margin-bottom:14px;}
-.g31{display:grid;grid-template-columns:3fr 1fr;gap:14px;margin-bottom:14px;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px;}
+.g6p{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:12px;}
+.g13{display:grid;grid-template-columns:1fr 3fr;gap:12px;margin-bottom:12px;}
+.g31{display:grid;grid-template-columns:3fr 1fr;gap:12px;margin-bottom:12px;}
 
 /* PILLAR BARS */
-.pillar-row{display:flex;align-items:center;gap:14px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04);}
+.pillar-row{display:flex;align-items:center;gap:14px;padding:7px 0;border-bottom:1px solid var(--border);}
 .pillar-row:last-child{border-bottom:none;}
-.pillar-name{font-size:11px;min-width:72px;color:var(--text2);font-weight:500;}
-.pillar-bar{flex:1;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden;}
-.pillar-fill{height:100%;border-radius:2px;transition:width 1.2s cubic-bezier(0.4,0,0.2,1);}
+.pillar-name{font-size:11px;min-width:72px;color:var(--text2);}
+.pillar-bar{flex:1;height:1px;background:var(--border);border-radius:1px;overflow:hidden;}
+.pillar-fill{height:100%;border-radius:1px;transition:width 1.2s cubic-bezier(0.4,0,0.2,1);}
 .pillar-pts{font-size:12px;font-weight:600;color:var(--text2);min-width:40px;text-align:right;font-variant-numeric:tabular-nums;}
 
 /* SECTION DIVIDER */
-.sdiv{font-size:10px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:0.14em;display:flex;align-items:center;gap:14px;margin:30px 0 16px;}
+.sdiv{
+  font-size:9px;font-weight:600;color:var(--text2);
+  text-transform:uppercase;letter-spacing:0.14em;
+  display:flex;align-items:center;gap:14px;
+  margin:48px 0 20px;
+}
 .sdiv::after{content:'';flex:1;height:1px;background:var(--border);}
 
 /* CHECKLIST */
-.check-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:12px;}
+.check-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--border);font-size:12px;}
 .check-row:last-child{border-bottom:none;}
-.check-box{width:16px;height:16px;border-radius:5px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;border:1px solid rgba(255,255,255,0.12);}
-.check-box.done{background:rgba(47,244,168,0.1);border-color:rgba(47,244,168,0.4);color:var(--green);}
-.check-box.miss{background:transparent;border-color:rgba(255,255,255,0.08);color:var(--muted);}
+.check-box{
+  width:15px;height:15px;border-radius:4px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:8px;
+  border:1px solid var(--border);
+}
+.check-box.done{border-color:rgba(52,211,153,0.3);color:var(--green);}
+.check-box.miss{border-color:var(--border);color:var(--text3);}
 
 /* CHART */
 .ch{position:relative;}
 
 /* STREAK */
-.streak-big{text-align:center;padding:28px 20px 16px;}
-.streak-num{font-size:80px;font-weight:900;line-height:1;color:var(--text);font-variant-numeric:tabular-nums;letter-spacing:-0.05em;}
-.streak-label{font-size:10px;color:var(--text2);margin-top:8px;text-transform:uppercase;letter-spacing:0.15em;}
+.streak-big{text-align:center;padding:32px 20px 20px;}
+.streak-num{
+  font-size:80px;font-weight:800;line-height:1;color:var(--text);
+  font-variant-numeric:tabular-nums;letter-spacing:-0.05em;
+}
+.streak-label{font-size:9px;color:var(--text2);margin-top:10px;text-transform:uppercase;letter-spacing:0.15em;}
 
 /* SCREEN TIME */
 .st-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
 .st-lbl{font-size:11px;color:var(--text2);min-width:75px;}
-.st-bar{flex:1;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden;}
-.st-fill{height:100%;border-radius:2px;}
+.st-bar{flex:1;height:1px;background:var(--border);border-radius:1px;overflow:hidden;}
+.st-fill{height:100%;}
 .st-val{font-size:11px;font-weight:600;min-width:38px;text-align:right;font-variant-numeric:tabular-nums;}
 
 /* HEATMAP */
-.heatmap{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px;}
-.hm-day{aspect-ratio:1;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;cursor:default;border:1px solid transparent;transition:all .15s;}
-.hm-day:hover{border-color:var(--border-hi);transform:scale(1.08);}
-.hm-empty{background:rgba(255,255,255,0.04);color:var(--text2);}
-.hm-great{background:rgba(47,244,168,0.14);color:var(--green);border-color:rgba(47,244,168,0.08);}
-.hm-good{background:rgba(251,191,36,0.12);color:var(--yellow);}
-.hm-bad{background:rgba(255,107,107,0.1);color:var(--red);}
-.hm-na{background:rgba(255,255,255,0.03);color:var(--muted);}
+.heatmap{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:12px;}
+.hm-day{
+  aspect-ratio:1;border-radius:4px;display:flex;align-items:center;
+  justify-content:center;font-size:9px;font-weight:600;
+  cursor:default;border:1px solid transparent;transition:all .15s;
+}
+.hm-day:hover{border-color:var(--border-hi);}
+.hm-empty{background:rgba(255,255,255,0.03);color:var(--text2);}
+.hm-great{background:rgba(52,211,153,0.1);color:var(--green);}
+.hm-good{background:rgba(251,191,36,0.08);color:var(--yellow);}
+.hm-bad{background:rgba(248,113,113,0.08);color:var(--red);}
+.hm-na{background:rgba(255,255,255,0.02);color:var(--text3);}
 
 /* RECORDS */
 .rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
-.rec-card{background:var(--glass);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid var(--border-card);border-radius:var(--r);padding:22px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.32),inset 0 1px 0 rgba(255,255,255,0.07);}
-.rec-val{font-size:40px;font-weight:900;color:var(--c,var(--text));line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums;letter-spacing:-0.04em;}
-.rec-lbl{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;}
+.rec-card{
+  background:transparent;border:1px solid var(--border);
+  border-radius:var(--r);padding:24px;text-align:center;
+  transition:border-color .2s;
+}
+.rec-card:hover{border-color:var(--border-hi);}
+.rec-val{font-size:40px;font-weight:800;color:var(--c,var(--text));line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums;letter-spacing:-0.04em;}
+.rec-lbl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:0.12em;}
 
-/* DATE CHIPS */
-.date-chip{padding:6px 16px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);background:var(--glass);color:var(--text2);cursor:pointer;transition:all .15s;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:2px;}
+/* DATE PICKER */
+.date-chip{
+  padding:5px 14px;border-radius:100px;font-size:11px;
+  border:1px solid var(--border);background:transparent;
+  color:var(--text2);cursor:pointer;transition:all .15s;
+  white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:2px;
+}
 .date-chip:hover{border-color:var(--border-hi);color:var(--text);}
-.date-chip.selected{border-color:rgba(255,255,255,0.25);background:rgba(255,255,255,0.09);color:var(--text);}
+.date-chip.selected{border-color:rgba(255,255,255,0.25);color:var(--text);}
 .date-chip.today-chip{border-color:var(--border-hi);}
 .date-chip .chip-score{font-size:10px;font-weight:600;}
 .date-chip .chip-dot{width:4px;height:4px;border-radius:50%;margin-top:2px;}
 
 /* FOOTER */
-.footer{text-align:center;color:var(--muted);font-size:11px;padding:56px 0 24px;}
+.footer{text-align:center;color:var(--text3);font-size:11px;padding:80px 0 32px;border-top:1px solid var(--border);margin-top:80px;}
 
 /* RESPONSIVE */
 @media(max-width:1100px){.g6p{grid-template-columns:repeat(3,1fr);}.g4{grid-template-columns:repeat(2,1fr);}}
 
 @media(max-width:768px){
-  .wrap{padding:12px;width:100%;max-width:100%;}
+  .wrap{padding:16px;width:100%;max-width:100%;}
   nav{
     position:static;flex-direction:column;align-items:stretch;
-    gap:6px;padding:8px 10px;border-radius:14px;
-    margin-bottom:14px;width:100%;max-width:100%;overflow:hidden;
+    gap:12px;padding:12px 0;margin-bottom:24px;
   }
-  .nav-left{flex-direction:column;gap:6px;width:100%;overflow:hidden;}
-  .logo{font-size:11px;text-align:center;}
-  .nav-tabs{display:flex;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px;flex-shrink:0;}
+  .nav-left{flex-direction:column;gap:10px;overflow:hidden;}
+  .logo{text-align:center;}
+  .nav-tabs{width:100%;overflow-x:auto;scrollbar-width:none;}
   .nav-tabs::-webkit-scrollbar{display:none;}
   .tab{padding:6px 12px;font-size:11px;flex-shrink:0;}
-  .nav-right{display:flex;flex-wrap:wrap;gap:4px;width:100%;overflow:hidden;}
+  .nav-right{flex-wrap:wrap;gap:4px;overflow:hidden;width:100%;}
   .pill{font-size:10px;padding:4px 8px;max-width:48%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .kpi-row{margin-bottom:32px;}
+  .kpi{min-width:110px;padding:20px 16px;}
+  .kpi-value{font-size:26px;}
+  .kpi-label{font-size:8px;}
   .g2,.g3,.g4,.g6p,.g13,.g31{grid-template-columns:1fr;gap:10px;}
   .rec-grid{grid-template-columns:repeat(2,1fr);}
-  .card{padding:14px;}
-  .sdiv{margin:20px 0 12px;}
-  .streak-num{font-size:54px;}
-  .score-hero{padding:32px 16px 26px!important;}
-  .kpi-row{gap:8px;padding-bottom:4px;}
-  .kpi{min-width:115px;padding:12px 14px;}
-  .kpi-value{font-size:22px;}
-  .kpi-label{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .kpi-sub{font-size:10px;}
+  .card{padding:16px;}
+  .sdiv{margin:32px 0 14px;}
+  .streak-num{font-size:56px;}
+  .score-hero{padding:40px 16px 32px!important;}
 }
 
 @media(max-width:430px){
-  .wrap{padding:10px;}
+  .wrap{padding:12px;}
   .tab{padding:5px 10px;font-size:10px;}
   .pill{max-width:46%;font-size:9px;padding:3px 7px;}
-  .kpi{min-width:100px;padding:10px 12px;}
-  .kpi-value{font-size:19px;}
+  .kpi{min-width:100px;padding:16px 12px;}
+  .kpi-value{font-size:22px;}
   .kpi-label{font-size:8px;}
   .kpi-sub{font-size:9px;}
-  .card{padding:12px;}
-  .card-title{font-size:9px;}
+  .card{padding:13px;}
+  .card-title{font-size:8px;}
   .rec-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
-  .rec-val{font-size:26px;}
-  .rec-lbl{font-size:9px;}
+  .rec-val{font-size:28px;}
+  .rec-lbl{font-size:8px;}
   #fb-scores{gap:6px;}
-  #fb-scores>div{min-width:60px;padding:8px;}
-  .ch{height:150px!important;}
-  .streak-num{font-size:46px;}
-  .pillar-name{min-width:56px;font-size:10px;}
-  .pillar-pts{min-width:32px;font-size:10px;}
+  #fb-scores>div{min-width:56px;padding:8px;}
+  .ch{height:140px!important;}
+  .streak-num{font-size:48px;}
   .mrow{font-size:11px;}
-  .sdiv{font-size:9px;}
+  .sdiv{margin:24px 0 12px;font-size:8px;}
+  .pillar-name{min-width:56px;font-size:10px;}
 }
 </style>
 </head>
 <body>
-
-<div class="ambient-bg" aria-hidden="true">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-  <div class="orb orb-4"></div>
-</div>
 
 <div class="wrap">
 
@@ -310,140 +345,140 @@ nav{
 <!-- TODAY -->
 <div id="tab-today" class="section active">
 
-  <div id="date-nav" style="margin-bottom:20px;position:relative">
+  <div id="date-nav" style="margin-bottom:24px;position:relative">
     <div style="display:flex;align-items:center;gap:10px">
-      <button id="date-picker-btn" onclick="toggleCalendar()" style="display:flex;align-items:center;gap:8px;padding:9px 16px;background:var(--glass);backdrop-filter:blur(20px);border:1px solid var(--border-card);border-radius:12px;color:var(--text);font-size:13px;cursor:pointer;transition:border-color .2s">
-        <span>📅</span><span id="selected-date-label">Aujourd'hui</span><span id="cal-arrow" style="color:var(--muted);font-size:11px;transition:transform .2s">▼</span>
+      <button id="date-picker-btn" onclick="toggleCalendar()" style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:transparent;border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:12px;cursor:pointer;transition:border-color .2s" onmouseover="this.style.borderColor='var(--border-hi)'" onmouseout="this.style.borderColor='var(--border)'">
+        <span>📅</span><span id="selected-date-label">Aujourd'hui</span><span id="cal-arrow" style="color:var(--text2);font-size:10px;transition:transform .2s">▼</span>
       </button>
-      <div id="selected-score-badge" style="font-size:13px;font-weight:700;padding:6px 14px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--text2)">&mdash;/100</div>
+      <div id="selected-score-badge" style="font-size:12px;font-weight:600;padding:5px 12px;border-radius:8px;border:1px solid var(--border);color:var(--text2)">—/100</div>
     </div>
-    <div id="calendar-popup" style="display:none;position:absolute;top:50px;left:0;z-index:100;background:rgba(8,6,20,0.92);backdrop-filter:blur(52px);-webkit-backdrop-filter:blur(52px);border:1px solid var(--border-hi);border-radius:18px;padding:18px;min-width:290px;box-shadow:0 32px 80px rgba(0,0,0,0.85)">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
-        <button onclick="calNav(-1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:6px 12px;cursor:pointer">‹</button>
-        <div id="cal-month-label" style="font-size:14px;font-weight:700;text-align:center"></div>
-        <button onclick="calNav(1);event.stopPropagation()" style="background:var(--glass);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:6px 12px;cursor:pointer">›</button>
+    <div id="calendar-popup" style="display:none;position:absolute;top:44px;left:0;z-index:100;background:#0a0a0a;border:1px solid var(--border-hi);border-radius:12px;padding:16px;min-width:280px;box-shadow:0 24px 64px rgba(0,0,0,0.9)">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <button onclick="calNav(-1);event.stopPropagation()" style="background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--text);padding:5px 11px;cursor:pointer">‹</button>
+        <div id="cal-month-label" style="font-size:13px;font-weight:600;text-align:center"></div>
+        <button onclick="calNav(1);event.stopPropagation()" style="background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--text);padding:5px 11px;cursor:pointer">›</button>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px">
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">L</div>
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">M</div>
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">M</div>
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">J</div>
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">V</div>
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">S</div>
-        <div style="text-align:center;font-size:10px;color:var(--muted);font-weight:600;padding:3px">D</div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:6px">
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">L</div>
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">M</div>
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">M</div>
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">J</div>
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">V</div>
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">S</div>
+        <div style="text-align:center;font-size:9px;color:var(--text2);font-weight:600;padding:3px">D</div>
       </div>
       <div id="cal-days" style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px"></div>
-      <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border);display:flex;gap:12px;font-size:10px;color:var(--text2)">
-        <span style="color:var(--green)">&#9679; 80+</span><span style="color:var(--yellow)">&#9679; 60-79</span><span style="color:var(--red)">&#9679; &lt;60</span><span>&#9679; Vide</span>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;gap:10px;font-size:9px;color:var(--text2)">
+        <span style="color:var(--green)">● 80+</span><span style="color:var(--yellow)">● 60-79</span><span style="color:var(--red)">● &lt;60</span><span>● Vide</span>
       </div>
     </div>
   </div>
 
   <div class="alert-bar" id="alerts"></div>
 
+  <!-- KPI ROW -->
   <div class="kpi-row">
     <div class="kpi" style="--kpi-color:var(--purple)">
       <div class="kpi-label">Score du jour</div>
-      <div class="kpi-value" id="k-score">&mdash;</div>
-      <div class="kpi-sub">/100 &middot; <span id="k-score-label">&mdash;</span></div>
+      <div class="kpi-value" id="k-score">—</div>
+      <div class="kpi-sub">/100 · <span id="k-score-label">—</span></div>
     </div>
     <div class="kpi" style="--kpi-color:var(--cyan)">
       <div class="kpi-label">Streak No PMO</div>
-      <div class="kpi-value" id="k-streak">&mdash;</div>
-      <div class="kpi-sub">jours cons&eacute;cutifs</div>
+      <div class="kpi-value" id="k-streak">—</div>
+      <div class="kpi-sub">jours consécutifs</div>
     </div>
     <div class="kpi" style="--kpi-color:var(--green)">
       <div class="kpi-label">Deep Work</div>
-      <div class="kpi-value" id="k-dw">&mdash;h</div>
+      <div class="kpi-value" id="k-dw">—h</div>
       <div class="kpi-sub">objectif : 3h+</div>
     </div>
     <div class="kpi" style="--kpi-color:var(--yellow)">
       <div class="kpi-label">DMs outreach</div>
-      <div class="kpi-value" id="k-dms">&mdash;</div>
+      <div class="kpi-value" id="k-dms">—</div>
       <div class="kpi-sub">objectif : 2/j</div>
     </div>
     <div class="kpi" style="--kpi-color:var(--green)">
       <div class="kpi-label">Commission perso</div>
-      <div class="kpi-value" id="k-commission-perso">&mdash;&euro;</div>
-      <div class="kpi-sub">ce mois / <span id="k-patrimoine" style="color:var(--orange)">&mdash;&euro;</span> patrimoine</div>
+      <div class="kpi-value" id="k-commission-perso">—€</div>
+      <div class="kpi-sub">ce mois / <span id="k-patrimoine" style="color:var(--orange)">—€</span> patrimoine</div>
     </div>
   </div>
 
   <!-- SCORE HERO -->
-  <div class="card score-hero" style="margin-bottom:22px;padding:52px 32px 44px;text-align:center;position:relative;overflow:hidden;">
-    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(120,50,250,0.08) 0%,transparent 65%);pointer-events:none;"></div>
+  <div class="score-hero" style="padding:80px 0 72px;text-align:center;position:relative;border-bottom:1px solid var(--border);margin-bottom:64px;">
     <canvas id="scoreDonut" width="80" height="80" style="position:absolute;opacity:0;pointer-events:none;top:0;left:0;width:80px;height:80px;"></canvas>
-    <div id="h-date" style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--text2);margin-bottom:20px;">Chargement...</div>
-    <div id="h-score" style="font-size:clamp(80px,12vw,140px);font-weight:900;line-height:1;letter-spacing:-0.05em;font-variant-numeric:tabular-nums;color:var(--text);transition:color .5s ease;">&mdash;</div>
-    <div style="font-size:13px;color:var(--text2);letter-spacing:0.04em;margin-top:8px;">/ 100</div>
-    <p id="h-feedback" style="font-size:13px;color:var(--text2);line-height:1.7;margin-top:16px;max-width:480px;margin-left:auto;margin-right:auto;">Premier check-in ce soir.</p>
-    <div id="pillar-bars" style="max-width:520px;margin:28px auto 0;text-align:left;"></div>
+    <div id="h-date" style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.16em;color:var(--text2);margin-bottom:24px;">Chargement...</div>
+    <div id="h-score" style="font-size:clamp(96px,14vw,160px);font-weight:300;line-height:1;letter-spacing:-0.05em;font-variant-numeric:tabular-nums;color:var(--text);transition:color .5s ease;">—</div>
+    <div style="font-size:12px;color:var(--text2);letter-spacing:0.08em;margin-top:10px;">/ 100</div>
+    <p id="h-feedback" style="font-size:13px;color:var(--text2);line-height:1.8;margin-top:20px;max-width:440px;margin-left:auto;margin-right:auto;font-weight:300;">Premier check-in ce soir.</p>
+    <div id="pillar-bars" style="max-width:480px;margin:36px auto 0;text-align:left;"></div>
   </div>
 
-  <div class="sdiv">M&eacute;triques d&eacute;taill&eacute;es</div>
+  <div class="sdiv">Métriques détaillées</div>
   <div class="g3">
     <div class="card" style="--c:var(--yellow)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Business</div><div class="card-score" id="bs-score">0/30</div></div>
-      <div class="mrow"><div class="lbl">DMs outreach</div><div class="val" id="bs-dms">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Calls book&eacute;s</div><div class="val" id="bs-cb">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Calls clos&eacute;s</div><div class="val" id="bs-cc">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Commission estim&eacute;e</div><div class="val" id="bs-com">&mdash;&euro;</div></div>
-      <div class="mrow"><div class="lbl">Delivery Didier</div><div class="val" id="bs-del">&mdash;</div></div>
-      <div class="pbar"><div class="pfill" id="bs-p" style="background:var(--yellow);box-shadow:0 0 8px rgba(251,191,36,0.5)"></div></div>
+      <div class="mrow"><div class="lbl">DMs outreach</div><div class="val" id="bs-dms">—</div></div>
+      <div class="mrow"><div class="lbl">Calls bookés</div><div class="val" id="bs-cb">—</div></div>
+      <div class="mrow"><div class="lbl">Calls closés</div><div class="val" id="bs-cc">—</div></div>
+      <div class="mrow"><div class="lbl">Commission estimée</div><div class="val" id="bs-com">—€</div></div>
+      <div class="mrow"><div class="lbl">Delivery Didier</div><div class="val" id="bs-del">—</div></div>
+      <div class="pbar"><div class="pfill" id="bs-p" style="background:var(--yellow)"></div></div>
     </div>
     <div class="card" style="--c:var(--red)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Physique</div><div class="card-score" id="ph-score">0/20</div></div>
-      <div class="mrow"><div class="lbl">Gym</div><div class="val" id="ph-gym">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Sommeil</div><div class="val" id="ph-sleep">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Heures</div><div class="val" id="ph-sleeph">&mdash;h</div></div>
-      <div class="mrow"><div class="lbl">Nutrition</div><div class="val" id="ph-goyslop">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Goyslop d&eacute;tect&eacute;</div><div class="val" id="ph-goyslop-items" style="font-size:11px;max-width:140px;text-align:right;color:var(--text2)">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Repas</div><div class="val" id="ph-repas" style="font-size:11px;max-width:140px;text-align:right;word-break:break-word;">&mdash;</div></div>
-      <div class="pbar"><div class="pfill" id="ph-p" style="background:var(--red);box-shadow:0 0 8px rgba(255,107,107,0.5)"></div></div>
+      <div class="mrow"><div class="lbl">Gym</div><div class="val" id="ph-gym">—</div></div>
+      <div class="mrow"><div class="lbl">Sommeil</div><div class="val" id="ph-sleep">—</div></div>
+      <div class="mrow"><div class="lbl">Heures</div><div class="val" id="ph-sleeph">—h</div></div>
+      <div class="mrow"><div class="lbl">Nutrition</div><div class="val" id="ph-goyslop">—</div></div>
+      <div class="mrow"><div class="lbl">Goyslop détecté</div><div class="val" id="ph-goyslop-items" style="font-size:11px;max-width:140px;text-align:right;color:var(--text2)">—</div></div>
+      <div class="mrow"><div class="lbl">Repas</div><div class="val" id="ph-repas" style="font-size:11px;max-width:140px;text-align:right;word-break:break-word;">—</div></div>
+      <div class="pbar"><div class="pfill" id="ph-p" style="background:var(--red)"></div></div>
     </div>
     <div class="card" style="--c:var(--green)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Spirituel</div><div class="card-score" id="sp-score">0/20</div></div>
-      <div class="mrow"><div class="lbl">Fajr</div><div class="val" id="sp-fajr">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Pri&egrave;res</div><div class="val" id="sp-prieres">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Coran</div><div class="val" id="sp-coran">&mdash;</div></div>
-      <div class="pbar"><div class="pfill" id="sp-p" style="background:var(--green);box-shadow:0 0 8px rgba(47,244,168,0.5)"></div></div>
+      <div class="mrow"><div class="lbl">Fajr</div><div class="val" id="sp-fajr">—</div></div>
+      <div class="mrow"><div class="lbl">Prières</div><div class="val" id="sp-prieres">—</div></div>
+      <div class="mrow"><div class="lbl">Coran</div><div class="val" id="sp-coran">—</div></div>
+      <div class="pbar"><div class="pfill" id="sp-p" style="background:var(--green)"></div></div>
     </div>
     <div class="card" style="--c:var(--blue)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Cognitif</div><div class="card-score" id="cg-score">0/15</div></div>
-      <div class="mrow"><div class="lbl">Deep work</div><div class="val" id="cg-dw">&mdash;h</div></div>
-      <div class="mrow"><div class="lbl">Sur quoi</div><div class="val" id="cg-dw-topic" style="font-size:11px;max-width:140px;text-align:right;color:var(--text2)">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val" id="cg-duo">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Apprentissage</div><div class="val" id="cg-learn" style="font-size:11px;max-width:140px;text-align:right;">&mdash;</div></div>
-      <div class="pbar"><div class="pfill" id="cg-p" style="background:var(--blue);box-shadow:0 0 8px rgba(96,165,250,0.5)"></div></div>
+      <div class="mrow"><div class="lbl">Deep work</div><div class="val" id="cg-dw">—h</div></div>
+      <div class="mrow"><div class="lbl">Sur quoi</div><div class="val" id="cg-dw-topic" style="font-size:11px;max-width:140px;text-align:right;color:var(--text2)">—</div></div>
+      <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val" id="cg-duo">—</div></div>
+      <div class="mrow"><div class="lbl">Apprentissage</div><div class="val" id="cg-learn" style="font-size:11px;max-width:140px;text-align:right;">—</div></div>
+      <div class="pbar"><div class="pfill" id="cg-p" style="background:var(--blue)"></div></div>
     </div>
     <div class="card" style="--c:var(--cyan)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Mental</div><div class="card-score" id="mn-score">0/10</div></div>
-      <div class="mrow"><div class="lbl">&Eacute;nergie</div><div class="val" id="mn-energie">&mdash;/10</div></div>
-      <div class="mrow"><div class="lbl">Focus</div><div class="val" id="mn-focus">&mdash;/10</div></div>
-      <div class="mrow"><div class="lbl">Screen time r&eacute;seaux</div><div class="val" id="mn-screen">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">No PMO</div><div class="val" id="mn-pmo">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">NSDR (10min)</div><div class="val" id="mn-nsdr">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Streak r&eacute;tention</div><div class="val" id="mn-streak" style="font-size:16px;font-weight:800;">&mdash;j</div></div>
-      <div class="pbar"><div class="pfill" id="mn-p" style="background:var(--cyan);box-shadow:0 0 8px rgba(34,211,238,0.5)"></div></div>
+      <div class="mrow"><div class="lbl">Énergie</div><div class="val" id="mn-energie">—/10</div></div>
+      <div class="mrow"><div class="lbl">Focus</div><div class="val" id="mn-focus">—/10</div></div>
+      <div class="mrow"><div class="lbl">Screen time réseaux</div><div class="val" id="mn-screen">—</div></div>
+      <div class="mrow"><div class="lbl">No PMO</div><div class="val" id="mn-pmo">—</div></div>
+      <div class="mrow"><div class="lbl">NSDR (10min)</div><div class="val" id="mn-nsdr">—</div></div>
+      <div class="mrow"><div class="lbl">Streak rétention</div><div class="val" id="mn-streak" style="font-size:16px;font-weight:800;">—j</div></div>
+      <div class="pbar"><div class="pfill" id="mn-p" style="background:var(--cyan)"></div></div>
     </div>
     <div class="card" style="--c:var(--purple)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Social</div><div class="card-score" id="so-score">0/5</div></div>
-      <div class="mrow"><div class="lbl">Interaction HV</div><div class="val" id="so-ihv" style="font-size:11px;">&mdash;</div></div>
-      <div class="mrow"><div class="lbl">Contenu post&eacute;</div><div class="val" id="so-content">&mdash;</div></div>
-      <div class="pbar"><div class="pfill" id="so-p" style="background:var(--purple);box-shadow:0 0 8px rgba(167,139,250,0.5)"></div></div>
+      <div class="mrow"><div class="lbl">Interaction HV</div><div class="val" id="so-ihv" style="font-size:11px;">—</div></div>
+      <div class="mrow"><div class="lbl">Contenu posté</div><div class="val" id="so-content">—</div></div>
+      <div class="pbar"><div class="pfill" id="so-p" style="background:var(--purple)"></div></div>
     </div>
   </div>
 
-  <div class="sdiv">Revenus vs D&eacute;penses &mdash; 12 mois (Revolut)</div>
-  <div class="card" style="margin-bottom:14px"><div class="ch" style="height:220px"><canvas id="finChart"></canvas></div></div>
+  <div class="sdiv">Revenus vs Dépenses — 12 mois (Revolut)</div>
+  <div class="card" style="margin-bottom:12px"><div class="ch" style="height:220px"><canvas id="finChart"></canvas></div></div>
 
   <div class="g2">
     <div class="card" style="--c:var(--orange)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Screen Time iPhone</div></div>
-      <div id="st-bars"><div style="font-size:12px;color:var(--muted)">En attente du screenshot</div></div>
+      <div id="st-bars"><div style="font-size:12px;color:var(--text2)">En attente du screenshot</div></div>
     </div>
     <div class="card" style="--c:var(--blue)">
-      <div class="card-hd"><div class="card-title"><div class="dot"></div> Activit&eacute; Mac (ActivityWatch)</div><div class="card-score" id="aw-total">&mdash;min</div></div>
+      <div class="card-hd"><div class="card-title"><div class="dot"></div> Activité Mac (ActivityWatch)</div><div class="card-score" id="aw-total">—min</div></div>
       <div class="ch" style="height:160px"><canvas id="awChart"></canvas></div>
     </div>
   </div>
@@ -454,54 +489,54 @@ nav{
       <div id="checklist"></div>
     </div>
     <div class="card" style="--c:var(--green)">
-      <div class="card-hd"><div class="card-title"><div class="dot"></div> Streak R&eacute;tention S&eacute;minale</div></div>
+      <div class="card-hd"><div class="card-title"><div class="dot"></div> Streak Rétention Séminale</div></div>
       <div class="streak-big">
         <div class="streak-num" id="streak-display">0</div>
         <div class="streak-label">jours sans PMO</div>
       </div>
       <div style="display:flex;gap:8px;justify-content:center;margin-top:8px">
-        <div style="text-align:center;flex:1"><div style="font-size:18px;font-weight:800;color:var(--yellow)" id="streak-best">0</div><div style="font-size:10px;color:var(--muted)">Record</div></div>
-        <div style="text-align:center;flex:1"><div style="font-size:18px;font-weight:800;color:var(--blue)" id="streak-start">&mdash;</div><div style="font-size:10px;color:var(--muted)">D&eacute;but</div></div>
+        <div style="text-align:center;flex:1"><div style="font-size:18px;font-weight:800;color:var(--yellow)" id="streak-best">0</div><div style="font-size:9px;color:var(--text2)">Record</div></div>
+        <div style="text-align:center;flex:1"><div style="font-size:18px;font-weight:800;color:var(--blue)" id="streak-start">—</div><div style="font-size:9px;color:var(--text2)">Début</div></div>
       </div>
     </div>
   </div>
 
-  <div class="sdiv">Feedback JARVIS &mdash; Business</div>
-  <div class="card" style="--c:var(--yellow);margin-bottom:14px" id="feedback-card">
+  <div class="sdiv">Feedback JARVIS — Business</div>
+  <div class="card" style="--c:var(--yellow);margin-bottom:12px" id="feedback-card">
     <div class="card-hd">
       <div class="card-title"><div class="dot"></div> Analyse business du jour</div>
-      <div id="fb-niveau" style="font-size:12px;font-weight:700;padding:3px 10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--border)">&mdash;</div>
+      <div id="fb-niveau" style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;border:1px solid var(--border);color:var(--text2)">—</div>
     </div>
-    <div id="fb-scores" style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
-      <div style="flex:1;min-width:80px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--orange)" id="fb-s-vol">&mdash;</div><div style="font-size:10px;color:var(--muted)">Volume /10</div></div>
-      <div style="flex:1;min-width:80px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--purple)" id="fb-s-lev">&mdash;</div><div style="font-size:10px;color:var(--muted)">Leverage /12</div></div>
-      <div style="flex:1;min-width:80px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--blue)" id="fb-s-dir">&mdash;</div><div style="font-size:10px;color:var(--muted)">Direction /8</div></div>
-      <div style="flex:1;min-width:80px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--yellow)" id="fb-s-tot">&mdash;</div><div style="font-size:10px;color:var(--muted)">Total /30</div></div>
+    <div id="fb-scores" style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+      <div style="flex:1;min-width:80px;border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--orange)" id="fb-s-vol">—</div><div style="font-size:9px;color:var(--text2)">Volume /10</div></div>
+      <div style="flex:1;min-width:80px;border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--purple)" id="fb-s-lev">—</div><div style="font-size:9px;color:var(--text2)">Leverage /12</div></div>
+      <div style="flex:1;min-width:80px;border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--blue)" id="fb-s-dir">—</div><div style="font-size:9px;color:var(--text2)">Direction /8</div></div>
+      <div style="flex:1;min-width:80px;border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center"><div style="font-size:20px;font-weight:800;color:var(--yellow)" id="fb-s-tot">—</div><div style="font-size:9px;color:var(--text2)">Total /30</div></div>
     </div>
-    <div id="fb-text" style="font-size:13px;line-height:1.7;color:var(--text2);margin-bottom:14px;white-space:pre-wrap;border-left:2px solid rgba(251,191,36,0.45);padding-left:14px">&mdash;</div>
+    <div id="fb-text" style="font-size:13px;line-height:1.8;color:var(--text2);margin-bottom:14px;white-space:pre-wrap;border-left:2px solid rgba(251,191,36,0.4);padding-left:14px">—</div>
     <div id="fb-good" style="margin-bottom:10px"></div>
     <div id="fb-bad" style="margin-bottom:10px"></div>
     <div id="fb-actions"></div>
-    <div style="font-size:11px;color:var(--muted);margin-top:10px" id="fb-ts">&mdash;</div>
+    <div style="font-size:11px;color:var(--text2);margin-top:10px" id="fb-ts">—</div>
   </div>
 
   <div class="sdiv">Historique des feedbacks</div>
-  <div class="card" style="margin-bottom:14px"><div id="feedback-history" style="display:flex;flex-direction:column;gap:8px"></div></div>
+  <div class="card" style="margin-bottom:12px"><div id="feedback-history" style="display:flex;flex-direction:column;gap:8px"></div></div>
 
-  <div class="sdiv">R&egrave;gles JARVIS actives</div>
+  <div class="sdiv">Règles JARVIS actives</div>
   <div class="card">
     <div class="g2" style="margin:0">
       <div>
-        <div class="check-row"><div class="check-box done">&#8734;</div><div>D&eacute;clin 2j cons&eacute;cutifs &rarr; recadrage imm&eacute;diat</div></div>
-        <div class="check-row"><div class="check-box done">&#9790;</div><div>Fajr rat&eacute; &rarr; mentionn&eacute; en 1er dans le feedback</div></div>
-        <div class="check-row"><div class="check-box done">&#9889;</div><div>Sleep cass&eacute; &rarr; priorit&eacute; #1 jusqu'&agrave; r&eacute;gl&eacute;</div></div>
-        <div class="check-row"><div class="check-box done">&#128241;</div><div>Screen time r&eacute;seaux &gt; 1h &rarr; alerte rouge</div></div>
+        <div class="check-row"><div class="check-box done">∞</div><div>Déclin 2j consécutifs → recadrage immédiat</div></div>
+        <div class="check-row"><div class="check-box done">☾</div><div>Fajr raté → mentionné en 1er dans le feedback</div></div>
+        <div class="check-row"><div class="check-box done">⚡</div><div>Sleep cassé → priorité #1 jusqu'à réglé</div></div>
+        <div class="check-row"><div class="check-box done">📱</div><div>Screen time réseaux > 1h → alerte rouge</div></div>
       </div>
       <div>
-        <div class="check-row"><div class="check-box done">&#127828;</div><div>Goyslop &rarr; 4 niveaux (slip/mod&eacute;r&eacute;/critique) + note nutrition /10</div></div>
-        <div class="check-row"><div class="check-box done">&#128293;</div><div>PMO &rarr; streak remis &agrave; 0 + recadrage imm&eacute;diat</div></div>
-        <div class="check-row"><div class="check-box done">&#128197;</div><div>Review hebdo chaque dimanche</div></div>
-        <div class="check-row"><div class="check-box done">&#127919;</div><div>2 DMs/jour &mdash; qualit&eacute; &gt; quantit&eacute;</div></div>
+        <div class="check-row"><div class="check-box done">🍔</div><div>Goyslop → 4 niveaux (slip/modéré/critique) + note /10</div></div>
+        <div class="check-row"><div class="check-box done">🔥</div><div>PMO → streak remis à 0 + recadrage immédiat</div></div>
+        <div class="check-row"><div class="check-box done">📅</div><div>Review hebdo chaque dimanche</div></div>
+        <div class="check-row"><div class="check-box done">🎯</div><div>2 DMs/jour — qualité > quantité</div></div>
       </div>
     </div>
   </div>
@@ -510,9 +545,9 @@ nav{
 
 <!-- TRENDS -->
 <div id="tab-trends" class="section">
-  <div class="sdiv">Score global &mdash; 30 jours</div>
-  <div class="card" style="margin-bottom:14px"><div class="ch" style="height:240px"><canvas id="scoreChart"></canvas></div></div>
-  <div class="sdiv">Tendances par pillier &mdash; 7 jours</div>
+  <div class="sdiv">Score global — 30 jours</div>
+  <div class="card" style="margin-bottom:12px"><div class="ch" style="height:240px"><canvas id="scoreChart"></canvas></div></div>
+  <div class="sdiv">Tendances par pillier — 7 jours</div>
   <div class="g3">
     <div class="card" style="--c:var(--yellow)"><div class="card-title"><div class="dot"></div> Business /30</div><div class="ch" style="height:120px;margin-top:10px"><canvas id="t-business"></canvas></div></div>
     <div class="card" style="--c:var(--red)"><div class="card-title"><div class="dot"></div> Physique /20</div><div class="ch" style="height:120px;margin-top:10px"><canvas id="t-physique"></canvas></div></div>
@@ -522,123 +557,123 @@ nav{
     <div class="card" style="--c:var(--purple)"><div class="card-title"><div class="dot"></div> Social /5</div><div class="ch" style="height:120px;margin-top:10px"><canvas id="t-social"></canvas></div></div>
   </div>
   <div class="g3">
-    <div class="card" style="--c:var(--orange)"><div class="card-title"><div class="dot"></div> DMs outreach &mdash; 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-dms"></canvas></div></div>
-    <div class="card" style="--c:var(--blue)"><div class="card-title"><div class="dot"></div> Deep Work (h) &mdash; 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-dw"></canvas></div></div>
-    <div class="card" style="--c:var(--purple)"><div class="card-title"><div class="dot"></div> Sommeil (h) &mdash; 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-sleep"></canvas></div></div>
+    <div class="card" style="--c:var(--orange)"><div class="card-title"><div class="dot"></div> DMs outreach — 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-dms"></canvas></div></div>
+    <div class="card" style="--c:var(--blue)"><div class="card-title"><div class="dot"></div> Deep Work (h) — 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-dw"></canvas></div></div>
+    <div class="card" style="--c:var(--purple)"><div class="card-title"><div class="dot"></div> Sommeil (h) — 7 jours</div><div class="ch" style="height:140px;margin-top:12px"><canvas id="t-sleep"></canvas></div></div>
   </div>
   <div class="sdiv">Heatmap des scores</div>
   <div class="card">
-    <div style="display:flex;gap:4px;margin-bottom:8px;"><div style="font-size:11px;color:var(--muted)">Dim</div><div style="font-size:11px;color:var(--muted);margin-left:auto">Aujourd'hui &rarr;</div></div>
+    <div style="display:flex;gap:4px;margin-bottom:8px;"><div style="font-size:9px;color:var(--text2)">Dim</div><div style="font-size:9px;color:var(--text2);margin-left:auto">Aujourd'hui →</div></div>
     <div class="heatmap" id="heatmap"></div>
-    <div style="display:flex;gap:16px;margin-top:14px;align-items:center;font-size:10px;color:var(--text2);letter-spacing:0.05em">
-      <span style="color:var(--green)">&#9679; 80+</span><span style="color:var(--yellow)">&#9679; 60-79</span><span style="color:var(--red)">&#9679; &lt;60</span><span>&#9679; Vide</span>
+    <div style="display:flex;gap:16px;margin-top:12px;font-size:9px;color:var(--text2)">
+      <span style="color:var(--green)">● 80+</span><span style="color:var(--yellow)">● 60-79</span><span style="color:var(--red)">● &lt;60</span><span>● Vide</span>
     </div>
   </div>
 </div>
 
 <!-- BUSINESS -->
 <div id="tab-business" class="section">
-  <div class="sdiv">CRM &mdash; Pipeline prospects</div>
-  <div class="card" style="margin-bottom:14px">
+  <div class="sdiv">CRM — Pipeline prospects</div>
+  <div class="card" style="margin-bottom:12px">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <div style="font-size:13px;color:var(--text2)">Tous tes prospects actifs. Mis &agrave; jour via le check-in soir.</div>
+      <div style="font-size:12px;color:var(--text2)">Tous tes prospects actifs. Mis à jour via le check-in soir.</div>
       <div class="card-score" id="crm-count">0 prospects</div>
     </div>
-    <div id="crm-table"><div style="font-size:13px;color:var(--muted);padding:12px 0">Aucun prospect enregistr&eacute;. Commence &agrave; tracker tes DMs ce soir.</div></div>
+    <div id="crm-table"><div style="font-size:12px;color:var(--text2);padding:12px 0">Aucun prospect enregistré.</div></div>
   </div>
   <div class="g2">
     <div class="card" style="--c:var(--green)">
-      <div class="card-hd"><div class="card-title"><div class="dot"></div> Revenus &mdash; Mai 2026</div></div>
-      <div class="mrow"><div class="lbl">Commission Didier</div><div class="val" id="fin-didier">&mdash;&euro;</div></div>
-      <div class="mrow"><div class="lbl">CloseGuard MRR</div><div class="val" id="fin-cg">&mdash;&euro;</div></div>
-      <div class="mrow"><div class="lbl">Kenzo (5%)</div><div class="val" id="fin-kenzo">&mdash;&euro;</div></div>
-      <div class="mrow" style="border-top:1px solid rgba(255,255,255,0.08);margin-top:4px;padding-top:8px"><div class="lbl" style="font-weight:700;color:var(--green)">Commission perso nette</div><div class="val" id="fin-perso" style="font-size:20px;font-weight:800;color:var(--green)">&mdash;&euro;</div></div>
-      <div class="mrow"><div class="lbl" style="color:var(--muted);font-size:11px">dont revenus bruts Revolut</div><div class="val" id="fin-total" style="font-size:12px;color:var(--muted)">&mdash;&euro;</div></div>
-      <div class="mrow"><div class="lbl">D&eacute;penses r&eacute;elles</div><div class="val" id="fin-dep" style="color:var(--red)">&mdash;&euro;</div></div>
-      <div class="mrow"><div class="lbl">Patrimoine</div><div class="val" id="fin-patri">&mdash;&euro;</div></div>
+      <div class="card-hd"><div class="card-title"><div class="dot"></div> Revenus — Mai 2026</div></div>
+      <div class="mrow"><div class="lbl">Commission Didier</div><div class="val" id="fin-didier">—€</div></div>
+      <div class="mrow"><div class="lbl">CloseGuard MRR</div><div class="val" id="fin-cg">—€</div></div>
+      <div class="mrow"><div class="lbl">Kenzo (5%)</div><div class="val" id="fin-kenzo">—€</div></div>
+      <div class="mrow" style="border-top:1px solid var(--border-hi);margin-top:4px;padding-top:8px"><div class="lbl" style="font-weight:700;color:var(--green)">Commission perso nette</div><div class="val" id="fin-perso" style="font-size:20px;font-weight:800;color:var(--green)">—€</div></div>
+      <div class="mrow"><div class="lbl" style="color:var(--text2);font-size:11px">dont revenus bruts Revolut</div><div class="val" id="fin-total" style="font-size:12px;color:var(--text2)">—€</div></div>
+      <div class="mrow"><div class="lbl">Dépenses réelles</div><div class="val" id="fin-dep" style="color:var(--red)">—€</div></div>
+      <div class="mrow"><div class="lbl">Patrimoine</div><div class="val" id="fin-patri">—€</div></div>
       <div style="margin-top:14px">
-        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">Progression vers target mensuel</div>
+        <div style="font-size:9px;color:var(--text2);margin-bottom:6px">Progression vers target mensuel</div>
         <div class="pbar"><div class="pfill" id="fin-prog" style="background:var(--green);width:0%"></div></div>
-        <div style="font-size:11px;color:var(--muted);margin-top:6px" id="fin-target-lbl">Target : &Agrave; d&eacute;finir</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:6px" id="fin-target-lbl">Target : À définir</div>
       </div>
     </div>
     <div class="card" style="--c:var(--blue)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> CloseGuard SaaS</div></div>
-      <div class="mrow"><div class="lbl">Statut</div><div class="val" id="cg-statut">&mdash;</div></div>
+      <div class="mrow"><div class="lbl">Statut</div><div class="val" id="cg-statut">—</div></div>
       <div class="mrow"><div class="lbl">Clients</div><div class="val" id="cg-clients">0</div></div>
-      <div class="mrow"><div class="lbl">MRR</div><div class="val" id="cg-mrr" style="color:var(--green)">0&euro;</div></div>
+      <div class="mrow"><div class="lbl">MRR</div><div class="val" id="cg-mrr" style="color:var(--green)">0€</div></div>
       <div class="mrow"><div class="lbl">Team</div><div class="val" style="font-size:11px">Shayan + Fares + Assed</div></div>
-      <div class="mrow"><div class="lbl">Notes</div><div class="val" id="cg-notes" style="font-size:11px;max-width:140px;text-align:right">&mdash;</div></div>
+      <div class="mrow"><div class="lbl">Notes</div><div class="val" id="cg-notes" style="font-size:11px;max-width:140px;text-align:right">—</div></div>
     </div>
   </div>
-  <div class="sdiv">Roadmap financi&egrave;re &mdash; 20 000&euro;/mois en novembre 2026</div>
-  <div class="card" style="margin-bottom:14px"><div id="fin-roadmap" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
+  <div class="sdiv">Roadmap financière — 20 000€/mois en novembre 2026</div>
+  <div class="card"><div id="fin-roadmap" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
 </div>
 
 <!-- CORPS -->
 <div id="tab-corps" class="section">
-  <div class="sdiv">Programme d'entra&icirc;nement &mdash; Haut du corps</div>
-  <div class="card" style="margin-bottom:14px">
-    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div><div class="card-score" id="train-freq">4 s&eacute;ances/sem</div></div>
+  <div class="sdiv">Programme d'entraînement — Haut du corps</div>
+  <div class="card" style="margin-bottom:12px">
+    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div><div class="card-score" id="train-freq">4 séances/sem</div></div>
     <div id="train-programme" style="margin-bottom:14px"></div>
-    <div id="train-sessions"><div style="font-size:13px;color:var(--muted)">Aucune s&eacute;ance log. Ce soir dis-moi si t'as &eacute;t&eacute; &agrave; la salle.</div></div>
+    <div id="train-sessions"><div style="font-size:12px;color:var(--text2)">Aucune séance log.</div></div>
   </div>
   <div class="sdiv">Objectifs physiques</div>
-  <div class="card" style="margin-bottom:14px">
-    <div class="mrow"><div class="lbl">Objectif</div><div class="val" style="font-size:11px;max-width:200px;text-align:right">Pecs, &eacute;paules, bras, dos, abdos+obliques</div></div>
-    <div class="mrow"><div class="lbl">Fr&eacute;quence cible</div><div class="val">4 s&eacute;ances/semaine</div></div>
-    <div class="mrow"><div class="lbl">No goyslop</div><div class="val" style="font-size:11px;text-align:right">Viande/poisson/oeufs/l&eacute;gumes/riz uniquement</div></div>
+  <div class="card" style="margin-bottom:12px">
+    <div class="mrow"><div class="lbl">Objectif</div><div class="val" style="font-size:11px;max-width:200px;text-align:right">Pecs, épaules, bras, dos, abdos+obliques</div></div>
+    <div class="mrow"><div class="lbl">Fréquence cible</div><div class="val">4 séances/semaine</div></div>
+    <div class="mrow"><div class="lbl">No goyslop</div><div class="val" style="font-size:11px;text-align:right">Viande/poisson/oeufs/légumes/riz uniquement</div></div>
     <div class="mrow"><div class="lbl">Hydratation</div><div class="val">2.5L/jour min</div></div>
     <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val">Tous les jours</div></div>
-    <div class="mrow"><div class="lbl">No PMO</div><div class="val">Streak actuel : <span id="corps-streak" style="color:var(--cyan);font-weight:800">&mdash;j</span></div></div>
+    <div class="mrow"><div class="lbl">No PMO</div><div class="val">Streak actuel : <span id="corps-streak" style="color:var(--cyan);font-weight:800">—j</span></div></div>
   </div>
-  <div class="sdiv">Sommeil &mdash; 7 jours</div>
-  <div class="card" style="margin-bottom:14px">
+  <div class="sdiv">Sommeil — 7 jours</div>
+  <div class="card" style="margin-bottom:12px">
     <div class="g2" style="margin-bottom:12px;gap:10px">
-      <div style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center"><div style="font-size:10px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Coucher moyen</div><div style="font-size:22px;font-weight:800;color:var(--purple)" id="sleep-avg-bed">&mdash;</div></div>
-      <div style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center"><div style="font-size:10px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">R&eacute;veil moyen</div><div style="font-size:22px;font-weight:800;color:var(--cyan)" id="sleep-avg-wake">&mdash;</div></div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center"><div style="font-size:9px;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Coucher moyen</div><div style="font-size:22px;font-weight:800;color:var(--purple)" id="sleep-avg-bed">—</div></div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center"><div style="font-size:9px;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Réveil moyen</div><div style="font-size:22px;font-weight:800;color:var(--cyan)" id="sleep-avg-wake">—</div></div>
     </div>
     <div class="ch" style="height:150px"><canvas id="sleepChart"></canvas></div>
   </div>
-  <div class="sdiv">Log sommeil r&eacute;cent</div>
-  <div class="card" id="sleep-log-card"><div style="font-size:13px;color:var(--muted)">Donn&eacute;es disponibles apr&egrave;s les premiers check-ins.</div></div>
+  <div class="sdiv">Log sommeil récent</div>
+  <div class="card" id="sleep-log-card"><div style="font-size:12px;color:var(--text2)">Données disponibles après les premiers check-ins.</div></div>
 </div>
 
 <!-- TASKS -->
 <div id="tab-tasks" class="section">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-    <div class="sdiv" style="margin:0;flex:1">T&acirc;ches &agrave; faire</div>
-    <div style="font-size:12px;color:var(--muted)">Mis &agrave; jour via Telegram</div>
+    <div class="sdiv" style="margin:0;flex:1">Tâches à faire</div>
+    <div style="font-size:11px;color:var(--text2)">Mis à jour via Telegram</div>
   </div>
-  <div id="tasks-urgent" style="margin-bottom:14px"></div>
-  <div id="tasks-haute" style="margin-bottom:14px"></div>
-  <div id="tasks-normale" style="margin-bottom:14px"></div>
-  <div id="tasks-done" style="margin-bottom:14px"></div>
+  <div id="tasks-urgent" style="margin-bottom:12px"></div>
+  <div id="tasks-haute" style="margin-bottom:12px"></div>
+  <div id="tasks-normale" style="margin-bottom:12px"></div>
+  <div id="tasks-done" style="margin-bottom:12px"></div>
 </div>
 
 <!-- RECORDS -->
 <div id="tab-records" class="section">
   <div class="sdiv">Personal Bests</div>
-  <div class="rec-grid" style="margin-bottom:14px">
-    <div class="rec-card" style="--c:var(--purple)"><div class="rec-val" id="r-best-score">&mdash;</div><div class="rec-lbl">Meilleur score /100</div></div>
-    <div class="rec-card" style="--c:var(--cyan)"><div class="rec-val" id="r-best-streak">&mdash;</div><div class="rec-lbl">Record No PMO (jours)</div></div>
-    <div class="rec-card" style="--c:var(--green)"><div class="rec-val" id="r-best-fajr">&mdash;%</div><div class="rec-lbl">Taux Fajr</div></div>
-    <div class="rec-card" style="--c:var(--yellow)"><div class="rec-val" id="r-best-dms">&mdash;</div><div class="rec-lbl">Max DMs en 1 jour</div></div>
-    <div class="rec-card" style="--c:var(--blue)"><div class="rec-val" id="r-best-dw">&mdash;h</div><div class="rec-lbl">Max Deep Work 1 jour</div></div>
-    <div class="rec-card" style="--c:var(--orange)"><div class="rec-val" id="r-avg-score">&mdash;</div><div class="rec-lbl">Score moyen 7 jours</div></div>
+  <div class="rec-grid" style="margin-bottom:12px">
+    <div class="rec-card" style="--c:var(--purple)"><div class="rec-val" id="r-best-score">—</div><div class="rec-lbl">Meilleur score /100</div></div>
+    <div class="rec-card" style="--c:var(--cyan)"><div class="rec-val" id="r-best-streak">—</div><div class="rec-lbl">Record No PMO (jours)</div></div>
+    <div class="rec-card" style="--c:var(--green)"><div class="rec-val" id="r-best-fajr">—%</div><div class="rec-lbl">Taux Fajr</div></div>
+    <div class="rec-card" style="--c:var(--yellow)"><div class="rec-val" id="r-best-dms">—</div><div class="rec-lbl">Max DMs en 1 jour</div></div>
+    <div class="rec-card" style="--c:var(--blue)"><div class="rec-val" id="r-best-dw">—h</div><div class="rec-lbl">Max Deep Work 1 jour</div></div>
+    <div class="rec-card" style="--c:var(--orange)"><div class="rec-val" id="r-avg-score">—</div><div class="rec-lbl">Score moyen 7 jours</div></div>
   </div>
   <div class="sdiv">Objectifs long terme</div>
   <div class="card">
-    <div class="mrow"><div class="lbl">Revenue mensuel cible</div><div class="val" style="color:var(--yellow)">20 000&euro;/mois (nov. 2026)</div></div>
-    <div class="mrow"><div class="lbl">Patrimoine target</div><div class="val" style="color:var(--yellow)">&Agrave; d&eacute;finir apr&egrave;s 20k/mois</div></div>
+    <div class="mrow"><div class="lbl">Revenue mensuel cible</div><div class="val" style="color:var(--yellow)">20 000€/mois (nov. 2026)</div></div>
+    <div class="mrow"><div class="lbl">Patrimoine target</div><div class="val" style="color:var(--yellow)">À définir après 20k/mois</div></div>
     <div class="mrow"><div class="lbl">Streak No PMO target</div><div class="val" style="color:var(--cyan)">90 jours</div></div>
     <div class="mrow"><div class="lbl">Score JARVIS cible</div><div class="val" style="color:var(--purple)">85+/100 en moyenne</div></div>
     <div class="mrow"><div class="lbl">DMs daily cible</div><div class="val" style="color:var(--orange)">2/j minimum</div></div>
-    <div class="mrow"><div class="lbl">Fajr cible</div><div class="val" style="color:var(--green)">100% &mdash; aucune exception</div></div>
+    <div class="mrow"><div class="lbl">Fajr cible</div><div class="val" style="color:var(--green)">100% — aucune exception</div></div>
   </div>
 </div>
 
-<div class="footer">JARVIS v3 &middot; Derni&egrave;re mise &agrave; jour : <span id="footer-date">&mdash;</span> &middot; Objectif : Top 0.00000001%</div>
+<div class="footer">JARVIS v4 · Dernière mise à jour : <span id="footer-date">—</span> · Top 0.00000001%</div>
 
 </div><!-- end wrap -->
 
