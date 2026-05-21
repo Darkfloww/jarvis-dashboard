@@ -20,4 +20,7 @@ fi
 git commit -m "data: daily update $(date +%Y-%m-%d)"
 git push origin main
 
+# 3. Redeploy on Vercel
+vercel --prod --yes
+
 echo "=== Done. Dashboard updated. ==="
