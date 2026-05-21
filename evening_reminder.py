@@ -9,14 +9,40 @@ import subprocess
 BOT_TOKEN = "8997450587:AAHjCjOVRipxIEzgFxAsqtxkCMyRtkmq35Y"
 CHAT_ID = "5351269136"
 
-msg = """⏰ <b>JARVIS — Rappel soir</b>
+msg = """⏰ <b>JARVIS CHECK-IN SOIR</b>
 
-Avant de dormir, envoie-moi :
+Envoie-moi un vocal avec toutes ces réponses dans l'ordre :
 
-1. 📱 <b>Screen Time</b> — Back Tap double sur l'iPhone
-2. 💼 <b>Check-in business</b> — vocal ou texte, tout ce que t'as fait aujourd'hui
-3. ✅ <b>Métriques</b> (facultatif si tu veux que je les rentre) :
-   Gym, prières, deep work, no goyslop, no PMO
+💼 <b>BUSINESS</b>
+→ Combien de DMs envoyés ?
+→ Calls bookés / closés ?
+→ Qu'est-ce que t'as fait exactement aujourd'hui ? (tout, sans filtre)
+
+🏋️ <b>PHYSIQUE</b>
+→ Gym ? (oui/non + type de séance)
+→ Couché à quelle heure hier soir, levé à quelle heure ?
+→ No goyslop ? (oui/non + ce que t'as mangé)
+→ Eau (litres approximatif) ?
+
+🕌 <b>SPIRITUEL</b>
+→ Fajr ? (oui/non)
+→ Prières sur 5 ?
+→ Coran ? (oui/non)
+
+🧠 <b>COGNITIF</b>
+→ Heures de deep work ?
+→ Qu'est-ce que t'as appris ou appliqué aujourd'hui ?
+
+⚡ <b>MENTAL</b>
+→ Énergie de la journée (1-10) ?
+→ Focus (1-10) ?
+→ No PMO ? (oui/non)
+
+📲 <b>SOCIAL</b>
+→ Interaction haute valeur (réseau, mentor, partenaire) ?
+→ Contenu posté ? (oui/non)
+
+Et envoie le screenshot Screen Time (Back Tap double).
 
 — JARVIS"""
 
