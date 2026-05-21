@@ -224,29 +224,44 @@ nav{
 /* RESPONSIVE */
 @media(max-width:1100px){.g6p{grid-template-columns:repeat(3,1fr);}.g4{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:768px){
-  .wrap{padding:16px;}
-  .kpi{min-width:130px;}
-  .kpi-value{font-size:26px;}
+  .wrap{padding:12px;}
+  .kpi{min-width:120px;padding:14px 16px;}
+  .kpi-value{font-size:24px;}
+  .kpi-label{font-size:9px;}
+  .kpi-sub{font-size:10px;}
   .g2,.g3,.g4,.g6p,.g13,.g31{grid-template-columns:1fr;gap:10px;}
-  .score-hero-card{flex-direction:column;text-align:center;padding:20px;gap:20px;}
   .rec-grid{grid-template-columns:repeat(2,1fr);}
-  nav{flex-direction:column;align-items:flex-start;gap:8px;position:static;}
-  .nav-tabs{width:100%;}
-  .nav-right{flex-wrap:wrap;}
-  .streak-num{font-size:60px;}
-  .card{padding:16px;}
-  .sdiv{margin:22px 0 12px;}
+  nav{flex-direction:column;align-items:stretch;gap:8px;position:static;padding:10px 12px;border-radius:16px;margin-bottom:16px;}
+  .nav-left{flex-direction:column;gap:8px;}
+  .logo{font-size:11px;}
+  .nav-tabs{width:100%;overflow-x:auto;}
+  .tab{padding:6px 12px;font-size:11px;}
+  .nav-right{flex-wrap:wrap;gap:6px;}
+  .pill{font-size:10px;padding:5px 10px;}
+  .streak-num{font-size:56px;}
+  .card{padding:14px;}
+  .sdiv{margin:20px 0 12px;}
   #date-chips{gap:4px;}
+  .score-hero{padding:32px 16px 28px!important;}
 }
 @media(max-width:430px){
-  .kpi-value{font-size:22px;}
+  .wrap{padding:10px;}
+  .kpi{min-width:105px;padding:12px 14px;}
+  .kpi-value{font-size:20px;}
   .kpi-label{font-size:9px;}
   .card-title{font-size:9px;}
+  .card{padding:12px;}
   .rec-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
-  .rec-val{font-size:30px;}
-  #fb-scores{gap:8px;}
+  .rec-val{font-size:28px;}
+  .rec-lbl{font-size:9px;}
+  #fb-scores{gap:6px;}
   #fb-scores>div{min-width:60px;padding:8px;}
-  .ch{height:160px!important;}
+  .ch{height:150px!important;}
+  .streak-num{font-size:48px;}
+  .pillar-name{min-width:58px;font-size:10px;}
+  .pillar-pts{min-width:32px;font-size:10px;}
+  .mrow{font-size:11px;}
+  .tab{padding:5px 10px;font-size:10px;}
 }
 </style>
 </head>
@@ -344,7 +359,7 @@ nav{
   </div>
 
   <!-- SCORE HERO -->
-  <div class="card" style="margin-bottom:22px;padding:52px 32px 44px;text-align:center;position:relative;overflow:hidden;">
+  <div class="card score-hero" style="margin-bottom:22px;padding:52px 32px 44px;text-align:center;position:relative;overflow:hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(120,50,250,0.08) 0%,transparent 65%);pointer-events:none;"></div>
     <canvas id="scoreDonut" width="80" height="80" style="position:absolute;opacity:0;pointer-events:none;top:0;left:0;width:80px;height:80px;"></canvas>
     <div id="h-date" style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--text2);margin-bottom:20px;">Chargement...</div>
