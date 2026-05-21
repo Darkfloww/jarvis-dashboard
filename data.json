@@ -241,62 +241,78 @@
   "days": [
     {
       "date": "2026-05-21",
-      "score": 0,
-      "note": "J1 — Setup JARVIS System",
-      "feedback": "Premier check-in ce soir. Système en place.",
+      "score": 36,
+      "note": "J1 — Premier check-in JARVIS",
+      "feedback": "Bonne énergie (8/10) mais gros manques sur le spirituel (0/5 prières), le PMO (streak 0) et le sleep cassé (couché 5h).",
       "jarvis_feedback": {
-        "business_recap": "",
-        "score_volume": 0,
-        "score_leverage": 0,
-        "score_direction": 0,
-        "score_total": 0,
-        "feedback_text": "Check-in pas encore reçu pour aujourd'hui.",
-        "what_good": [],
-        "what_bad": [],
-        "actions_demain": [],
-        "niveau": "—",
-        "timestamp": ""
+        "business_recap": "0 DMs. 1 call booké (Diane lundi). Appel CloseGuard pricing avec Assed+Fares. Appel Didier delivery (stories vendredi + montage vidéo YouTube). Session setup JARVIS.",
+        "score_volume": 2,
+        "score_leverage": 7,
+        "score_direction": 5,
+        "score_total": 14,
+        "feedback_text": "Appel Didier + appel CloseGuard = pertinents et à fort levier. La direction est bonne. MAIS 0 DMs = zéro prospection = zéro pipeline futur. Sans outreach, les revenus stagnent. Le call booké avec Diane est positif — il faut que ça close.",
+        "what_good": [
+          "Appel Didier delivery — client maintenu, vidéo YouTube avance",
+          "Appel CloseGuard pricing avec Assed+Fares — SaaS structuré",
+          "1 call booké (Diane, lundi) — pipeline actif",
+          "Session JARVIS — investissement système"
+        ],
+        "what_bad": [
+          "0 DMs — aucune prospection. Sans outreach, impossible de scaler",
+          "Pas de vrai travail d'acquisition client aujourd'hui"
+        ],
+        "actions_demain": [
+          "2 DMs de qualité — ciblés, personnalisés, recherchés avant d'envoyer",
+          "Prépare l'appel Diane lundi — qualifie l'offre, anticipe les objections",
+          "Avance sur la vidéo pre-call Didier ou les stories semaine prochaine"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-21 15:32"
       },
       "business": {
         "dms": 0,
-        "calls_bookes": 0,
+        "calls_bookes": 1,
         "calls_closes": 0,
         "commission_estimee": 0,
-        "delivery_done": null,
-        "recap": "",
-        "score": 0
+        "delivery_done": true,
+        "recap": "Appel CloseGuard pricing, appel Didier delivery, call Diane booké lundi",
+        "score": 14
       },
       "physique": {
-        "gym": null,
-        "gym_type": "",
-        "coucher": "",
-        "lever": "",
-        "heures_sommeil": 0,
-        "nutrition_repas": 0,
-        "eau_litres": 0,
-        "score": 0
+        "gym": true,
+        "gym_type": "Biceps (mini-séance)",
+        "coucher": "05:00",
+        "lever": "16:00",
+        "heures_sommeil": 11,
+        "nutrition_clean": false,
+        "repas": "Sushis saumon mayo, sashimi, riz boeuf oeuf, Monaca glace matcha (goyslop), cacahuètes raisins secs",
+        "eau_litres": 1,
+        "score": 6
       },
       "spirituel": {
-        "fajr": null,
+        "fajr": false,
         "prieres": 0,
-        "coran": null,
+        "coran": false,
         "score": 0
       },
       "cognitif": {
-        "deep_work_heures": 0,
-        "apprentissage": "",
-        "score": 0
+        "deep_work_heures": 2,
+        "duolingo_russe": true,
+        "duolingo_minutes": 2,
+        "apprentissage": "Pricing SaaS CloseGuard (appel avec Assed+Fares)",
+        "score": 8
       },
       "mental": {
-        "energie": 0,
-        "focus": 0,
-        "screen_time_reseaux_min": 233,
-        "score": 0
+        "energie": 8,
+        "focus": 7,
+        "screen_time_reseaux_min": 0,
+        "no_pmo": false,
+        "score": 4
       },
       "social": {
-        "interaction_hv": "",
-        "contenu_poste": null,
-        "score": 0
+        "interaction_hv": "Assed, Fares (CloseGuard) + Didier (client)",
+        "contenu_poste": false,
+        "score": 4
       },
       "activitywatch": {
         "status": "ok",
