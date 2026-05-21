@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21",
+  "lastUpdated": "2026-05-22",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -322,14 +322,15 @@
       "mental": {
         "energie": 8,
         "focus": 7,
-        "screen_time_reseaux_min": 238,
+        "screen_time_reseaux_min": 239,
         "screen_time_details": {
-          "Telegram": 263,
-          "TikTok": 170,
+          "Telegram": 284,
+          "TikTok": 171,
           "Arc": 106,
           "Meet": 79,
           "Instagram": 68,
-          "WhatsApp Business": 54
+          "WhatsApp Business": 55,
+          "Terminal": 25
         },
         "no_pmo": false,
         "score": 2
