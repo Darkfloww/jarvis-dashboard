@@ -1243,7 +1243,7 @@ function renderScreenTime(day){
     <div class="st-val" style="color:${totalCol};font-weight:700">${fmt(total)}</div>
   </div>`;
   html+=`<div style="margin-top:8px;font-size:11px;color:${total>60?'var(--red)':'var(--green)'}">
-    ${total>60?'⚠ Objectif : moins de 1h/jour':'✓ Objectif respecté'}
+    ${total>60?'⚠ Instagram + TikTok > 1h — objectif : en dessous':'✓ Instagram + TikTok < 1h'}
   </div>`;
 
   el.innerHTML=html;
