@@ -86,13 +86,16 @@ nav {
 
 /* ── KPI ROW — stats flottent sur le noir ── */
 .kpi-row {
-  display:flex; gap:0; margin-bottom:48px;
+  display:flex; gap:0; margin-bottom:0;
   overflow-x:auto; -webkit-overflow-scrolling:touch;
+  padding:32px 0;
+  border-bottom:1px solid var(--border);
+  margin-bottom:40px;
 }
 .kpi-row::-webkit-scrollbar { display:none; }
 .kpi {
   flex:1; flex-shrink:0; min-width:120px;
-  padding:0 28px;
+  padding:0 28px; background:transparent; border:none;
   border-right:1px solid var(--border);
 }
 .kpi:first-child { padding-left:0; }
@@ -102,7 +105,7 @@ nav {
   letter-spacing:0.12em; color:var(--text2); margin-bottom:10px;
 }
 .kpi-value {
-  font-size:38px; font-weight:800; line-height:1;
+  font-size:36px; font-weight:800; line-height:1;
   color:var(--kpi-color, var(--text));
   font-variant-numeric:tabular-nums; letter-spacing:-0.03em;
 }
@@ -120,9 +123,9 @@ nav {
 .alert.info { border-color:rgba(96,165,250,.12); }
 .alert-icon { font-size:14px; margin-top:1px; flex-shrink:0; }
 
-/* ── CARDS — minimal container ── */
+/* ── CARDS — transparent, content floats on black ── */
 .card {
-  background:var(--surface); border:1px solid var(--border);
+  background:transparent; border:1px solid var(--border);
   border-radius:var(--r); padding:22px;
 }
 .card-hd { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
@@ -168,23 +171,7 @@ nav {
 .g13 { display:grid; grid-template-columns:1fr 3fr; gap:12px; margin-bottom:12px; }
 .g31 { display:grid; grid-template-columns:3fr 1fr; gap:12px; margin-bottom:12px; }
 
-/* ── SCORE HERO ── */
-.score-hero-card {
-  background:var(--surface); border:1px solid var(--border);
-  border-radius:var(--r); padding:28px;
-  display:flex; align-items:center; gap:32px; margin-bottom:12px;
-}
-.donut-wrap { position:relative; width:96px; height:96px; flex-shrink:0; }
-.donut-wrap canvas { position:absolute; top:0; left:0; width:100%!important; height:100%!important; }
-.donut-inner {
-  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-  text-align:center;
-}
-.score-big { font-size:28px; font-weight:900; line-height:1; font-variant-numeric:tabular-nums; letter-spacing:-0.04em; }
-.score-lbl { font-size:9px; color:var(--text2); letter-spacing:0.1em; margin-top:2px; text-transform:uppercase; }
-.score-meta { flex:1; min-width:0; }
-.score-meta h2 { font-size:16px; font-weight:700; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; letter-spacing:-0.02em; }
-.score-meta p { font-size:12px; color:var(--text2); line-height:1.6; margin-bottom:16px; }
+/* ── RECORDS — no fill ── */
 
 /* ── PILLAR BARS ── */
 .pillar-row {
@@ -402,20 +389,14 @@ nav {
     </div>
   </div>
 
-  <!-- SCORE + PILLARS -->
-  <div class="score-hero-card">
-    <div class="donut-wrap">
-      <canvas id="scoreDonut" width="120" height="120"></canvas>
-      <div class="donut-inner">
-        <div class="score-big" id="h-score">—</div>
-        <div class="score-lbl">/ 100</div>
-      </div>
-    </div>
-    <div class="score-meta">
-      <h2 id="h-date">Chargement...</h2>
-      <p id="h-feedback">Premier check-in ce soir.</p>
-      <div id="pillar-bars"></div>
-    </div>
+  <!-- SCORE HERO — editorial, no box -->
+  <div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:52px 0 40px;margin-bottom:40px;text-align:center;position:relative;">
+    <canvas id="scoreDonut" width="80" height="80" style="position:absolute;opacity:0;pointer-events:none;top:0;left:0;width:80px;height:80px;"></canvas>
+    <div id="h-date" style="font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:0.14em;color:var(--text2);margin-bottom:20px;">Chargement...</div>
+    <div id="h-score" style="font-size:clamp(80px,12vw,140px);font-weight:900;line-height:1;letter-spacing:-0.05em;font-variant-numeric:tabular-nums;color:var(--text);">—</div>
+    <div style="font-size:13px;color:var(--text2);letter-spacing:0.04em;margin-top:8px;">/ 100</div>
+    <p id="h-feedback" style="font-size:13px;color:var(--text2);line-height:1.7;margin-top:16px;max-width:480px;margin-left:auto;margin-right:auto;">Premier check-in ce soir.</p>
+    <div id="pillar-bars" style="max-width:520px;margin:28px auto 0;text-align:left;"></div>
   </div>
 
   <!-- METRICS GRID 3×2 -->
@@ -1088,7 +1069,7 @@ function renderAlerts(day,streak){
 // ── SCORE DONUT ──────────────────────────────────────────────────────
 function renderDonut(score, canvasEl){
   const c=canvasEl||$('scoreDonut'), ctx=c.getContext('2d');
-  const s=score||0, col=s>0?colScore(s):'#475569';
+  const s=score||0, col=s>0?colScore(s):'#3A3A3A';
   $('h-score').textContent=s>0?s:'—';
   $('h-score').style.color=col;
   new Chart(ctx,{type:'doughnut',
@@ -1240,7 +1221,7 @@ function renderChecklist(day){
   $('checklist').innerHTML=checks.map(c=>`
     <div class="check-row">
       <div class="check-box ${c.done?'done':'miss'}">${c.done?'✓':'✗'}</div>
-      <div style="color:${c.done?'#e2e8f0':'#475569'}">${c.l}</div>
+      <div style="color:${c.done?'#F0F0F0':'#3A3A3A'}">${c.l}</div>
     </div>`).join('');
 }
 
