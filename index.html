@@ -528,23 +528,7 @@ nav {
         <div class="card-title"><div class="dot"></div> Screen Time iPhone</div>
       </div>
       <div id="st-bars">
-        <div style="color:var(--muted);font-size:12px;margin-bottom:10px;">Données du 20 mai (premier log)</div>
-        <div class="st-row">
-          <div class="st-lbl">Instagram</div>
-          <div class="st-bar"><div class="st-fill" style="width:73%;background:linear-gradient(90deg,#e1306c,#833ab4)"></div></div>
-          <div class="st-val" style="color:#e1306c">2h07</div>
-        </div>
-        <div class="st-row">
-          <div class="st-lbl">TikTok</div>
-          <div class="st-bar"><div class="st-fill" style="width:60%;background:linear-gradient(90deg,#ff0050,#00f2ea)"></div></div>
-          <div class="st-val" style="color:#ff0050">1h46</div>
-        </div>
-        <div class="st-row">
-          <div class="st-lbl">Total réseaux</div>
-          <div class="st-bar"><div class="st-fill" style="width:90%;background:linear-gradient(90deg,var(--red),var(--orange))"></div></div>
-          <div class="st-val" style="color:var(--red)">3h53</div>
-        </div>
-        <div style="margin-top:10px;font-size:11px;color:var(--red)">⚠ Objectif : moins de 1h/jour</div>
+        <div style="font-size:12px;color:var(--muted)">En attente du screenshot</div>
       </div>
     </div>
 
@@ -1002,6 +986,7 @@ function renderDayView(day, allDays){
   renderAW(day.activitywatch, newAWC);
 
   renderFeedback(day, allDays);
+  renderScreenTime(day);
 }
 
 // ── DATA ──────────────────────────────────────────────────────
@@ -1211,6 +1196,57 @@ function renderChecklist(day){
       <div class="check-box ${c.done?'done':'miss'}">${c.done?'✓':'✗'}</div>
       <div style="color:${c.done?'#e2e8f0':'#475569'}">${c.l}</div>
     </div>`).join('');
+}
+
+// ── SCREEN TIME ──────────────────────────────────────────────────────
+function renderScreenTime(day){
+  const el=$('st-bars');
+  if(!el) return;
+  const m=day.mental||{};
+  const total=m.screen_time_reseaux_min||0;
+  const details=m.screen_time_details||{};
+  const dt=new Date(day.date+'T12:00:00');
+  const dateLbl=dt.toLocaleDateString('fr-FR',{day:'numeric',month:'long'});
+
+  if(!total && !Object.keys(details).length){
+    el.innerHTML='<div style="font-size:12px;color:var(--muted)">En attente du screenshot (Back Tap double)</div>';
+    return;
+  }
+
+  // Social media apps colors
+  const appColors={'TikTok':'#ff0050','Instagram':'#e1306c','Snapchat':'#fffc00','Twitter':'#1da1f2','YouTube':'#ff0000'};
+  const socialApps=['TikTok','Instagram','Snapchat','Twitter','YouTube'];
+  const maxMin=Object.values(details).reduce((a,b)=>Math.max(a,b),0)||total||1;
+
+  let html=`<div style="font-size:11px;color:var(--muted);margin-bottom:10px">${dateLbl}</div>`;
+
+  // Show individual apps from details
+  if(Object.keys(details).length>0){
+    const sorted=Object.entries(details).filter(([k])=>k!=='Telegram'&&k!=='Terminal').sort((a,b)=>b[1]-a[1]).slice(0,6);
+    for(const [app,mins] of sorted){
+      const col=appColors[app]||'#94a3b8';
+      const pct=Math.min(mins/maxMin*100,100).toFixed(0);
+      html+=`<div class="st-row">
+        <div class="st-lbl">${app}</div>
+        <div class="st-bar"><div class="st-fill" style="width:${pct}%;background:${col}"></div></div>
+        <div class="st-val" style="color:${col}">${fmt(mins)}</div>
+      </div>`;
+    }
+  }
+
+  // Total réseaux
+  const totalCol=total>120?'var(--red)':total>60?'var(--orange)':'var(--green)';
+  const totalPct=Math.min(total/maxMin*100,100).toFixed(0);
+  html+=`<div class="st-row" style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)">
+    <div class="st-lbl" style="font-weight:700">Total réseaux</div>
+    <div class="st-bar"><div class="st-fill" style="width:${totalPct}%;background:linear-gradient(90deg,var(--red),var(--orange))"></div></div>
+    <div class="st-val" style="color:${totalCol};font-weight:700">${fmt(total)}</div>
+  </div>`;
+  html+=`<div style="margin-top:8px;font-size:11px;color:${total>60?'var(--red)':'var(--green)'}">
+    ${total>60?'⚠ Objectif : moins de 1h/jour':'✓ Objectif respecté'}
+  </div>`;
+
+  el.innerHTML=html;
 }
 
 // ── AW CHART ──────────────────────────────────────────────────────
