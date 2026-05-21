@@ -404,7 +404,7 @@ nav {
     <div class="kpi" style="--kpi-color:var(--yellow)">
       <div class="kpi-label">DMs outreach</div>
       <div class="kpi-value" id="k-dms">—</div>
-      <div class="kpi-sub">objectif : 20/j</div>
+      <div class="kpi-sub">objectif : 2/j</div>
     </div>
     <div class="kpi" style="--kpi-color:var(--green)">
       <div class="kpi-label">Commission perso</div>
@@ -640,7 +640,7 @@ nav {
         <div class="check-row"><div class="check-box done">🍔</div><div>Goyslop → -5 pts + alerte (viande/poisson/oeufs/légumes/riz uniquement)</div></div>
         <div class="check-row"><div class="check-box done">🔥</div><div>PMO → streak remis à 0 + recadrage immédiat</div></div>
         <div class="check-row"><div class="check-box done">📅</div><div>Review hebdo chaque dimanche</div></div>
-        <div class="check-row"><div class="check-box done">🎯</div><div>20 DMs/jour minimum</div></div>
+        <div class="check-row"><div class="check-box done">🎯</div><div>2 DMs/jour — qualité > quantité</div></div>
       </div>
     </div>
   </div>
@@ -885,7 +885,7 @@ nav {
     </div>
     <div class="mrow">
       <div class="lbl">DMs daily cible</div>
-      <div class="val" style="color:var(--orange)">20/j minimum</div>
+      <div class="val" style="color:var(--orange)">2/j minimum</div>
     </div>
     <div class="mrow">
       <div class="lbl">Fajr cible</div>
@@ -1047,7 +1047,7 @@ function renderAlerts(day,streak){
   if(coucher && (coucher>='03:00'||coucher<='06:00' && coucher>='00:00'))
     add('warn','⚡',`<strong>Sleep cassé.</strong> Coucher à ${coucher}. Priorité #1 : ramener avant 01h00.`);
   const dms=day.business?.dms||0;
-  if(dms>0 && dms<20) add('warn','💬',`<strong>${dms}/20 DMs.</strong> Il en manque ${20-dms}. L'outreach ne se négocie pas.`);
+  if(dms>0 && dms<2) add('warn','💬',`<strong>${dms}/2 DMs.</strong> L'objectif n'est pas atteint.`);
   if(streak>=7 && day.mental?.no_pmo===true)
     add('info','🔥',`<strong>Streak ${streak} jours.</strong> ${streak>=30?'Mode beast — continue.':streak>=14?'14j+ — tu builds de l\'élan.':'Bonne dynamique — tiens-le.'}`);
 }
@@ -1099,12 +1099,12 @@ function renderMetrics(day){
   $('k-score').style.color=colScore(score);
   $('k-score-label').textContent=score>=80?'Solide':score>=60?'Correct':'Recadrage';
   $('k-dw').textContent=(c.deep_work_heures||'—')+'h';
-  $('k-dms').textContent=(b.dms||'—')+'/20';
-  $('k-dms').style.color=b.dms>=20?'#22c55e':b.dms>0?'#eab308':'#64748b';
+  $('k-dms').textContent=(b.dms||'—')+'/2';
+  $('k-dms').style.color=b.dms>=2?'#22c55e':b.dms>0?'#eab308':'#64748b';
 
   // Business
   $('bs-score').textContent=`${b.score||0}/30`;
-  $('bs-dms').innerHTML=`<span style="color:${b.dms>=20?'#22c55e':b.dms>0?'#eab308':'#64748b'}">${b.dms||'—'}/20</span>`;
+  $('bs-dms').innerHTML=`<span style="color:${b.dms>=2?'#22c55e':b.dms>0?'#eab308':'#64748b'}">${b.dms||'—'}/2</span>`;
   $('bs-cb').textContent=b.calls_bookes??'—';
   $('bs-cc').textContent=b.calls_closes??'—';
   $('bs-com').textContent=b.commission_estimee?b.commission_estimee+'€':'—€';
@@ -1182,7 +1182,7 @@ function renderStreak(days, upToDate){
 // ── CHECKLIST ──────────────────────────────────────────────────────
 function renderChecklist(day){
   const checks=[
-    {l:'20 DMs',done:(day.business?.dms||0)>=20},
+    {l:'2 DMs qualité',done:(day.business?.dms||0)>=2},
     {l:'Gym',done:day.physique?.gym===true},
     {l:'No goyslop',done:day.physique?.nutrition_clean===true},
     {l:'Fajr',done:day.spirituel?.fajr===true},

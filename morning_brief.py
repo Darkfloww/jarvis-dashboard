@@ -107,7 +107,7 @@ def build_brief(data):
         dw = c.get("deep_work_heures", 0) or 0
         pmo = "✓" if m.get("no_pmo") else "✗" if m.get("no_pmo") is False else "?"
 
-        lines.append(f"  DMs {dms}/20 | Gym {gym} | Fajr {fajr} | Deep work {dw}h | No PMO {pmo}")
+        lines.append(f"  DMs {dms}/2 | Gym {gym} | Fajr {fajr} | Deep work {dw}h | No PMO {pmo}")
         lines.append("")
     else:
         lines.append("⚪ Pas de données pour hier.")
@@ -123,8 +123,8 @@ def build_brief(data):
 
         if sp.get("fajr") is False:
             alerts.append("☾ Fajr raté hier — c'est la base. Couche-toi avant 23h ce soir.")
-        if (b.get("dms") or 0) < 10:
-            alerts.append(f"💬 Outreach critique — seulement {b.get('dms',0)} DMs hier. Commence par ça dès le réveil.")
+        if (b.get("dms") or 0) < 1:
+            alerts.append("💬 0 DMs hier — l'outreach n'a pas été fait. C'est la priorité #1 ce matin.")
         if (m.get("screen_time_reseaux_min") or 0) > 120:
             from math import floor
             mins = m.get("screen_time_reseaux_min", 0)
@@ -147,13 +147,12 @@ def build_brief(data):
     # Always: outreach if yesterday was low
     if yesterday_data:
         dms_y = (yesterday_data.get("business", {}).get("dms") or 0)
-        if dms_y < 20:
-            deficit = 20 - dms_y
-            priorities.append(f"1. {20} DMs outreach — sans négociation. Commence maintenant, finit avant 13h.")
+        if dms_y < 2:
+            priorities.append("1. 2 DMs outreach de qualité — ciblés, personnalisés, à fort levier.")
         else:
-            priorities.append("1. 20 DMs outreach — maintenir la cadence.")
+            priorities.append("1. 2 DMs outreach de qualité — maintenir la cadence.")
     else:
-        priorities.append("1. 20 DMs outreach — commence dès le réveil.")
+        priorities.append("1. 2 DMs outreach de qualité — commence maintenant.")
 
     # Deep work block
     priorities.append("2. Bloc deep work 3h minimum — ferme les notifs, pas de réseaux avant 18h.")

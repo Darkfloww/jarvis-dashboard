@@ -79,7 +79,7 @@ def build_weekly_review(data):
     total_calls_b = sum(d.get("business", {}).get("calls_bookes", 0) or 0 for d in week_days)
     total_calls_c = sum(d.get("business", {}).get("calls_closes", 0) or 0 for d in week_days)
     lines.append("<b>Business semaine :</b>")
-    lines.append(f"  DMs total : {total_dms}/140 (objectif 7×20)")
+    lines.append(f"  DMs total : {total_dms}/14 (objectif 7×2)")
     lines.append(f"  Calls bookés : {total_calls_b} | Calls closés : {total_calls_c}")
     lines.append("")
 
