@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JARVIS — Shayan Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #06060f;
+    --bg2: #0d0d1a;
+    --glass: rgba(255,255,255,0.04);
+    --glass-border: rgba(255,255,255,0.08);
+    --purple: #a855f7;
+    --blue: #3b82f6;
+    --green: #22c55e;
+    --yellow: #eab308;
+    --red: #ef4444;
+    --cyan: #06b6d4;
+    --orange: #f97316;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --card-radius: 16px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Background glow */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(168,85,247,0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .header-left h1 {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+  }
+
+  .header-left p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .badge {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .badge.live {
+    border-color: rgba(34,197,94,0.3);
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge.live::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* SCORE HERO */
+  .score-hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    padding: 28px 32px;
+    align-items: center;
+  }
+
+  .score-circle-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+
+  .score-circle-wrapper canvas {
+    position: absolute;
+    top: 0; left: 0;
+  }
+
+  .score-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .score-number {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, #fff, var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .score-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .score-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .score-meta h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .score-meta p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .pillars-mini {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .pillar-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .pillar-chip .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  /* GRID */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1100px) {
+    .grid-6 { grid-template-columns: repeat(3, 1fr); }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .score-hero { grid-template-columns: 1fr; text-align: center; }
+    .grid-2, .grid-3, .grid-6 { grid-template-columns: 1fr; }
+    .pillars-mini { justify-content: center; }
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent, var(--purple)), transparent);
+    opacity: 0.5;
+  }
+
+  .card-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-title .icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent, var(--purple));
+  }
+
+  .metric-big {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .metric-sub {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .metric-row:last-child { border-bottom: none; }
+
+  .metric-row .label {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .metric-row .value {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .tag.yes { background: rgba(34,197,94,0.15); color: var(--green); }
+  .tag.no { background: rgba(239,68,68,0.15); color: var(--red); }
+  .tag.warn { background: rgba(234,179,8,0.15); color: var(--yellow); }
+
+  /* PROGRESS BAR */
+  .progress-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent, var(--purple)), var(--accent2, var(--blue)));
+    transition: width 0.8s ease;
+  }
+
+  /* SCORE BAR per pillar */
+  .pillar-score {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .pillar-score:last-child { border-bottom: none; }
+
+  .pillar-score .name {
+    font-size: 13px;
+    min-width: 90px;
+    color: var(--text);
+  }
+
+  .pillar-score .bar-wrap {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .pillar-score .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease;
+  }
+
+  .pillar-score .pts {
+    font-size: 12px;
+    color: var(--muted);
+    min-width: 50px;
+    text-align: right;
+  }
+
+  /* CHART wrapper */
+  .chart-wrapper {
+    position: relative;
+    height: 200px;
+    margin-top: 12px;
+  }
+
+  /* STREAK CALENDAR */
+  .streak-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-top: 12px;
+  }
+
+  .streak-day {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .streak-day.empty { background: rgba(255,255,255,0.04); color: var(--muted); }
+  .streak-day.great { background: rgba(168,85,247,0.4); color: white; }
+  .streak-day.good { background: rgba(168,85,247,0.2); color: var(--purple); }
+  .streak-day.bad { background: rgba(239,68,68,0.15); color: var(--red); }
+  .streak-day.nodata { background: rgba(255,255,255,0.02); color: rgba(255,255,255,0.1); }
+
+  /* ALERT */
+  .alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.2);
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .alert .alert-icon { font-size: 16px; margin-top: 1px; }
+
+  .alert.warn {
+    background: rgba(234,179,8,0.06);
+    border-color: rgba(234,179,8,0.2);
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--glass-border);
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    padding-bottom: 32px;
+  }
+
+  /* NUMBER RATING */
+  .rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .rating-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .rating-dot.filled { background: var(--accent, var(--purple)); }
+
+  /* SCREEN TIME */
+  .screen-time-bar {
+    margin-top: 8px;
+  }
+
+  .st-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .st-label {
+    font-size: 12px;
+    color: var(--muted);
+    min-width: 80px;
+  }
+
+  .st-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .st-fill {
+    height: 100%;
+    border-radius: 4px;
+  }
+
+  .st-val {
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  /* OBJECTIVES */
+  .obj-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 13px;
+  }
+
+  .obj-row:last-child { border-bottom: none; }
+
+  .obj-check {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1.5px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+
+  .obj-check.done { background: rgba(34,197,94,0.2); border-color: var(--green); color: var(--green); }
+  .obj-check.miss { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); color: var(--red); }
+
+  .scroll-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .tab {
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass);
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--muted);
+    transition: all 0.2s;
+  }
+
+  .tab.active {
+    background: rgba(168,85,247,0.15);
+    border-color: rgba(168,85,247,0.4);
+    color: var(--purple);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>⚡ JARVIS Dashboard</h1>
+      <p id="header-date">Chargement...</p>
+    </div>
+    <div class="header-right">
+      <div class="badge live">Live</div>
+      <div class="badge" id="header-location">Sanya, Chine</div>
+      <div class="badge" id="header-patrimoine">6 000€</div>
+    </div>
+  </div>
+
+  <!-- ALERTES -->
+  <div id="alerts-container"></div>
+
+  <!-- SCORE HERO -->
+  <div class="score-hero" style="--accent: var(--purple);">
+    <div class="score-circle-wrapper">
+      <canvas id="scoreDonut" width="160" height="160"></canvas>
+      <div class="score-inner">
+        <div class="score-number" id="hero-score">—</div>
+        <div class="score-label">/100</div>
+      </div>
+    </div>
+    <div class="score-meta">
+      <h2 id="hero-date-label">Aujourd'hui</h2>
+      <p id="hero-feedback">Premier check-in ce soir. Setup JARVIS complet.</p>
+      <div class="pillars-mini" id="pillars-mini"></div>
+    </div>
+  </div>
+
+  <!-- PILLAR SCORES -->
+  <div class="section-title">Scores par pillier</div>
+  <div class="card" style="margin-bottom: 20px;">
+    <div id="pillar-scores-list"></div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="section-title">Métriques du jour</div>
+  <div class="grid-3">
+
+    <!-- BUSINESS -->
+    <div class="card" style="--accent: var(--yellow);">
+      <div class="card-title"><div class="dot" style="background:var(--yellow)"></div> Business</div>
+      <div class="metric-row">
+        <div class="label">DMs outreach</div>
+        <div class="value" id="b-dms">— / 20</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Calls bookés</div>
+        <div class="value" id="b-calls-b">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Calls closés</div>
+        <div class="value" id="b-calls-c">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Commission estimée</div>
+        <div class="value" id="b-commission">—€</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Delivery Didier</div>
+        <div class="value" id="b-delivery">—</div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="b-progress" style="width:0%; --accent: var(--yellow); --accent2: var(--orange);"></div></div>
+    </div>
+
+    <!-- PHYSIQUE -->
+    <div class="card" style="--accent: var(--red);">
+      <div class="card-title"><div class="dot" style="background:var(--red)"></div> Physique</div>
+      <div class="metric-row">
+        <div class="label">Gym</div>
+        <div class="value" id="p-gym">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Sommeil</div>
+        <div class="value" id="p-sleep">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Heures sommeil</div>
+        <div class="value" id="p-sleep-h">—h</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Nutrition</div>
+        <div class="value" id="p-nutrition">— repas</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Hydratation</div>
+        <div class="value" id="p-eau">—L / 2.5L</div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="p-progress" style="width:0%; --accent: var(--red); --accent2: var(--orange);"></div></div>
+    </div>
+
+    <!-- SPIRITUEL -->
+    <div class="card" style="--accent: var(--green);">
+      <div class="card-title"><div class="dot" style="background:var(--green)"></div> Spirituel</div>
+      <div class="metric-row">
+        <div class="label">Fajr</div>
+        <div class="value" id="s-fajr">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Prières</div>
+        <div class="value" id="s-prieres">— / 5</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Coran</div>
+        <div class="value" id="s-coran">—</div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="sp-progress" style="width:0%; --accent: var(--green); --accent2: var(--cyan);"></div></div>
+    </div>
+
+    <!-- COGNITIF -->
+    <div class="card" style="--accent: var(--blue);">
+      <div class="card-title"><div class="dot" style="background:var(--blue)"></div> Cognitif</div>
+      <div class="metric-row">
+        <div class="label">Deep work</div>
+        <div class="value" id="c-dw">—h</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Apprentissage</div>
+        <div class="value" id="c-learn" style="font-size:11px; max-width:120px; text-align:right;">—</div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="c-progress" style="width:0%; --accent: var(--blue); --accent2: var(--cyan);"></div></div>
+    </div>
+
+    <!-- MENTAL -->
+    <div class="card" style="--accent: var(--cyan);">
+      <div class="card-title"><div class="dot" style="background:var(--cyan)"></div> Mental</div>
+      <div class="metric-row">
+        <div class="label">Énergie</div>
+        <div class="value" id="m-energie">— / 10</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Focus</div>
+        <div class="value" id="m-focus">— / 10</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Screen time réseaux</div>
+        <div class="value" id="m-screen">—</div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="m-progress" style="width:0%; --accent: var(--cyan); --accent2: var(--blue);"></div></div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="card" style="--accent: var(--purple);">
+      <div class="card-title"><div class="dot" style="background:var(--purple)"></div> Social</div>
+      <div class="metric-row">
+        <div class="label">Interaction HV</div>
+        <div class="value" id="so-ihv" style="font-size:11px;">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Contenu posté</div>
+        <div class="value" id="so-content">—</div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="so-progress" style="width:0%; --accent: var(--purple); --accent2: var(--blue);"></div></div>
+    </div>
+
+  </div>
+
+  <!-- SCREEN TIME + ACTIVITÉ MAC -->
+  <div class="grid-2">
+
+    <div class="card" style="--accent: var(--orange);">
+      <div class="card-title"><div class="dot" style="background:var(--orange)"></div> Screen Time iPhone</div>
+      <div class="screen-time-bar" id="screen-time-bars">
+        <div style="color: var(--muted); font-size: 13px; padding: 8px 0;">Données du 20 mai</div>
+        <div class="st-row">
+          <div class="st-label">Instagram</div>
+          <div class="st-bar"><div class="st-fill" style="width:73%; background: linear-gradient(90deg, #e1306c, #833ab4);"></div></div>
+          <div class="st-val">2h07</div>
+        </div>
+        <div class="st-row">
+          <div class="st-label">TikTok</div>
+          <div class="st-bar"><div class="st-fill" style="width:60%; background: linear-gradient(90deg, #ff0050, #00f2ea);"></div></div>
+          <div class="st-val">1h46</div>
+        </div>
+        <div class="st-row">
+          <div class="st-label">Total réseaux</div>
+          <div class="st-bar"><div class="st-fill" style="width:90%; background: linear-gradient(90deg, var(--red), var(--orange));"></div></div>
+          <div class="st-val" style="color: var(--red);">3h53</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="--accent: var(--blue);">
+      <div class="card-title"><div class="dot" style="background:var(--blue)"></div> Activité Mac (ActivityWatch)</div>
+      <div class="chart-wrapper">
+        <canvas id="activityChart"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PROGRESSION 7 JOURS -->
+  <div class="section-title">Progression 7 jours</div>
+  <div class="card" style="margin-bottom: 20px;">
+    <div class="chart-wrapper" style="height: 220px;">
+      <canvas id="weekChart"></canvas>
+    </div>
+  </div>
+
+  <!-- OBJECTIFS DU JOUR -->
+  <div class="grid-2">
+
+    <div class="card" style="--accent: var(--purple);">
+      <div class="card-title"><div class="dot"></div> Checklist daily</div>
+      <div id="daily-checklist"></div>
+    </div>
+
+    <div class="card" style="--accent: var(--cyan);">
+      <div class="card-title"><div class="dot" style="background: var(--cyan)"></div> Patrimoine & business</div>
+      <div class="metric-row">
+        <div class="label">Patrimoine total</div>
+        <div class="value">6 000€</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Commission mensuelle</div>
+        <div class="value">~1 500-1 750€</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Target mensuel</div>
+        <div class="value" style="color: var(--yellow);">—€</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Client actif</div>
+        <div class="value" style="font-size:12px;">Didier</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">CloseGuard</div>
+        <div class="value"><span class="tag warn">En cours</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JARVIS RULES -->
+  <div class="section-title">Règles JARVIS actives</div>
+  <div class="card" style="margin-bottom: 32px;">
+    <div class="obj-row">
+      <div class="obj-check"><span>∞</span></div>
+      <div>Zéro filtre — déclin 2 jours consécutifs = recadrage immédiat</div>
+    </div>
+    <div class="obj-row">
+      <div class="obj-check"><span>☾</span></div>
+      <div>Fajr raté = toujours mentionné en premier dans le feedback</div>
+    </div>
+    <div class="obj-row">
+      <div class="obj-check"><span>⚡</span></div>
+      <div>Sleep cassé = priorité #1 jusqu'à réglé (coucher avant 01h00)</div>
+    </div>
+    <div class="obj-row">
+      <div class="obj-check"><span>📱</span></div>
+      <div>Screen time réseaux > 1h = signalé automatiquement</div>
+    </div>
+    <div class="obj-row">
+      <div class="obj-check"><span>📅</span></div>
+      <div>Review hebdo chaque dimanche : tendances 7j + ajustements</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    JARVIS v1 — Dernière mise à jour : <span id="footer-updated">—</span><br>
+    Objectif : Top 0.00000001%
+  </div>
+
+</div>
+
+<script>
+async function loadData() {
+  const res = await fetch('./data.json?t=' + Date.now());
+  return await res.json();
+}
+
+function scoreColor(score) {
+  if (score >= 80) return '#a855f7';
+  if (score >= 60) return '#eab308';
+  return '#ef4444';
+}
+
+function formatTime(min) {
+  if (!min) return '—';
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  if (h > 0) return `${h}h${m.toString().padStart(2,'0')}`;
+  return `${m}min`;
+}
+
+function boolTag(val) {
+  if (val === true) return '<span class="tag yes">✓ Oui</span>';
+  if (val === false) return '<span class="tag no">✗ Non</span>';
+  return '—';
+}
+
+function renderScoreDonut(score) {
+  const canvas = document.getElementById('scoreDonut');
+  const ctx = canvas.getContext('2d');
+  const s = score || 0;
+  const color = scoreColor(s);
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [s, 100 - s],
+        backgroundColor: [color, 'rgba(255,255,255,0.05)'],
+        borderWidth: 0,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      cutout: '75%',
+      responsive: false,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      animation: { duration: 1200, easing: 'easeOutQuart' }
+    }
+  });
+}
+
+function renderPillarScores(day) {
+  const pillars = [
+    { key: 'business', name: 'Business', max: 30, color: '#eab308' },
+    { key: 'physique', name: 'Physique', max: 20, color: '#ef4444' },
+    { key: 'spirituel', name: 'Spirituel', max: 20, color: '#22c55e' },
+    { key: 'cognitif', name: 'Cognitif', max: 15, color: '#3b82f6' },
+    { key: 'mental', name: 'Mental', max: 10, color: '#06b6d4' },
+    { key: 'social', name: 'Social', max: 5, color: '#a855f7' }
+  ];
+
+  const container = document.getElementById('pillar-scores-list');
+  const miniContainer = document.getElementById('pillars-mini');
+  container.innerHTML = '';
+  miniContainer.innerHTML = '';
+
+  pillars.forEach(p => {
+    const score = day[p.key]?.score || 0;
+    const pct = (score / p.max * 100).toFixed(0);
+
+    container.innerHTML += `
+      <div class="pillar-score">
+        <div class="name">${p.name}</div>
+        <div class="bar-wrap">
+          <div class="bar-fill" style="width: ${pct}%; background: ${p.color};"></div>
+        </div>
+        <div class="pts">${score} / ${p.max}</div>
+      </div>
+    `;
+
+    miniContainer.innerHTML += `
+      <div class="pillar-chip">
+        <div class="dot" style="background: ${p.color};"></div>
+        <span>${p.name}</span>
+        <span style="color: ${p.color}; font-weight: 700;">${score}/${p.max}</span>
+      </div>
+    `;
+  });
+}
+
+function renderAlerts(day) {
+  const container = document.getElementById('alerts-container');
+  container.innerHTML = '';
+
+  if (!day.spirituel?.fajr) {
+    container.innerHTML += `
+      <div class="alert">
+        <div class="alert-icon">☾</div>
+        <div><strong>Fajr manqué.</strong> C'est la première chose à corriger — le reste de la journée commence là.</div>
+      </div>
+    `;
+  }
+
+  const sleep = day.physique?.heures_sommeil || 0;
+  const coucher = day.physique?.coucher || '';
+  if (coucher && (coucher > '03:00' || coucher < '04:00' && coucher > '00:00')) {
+    container.innerHTML += `
+      <div class="alert warn">
+        <div class="alert-icon">⚠️</div>
+        <div><strong>Sleep cassé détecté.</strong> Coucher à ${coucher}. Priorité #1 : ramener l'heure de coucher avant 01h00.</div>
+      </div>
+    `;
+  }
+
+  const screenReseaux = day.mental?.screen_time_reseaux_min || 0;
+  if (screenReseaux > 60) {
+    container.innerHTML += `
+      <div class="alert warn">
+        <div class="alert-icon">📱</div>
+        <div><strong>${formatTime(screenReseaux)} de réseaux sociaux.</strong> ${screenReseaux > 120 ? 'Critique — '+Math.round(screenReseaux/60*10)/10+'h perdues.' : 'À réduire sous 60min.'}</div>
+      </div>
+    `;
+  }
+
+  const dms = day.business?.dms || 0;
+  if (dms < 20 && dms > 0) {
+    container.innerHTML += `
+      <div class="alert warn">
+        <div class="alert-icon">💬</div>
+        <div><strong>Outreach incomplet.</strong> ${dms}/20 DMs envoyés. Il en manque ${20 - dms}.</div>
+      </div>
+    `;
+  }
+}
+
+function renderDailyMetrics(day) {
+  const b = day.business || {};
+  const p = day.physique || {};
+  const sp = day.spirituel || {};
+  const c = day.cognitif || {};
+  const m = day.mental || {};
+  const so = day.social || {};
+
+  // Business
+  document.getElementById('b-dms').innerHTML = `<span style="color: ${b.dms >= 20 ? '#22c55e' : b.dms > 0 ? '#eab308' : '#64748b'}">${b.dms || '—'} / 20</span>`;
+  document.getElementById('b-calls-b').textContent = b.calls_bookes ?? '—';
+  document.getElementById('b-calls-c').textContent = b.calls_closes ?? '—';
+  document.getElementById('b-commission').textContent = b.commission_estimee ? b.commission_estimee + '€' : '—€';
+  document.getElementById('b-delivery').innerHTML = b.delivery_done !== undefined ? boolTag(b.delivery_done) : '—';
+  document.getElementById('b-progress').style.width = (b.score / 30 * 100) + '%';
+
+  // Physique
+  document.getElementById('p-gym').innerHTML = p.gym !== undefined ? boolTag(p.gym) + (p.gym_type ? ` <span style="color:var(--muted);font-size:11px;">(${p.gym_type})</span>` : '') : '—';
+  document.getElementById('p-sleep').textContent = p.coucher && p.lever ? `${p.coucher} → ${p.lever}` : p.coucher ? `Couché ${p.coucher}` : '—';
+  document.getElementById('p-sleep-h').textContent = p.heures_sommeil ? p.heures_sommeil + 'h' : '—h';
+  document.getElementById('p-nutrition').textContent = p.nutrition_repas ? p.nutrition_repas + ' repas propres' : '—';
+  document.getElementById('p-eau').textContent = p.eau_litres ? p.eau_litres + 'L / 2.5L' : '— / 2.5L';
+  document.getElementById('p-progress').style.width = (p.score / 20 * 100) + '%';
+
+  // Spirituel
+  document.getElementById('s-fajr').innerHTML = sp.fajr !== undefined ? boolTag(sp.fajr) : '—';
+  document.getElementById('s-prieres').innerHTML = sp.prieres !== undefined ? `<span style="color: ${sp.prieres >= 4 ? '#22c55e' : sp.prieres >= 2 ? '#eab308' : '#ef4444'}">${sp.prieres} / 5</span>` : '—';
+  document.getElementById('s-coran').innerHTML = sp.coran !== undefined ? boolTag(sp.coran) : '—';
+  document.getElementById('sp-progress').style.width = (sp.score / 20 * 100) + '%';
+
+  // Cognitif
+  document.getElementById('c-dw').textContent = c.deep_work_heures ? c.deep_work_heures + 'h' : '—h';
+  document.getElementById('c-learn').textContent = c.apprentissage || '—';
+  document.getElementById('c-progress').style.width = (c.score / 15 * 100) + '%';
+
+  // Mental
+  document.getElementById('m-energie').innerHTML = m.energie ? `<span style="color:${m.energie >= 7 ? '#22c55e' : m.energie >= 5 ? '#eab308' : '#ef4444'}">${m.energie} / 10</span>` : '—';
+  document.getElementById('m-focus').innerHTML = m.focus ? `<span style="color:${m.focus >= 7 ? '#22c55e' : m.focus >= 5 ? '#eab308' : '#ef4444'}">${m.focus} / 10</span>` : '—';
+  document.getElementById('m-screen').innerHTML = m.screen_time_reseaux_min ? `<span style="color:${m.screen_time_reseaux_min > 120 ? '#ef4444' : m.screen_time_reseaux_min > 60 ? '#eab308' : '#22c55e'}">${formatTime(m.screen_time_reseaux_min)}</span>` : '—';
+  document.getElementById('m-progress').style.width = (m.score / 10 * 100) + '%';
+
+  // Social
+  document.getElementById('so-ihv').textContent = so.interaction_hv || '—';
+  document.getElementById('so-content').innerHTML = so.contenu_poste !== undefined ? boolTag(so.contenu_poste) : '—';
+  document.getElementById('so-progress').style.width = (so.score / 5 * 100) + '%';
+}
+
+function renderChecklist(day) {
+  const checks = [
+    { label: '20 DMs outreach', done: (day.business?.dms || 0) >= 20 },
+    { label: 'Gym', done: day.physique?.gym === true },
+    { label: 'Fajr', done: day.spirituel?.fajr === true },
+    { label: '3+ prières', done: (day.spirituel?.prieres || 0) >= 3 },
+    { label: 'Coran', done: day.spirituel?.coran === true },
+    { label: '3h+ deep work', done: (day.cognitif?.deep_work_heures || 0) >= 3 },
+    { label: 'Couché avant 01h', done: day.physique?.coucher ? day.physique.coucher < '01:00' : false },
+    { label: 'Screen time < 1h', done: (day.mental?.screen_time_reseaux_min || 999) < 60 },
+    { label: '2.5L eau', done: (day.physique?.eau_litres || 0) >= 2.5 },
+    { label: 'Contenu posté', done: day.social?.contenu_poste === true }
+  ];
+
+  const el = document.getElementById('daily-checklist');
+  const doneCount = checks.filter(c => c.done).length;
+  el.innerHTML = checks.map(c => `
+    <div class="obj-row">
+      <div class="obj-check ${c.done ? 'done' : 'miss'}">${c.done ? '✓' : '✗'}</div>
+      <div style="font-size: 13px; color: ${c.done ? 'var(--text)' : 'var(--muted)'};">${c.label}</div>
+    </div>
+  `).join('') + `
+    <div style="margin-top:12px; font-size:12px; color:var(--muted);">${doneCount}/${checks.length} objectifs atteints</div>
+  `;
+}
+
+function renderWeekChart(days) {
+  const canvas = document.getElementById('weekChart');
+  const ctx = canvas.getContext('2d');
+
+  const last7 = days.slice(-7);
+  const labels = last7.map(d => {
+    const dt = new Date(d.date);
+    return dt.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric' });
+  });
+
+  const scores = last7.map(d => d.score || 0);
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Score /100',
+        data: scores,
+        borderColor: '#a855f7',
+        backgroundColor: 'rgba(168,85,247,0.08)',
+        fill: true,
+        tension: 0.4,
+        pointBackgroundColor: scores.map(s => scoreColor(s)),
+        pointRadius: 5,
+        pointHoverRadius: 7,
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(13,13,26,0.95)',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          titleColor: '#e2e8f0',
+          bodyColor: '#94a3b8',
+          padding: 12
+        }
+      },
+      scales: {
+        y: {
+          min: 0,
+          max: 100,
+          grid: { color: 'rgba(255,255,255,0.04)' },
+          ticks: { color: '#64748b', font: { size: 11 } },
+          border: { display: false }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { color: '#64748b', font: { size: 11 } },
+          border: { display: false }
+        }
+      }
+    }
+  });
+}
+
+function renderActivityChart() {
+  const canvas = document.getElementById('activityChart');
+  const ctx = canvas.getContext('2d');
+
+  // Placeholder data - will be replaced by ActivityWatch API data
+  const hours = ['8h','9h','10h','11h','12h','13h','14h','15h','16h','17h','18h','19h','20h','21h','22h'];
+  const productivity = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: hours,
+      datasets: [{
+        label: 'Activité productive (min)',
+        data: productivity,
+        backgroundColor: 'rgba(59,130,246,0.4)',
+        borderColor: '#3b82f6',
+        borderWidth: 1,
+        borderRadius: 3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(13,13,26,0.95)',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1
+        }
+      },
+      scales: {
+        y: {
+          grid: { color: 'rgba(255,255,255,0.04)' },
+          ticks: { color: '#64748b', font: { size: 10 } },
+          border: { display: false }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { color: '#64748b', font: { size: 10 } },
+          border: { display: false }
+        }
+      }
+    }
+  });
+}
+
+async function init() {
+  try {
+    const data = await loadData();
+    const today = data.days[data.days.length - 1];
+
+    // Header
+    const dt = new Date(today.date);
+    document.getElementById('header-date').textContent = dt.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    document.getElementById('header-location').textContent = data.profile.location || 'Localisation inconnue';
+    document.getElementById('header-patrimoine').textContent = (data.profile.patrimoine || 0).toLocaleString('fr-FR') + '€';
+    document.getElementById('footer-updated').textContent = data.lastUpdated;
+
+    // Hero
+    const score = today.score || 0;
+    document.getElementById('hero-score').textContent = score > 0 ? score : '—';
+    document.getElementById('hero-date-label').textContent = today.note || 'Aujourd\'hui';
+    document.getElementById('hero-feedback').textContent = today.feedback || 'Check-in ce soir pour obtenir le feedback Jarvis.';
+
+    // Charts
+    renderScoreDonut(score);
+    renderPillarScores(today);
+    renderAlerts(today);
+    renderDailyMetrics(today);
+    renderChecklist(today);
+    renderWeekChart(data.days);
+    renderActivityChart();
+
+  } catch(e) {
+    console.error('Erreur chargement data:', e);
+  }
+}
+
+init();
+</script>
+</body>
+</html>

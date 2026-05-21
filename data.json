@@ -1,0 +1,57 @@
+{
+  "lastUpdated": "2026-05-21",
+  "profile": {
+    "name": "Shayan",
+    "goal": "Top 0.00000001%",
+    "location": "Sanya, Chine",
+    "patrimoine": 6000,
+    "client": "Didier (~1500-1750€/mois)"
+  },
+  "days": [
+    {
+      "date": "2026-05-21",
+      "score": 0,
+      "note": "J1 — Setup JARVIS. Premier check-in ce soir.",
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "score": 0
+      },
+      "physique": {
+        "gym": false,
+        "gym_type": "",
+        "coucher": "06:15",
+        "lever": "",
+        "heures_sommeil": 0,
+        "nutrition_repas": 0,
+        "eau_litres": 0,
+        "score": 0
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "apprentissage": "",
+        "score": 0
+      },
+      "mental": {
+        "energie": 0,
+        "focus": 0,
+        "screen_time_reseaux_min": 233,
+        "score": 0
+      },
+      "social": {
+        "interaction_hv": "",
+        "contenu_poste": false,
+        "score": 0
+      }
+    }
+  ]
+}
