@@ -34,6 +34,15 @@
       "contexte": "À faire dès le retour à La Réunion (après le 29 mai).",
       "date_ajout": "2026-05-21",
       "echeance": "2026-06-05"
+    },
+    {
+      "id": 4,
+      "titre": "Refaire un nouveau passeport",
+      "priorite": "normale",
+      "statut": "todo",
+      "contexte": "Passeport actuel expire le 30/01/2027. À faire dès le retour à La Réunion (après le 29 mai).",
+      "date_ajout": "2026-05-22",
+      "echeance": "2026-07-01"
     }
   ],
   "crm": {
