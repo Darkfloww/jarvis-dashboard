@@ -292,6 +292,19 @@ nav {
   .rec-grid { grid-template-columns:repeat(2,1fr); }
 }
 
+/* DATE CHIPS */
+.date-chip {
+  padding:6px 14px; border-radius:8px; font-size:12px; font-weight:600;
+  border:1px solid var(--border); background:var(--glass); color:var(--text2);
+  cursor:pointer; transition:all .2s; white-space:nowrap; display:flex;
+  flex-direction:column; align-items:center; gap:2px;
+}
+.date-chip:hover { border-color:var(--border2); color:var(--text); }
+.date-chip.selected { border-color:var(--purple); background:rgba(168,85,247,.12); color:#fff; }
+.date-chip.today-chip { border-color:rgba(255,255,255,.2); }
+.date-chip .chip-score { font-size:10px; font-weight:700; }
+.date-chip .chip-dot { width:5px; height:5px; border-radius:50%; margin-top:2px; }
+
 /* FOOTER */
 .footer { text-align:center; color:var(--muted); font-size:11px; padding:40px 0 24px; }
 </style>
@@ -308,9 +321,9 @@ nav {
   <div class="nav-left">
     <div class="logo">⚡ JARVIS</div>
     <div class="nav-tabs">
-      <button class="tab active" onclick="showTab('today')">Aujourd'hui</button>
-      <button class="tab" onclick="showTab('trends')">Tendances</button>
-      <button class="tab" onclick="showTab('records')">Records</button>
+      <button class="tab active" onclick="showTab('today',event)">Journal</button>
+      <button class="tab" onclick="showTab('trends',event)">Tendances</button>
+      <button class="tab" onclick="showTab('records',event)">Records</button>
     </div>
   </div>
   <div class="nav-right">
@@ -319,6 +332,11 @@ nav {
     <div class="pill" id="nav-date">—</div>
   </div>
 </nav>
+
+<!-- DATE NAVIGATOR -->
+<div id="date-nav" style="margin-bottom:20px;overflow-x:auto;padding-bottom:4px">
+  <div id="date-chips" style="display:flex;gap:6px;min-width:max-content;padding:2px"></div>
+</div>
 
 <!-- ══════════════ TODAY ══════════════ -->
 <div id="tab-today" class="section active">
@@ -746,11 +764,75 @@ const miniChart = (id,labels,data,color,max) => {
 };
 
 // ── TABS ──────────────────────────────────────────────────────
-function showTab(name){
+function showTab(name,e){
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   $('tab-'+name).classList.add('active');
-  event.target.classList.add('active');
+  if(e) e.target.classList.add('active');
+}
+
+// ── DATE NAV ──────────────────────────────────────────────────────
+let _allDays=[], _selectedIdx=0;
+
+function renderDateNav(days, selectedIdx){
+  const container=$('date-chips');
+  const today=new Date().toISOString().slice(0,10);
+  container.innerHTML=days.map((d,i)=>{
+    const dt=new Date(d.date+'T12:00:00');
+    const isToday=d.date===today;
+    const s=d.score||0;
+    const scoreCol=s>0?(s>=80?'#a855f7':s>=60?'#eab308':'#ef4444'):'#475569';
+    const dayLbl=isToday?'Aujourd\'hui':dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'});
+    return `<div class="date-chip ${i===selectedIdx?'selected':''} ${isToday?'today-chip':''}"
+      onclick="selectDay(${i})" id="chip-${i}">
+      <span>${dayLbl}</span>
+      <span class="chip-score" style="color:${scoreCol}">${s>0?s+'/100':'—'}</span>
+      <div class="chip-dot" style="background:${scoreCol}"></div>
+    </div>`;
+  }).join('');
+  // Scroll to selected
+  setTimeout(()=>{
+    const el=$('chip-'+selectedIdx);
+    if(el) el.scrollIntoView({inline:'center',behavior:'smooth'});
+  },50);
+}
+
+function selectDay(idx){
+  _selectedIdx=idx;
+  const day=_allDays[idx];
+  // Update chips
+  document.querySelectorAll('.date-chip').forEach((c,i)=>{
+    c.classList.toggle('selected',i===idx);
+  });
+  // Re-render today section with selected day
+  renderDayView(day, _allDays);
+}
+
+function renderDayView(day, allDays){
+  const dt=new Date(day.date+'T12:00:00');
+  $('h-date').textContent=day.note||(dt.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}));
+  $('h-feedback').textContent=day.feedback||'Check-in ce soir.';
+  $('nav-date').textContent=dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'long'});
+
+  // Re-render score donut (destroy old)
+  const canvas=$('scoreDonut');
+  const newCanvas=canvas.cloneNode(true);
+  canvas.parentNode.replaceChild(newCanvas,canvas);
+  renderDonut(day.score, newCanvas);
+
+  renderPillars(day);
+  renderAlerts(day, calcStreak(allDays, day.date));
+  renderMetrics(day);
+  renderStreak(allDays, day.date);
+  renderChecklist(day);
+
+  // AW chart (destroy old)
+  const awc=$('awChart');
+  const newAWC=awc.cloneNode(true);
+  awc.parentNode.replaceChild(newAWC,awc);
+  renderAW(day.activitywatch, newAWC);
+
+  renderFeedback(day, allDays);
 }
 
 // ── DATA ──────────────────────────────────────────────────────
@@ -759,11 +841,14 @@ async function load(){
   return r.json();
 }
 
-function calcStreak(days){
+function calcStreak(days, upToDate){
+  // Count streak up to (and including) upToDate, or last day if not specified
+  const idx=upToDate?days.findIndex(d=>d.date===upToDate):days.length-1;
+  const subset=idx>=0?days.slice(0,idx+1):days;
   let s=0;
-  for(let i=days.length-1;i>=0;i--){
-    if(days[i].mental?.no_pmo===true) s++;
-    else if(days[i].mental?.no_pmo===false) break;
+  for(let i=subset.length-1;i>=0;i--){
+    if(subset[i].mental?.no_pmo===true) s++;
+    else if(subset[i].mental?.no_pmo===false) break;
   }
   return s;
 }
@@ -800,8 +885,8 @@ function renderAlerts(day,streak){
 }
 
 // ── SCORE DONUT ──────────────────────────────────────────────────────
-function renderDonut(score){
-  const c=$('scoreDonut'), ctx=c.getContext('2d');
+function renderDonut(score, canvasEl){
+  const c=canvasEl||$('scoreDonut'), ctx=c.getContext('2d');
   const s=score||0, col=colScore(s);
   $('h-score').textContent=s||'—';
   $('h-score').style.color=col;
@@ -897,8 +982,8 @@ function renderMetrics(day){
 }
 
 // ── STREAK ──────────────────────────────────────────────────────
-function renderStreak(days){
-  const streak=calcStreak(days), best=calcBestStreak(days);
+function renderStreak(days, upToDate){
+  const streak=calcStreak(days,upToDate), best=calcBestStreak(days);
   const col=streak>=30?'#a855f7':streak>=14?'#22c55e':streak>=7?'#eab308':'#e2e8f0';
 
   // KPI
@@ -950,7 +1035,7 @@ function renderChecklist(day){
 }
 
 // ── AW CHART ──────────────────────────────────────────────────────
-function renderAW(awData){
+function renderAW(awData, canvasEl){
   const total=$('aw-total');
   const ignore=['loginwindow','Finder','SystemUIServer','Dock','WindowServer','ControlStrip',''];
   const apps=Object.entries(awData?.apps||{})
@@ -958,7 +1043,7 @@ function renderAW(awData){
     .sort((a,b)=>b[1]-a[1]).slice(0,7);
 
   total.textContent=(awData?.total_min||0)+'min';
-  const c=$('awChart'), ctx=c.getContext('2d');
+  const c=canvasEl||$('awChart'), ctx=c.getContext('2d');
   const colors=['#3b82f6','#a855f7','#22c55e','#eab308','#ef4444','#06b6d4','#f97316'];
 
   if(!apps.length){
@@ -1098,30 +1183,25 @@ function renderFeedback(day, allDays){
 async function init(){
   try {
     const data=await load();
-    const today=data.days[data.days.length-1];
+    _allDays=data.days;
+    _selectedIdx=data.days.length-1;
+    const today=data.days[_selectedIdx];
 
-    // Nav
-    const dt=new Date(today.date);
-    $('nav-date').textContent=dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'long'});
+    // Static nav
     $('nav-location').textContent=data.profile?.location||'—';
     $('k-patrimoine').textContent=(data.profile?.patrimoine||0).toLocaleString('fr-FR')+'€';
     $('footer-date').textContent=data.lastUpdated;
 
-    // Hero
-    $('h-date').textContent=today.note||(dt.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}));
-    $('h-feedback').textContent=today.feedback||'Check-in ce soir pour le feedback Jarvis.';
+    // Date nav
+    renderDateNav(data.days, _selectedIdx);
 
-    renderDonut(today.score);
-    renderPillars(today);
-    renderAlerts(today, calcStreak(data.days));
-    renderMetrics(today);
-    renderStreak(data.days);
-    renderChecklist(today);
-    renderAW(today.activitywatch);
+    // Render today view
+    renderDayView(today, data.days);
+
+    // Charts (always full history)
     renderTrends(data.days);
     renderHeatmap(data.days);
     renderRecords(data.days);
-    renderFeedback(today, data.days);
 
   } catch(e){
     console.error(e);
