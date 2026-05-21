@@ -7,6 +7,33 @@
     "patrimoine": 6000,
     "client": "Didier (~1500-1750€/mois)"
   },
+  "crm": {
+    "prospects": []
+  },
+  "finance": {
+    "target_mensuel": 5000,
+    "months": [
+      {
+        "month": "2026-05",
+        "revenus_total": 0,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 0,
+        "patrimoine_fin": 6000
+      }
+    ]
+  },
+  "training": {
+    "programme": "À définir",
+    "sessions": []
+  },
+  "closeGuard": {
+    "statut": "En développement",
+    "clients": 0,
+    "mrr": 0,
+    "notes": ""
+  },
   "days": [
     {
       "date": "2026-05-21",

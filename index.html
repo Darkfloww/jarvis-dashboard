@@ -323,6 +323,7 @@ nav {
     <div class="nav-tabs">
       <button class="tab active" onclick="showTab('today',event)">Journal</button>
       <button class="tab" onclick="showTab('trends',event)">Tendances</button>
+      <button class="tab" onclick="showTab('business',event)">Business</button>
       <button class="tab" onclick="showTab('records',event)">Records</button>
     </div>
   </div>
@@ -668,6 +669,63 @@ nav {
   </div>
 
 </div><!-- end trends -->
+
+<!-- ══════════════ BUSINESS ══════════════ -->
+<div id="tab-business" class="section">
+
+  <div class="sdiv">CRM — Pipeline prospects</div>
+  <div class="card" style="margin-bottom:16px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div style="font-size:13px;color:var(--text2)">Tous tes prospects actifs. Mis à jour via le check-in soir.</div>
+      <div class="card-score" id="crm-count">0 prospects</div>
+    </div>
+    <div id="crm-table">
+      <div style="font-size:13px;color:var(--muted);padding:12px 0">Aucun prospect enregistré. Commence à tracker tes DMs ce soir.</div>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div class="card" style="--c:var(--green)">
+      <div class="card-hd">
+        <div class="card-title"><div class="dot"></div> Revenus — Mai 2026</div>
+      </div>
+      <div class="mrow"><div class="lbl">Commission Didier</div><div class="val" id="fin-didier">—€</div></div>
+      <div class="mrow"><div class="lbl">CloseGuard MRR</div><div class="val" id="fin-cg">—€</div></div>
+      <div class="mrow"><div class="lbl">Kenzo (5%)</div><div class="val" id="fin-kenzo">—€</div></div>
+      <div class="mrow"><div class="lbl" style="font-weight:700">Total revenus</div><div class="val" id="fin-total" style="font-size:18px;font-weight:800;color:var(--green)">—€</div></div>
+      <div class="mrow"><div class="lbl">Dépenses</div><div class="val" id="fin-dep" style="color:var(--red)">—€</div></div>
+      <div class="mrow"><div class="lbl">Patrimoine fin de mois</div><div class="val" id="fin-patri">—€</div></div>
+      <div style="margin-top:12px">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px">Progression vers target mensuel</div>
+        <div class="pbar"><div class="pfill" id="fin-prog" style="background:var(--green);width:0%"></div></div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px" id="fin-target-lbl">Target : À définir</div>
+      </div>
+    </div>
+
+    <div class="card" style="--c:var(--blue)">
+      <div class="card-hd">
+        <div class="card-title"><div class="dot"></div> CloseGuard SaaS</div>
+      </div>
+      <div class="mrow"><div class="lbl">Statut</div><div class="val" id="cg-statut">—</div></div>
+      <div class="mrow"><div class="lbl">Clients</div><div class="val" id="cg-clients">0</div></div>
+      <div class="mrow"><div class="lbl">MRR</div><div class="val" id="cg-mrr" style="color:var(--green)">0€</div></div>
+      <div class="mrow"><div class="lbl">Team</div><div class="val" style="font-size:11px">Shayan + Fares + Assed</div></div>
+      <div class="mrow"><div class="lbl">Notes</div><div class="val" id="cg-notes" style="font-size:11px;max-width:140px;text-align:right">—</div></div>
+    </div>
+  </div>
+
+  <div class="sdiv">Programme d'entraînement</div>
+  <div class="card">
+    <div class="card-hd">
+      <div class="card-title"><div class="dot" style="background:var(--red)"></div> Training Log</div>
+      <div class="card-score" id="train-prog">—</div>
+    </div>
+    <div id="train-sessions">
+      <div style="font-size:13px;color:var(--muted)">Aucune session enregistrée. Définis ton programme et je tracke la progression.</div>
+    </div>
+  </div>
+
+</div><!-- end business -->
 
 <!-- ══════════════ RECORDS ══════════════ -->
 <div id="tab-records" class="section">
@@ -1120,6 +1178,78 @@ function renderRecords(days){
   $('r-avg-score').textContent=last7Avg.toFixed(0);
 }
 
+// ── BUSINESS TAB ──────────────────────────────────────────────────────
+function renderBusinessTab(data){
+  // CRM
+  const prospects = data.crm?.prospects || [];
+  $('crm-count').textContent = prospects.length + ' prospect' + (prospects.length > 1 ? 's' : '');
+
+  const statusColors = {
+    dm_sent: '#64748b', responded: '#eab308', call_scheduled: '#3b82f6',
+    closed: '#22c55e', no_response: '#475569'
+  };
+  const statusLabels = {
+    dm_sent: 'DM envoyé', responded: 'A répondu', call_scheduled: 'Call prévu',
+    closed: 'Closé ✓', no_response: 'Pas de réponse'
+  };
+
+  if(prospects.length === 0){
+    $('crm-table').innerHTML = '<div style="font-size:13px;color:var(--muted);padding:12px 0">Aucun prospect. Ce soir dans ton check-in, dis-moi les noms des gens que tu as contactés.</div>';
+  } else {
+    const header = `<div style="display:grid;grid-template-columns:1fr 80px 100px 1fr;gap:8px;padding:6px 8px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);border-bottom:1px solid var(--border)">
+      <div>Prospect</div><div>Contact</div><div>Statut</div><div>Prochaine action</div>
+    </div>`;
+    const rows = prospects.map(p => {
+      const col = statusColors[p.status] || '#64748b';
+      const lbl = statusLabels[p.status] || p.status;
+      return `<div style="display:grid;grid-template-columns:1fr 80px 100px 1fr;gap:8px;padding:8px;font-size:12px;border-bottom:1px solid rgba(255,255,255,.03)">
+        <div style="font-weight:600">${p.name||'—'} <span style="font-size:10px;color:var(--muted)">${p.platform||''}</span></div>
+        <div style="color:var(--muted)">${p.contacted||'—'}</div>
+        <div><span style="padding:2px 6px;border-radius:4px;background:${col}22;color:${col};font-size:10px;font-weight:700">${lbl}</span></div>
+        <div style="color:var(--text2)">${p.next_action||'—'}</div>
+      </div>`;
+    }).join('');
+    $('crm-table').innerHTML = header + rows;
+  }
+
+  // Finance
+  const months = data.finance?.months || [];
+  const currentMonth = months.find(m => m.month === new Date().toISOString().slice(0,7)) || {};
+  $('fin-didier').textContent = (currentMonth.commissions_didier || 0) + '€';
+  $('fin-cg').textContent = (currentMonth.commissions_closeGuard || 0) + '€';
+  $('fin-kenzo').textContent = (currentMonth.commissions_kenzo || 0) + '€';
+  const total = (currentMonth.revenus_total || 0);
+  $('fin-total').textContent = total.toLocaleString('fr-FR') + '€';
+  $('fin-dep').textContent = (currentMonth.depenses || 0) + '€';
+  $('fin-patri').textContent = (currentMonth.patrimoine_fin || 0).toLocaleString('fr-FR') + '€';
+  const target = data.finance?.target_mensuel || 5000;
+  const pct = Math.min(total / target * 100, 100).toFixed(0);
+  $('fin-prog').style.width = pct + '%';
+  $('fin-target-lbl').textContent = `${total.toLocaleString('fr-FR')}€ / ${target.toLocaleString('fr-FR')}€ (${pct}%)`;
+
+  // CloseGuard
+  const cg = data.closeGuard || {};
+  $('cg-statut').textContent = cg.statut || '—';
+  $('cg-clients').textContent = cg.clients || 0;
+  $('cg-mrr').textContent = (cg.mrr || 0) + '€';
+  $('cg-notes').textContent = cg.notes || '—';
+
+  // Training
+  const training = data.training || {};
+  $('train-prog').textContent = training.programme || 'À définir';
+  const sessions = training.sessions || [];
+  if(sessions.length === 0){
+    $('train-sessions').innerHTML = '<div style="font-size:13px;color:var(--muted)">Dis-moi ton programme (PPL / Push-Pull-Legs / Full Body) et je commence à traquer les séances.</div>';
+  } else {
+    const last5 = sessions.slice(-5).reverse();
+    $('train-sessions').innerHTML = last5.map(s => `
+      <div class="mrow">
+        <div class="lbl">${s.date} — ${s.type}</div>
+        <div class="val" style="font-size:11px">${s.notes||''}</div>
+      </div>`).join('');
+  }
+}
+
 // ── FEEDBACK ──────────────────────────────────────────────────────
 function renderFeedback(day, allDays){
   const fb=day.jarvis_feedback;
@@ -1205,6 +1335,7 @@ async function init(){
     renderTrends(data.days);
     renderHeatmap(data.days);
     renderRecords(data.days);
+    renderBusinessTab(data);
 
   } catch(e){
     console.error(e);
