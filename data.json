@@ -4,7 +4,7 @@
     "name": "Shayan",
     "goal": "Top 0.00000001%",
     "location": "Kuala Lumpur → La Réunion (29 mai)",
-    "patrimoine": 5230,
+    "patrimoine": 5678,
     "client": "Didier (~1500-1750€/mois)"
   },
   "tasks": [
@@ -43,23 +43,155 @@
     "target_mensuel": 20000,
     "target_date": "2026-11-30",
     "roadmap": [
-      {"month": "2026-05", "target": 1750},
-      {"month": "2026-06", "target": 3500},
-      {"month": "2026-07", "target": 6000},
-      {"month": "2026-08", "target": 10000},
-      {"month": "2026-09", "target": 14000},
-      {"month": "2026-10", "target": 17000},
-      {"month": "2026-11", "target": 20000}
+      {
+        "month": "2026-05",
+        "target": 1750
+      },
+      {
+        "month": "2026-06",
+        "target": 3500
+      },
+      {
+        "month": "2026-07",
+        "target": 6000
+      },
+      {
+        "month": "2026-08",
+        "target": 10000
+      },
+      {
+        "month": "2026-09",
+        "target": 14000
+      },
+      {
+        "month": "2026-10",
+        "target": 17000
+      },
+      {
+        "month": "2026-11",
+        "target": 20000
+      }
     ],
     "months": [
       {
-        "month": "2026-05",
-        "revenus_total": 0,
+        "month": "2025-06",
+        "revenus_total": 80,
         "commissions_didier": 0,
         "commissions_closeGuard": 0,
         "commissions_kenzo": 0,
-        "depenses": 0,
-        "patrimoine_fin": 5230
+        "depenses": 139,
+        "patrimoine_fin": 0,
+        "nb_transactions": 15
+      },
+      {
+        "month": "2025-07",
+        "revenus_total": 154,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 132,
+        "patrimoine_fin": 0,
+        "nb_transactions": 30
+      },
+      {
+        "month": "2025-08",
+        "revenus_total": 388,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 352,
+        "patrimoine_fin": 0,
+        "nb_transactions": 78
+      },
+      {
+        "month": "2025-09",
+        "revenus_total": 1541,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 1526,
+        "patrimoine_fin": 0,
+        "nb_transactions": 78
+      },
+      {
+        "month": "2025-10",
+        "revenus_total": 20,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 132,
+        "patrimoine_fin": 0,
+        "nb_transactions": 32
+      },
+      {
+        "month": "2025-11",
+        "revenus_total": 2560,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 1458,
+        "patrimoine_fin": 0,
+        "nb_transactions": 35
+      },
+      {
+        "month": "2025-12",
+        "revenus_total": 824,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 758,
+        "patrimoine_fin": 0,
+        "nb_transactions": 61
+      },
+      {
+        "month": "2026-01",
+        "revenus_total": 6032,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 1638,
+        "patrimoine_fin": 0,
+        "nb_transactions": 122
+      },
+      {
+        "month": "2026-02",
+        "revenus_total": 4859,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 3463,
+        "patrimoine_fin": 0,
+        "nb_transactions": 76
+      },
+      {
+        "month": "2026-03",
+        "revenus_total": 6508,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 6906,
+        "patrimoine_fin": 0,
+        "nb_transactions": 241
+      },
+      {
+        "month": "2026-04",
+        "revenus_total": 2466,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 3750,
+        "patrimoine_fin": 0,
+        "nb_transactions": 364
+      },
+      {
+        "month": "2026-05",
+        "revenus_total": 5230,
+        "commissions_didier": 0,
+        "commissions_closeGuard": 0,
+        "commissions_kenzo": 0,
+        "depenses": 4620,
+        "patrimoine_fin": 0,
+        "nb_transactions": 370
       }
     ]
   },
@@ -68,10 +200,34 @@
     "objectif": "Pectoraux, épaules, bras (biceps+triceps+avant-bras), dos, abdos+obliques",
     "frequence": "4 séances/semaine minimum",
     "programme_detail": {
-      "Push": ["Développé couché / Push-ups", "Développé militaire", "Élévations latérales", "Dips / Extensions triceps", "Écarté pectoraux"],
-      "Pull": ["Tractions / Tirage vertical", "Rowing barre / Câble", "Face pull", "Curl biceps barre", "Curl marteau (avant-bras)", "Curl inversé (avant-bras)"],
-      "Core": ["Planche (3×60s)", "Crunchs / Relevé de buste", "Relevé de jambes", "Obliques (Russian twist / Woodchop)", "Mountain climbers"],
-      "Bras": ["Superset biceps / triceps", "Curl concentré", "Skullcrushers", "Curl poignets (avant-bras)"]
+      "Push": [
+        "Développé couché / Push-ups",
+        "Développé militaire",
+        "Élévations latérales",
+        "Dips / Extensions triceps",
+        "Écarté pectoraux"
+      ],
+      "Pull": [
+        "Tractions / Tirage vertical",
+        "Rowing barre / Câble",
+        "Face pull",
+        "Curl biceps barre",
+        "Curl marteau (avant-bras)",
+        "Curl inversé (avant-bras)"
+      ],
+      "Core": [
+        "Planche (3×60s)",
+        "Crunchs / Relevé de buste",
+        "Relevé de jambes",
+        "Obliques (Russian twist / Woodchop)",
+        "Mountain climbers"
+      ],
+      "Bras": [
+        "Superset biceps / triceps",
+        "Curl concentré",
+        "Skullcrushers",
+        "Curl poignets (avant-bras)"
+      ]
     },
     "sessions": []
   },

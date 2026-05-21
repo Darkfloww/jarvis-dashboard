@@ -481,6 +481,11 @@ nav {
   </div>
 
   <!-- SCREEN TIME + AW -->
+  <div class="sdiv">Revenus vs Dépenses — 12 mois (Revolut)</div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="ch" style="height:220px"><canvas id="finChart"></canvas></div>
+  </div>
+
   <div class="g2">
     <div class="card" style="--c:var(--orange)">
       <div class="card-hd">
@@ -1174,6 +1179,33 @@ function renderTrends(days){
   miniChart('t-dw',labels,last7.map(d=>d.cognitif?.deep_work_heures||0),'#3b82f6');
 }
 
+function renderFinanceChart(data){
+  const c=$('finChart');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  const months=data.finance?.months||[];
+  const labels=months.map(m=>{
+    const d=new Date(m.month+'-15');
+    return d.toLocaleDateString('fr-FR',{month:'short',year:'2-digit'});
+  });
+  new Chart(ctx,{type:'bar',
+    data:{labels,datasets:[
+      {label:'Revenus',data:months.map(m=>m.revenus_total||0),
+        backgroundColor:'rgba(34,197,94,.3)',borderColor:'#22c55e',borderWidth:1,borderRadius:4},
+      {label:'Dépenses',data:months.map(m=>-(m.depenses||0)),
+        backgroundColor:'rgba(239,68,68,.25)',borderColor:'#ef4444',borderWidth:1,borderRadius:4}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:'#94a3b8',font:{size:11}}},
+        tooltip:{backgroundColor:'rgba(5,5,8,.95)',borderColor:'rgba(255,255,255,.1)',borderWidth:1,
+          callbacks:{label:c=>`${c.dataset.label}: ${Math.abs(c.parsed.y).toLocaleString('fr-FR')}€`}}},
+      scales:{y:{grid:{color:'rgba(255,255,255,.04)'},
+        ticks:{color:'#475569',font:{size:10},callback:v=>Math.abs(v/1000).toFixed(0)+'k€'},
+        border:{display:false}},
+        x:{grid:{display:false},ticks:{color:'#475569',font:{size:10}},border:{display:false}}}}
+  });
+}
+
 // ── HEATMAP ──────────────────────────────────────────────────────
 function renderHeatmap(days){
   const el=$('heatmap');
@@ -1436,6 +1468,7 @@ async function init(){
     renderRecords(data.days);
     renderBusinessTab(data);
     renderTasks(data.tasks);
+    renderFinanceChart(data);
 
   } catch(e){
     console.error(e);
