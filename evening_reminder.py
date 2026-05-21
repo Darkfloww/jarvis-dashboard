@@ -29,8 +29,9 @@ Envoie-moi un vocal avec toutes ces réponses dans l'ordre :
 → Coran ? (oui/non)
 
 🧠 <b>COGNITIF</b>
-→ Heures de deep work ?
+→ Heures de deep work + sur quoi ? (ex: "3h sur stories Didier")
 → Duolingo russe ? (oui/non + combien de minutes)
+→ Apprentissage notable du jour ? (optionnel)
 → Qu'est-ce que t'as appris ou appliqué aujourd'hui ?
 
 ⚡ <b>MENTAL</b>

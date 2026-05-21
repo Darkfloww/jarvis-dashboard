@@ -504,6 +504,7 @@ nav {
         <div class="card-score" id="cg-score">0/15</div>
       </div>
       <div class="mrow"><div class="lbl">Deep work</div><div class="val" id="cg-dw">—h</div></div>
+      <div class="mrow"><div class="lbl">Sur quoi</div><div class="val" id="cg-dw-topic" style="font-size:11px;max-width:140px;text-align:right;color:#94a3b8">—</div></div>
       <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val" id="cg-duo">—</div></div>
       <div class="mrow"><div class="lbl">Apprentissage</div><div class="val" id="cg-learn" style="font-size:11px;max-width:140px;text-align:right;">—</div></div>
       <div class="pbar"><div class="pfill" id="cg-p" style="background:var(--blue)"></div></div>
@@ -1200,6 +1201,7 @@ function renderMetrics(day){
   // Cognitif
   $('cg-score').textContent=`${c.score||0}/15`;
   $('cg-dw').innerHTML=c.deep_work_heures?`<span style="color:${colVal(c.deep_work_heures,3,1.5)}">${c.deep_work_heures}h</span>`:'—h';
+  if($('cg-dw-topic')) $('cg-dw-topic').textContent=c.deep_work_topic||c.apprentissage||'—';
   $('cg-duo').innerHTML=c.duolingo_russe!==undefined?boolTag(c.duolingo_russe)+(c.duolingo_minutes?` <span style="color:#64748b;font-size:11px">${c.duolingo_minutes}min</span>`:''):'—';
   $('cg-learn').textContent=c.apprentissage||'—';
   $('cg-p').style.width=(c.score||0)/15*100+'%';
