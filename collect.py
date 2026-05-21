@@ -143,13 +143,17 @@ def parse_daily_log_entry(date_str):
         if "(" in gym_raw:
             gym_type = gym_raw[gym_raw.find("(")+1:gym_raw.find(")")]
 
+    nutrition_clean = extract_bool("Nutrition clean") or extract_bool("no goyslop")
+    repas_raw = extract("Repas")
+
     result["physique"] = {
         "gym": gym_done,
         "gym_type": gym_type,
         "coucher": extract("couché") or extract("Couché"),
         "lever": extract("levé") or extract("Levé"),
         "heures_sommeil": extract_float("heures") or extract_float("sommeil h"),
-        "nutrition_repas": extract_int("Nutrition"),
+        "nutrition_clean": nutrition_clean,
+        "repas": repas_raw or "",
         "eau_litres": extract_float("Eau"),
         "score": extract_int("score_physique", 0)
     }

@@ -664,8 +664,12 @@
         <div class="value" id="p-sleep-h">—h</div>
       </div>
       <div class="metric-row">
-        <div class="label">Nutrition</div>
-        <div class="value" id="p-nutrition">— repas</div>
+        <div class="label">No goyslop</div>
+        <div class="value" id="p-goyslop">—</div>
+      </div>
+      <div class="metric-row">
+        <div class="label">Repas du jour</div>
+        <div class="value" id="p-repas" style="font-size:11px; max-width:130px; text-align:right;">—</div>
       </div>
       <div class="metric-row">
         <div class="label">Hydratation</div>
@@ -972,6 +976,15 @@ function renderAlerts(day) {
     `;
   }
 
+  if (day.physique?.nutrition_clean === false) {
+    container.innerHTML += `
+      <div class="alert">
+        <div class="alert-icon">🍔</div>
+        <div><strong>Goyslop détecté.</strong> -5pts Physique. Règle absolue : zéro transformé. Viande, poisson, oeufs, fruits, légumes, riz uniquement.</div>
+      </div>
+    `;
+  }
+
   const dms = day.business?.dms || 0;
   if (dms < 20 && dms > 0) {
     container.innerHTML += `
@@ -1003,7 +1016,8 @@ function renderDailyMetrics(day) {
   document.getElementById('p-gym').innerHTML = p.gym !== undefined ? boolTag(p.gym) + (p.gym_type ? ` <span style="color:var(--muted);font-size:11px;">(${p.gym_type})</span>` : '') : '—';
   document.getElementById('p-sleep').textContent = p.coucher && p.lever ? `${p.coucher} → ${p.lever}` : p.coucher ? `Couché ${p.coucher}` : '—';
   document.getElementById('p-sleep-h').textContent = p.heures_sommeil ? p.heures_sommeil + 'h' : '—h';
-  document.getElementById('p-nutrition').textContent = p.nutrition_repas ? p.nutrition_repas + ' repas propres' : '—';
+  document.getElementById('p-goyslop').innerHTML = p.nutrition_clean !== undefined ? boolTag(p.nutrition_clean) : '—';
+  document.getElementById('p-repas').textContent = p.repas || '—';
   document.getElementById('p-eau').textContent = p.eau_litres ? p.eau_litres + 'L / 2.5L' : '— / 2.5L';
   document.getElementById('p-progress').style.width = (p.score / 20 * 100) + '%';
 
@@ -1034,6 +1048,7 @@ function renderChecklist(day) {
   const checks = [
     { label: '20 DMs outreach', done: (day.business?.dms || 0) >= 20 },
     { label: 'Gym', done: day.physique?.gym === true },
+    { label: 'No goyslop', done: day.physique?.nutrition_clean === true },
     { label: 'Fajr', done: day.spirituel?.fajr === true },
     { label: '3+ prières', done: (day.spirituel?.prieres || 0) >= 3 },
     { label: 'Coran', done: day.spirituel?.coran === true },
