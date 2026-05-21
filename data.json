@@ -11,19 +11,20 @@
     {
       "date": "2026-05-21",
       "score": 0,
-      "note": "J1 — Setup JARVIS. Premier check-in ce soir.",
+      "note": "J1 — Setup JARVIS System",
+      "feedback": "Premier check-in ce soir. Système en place.",
       "business": {
         "dms": 0,
         "calls_bookes": 0,
         "calls_closes": 0,
         "commission_estimee": 0,
-        "delivery_done": false,
+        "delivery_done": null,
         "score": 0
       },
       "physique": {
-        "gym": false,
+        "gym": null,
         "gym_type": "",
-        "coucher": "06:15",
+        "coucher": "",
         "lever": "",
         "heures_sommeil": 0,
         "nutrition_repas": 0,
@@ -31,9 +32,9 @@
         "score": 0
       },
       "spirituel": {
-        "fajr": false,
+        "fajr": null,
         "prieres": 0,
-        "coran": false,
+        "coran": null,
         "score": 0
       },
       "cognitif": {
@@ -49,9 +50,18 @@
       },
       "social": {
         "interaction_hv": "",
-        "contenu_poste": false,
+        "contenu_poste": null,
         "score": 0
-      }
+      },
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 501,
+        "apps": {
+          "Arc": 9,
+          "Terminal": 18
+        }
+      },
+      "screen_time_updated": true
     }
   ]
 }

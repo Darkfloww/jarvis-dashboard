@@ -8,6 +8,7 @@ Outputs: data.json for the dashboard
 import json
 import os
 import re
+import subprocess
 import urllib.request
 import urllib.error
 from datetime import datetime, date
@@ -17,7 +18,7 @@ VAULT = Path("/Users/shayanisse/Documents/Obsidian Vault")
 DAILY_LOG = VAULT / "2 CAPS/JARVIS/DAILY LOG.md"
 SCREEN_TIME_PNG = Path("/Users/shayanisse/Library/Mobile Documents/com~apple~CloudDocs/Jarvis/screen_time.png")
 DATA_JSON = Path("/Users/shayanisse/jarvis-dashboard/data.json")
-AW_API = "http://localhost:5600/api/0"
+AW_API = "http://localhost:5600/api/0/"
 
 
 def load_existing_data():
@@ -37,32 +38,36 @@ def load_existing_data():
     }
 
 
+def aw_get(path):
+    """Query ActivityWatch via curl with redirect following."""
+    url = AW_API + path.lstrip("/")
+    result = subprocess.run(
+        ["curl", "-s", "-L", "--max-time", "5", url],
+        capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        raise Exception(f"curl failed: {result.stderr}")
+    return json.loads(result.stdout)
+
+
 def get_aw_activity():
     """Query ActivityWatch for today's productive app usage."""
     try:
         today = str(date.today())
-        url = f"{AW_API}/buckets"
-        req = urllib.request.Request(url)
-        with urllib.request.urlopen(req, timeout=3) as resp:
-            buckets = json.loads(resp.read())
+        buckets = aw_get("/buckets")
 
         # Find window watcher bucket
-        window_bucket = None
-        for b in buckets:
-            if 'window' in b.lower():
-                window_bucket = b
-                break
-
+        window_bucket = next((b for b in buckets if 'window' in b.lower()), None)
         if not window_bucket:
             return {"status": "no_bucket", "total_min": 0, "apps": {}}
 
-        # Get events for today
-        start = f"{today}T00:00:00+00:00"
-        end = f"{today}T23:59:59+00:00"
-        url2 = f"{AW_API}/buckets/{window_bucket}/events?start={start}&end={end}&limit=1000"
-        req2 = urllib.request.Request(url2)
-        with urllib.request.urlopen(req2, timeout=5) as resp2:
-            events = json.loads(resp2.read())
+        # Get events for today — URL-encode + as %2B (AW server issue)
+        start = f"{today}T00%3A00%3A00%2B00%3A00"
+        end = f"{today}T23%3A59%3A59%2B00%3A00"
+        events_url = f"buckets/{window_bucket}/events?start={start}&end={end}&limit=2000"
+        events = aw_get(events_url)
+        if isinstance(events, dict):
+            raise Exception(f"AW events error: {events}")
 
         apps = {}
         for ev in events:
@@ -88,6 +93,9 @@ def parse_daily_log_entry(date_str):
         return {}
 
     content = DAILY_LOG.read_text(encoding="utf-8")
+
+    # Strip HTML comments (<!-- ... -->) to avoid parsing the template
+    content = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL)
 
     # Find the section for today
     pattern = rf"## {re.escape(date_str)}.*?(?=## 20|\Z)"
