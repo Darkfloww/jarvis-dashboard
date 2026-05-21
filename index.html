@@ -1672,13 +1672,13 @@ async function init(){
     renderDayView(today, data.days);
 
     // Charts (always full history)
-    renderTrends(data.days);
-    renderHeatmap(data.days);
-    renderRecords(data.days);
-    renderBusinessTab(data);
-    renderCorpsTab(data, data.days);
-    renderTasks(data.tasks);
-    renderFinanceChart(data);
+    try { renderTrends(data.days); } catch(e){ console.error('trends',e); }
+    try { renderHeatmap(data.days); } catch(e){ console.error('heatmap',e); }
+    try { renderRecords(data.days); } catch(e){ console.error('records',e); }
+    try { renderBusinessTab(data); } catch(e){ console.error('business',e); }
+    try { renderCorpsTab(data, data.days); } catch(e){ console.error('corps',e); }
+    try { renderTasks(data.tasks); } catch(e){ console.error('tasks',e); }
+    try { renderFinanceChart(data); } catch(e){ console.error('finance',e); }
 
   } catch(e){
     console.error(e);
