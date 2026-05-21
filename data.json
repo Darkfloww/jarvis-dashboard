@@ -253,7 +253,7 @@
   "days": [
     {
       "date": "2026-05-21",
-      "score": 36,
+      "score": 38,
       "note": "J1 — Premier check-in JARVIS",
       "feedback": "Bonne énergie (8/10) mais gros manques sur le spirituel (0/5 prières), le PMO (streak 0) et le sleep cassé (couché 5h).",
       "jarvis_feedback": {
@@ -299,7 +299,12 @@
         "nutrition_clean": false,
         "repas": "Sushis saumon mayo, sashimi, riz boeuf oeuf, Monaca glace matcha (goyslop), cacahuètes raisins secs",
         "eau_litres": 1,
-        "score": 6
+        "score": 8,
+        "goyslop_level": "slip",
+        "goyslop_items": [
+          "Monaca (glace matcha)"
+        ],
+        "nutrition_score": 7
       },
       "spirituel": {
         "fajr": false,
@@ -318,7 +323,14 @@
         "energie": 8,
         "focus": 7,
         "screen_time_reseaux_min": 238,
-        "screen_time_details": {"Telegram": 263, "TikTok": 170, "Arc": 106, "Meet": 79, "Instagram": 68, "WhatsApp Business": 54},
+        "screen_time_details": {
+          "Telegram": 263,
+          "TikTok": 170,
+          "Arc": 106,
+          "Meet": 79,
+          "Instagram": 68,
+          "WhatsApp Business": 54
+        },
         "no_pmo": false,
         "score": 2
       },

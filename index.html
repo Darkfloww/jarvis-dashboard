@@ -456,7 +456,8 @@ nav {
       <div class="mrow"><div class="lbl">Gym</div><div class="val" id="ph-gym">—</div></div>
       <div class="mrow"><div class="lbl">Sommeil</div><div class="val" id="ph-sleep">—</div></div>
       <div class="mrow"><div class="lbl">Heures</div><div class="val" id="ph-sleeph">—h</div></div>
-      <div class="mrow"><div class="lbl">No goyslop</div><div class="val" id="ph-goyslop">—</div></div>
+      <div class="mrow"><div class="lbl">Nutrition</div><div class="val" id="ph-goyslop">—</div></div>
+      <div class="mrow"><div class="lbl">Goyslop détecté</div><div class="val" id="ph-goyslop-items" style="font-size:11px;max-width:140px;text-align:right;color:#64748b">—</div></div>
       <div class="mrow"><div class="lbl">Repas</div><div class="val" id="ph-repas" style="font-size:11px;max-width:140px;text-align:right;word-break:break-word;">—</div></div>
       <div class="mrow"><div class="lbl">Eau</div><div class="val" id="ph-eau">—L</div></div>
       <div class="pbar"><div class="pfill" id="ph-p" style="background:var(--red)"></div></div>
@@ -1116,7 +1117,12 @@ function renderMetrics(day){
   $('ph-gym').innerHTML=p.gym!==undefined?boolTag(p.gym)+(p.gym_type?` <span style="color:#64748b;font-size:11px">(${p.gym_type})</span>`:''):'—';
   $('ph-sleep').textContent=p.coucher&&p.lever?`${p.coucher} → ${p.lever}`:p.coucher?`Couché ${p.coucher}`:'—';
   $('ph-sleeph').textContent=p.heures_sommeil?p.heures_sommeil+'h':'—h';
-  $('ph-goyslop').innerHTML=p.nutrition_clean!==undefined?boolTag(p.nutrition_clean):'—';
+  // Nutrition rating
+  const gLevel = p.goyslop_level || (p.nutrition_clean === true ? 'aucun' : p.nutrition_clean === false ? 'critique' : null);
+  const gColors = {aucun:'#22c55e', slip:'#eab308', modere:'#f97316', critique:'#ef4444'};
+  const gLabels = {aucun:'✓ Aucun goyslop', slip:'Slip mineur', modere:'Modéré', critique:'Critique'};
+  $('ph-goyslop').innerHTML = gLevel ? `<span style="color:${gColors[gLevel]||'#64748b'};font-weight:700">${gLabels[gLevel]||gLevel}</span>` + (p.nutrition_score ? ` <span style="color:#64748b;font-size:11px">${p.nutrition_score}/10</span>` : '') : '—';
+  $('ph-goyslop-items').textContent = p.goyslop_items?.join(', ') || '—';
   $('ph-repas').textContent=p.repas||'—';
   $('ph-p').style.width=(p.score||0)/20*100+'%';
 
@@ -1183,7 +1189,8 @@ function renderChecklist(day){
   const checks=[
     {l:'2 DMs qualité',done:(day.business?.dms||0)>=2},
     {l:'Gym',done:day.physique?.gym===true},
-    {l:'No goyslop',done:day.physique?.nutrition_clean===true},
+    {l:'No goyslop',done:day.physique?.goyslop_level==='aucun'||(day.physique?.nutrition_clean===true && !day.physique?.goyslop_level)},
+    {l:'Nutrition 8/10+',done:(day.physique?.nutrition_score||0)>=8},
     {l:'Fajr',done:day.spirituel?.fajr===true},
     {l:'3+ prières',done:(day.spirituel?.prieres||0)>=3},
     {l:'Coran',done:day.spirituel?.coran===true},
