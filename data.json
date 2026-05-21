@@ -25,6 +25,15 @@
       "contexte": "Photos esthétiques style Alex Faust. Demander à Jarvis de faire les slides.",
       "date_ajout": "2026-05-21",
       "echeance": ""
+    },
+    {
+      "id": 3,
+      "titre": "Faire la demande pour récupérer le permis de conduire",
+      "priorite": "normale",
+      "statut": "todo",
+      "contexte": "À faire dès le retour à La Réunion (après le 29 mai).",
+      "date_ajout": "2026-05-21",
+      "echeance": "2026-06-05"
     }
   ],
   "crm": {
