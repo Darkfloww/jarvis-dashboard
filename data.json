@@ -4,7 +4,7 @@
     "name": "Shayan",
     "goal": "Top 0.00000001%",
     "location": "Kuala Lumpur → La Réunion (29 mai)",
-    "patrimoine": 5678,
+    "patrimoine": 4000,
     "client": "Didier (~1500-1750€/mois)"
   },
   "tasks": [
@@ -368,9 +368,10 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 411,
+        "total_min": 430,
         "apps": {
-          "Terminal": 411
+          "Terminal": 415,
+          "Arc": 15
         }
       },
       "screen_time_updated": true,
