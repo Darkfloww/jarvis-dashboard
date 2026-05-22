@@ -214,7 +214,7 @@
         "commissions_closeGuard": 0,
         "commissions_kenzo": 0,
         "depenses": 4620,
-        "patrimoine_fin": 5678,
+        "patrimoine_fin": 4000,
         "nb_transactions": 370
       }
     ]
@@ -368,10 +368,10 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 430,
+        "total_min": 489,
         "apps": {
           "Terminal": 415,
-          "Arc": 15
+          "Arc": 74
         }
       },
       "screen_time_updated": true,
