@@ -368,9 +368,9 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 223,
+        "total_min": 216,
         "apps": {
-          "Terminal": 223
+          "Terminal": 216
         }
       },
       "screen_time_updated": true,
@@ -422,7 +422,7 @@
     }
   ],
   "streaks": {
-    "nopmo": 0,
+    "nopmo": 1,
     "fajr": 0,
     "gym": 2,
     "dms": 0
