@@ -415,5 +415,37 @@
     "daily_velocity_needed": 17,
     "daily_run_rate": 73,
     "on_track": true
-  }
+  },
+  "subscriptions": [
+    {
+      "name": "Revolut Ultra",
+      "cost": 60,
+      "category": "Banking"
+    },
+    {
+      "name": "Meta Verified",
+      "cost": 17,
+      "category": "Social"
+    },
+    {
+      "name": "iCloud",
+      "cost": 10,
+      "category": "Storage"
+    },
+    {
+      "name": "ClarityScale",
+      "cost": 100,
+      "category": "Tools"
+    },
+    {
+      "name": "Claude",
+      "cost": 20,
+      "category": "AI"
+    },
+    {
+      "name": "Vturb",
+      "cost": 40,
+      "category": "Tools"
+    }
+  ]
 }

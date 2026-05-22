@@ -1,0 +1,16 @@
+=== JARVIS DAILY PUSH Fri May 22 08:00:04 +08 2026 ===
+[JARVIS Collect] 2026-05-22
+Traceback (most recent call last):
+  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 360, in <module>
+    update_data()
+  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 294, in update_data
+    parsed = parse_daily_log_entry(today)
+  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
+    content = DAILY_LOG.read_text(encoding="utf-8")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'

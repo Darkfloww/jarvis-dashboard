@@ -283,6 +283,7 @@ nav{
       <button class="tab active" onclick="showTab('today',event)">Journal</button>
       <button class="tab" onclick="showTab('trends',event)">Tendances</button>
       <button class="tab" onclick="showTab('business',event)">Business</button>
+      <button class="tab" onclick="showTab('finance',event)">Finance</button>
       <button class="tab" onclick="showTab('corps',event)">Corps</button>
       <button class="tab" onclick="showTab('tasks',event)">Tâches</button>
       <button class="tab" onclick="showTab('records',event)">Records</button>
@@ -619,6 +620,64 @@ nav{
   </div>
   <div class="sdiv">Roadmap financière — 20 000€/mois en novembre 2026</div>
   <div class="card"><div id="fin-roadmap" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
+</div>
+
+<!-- FINANCE -->
+<div id="tab-finance" class="section">
+
+  <!-- PATRIMOINE HERO -->
+  <div class="kpi-row fade-up" style="margin-bottom:0">
+    <div class="kpi" style="--kpi-color:var(--green)">
+      <div class="kpi-label">Patrimoine</div>
+      <div class="kpi-value" id="fin2-patri">—€</div>
+      <div class="kpi-sub">cash disponible</div>
+    </div>
+    <div class="kpi" style="--kpi-color:var(--yellow)">
+      <div class="kpi-label">Revenue ce mois</div>
+      <div class="kpi-value" id="fin2-rev">—€</div>
+      <div class="kpi-sub" id="fin2-rev-sub">/ target —€</div>
+    </div>
+    <div class="kpi" style="--kpi-color:var(--red)">
+      <div class="kpi-label">Abonnements fixes</div>
+      <div class="kpi-value" id="fin2-subs-total">—€</div>
+      <div class="kpi-sub">par mois</div>
+    </div>
+    <div class="kpi" style="--kpi-color:var(--cyan)">
+      <div class="kpi-label">Net après abos</div>
+      <div class="kpi-value" id="fin2-net">—€</div>
+      <div class="kpi-sub">revenue — abonnements</div>
+    </div>
+  </div>
+
+  <div class="sdiv">Abonnements mensuels fixes</div>
+  <div class="card" style="margin-bottom:12px">
+    <div id="subs-list"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0 0;border-top:1px solid var(--border-hi);margin-top:4px">
+      <div style="font-size:12px;font-weight:700;color:var(--text)">Total mensuel fixe</div>
+      <div style="font-size:20px;font-weight:800;color:var(--red);font-variant-numeric:tabular-nums" id="subs-total-big">—€</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:8px" id="subs-yearly">Projection annuelle : —€</div>
+  </div>
+
+  <div class="sdiv">Cash Flow — ce mois</div>
+  <div class="card" style="margin-bottom:12px">
+    <div class="mrow"><div class="lbl">Commission perso nette</div><div class="val" id="fin2-commission" style="color:var(--green)">—€</div></div>
+    <div class="mrow"><div class="lbl">Abonnements</div><div class="val" id="fin2-subs-neg" style="color:var(--red)">—€</div></div>
+    <div class="mrow"><div class="lbl">Autres dépenses</div><div class="val" id="fin2-autres" style="color:var(--red)">—€</div></div>
+    <div class="mrow" style="border-top:1px solid var(--border-hi);margin-top:4px;padding-top:8px">
+      <div class="lbl" style="font-weight:700;color:var(--text)">Net cash ce mois</div>
+      <div class="val" style="font-size:20px;font-weight:800" id="fin2-cashflow">—€</div>
+    </div>
+    <div style="margin-top:14px">
+      <div style="font-size:9px;color:var(--text2);margin-bottom:6px">Impact abonnements sur le target mensuel</div>
+      <div class="pbar"><div class="pfill" id="fin2-subs-bar" style="background:var(--red);width:0%"></div></div>
+      <div style="font-size:11px;color:var(--text2);margin-top:6px" id="fin2-subs-pct">—% du target part en abonnements</div>
+    </div>
+  </div>
+
+  <div class="sdiv">Roadmap financière — 20 000€/mois en novembre 2026</div>
+  <div class="card"><div id="fin2-roadmap" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
+
 </div>
 
 <!-- CORPS -->
@@ -1556,6 +1615,91 @@ function renderFeedback(day, allDays){
   }).join('');
 }
 
+// ── FINANCE TAB ──────────────────────────────────────────────────────
+function renderFinanceTab(data) {
+  const subs = data.subscriptions || [];
+  const totalSubs = subs.reduce((a, s) => a + (s.cost || 0), 0);
+  const patrimoine = data.profile?.patrimoine || 0;
+
+  const curM = new Date().toISOString().slice(0, 7);
+  const curMonthData = (data.finance?.months || []).find(m => m.month === curM) || {};
+  const revenue = curMonthData.revenus_perso_net || 0;
+  const target = (data.finance?.roadmap || []).find(r => r.month === curM)?.target ||
+                  data.finance?.target_mensuel || 5000;
+  const autresDepenses = Math.max(0, (curMonthData.depenses || 0) - totalSubs);
+  const netCashflow = revenue - totalSubs - autresDepenses;
+
+  const set = (id, txt) => { const el = $(id); if (el) el.textContent = txt; };
+
+  set('fin2-patri', patrimoine.toLocaleString('fr-FR') + '€');
+  set('fin2-rev', revenue.toLocaleString('fr-FR') + '€');
+  set('fin2-rev-sub', '/ target ' + target.toLocaleString('fr-FR') + '€');
+  set('fin2-subs-total', totalSubs + '€');
+  set('fin2-net', (revenue - totalSubs).toLocaleString('fr-FR') + '€');
+  const netEl = $('fin2-net');
+  if (netEl) netEl.style.color = revenue - totalSubs >= 0 ? '#34d399' : '#f87171';
+
+  // Subscriptions list
+  const catColors = { Banking: '#60a5fa', Social: '#f472b6', Storage: '#a78bfa', Tools: '#fbbf24', AI: '#22d3ee' };
+  const subsEl = $('subs-list');
+  if (subsEl) {
+    subsEl.innerHTML = subs.map(s => {
+      const col = catColors[s.category] || '#94a3b8';
+      const pct = totalSubs > 0 ? (s.cost / totalSubs * 100).toFixed(0) : 0;
+      return `<div class="mrow">
+        <div class="lbl" style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:9px;padding:2px 7px;border-radius:100px;background:${col}22;color:${col};font-weight:700;border:1px solid ${col}44">${s.category}</span>
+          ${s.name}
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:60px;height:1px;background:var(--border);border-radius:1px;overflow:hidden">
+            <div style="height:100%;width:${pct}%;background:${col}"></div>
+          </div>
+          <div class="val" style="color:${col};min-width:52px;text-align:right">${s.cost}€/m</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  set('subs-total-big', totalSubs + '€');
+  set('subs-yearly', 'Projection annuelle : ' + (totalSubs * 12).toLocaleString('fr-FR') + '€');
+
+  // Cash flow
+  set('fin2-commission', revenue.toLocaleString('fr-FR') + '€');
+  set('fin2-subs-neg', '-' + totalSubs + '€');
+  set('fin2-autres', autresDepenses > 0 ? '-' + autresDepenses.toLocaleString('fr-FR') + '€' : '—€');
+  const cfEl = $('fin2-cashflow');
+  if (cfEl) {
+    cfEl.textContent = (netCashflow >= 0 ? '+' : '') + netCashflow.toLocaleString('fr-FR') + '€';
+    cfEl.style.color = netCashflow >= 0 ? '#34d399' : '#f87171';
+  }
+
+  // Subs % of target bar
+  const subsPct = target > 0 ? Math.min(totalSubs / target * 100, 100).toFixed(0) : 0;
+  const subBar = $('fin2-subs-bar');
+  if (subBar) subBar.style.width = subsPct + '%';
+  set('fin2-subs-pct', subsPct + '% du target mensuel part en abonnements fixes (' + totalSubs + '€/' + target.toLocaleString('fr-FR') + '€)');
+
+  // Roadmap
+  const roadmap = data.finance?.roadmap || [];
+  const roadmapEl = $('fin2-roadmap');
+  if (roadmapEl) {
+    roadmapEl.innerHTML = roadmap.map(r => {
+      const monthLabel = new Date(r.month + '-15').toLocaleDateString('fr-FR', { month: 'short', year: '2-digit' });
+      const actual = (data.finance?.months || []).find(m => m.month === r.month)?.revenus_total || 0;
+      const isPast = r.month < curM;
+      const isCurrent = r.month === curM;
+      const col = isPast ? (actual >= r.target ? '#22c55e' : '#ef4444') : isCurrent ? '#eab308' : '#475569';
+      return `<div style="flex:1;min-width:80px;background:var(--surface);border-radius:var(--r);padding:10px;text-align:center;border:1px solid ${col}33">
+        <div style="font-size:10px;color:#64748b;margin-bottom:4px">${monthLabel}</div>
+        <div style="font-size:14px;font-weight:800;color:${col}">${r.target >= 1000 ? r.target / 1000 + 'k' : r.target}€</div>
+        ${isCurrent ? `<div style="font-size:10px;color:#94a3b8;margin-top:2px">${actual}€</div>` : ''}
+        ${isPast ? `<div style="font-size:10px;color:${col};margin-top:2px">${actual >= r.target ? '✓' : '✗'}</div>` : ''}
+      </div>`;
+    }).join('');
+  }
+}
+
 // ── STREAKS ──────────────────────────────────────────────────────
 function renderStreaksRow(data) {
   const s = data.streaks || {};
@@ -1722,6 +1866,7 @@ async function init(){
     try { renderCorpsTab(data, data.days); } catch(e){ console.error('corps',e); }
     try { renderTasks(data.tasks); } catch(e){ console.error('tasks',e); }
     try { renderFinanceChart(data); } catch(e){ console.error('finance',e); }
+    try { renderFinanceTab(data); } catch(e){ console.error('finance-tab',e); }
     try { renderStreaksRow(data); } catch(e){ console.error('streaks',e); }
     try { renderRevenueVelocity(data); } catch(e){ console.error('velocity',e); }
     try { renderCorrelations(data.days); } catch(e){ console.error('correlations',e); }
