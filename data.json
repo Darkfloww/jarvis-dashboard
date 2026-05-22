@@ -368,15 +368,18 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 0,
-        "apps": {}
+        "total_min": 410,
+        "apps": {
+          "Terminal": 410
+        }
       },
       "screen_time_updated": true,
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0
+        "score": 0,
+        "coucher": "06:00"
       },
       "spirituel": {
         "score": 0
