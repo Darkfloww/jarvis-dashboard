@@ -363,14 +363,14 @@
     },
     {
       "date": "2026-05-22",
-      "score": 20,
+      "score": 21,
       "note": "",
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 216,
+        "total_min": 212,
         "apps": {
-          "Terminal": 216
+          "Terminal": 212
         }
       },
       "screen_time_updated": true,
@@ -408,11 +408,17 @@
         "score": 2
       },
       "mental": {
-        "score": 6,
+        "score": 7,
         "no_pmo": true,
         "energie": 6,
         "focus": 5,
-        "nsdr": false
+        "nsdr": false,
+        "screen_time_reseaux_min": 35,
+        "screen_time_details": {
+          "TikTok": 20,
+          "Instagram": 15
+        },
+        "screen_time_updated": true
       },
       "social": {
         "score": 1,
