@@ -363,7 +363,7 @@
     },
     {
       "date": "2026-05-22",
-      "score": 17,
+      "score": 20,
       "note": "",
       "feedback": "",
       "activitywatch": {
@@ -408,11 +408,16 @@
         "score": 2
       },
       "mental": {
-        "score": 3,
-        "no_pmo": null
+        "score": 6,
+        "no_pmo": true,
+        "energie": 6,
+        "focus": 5,
+        "nsdr": false
       },
       "social": {
-        "score": 1
+        "score": 1,
+        "contenu_poste": false,
+        "interaction_hv": null
       }
     }
   ],
