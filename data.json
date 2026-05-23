@@ -470,7 +470,8 @@
         "heures_sommeil": 9.0,
         "nutrition_clean": false,
         "repas": "Burger King — burger boeuf + frites + eau",
-        "goyslop_level": "full",
+        "goyslop_level": "critique",
+        "goyslop_items": ["Burger King burger boeuf + frites"],
         "nutrition_score": 2,
         "score": 4
       },
