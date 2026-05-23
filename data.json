@@ -43,6 +43,15 @@
       "contexte": "Passeport actuel expire le 30/01/2027. À faire dès le retour à La Réunion (après le 29 mai).",
       "date_ajout": "2026-05-22",
       "echeance": "2026-07-01"
+    },
+    {
+      "id": 5,
+      "titre": "Tourner l'intro vidéo Loom pour la prospection infopreneurs",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "Vidéo Loom d'introduction pour la prospection ciblée infopreneurs. À tourner avant d'envoyer des DMs.",
+      "date_ajout": "2026-05-23",
+      "echeance": ""
     }
   ],
   "crm": {
