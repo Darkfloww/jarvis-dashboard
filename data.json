@@ -428,9 +428,9 @@
     },
     {
       "date": "2026-05-23",
-      "score": 0,
-      "note": "",
-      "feedback": "",
+      "score": 9,
+      "note": "J3 — journée basse énergie, zéro exécution business, nutrition catastrophique",
+      "feedback": "Énergie à 3/10 — rien d'actionnable produit. Streak gym cassé. BK = goyslop total. PMO clean = seul point positif.",
       "activitywatch": {
         "status": "ok",
         "total_min": 338,
@@ -438,34 +438,73 @@
           "Terminal": 338
         }
       },
-      "screen_time_updated": false,
+      "screen_time_updated": true,
+      "screen_time_details": {
+        "Telegram": 166,
+        "TikTok": 109,
+        "Instagram": 100,
+        "Photos": 58,
+        "Arc": 54,
+        "YouTube": 51,
+        "ChatGPT": 37,
+        "Terminal": 20,
+        "Revolut": 15,
+        "WhatsApp Business": 8,
+        "Snapchat": 8,
+        "Duolingo": 6
+      },
       "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "Rien fait. Zéro outreach, zéro delivery.",
         "score": 0
       },
       "physique": {
+        "gym": false,
+        "gym_type": null,
         "coucher": "04:00",
         "lever": "13:00",
         "heures_sommeil": 9.0,
-        "score": 0
+        "nutrition_clean": false,
+        "repas": "Burger King — burger boeuf + frites + eau",
+        "goyslop_level": "full",
+        "nutrition_score": 2,
+        "score": 4
       },
       "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
         "score": 0
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 0,
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "rien",
+        "score": 2
       },
       "mental": {
-        "score": 0
+        "energie": 3,
+        "focus": 6,
+        "screen_time_reseaux_min": 217,
+        "no_pmo": true,
+        "score": 3
       },
       "social": {
+        "interaction_hv": null,
+        "contenu_poste": false,
         "score": 0
       }
     }
   ],
   "streaks": {
-    "nopmo": 1,
+    "nopmo": 2,
     "fajr": 0,
-    "gym": 2,
+    "gym": 0,
     "dms": 0
   },
   "revenue_velocity": {
