@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-05-23",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -425,6 +425,41 @@
         "contenu_poste": false,
         "interaction_hv": null
       }
+    },
+    {
+      "date": "2026-05-23",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 338,
+        "apps": {
+          "Terminal": 338
+        }
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "coucher": "04:00",
+        "lever": "13:00",
+        "heures_sommeil": 9.0,
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
@@ -437,12 +472,12 @@
     "current_month": "2026-05",
     "current_commission": 1600,
     "monthly_target": 1750,
-    "days_elapsed": 22,
-    "days_remaining": 9,
+    "days_elapsed": 23,
+    "days_remaining": 8,
     "days_in_month": 31,
     "pct_target": 91,
-    "daily_velocity_needed": 17,
-    "daily_run_rate": 73,
+    "daily_velocity_needed": 19,
+    "daily_run_rate": 70,
     "on_track": true
   },
   "subscriptions": [
