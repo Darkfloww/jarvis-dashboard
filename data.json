@@ -52,6 +52,15 @@
       "contexte": "Vidéo Loom d'introduction pour la prospection ciblée infopreneurs. À tourner avant d'envoyer des DMs.",
       "date_ajout": "2026-05-23",
       "echeance": ""
+    },
+    {
+      "id": 6,
+      "titre": "Acheter cadeaux famille avant retour La Réunion",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "Avant de quitter KL (29 mai). Cadeaux pour : mère, père, petite soeur, 2 grands-mères, oncle.",
+      "date_ajout": "2026-05-24",
+      "echeance": "2026-05-29"
     }
   ],
   "crm": {
