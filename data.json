@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23",
+  "lastUpdated": "2026-05-25",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -480,7 +480,9 @@
         "nutrition_clean": false,
         "repas": "Burger King — burger boeuf + frites + eau",
         "goyslop_level": "critique",
-        "goyslop_items": ["Burger King burger boeuf + frites"],
+        "goyslop_items": [
+          "Burger King burger boeuf + frites"
+        ],
         "nutrition_score": 2,
         "score": 4
       },
@@ -509,6 +511,92 @@
         "contenu_poste": false,
         "score": 0
       }
+    },
+    {
+      "date": "2026-05-24",
+      "score": 30,
+      "note": "KL",
+      "feedback": "0 DMs = bottleneck ignoré. 0 prières. Screen time 3h20 réseaux. Sleep cassé coucher 7h. Positifs : gym, nutrition propre, No PMO, Duolingo.",
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": true,
+        "score": 5
+      },
+      "physique": {
+        "gym": true,
+        "gym_type": "biceps + triceps",
+        "coucher": "7h",
+        "lever": "16h",
+        "heures_sommeil": 9,
+        "nutrition_clean": true,
+        "repas": "sushis, amandes/graines, steak boeuf + oeufs, eau de coco",
+        "score": 12
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 1.0,
+        "deep_work_topic": "1h — préparation carousel Instagram",
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "aucun",
+        "score": 7
+      },
+      "mental": {
+        "energie": 8,
+        "focus": 7,
+        "screen_time_reseaux_min": 200,
+        "no_pmo": true,
+        "score": 5
+      },
+      "social": {
+        "interaction_hv": "2 français à la salle de sport",
+        "contenu_poste": false,
+        "score": 1
+      },
+      "activitywatch": {
+        "status": "iPhone day",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true
+    },
+    {
+      "date": "2026-05-25",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
@@ -521,12 +609,12 @@
     "current_month": "2026-05",
     "current_commission": 1600,
     "monthly_target": 1750,
-    "days_elapsed": 23,
-    "days_remaining": 8,
+    "days_elapsed": 25,
+    "days_remaining": 6,
     "days_in_month": 31,
     "pct_target": 91,
-    "daily_velocity_needed": 19,
-    "daily_run_rate": 70,
+    "daily_velocity_needed": 25,
+    "daily_run_rate": 64,
     "on_track": true
   },
   "subscriptions": [
