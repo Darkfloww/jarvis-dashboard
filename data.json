@@ -61,6 +61,15 @@
       "contexte": "Avant de quitter KL (29 mai). Cadeaux pour : mère, père, petite soeur, 2 grands-mères, oncle.",
       "date_ajout": "2026-05-24",
       "echeance": "2026-05-29"
+    },
+    {
+      "id": 7,
+      "titre": "Définir miniature + titre prochaine vidéo YouTube Didier",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "Delivery Didier — YouTube est le levier traffic prioritaire.",
+      "date_ajout": "2026-05-25",
+      "echeance": ""
     }
   ],
   "crm": {
