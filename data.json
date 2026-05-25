@@ -599,6 +599,29 @@
       "score": 23,
       "note": "KL — J goyslop + screen time catastrophique, mais Fajr+Isha double",
       "feedback": "Screen time 302 min réseaux = pire journée du suivi (TikTok 3h01 + Instagram 2h01). GOYSLOP BK. 0 gym. 0 DMs. Positifs : Fajr + Isha (premier double), No PMO streak 3j, Duolingo 18min.",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs. 0 calls. Delivery : titre YouTube Didier validé définitivement ('arrête d'acheter des formations'). Aucun outreach.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 1,
+        "score_total": 3,
+        "feedback_text": "0 DMs depuis 5 jours consécutifs = tu n'as pas de système d'acquisition, tu as une intention. Hormozi (100M Leads) : le volume de leads entrants est la seule métrique qui précède le revenu. Le titre YouTube = bonne décision, mais c'est du support. La ONE THING reste les DMs.",
+        "what_good": [
+          "Titre YouTube Didier validé : 'arrête d'acheter des formations (j'ai perdu 15 000€ pour comprendre ça)'"
+        ],
+        "what_bad": [
+          "0 DMs — pipeline vide depuis 5 jours consécutifs",
+          "0 deep work — aucune production actionnable",
+          "Aucune action d'acquisition client"
+        ],
+        "actions_demain": [
+          "3 DMs ciblés dès le premier bloc du matin — téléphone en mode avion avant",
+          "Lancer la vidéo Loom de prospection",
+          "Deep work 2h minimum sur outreach ou delivery Didier"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-25 18:00"
+      },
       "activitywatch": {
         "status": "iPhone day",
         "total_min": 0,
