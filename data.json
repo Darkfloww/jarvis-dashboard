@@ -402,6 +402,31 @@
       "score": 19,
       "note": "",
       "feedback": "",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs. 0 calls. Aucune delivery. Deuxième journée consécutive sans outreach depuis le lancement JARVIS.",
+        "score_volume": 0,
+        "score_leverage": 0,
+        "score_direction": 0,
+        "score_total": 0,
+        "feedback_text": "Deuxième jour à 0 DMs. Hormozi (100M Leads) : 'Le volume de leads est la seule métrique qui précède le revenu.' Gym fait — bonne discipline physique. Mais gym sans outreach = corps qui progresse, pipeline qui se vide. Le Subway est un slip, pas une catastrophe, mais c'est un signal sur la rigueur globale.",
+        "what_good": [
+          "Gym Pectoraux + Dos — discipline physique maintenue",
+          "No PMO — streak tenu",
+          "1 prière — légère progression spirituelle vs veille"
+        ],
+        "what_bad": [
+          "0 DMs — 2 jours consécutifs sans prospection depuis J1",
+          "0 deep work — aucune production business",
+          "Subway goyslop — discipline alimentaire à solidifier"
+        ],
+        "actions_demain": [
+          "3 DMs dès le premier bloc du matin avant toute autre activité",
+          "Deep work 2h minimum — delivery Didier ou prospection ciblée",
+          "Coucher avant 3h — rythme à corriger progressivement"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-22 20:00"
+      },
       "activitywatch": {
         "status": "ok",
         "total_min": 210,
@@ -466,6 +491,32 @@
       "score": 9,
       "note": "J3 — journée basse énergie, zéro exécution business, nutrition catastrophique",
       "feedback": "Énergie à 3/10 — rien d'actionnable produit. Streak gym cassé. BK = goyslop total. PMO clean = seul point positif.",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs. 0 calls. 0 delivery. Journée entière sans aucune action business. Troisième jour consécutif à zéro outreach.",
+        "score_volume": 0,
+        "score_leverage": 0,
+        "score_direction": 0,
+        "score_total": 0,
+        "feedback_text": "Score business : 0. Troisième jour sans un seul DM. Newport (Deep Work) : 'Les performances remarquables requièrent des efforts non remarquables au quotidien.' Pas de deep work, énergie à 3/10, BK goyslop, gym cassé — tout s'est effondré simultanément. Keller (The ONE Thing) : quand tout est priorité, rien ne l'est. Il faut remettre les DMs comme seule priorité non-négociable du lendemain matin.",
+        "what_good": [
+          "No PMO — streak maintenu malgré la journée désastreuse",
+          "Duolingo russe 10 min — seul effort cognitif de la journée"
+        ],
+        "what_bad": [
+          "0 DMs — 3 jours consécutifs sans prospection = pipeline mort",
+          "0 gym — streak physique cassé",
+          "Burger King goyslop critique — deuxième fois en 3 jours",
+          "0 deep work — énergie 3/10 non récupérée",
+          "0 prières — spirituel à plat total"
+        ],
+        "actions_demain": [
+          "DMs dès le réveil — avant téléphone, avant TikTok, avant tout",
+          "Gym obligatoire — ne pas laisser 2 jours consécutifs sans séance",
+          "Coucher à une heure humaine — viser avant 2h du matin"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-23 20:00"
+      },
       "activitywatch": {
         "status": "ok",
         "total_min": 338,
@@ -543,6 +594,34 @@
       "score": 30,
       "note": "KL",
       "feedback": "0 DMs = bottleneck ignoré. 0 prières. Screen time 3h20 réseaux. Sleep cassé coucher 7h. Positifs : gym, nutrition propre, No PMO, Duolingo.",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs. 0 calls. Delivery : rectification séquences stories Didier + automatisation messages Kenzo VSL (déprioritisé). Bonne journée de delivery, zéro acquisition.",
+        "score_volume": 0,
+        "score_leverage": 4,
+        "score_direction": 1,
+        "score_total": 5,
+        "feedback_text": "La delivery Didier est faite — c'est bien. Mais 0 DMs pour la 4ème journée consécutive. Hormozi (100M Leads) : la delivery sans acquisition ne fait que maintenir ce qui existe, elle ne construit pas. Expert Secrets (Brunson) : un opérateur qui ne prospecte pas chaque jour perd du terrain même s'il exécute bien pour ses clients actuels. Points positifs solides aujourd'hui sur le physique et le mental — il faut transférer cette discipline vers l'outreach.",
+        "what_good": [
+          "Delivery Didier faite : stories + automatisation",
+          "Gym biceps + triceps — 2 séances cette semaine",
+          "Nutrition clean — sushis, steak, graines",
+          "No PMO streak 4 jours",
+          "Duolingo 10 min — régularité"
+        ],
+        "what_bad": [
+          "0 DMs — 4 jours consécutifs sans prospection",
+          "0 prières — spirituel à zéro depuis J1",
+          "Screen time 200 min réseaux — 3h20 de consommation passive",
+          "Coucher 7h — rythme inversé persistant"
+        ],
+        "actions_demain": [
+          "3 DMs ciblés infopreneurs — liste préparée la veille",
+          "1 prière minimum — Isha ou Fajr",
+          "Limiter TikTok/Instagram à 1h total"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-24 20:00"
+      },
       "business": {
         "dms": 0,
         "calls_bookes": 0,
