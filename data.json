@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-26",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -448,7 +448,6 @@
         "no_pmo": true,
         "energie": 6,
         "focus": 5,
-        "nsdr": false,
         "screen_time_reseaux_min": 179,
         "screen_time_details": {
           "TikTok": 99,
@@ -597,6 +596,82 @@
     },
     {
       "date": "2026-05-25",
+      "score": 23,
+      "note": "KL — J goyslop + screen time catastrophique, mais Fajr+Isha double",
+      "feedback": "Screen time 302 min réseaux = pire journée du suivi (TikTok 3h01 + Instagram 2h01). GOYSLOP BK. 0 gym. 0 DMs. Positifs : Fajr + Isha (premier double), No PMO streak 3j, Duolingo 18min.",
+      "activitywatch": {
+        "status": "iPhone day",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": true,
+        "recap": "Titre + miniature YouTube Didier choisis (titre #2 validé). Aucun outreach.",
+        "score": 3
+      },
+      "physique": {
+        "gym": false,
+        "gym_type": null,
+        "coucher": "07:00",
+        "lever": "15:00",
+        "heures_sommeil": 8,
+        "nutrition_clean": false,
+        "repas": "Burger King (burger bœuf + frites), graines (amandes, cacahuètes, raisins secs), mangue",
+        "goyslop_level": "critique",
+        "goyslop_items": [
+          "Burger King burger bœuf + frites"
+        ],
+        "nutrition_score": 2,
+        "score": 5
+      },
+      "spirituel": {
+        "fajr": true,
+        "prieres": 2,
+        "coran": false,
+        "score": 10
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "duolingo_russe": true,
+        "duolingo_minutes": 18,
+        "apprentissage": "rien",
+        "score": 3
+      },
+      "mental": {
+        "energie": 3,
+        "focus": 6,
+        "screen_time_reseaux_min": 302,
+        "screen_time_details": {
+          "TikTok": 181,
+          "Instagram": 121,
+          "Telegram": 121,
+          "YouTube": 54,
+          "WA Business": 38,
+          "Duolingo": 18,
+          "ChatGPT": 13,
+          "Safari": 8,
+          "Discord": 8,
+          "Whop": 8,
+          "Terminal": 5,
+          "Arc": 5,
+          "Gmail": 3
+        },
+        "no_pmo": true,
+        "score": 2
+      },
+      "social": {
+        "interaction_hv": null,
+        "contenu_poste": false,
+        "score": 0
+      }
+    },
+    {
+      "date": "2026-05-26",
       "score": 0,
       "note": "",
       "feedback": "",
@@ -627,8 +702,8 @@
     }
   ],
   "streaks": {
-    "nopmo": 2,
-    "fajr": 0,
+    "nopmo": 4,
+    "fajr": 1,
     "gym": 0,
     "dms": 0
   },
@@ -636,12 +711,12 @@
     "current_month": "2026-05",
     "current_commission": 1600,
     "monthly_target": 1750,
-    "days_elapsed": 25,
-    "days_remaining": 6,
+    "days_elapsed": 26,
+    "days_remaining": 5,
     "days_in_month": 31,
     "pct_target": 91,
-    "daily_velocity_needed": 25,
-    "daily_run_rate": 64,
+    "daily_velocity_needed": 30,
+    "daily_run_rate": 62,
     "on_track": true
   },
   "subscriptions": [
