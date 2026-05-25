@@ -70,6 +70,15 @@
       "contexte": "Delivery Didier — YouTube est le levier traffic prioritaire.",
       "date_ajout": "2026-05-25",
       "echeance": ""
+    },
+    {
+      "id": 8,
+      "titre": "Conclure le partenariat LegalPlace dans la formation Didier",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "Partenariat à intégrer dans le contenu/offre de Didier.",
+      "date_ajout": "2026-05-25",
+      "echeance": ""
     }
   ],
   "crm": {
