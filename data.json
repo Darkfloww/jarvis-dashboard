@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26",
+  "lastUpdated": "2026-05-27",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -21,8 +21,8 @@
       "id": 2,
       "titre": "Poster le carousel Instagram voyage KL / Chine",
       "priorite": "haute",
-      "statut": "todo",
-      "contexte": "Photos esthétiques style Alex Faust. Demander à Jarvis de faire les slides.",
+      "statut": "done",
+      "contexte": "Posté le 26/05/2026.",
       "date_ajout": "2026-05-21",
       "echeance": ""
     },
@@ -89,10 +89,10 @@
         "platform": "Instagram / Calendly",
         "handle": "@dayyaandm",
         "contacted": "2026-05-21",
-        "status": "call_scheduled",
-        "next_action": "Call Google Meet mardi 26 mai 20h KL / 14h France (reporté)",
-        "next_action_date": "2026-05-26",
-        "notes": "RDV booké via Calendly. Durée 45min.",
+        "status": "non_qualifie_referral",
+        "next_action": "DM Wally Invest (@wallinvest?) — référal de Dayyan, potentiel SaaS CloseGuard",
+        "next_action_date": "2026-05-27",
+        "notes": "Call fait le 26/05. Dayyan non qualifié (ads agency, pas de setters/calls). A référé Wally Invest comme prospect SaaS. Vient à KL juin — networking à entretenir.",
         "email": "dayyaan@lead-x.fr",
         "meet_link": "https://meet.google.com/rex-mdiu-ggr"
       }
@@ -774,39 +774,112 @@
     },
     {
       "date": "2026-05-26",
-      "score": 0,
-      "note": "",
-      "feedback": "",
+      "score": 40,
+      "note": "KL — carousel posté, call Dayyan fait, 3h deep work cabine Petronas",
+      "feedback": "0 DMs pour le 6e jour consécutif — pipeline toujours à sec. Mais journée productive : 3h deep work cabine insonorisée, carousel Instagram publié, call Dayyan avec référal Wally Invest. Gym fait. Nutrition correcte sauf cookies. 0 spirituel.",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs. 0 calls bookés. Appel Dayyan fait — non qualifié SaaS (pas de setters) mais référal Wally Invest généré. Carousel Instagram posté.",
+        "score_volume": 0,
+        "score_leverage": 4,
+        "score_direction": 4,
+        "score_total": 8,
+        "feedback_text": "6 jours sans un DM — c'est plus une tendance, c'est une habitude d'évitement. Mais aujourd'hui tu as quand même produit des assets réels : le carousel est un levier permanent, Wally Invest est une fenêtre chaude à saisir demain. Keller (The ONE Thing) : le carousel et l'appel sont du support — la ONE THING reste les DMs. Hormozi (100M Leads) : une référence chaude comme Wally Invest a une durée de vie courte. Contact aujourd'hui ou la fenêtre se ferme.",
+        "what_good": [
+          "Appel Dayyan fait — profil qualifié (entrepreneur ads), networking KL juin planifié",
+          "Lead Wally Invest référé — potentiel SaaS chaud à convertir rapidement",
+          "Carousel Instagram posté — asset de contenu durable pour la prospection",
+          "3h deep work cabine insonorisée salle de sport — meilleure session cognitif de la semaine",
+          "Gym triceps/pecs/dos — discipline physique maintenue"
+        ],
+        "what_bad": [
+          "0 DMs — 6 jours consécutifs sans prospection = pipeline entièrement vide",
+          "Wally Invest référé mais pas encore contacté — fenêtre courte"
+        ],
+        "actions_demain": [
+          "DM Wally Invest aujourd'hui — le référal chaud de Dayyan, ne pas laisser refroidir",
+          "3 DMs infopreneurs ciblés — reprendre l'outreach systématique",
+          "Vidéo Loom prospection — filmer avant d'envoyer les DMs"
+        ],
+        "niveau": "MOYEN",
+        "timestamp": "2026-05-27 05:01"
+      },
       "activitywatch": {
-        "status": "ok",
+        "status": "iPhone day",
         "total_min": 0,
         "apps": {}
       },
       "screen_time_updated": true,
       "business": {
-        "score": 0
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": true,
+        "recap": "Appel Dayyan fait (référal Wally Invest SaaS). Carousel Instagram posté. 0 outreach.",
+        "score": 8
       },
       "physique": {
-        "score": 0
+        "gym": true,
+        "gym_type": "Triceps + Pectoraux + Dos",
+        "coucher": "06:00",
+        "lever": "15:00",
+        "heures_sommeil": 9,
+        "nutrition_clean": false,
+        "repas": "Shawarma, fruit de la passion, oeufs, amandes, cookies chocolat",
+        "goyslop_level": "slip",
+        "goyslop_items": ["Cookies chocolat"],
+        "nutrition_score": 6,
+        "score": 10
       },
       "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
         "score": 0
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 3,
+        "deep_work_topic": "3h — finalisation + publication carousel Instagram (cabine insonorisée, vue Petronas)",
+        "duolingo_russe": true,
+        "duolingo_minutes": 2,
+        "apprentissage": "Appel Dayyan enrichissant (écosystème ads, networking entrepreneur)",
+        "score": 12
       },
       "mental": {
-        "score": 0
+        "energie": 7,
+        "focus": 7.5,
+        "screen_time_reseaux_min": 312,
+        "screen_time_details": {
+          "Instagram": 162,
+          "Arc": 160,
+          "Telegram": 126,
+          "ChatGPT": 91,
+          "Photos": 56,
+          "YouTube": 17,
+          "Terminal": 15,
+          "WA Business": 12,
+          "Notes": 8,
+          "Snapchat": 7,
+          "Whop": 4,
+          "FaceApp": 4,
+          "Opal": 2,
+          "Duolingo": 2
+        },
+        "no_pmo": true,
+        "score": 4
       },
       "social": {
-        "score": 0
+        "interaction_hv": "Dayyan (@dayyaandm) — entrepreneur ads, référal Wally Invest SaaS, vient à KL juin",
+        "contenu_poste": true,
+        "contenu_details": "Carousel Instagram KL/Chine posté",
+        "score": 6
       }
     }
   ],
   "streaks": {
-    "nopmo": 4,
-    "fajr": 1,
-    "gym": 0,
+    "nopmo": 5,
+    "fajr": 0,
+    "gym": 1,
     "dms": 0
   },
   "revenue_velocity": {
