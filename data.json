@@ -102,10 +102,10 @@
         "platform": "Adrien Marquis coaching",
         "handle": "",
         "contacted": "2026-05-27",
-        "status": "call_scheduled",
-        "next_action": "Call présentation SaaS CloseGuard — 20h KL / 14h France",
-        "next_action_date": "2026-05-27",
-        "notes": "Operator dans l'accompagnement Adrien Marquis. Call booké pour présenter CloseGuard. Profil : bon operator, potentiel SaaS.",
+        "status": "interested_follow_up",
+        "next_action": "Relance dans 2-3 semaines — attendre qu'il ait plus de clients avec son infopreneur",
+        "next_action_date": "2026-06-17",
+        "notes": "Call fait le 27/05 (1h+). SaaS apprécié. Pas encore prêt (pas assez de calls avec son infopreneur). Relance mi-juin.",
         "email": "",
         "meet_link": ""
       }
@@ -892,39 +892,111 @@
     },
     {
       "date": "2026-05-27",
-      "score": 0,
-      "note": "",
-      "feedback": "",
+      "score": 26,
+      "note": "KL — call Léni SaaS positif, Instagram 5h44 catastrophique",
+      "feedback": "7e jour consécutif sans DM. Instagram 5h44 = record absolu du suivi. Gym fait (biceps). 3 goyslops dont burger. 1 prière (Isha). Call Léni = point positif : intéressé par CloseGuard, follow-up 2-3 semaines.",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs — 7 jours consécutifs. Call Léni Constantin 1h+ : SaaS bien reçu, potentiel abonnement dans 2-3 semaines quand il aura plus de clients. 0 delivery.",
+        "score_volume": 0,
+        "score_leverage": 5,
+        "score_direction": 3,
+        "score_total": 8,
+        "feedback_text": "7 jours sans un seul DM. C'est une semaine entière de pipeline mort. Hormozi (100M Leads) : 'Le revenu de demain est généré par les leads d'aujourd'hui.' Le call Léni est positif — mais c'est du pipeline entrant, pas sortant. Tu n'as toujours pas de système d'outreach. Instagram à 5h44 est un signal direct : l'énergie qui devrait aller vers les DMs va vers la consommation passive. Newport (Deep Work) : les réseaux sociaux fragmentent l'attention et détruisent la capacité à produire du travail profond.",
+        "what_good": [
+          "Call Léni Constantin : SaaS apprécié, intéressé, follow-up planifié dans 2-3 semaines",
+          "Gym biceps — discipline physique maintenue malgré rythme inversé",
+          "No PMO streak 6 jours — discipline mentale solide",
+          "1 prière (Isha) — légère continuité spirituelle"
+        ],
+        "what_bad": [
+          "0 DMs — 7 jours consécutifs = une semaine entière de pipeline mort",
+          "Instagram 5h44 = 344 min — record absolu, dopamine loop en cours",
+          "0 deep work — deuxième jour consécutif sans production",
+          "3 goyslops (burger+frites, cookies, glace matcha) — nutrition dégradée"
+        ],
+        "actions_demain": [
+          "3 DMs dès le réveil — téléphone en mode avion jusqu'à ce qu'ils soient envoyés",
+          "Deep work 2h minimum — Loom de prospection ou delivery Didier",
+          "Instagram limité à 45 min total via Screen Time limits"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-28 03:54"
+      },
       "activitywatch": {
-        "status": "ok",
+        "status": "iPhone day",
         "total_min": 0,
         "apps": {}
       },
-      "screen_time_updated": false,
+      "screen_time_updated": true,
       "business": {
-        "score": 0
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "Call Léni Constantin 1h+ — SaaS intéressé, follow-up 2-3 semaines. 0 outreach.",
+        "score": 8
       },
       "physique": {
-        "score": 0
+        "gym": true,
+        "gym_type": "Biceps",
+        "coucher": "07:00",
+        "lever": "15:00",
+        "heures_sommeil": 8,
+        "nutrition_clean": false,
+        "repas": "Sushis, bœuf+riz+sashimi, glace Monaca matcha, cookies, burger+frites, graines+amandes+raisins secs",
+        "goyslop_level": "critique",
+        "goyslop_items": ["Burger + frites", "Cookies", "Glace Monaca matcha"],
+        "nutrition_score": 3,
+        "score": 7
       },
       "spirituel": {
-        "score": 0
+        "fajr": false,
+        "prieres": 1,
+        "coran": false,
+        "score": 3
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 0,
+        "duolingo_russe": false,
+        "duolingo_minutes": 0,
+        "apprentissage": "rien",
+        "score": 2
       },
       "mental": {
-        "score": 0
+        "energie": 6,
+        "focus": 6.5,
+        "screen_time_reseaux_min": 369,
+        "screen_time_details": {
+          "Instagram": 344,
+          "Arc": 117,
+          "Telegram": 110,
+          "YouTube": 47,
+          "Chrome": 46,
+          "ChatGPT": 34,
+          "Grab": 33,
+          "Snapchat": 25,
+          "Camera": 12,
+          "Safari": 10,
+          "WhatsApp": 9,
+          "DeepSeek": 8,
+          "Photos": 7,
+          "Terminal": 5
+        },
+        "no_pmo": true,
+        "score": 2
       },
       "social": {
-        "score": 0
+        "interaction_hv": "Léni Constantin — operator Adrien Marquis, visio 1h+ SaaS CloseGuard",
+        "contenu_poste": false,
+        "score": 4
       }
     }
   ],
   "streaks": {
-    "nopmo": 5,
+    "nopmo": 6,
     "fajr": 0,
-    "gym": 1,
+    "gym": 2,
     "dms": 0
   },
   "revenue_velocity": {
