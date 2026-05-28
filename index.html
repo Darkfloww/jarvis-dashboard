@@ -1054,7 +1054,6 @@ function renderMetrics(day){
   $('mn-focus').innerHTML=m.focus?`<span style="color:${colVal(m.focus,7,5)}">${m.focus}/10</span>`:'—/10';
   $('mn-screen').innerHTML=m.screen_time_reseaux_min?`<span style="color:${m.screen_time_reseaux_min>120?'#ef4444':m.screen_time_reseaux_min>60?'#eab308':'#22c55e'}">${fmt(m.screen_time_reseaux_min)}</span>`:'—';
   $('mn-pmo').innerHTML=m.no_pmo!==undefined?boolTag(m.no_pmo):'—';
-  if($('mn-nsdr')) $('mn-nsdr').innerHTML=m.nsdr!==undefined?boolTag(m.nsdr):'—';
   $('mn-p').style.width=(m.score||0)/10*100+'%';
 
   // Social
@@ -1286,8 +1285,8 @@ function timeToFloat(t){
   const m = t.match(/(\d{1,2})[h:](\d{0,2})/);
   if(!m) return null;
   let h = parseInt(m[1]), min = m[2]?parseInt(m[2]):0;
-  // Normalize: bedtimes after midnight (0-6h) shift to 24+
-  if(h < 6) h += 24;
+  // Normalize: bedtimes after midnight (0-12h) shift to 24+
+  if(h < 12) h += 24;
   return h + min/60;
 }
 
