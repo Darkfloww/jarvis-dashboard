@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-29",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -946,7 +946,11 @@
         "nutrition_clean": false,
         "repas": "Sushis, bœuf+riz+sashimi, glace Monaca matcha, cookies, burger+frites, graines+amandes+raisins secs",
         "goyslop_level": "critique",
-        "goyslop_items": ["Burger + frites", "Cookies", "Glace Monaca matcha"],
+        "goyslop_items": [
+          "Burger + frites",
+          "Cookies",
+          "Glace Monaca matcha"
+        ],
         "nutrition_score": 3,
         "score": 7
       },
@@ -991,25 +995,161 @@
         "contenu_poste": false,
         "score": 4
       }
+    },
+    {
+      "date": "2026-05-28",
+      "score": 24,
+      "note": "KL dernier jour complet — vol La Reunion demain, Fajr, Instagram 3h59",
+      "feedback": "8e jour consecutif sans DM. Pas de gym le dernier jour a KL. Fajr fait = signal spirituel positif. Appel Leni (aide install Claude Code). Instagram 3h59 — mieux qu'hier mais encore excessif. Nutrition correcte (sushis). 0 deep work.",
+      "jarvis_feedback": {
+        "business_recap": "0 DMs — 8 jours consecutifs = record negatif. Appel Leni Constantin (support technique install Claude Code). 0 delivery.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 2,
+        "score_total": 4,
+        "feedback_text": "8 jours sans un seul DM. Une semaine pleine + un jour de pipeline mort. Hormozi (100M Leads) : 'Le revenu de demain est genere par les leads d'aujourd'hui.' Aujourd'hui tu as aide Leni a installer un outil — c'est du support, pas du business. Newport (Deep Work) : Instagram a 3h59 avec 0 deep work signifie que ton attention est fragmentee avant meme de commencer. Le retour a La Reunion est une vraie opportunite de reset : nouveau fuseau horaire, nouvelle routine, premiere opportunite de relancer l'outreach depuis 8 jours.",
+        "what_good": [
+          "Fajr fait — premiere priere matinale dans le suivi : effort reel (lever tot pour prier)",
+          "No PMO streak 7 jours — discipline mentale solide",
+          "Appel Leni maintenu — relation prospect entretenue avant le retour",
+          "Nutrition correcte : sushis/sashimi/saumon/boeuf = proteines propres",
+          "Instagram 3h59 vs 5h44 hier — amelioration relative"
+        ],
+        "what_bad": [
+          "0 DMs — 8 jours consecutifs = record negatif du suivi",
+          "0 gym le dernier jour a KL — derniere chance de s'entrainer avant le voyage",
+          "0 deep work — 3e jour consecutif sans production cognitive",
+          "Instagram 3h59 = encore largement au-dessus de la cible 1h"
+        ],
+        "actions_demain": [
+          "Vol La Reunion : profiter du temps d'avion pour planifier la reprise d'outreach",
+          "J+1 Reunion : 3 DMs infopreneurs des le lendemain du vol",
+          "Reset sommeil : objectif coucher avant minuit a La Reunion"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-29 00:45"
+      },
+      "activitywatch": {
+        "status": "iPhone day",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "Appel Leni Constantin (aide install Claude Code). 0 outreach. 8e jour sans DM.",
+        "score": 4
+      },
+      "physique": {
+        "gym": false,
+        "gym_type": "",
+        "coucher": "08:00",
+        "lever": "16:00",
+        "heures_sommeil": 8,
+        "nutrition_clean": false,
+        "repas": "Sushis saumon, sashimi, boeuf + riz, matcha monaka, graines + amandes",
+        "goyslop_level": "slip",
+        "goyslop_items": [
+          "Matcha monaka (dessert sucre)"
+        ],
+        "nutrition_score": 7,
+        "score": 5
+      },
+      "spirituel": {
+        "fajr": true,
+        "prieres": 1,
+        "coran": false,
+        "score": 5
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 5,
+        "apprentissage": "rien de notable",
+        "score": 3
+      },
+      "mental": {
+        "energie": 6.5,
+        "focus": 6.5,
+        "screen_time_reseaux_min": 246,
+        "screen_time_details": {
+          "Instagram": 239,
+          "Telegram": 180,
+          "WA Business": 61,
+          "Arc": 59,
+          "Chrome": 55,
+          "ChatGPT": 41,
+          "YouTube": 39,
+          "Snapchat": 7,
+          "Safari": 6,
+          "Grab": 6,
+          "NordVPN": 5,
+          "Finder": 5,
+          "Photos": 4,
+          "Revolut": 3
+        },
+        "no_pmo": true,
+        "score": 4
+      },
+      "social": {
+        "interaction_hv": "Leni Constantin — appel support technique (install Claude Code), relation prospect maintenue",
+        "contenu_poste": false,
+        "score": 3
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
-    "nopmo": 6,
-    "fajr": 0,
-    "gym": 2,
+    "nopmo": 7,
+    "fajr": 1,
+    "gym": 0,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-05",
     "current_commission": 1600,
     "monthly_target": 1750,
-    "days_elapsed": 27,
-    "days_remaining": 4,
+    "days_elapsed": 29,
+    "days_remaining": 2,
     "days_in_month": 31,
     "pct_target": 91,
-    "daily_velocity_needed": 38,
-    "daily_run_rate": 59,
-    "on_track": true
+    "daily_velocity_needed": 75,
+    "daily_run_rate": 55,
+    "on_track": false
   },
   "subscriptions": [
     {
