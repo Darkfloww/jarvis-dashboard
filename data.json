@@ -1179,6 +1179,32 @@
         "interaction_hv": null,
         "contenu_poste": false,
         "score": 0
+      },
+      "jarvis_feedback": {
+        "business_recap": "0 DMs — 9 jours consecutifs. Journee de transit total : KLIA -> Maurice -> La Reunion. 0 outreach, 0 delivery, 0 calls.",
+        "score_volume": 0,
+        "score_leverage": 0,
+        "score_direction": 2,
+        "score_total": 2,
+        "feedback_text": "9 jours sans un seul DM. Hormozi (100M Leads) : 'Le revenu de demain est genere par les leads d'aujourd'hui.' La journee de voyage est une excuse legitime pour aujourd'hui — mais pas pour demain. Tu es a La Reunion maintenant. Le reset commence maintenant. Newport (Deep Work) : la reprise d'un systeme se fait par des rituels fixes, pas par la motivation. Demain matin : 3 DMs avant tout le reste. Avant le telephone, avant Instagram, avant le petit-dejeuner. Le gym fait a 1h du matin apres 7h de vol est le seul signal fort de la journee. Cette discipline doit etre appliquee a l'outreach des demain.",
+        "what_good": [
+          "Gym biceps fait a 1h du matin apres 7h de vol — discipline mentale au-dessus de la moyenne",
+          "No PMO streak 8 jours — regularite solide",
+          "Arrivee a La Reunion = opportunite de reset total du rythme et de la routine"
+        ],
+        "what_bad": [
+          "0 DMs — 9 jours consecutifs = pipeline completement mort",
+          "Instagram 178 min en transit — consommation passive meme en voyage",
+          "0 prières — 0 Fajr — spirituel a plat depuis 2 jours",
+          "Goyslop critique : avion + BK + lounge"
+        ],
+        "actions_demain": [
+          "3 DMs infopreneurs des le matin — avant Instagram, avant tout",
+          "Etablir l'heure de coucher cible a La Reunion (objectif : avant minuit)",
+          "1 priere minimum (Isha ou Fajr)"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-30 02:40"
       }
     },
     {
