@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-05-29",
+  "lastUpdated": "2026-05-30",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
-    "location": "Kuala Lumpur → La Réunion (29 mai)",
+    "location": "La Réunion (retour 29 mai)",
     "patrimoine": 4000,
     "client": "Didier (~1500-1750€/mois)"
   },
@@ -1104,6 +1104,85 @@
     },
     {
       "date": "2026-05-29",
+      "score": 9,
+      "note": "Journée de voyage : KLIA → Maurice → La Réunion. Arrivée 23h. Biceps en rentrant à 1h du mat.",
+      "feedback": "Journée de transit — 0 business, 0 spirituel. Goyslop avion + BK inévitable. Gym malgré l'arrivée tardive : discipline maintenue.",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "Journée de déplacement total (aéroport KLIA → Maurice → La Réunion). 0 outreach. 0 delivery.",
+        "score": 0
+      },
+      "physique": {
+        "gym": true,
+        "gym_type": "Biceps",
+        "coucher": "03:00",
+        "lever": "08:00",
+        "heures_sommeil": 5,
+        "nutrition_clean": false,
+        "repas": "Nourriture avion, Burger King, snacks lounge (pain raffiné, quelques viandes)",
+        "goyslop_level": "critique",
+        "goyslop_items": [
+          "Nourriture avion",
+          "Burger King",
+          "Pain raffiné lounge"
+        ],
+        "nutrition_score": 2,
+        "score": 4
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 5,
+        "apprentissage": "rien de notable",
+        "score": 2
+      },
+      "mental": {
+        "energie": 5.5,
+        "focus": 5,
+        "screen_time_reseaux_min": 178,
+        "screen_time_details": {
+          "Instagram": 178,
+          "Telegram": 106,
+          "YouTube": 78,
+          "Arc": 33,
+          "ChatGPT": 31,
+          "WA Business": 17,
+          "Revolut": 8,
+          "DeepSeek": 6,
+          "Terminal": 6,
+          "Opal": 5,
+          "Grab": 5,
+          "Booking.com": 3,
+          "Whop": 3
+        },
+        "no_pmo": true,
+        "score": 3
+      },
+      "social": {
+        "interaction_hv": null,
+        "contenu_poste": false,
+        "score": 0
+      }
+    },
+    {
+      "date": "2026-05-30",
       "score": 0,
       "note": "",
       "feedback": "",
@@ -1134,21 +1213,21 @@
     }
   ],
   "streaks": {
-    "nopmo": 7,
-    "fajr": 1,
-    "gym": 0,
+    "nopmo": 8,
+    "fajr": 0,
+    "gym": 1,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-05",
     "current_commission": 1600,
     "monthly_target": 1750,
-    "days_elapsed": 29,
-    "days_remaining": 2,
+    "days_elapsed": 30,
+    "days_remaining": 1,
     "days_in_month": 31,
     "pct_target": 91,
-    "daily_velocity_needed": 75,
-    "daily_run_rate": 55,
+    "daily_velocity_needed": 150,
+    "daily_run_rate": 53,
     "on_track": false
   },
   "subscriptions": [
