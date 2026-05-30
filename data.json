@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30",
+  "lastUpdated": "2026-05-31",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1227,15 +1227,123 @@
     },
     {
       "date": "2026-05-30",
-      "score": 0,
-      "note": "",
-      "feedback": "",
+      "score": 10,
+      "note": "Journée de repos total. Premier jour complet à La Réunion après le retour de Chine.",
+      "feedback": "0 business, 0 gym. Instagram 3h32. Repos assumé mais 10 jours sans DM = pipeline mort.",
       "activitywatch": {
         "status": "ok",
         "total_min": 21,
         "apps": {
           "Terminal": 21
         }
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "0 DMs, 0 calls. Journée de repos total. Aucune action business.",
+        "score": 0
+      },
+      "physique": {
+        "gym": false,
+        "gym_type": "",
+        "coucher": "04:00",
+        "lever": "13:00",
+        "heures_sommeil": 9,
+        "nutrition_clean": false,
+        "repas": "Tacos, shawarma, sashimi",
+        "goyslop_level": "modéré",
+        "goyslop_items": [
+          "Tacos",
+          "Shawarma"
+        ],
+        "nutrition_score": 3,
+        "score": 3
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "notes": "Contenu Richard uniquement",
+        "score": 1
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "rien",
+        "score": 2
+      },
+      "mental": {
+        "energie": 7,
+        "focus": 5,
+        "screen_time_reseaux_min": 224,
+        "screen_time_details": {
+          "Instagram": 212,
+          "Telegram": 93,
+          "Arc": 58,
+          "Chrome": 44,
+          "Photos": 23,
+          "ChatGPT": 22,
+          "Terminal": 21,
+          "Snapchat": 12,
+          "WA Business": 11,
+          "Uber Eats": 6,
+          "Ostrovok": 6,
+          "Revolut": 2,
+          "Duolingo": 1,
+          "Govee Home": 1
+        },
+        "no_pmo": true,
+        "nsdr": false,
+        "score": 3
+      },
+      "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "score": 1
+      },
+      "jarvis_feedback": {
+        "business_recap": "0 DMs pour le 10eme jour consecutif. 0 calls. Pipeline completement mort depuis le depart en voyage.",
+        "score_volume": 0,
+        "score_leverage": 0,
+        "score_direction": 0,
+        "score_total": 0,
+        "feedback_text": "10 jours sans un seul DM. Hormozi (100M Leads) : 'Un pipeline vide aujourd'hui = zero revenu dans 30 jours.' La Reunion est maintenant le contexte. Les excuses de voyage sont terminées. Newport (Deep Work) : la reprise d'un systeme se fait par un rituel fixe non negociable. Demain : 5 DMs avant d'ouvrir Instagram. Pas apres, pas en meme temps. Avant. Instagram a 3h32 pendant une journee de repos confirme le pattern : le telephone est le premier refuge. Keller (The ONE Thing) : identifie ton UNE chose — aujourd'hui c'est l'outreach. Tout le reste attend. NoPMO streak 9 jours = seule discipline maintenue. Transpose cette meme energie a l'outreach.",
+        "what_good": [
+          "NoPMO streak 9 jours — regularite solide, energie preservee",
+          "Repos assumé apres retour long voyage — recuperation legitime",
+          "Duolingo maintenu meme en journee de repos"
+        ],
+        "what_bad": [
+          "0 DMs — 10 jours consecutifs = pipeline completement mort",
+          "Instagram 3h32 — record equivalent a une journee de dopamine passive",
+          "0 gym — second jour sans mouvement physique",
+          "0 Fajr — 0 prieres — spirituel inexistant",
+          "Coucher 4h / lever 13h — rythme circadien inverse"
+        ],
+        "actions_demain": [
+          "5 DMs infopreneurs avant d'ouvrir Instagram",
+          "Gym — n'importe quel mouvement compte",
+          "Coucher avant minuit ce soir — reset rythme"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-05-31 01:00"
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "error: curl failed: ",
+        "total_min": 0,
+        "apps": {}
       },
       "screen_time_updated": false,
       "business": {
@@ -1259,21 +1367,21 @@
     }
   ],
   "streaks": {
-    "nopmo": 8,
+    "nopmo": 9,
     "fajr": 0,
-    "gym": 1,
+    "gym": 0,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-05",
     "current_commission": 1600,
     "monthly_target": 1750,
-    "days_elapsed": 30,
-    "days_remaining": 1,
+    "days_elapsed": 31,
+    "days_remaining": 0,
     "days_in_month": 31,
     "pct_target": 91,
     "daily_velocity_needed": 150,
-    "daily_run_rate": 53,
+    "daily_run_rate": 52,
     "on_track": false
   },
   "subscriptions": [
