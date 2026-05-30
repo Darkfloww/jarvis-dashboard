@@ -79,6 +79,15 @@
       "contexte": "Partenariat à intégrer dans le contenu/offre de Didier.",
       "date_ajout": "2026-05-25",
       "echeance": ""
+    },
+    {
+      "id": 9,
+      "titre": "Créer SOP prospection + closing pour CloseGuard",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "SOP complet : process outreach ciblé + script de closing pour le SaaS CloseGuard. Indispensable avant de scaler l'acquisition.",
+      "date_ajout": "2026-05-30",
+      "echeance": ""
     }
   ],
   "crm": {
@@ -1214,8 +1223,10 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 0,
-        "apps": {}
+        "total_min": 20,
+        "apps": {
+          "Terminal": 20
+        }
       },
       "screen_time_updated": false,
       "business": {
