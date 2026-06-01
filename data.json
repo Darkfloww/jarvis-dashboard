@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-31",
+  "lastUpdated": "2026-06-01",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1337,6 +1337,115 @@
     },
     {
       "date": "2026-05-31",
+      "score": 14,
+      "note": "Delivery Didier (stories 01/06-07/06). 0 DMs jour 11. NoPMO streak casse.",
+      "feedback": "Delivery done mais pipeline mort. Streak NoPMO reset a 0 apres 9 jours.",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 13,
+        "apps": {
+          "Terminal": 13
+        }
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": true,
+        "recap": "Stories Didier semaine 01/06-07/06 completees (35 slides generes et uploades Drive). 0 DMs, 0 calls.",
+        "score": 4
+      },
+      "physique": {
+        "gym": false,
+        "gym_type": "",
+        "coucher": "04:00",
+        "lever": "11:30",
+        "heures_sommeil": 7.5,
+        "nutrition_clean": false,
+        "repas": "Boeuf hache huile seed oil, tarte aux fraises, quiche legumes",
+        "goyslop_level": "modere",
+        "goyslop_items": [
+          "Boeuf hache seed oil",
+          "Tarte aux fraises"
+        ],
+        "nutrition_score": 3,
+        "score": 3
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 5,
+        "apprentissage": "rien",
+        "score": 2
+      },
+      "mental": {
+        "energie": 5,
+        "focus": 5,
+        "screen_time_reseaux_min": 200,
+        "screen_time_details": {
+          "Instagram": 170,
+          "Telegram": 84,
+          "WA Business": 79,
+          "Photos": 59,
+          "Arc": 38,
+          "Snapchat": 30,
+          "Govee Home": 22,
+          "ChatGPT": 16,
+          "Terminal": 13,
+          "Finder": 9,
+          "Safari": 9,
+          "Saily": 8,
+          "CapCut": 8,
+          "Facebook": 7
+        },
+        "no_pmo": false,
+        "nsdr": false,
+        "score": 2
+      },
+      "social": {
+        "interaction_hv": true,
+        "contenu_poste": false,
+        "details": "Famille toute la journee + appel Fares (co-founder CloseGuard)",
+        "score": 3
+      },
+      "jarvis_feedback": {
+        "business_recap": "Delivery Didier fait (stories completes) mais 0 DMs pour le 11eme jour consecutif. Pipeline completement mort depuis le depart KL.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 2,
+        "score_total": 4,
+        "feedback_text": "NoPMO streak casse apres 9 jours. Hill (Lois du Succes) : la discipline de l'autocontrole est la fondation de toutes les autres. Quand elle cede, les autres domaines suivent. 11 jours sans un seul DM. Hormozi (100M Leads) : 'Sans leads, il n'y a pas de business. Juste un hobby.' La delivery Didier compte comme travail serieux mais c'est du maintenance, pas de la croissance. Keller (The ONE Thing) : l'outreach est ton ONE thing. Tout le reste attend. Aujourd'hui : 3 DMs minimum avant d'ouvrir Instagram. Pas negociable.",
+        "what_good": [
+          "Delivery Didier completee (35 slides stories semaine 01/06-07/06)",
+          "Appel Fares - connexion HV maintenue avec co-founder CloseGuard",
+          "Sommeil 7.5h - recuperation correcte"
+        ],
+        "what_bad": [
+          "NoPMO streak reset a 0 apres 9 jours - energie et mental impactes",
+          "0 DMs - 11eme jour consecutif - pipeline completement mort",
+          "0 prieres - spirituel a zero depuis plusieurs jours",
+          "0 gym - deuxieme semaine sans mouvement physique"
+        ],
+        "actions_demain": [
+          "3 DMs infopreneurs avant d'ouvrir Instagram",
+          "Gym maison : tractions + dips + haltere",
+          "Coucher avant 23h ce soir"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-06-01 14:30"
+      }
+    },
+    {
+      "date": "2026-06-01",
       "score": 0,
       "note": "",
       "feedback": "",
@@ -1367,21 +1476,21 @@
     }
   ],
   "streaks": {
-    "nopmo": 9,
+    "nopmo": 0,
     "fajr": 0,
     "gym": 0,
     "dms": 0
   },
   "revenue_velocity": {
-    "current_month": "2026-05",
-    "current_commission": 1600,
-    "monthly_target": 1750,
-    "days_elapsed": 31,
-    "days_remaining": 0,
-    "days_in_month": 31,
-    "pct_target": 91,
-    "daily_velocity_needed": 150,
-    "daily_run_rate": 52,
+    "current_month": "2026-06",
+    "current_commission": 0,
+    "monthly_target": 3500,
+    "days_elapsed": 1,
+    "days_remaining": 29,
+    "days_in_month": 30,
+    "pct_target": 0,
+    "daily_velocity_needed": 121,
+    "daily_run_rate": 0,
     "on_track": false
   },
   "subscriptions": [
