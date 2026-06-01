@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01",
+  "lastUpdated": "2026-06-02",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1446,6 +1446,113 @@
     },
     {
       "date": "2026-06-01",
+      "score": 19,
+      "note": "Premier jour cours BUT TC. Call 1h CloseGuard (Fares+Assed). 0 DMs jour 12. PMO oui.",
+      "feedback": "Call CoFounders CloseGuard positif mais 0 outreach. PMO reset energie. 6h sommeil - mieux.",
+      "activitywatch": {
+        "status": "not collected",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "0 DMs. Call 1h CloseGuard (Fares + Assed) : features + review prospects (Leni Constantin, Diane). Premier jour cours BUT TC. 0 contenu poste.",
+        "score": 4
+      },
+      "physique": {
+        "gym": true,
+        "gym_type": "Alteres biceps (partiel)",
+        "coucher": "02:00",
+        "lever": "08:00",
+        "heures_sommeil": 6,
+        "nutrition_clean": null,
+        "repas": "",
+        "goyslop_level": "non renseigne",
+        "goyslop_items": [],
+        "nutrition_score": 5,
+        "score": 5
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "Quelques minutes Duolingo russe. Rien de notable.",
+        "score": 2
+      },
+      "mental": {
+        "energie": 4,
+        "focus": 6,
+        "screen_time_reseaux_min": 96,
+        "screen_time_details": {
+          "Arc": 143,
+          "Telegram": 131,
+          "WA Business": 89,
+          "Instagram": 81,
+          "Chrome": 59,
+          "Safari": 59,
+          "tldv.io": 52,
+          "Terminal": 31,
+          "Photos": 20,
+          "WhatsApp": 16,
+          "Snapchat": 15,
+          "ChatGPT": 13,
+          "Finder": 12,
+          "Horloge": 10
+        },
+        "no_pmo": false,
+        "nsdr": false,
+        "score": 3
+      },
+      "social": {
+        "interaction_hv": true,
+        "contenu_poste": false,
+        "details": "Universite (contact low value). Call 1h Fares + Assed (CloseGuard co-founders, high value).",
+        "score": 5
+      },
+      "jarvis_feedback": {
+        "business_recap": "0 DMs pour le 12eme jour consecutif. Call 1h CloseGuard (Fares+Assed) : features a developper + review appels Leni/Diane. Direction correcte mais 0 croissance pipeline.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 2,
+        "score_total": 4,
+        "feedback_text": "PMO le jour 1 de la reprise en Reunion. Hill (Lois du Succes) : l'ennemi de la discipline c'est toujours l'habitude qui cede en premier quand l'environnement change. Tu rentres de voyage, routine cassee, PMO revient. Keller (The ONE Thing) : l'outreach c'est ton ONE thing en ce moment. 12 jours a 0 DMs, ca veut dire que CloseGuard et ta croissance perso sont sur pause. Le call CoFounders est bon mais c'est de la strategie, pas de la croissance. Hormozi (100M Leads) : sans leads nouveaux, un business est juste en train de perdre de l'altitude lentement. Cote positif : 6h sommeil (mieux que la semaine KL), gym fait meme partiel, Instagram 1h21 (bien en dessous des records). Coucher 2h du mat : l'objectif reste 23h. Newport (Deep Work) : 2h du mat couche = bloc cognitif du matin sacrifice. Demain : 3 DMs avant 10h. Cest le seul KPI qui compte.",
+        "what_good": [
+          "6h sommeil - meilleur que KL (etait a 3-4h)",
+          "Gym fait (meme partiel : alteres biceps)",
+          "Instagram 1h21 - bien en dessous des records (5h44 le 27/05)",
+          "Call 1h CoFounders CloseGuard - direction reelle maintenue",
+          "Premier jour cours gere"
+        ],
+        "what_bad": [
+          "PMO - energie 4/10, streak reset",
+          "0 DMs - 12eme jour consecutif - pipeline mort",
+          "0 prieres - spirituel a zero",
+          "0 deep work - cognitif a zero hors Duolingo",
+          "Coucher 2h du mat - encore trop tard"
+        ],
+        "actions_demain": [
+          "3 DMs infopreneurs avant 10h (non-negociable)",
+          "Fajr demain matin",
+          "Coucher avant 23h ce soir"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-06-01 22:09"
+      }
+    },
+    {
+      "date": "2026-06-02",
       "score": 0,
       "note": "",
       "feedback": "",
@@ -1478,18 +1585,18 @@
   "streaks": {
     "nopmo": 0,
     "fajr": 0,
-    "gym": 0,
+    "gym": 1,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-06",
     "current_commission": 0,
     "monthly_target": 3500,
-    "days_elapsed": 1,
-    "days_remaining": 29,
+    "days_elapsed": 2,
+    "days_remaining": 28,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 121,
+    "daily_velocity_needed": 125,
     "daily_run_rate": 0,
     "on_track": false
   },
