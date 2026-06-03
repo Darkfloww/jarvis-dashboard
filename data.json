@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02",
+  "lastUpdated": "2026-06-04",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1580,23 +1580,168 @@
       "social": {
         "score": 0
       }
+    },
+    {
+      "date": "2026-06-03",
+      "score": 14,
+      "note": "Rebrand CloseGuard acté (Numa embauché, Fares avance 6350€). 0 DMs jour 13. PMO 3 jours consec. Instagram 3h18 override limite.",
+      "feedback": "Décision CloseGuard solide mais pipeline mort. Nutrition pic glycémique = énergie 3/10. PMO pattern installé.",
+      "activitywatch": {
+        "status": "not collected",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "0 DMs. Appel Fares+Assed : rebrand CloseGuard acté, Numa embauché. Fares avance 6 350€, Shayan rembourse ~2 000€ apres avoir close des infopreneurs. Contact Dayyan Instagram.",
+        "score": 4
+      },
+      "physique": {
+        "gym": true,
+        "gym_type": "Alteres biceps + pompes (partiel)",
+        "coucher": "05:00",
+        "lever": "12:00",
+        "heures_sommeil": 7,
+        "nutrition_clean": false,
+        "repas": "Matin : lait de soja + sirop de rose + pain de mie + beurre + fromage + cookies granola + pims orange. Soir : steak boeuf.",
+        "goyslop_level": "critique",
+        "goyslop_items": [
+          "lait de soja",
+          "sirop de rose",
+          "cookies granola",
+          "pims orange",
+          "pain de mie"
+        ],
+        "nutrition_score": 2,
+        "score": 3
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "Duolingo russe. Rien de notable.",
+        "score": 2
+      },
+      "mental": {
+        "energie": 3,
+        "focus": 5,
+        "screen_time_reseaux_min": 245,
+        "screen_time_details": {
+          "Instagram": 198,
+          "TikTok": 32,
+          "Govee Home": 153,
+          "Arc": 98,
+          "Telegram": 84,
+          "WA Business": 62,
+          "ChatGPT": 25,
+          "Chrome": 13,
+          "Safari": 12,
+          "Terminal": 12,
+          "X": 12,
+          "Snapchat": 3,
+          "WhatsApp": 4,
+          "Opal": 6,
+          "NordVPN": 5
+        },
+        "no_pmo": false,
+        "nsdr": false,
+        "score": 1
+      },
+      "social": {
+        "interaction_hv": true,
+        "contenu_poste": false,
+        "details": "Appel Fares + Assed (CloseGuard, high value). Contact Dayyan Instagram.",
+        "score": 4
+      },
+      "jarvis_feedback": {
+        "business_recap": "0 DMs pour le 13eme jour consecutif. Rebrand CloseGuard acte avec Numa (designer Yousef Lashuel). Fares avance 6 350€. Shayan doit rembourser ~2 000€ = obligation de closer des infopreneurs.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 2,
+        "score_total": 4,
+        "feedback_text": "PMO 3 jours consecutifs depuis le streak casse. Hill (Lois du Succes) : une habitude se reinstalle en 3 jours, pas en 30. Le premier PMO apres un long streak c'est un accident. Le deuxieme c'est un choix. Le troisieme c'est un pattern. Tu es en train de reposer les fondations de l'ancienne habitude. Instagram 3h18 avec override de ta propre limite : tu as decide de briser ta regle toi-meme. C'est pas l'algo, c'est toi. Newport (Deep Work) : chaque heure sur Instagram est une heure de potentiel cognitif brule. Energie 3/10 directement liee a la nutrition du matin (pic glycemique lait de soja + pims + cookies). Keller : ton ONE thing reste l'outreach. 13 jours a 0 DMs. Le rebrand CloseGuard est une bonne decision strategique mais c'est du travail futur. Ce qui paie tes dettes maintenant c'est des infopreneurs closes. Demain : 3 DMs avant midi. Fajr. Pas de sucre le matin.",
+        "what_good": [
+          "Rebrand CloseGuard acte - decision strategique majeure avec Yousef Lachuel comme levier",
+          "Fares avance le cash - structure financiere trouvee",
+          "Gym fait (partiel), 7h sommeil",
+          "Appel co-founders productif"
+        ],
+        "what_bad": [
+          "PMO 3 jours consecutifs - pattern qui se reinstalle",
+          "Instagram 3h18 avec override de la limite - discipline cassee",
+          "Nutrition catastrophique matin (pic glycemique) = energie 3/10 toute la journee",
+          "0 DMs - 13eme jour consecutif",
+          "Coucher 5h du matin - rythme qui se degrade",
+          "0 prieres"
+        ],
+        "actions_demain": [
+          "3 DMs infopreneurs avant midi (Shayan doit 2000€ a Fares - pipeline = urgence cash)",
+          "Fajr",
+          "Petit-dej proteines : oeufs + viande. Zero sucre zero lait de soja le matin",
+          "Coucher avant minuit ce soir"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-06-03 22:04"
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "error: curl failed: ",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
     "nopmo": 0,
     "fajr": 0,
-    "gym": 1,
+    "gym": 2,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-06",
     "current_commission": 0,
     "monthly_target": 3500,
-    "days_elapsed": 2,
-    "days_remaining": 28,
+    "days_elapsed": 4,
+    "days_remaining": 26,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 125,
+    "daily_velocity_needed": 135,
     "daily_run_rate": 0,
     "on_track": false
   },
