@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04",
+  "lastUpdated": "2026-06-07",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1725,23 +1725,117 @@
       "social": {
         "score": 0
       }
+    },
+    {
+      "date": "2026-06-06",
+      "score": 21,
+      "note": "Gym biceps+triceps. Instagram 3h51 limite dépassée. 0 DMs. 0 prières. No PMO streak. Mémoire à peine commencé. Steak midi + poulet/riz/gâteau patate douce soir.",
+      "feedback": "Gym maintenu mais business au point mort (0 DMs, 0 calls). Instagram encore en dépassement. Mémoire due demain 23h59 — urgence absolue. Le streak PMO est le seul point positif du mental. L'Islam dit que la discipline de l'esprit commence par la prière — 0 Fajr depuis plusieurs jours.",
+      "activitywatch": {
+        "status": "screen_time_manual",
+        "total_min": 0,
+        "apps": {
+          "Instagram": 231,
+          "Arc": 179,
+          "Telegram": 157,
+          "YouTube": 33,
+          "Snapchat": 14,
+          "ChatGPT": 20
+        }
+      },
+      "screen_time_updated": true,
+      "business": {
+        "score": 3,
+        "dms": 0,
+        "calls": 0,
+        "note": "Appel Didier pour clarifier paiement commission. 0 outreach. Mémoire à peine commencé."
+      },
+      "physique": {
+        "score": 7,
+        "gym": true,
+        "gym_detail": "Biceps + Triceps",
+        "nutrition_score": 7,
+        "goyslop": "light",
+        "note": "Steak bœuf midi, poulet+riz+gâteau patate douce soir (léger slip dessert)"
+      },
+      "spirituel": {
+        "score": 0,
+        "fajr": false,
+        "note": "0 prières"
+      },
+      "cognitif": {
+        "score": 4,
+        "deep_work_hours": 0.3,
+        "duolingo_min": 10,
+        "learning": false,
+        "energy": 6,
+        "focus": 6,
+        "note": "Duolingo 10min. Deep work minimal sur mémoire."
+      },
+      "mental": {
+        "score": 5,
+        "pmo": false,
+        "nsdr": false,
+        "energy": 6,
+        "focus": 6,
+        "sleep_bedtime": "02:00",
+        "sleep_wakeup": "unknown"
+      },
+      "social": {
+        "score": 2,
+        "content_posted": 0,
+        "instagram_min": 231,
+        "instagram_over_limit": true,
+        "note": "Restaurant. 0 contenu posté. Instagram 3h51 — limite dépassée (hourglass visible)."
+      },
+      "jarvis_feedback": "Score 21/100. Business quasi nul. Mémoire deadline dans quelques heures. Physique correct. No PMO = seul streak positif. Spirituel à zéro depuis plusieurs jours — c'est la fondation selon ta vision, tout le reste s'effondre sans elle."
+    },
+    {
+      "date": "2026-06-07",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "error: curl failed: ",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
     "nopmo": 0,
     "fajr": 0,
-    "gym": 2,
+    "gym": 3,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-06",
     "current_commission": 0,
     "monthly_target": 3500,
-    "days_elapsed": 4,
-    "days_remaining": 26,
+    "days_elapsed": 7,
+    "days_remaining": 23,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 135,
+    "daily_velocity_needed": 152,
     "daily_run_rate": 0,
     "on_track": false
   },
