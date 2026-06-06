@@ -1779,9 +1779,9 @@
       "physique": {
         "gym": true,
         "gym_type": "Biceps + Triceps",
-        "coucher": "inconnu",
-        "lever": "inconnu",
-        "heures_sommeil": 0,
+        "coucher": "04:00",
+        "lever": "12:00",
+        "heures_sommeil": 8,
         "nutrition_clean": true,
         "repas": "Midi : steak de bœuf. Soir : poulet + riz + petit gâteau aux patates douces avec chantilly (léger slip dessert).",
         "goyslop_level": "light",
