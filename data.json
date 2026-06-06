@@ -1727,70 +1727,6 @@
       }
     },
     {
-      "date": "2026-06-06",
-      "score": 21,
-      "note": "Gym biceps+triceps. Instagram 3h51 limite dépassée. 0 DMs. 0 prières. No PMO streak. Mémoire à peine commencé. Steak midi + poulet/riz/gâteau patate douce soir.",
-      "feedback": "Gym maintenu mais business au point mort (0 DMs, 0 calls). Instagram encore en dépassement. Mémoire due demain 23h59 — urgence absolue. Le streak PMO est le seul point positif du mental. L'Islam dit que la discipline de l'esprit commence par la prière — 0 Fajr depuis plusieurs jours.",
-      "activitywatch": {
-        "status": "screen_time_manual",
-        "total_min": 0,
-        "apps": {
-          "Instagram": 231,
-          "Arc": 179,
-          "Telegram": 157,
-          "YouTube": 33,
-          "Snapchat": 14,
-          "ChatGPT": 20
-        }
-      },
-      "screen_time_updated": true,
-      "business": {
-        "score": 3,
-        "dms": 0,
-        "calls": 0,
-        "note": "Appel Didier pour clarifier paiement commission. 0 outreach. Mémoire à peine commencé."
-      },
-      "physique": {
-        "score": 7,
-        "gym": true,
-        "gym_detail": "Biceps + Triceps",
-        "nutrition_score": 7,
-        "goyslop": "light",
-        "note": "Steak bœuf midi, poulet+riz+gâteau patate douce soir (léger slip dessert)"
-      },
-      "spirituel": {
-        "score": 0,
-        "fajr": false,
-        "note": "0 prières"
-      },
-      "cognitif": {
-        "score": 4,
-        "deep_work_hours": 0.3,
-        "duolingo_min": 10,
-        "learning": false,
-        "energy": 6,
-        "focus": 6,
-        "note": "Duolingo 10min. Deep work minimal sur mémoire."
-      },
-      "mental": {
-        "score": 5,
-        "pmo": false,
-        "nsdr": false,
-        "energy": 6,
-        "focus": 6,
-        "sleep_bedtime": "02:00",
-        "sleep_wakeup": "unknown"
-      },
-      "social": {
-        "score": 2,
-        "content_posted": 0,
-        "instagram_min": 231,
-        "instagram_over_limit": true,
-        "note": "Restaurant. 0 contenu posté. Instagram 3h51 — limite dépassée (hourglass visible)."
-      },
-      "jarvis_feedback": "Score 21/100. Business quasi nul. Mémoire deadline dans quelques heures. Physique correct. No PMO = seul streak positif. Spirituel à zéro depuis plusieurs jours — c'est la fondation selon ta vision, tout le reste s'effondre sans elle."
-    },
-    {
       "date": "2026-06-07",
       "score": 0,
       "note": "",
@@ -1819,10 +1755,121 @@
       "social": {
         "score": 0
       }
+    },
+    {
+      "date": "2026-06-06",
+      "score": 21,
+      "note": "Gym biceps+triceps. Instagram 3h51 limite dépassée (hourglass). 0 DMs jour 14. 0 prières. No PMO streak maintenu. Mémoire à peine commencé. Steak bœuf midi + poulet/riz/gâteau patate douce soir. Appel Didier pour paiement commission. Restaurant soir.",
+      "feedback": "Score 21/100. Business quasi nul (0 DMs, 0 calls). Instagram encore en dépassement à 3h51. No PMO streak = seul vrai positif mental. Spirituel à zéro. Mémoire deadline demain 23h59.",
+      "activitywatch": {
+        "status": "screen_time_manual",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": true,
+        "recap": "0 DMs (jour 14 consécutif sans outreach). Appel Didier pour clarifier paiement commission du mois (mois précédent partiel à cause de ses dettes). Début mémoire BUT TC3 (à peine commencé).",
+        "score": 3
+      },
+      "physique": {
+        "gym": true,
+        "gym_type": "Biceps + Triceps",
+        "coucher": "inconnu",
+        "lever": "inconnu",
+        "heures_sommeil": 0,
+        "nutrition_clean": true,
+        "repas": "Midi : steak de bœuf. Soir : poulet + riz + petit gâteau aux patates douces avec chantilly (léger slip dessert).",
+        "goyslop_level": "light",
+        "goyslop_items": [
+          "gâteau patates douces",
+          "chantilly"
+        ],
+        "nutrition_score": 7,
+        "score": 7
+      },
+      "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
+        "score": 0
+      },
+      "cognitif": {
+        "deep_work_heures": 0.3,
+        "deep_work_topic": "Mémoire BUT TC3 (début)",
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "Duolingo ~10 min. Rien de notable appris ou appliqué selon Shayan.",
+        "score": 4
+      },
+      "mental": {
+        "energie": 6,
+        "focus": 6,
+        "screen_time_reseaux_min": 245,
+        "screen_time_details": {
+          "Instagram": 231,
+          "Arc": 179,
+          "Telegram": 157,
+          "YouTube": 33,
+          "Snapchat": 14,
+          "Govee Home": 25,
+          "Photos": 21,
+          "ChatGPT": 20,
+          "Chrome": 15,
+          "WA Business": 11,
+          "NordVPN": 5,
+          "Gmail": 5,
+          "Terminal": 5
+        },
+        "no_pmo": true,
+        "nsdr": false,
+        "score": 5
+      },
+      "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "details": "Restaurant le soir. 0 contenu posté. 0 interaction haute valeur business. Instagram 3h51 avec dépassement de la limite (hourglass affiché).",
+        "score": 2
+      },
+      "jarvis_feedback": {
+        "business_recap": "14ème jour consécutif à 0 DMs. Appel Didier pour régularisation commission : positif sur la relation client mais ça ne remplace pas l'outreach. Mémoire BUT TC3 débuté à peine — deadline dans moins de 24h.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 1,
+        "score_total": 3,
+        "feedback_text": "Le streak PMO est réel et il faut le saluer : c'est de la discipline pure sur 7+ jours. Newport (Deep Work) dit que la discipline s'entraîne comme un muscle — le PMO est ta première rep quotidienne. Garde-la.\n\nMais Instagram 3h51 avec override de ta propre limite, c'est la même chose que PMO sur un autre levier : tu as vu la limite, tu l'as ignorée, tu as continué. C'est pas l'app, c'est une décision.\n\nBusiness : 14 jours sans DM. Keller (The ONE Thing) : si ton unique chose est de closer des infopreneurs pour rembourser Fares et scaler CloseGuard, alors chaque matin sans DM est une journée perdue. Pas une journée moins productive — une journée perdue.\n\nSpirituellement : 0 depuis plusieurs jours. Hill (Lois du Succès) parle de la force intérieure comme fondation de tout le reste. Tu ne peux pas construire sur du sable.\n\nMémoire deadline : demain 23h59. C'est la priorité absolue dès le réveil.",
+        "what_good": [
+          "No PMO streak maintenu — discipline réelle sur plusieurs jours",
+          "Gym fait (biceps + triceps)",
+          "Nutrition propre (léger slip seulement sur le dessert)",
+          "Appel Didier : relation client maintenue, paiement clarifié",
+          "Énergie 6/10 = stable"
+        ],
+        "what_bad": [
+          "Instagram 3h51 avec override de la limite — discipline brisée sur ce levier",
+          "14ème jour consécutif à 0 DMs — pipeline mort",
+          "0 prières — fondation spirituelle absente",
+          "Mémoire à peine commencé — deadline dans 24h",
+          "0 contenu posté",
+          "Duolingo ~10min seulement"
+        ],
+        "actions_demain": [
+          "Mémoire BUT TC3 : rédiger de 14h à 23h59 avec Claude (toute la journée dédiée)",
+          "Fajr au réveil — premier acte de la journée",
+          "Pas d'Instagram avant 20h (mémoire d'abord)",
+          "Confirmer avec Didier que la commission complète est envoyée ce mois"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-06-07 00:42"
+      }
     }
   ],
   "streaks": {
-    "nopmo": 0,
+    "nopmo": 1,
     "fajr": 0,
     "gym": 3,
     "dms": 0
