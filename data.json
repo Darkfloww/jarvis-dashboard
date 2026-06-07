@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07",
+  "lastUpdated": "2026-06-08",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1728,32 +1728,108 @@
     },
     {
       "date": "2026-06-07",
-      "score": 0,
-      "note": "",
-      "feedback": "",
+      "score": 14,
+      "note": "Jour calme, peu d'activité business/spirituel/cognitif, mais journée dominée par la finalisation et la soumission définitive du mémoire BUT TC3 (CloseGuard réécrit, Annexe 1 refaite en infographie). Repos physique volontaire (gym fait la veille). Nutrition mitigée : poulet/riz clean le midi, tacos poulet frit + crêpes le soir (écart assumé). Screen time réseaux en net recul : 1h48 Instagram seulement, 0 TikTok.",
+      "feedback": "Score 14/100. Journée à très faible volume sur presque tous les piliers (0 DM, 0 prière, 0 deep work), mais à mettre en perspective : le mémoire BUT TC3 a été finalisé et déposé définitivement aujourd'hui — accomplissement réel qui ne rentre dans aucune case JARVIS mais compte. No PMO streak maintenu, écrans sociaux en net recul (108 min vs 245+ récemment).",
       "activitywatch": {
+        "apps": {},
         "status": "error: curl failed: ",
-        "total_min": 0,
-        "apps": {}
+        "total_min": 0
       },
-      "screen_time_updated": false,
+      "screen_time_updated": true,
       "business": {
-        "score": 0
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "recap": "0 DM, 0 call booké, aucune avancée delivery Didier mentionnée. Journée entièrement consacrée à la finalisation et au dépôt définitif du mémoire BUT TC3 (hors-cadre business mais charge cognitive et enjeu réels).",
+        "score": 2
       },
       "physique": {
-        "score": 0
+        "gym": false,
+        "gym_type": "",
+        "goyslop_items": [
+          "tacos poulet frit + sauce",
+          "crêpes"
+        ],
+        "goyslop_level": "modéré",
+        "nutrition_clean": false,
+        "nutrition_score": 5,
+        "repas": "Midi : poulet + riz (clean). Soir : tacos avec poulet frit + sauce ('vraiment pas terrible' selon Shayan), puis bananes, chocolat noir et crêpes.",
+        "score": 4
       },
       "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
         "score": 0
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 0,
+        "deep_work_topic": null,
+        "duolingo_russe": true,
+        "duolingo_minutes": 10,
+        "apprentissage": "Duolingo russe (un peu plus de 10 min selon Shayan). Pas de deep work, pas d'apprentissage business notable — journée absorbée par la finalisation du mémoire BUT TC3.",
+        "score": 2
       },
       "mental": {
-        "score": 0
+        "energie": 6,
+        "focus": 5,
+        "no_pmo": true,
+        "nsdr": false,
+        "screen_time_reseaux_min": 108,
+        "screen_time_details": {
+          "Telegram": 259,
+          "Arc": 128,
+          "Instagram": 108,
+          "Terminal": 34,
+          "Aperçu": 28,
+          "Ostrovok": 21,
+          "WA Business": 14,
+          "Snapchat": 13,
+          "Safari": 9,
+          "X": 8,
+          "Docs": 8,
+          "Chrome": 7,
+          "digitalflooz.novaris-ai.com": 7,
+          "Govee Home": 7
+        },
+        "score": 6
       },
       "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "details": "0 interaction haute valeur, 0 contenu posté. Réseaux sociaux en net recul (1h48 Instagram, pas de TikTok), Telegram dominant (4h19, en grande partie consacré au travail sur le mémoire).",
         "score": 0
+      },
+      "jarvis_feedback": {
+        "timestamp": "2026-06-08 09:00",
+        "niveau": "FAIBLE",
+        "score_volume": 1,
+        "score_direction": 3,
+        "score_leverage": 1,
+        "score_total": 5,
+        "what_good": [
+          "Mémoire BUT TC3 finalisé et déposé définitivement aujourd'hui (CloseGuard réécrit, Annexe 1 refaite en infographie complète) — obligation lourde enfin soldée",
+          "No PMO streak maintenu — discipline qui continue malgré une journée à vide ailleurs",
+          "Repos physique assumé et volontaire (gym fait la veille, pas de sur-frequentation)",
+          "Réseaux sociaux en net recul : 1h48 Instagram seulement, 0 TikTok, contre 245-300+ min les jours précédents"
+        ],
+        "what_bad": [
+          "0 DM, 0 call — pipeline business toujours à l'arrêt",
+          "0 prière, 0 Coran — spirituel à zéro depuis plusieurs jours",
+          "0 deep work, 0 contenu posté, 0 interaction haute valeur",
+          "Écart nutrition assumé le soir (tacos poulet frit + crêpes), Shayan lui-même : 'vraiment pas terrible'"
+        ],
+        "business_recap": "Encore une journée à 0 DM et 0 call — la mécanique d'outreach reste à l'arrêt. Mais le vrai sujet du jour était ailleurs : le mémoire BUT TC3 est FINI et SOUMIS. C'était une obligation lourde qui traînait depuis des semaines, et elle est maintenant derrière lui — ce qui libère mentalement de l'espace pour la vraie priorité : CloseGuard et le pipeline de DMs.",
+        "actions_demain": [
+          "Reprendre l'outreach DM dès le réveil — c'est la ONE Thing (Keller), le mémoire ne doit plus servir d'excuse",
+          "Fajr au réveil, premier acte de la journée avant tout écran",
+          "Caler un bloc deep work CloseGuard ou Didier (1h minimum) — capitaliser sur l'esprit libéré du mémoire",
+          "Profiter de la baisse naturelle du temps d'écran social pour la canaliser vers du volume business, pas vers du repos prolongé"
+        ],
+        "feedback_text": "Le score brut (14/100) ne raconte pas toute l'histoire aujourd'hui. Oui, les compteurs business, spirituel et cognitif sont à zéro ou presque — ça reste un vrai problème de fond. Mais la vraie nouvelle du jour, c'est que le mémoire BUT TC3 est terminé et déposé. Ce n'était pas la priorité long terme de Shayan, mais c'était une obligation suspendue au-dessus de sa tête depuis des semaines, et elle est réglée.\n\nNewport (Deep Work) dirait que la discipline est un muscle : le streak No PMO continue de tenir, même un jour à vide ailleurs. C'est la rep qui compte le plus, celle qu'on fait quand il n'y a aucune autre raison de le faire.\n\nKeller (The ONE Thing) est plus tranchant : maintenant que le mémoire est derrière lui, il n'y a plus aucune excuse légitime pour ne pas reprendre l'outreach demain matin. La 'ONE Thing' redevient limpide : DM, calls, closing.\n\nHill (Lois du Succès) rappellerait que le spirituel à zéro depuis plusieurs jours fragilise toute la structure — pas de fondation intérieure stable, pas de socle pour porter l'ambition du reste.\n\nLe positif réel : écrans sociaux en chute nette (108 min vs 245-300+ récemment), repos physique intelligent (pas de sur-frequentation après l'effort de la veille), et une obligation lourde enfin soldée. Maintenant, il faut transformer cet espace mental libéré en volume d'action concret dès demain matin."
       }
     },
     {
@@ -1869,9 +1945,9 @@
     }
   ],
   "streaks": {
-    "nopmo": 1,
+    "nopmo": 2,
     "fajr": 0,
-    "gym": 3,
+    "gym": 1,
     "dms": 0
   },
   "revenue_velocity": {
