@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08",
+  "lastUpdated": "2026-06-24",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -1942,12 +1942,125 @@
         "niveau": "FAIBLE",
         "timestamp": "2026-06-07 00:42"
       }
+    },
+    {
+      "date": "2026-06-24",
+      "score": 25,
+      "note": "Reprise du tracking après 17j de pause. 0 DM, 0 call. Tournage intro démo CloseGuard mais inutilisable (accent + qualité vidéo) → Fares a tout re-tourné. Pas de gym. Sommeil fragmenté (réveil 5h, sieste 11h-16h, éveillé jusqu'à 3h38). Fajr fait. 1h cours de russe avec Alexandra + 2h deep work. No PMO repris (jour 1, cassé pendant la pause). Screen time réseaux en chute libre (IG 1h34, TikTok ~0).",
+      "feedback": "Score 25/100. Meilleure trajectoire que début juin grâce au cognitif (cours russe + deep work) et à l'effondrement du screen time. Mais business toujours à 0 et sommeil détruit.",
+      "activitywatch": {
+        "status": "screen_time_manual",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": true,
+      "business": {
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": true,
+        "recap": "0 DM, 0 call. Seule activité business : tournage de l'intro de la démo CloseGuard, mais take inutilisable (accent pas assez bon + qualité vidéo insuffisante) → Fares a re-tourné toute l'intro + la démo. Output business net proche de zéro.",
+        "score": 3
+      },
+      "physique": {
+        "gym": false,
+        "gym_type": "",
+        "coucher": "fragmenté",
+        "lever": "05:00",
+        "heures_sommeil": 5,
+        "nutrition_clean": false,
+        "repas": "Midi : sushis + bœuf (clean). Soir : shawarma (sauce = léger goyslop) + dessert crêpe banane chocolat (goyslop).",
+        "goyslop_level": "moderate",
+        "goyslop_items": [
+          "sauce shawarma",
+          "crêpe banane chocolat"
+        ],
+        "nutrition_score": 5,
+        "score": 3
+      },
+      "spirituel": {
+        "fajr": true,
+        "prieres": 1,
+        "coran": false,
+        "score": 2
+      },
+      "cognitif": {
+        "deep_work_heures": 2,
+        "deep_work_topic": "Russe + travail CloseGuard",
+        "duolingo_russe": true,
+        "duolingo_minutes": 15,
+        "apprentissage": "1h de cours de russe avec Alexandra (prof). Appris l'accent tonique : certains O non accentués se prononcent A. + Duolingo.",
+        "score": 8
+      },
+      "mental": {
+        "energie": 6.5,
+        "focus": 6.5,
+        "screen_time_reseaux_min": 99,
+        "screen_time_details": {
+          "Instagram": 94,
+          "WA Business": 90,
+          "Telegram": 71,
+          "Notion": 51,
+          "SoundCloud": 46,
+          "Safari": 20,
+          "Grok": 9,
+          "Grab": 8,
+          "classgap.com": 8,
+          "Photos": 7,
+          "Snapchat": 5,
+          "Whop": 3,
+          "gleneagles.com.my": 3,
+          "Réglages": 3
+        },
+        "no_pmo": true,
+        "nsdr": false,
+        "score": 6
+      },
+      "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "details": "Sorties le soir avec Dayyan à Kuala Lumpur, vraies discussions, interaction sociale de qualité. Mais 0 contenu posté et 0 interaction haute valeur business.",
+        "score": 3
+      },
+      "jarvis_feedback": {
+        "business_recap": "Reprise du tracking après 17j de silence. Business toujours à 0 DM / 0 call. L'unique action business — filmer l'intro démo CloseGuard — n'a rien produit d'exploitable (accent + qualité), Fares a tout re-tourné. C'est un signal : ta zone de génie n'est pas le tournage, c'est le closing et l'outreach. Délègue le reste, reprends ton levier.",
+        "score_volume": 0,
+        "score_leverage": 2,
+        "score_direction": 1,
+        "score_total": 3,
+        "feedback_text": "Trois vraies victoires aujourd'hui, sois honnête là-dessus.\n\n1) Le screen time s'est effondré : TikTok à ~0, Instagram à 1h34 contre 4-5h il y a quelques semaines. C'est énorme. Newport (Deep Work) : tu viens de récupérer 3h de bande passante attentionnelle par jour. La question n'est pas de l'avoir gagnée, c'est où tu la réinvestis. Aujourd'hui elle est partie dans le sommeil fragmenté, pas dans l'outreach.\n\n2) Le cours de russe + 2h de deep work = vrai travail profond. Mais attention au piège Keller (The ONE Thing) : le russe est important pour Veronika, pas pour ton revenue target. C'est du deep work sur une priorité secondaire pendant que ta ONE thing (closer des infopreneurs) est à 0 depuis des semaines. Le russe ne rembourse pas Fares.\n\n3) No PMO repris. Tu as cassé pendant 17 jours, tu l'as dit franchement, et tu repars. Hill (Lois du Succès) : la maîtrise de soi est la fondation. Jour 1 = jour 1, pas de culpabilité, juste la reprise.\n\nLe vrai problème structurel = ton sommeil. Réveil 5h, rdormi 11h-16h, debout jusqu'à 3h38 : ton corps n'a aucun rythme. Tout le reste (énergie 6.5, focus 6.5, 0 DM) découle de là. Tu ne peux pas faire d'outreach matinal discipliné si tu dors quand le monde travaille. Fixe le sommeil cette semaine, et le business suivra mécaniquement.",
+        "what_good": [
+          "Screen time effondré : TikTok ~0, Instagram 1h34 (vs 4-5h avant) — discipline réelle sur le scroll",
+          "Cours de russe 1h avec Alexandra + 2h de deep work",
+          "No PMO repris (jour 1) après une cassure assumée",
+          "Fajr fait",
+          "Bonne interaction sociale avec Dayyan à KL"
+        ],
+        "what_bad": [
+          "0 DM, 0 call — business toujours à l'arrêt",
+          "Intro démo CloseGuard inutilisable (accent + qualité) → re-tournée par Fares",
+          "Sommeil détruit et fragmenté (réveil 5h, sieste 11h-16h, debout jusqu'à 3h38)",
+          "Pas de gym",
+          "0 contenu posté",
+          "Seulement Fajr, autres prières à 0"
+        ],
+        "actions_demain": [
+          "Gym (tu l'as dit — non négociable)",
+          "Bloc d'outreach matinal : minimum 5 DM à des infopreneurs avant tout le reste",
+          "Fixer un cutoff de sommeil ce soir pour casser le rythme fragmenté",
+          "Fajr au réveil",
+          "Déléguer 100% du tournage à Fares, te concentrer sur le closing"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-06-25 03:40"
+      }
     }
   ],
   "streaks": {
-    "nopmo": 2,
-    "fajr": 0,
-    "gym": 1,
+    "nopmo": 1,
+    "fajr": 1,
+    "gym": 0,
     "dms": 0
   },
   "revenue_velocity": {
