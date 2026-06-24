@@ -1847,7 +1847,7 @@ function renderBusinessTab(data){
   const _training = data.training || {};
   if($('train-freq')) $('train-freq').textContent = _training.frequence || '4 séances/sem';
 
-  const detail = training.programme_detail || {};
+  const detail = _training.programme_detail || {};
   if(Object.keys(detail).length > 0){
     $('train-programme').innerHTML = Object.entries(detail).map(([type, exos])=>`
       <div style="margin-bottom:10px">
