@@ -1712,6 +1712,16 @@ function setTaskFilter(mode){
   }
   renderTasks(_allTasks);
 }
+function _getTaskDone(){
+  try { return JSON.parse(localStorage.getItem('jarvis_task_done') || '{}'); }
+  catch(e){ return {}; }
+}
+function toggleTaskDone(id){
+  const m = _getTaskDone();
+  if(m[id]) delete m[id]; else m[id] = _todayStr();
+  localStorage.setItem('jarvis_task_done', JSON.stringify(m));
+  renderTasks(_allTasks);
+}
 function renderTasks(tasks){
   _allTasks = tasks || [];
   const prioCfg = {
@@ -1726,28 +1736,31 @@ function renderTasks(tasks){
     viewTasks = _allTasks.filter(t => t.do_date === today);
   }
 
+  const doneMap = _getTaskDone();
+  const isDone = t => t.statut === 'done' || !!doneMap[t.id];
+
   const groups = { urgent: [], haute: [], normale: [], done: [] };
   (viewTasks || []).forEach(t => {
-    if(t.statut === 'done') groups.done.push(t);
-    else groups[t.priorite] = groups[t.priorite] || [];
-    if(t.statut !== 'done') (groups[t.priorite] || groups.normale).push(t);
+    if(isDone(t)) groups.done.push(t);
+    else (groups[t.priorite] || groups.normale).push(t);
   });
 
   const renderGroup = (id, taskList, cfg) => {
     const el = $(id);
+    if(!el){ return; }
     if(!taskList.length){ el.innerHTML = ''; return; }
     el.innerHTML = `
       <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:${cfg.color};margin-bottom:8px">${cfg.icon} ${cfg.label} (${taskList.length})</div>
       <div style="display:flex;flex-direction:column;gap:8px">
-        ${taskList.map(t => `
+        ${taskList.map(t => { const done = isDone(t); return `
           <div style="background:var(--surface);border:1px solid var(--border);border-left:2px solid ${cfg.color};border-radius:var(--r);padding:14px 16px;display:flex;align-items:flex-start;gap:12px">
+            <div onclick="toggleTaskDone(${t.id})" title="${done?'Marquer comme à faire':'Marquer comme fait'}" style="cursor:pointer;flex-shrink:0;width:22px;height:22px;border-radius:6px;border:2px solid ${done?'#22c55e':cfg.color};background:${done?'#22c55e':'transparent'};display:flex;align-items:center;justify-content:center;color:#000;font-size:13px;font-weight:900;line-height:1;margin-top:1px">${done?'✓':''}</div>
             <div style="flex:1">
-              <div style="font-size:14px;font-weight:600;margin-bottom:4px;color:${t.statut==='done'?'#475569':'#e2e8f0'};${t.statut==='done'?'text-decoration:line-through':''}">${t.titre}</div>
+              <div style="font-size:14px;font-weight:600;margin-bottom:4px;color:${done?'#475569':'#e2e8f0'};${done?'text-decoration:line-through':''}">${t.titre}</div>
               ${t.contexte?`<div style="font-size:12px;color:#64748b">${t.contexte}</div>`:''}
-              <div style="font-size:11px;color:#475569;margin-top:6px">Ajouté le ${t.date_ajout}${t.echeance?' · Échéance : '+t.echeance:''}</div>
+              <div style="font-size:11px;color:#475569;margin-top:6px">Ajouté le ${t.date_ajout}${t.echeance?' · Échéance : '+t.echeance:''}${doneMap[t.id]?' · ✅ Fait le '+doneMap[t.id]:''}</div>
             </div>
-            ${t.statut==='done'?'<div style="color:#22c55e;font-size:18px">✓</div>':''}
-          </div>`).join('')}
+          </div>`; }).join('')}
       </div>`;
   };
 
