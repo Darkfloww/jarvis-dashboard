@@ -78,7 +78,8 @@
       "statut": "todo",
       "contexte": "Partenariat à intégrer dans le contenu/offre de Didier.",
       "date_ajout": "2026-05-25",
-      "echeance": ""
+      "echeance": "",
+      "do_date": "2026-06-25"
     },
     {
       "id": 9,
@@ -96,7 +97,28 @@
       "statut": "todo",
       "contexte": "Optimisation complète du profil IG : bio, photo, highlights, lien. Levier direct pour la prospection growth operating.",
       "date_ajout": "2026-05-30",
-      "echeance": ""
+      "echeance": "",
+      "do_date": "2026-06-25"
+    },
+    {
+      "id": 11,
+      "titre": "DM des créateurs pour le growth operating",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "Outreach quotidien : DM ciblés à des créateurs / infopreneurs pour signer de nouveaux clients growth operating. Le levier #1 du revenue target.",
+      "date_ajout": "2026-06-25",
+      "echeance": "",
+      "do_date": "2026-06-25"
+    },
+    {
+      "id": 12,
+      "titre": "Créer un nouveau contrat avec clause de remboursement (offre irrésistible) pour Didier",
+      "priorite": "normale",
+      "statut": "todo",
+      "contexte": "Nouveau contrat intégrant une clause de remboursement pour rendre l'offre de Didier irrésistible. Reportable au lendemain si pas le temps aujourd'hui.",
+      "date_ajout": "2026-06-25",
+      "echeance": "",
+      "do_date": "2026-06-25"
     }
   ],
   "crm": {
