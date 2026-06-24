@@ -1856,7 +1856,7 @@ function renderBusinessTab(data){
       </div>`).join('');
   }
 
-  const sessions = training.sessions || [];
+  const sessions = _training.sessions || [];
   if(sessions.length === 0){
     $('train-sessions').innerHTML = '<div style="font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px">Aucune séance log. Ce soir dis-moi si t\'as été à la salle et quel type.</div>';
   } else {
