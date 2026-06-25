@@ -1716,11 +1716,35 @@ function _getTaskDone(){
   try { return JSON.parse(localStorage.getItem('jarvis_task_done') || '{}'); }
   catch(e){ return {}; }
 }
+function _setTaskDone(m){
+  localStorage.setItem('jarvis_task_done', JSON.stringify(m));
+}
+// Pull server state on load and merge into local cache, then re-render.
+async function syncTaskDone(){
+  try {
+    const res = await fetch('/api/tasks', { cache: 'no-store' });
+    if(!res.ok) return;
+    const data = await res.json();
+    if(data && data.done && typeof data.done === 'object'){
+      _setTaskDone(data.done);
+      renderTasks(_allTasks);
+    }
+  } catch(e){ /* offline / not deployed yet: keep local cache */ }
+}
 function toggleTaskDone(id){
   const m = _getTaskDone();
-  if(m[id]) delete m[id]; else m[id] = _todayStr();
-  localStorage.setItem('jarvis_task_done', JSON.stringify(m));
+  const done = !m[id];
+  if(done) m[id] = _todayStr(); else delete m[id];
+  _setTaskDone(m);            // optimistic local update
   renderTasks(_allTasks);
+  // persist to server (best effort; localStorage keeps it consistent if offline)
+  fetch('/api/tasks', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id: id, done: done, date: _todayStr() })
+  }).then(r => r.ok ? r.json() : null)
+    .then(d => { if(d && d.done){ _setTaskDone(d.done); } })
+    .catch(()=>{});
 }
 function renderTasks(tasks){
   _allTasks = tasks || [];
@@ -2196,7 +2220,7 @@ async function init(){
     try { renderRecords(data.days); } catch(e){ console.error('records',e); }
     try { renderBusinessTab(data); } catch(e){ console.error('business',e); }
     try { renderCorpsTab(data, data.days); } catch(e){ console.error('corps',e); }
-    try { renderTasks(data.tasks); } catch(e){ console.error('tasks',e); }
+    try { renderTasks(data.tasks); syncTaskDone(); } catch(e){ console.error('tasks',e); }
     try { renderFinanceChart(data); } catch(e){ console.error('finance',e); }
     try { renderFinanceTab(data); } catch(e){ console.error('finance-tab',e); }
     try { renderStreaksRow(data); } catch(e){ console.error('streaks',e); }
