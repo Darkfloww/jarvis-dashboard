@@ -1,1 +1,14 @@
-{}
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/tasks.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "data.json", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/tasks", "dest": "/api/tasks.js" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/data.json", "dest": "/data.json" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
