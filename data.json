@@ -1,2132 +1,2213 @@
 {
-  "lastUpdated": "2026-06-24",
-  "profile": {
-    "name": "Shayan",
-    "goal": "Top 0.00000001%",
-    "location": "La Réunion (retour 29 mai)",
-    "patrimoine": 4000,
-    "client": "Didier (~1500-1750€/mois)"
+ "lastUpdated": "2026-06-25",
+ "profile": {
+  "name": "Shayan",
+  "goal": "Top 0.00000001%",
+  "location": "La Réunion (retour 29 mai)",
+  "patrimoine": 4000,
+  "client": "Didier (~1500-1750€/mois)"
+ },
+ "tasks": [
+  {
+   "id": 1,
+   "titre": "Demander à Papa de recommander la carte SIM Réunion",
+   "priorite": "urgent",
+   "statut": "todo",
+   "contexte": "Carte SIM perdue à KL. Opérateur de l'île.",
+   "date_ajout": "2026-05-21",
+   "echeance": ""
   },
-  "tasks": [
-    {
-      "id": 1,
-      "titre": "Demander à Papa de recommander la carte SIM Réunion",
-      "priorite": "urgent",
-      "statut": "todo",
-      "contexte": "Carte SIM perdue à KL. Opérateur de l'île.",
-      "date_ajout": "2026-05-21",
-      "echeance": ""
-    },
-    {
-      "id": 2,
-      "titre": "Poster le carousel Instagram voyage KL / Chine",
-      "priorite": "haute",
-      "statut": "done",
-      "contexte": "Posté le 26/05/2026.",
-      "date_ajout": "2026-05-21",
-      "echeance": ""
-    },
-    {
-      "id": 3,
-      "titre": "Faire la demande pour récupérer le permis de conduire",
-      "priorite": "normale",
-      "statut": "todo",
-      "contexte": "À faire dès le retour à La Réunion (après le 29 mai).",
-      "date_ajout": "2026-05-21",
-      "echeance": "2026-06-05"
-    },
-    {
-      "id": 4,
-      "titre": "Refaire un nouveau passeport",
-      "priorite": "normale",
-      "statut": "todo",
-      "contexte": "Passeport actuel expire le 30/01/2027. À faire dès le retour à La Réunion (après le 29 mai).",
-      "date_ajout": "2026-05-22",
-      "echeance": "2026-07-01"
-    },
-    {
-      "id": 5,
-      "titre": "Tourner l'intro vidéo Loom pour la prospection infopreneurs",
-      "priorite": "haute",
-      "statut": "done",
-      "contexte": "Vidéo Loom d'introduction pour la prospection ciblée infopreneurs. À tourner avant d'envoyer des DMs.",
-      "date_ajout": "2026-05-23",
-      "echeance": ""
-    },
-    {
-      "id": 6,
-      "titre": "Acheter cadeaux famille avant retour La Réunion",
-      "priorite": "haute",
-      "statut": "done",
-      "contexte": "Avant de quitter KL (29 mai). Cadeaux pour : mère, père, petite soeur, 2 grands-mères, oncle.",
-      "date_ajout": "2026-05-24",
-      "echeance": "2026-05-29"
-    },
-    {
-      "id": 7,
-      "titre": "Créer la miniature YouTube Didier (titre validé)",
-      "priorite": "haute",
-      "statut": "done",
-      "contexte": "Titre validé : 'arrête d'acheter des formations (j'ai perdu 15 000€ pour comprendre ça)'. Miniature à créer — nécessite photo nette de Didier.",
-      "date_ajout": "2026-05-25",
-      "echeance": ""
-    },
-    {
-      "id": 8,
-      "titre": "Conclure le partenariat LegalPlace dans la formation Didier",
-      "priorite": "haute",
-      "statut": "todo",
-      "contexte": "Partenariat à intégrer dans le contenu/offre de Didier.",
-      "date_ajout": "2026-05-25",
-      "echeance": "",
-      "do_date": "2026-06-25"
-    },
-    {
-      "id": 9,
-      "titre": "Créer SOP prospection + closing pour CloseGuard",
-      "priorite": "haute",
-      "statut": "todo",
-      "contexte": "SOP complet : process outreach ciblé + script de closing pour le SaaS CloseGuard. Indispensable avant de scaler l'acquisition.",
-      "date_ajout": "2026-05-30",
-      "echeance": ""
-    },
-    {
-      "id": 10,
-      "titre": "Optimiser le profil Instagram",
-      "priorite": "haute",
-      "statut": "todo",
-      "contexte": "Optimisation complète du profil IG : bio, photo, highlights, lien. Levier direct pour la prospection growth operating.",
-      "date_ajout": "2026-05-30",
-      "echeance": "",
-      "do_date": "2026-06-25"
-    },
-    {
-      "id": 11,
-      "titre": "DM des créateurs pour le growth operating",
-      "priorite": "haute",
-      "statut": "todo",
-      "contexte": "Outreach quotidien : DM ciblés à des créateurs / infopreneurs pour signer de nouveaux clients growth operating. Le levier #1 du revenue target.",
-      "date_ajout": "2026-06-25",
-      "echeance": "",
-      "do_date": "2026-06-25"
-    },
-    {
-      "id": 12,
-      "titre": "Créer un nouveau contrat avec clause de remboursement (offre irrésistible) pour Didier",
-      "priorite": "normale",
-      "statut": "todo",
-      "contexte": "Nouveau contrat intégrant une clause de remboursement pour rendre l'offre de Didier irrésistible. Reportable au lendemain si pas le temps aujourd'hui.",
-      "date_ajout": "2026-06-25",
-      "echeance": "",
-      "do_date": "2026-06-25"
-    }
-  ],
-  "crm": {
-    "prospects": [
-      {
-        "id": 1,
-        "name": "Dayyan",
-        "platform": "Instagram / Calendly",
-        "handle": "@dayyaandm",
-        "contacted": "2026-05-21",
-        "status": "non_qualifie_referral",
-        "next_action": "DM Wally Invest (@wallinvest?) — référal de Dayyan, potentiel SaaS CloseGuard",
-        "next_action_date": "2026-05-27",
-        "notes": "Call fait le 26/05. Dayyan non qualifié (ads agency, pas de setters/calls). A référé Wally Invest comme prospect SaaS. Vient à KL juin — networking à entretenir.",
-        "email": "dayyaan@lead-x.fr",
-        "meet_link": "https://meet.google.com/rex-mdiu-ggr"
-      },
-      {
-        "id": 2,
-        "name": "Léni Constantin",
-        "platform": "Adrien Marquis coaching",
-        "handle": "",
-        "contacted": "2026-05-27",
-        "status": "interested_follow_up",
-        "next_action": "Relance dans 2-3 semaines — attendre qu'il ait plus de clients avec son infopreneur",
-        "next_action_date": "2026-06-17",
-        "notes": "Call fait le 27/05 (1h+). SaaS apprécié. Pas encore prêt (pas assez de calls avec son infopreneur). Relance mi-juin.",
-        "email": "",
-        "meet_link": ""
-      }
-    ]
+  {
+   "id": 2,
+   "titre": "Poster le carousel Instagram voyage KL / Chine",
+   "priorite": "haute",
+   "statut": "done",
+   "contexte": "Posté le 26/05/2026.",
+   "date_ajout": "2026-05-21",
+   "echeance": ""
   },
-  "finance": {
-    "target_mensuel": 20000,
-    "target_date": "2026-11-30",
-    "roadmap": [
-      {
-        "month": "2026-05",
-        "target": 1750
-      },
-      {
-        "month": "2026-06",
-        "target": 3500
-      },
-      {
-        "month": "2026-07",
-        "target": 6000
-      },
-      {
-        "month": "2026-08",
-        "target": 10000
-      },
-      {
-        "month": "2026-09",
-        "target": 14000
-      },
-      {
-        "month": "2026-10",
-        "target": 17000
-      },
-      {
-        "month": "2026-11",
-        "target": 20000
-      }
-    ],
-    "months": [
-      {
-        "month": "2025-06",
-        "revenus_total": 80,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 139,
-        "patrimoine_fin": 0,
-        "nb_transactions": 15
-      },
-      {
-        "month": "2025-07",
-        "revenus_total": 154,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 132,
-        "patrimoine_fin": 0,
-        "nb_transactions": 30
-      },
-      {
-        "month": "2025-08",
-        "revenus_total": 388,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 352,
-        "patrimoine_fin": 0,
-        "nb_transactions": 78
-      },
-      {
-        "month": "2025-09",
-        "revenus_total": 1541,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 1526,
-        "patrimoine_fin": 0,
-        "nb_transactions": 78
-      },
-      {
-        "month": "2025-10",
-        "revenus_total": 20,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 132,
-        "patrimoine_fin": 0,
-        "nb_transactions": 32
-      },
-      {
-        "month": "2025-11",
-        "revenus_total": 2560,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 1458,
-        "patrimoine_fin": 0,
-        "nb_transactions": 35
-      },
-      {
-        "month": "2025-12",
-        "revenus_total": 824,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 758,
-        "patrimoine_fin": 0,
-        "nb_transactions": 61
-      },
-      {
-        "month": "2026-01",
-        "revenus_total": 6032,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 1638,
-        "patrimoine_fin": 0,
-        "nb_transactions": 122
-      },
-      {
-        "month": "2026-02",
-        "revenus_total": 4859,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 3463,
-        "patrimoine_fin": 0,
-        "nb_transactions": 76
-      },
-      {
-        "month": "2026-03",
-        "revenus_total": 6508,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 6906,
-        "patrimoine_fin": 0,
-        "nb_transactions": 241
-      },
-      {
-        "month": "2026-04",
-        "revenus_total": 2466,
-        "commissions_didier": 0,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 3750,
-        "patrimoine_fin": 0,
-        "nb_transactions": 364
-      },
-      {
-        "month": "2026-05",
-        "revenus_total": 5230,
-        "revenus_perso_net": 1600,
-        "commissions_didier": 1000,
-        "commissions_closeGuard": 0,
-        "commissions_kenzo": 0,
-        "depenses": 4620,
-        "patrimoine_fin": 4000,
-        "nb_transactions": 370
-      }
-    ]
+  {
+   "id": 3,
+   "titre": "Faire la demande pour récupérer le permis de conduire",
+   "priorite": "normale",
+   "statut": "todo",
+   "contexte": "À faire dès le retour à La Réunion (après le 29 mai).",
+   "date_ajout": "2026-05-21",
+   "echeance": "2026-06-05"
   },
-  "training": {
-    "programme": "Push / Pull / Core — Haut du corps",
-    "objectif": "Pectoraux, épaules, bras (biceps+triceps+avant-bras), dos, abdos+obliques",
-    "frequence": "4 séances/semaine minimum",
-    "programme_detail": {
-      "Push": [
-        "Développé couché / Push-ups",
-        "Développé militaire",
-        "Élévations latérales",
-        "Dips / Extensions triceps",
-        "Écarté pectoraux"
-      ],
-      "Pull": [
-        "Tractions / Tirage vertical",
-        "Rowing barre / Câble",
-        "Face pull",
-        "Curl biceps barre",
-        "Curl marteau (avant-bras)",
-        "Curl inversé (avant-bras)"
-      ],
-      "Core": [
-        "Planche (3×60s)",
-        "Crunchs / Relevé de buste",
-        "Relevé de jambes",
-        "Obliques (Russian twist / Woodchop)",
-        "Mountain climbers"
-      ],
-      "Bras": [
-        "Superset biceps / triceps",
-        "Curl concentré",
-        "Skullcrushers",
-        "Curl poignets (avant-bras)"
-      ]
-    },
-    "sessions": []
+  {
+   "id": 4,
+   "titre": "Refaire un nouveau passeport",
+   "priorite": "normale",
+   "statut": "todo",
+   "contexte": "Passeport actuel expire le 30/01/2027. À faire dès le retour à La Réunion (après le 29 mai).",
+   "date_ajout": "2026-05-22",
+   "echeance": "2026-07-01"
   },
-  "closeGuard": {
-    "statut": "En développement",
-    "clients": 0,
-    "mrr": 0,
-    "notes": ""
+  {
+   "id": 5,
+   "titre": "Tourner l'intro vidéo Loom pour la prospection infopreneurs",
+   "priorite": "haute",
+   "statut": "done",
+   "contexte": "Vidéo Loom d'introduction pour la prospection ciblée infopreneurs. À tourner avant d'envoyer des DMs.",
+   "date_ajout": "2026-05-23",
+   "echeance": ""
   },
-  "days": [
-    {
-      "date": "2026-05-21",
-      "score": 38,
-      "note": "J1 — Premier check-in JARVIS",
-      "feedback": "Bonne énergie (8/10) mais gros manques sur le spirituel (0/5 prières), le PMO (streak 0) et le sleep cassé (couché 5h).",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs. 1 call booké (Diane lundi). Appel CloseGuard pricing avec Assed+Fares. Appel Didier delivery (stories vendredi + montage vidéo YouTube). Session setup JARVIS.",
-        "score_volume": 2,
-        "score_leverage": 7,
-        "score_direction": 5,
-        "score_total": 14,
-        "feedback_text": "Appel Didier + appel CloseGuard = pertinents et à fort levier. La direction est bonne. MAIS 0 DMs = zéro prospection = zéro pipeline futur. Sans outreach, les revenus stagnent. Le call booké avec Diane est positif — il faut que ça close.",
-        "what_good": [
-          "Appel Didier delivery — client maintenu, vidéo YouTube avance",
-          "Appel CloseGuard pricing avec Assed+Fares — SaaS structuré",
-          "1 call booké (Diane, lundi) — pipeline actif",
-          "Session JARVIS — investissement système"
-        ],
-        "what_bad": [
-          "0 DMs — aucune prospection. Sans outreach, impossible de scaler",
-          "Pas de vrai travail d'acquisition client aujourd'hui"
-        ],
-        "actions_demain": [
-          "2 DMs de qualité — ciblés, personnalisés, recherchés avant d'envoyer",
-          "Prépare l'appel Diane lundi — qualifie l'offre, anticipe les objections",
-          "Avance sur la vidéo pre-call Didier ou les stories semaine prochaine"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-21 15:32"
-      },
-      "business": {
-        "dms": 0,
-        "calls_bookes": 1,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "recap": "Appel CloseGuard pricing, appel Didier delivery, call Dayyan (@dayyaandm) booké lundi",
-        "score": 14
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Biceps (mini-séance)",
-        "coucher": "05:00",
-        "lever": "16:00",
-        "heures_sommeil": 11,
-        "nutrition_clean": false,
-        "repas": "Sushis saumon mayo, sashimi, riz boeuf oeuf, Monaca glace matcha (goyslop), cacahuètes raisins secs",
-        "eau_litres": 1,
-        "score": 8,
-        "goyslop_level": "slip",
-        "goyslop_items": [
-          "Monaca (glace matcha)"
-        ],
-        "nutrition_score": 7
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 2,
-        "duolingo_russe": true,
-        "duolingo_minutes": 2,
-        "apprentissage": "Pricing SaaS CloseGuard (appel avec Assed+Fares)",
-        "score": 8
-      },
-      "mental": {
-        "energie": 8,
-        "focus": 7,
-        "screen_time_reseaux_min": 239,
-        "screen_time_details": {
-          "Telegram": 284,
-          "TikTok": 171,
-          "Arc": 106,
-          "Meet": 79,
-          "Instagram": 68,
-          "WhatsApp Business": 55,
-          "Terminal": 25
-        },
-        "no_pmo": false,
-        "score": 2
-      },
-      "social": {
-        "interaction_hv": "Assed, Fares (CloseGuard) + Didier (client)",
-        "contenu_poste": false,
-        "score": 4
-      },
-      "activitywatch": {
-        "status": "ok",
-        "total_min": 501,
-        "apps": {
-          "Arc": 9,
-          "Terminal": 18
-        }
-      },
-      "screen_time_updated": true
-    },
-    {
-      "date": "2026-05-22",
-      "score": 19,
-      "note": "",
-      "feedback": "",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs. 0 calls. Aucune delivery. Deuxième journée consécutive sans outreach depuis le lancement JARVIS.",
-        "score_volume": 0,
-        "score_leverage": 0,
-        "score_direction": 0,
-        "score_total": 0,
-        "feedback_text": "Deuxième jour à 0 DMs. Hormozi (100M Leads) : 'Le volume de leads est la seule métrique qui précède le revenu.' Gym fait — bonne discipline physique. Mais gym sans outreach = corps qui progresse, pipeline qui se vide. Le Subway est un slip, pas une catastrophe, mais c'est un signal sur la rigueur globale.",
-        "what_good": [
-          "Gym Pectoraux + Dos — discipline physique maintenue",
-          "No PMO — streak tenu",
-          "1 prière — légère progression spirituelle vs veille"
-        ],
-        "what_bad": [
-          "0 DMs — 2 jours consécutifs sans prospection depuis J1",
-          "0 deep work — aucune production business",
-          "Subway goyslop — discipline alimentaire à solidifier"
-        ],
-        "actions_demain": [
-          "3 DMs dès le premier bloc du matin avant toute autre activité",
-          "Deep work 2h minimum — delivery Didier ou prospection ciblée",
-          "Coucher avant 3h — rythme à corriger progressivement"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-22 20:00"
-      },
-      "activitywatch": {
-        "status": "ok",
-        "total_min": 210,
-        "apps": {
-          "Terminal": 210
-        }
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "score": 0
-      },
-      "physique": {
-        "score": 8,
-        "coucher": "06:00",
-        "lever": "14:30",
-        "heures_sommeil": 8.5,
-        "gym": true,
-        "gym_type": "Pectoraux + Dos",
-        "nutrition_clean": false,
-        "goyslop_level": "slip",
-        "repas": "Subway (pain processed, bœuf, poulet, oignons, tomates, mayo)",
-        "nutrition_score": 5
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 1,
-        "coran": false,
-        "score": 3
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "duolingo_russe": true,
-        "duolingo_minutes": 3,
-        "apprentissage": "Duolingo russe 3min",
-        "score": 2
-      },
-      "mental": {
-        "score": 5,
-        "no_pmo": true,
-        "energie": 6,
-        "focus": 5,
-        "screen_time_reseaux_min": 179,
-        "screen_time_details": {
-          "TikTok": 99,
-          "Instagram": 80
-        },
-        "screen_time_updated": true
-      },
-      "social": {
-        "score": 1,
-        "contenu_poste": false,
-        "interaction_hv": null
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "score": 9,
-      "note": "J3 — journée basse énergie, zéro exécution business, nutrition catastrophique",
-      "feedback": "Énergie à 3/10 — rien d'actionnable produit. Streak gym cassé. BK = goyslop total. PMO clean = seul point positif.",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs. 0 calls. 0 delivery. Journée entière sans aucune action business. Troisième jour consécutif à zéro outreach.",
-        "score_volume": 0,
-        "score_leverage": 0,
-        "score_direction": 0,
-        "score_total": 0,
-        "feedback_text": "Score business : 0. Troisième jour sans un seul DM. Newport (Deep Work) : 'Les performances remarquables requièrent des efforts non remarquables au quotidien.' Pas de deep work, énergie à 3/10, BK goyslop, gym cassé — tout s'est effondré simultanément. Keller (The ONE Thing) : quand tout est priorité, rien ne l'est. Il faut remettre les DMs comme seule priorité non-négociable du lendemain matin.",
-        "what_good": [
-          "No PMO — streak maintenu malgré la journée désastreuse",
-          "Duolingo russe 10 min — seul effort cognitif de la journée"
-        ],
-        "what_bad": [
-          "0 DMs — 3 jours consécutifs sans prospection = pipeline mort",
-          "0 gym — streak physique cassé",
-          "Burger King goyslop critique — deuxième fois en 3 jours",
-          "0 deep work — énergie 3/10 non récupérée",
-          "0 prières — spirituel à plat total"
-        ],
-        "actions_demain": [
-          "DMs dès le réveil — avant téléphone, avant TikTok, avant tout",
-          "Gym obligatoire — ne pas laisser 2 jours consécutifs sans séance",
-          "Coucher à une heure humaine — viser avant 2h du matin"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-23 20:00"
-      },
-      "activitywatch": {
-        "status": "ok",
-        "total_min": 338,
-        "apps": {
-          "Terminal": 338
-        }
-      },
-      "screen_time_updated": true,
-      "screen_time_details": {
-        "Telegram": 166,
-        "TikTok": 109,
-        "Instagram": 100,
-        "Photos": 58,
-        "Arc": 54,
-        "YouTube": 51,
-        "ChatGPT": 37,
-        "Terminal": 20,
-        "Revolut": 15,
-        "WhatsApp Business": 8,
-        "Snapchat": 8,
-        "Duolingo": 6
-      },
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "Rien fait. Zéro outreach, zéro delivery.",
-        "score": 0
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": null,
-        "coucher": "04:00",
-        "lever": "13:00",
-        "heures_sommeil": 9.0,
-        "nutrition_clean": false,
-        "repas": "Burger King — burger boeuf + frites + eau",
-        "goyslop_level": "critique",
-        "goyslop_items": [
-          "Burger King burger boeuf + frites"
-        ],
-        "nutrition_score": 2,
-        "score": 4
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "rien",
-        "score": 2
-      },
-      "mental": {
-        "energie": 3,
-        "focus": 6,
-        "screen_time_reseaux_min": 217,
-        "no_pmo": true,
-        "score": 3
-      },
-      "social": {
-        "interaction_hv": null,
-        "contenu_poste": false,
-        "score": 0
-      }
-    },
-    {
-      "date": "2026-05-24",
-      "score": 30,
-      "note": "KL",
-      "feedback": "0 DMs = bottleneck ignoré. 0 prières. Screen time 3h20 réseaux. Sleep cassé coucher 7h. Positifs : gym, nutrition propre, No PMO, Duolingo.",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs. 0 calls. Delivery : rectification séquences stories Didier + automatisation messages Kenzo VSL (déprioritisé). Bonne journée de delivery, zéro acquisition.",
-        "score_volume": 0,
-        "score_leverage": 4,
-        "score_direction": 1,
-        "score_total": 5,
-        "feedback_text": "La delivery Didier est faite — c'est bien. Mais 0 DMs pour la 4ème journée consécutive. Hormozi (100M Leads) : la delivery sans acquisition ne fait que maintenir ce qui existe, elle ne construit pas. Expert Secrets (Brunson) : un opérateur qui ne prospecte pas chaque jour perd du terrain même s'il exécute bien pour ses clients actuels. Points positifs solides aujourd'hui sur le physique et le mental — il faut transférer cette discipline vers l'outreach.",
-        "what_good": [
-          "Delivery Didier faite : stories + automatisation",
-          "Gym biceps + triceps — 2 séances cette semaine",
-          "Nutrition clean — sushis, steak, graines",
-          "No PMO streak 4 jours",
-          "Duolingo 10 min — régularité"
-        ],
-        "what_bad": [
-          "0 DMs — 4 jours consécutifs sans prospection",
-          "0 prières — spirituel à zéro depuis J1",
-          "Screen time 200 min réseaux — 3h20 de consommation passive",
-          "Coucher 7h — rythme inversé persistant"
-        ],
-        "actions_demain": [
-          "3 DMs ciblés infopreneurs — liste préparée la veille",
-          "1 prière minimum — Isha ou Fajr",
-          "Limiter TikTok/Instagram à 1h total"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-24 20:00"
-      },
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "score": 5
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "biceps + triceps",
-        "coucher": "7h",
-        "lever": "16h",
-        "heures_sommeil": 9,
-        "nutrition_clean": true,
-        "repas": "sushis, amandes/graines, steak boeuf + oeufs, eau de coco",
-        "score": 12
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 1.0,
-        "deep_work_topic": "1h — préparation carousel Instagram",
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "aucun",
-        "score": 7
-      },
-      "mental": {
-        "energie": 8,
-        "focus": 7,
-        "screen_time_reseaux_min": 200,
-        "no_pmo": true,
-        "score": 5
-      },
-      "social": {
-        "interaction_hv": "2 français à la salle de sport",
-        "contenu_poste": false,
-        "score": 1
-      },
-      "activitywatch": {
-        "status": "iPhone day",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true
-    },
-    {
-      "date": "2026-05-25",
-      "score": 23,
-      "note": "KL — J goyslop + screen time catastrophique, mais Fajr+Isha double",
-      "feedback": "Screen time 302 min réseaux = pire journée du suivi (TikTok 3h01 + Instagram 2h01). GOYSLOP BK. 0 gym. 0 DMs. Positifs : Fajr + Isha (premier double), No PMO streak 3j, Duolingo 18min.",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs. 0 calls. Delivery : titre YouTube Didier validé définitivement ('arrête d'acheter des formations'). Aucun outreach.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 1,
-        "score_total": 3,
-        "feedback_text": "0 DMs depuis 5 jours consécutifs = tu n'as pas de système d'acquisition, tu as une intention. Hormozi (100M Leads) : le volume de leads entrants est la seule métrique qui précède le revenu. Le titre YouTube = bonne décision, mais c'est du support. La ONE THING reste les DMs.",
-        "what_good": [
-          "Titre YouTube Didier validé : 'arrête d'acheter des formations (j'ai perdu 15 000€ pour comprendre ça)'"
-        ],
-        "what_bad": [
-          "0 DMs — pipeline vide depuis 5 jours consécutifs",
-          "0 deep work — aucune production actionnable",
-          "Aucune action d'acquisition client"
-        ],
-        "actions_demain": [
-          "3 DMs ciblés dès le premier bloc du matin — téléphone en mode avion avant",
-          "Lancer la vidéo Loom de prospection",
-          "Deep work 2h minimum sur outreach ou delivery Didier"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-25 18:00"
-      },
-      "activitywatch": {
-        "status": "iPhone day",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "recap": "Titre + miniature YouTube Didier choisis (titre #2 validé). Aucun outreach.",
-        "score": 3
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": null,
-        "coucher": "07:00",
-        "lever": "15:00",
-        "heures_sommeil": 8,
-        "nutrition_clean": false,
-        "repas": "Burger King (burger bœuf + frites), graines (amandes, cacahuètes, raisins secs), mangue",
-        "goyslop_level": "critique",
-        "goyslop_items": [
-          "Burger King burger bœuf + frites"
-        ],
-        "nutrition_score": 2,
-        "score": 5
-      },
-      "spirituel": {
-        "fajr": true,
-        "prieres": 2,
-        "coran": false,
-        "score": 10
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "duolingo_russe": true,
-        "duolingo_minutes": 18,
-        "apprentissage": "rien",
-        "score": 3
-      },
-      "mental": {
-        "energie": 3,
-        "focus": 6,
-        "screen_time_reseaux_min": 302,
-        "screen_time_details": {
-          "TikTok": 181,
-          "Instagram": 121,
-          "Telegram": 121,
-          "YouTube": 54,
-          "WA Business": 38,
-          "Duolingo": 18,
-          "ChatGPT": 13,
-          "Safari": 8,
-          "Discord": 8,
-          "Whop": 8,
-          "Terminal": 5,
-          "Arc": 5,
-          "Gmail": 3
-        },
-        "no_pmo": true,
-        "score": 2
-      },
-      "social": {
-        "interaction_hv": null,
-        "contenu_poste": false,
-        "score": 0
-      }
-    },
-    {
-      "date": "2026-05-26",
-      "score": 39,
-      "note": "KL — carousel posté, call Dayyan fait, 3h deep work cabine Petronas",
-      "feedback": "0 DMs pour le 6e jour consécutif — pipeline toujours à sec. Mais journée productive : 3h deep work cabine insonorisée, carousel Instagram publié, call Dayyan avec référal Wally Invest. Gym fait. Nutrition correcte sauf cookies. 0 spirituel.",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs. 0 calls bookés. Appel Dayyan fait — non qualifié SaaS (pas de setters) mais référal Wally Invest généré. Carousel Instagram posté.",
-        "score_volume": 0,
-        "score_leverage": 4,
-        "score_direction": 4,
-        "score_total": 8,
-        "feedback_text": "6 jours sans un DM — c'est plus une tendance, c'est une habitude d'évitement. Mais aujourd'hui tu as quand même produit des assets réels : le carousel est un levier permanent, Wally Invest est une fenêtre chaude à saisir demain. Keller (The ONE Thing) : le carousel et l'appel sont du support — la ONE THING reste les DMs. Hormozi (100M Leads) : une référence chaude comme Wally Invest a une durée de vie courte. Contact aujourd'hui ou la fenêtre se ferme.",
-        "what_good": [
-          "Appel Dayyan fait — profil qualifié (entrepreneur ads), networking KL juin planifié",
-          "Lead Wally Invest référé — potentiel SaaS chaud à convertir rapidement",
-          "Carousel Instagram posté — asset de contenu durable pour la prospection",
-          "3h deep work cabine insonorisée salle de sport — meilleure session cognitif de la semaine",
-          "Gym triceps/pecs/dos — discipline physique maintenue"
-        ],
-        "what_bad": [
-          "0 DMs — 6 jours consécutifs sans prospection = pipeline entièrement vide",
-          "Wally Invest référé mais pas encore contacté — fenêtre courte"
-        ],
-        "actions_demain": [
-          "DM Wally Invest aujourd'hui — le référal chaud de Dayyan, ne pas laisser refroidir",
-          "3 DMs infopreneurs ciblés — reprendre l'outreach systématique",
-          "Vidéo Loom prospection — filmer avant d'envoyer les DMs"
-        ],
-        "niveau": "MOYEN",
-        "timestamp": "2026-05-27 05:01"
-      },
-      "activitywatch": {
-        "status": "iPhone day",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "recap": "Appel Dayyan fait (référal Wally Invest SaaS). Carousel Instagram posté. 0 outreach.",
-        "score": 8
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Triceps + Pectoraux + Dos",
-        "coucher": "06:00",
-        "lever": "15:00",
-        "heures_sommeil": 9,
-        "nutrition_clean": false,
-        "repas": "Shawarma, fruit de la passion, oeufs, amandes, cookies chocolat",
-        "goyslop_level": "slip",
-        "goyslop_items": [
-          "Cookies chocolat"
-        ],
-        "nutrition_score": 6,
-        "score": 10
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 3,
-        "deep_work_topic": "3h — finalisation + publication carousel Instagram (cabine insonorisée, vue Petronas)",
-        "duolingo_russe": true,
-        "duolingo_minutes": 2,
-        "apprentissage": "Appel Dayyan enrichissant (écosystème ads, networking entrepreneur)",
-        "score": 12
-      },
-      "mental": {
-        "energie": 7,
-        "focus": 7.5,
-        "screen_time_reseaux_min": 169,
-        "screen_time_details": {
-          "Instagram": 162,
-          "Arc": 160,
-          "Telegram": 126,
-          "ChatGPT": 91,
-          "Photos": 56,
-          "YouTube": 17,
-          "Terminal": 15,
-          "WA Business": 12,
-          "Notes": 8,
-          "Snapchat": 7,
-          "Whop": 4,
-          "FaceApp": 4,
-          "Opal": 2,
-          "Duolingo": 2
-        },
-        "no_pmo": true,
-        "score": 4
-      },
-      "social": {
-        "interaction_hv": "Dayyan (@dayyaandm) — entrepreneur ads, référal Wally Invest SaaS, vient à KL juin",
-        "contenu_poste": true,
-        "contenu_details": "Carousel Instagram KL/Chine posté",
-        "score": 5
-      }
-    },
-    {
-      "date": "2026-05-27",
-      "score": 26,
-      "note": "KL — call Léni SaaS positif, Instagram 5h44 catastrophique",
-      "feedback": "7e jour consécutif sans DM. Instagram 5h44 = record absolu du suivi. Gym fait (biceps). 3 goyslops dont burger. 1 prière (Isha). Call Léni = point positif : intéressé par CloseGuard, follow-up 2-3 semaines.",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs — 7 jours consécutifs. Call Léni Constantin 1h+ : SaaS bien reçu, potentiel abonnement dans 2-3 semaines quand il aura plus de clients. 0 delivery.",
-        "score_volume": 0,
-        "score_leverage": 5,
-        "score_direction": 3,
-        "score_total": 8,
-        "feedback_text": "7 jours sans un seul DM. C'est une semaine entière de pipeline mort. Hormozi (100M Leads) : 'Le revenu de demain est généré par les leads d'aujourd'hui.' Le call Léni est positif — mais c'est du pipeline entrant, pas sortant. Tu n'as toujours pas de système d'outreach. Instagram à 5h44 est un signal direct : l'énergie qui devrait aller vers les DMs va vers la consommation passive. Newport (Deep Work) : les réseaux sociaux fragmentent l'attention et détruisent la capacité à produire du travail profond.",
-        "what_good": [
-          "Call Léni Constantin : SaaS apprécié, intéressé, follow-up planifié dans 2-3 semaines",
-          "Gym biceps — discipline physique maintenue malgré rythme inversé",
-          "No PMO streak 6 jours — discipline mentale solide",
-          "1 prière (Isha) — légère continuité spirituelle"
-        ],
-        "what_bad": [
-          "0 DMs — 7 jours consécutifs = une semaine entière de pipeline mort",
-          "Instagram 5h44 = 344 min — record absolu, dopamine loop en cours",
-          "0 deep work — deuxième jour consécutif sans production",
-          "3 goyslops (burger+frites, cookies, glace matcha) — nutrition dégradée"
-        ],
-        "actions_demain": [
-          "3 DMs dès le réveil — téléphone en mode avion jusqu'à ce qu'ils soient envoyés",
-          "Deep work 2h minimum — Loom de prospection ou delivery Didier",
-          "Instagram limité à 45 min total via Screen Time limits"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-28 03:54"
-      },
-      "activitywatch": {
-        "status": "iPhone day",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "Call Léni Constantin 1h+ — SaaS intéressé, follow-up 2-3 semaines. 0 outreach.",
-        "score": 8
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Biceps",
-        "coucher": "07:00",
-        "lever": "15:00",
-        "heures_sommeil": 8,
-        "nutrition_clean": false,
-        "repas": "Sushis, bœuf+riz+sashimi, glace Monaca matcha, cookies, burger+frites, graines+amandes+raisins secs",
-        "goyslop_level": "critique",
-        "goyslop_items": [
-          "Burger + frites",
-          "Cookies",
-          "Glace Monaca matcha"
-        ],
-        "nutrition_score": 3,
-        "score": 7
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 1,
-        "coran": false,
-        "score": 3
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "duolingo_russe": false,
-        "duolingo_minutes": 0,
-        "apprentissage": "rien",
-        "score": 2
-      },
-      "mental": {
-        "energie": 6,
-        "focus": 6.5,
-        "screen_time_reseaux_min": 369,
-        "screen_time_details": {
-          "Instagram": 344,
-          "Arc": 117,
-          "Telegram": 110,
-          "YouTube": 47,
-          "Chrome": 46,
-          "ChatGPT": 34,
-          "Grab": 33,
-          "Snapchat": 25,
-          "Camera": 12,
-          "Safari": 10,
-          "WhatsApp": 9,
-          "DeepSeek": 8,
-          "Photos": 7,
-          "Terminal": 5
-        },
-        "no_pmo": true,
-        "score": 2
-      },
-      "social": {
-        "interaction_hv": "Léni Constantin — operator Adrien Marquis, visio 1h+ SaaS CloseGuard",
-        "contenu_poste": false,
-        "score": 4
-      }
-    },
-    {
-      "date": "2026-05-28",
-      "score": 24,
-      "note": "KL dernier jour complet — vol La Reunion demain, Fajr, Instagram 3h59",
-      "feedback": "8e jour consecutif sans DM. Pas de gym le dernier jour a KL. Fajr fait = signal spirituel positif. Appel Leni (aide install Claude Code). Instagram 3h59 — mieux qu'hier mais encore excessif. Nutrition correcte (sushis). 0 deep work.",
-      "jarvis_feedback": {
-        "business_recap": "0 DMs — 8 jours consecutifs = record negatif. Appel Leni Constantin (support technique install Claude Code). 0 delivery.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 2,
-        "score_total": 4,
-        "feedback_text": "8 jours sans un seul DM. Une semaine pleine + un jour de pipeline mort. Hormozi (100M Leads) : 'Le revenu de demain est genere par les leads d'aujourd'hui.' Aujourd'hui tu as aide Leni a installer un outil — c'est du support, pas du business. Newport (Deep Work) : Instagram a 3h59 avec 0 deep work signifie que ton attention est fragmentee avant meme de commencer. Le retour a La Reunion est une vraie opportunite de reset : nouveau fuseau horaire, nouvelle routine, premiere opportunite de relancer l'outreach depuis 8 jours.",
-        "what_good": [
-          "Fajr fait — premiere priere matinale dans le suivi : effort reel (lever tot pour prier)",
-          "No PMO streak 7 jours — discipline mentale solide",
-          "Appel Leni maintenu — relation prospect entretenue avant le retour",
-          "Nutrition correcte : sushis/sashimi/saumon/boeuf = proteines propres",
-          "Instagram 3h59 vs 5h44 hier — amelioration relative"
-        ],
-        "what_bad": [
-          "0 DMs — 8 jours consecutifs = record negatif du suivi",
-          "0 gym le dernier jour a KL — derniere chance de s'entrainer avant le voyage",
-          "0 deep work — 3e jour consecutif sans production cognitive",
-          "Instagram 3h59 = encore largement au-dessus de la cible 1h"
-        ],
-        "actions_demain": [
-          "Vol La Reunion : profiter du temps d'avion pour planifier la reprise d'outreach",
-          "J+1 Reunion : 3 DMs infopreneurs des le lendemain du vol",
-          "Reset sommeil : objectif coucher avant minuit a La Reunion"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-29 00:45"
-      },
-      "activitywatch": {
-        "status": "iPhone day",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "Appel Leni Constantin (aide install Claude Code). 0 outreach. 8e jour sans DM.",
-        "score": 4
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": "",
-        "coucher": "08:00",
-        "lever": "16:00",
-        "heures_sommeil": 8,
-        "nutrition_clean": false,
-        "repas": "Sushis saumon, sashimi, boeuf + riz, matcha monaka, graines + amandes",
-        "goyslop_level": "slip",
-        "goyslop_items": [
-          "Matcha monaka (dessert sucre)"
-        ],
-        "nutrition_score": 7,
-        "score": 5
-      },
-      "spirituel": {
-        "fajr": true,
-        "prieres": 1,
-        "coran": false,
-        "score": 5
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": "",
-        "duolingo_russe": true,
-        "duolingo_minutes": 5,
-        "apprentissage": "rien de notable",
-        "score": 3
-      },
-      "mental": {
-        "energie": 6.5,
-        "focus": 6.5,
-        "screen_time_reseaux_min": 246,
-        "screen_time_details": {
-          "Instagram": 239,
-          "Telegram": 180,
-          "WA Business": 61,
-          "Arc": 59,
-          "Chrome": 55,
-          "ChatGPT": 41,
-          "YouTube": 39,
-          "Snapchat": 7,
-          "Safari": 6,
-          "Grab": 6,
-          "NordVPN": 5,
-          "Finder": 5,
-          "Photos": 4,
-          "Revolut": 3
-        },
-        "no_pmo": true,
-        "score": 4
-      },
-      "social": {
-        "interaction_hv": "Leni Constantin — appel support technique (install Claude Code), relation prospect maintenue",
-        "contenu_poste": false,
-        "score": 3
-      }
-    },
-    {
-      "date": "2026-05-29",
-      "score": 9,
-      "note": "Journée de voyage : KLIA → Maurice → La Réunion. Arrivée 23h. Biceps en rentrant à 1h du mat.",
-      "feedback": "Journée de transit — 0 business, 0 spirituel. Goyslop avion + BK inévitable. Gym malgré l'arrivée tardive : discipline maintenue.",
-      "activitywatch": {
-        "status": "ok",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "Journée de déplacement total (aéroport KLIA → Maurice → La Réunion). 0 outreach. 0 delivery.",
-        "score": 0
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Biceps",
-        "coucher": "03:00",
-        "lever": "08:00",
-        "heures_sommeil": 5,
-        "nutrition_clean": false,
-        "repas": "Nourriture avion, Burger King, snacks lounge (pain raffiné, quelques viandes)",
-        "goyslop_level": "critique",
-        "goyslop_items": [
-          "Nourriture avion",
-          "Burger King",
-          "Pain raffiné lounge"
-        ],
-        "nutrition_score": 2,
-        "score": 4
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": "",
-        "duolingo_russe": true,
-        "duolingo_minutes": 5,
-        "apprentissage": "rien de notable",
-        "score": 2
-      },
-      "mental": {
-        "energie": 5.5,
-        "focus": 5,
-        "screen_time_reseaux_min": 178,
-        "screen_time_details": {
-          "Instagram": 178,
-          "Telegram": 106,
-          "YouTube": 78,
-          "Arc": 33,
-          "ChatGPT": 31,
-          "WA Business": 17,
-          "Revolut": 8,
-          "DeepSeek": 6,
-          "Terminal": 6,
-          "Opal": 5,
-          "Grab": 5,
-          "Booking.com": 3,
-          "Whop": 3
-        },
-        "no_pmo": true,
-        "score": 3
-      },
-      "social": {
-        "interaction_hv": null,
-        "contenu_poste": false,
-        "score": 0
-      },
-      "jarvis_feedback": {
-        "business_recap": "0 DMs — 9 jours consecutifs. Journee de transit total : KLIA -> Maurice -> La Reunion. 0 outreach, 0 delivery, 0 calls.",
-        "score_volume": 0,
-        "score_leverage": 0,
-        "score_direction": 2,
-        "score_total": 2,
-        "feedback_text": "9 jours sans un seul DM. Hormozi (100M Leads) : 'Le revenu de demain est genere par les leads d'aujourd'hui.' La journee de voyage est une excuse legitime pour aujourd'hui — mais pas pour demain. Tu es a La Reunion maintenant. Le reset commence maintenant. Newport (Deep Work) : la reprise d'un systeme se fait par des rituels fixes, pas par la motivation. Demain matin : 3 DMs avant tout le reste. Avant le telephone, avant Instagram, avant le petit-dejeuner. Le gym fait a 1h du matin apres 7h de vol est le seul signal fort de la journee. Cette discipline doit etre appliquee a l'outreach des demain.",
-        "what_good": [
-          "Gym biceps fait a 1h du matin apres 7h de vol — discipline mentale au-dessus de la moyenne",
-          "No PMO streak 8 jours — regularite solide",
-          "Arrivee a La Reunion = opportunite de reset total du rythme et de la routine"
-        ],
-        "what_bad": [
-          "0 DMs — 9 jours consecutifs = pipeline completement mort",
-          "Instagram 178 min en transit — consommation passive meme en voyage",
-          "0 prières — 0 Fajr — spirituel a plat depuis 2 jours",
-          "Goyslop critique : avion + BK + lounge"
-        ],
-        "actions_demain": [
-          "3 DMs infopreneurs des le matin — avant Instagram, avant tout",
-          "Etablir l'heure de coucher cible a La Reunion (objectif : avant minuit)",
-          "1 priere minimum (Isha ou Fajr)"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-30 02:40"
-      }
-    },
-    {
-      "date": "2026-05-30",
-      "score": 10,
-      "note": "Journée de repos total. Premier jour complet à La Réunion après le retour de Chine.",
-      "feedback": "0 business, 0 gym. Instagram 3h32. Repos assumé mais 10 jours sans DM = pipeline mort.",
-      "activitywatch": {
-        "status": "ok",
-        "total_min": 21,
-        "apps": {
-          "Terminal": 21
-        }
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "0 DMs, 0 calls. Journée de repos total. Aucune action business.",
-        "score": 0
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": "",
-        "coucher": "04:00",
-        "lever": "13:00",
-        "heures_sommeil": 9,
-        "nutrition_clean": false,
-        "repas": "Tacos, shawarma, sashimi",
-        "goyslop_level": "modéré",
-        "goyslop_items": [
-          "Tacos",
-          "Shawarma"
-        ],
-        "nutrition_score": 3,
-        "score": 3
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "notes": "Contenu Richard uniquement",
-        "score": 1
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": "",
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "rien",
-        "score": 2
-      },
-      "mental": {
-        "energie": 7,
-        "focus": 5,
-        "screen_time_reseaux_min": 224,
-        "screen_time_details": {
-          "Instagram": 212,
-          "Telegram": 93,
-          "Arc": 58,
-          "Chrome": 44,
-          "Photos": 23,
-          "ChatGPT": 22,
-          "Terminal": 21,
-          "Snapchat": 12,
-          "WA Business": 11,
-          "Uber Eats": 6,
-          "Ostrovok": 6,
-          "Revolut": 2,
-          "Duolingo": 1,
-          "Govee Home": 1
-        },
-        "no_pmo": true,
-        "nsdr": false,
-        "score": 3
-      },
-      "social": {
-        "interaction_hv": false,
-        "contenu_poste": false,
-        "score": 1
-      },
-      "jarvis_feedback": {
-        "business_recap": "0 DMs pour le 10eme jour consecutif. 0 calls. Pipeline completement mort depuis le depart en voyage.",
-        "score_volume": 0,
-        "score_leverage": 0,
-        "score_direction": 0,
-        "score_total": 0,
-        "feedback_text": "10 jours sans un seul DM. Hormozi (100M Leads) : 'Un pipeline vide aujourd'hui = zero revenu dans 30 jours.' La Reunion est maintenant le contexte. Les excuses de voyage sont terminées. Newport (Deep Work) : la reprise d'un systeme se fait par un rituel fixe non negociable. Demain : 5 DMs avant d'ouvrir Instagram. Pas apres, pas en meme temps. Avant. Instagram a 3h32 pendant une journee de repos confirme le pattern : le telephone est le premier refuge. Keller (The ONE Thing) : identifie ton UNE chose — aujourd'hui c'est l'outreach. Tout le reste attend. NoPMO streak 9 jours = seule discipline maintenue. Transpose cette meme energie a l'outreach.",
-        "what_good": [
-          "NoPMO streak 9 jours — regularite solide, energie preservee",
-          "Repos assumé apres retour long voyage — recuperation legitime",
-          "Duolingo maintenu meme en journee de repos"
-        ],
-        "what_bad": [
-          "0 DMs — 10 jours consecutifs = pipeline completement mort",
-          "Instagram 3h32 — record equivalent a une journee de dopamine passive",
-          "0 gym — second jour sans mouvement physique",
-          "0 Fajr — 0 prieres — spirituel inexistant",
-          "Coucher 4h / lever 13h — rythme circadien inverse"
-        ],
-        "actions_demain": [
-          "5 DMs infopreneurs avant d'ouvrir Instagram",
-          "Gym — n'importe quel mouvement compte",
-          "Coucher avant minuit ce soir — reset rythme"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-05-31 01:00"
-      }
-    },
-    {
-      "date": "2026-05-31",
-      "score": 14,
-      "note": "Delivery Didier (stories 01/06-07/06). 0 DMs jour 11. NoPMO streak casse.",
-      "feedback": "Delivery done mais pipeline mort. Streak NoPMO reset a 0 apres 9 jours.",
-      "activitywatch": {
-        "status": "ok",
-        "total_min": 13,
-        "apps": {
-          "Terminal": 13
-        }
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "recap": "Stories Didier semaine 01/06-07/06 completees (35 slides generes et uploades Drive). 0 DMs, 0 calls.",
-        "score": 4
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": "",
-        "coucher": "04:00",
-        "lever": "11:30",
-        "heures_sommeil": 7.5,
-        "nutrition_clean": false,
-        "repas": "Boeuf hache huile seed oil, tarte aux fraises, quiche legumes",
-        "goyslop_level": "modere",
-        "goyslop_items": [
-          "Boeuf hache seed oil",
-          "Tarte aux fraises"
-        ],
-        "nutrition_score": 3,
-        "score": 3
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": "",
-        "duolingo_russe": true,
-        "duolingo_minutes": 5,
-        "apprentissage": "rien",
-        "score": 2
-      },
-      "mental": {
-        "energie": 5,
-        "focus": 5,
-        "screen_time_reseaux_min": 200,
-        "screen_time_details": {
-          "Instagram": 170,
-          "Telegram": 84,
-          "WA Business": 79,
-          "Photos": 59,
-          "Arc": 38,
-          "Snapchat": 30,
-          "Govee Home": 22,
-          "ChatGPT": 16,
-          "Terminal": 13,
-          "Finder": 9,
-          "Safari": 9,
-          "Saily": 8,
-          "CapCut": 8,
-          "Facebook": 7
-        },
-        "no_pmo": false,
-        "nsdr": false,
-        "score": 2
-      },
-      "social": {
-        "interaction_hv": true,
-        "contenu_poste": false,
-        "details": "Famille toute la journee + appel Fares (co-founder CloseGuard)",
-        "score": 3
-      },
-      "jarvis_feedback": {
-        "business_recap": "Delivery Didier fait (stories completes) mais 0 DMs pour le 11eme jour consecutif. Pipeline completement mort depuis le depart KL.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 2,
-        "score_total": 4,
-        "feedback_text": "NoPMO streak casse apres 9 jours. Hill (Lois du Succes) : la discipline de l'autocontrole est la fondation de toutes les autres. Quand elle cede, les autres domaines suivent. 11 jours sans un seul DM. Hormozi (100M Leads) : 'Sans leads, il n'y a pas de business. Juste un hobby.' La delivery Didier compte comme travail serieux mais c'est du maintenance, pas de la croissance. Keller (The ONE Thing) : l'outreach est ton ONE thing. Tout le reste attend. Aujourd'hui : 3 DMs minimum avant d'ouvrir Instagram. Pas negociable.",
-        "what_good": [
-          "Delivery Didier completee (35 slides stories semaine 01/06-07/06)",
-          "Appel Fares - connexion HV maintenue avec co-founder CloseGuard",
-          "Sommeil 7.5h - recuperation correcte"
-        ],
-        "what_bad": [
-          "NoPMO streak reset a 0 apres 9 jours - energie et mental impactes",
-          "0 DMs - 11eme jour consecutif - pipeline completement mort",
-          "0 prieres - spirituel a zero depuis plusieurs jours",
-          "0 gym - deuxieme semaine sans mouvement physique"
-        ],
-        "actions_demain": [
-          "3 DMs infopreneurs avant d'ouvrir Instagram",
-          "Gym maison : tractions + dips + haltere",
-          "Coucher avant 23h ce soir"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-06-01 14:30"
-      }
-    },
-    {
-      "date": "2026-06-01",
-      "score": 19,
-      "note": "Premier jour cours BUT TC. Call 1h CloseGuard (Fares+Assed). 0 DMs jour 12. PMO oui.",
-      "feedback": "Call CoFounders CloseGuard positif mais 0 outreach. PMO reset energie. 6h sommeil - mieux.",
-      "activitywatch": {
-        "status": "not collected",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "0 DMs. Call 1h CloseGuard (Fares + Assed) : features + review prospects (Leni Constantin, Diane). Premier jour cours BUT TC. 0 contenu poste.",
-        "score": 4
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Alteres biceps (partiel)",
-        "coucher": "02:00",
-        "lever": "08:00",
-        "heures_sommeil": 6,
-        "nutrition_clean": null,
-        "repas": "",
-        "goyslop_level": "non renseigne",
-        "goyslop_items": [],
-        "nutrition_score": 5,
-        "score": 5
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": "",
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "Quelques minutes Duolingo russe. Rien de notable.",
-        "score": 2
-      },
-      "mental": {
-        "energie": 4,
-        "focus": 6,
-        "screen_time_reseaux_min": 96,
-        "screen_time_details": {
-          "Arc": 143,
-          "Telegram": 131,
-          "WA Business": 89,
-          "Instagram": 81,
-          "Chrome": 59,
-          "Safari": 59,
-          "tldv.io": 52,
-          "Terminal": 31,
-          "Photos": 20,
-          "WhatsApp": 16,
-          "Snapchat": 15,
-          "ChatGPT": 13,
-          "Finder": 12,
-          "Horloge": 10
-        },
-        "no_pmo": false,
-        "nsdr": false,
-        "score": 3
-      },
-      "social": {
-        "interaction_hv": true,
-        "contenu_poste": false,
-        "details": "Universite (contact low value). Call 1h Fares + Assed (CloseGuard co-founders, high value).",
-        "score": 5
-      },
-      "jarvis_feedback": {
-        "business_recap": "0 DMs pour le 12eme jour consecutif. Call 1h CloseGuard (Fares+Assed) : features a developper + review appels Leni/Diane. Direction correcte mais 0 croissance pipeline.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 2,
-        "score_total": 4,
-        "feedback_text": "PMO le jour 1 de la reprise en Reunion. Hill (Lois du Succes) : l'ennemi de la discipline c'est toujours l'habitude qui cede en premier quand l'environnement change. Tu rentres de voyage, routine cassee, PMO revient. Keller (The ONE Thing) : l'outreach c'est ton ONE thing en ce moment. 12 jours a 0 DMs, ca veut dire que CloseGuard et ta croissance perso sont sur pause. Le call CoFounders est bon mais c'est de la strategie, pas de la croissance. Hormozi (100M Leads) : sans leads nouveaux, un business est juste en train de perdre de l'altitude lentement. Cote positif : 6h sommeil (mieux que la semaine KL), gym fait meme partiel, Instagram 1h21 (bien en dessous des records). Coucher 2h du mat : l'objectif reste 23h. Newport (Deep Work) : 2h du mat couche = bloc cognitif du matin sacrifice. Demain : 3 DMs avant 10h. Cest le seul KPI qui compte.",
-        "what_good": [
-          "6h sommeil - meilleur que KL (etait a 3-4h)",
-          "Gym fait (meme partiel : alteres biceps)",
-          "Instagram 1h21 - bien en dessous des records (5h44 le 27/05)",
-          "Call 1h CoFounders CloseGuard - direction reelle maintenue",
-          "Premier jour cours gere"
-        ],
-        "what_bad": [
-          "PMO - energie 4/10, streak reset",
-          "0 DMs - 12eme jour consecutif - pipeline mort",
-          "0 prieres - spirituel a zero",
-          "0 deep work - cognitif a zero hors Duolingo",
-          "Coucher 2h du mat - encore trop tard"
-        ],
-        "actions_demain": [
-          "3 DMs infopreneurs avant 10h (non-negociable)",
-          "Fajr demain matin",
-          "Coucher avant 23h ce soir"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-06-01 22:09"
-      }
-    },
-    {
-      "date": "2026-06-02",
-      "score": 0,
-      "note": "",
-      "feedback": "",
-      "activitywatch": {
-        "status": "error: curl failed: ",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": false,
-      "business": {
-        "score": 0
-      },
-      "physique": {
-        "score": 0
-      },
-      "spirituel": {
-        "score": 0
-      },
-      "cognitif": {
-        "score": 0
-      },
-      "mental": {
-        "score": 0
-      },
-      "social": {
-        "score": 0
-      }
-    },
-    {
-      "date": "2026-06-03",
-      "score": 14,
-      "note": "Rebrand CloseGuard acté (Numa embauché, Fares avance 6350€). 0 DMs jour 13. PMO 3 jours consec. Instagram 3h18 override limite.",
-      "feedback": "Décision CloseGuard solide mais pipeline mort. Nutrition pic glycémique = énergie 3/10. PMO pattern installé.",
-      "activitywatch": {
-        "status": "not collected",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "0 DMs. Appel Fares+Assed : rebrand CloseGuard acté, Numa embauché. Fares avance 6 350€, Shayan rembourse ~2 000€ apres avoir close des infopreneurs. Contact Dayyan Instagram.",
-        "score": 4
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Alteres biceps + pompes (partiel)",
-        "coucher": "05:00",
-        "lever": "12:00",
-        "heures_sommeil": 7,
-        "nutrition_clean": false,
-        "repas": "Matin : lait de soja + sirop de rose + pain de mie + beurre + fromage + cookies granola + pims orange. Soir : steak boeuf.",
-        "goyslop_level": "critique",
-        "goyslop_items": [
-          "lait de soja",
-          "sirop de rose",
-          "cookies granola",
-          "pims orange",
-          "pain de mie"
-        ],
-        "nutrition_score": 2,
-        "score": 3
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": "",
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "Duolingo russe. Rien de notable.",
-        "score": 2
-      },
-      "mental": {
-        "energie": 3,
-        "focus": 5,
-        "screen_time_reseaux_min": 245,
-        "screen_time_details": {
-          "Instagram": 198,
-          "TikTok": 32,
-          "Govee Home": 153,
-          "Arc": 98,
-          "Telegram": 84,
-          "WA Business": 62,
-          "ChatGPT": 25,
-          "Chrome": 13,
-          "Safari": 12,
-          "Terminal": 12,
-          "X": 12,
-          "Snapchat": 3,
-          "WhatsApp": 4,
-          "Opal": 6,
-          "NordVPN": 5
-        },
-        "no_pmo": false,
-        "nsdr": false,
-        "score": 1
-      },
-      "social": {
-        "interaction_hv": true,
-        "contenu_poste": false,
-        "details": "Appel Fares + Assed (CloseGuard, high value). Contact Dayyan Instagram.",
-        "score": 4
-      },
-      "jarvis_feedback": {
-        "business_recap": "0 DMs pour le 13eme jour consecutif. Rebrand CloseGuard acte avec Numa (designer Yousef Lashuel). Fares avance 6 350€. Shayan doit rembourser ~2 000€ = obligation de closer des infopreneurs.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 2,
-        "score_total": 4,
-        "feedback_text": "PMO 3 jours consecutifs depuis le streak casse. Hill (Lois du Succes) : une habitude se reinstalle en 3 jours, pas en 30. Le premier PMO apres un long streak c'est un accident. Le deuxieme c'est un choix. Le troisieme c'est un pattern. Tu es en train de reposer les fondations de l'ancienne habitude. Instagram 3h18 avec override de ta propre limite : tu as decide de briser ta regle toi-meme. C'est pas l'algo, c'est toi. Newport (Deep Work) : chaque heure sur Instagram est une heure de potentiel cognitif brule. Energie 3/10 directement liee a la nutrition du matin (pic glycemique lait de soja + pims + cookies). Keller : ton ONE thing reste l'outreach. 13 jours a 0 DMs. Le rebrand CloseGuard est une bonne decision strategique mais c'est du travail futur. Ce qui paie tes dettes maintenant c'est des infopreneurs closes. Demain : 3 DMs avant midi. Fajr. Pas de sucre le matin.",
-        "what_good": [
-          "Rebrand CloseGuard acte - decision strategique majeure avec Yousef Lachuel comme levier",
-          "Fares avance le cash - structure financiere trouvee",
-          "Gym fait (partiel), 7h sommeil",
-          "Appel co-founders productif"
-        ],
-        "what_bad": [
-          "PMO 3 jours consecutifs - pattern qui se reinstalle",
-          "Instagram 3h18 avec override de la limite - discipline cassee",
-          "Nutrition catastrophique matin (pic glycemique) = energie 3/10 toute la journee",
-          "0 DMs - 13eme jour consecutif",
-          "Coucher 5h du matin - rythme qui se degrade",
-          "0 prieres"
-        ],
-        "actions_demain": [
-          "3 DMs infopreneurs avant midi (Shayan doit 2000€ a Fares - pipeline = urgence cash)",
-          "Fajr",
-          "Petit-dej proteines : oeufs + viande. Zero sucre zero lait de soja le matin",
-          "Coucher avant minuit ce soir"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-06-03 22:04"
-      }
-    },
-    {
-      "date": "2026-06-04",
-      "score": 0,
-      "note": "",
-      "feedback": "",
-      "activitywatch": {
-        "status": "error: curl failed: ",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": false,
-      "business": {
-        "score": 0
-      },
-      "physique": {
-        "score": 0
-      },
-      "spirituel": {
-        "score": 0
-      },
-      "cognitif": {
-        "score": 0
-      },
-      "mental": {
-        "score": 0
-      },
-      "social": {
-        "score": 0
-      }
-    },
-    {
-      "date": "2026-06-07",
-      "score": 14,
-      "note": "Jour calme, peu d'activité business/spirituel/cognitif, mais journée dominée par la finalisation et la soumission définitive du mémoire BUT TC3 (CloseGuard réécrit, Annexe 1 refaite en infographie). Repos physique volontaire (gym fait la veille). Nutrition mitigée : poulet/riz clean le midi, tacos poulet frit + crêpes le soir (écart assumé). Screen time réseaux en net recul : 1h48 Instagram seulement, 0 TikTok.",
-      "feedback": "Score 14/100. Journée à très faible volume sur presque tous les piliers (0 DM, 0 prière, 0 deep work), mais à mettre en perspective : le mémoire BUT TC3 a été finalisé et déposé définitivement aujourd'hui — accomplissement réel qui ne rentre dans aucune case JARVIS mais compte. No PMO streak maintenu, écrans sociaux en net recul (108 min vs 245+ récemment).",
-      "activitywatch": {
-        "apps": {},
-        "status": "error: curl failed: ",
-        "total_min": 0
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": false,
-        "recap": "0 DM, 0 call booké, aucune avancée delivery Didier mentionnée. Journée entièrement consacrée à la finalisation et au dépôt définitif du mémoire BUT TC3 (hors-cadre business mais charge cognitive et enjeu réels).",
-        "score": 2
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": "",
-        "goyslop_items": [
-          "tacos poulet frit + sauce",
-          "crêpes"
-        ],
-        "goyslop_level": "modéré",
-        "nutrition_clean": false,
-        "nutrition_score": 5,
-        "repas": "Midi : poulet + riz (clean). Soir : tacos avec poulet frit + sauce ('vraiment pas terrible' selon Shayan), puis bananes, chocolat noir et crêpes.",
-        "score": 4
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0,
-        "deep_work_topic": null,
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "Duolingo russe (un peu plus de 10 min selon Shayan). Pas de deep work, pas d'apprentissage business notable — journée absorbée par la finalisation du mémoire BUT TC3.",
-        "score": 2
-      },
-      "mental": {
-        "energie": 6,
-        "focus": 5,
-        "no_pmo": true,
-        "nsdr": false,
-        "screen_time_reseaux_min": 108,
-        "screen_time_details": {
-          "Telegram": 259,
-          "Arc": 128,
-          "Instagram": 108,
-          "Terminal": 34,
-          "Aperçu": 28,
-          "Ostrovok": 21,
-          "WA Business": 14,
-          "Snapchat": 13,
-          "Safari": 9,
-          "X": 8,
-          "Docs": 8,
-          "Chrome": 7,
-          "digitalflooz.novaris-ai.com": 7,
-          "Govee Home": 7
-        },
-        "score": 6
-      },
-      "social": {
-        "interaction_hv": false,
-        "contenu_poste": false,
-        "details": "0 interaction haute valeur, 0 contenu posté. Réseaux sociaux en net recul (1h48 Instagram, pas de TikTok), Telegram dominant (4h19, en grande partie consacré au travail sur le mémoire).",
-        "score": 0
-      },
-      "jarvis_feedback": {
-        "timestamp": "2026-06-08 09:00",
-        "niveau": "FAIBLE",
-        "score_volume": 1,
-        "score_direction": 3,
-        "score_leverage": 1,
-        "score_total": 5,
-        "what_good": [
-          "Mémoire BUT TC3 finalisé et déposé définitivement aujourd'hui (CloseGuard réécrit, Annexe 1 refaite en infographie complète) — obligation lourde enfin soldée",
-          "No PMO streak maintenu — discipline qui continue malgré une journée à vide ailleurs",
-          "Repos physique assumé et volontaire (gym fait la veille, pas de sur-frequentation)",
-          "Réseaux sociaux en net recul : 1h48 Instagram seulement, 0 TikTok, contre 245-300+ min les jours précédents"
-        ],
-        "what_bad": [
-          "0 DM, 0 call — pipeline business toujours à l'arrêt",
-          "0 prière, 0 Coran — spirituel à zéro depuis plusieurs jours",
-          "0 deep work, 0 contenu posté, 0 interaction haute valeur",
-          "Écart nutrition assumé le soir (tacos poulet frit + crêpes), Shayan lui-même : 'vraiment pas terrible'"
-        ],
-        "business_recap": "Encore une journée à 0 DM et 0 call — la mécanique d'outreach reste à l'arrêt. Mais le vrai sujet du jour était ailleurs : le mémoire BUT TC3 est FINI et SOUMIS. C'était une obligation lourde qui traînait depuis des semaines, et elle est maintenant derrière lui — ce qui libère mentalement de l'espace pour la vraie priorité : CloseGuard et le pipeline de DMs.",
-        "actions_demain": [
-          "Reprendre l'outreach DM dès le réveil — c'est la ONE Thing (Keller), le mémoire ne doit plus servir d'excuse",
-          "Fajr au réveil, premier acte de la journée avant tout écran",
-          "Caler un bloc deep work CloseGuard ou Didier (1h minimum) — capitaliser sur l'esprit libéré du mémoire",
-          "Profiter de la baisse naturelle du temps d'écran social pour la canaliser vers du volume business, pas vers du repos prolongé"
-        ],
-        "feedback_text": "Le score brut (14/100) ne raconte pas toute l'histoire aujourd'hui. Oui, les compteurs business, spirituel et cognitif sont à zéro ou presque — ça reste un vrai problème de fond. Mais la vraie nouvelle du jour, c'est que le mémoire BUT TC3 est terminé et déposé. Ce n'était pas la priorité long terme de Shayan, mais c'était une obligation suspendue au-dessus de sa tête depuis des semaines, et elle est réglée.\n\nNewport (Deep Work) dirait que la discipline est un muscle : le streak No PMO continue de tenir, même un jour à vide ailleurs. C'est la rep qui compte le plus, celle qu'on fait quand il n'y a aucune autre raison de le faire.\n\nKeller (The ONE Thing) est plus tranchant : maintenant que le mémoire est derrière lui, il n'y a plus aucune excuse légitime pour ne pas reprendre l'outreach demain matin. La 'ONE Thing' redevient limpide : DM, calls, closing.\n\nHill (Lois du Succès) rappellerait que le spirituel à zéro depuis plusieurs jours fragilise toute la structure — pas de fondation intérieure stable, pas de socle pour porter l'ambition du reste.\n\nLe positif réel : écrans sociaux en chute nette (108 min vs 245-300+ récemment), repos physique intelligent (pas de sur-frequentation après l'effort de la veille), et une obligation lourde enfin soldée. Maintenant, il faut transformer cet espace mental libéré en volume d'action concret dès demain matin."
-      }
-    },
-    {
-      "date": "2026-06-06",
-      "score": 21,
-      "note": "Gym biceps+triceps. Instagram 3h51 limite dépassée (hourglass). 0 DMs jour 14. 0 prières. No PMO streak maintenu. Mémoire à peine commencé. Steak bœuf midi + poulet/riz/gâteau patate douce soir. Appel Didier pour paiement commission. Restaurant soir.",
-      "feedback": "Score 21/100. Business quasi nul (0 DMs, 0 calls). Instagram encore en dépassement à 3h51. No PMO streak = seul vrai positif mental. Spirituel à zéro. Mémoire deadline demain 23h59.",
-      "activitywatch": {
-        "status": "screen_time_manual",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "recap": "0 DMs (jour 14 consécutif sans outreach). Appel Didier pour clarifier paiement commission du mois (mois précédent partiel à cause de ses dettes). Début mémoire BUT TC3 (à peine commencé).",
-        "score": 3
-      },
-      "physique": {
-        "gym": true,
-        "gym_type": "Biceps + Triceps",
-        "coucher": "04:00",
-        "lever": "12:00",
-        "heures_sommeil": 8,
-        "nutrition_clean": true,
-        "repas": "Midi : steak de bœuf. Soir : poulet + riz + petit gâteau aux patates douces avec chantilly (léger slip dessert).",
-        "goyslop_level": "light",
-        "goyslop_items": [
-          "gâteau patates douces",
-          "chantilly"
-        ],
-        "nutrition_score": 7,
-        "score": 7
-      },
-      "spirituel": {
-        "fajr": false,
-        "prieres": 0,
-        "coran": false,
-        "score": 0
-      },
-      "cognitif": {
-        "deep_work_heures": 0.3,
-        "deep_work_topic": "Mémoire BUT TC3 (début)",
-        "duolingo_russe": true,
-        "duolingo_minutes": 10,
-        "apprentissage": "Duolingo ~10 min. Rien de notable appris ou appliqué selon Shayan.",
-        "score": 4
-      },
-      "mental": {
-        "energie": 6,
-        "focus": 6,
-        "screen_time_reseaux_min": 245,
-        "screen_time_details": {
-          "Instagram": 231,
-          "Arc": 179,
-          "Telegram": 157,
-          "YouTube": 33,
-          "Snapchat": 14,
-          "Govee Home": 25,
-          "Photos": 21,
-          "ChatGPT": 20,
-          "Chrome": 15,
-          "WA Business": 11,
-          "NordVPN": 5,
-          "Gmail": 5,
-          "Terminal": 5
-        },
-        "no_pmo": true,
-        "nsdr": false,
-        "score": 5
-      },
-      "social": {
-        "interaction_hv": false,
-        "contenu_poste": false,
-        "details": "Restaurant le soir. 0 contenu posté. 0 interaction haute valeur business. Instagram 3h51 avec dépassement de la limite (hourglass affiché).",
-        "score": 2
-      },
-      "jarvis_feedback": {
-        "business_recap": "14ème jour consécutif à 0 DMs. Appel Didier pour régularisation commission : positif sur la relation client mais ça ne remplace pas l'outreach. Mémoire BUT TC3 débuté à peine — deadline dans moins de 24h.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 1,
-        "score_total": 3,
-        "feedback_text": "Le streak PMO est réel et il faut le saluer : c'est de la discipline pure sur 7+ jours. Newport (Deep Work) dit que la discipline s'entraîne comme un muscle — le PMO est ta première rep quotidienne. Garde-la.\n\nMais Instagram 3h51 avec override de ta propre limite, c'est la même chose que PMO sur un autre levier : tu as vu la limite, tu l'as ignorée, tu as continué. C'est pas l'app, c'est une décision.\n\nBusiness : 14 jours sans DM. Keller (The ONE Thing) : si ton unique chose est de closer des infopreneurs pour rembourser Fares et scaler CloseGuard, alors chaque matin sans DM est une journée perdue. Pas une journée moins productive — une journée perdue.\n\nSpirituellement : 0 depuis plusieurs jours. Hill (Lois du Succès) parle de la force intérieure comme fondation de tout le reste. Tu ne peux pas construire sur du sable.\n\nMémoire deadline : demain 23h59. C'est la priorité absolue dès le réveil.",
-        "what_good": [
-          "No PMO streak maintenu — discipline réelle sur plusieurs jours",
-          "Gym fait (biceps + triceps)",
-          "Nutrition propre (léger slip seulement sur le dessert)",
-          "Appel Didier : relation client maintenue, paiement clarifié",
-          "Énergie 6/10 = stable"
-        ],
-        "what_bad": [
-          "Instagram 3h51 avec override de la limite — discipline brisée sur ce levier",
-          "14ème jour consécutif à 0 DMs — pipeline mort",
-          "0 prières — fondation spirituelle absente",
-          "Mémoire à peine commencé — deadline dans 24h",
-          "0 contenu posté",
-          "Duolingo ~10min seulement"
-        ],
-        "actions_demain": [
-          "Mémoire BUT TC3 : rédiger de 14h à 23h59 avec Claude (toute la journée dédiée)",
-          "Fajr au réveil — premier acte de la journée",
-          "Pas d'Instagram avant 20h (mémoire d'abord)",
-          "Confirmer avec Didier que la commission complète est envoyée ce mois"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-06-07 00:42"
-      }
-    },
-    {
-      "date": "2026-06-24",
-      "score": 25,
-      "note": "Reprise du tracking après 17j de pause. 0 DM, 0 call. Tournage intro démo CloseGuard mais inutilisable (accent + qualité vidéo) → Fares a tout re-tourné. Pas de gym. Sommeil fragmenté (réveil 5h, sieste 11h-16h, éveillé jusqu'à 3h38). Fajr fait. 1h cours de russe avec Alexandra + 2h deep work. No PMO repris (jour 1, cassé pendant la pause). Screen time réseaux en chute libre (IG 1h34, TikTok ~0).",
-      "feedback": "Score 25/100. Meilleure trajectoire que début juin grâce au cognitif (cours russe + deep work) et à l'effondrement du screen time. Mais business toujours à 0 et sommeil détruit.",
-      "activitywatch": {
-        "status": "screen_time_manual",
-        "total_min": 0,
-        "apps": {}
-      },
-      "screen_time_updated": true,
-      "business": {
-        "dms": 0,
-        "calls_bookes": 0,
-        "calls_closes": 0,
-        "commission_estimee": 0,
-        "delivery_done": true,
-        "recap": "0 DM, 0 call. Seule activité business : tournage de l'intro de la démo CloseGuard, mais take inutilisable (accent pas assez bon + qualité vidéo insuffisante) → Fares a re-tourné toute l'intro + la démo. Output business net proche de zéro.",
-        "score": 3
-      },
-      "physique": {
-        "gym": false,
-        "gym_type": "",
-        "coucher": "fragmenté",
-        "lever": "05:00",
-        "heures_sommeil": 5,
-        "nutrition_clean": false,
-        "repas": "Midi : sushis + bœuf (clean). Soir : shawarma (sauce = léger goyslop) + dessert crêpe banane chocolat (goyslop).",
-        "goyslop_level": "moderate",
-        "goyslop_items": [
-          "sauce shawarma",
-          "crêpe banane chocolat"
-        ],
-        "nutrition_score": 5,
-        "score": 3
-      },
-      "spirituel": {
-        "fajr": true,
-        "prieres": 1,
-        "coran": false,
-        "score": 2
-      },
-      "cognitif": {
-        "deep_work_heures": 2,
-        "deep_work_topic": "Russe + travail CloseGuard",
-        "duolingo_russe": true,
-        "duolingo_minutes": 15,
-        "apprentissage": "1h de cours de russe avec Alexandra (prof). Appris l'accent tonique : certains O non accentués se prononcent A. + Duolingo.",
-        "score": 8
-      },
-      "mental": {
-        "energie": 6.5,
-        "focus": 6.5,
-        "screen_time_reseaux_min": 99,
-        "screen_time_details": {
-          "Instagram": 94,
-          "WA Business": 90,
-          "Telegram": 71,
-          "Notion": 51,
-          "SoundCloud": 46,
-          "Safari": 20,
-          "Grok": 9,
-          "Grab": 8,
-          "classgap.com": 8,
-          "Photos": 7,
-          "Snapchat": 5,
-          "Whop": 3,
-          "gleneagles.com.my": 3,
-          "Réglages": 3
-        },
-        "no_pmo": true,
-        "nsdr": false,
-        "score": 6
-      },
-      "social": {
-        "interaction_hv": false,
-        "contenu_poste": false,
-        "details": "Sorties le soir avec Dayyan à Kuala Lumpur, vraies discussions, interaction sociale de qualité. Mais 0 contenu posté et 0 interaction haute valeur business.",
-        "score": 3
-      },
-      "jarvis_feedback": {
-        "business_recap": "Reprise du tracking après 17j de silence. Business toujours à 0 DM / 0 call. L'unique action business — filmer l'intro démo CloseGuard — n'a rien produit d'exploitable (accent + qualité), Fares a tout re-tourné. C'est un signal : ta zone de génie n'est pas le tournage, c'est le closing et l'outreach. Délègue le reste, reprends ton levier.",
-        "score_volume": 0,
-        "score_leverage": 2,
-        "score_direction": 1,
-        "score_total": 3,
-        "feedback_text": "Trois vraies victoires aujourd'hui, sois honnête là-dessus.\n\n1) Le screen time s'est effondré : TikTok à ~0, Instagram à 1h34 contre 4-5h il y a quelques semaines. C'est énorme. Newport (Deep Work) : tu viens de récupérer 3h de bande passante attentionnelle par jour. La question n'est pas de l'avoir gagnée, c'est où tu la réinvestis. Aujourd'hui elle est partie dans le sommeil fragmenté, pas dans l'outreach.\n\n2) Le cours de russe + 2h de deep work = vrai travail profond. Mais attention au piège Keller (The ONE Thing) : le russe est important pour Veronika, pas pour ton revenue target. C'est du deep work sur une priorité secondaire pendant que ta ONE thing (closer des infopreneurs) est à 0 depuis des semaines. Le russe ne rembourse pas Fares.\n\n3) No PMO repris. Tu as cassé pendant 17 jours, tu l'as dit franchement, et tu repars. Hill (Lois du Succès) : la maîtrise de soi est la fondation. Jour 1 = jour 1, pas de culpabilité, juste la reprise.\n\nLe vrai problème structurel = ton sommeil. Réveil 5h, rdormi 11h-16h, debout jusqu'à 3h38 : ton corps n'a aucun rythme. Tout le reste (énergie 6.5, focus 6.5, 0 DM) découle de là. Tu ne peux pas faire d'outreach matinal discipliné si tu dors quand le monde travaille. Fixe le sommeil cette semaine, et le business suivra mécaniquement.",
-        "what_good": [
-          "Screen time effondré : TikTok ~0, Instagram 1h34 (vs 4-5h avant) — discipline réelle sur le scroll",
-          "Cours de russe 1h avec Alexandra + 2h de deep work",
-          "No PMO repris (jour 1) après une cassure assumée",
-          "Fajr fait",
-          "Bonne interaction sociale avec Dayyan à KL"
-        ],
-        "what_bad": [
-          "0 DM, 0 call — business toujours à l'arrêt",
-          "Intro démo CloseGuard inutilisable (accent + qualité) → re-tournée par Fares",
-          "Sommeil détruit et fragmenté (réveil 5h, sieste 11h-16h, debout jusqu'à 3h38)",
-          "Pas de gym",
-          "0 contenu posté",
-          "Seulement Fajr, autres prières à 0"
-        ],
-        "actions_demain": [
-          "Gym (tu l'as dit — non négociable)",
-          "Bloc d'outreach matinal : minimum 5 DM à des infopreneurs avant tout le reste",
-          "Fixer un cutoff de sommeil ce soir pour casser le rythme fragmenté",
-          "Fajr au réveil",
-          "Déléguer 100% du tournage à Fares, te concentrer sur le closing"
-        ],
-        "niveau": "FAIBLE",
-        "timestamp": "2026-06-25 03:40"
-      }
-    }
-  ],
-  "streaks": {
-    "nopmo": 1,
-    "fajr": 1,
-    "gym": 0,
-    "dms": 0
+  {
+   "id": 6,
+   "titre": "Acheter cadeaux famille avant retour La Réunion",
+   "priorite": "haute",
+   "statut": "done",
+   "contexte": "Avant de quitter KL (29 mai). Cadeaux pour : mère, père, petite soeur, 2 grands-mères, oncle.",
+   "date_ajout": "2026-05-24",
+   "echeance": "2026-05-29"
   },
-  "revenue_velocity": {
-    "current_month": "2026-06",
-    "current_commission": 0,
-    "monthly_target": 3500,
-    "days_elapsed": 7,
-    "days_remaining": 23,
-    "days_in_month": 30,
-    "pct_target": 0,
-    "daily_velocity_needed": 152,
-    "daily_run_rate": 0,
-    "on_track": false
+  {
+   "id": 7,
+   "titre": "Créer la miniature YouTube Didier (titre validé)",
+   "priorite": "haute",
+   "statut": "done",
+   "contexte": "Titre validé : 'arrête d'acheter des formations (j'ai perdu 15 000€ pour comprendre ça)'. Miniature à créer — nécessite photo nette de Didier.",
+   "date_ajout": "2026-05-25",
+   "echeance": ""
   },
-  "subscriptions": [
-    {
-      "name": "Revolut Ultra",
-      "cost": 60,
-      "category": "Banking"
-    },
-    {
-      "name": "Meta Verified",
-      "cost": 17,
-      "category": "Social"
-    },
-    {
-      "name": "iCloud",
-      "cost": 10,
-      "category": "Storage"
-    },
-    {
-      "name": "ClarityScale",
-      "cost": 100,
-      "category": "Tools"
-    },
-    {
-      "name": "Claude",
-      "cost": 20,
-      "category": "AI"
-    },
-    {
-      "name": "Vturb",
-      "cost": 40,
-      "category": "Tools"
-    }
+  {
+   "id": 8,
+   "titre": "Conclure le partenariat LegalPlace dans la formation Didier",
+   "priorite": "haute",
+   "statut": "todo",
+   "contexte": "Partenariat à intégrer dans le contenu/offre de Didier.",
+   "date_ajout": "2026-05-25",
+   "echeance": "",
+   "do_date": "2026-06-25"
+  },
+  {
+   "id": 9,
+   "titre": "Créer SOP prospection + closing pour CloseGuard",
+   "priorite": "haute",
+   "statut": "todo",
+   "contexte": "SOP complet : process outreach ciblé + script de closing pour le SaaS CloseGuard. Indispensable avant de scaler l'acquisition.",
+   "date_ajout": "2026-05-30",
+   "echeance": ""
+  },
+  {
+   "id": 10,
+   "titre": "Optimiser le profil Instagram",
+   "priorite": "haute",
+   "statut": "todo",
+   "contexte": "Optimisation complète du profil IG : bio, photo, highlights, lien. Levier direct pour la prospection growth operating.",
+   "date_ajout": "2026-05-30",
+   "echeance": "",
+   "do_date": "2026-06-25"
+  },
+  {
+   "id": 11,
+   "titre": "DM des créateurs pour le growth operating",
+   "priorite": "haute",
+   "statut": "todo",
+   "contexte": "Outreach quotidien : DM ciblés à des créateurs / infopreneurs pour signer de nouveaux clients growth operating. Le levier #1 du revenue target.",
+   "date_ajout": "2026-06-25",
+   "echeance": "",
+   "do_date": "2026-06-25"
+  },
+  {
+   "id": 12,
+   "titre": "Créer un nouveau contrat avec clause de remboursement (offre irrésistible) pour Didier",
+   "priorite": "normale",
+   "statut": "todo",
+   "contexte": "Nouveau contrat intégrant une clause de remboursement pour rendre l'offre de Didier irrésistible. Reportable au lendemain si pas le temps aujourd'hui.",
+   "date_ajout": "2026-06-25",
+   "echeance": "",
+   "do_date": "2026-06-25"
+  }
+ ],
+ "crm": {
+  "prospects": [
+   {
+    "id": 1,
+    "name": "Dayyan",
+    "platform": "Instagram / Calendly",
+    "handle": "@dayyaandm",
+    "contacted": "2026-05-21",
+    "status": "non_qualifie_referral",
+    "next_action": "DM Wally Invest (@wallinvest?) — référal de Dayyan, potentiel SaaS CloseGuard",
+    "next_action_date": "2026-05-27",
+    "notes": "Call fait le 26/05. Dayyan non qualifié (ads agency, pas de setters/calls). A référé Wally Invest comme prospect SaaS. Vient à KL juin — networking à entretenir.",
+    "email": "dayyaan@lead-x.fr",
+    "meet_link": "https://meet.google.com/rex-mdiu-ggr"
+   },
+   {
+    "id": 2,
+    "name": "Léni Constantin",
+    "platform": "Adrien Marquis coaching",
+    "handle": "",
+    "contacted": "2026-05-27",
+    "status": "interested_follow_up",
+    "next_action": "Relance dans 2-3 semaines — attendre qu'il ait plus de clients avec son infopreneur",
+    "next_action_date": "2026-06-17",
+    "notes": "Call fait le 27/05 (1h+). SaaS apprécié. Pas encore prêt (pas assez de calls avec son infopreneur). Relance mi-juin.",
+    "email": "",
+    "meet_link": ""
+   }
   ]
+ },
+ "finance": {
+  "target_mensuel": 20000,
+  "target_date": "2026-11-30",
+  "roadmap": [
+   {
+    "month": "2026-05",
+    "target": 1750
+   },
+   {
+    "month": "2026-06",
+    "target": 3500
+   },
+   {
+    "month": "2026-07",
+    "target": 6000
+   },
+   {
+    "month": "2026-08",
+    "target": 10000
+   },
+   {
+    "month": "2026-09",
+    "target": 14000
+   },
+   {
+    "month": "2026-10",
+    "target": 17000
+   },
+   {
+    "month": "2026-11",
+    "target": 20000
+   }
+  ],
+  "months": [
+   {
+    "month": "2025-06",
+    "revenus_total": 80,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 139,
+    "patrimoine_fin": 0,
+    "nb_transactions": 15
+   },
+   {
+    "month": "2025-07",
+    "revenus_total": 154,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 132,
+    "patrimoine_fin": 0,
+    "nb_transactions": 30
+   },
+   {
+    "month": "2025-08",
+    "revenus_total": 388,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 352,
+    "patrimoine_fin": 0,
+    "nb_transactions": 78
+   },
+   {
+    "month": "2025-09",
+    "revenus_total": 1541,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 1526,
+    "patrimoine_fin": 0,
+    "nb_transactions": 78
+   },
+   {
+    "month": "2025-10",
+    "revenus_total": 20,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 132,
+    "patrimoine_fin": 0,
+    "nb_transactions": 32
+   },
+   {
+    "month": "2025-11",
+    "revenus_total": 2560,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 1458,
+    "patrimoine_fin": 0,
+    "nb_transactions": 35
+   },
+   {
+    "month": "2025-12",
+    "revenus_total": 824,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 758,
+    "patrimoine_fin": 0,
+    "nb_transactions": 61
+   },
+   {
+    "month": "2026-01",
+    "revenus_total": 6032,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 1638,
+    "patrimoine_fin": 0,
+    "nb_transactions": 122
+   },
+   {
+    "month": "2026-02",
+    "revenus_total": 4859,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 3463,
+    "patrimoine_fin": 0,
+    "nb_transactions": 76
+   },
+   {
+    "month": "2026-03",
+    "revenus_total": 6508,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 6906,
+    "patrimoine_fin": 0,
+    "nb_transactions": 241
+   },
+   {
+    "month": "2026-04",
+    "revenus_total": 2466,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 3750,
+    "patrimoine_fin": 0,
+    "nb_transactions": 364
+   },
+   {
+    "month": "2026-05",
+    "revenus_total": 5230,
+    "revenus_perso_net": 1600,
+    "commissions_didier": 1000,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 4620,
+    "patrimoine_fin": 4000,
+    "nb_transactions": 370
+   }
+  ]
+ },
+ "training": {
+  "programme": "Push / Pull / Core — Haut du corps",
+  "objectif": "Pectoraux, épaules, bras (biceps+triceps+avant-bras), dos, abdos+obliques",
+  "frequence": "4 séances/semaine minimum",
+  "programme_detail": {
+   "Push": [
+    "Développé couché / Push-ups",
+    "Développé militaire",
+    "Élévations latérales",
+    "Dips / Extensions triceps",
+    "Écarté pectoraux"
+   ],
+   "Pull": [
+    "Tractions / Tirage vertical",
+    "Rowing barre / Câble",
+    "Face pull",
+    "Curl biceps barre",
+    "Curl marteau (avant-bras)",
+    "Curl inversé (avant-bras)"
+   ],
+   "Core": [
+    "Planche (3×60s)",
+    "Crunchs / Relevé de buste",
+    "Relevé de jambes",
+    "Obliques (Russian twist / Woodchop)",
+    "Mountain climbers"
+   ],
+   "Bras": [
+    "Superset biceps / triceps",
+    "Curl concentré",
+    "Skullcrushers",
+    "Curl poignets (avant-bras)"
+   ]
+  },
+  "sessions": []
+ },
+ "closeGuard": {
+  "statut": "En développement",
+  "clients": 0,
+  "mrr": 0,
+  "notes": ""
+ },
+ "days": [
+  {
+   "date": "2026-05-21",
+   "score": 38,
+   "note": "J1 — Premier check-in JARVIS",
+   "feedback": "Bonne énergie (8/10) mais gros manques sur le spirituel (0/5 prières), le PMO (streak 0) et le sleep cassé (couché 5h).",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs. 1 call booké (Diane lundi). Appel CloseGuard pricing avec Assed+Fares. Appel Didier delivery (stories vendredi + montage vidéo YouTube). Session setup JARVIS.",
+    "score_volume": 2,
+    "score_leverage": 7,
+    "score_direction": 5,
+    "score_total": 14,
+    "feedback_text": "Appel Didier + appel CloseGuard = pertinents et à fort levier. La direction est bonne. MAIS 0 DMs = zéro prospection = zéro pipeline futur. Sans outreach, les revenus stagnent. Le call booké avec Diane est positif — il faut que ça close.",
+    "what_good": [
+     "Appel Didier delivery — client maintenu, vidéo YouTube avance",
+     "Appel CloseGuard pricing avec Assed+Fares — SaaS structuré",
+     "1 call booké (Diane, lundi) — pipeline actif",
+     "Session JARVIS — investissement système"
+    ],
+    "what_bad": [
+     "0 DMs — aucune prospection. Sans outreach, impossible de scaler",
+     "Pas de vrai travail d'acquisition client aujourd'hui"
+    ],
+    "actions_demain": [
+     "2 DMs de qualité — ciblés, personnalisés, recherchés avant d'envoyer",
+     "Prépare l'appel Diane lundi — qualifie l'offre, anticipe les objections",
+     "Avance sur la vidéo pre-call Didier ou les stories semaine prochaine"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-21 15:32"
+   },
+   "business": {
+    "dms": 0,
+    "calls_bookes": 1,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "Appel CloseGuard pricing, appel Didier delivery, call Dayyan (@dayyaandm) booké lundi",
+    "score": 14
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Biceps (mini-séance)",
+    "coucher": "05:00",
+    "lever": "16:00",
+    "heures_sommeil": 11,
+    "nutrition_clean": false,
+    "repas": "Sushis saumon mayo, sashimi, riz boeuf oeuf, Monaca glace matcha (goyslop), cacahuètes raisins secs",
+    "eau_litres": 1,
+    "score": 8,
+    "goyslop_level": "slip",
+    "goyslop_items": [
+     "Monaca (glace matcha)"
+    ],
+    "nutrition_score": 7
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 2,
+    "duolingo_russe": true,
+    "duolingo_minutes": 2,
+    "apprentissage": "Pricing SaaS CloseGuard (appel avec Assed+Fares)",
+    "score": 8
+   },
+   "mental": {
+    "energie": 8,
+    "focus": 7,
+    "screen_time_reseaux_min": 239,
+    "screen_time_details": {
+     "Telegram": 284,
+     "TikTok": 171,
+     "Arc": 106,
+     "Meet": 79,
+     "Instagram": 68,
+     "WhatsApp Business": 55,
+     "Terminal": 25
+    },
+    "no_pmo": false,
+    "score": 2
+   },
+   "social": {
+    "interaction_hv": "Assed, Fares (CloseGuard) + Didier (client)",
+    "contenu_poste": false,
+    "score": 4
+   },
+   "activitywatch": {
+    "status": "ok",
+    "total_min": 501,
+    "apps": {
+     "Arc": 9,
+     "Terminal": 18
+    }
+   },
+   "screen_time_updated": true
+  },
+  {
+   "date": "2026-05-22",
+   "score": 19,
+   "note": "",
+   "feedback": "",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs. 0 calls. Aucune delivery. Deuxième journée consécutive sans outreach depuis le lancement JARVIS.",
+    "score_volume": 0,
+    "score_leverage": 0,
+    "score_direction": 0,
+    "score_total": 0,
+    "feedback_text": "Deuxième jour à 0 DMs. Hormozi (100M Leads) : 'Le volume de leads est la seule métrique qui précède le revenu.' Gym fait — bonne discipline physique. Mais gym sans outreach = corps qui progresse, pipeline qui se vide. Le Subway est un slip, pas une catastrophe, mais c'est un signal sur la rigueur globale.",
+    "what_good": [
+     "Gym Pectoraux + Dos — discipline physique maintenue",
+     "No PMO — streak tenu",
+     "1 prière — légère progression spirituelle vs veille"
+    ],
+    "what_bad": [
+     "0 DMs — 2 jours consécutifs sans prospection depuis J1",
+     "0 deep work — aucune production business",
+     "Subway goyslop — discipline alimentaire à solidifier"
+    ],
+    "actions_demain": [
+     "3 DMs dès le premier bloc du matin avant toute autre activité",
+     "Deep work 2h minimum — delivery Didier ou prospection ciblée",
+     "Coucher avant 3h — rythme à corriger progressivement"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-22 20:00"
+   },
+   "activitywatch": {
+    "status": "ok",
+    "total_min": 210,
+    "apps": {
+     "Terminal": 210
+    }
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "score": 0
+   },
+   "physique": {
+    "score": 8,
+    "coucher": "06:00",
+    "lever": "14:30",
+    "heures_sommeil": 8.5,
+    "gym": true,
+    "gym_type": "Pectoraux + Dos",
+    "nutrition_clean": false,
+    "goyslop_level": "slip",
+    "repas": "Subway (pain processed, bœuf, poulet, oignons, tomates, mayo)",
+    "nutrition_score": 5
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 1,
+    "coran": false,
+    "score": 3
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "duolingo_russe": true,
+    "duolingo_minutes": 3,
+    "apprentissage": "Duolingo russe 3min",
+    "score": 2
+   },
+   "mental": {
+    "score": 5,
+    "no_pmo": true,
+    "energie": 6,
+    "focus": 5,
+    "screen_time_reseaux_min": 179,
+    "screen_time_details": {
+     "TikTok": 99,
+     "Instagram": 80
+    },
+    "screen_time_updated": true
+   },
+   "social": {
+    "score": 1,
+    "contenu_poste": false,
+    "interaction_hv": null
+   }
+  },
+  {
+   "date": "2026-05-23",
+   "score": 9,
+   "note": "J3 — journée basse énergie, zéro exécution business, nutrition catastrophique",
+   "feedback": "Énergie à 3/10 — rien d'actionnable produit. Streak gym cassé. BK = goyslop total. PMO clean = seul point positif.",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs. 0 calls. 0 delivery. Journée entière sans aucune action business. Troisième jour consécutif à zéro outreach.",
+    "score_volume": 0,
+    "score_leverage": 0,
+    "score_direction": 0,
+    "score_total": 0,
+    "feedback_text": "Score business : 0. Troisième jour sans un seul DM. Newport (Deep Work) : 'Les performances remarquables requièrent des efforts non remarquables au quotidien.' Pas de deep work, énergie à 3/10, BK goyslop, gym cassé — tout s'est effondré simultanément. Keller (The ONE Thing) : quand tout est priorité, rien ne l'est. Il faut remettre les DMs comme seule priorité non-négociable du lendemain matin.",
+    "what_good": [
+     "No PMO — streak maintenu malgré la journée désastreuse",
+     "Duolingo russe 10 min — seul effort cognitif de la journée"
+    ],
+    "what_bad": [
+     "0 DMs — 3 jours consécutifs sans prospection = pipeline mort",
+     "0 gym — streak physique cassé",
+     "Burger King goyslop critique — deuxième fois en 3 jours",
+     "0 deep work — énergie 3/10 non récupérée",
+     "0 prières — spirituel à plat total"
+    ],
+    "actions_demain": [
+     "DMs dès le réveil — avant téléphone, avant TikTok, avant tout",
+     "Gym obligatoire — ne pas laisser 2 jours consécutifs sans séance",
+     "Coucher à une heure humaine — viser avant 2h du matin"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-23 20:00"
+   },
+   "activitywatch": {
+    "status": "ok",
+    "total_min": 338,
+    "apps": {
+     "Terminal": 338
+    }
+   },
+   "screen_time_updated": true,
+   "screen_time_details": {
+    "Telegram": 166,
+    "TikTok": 109,
+    "Instagram": 100,
+    "Photos": 58,
+    "Arc": 54,
+    "YouTube": 51,
+    "ChatGPT": 37,
+    "Terminal": 20,
+    "Revolut": 15,
+    "WhatsApp Business": 8,
+    "Snapchat": 8,
+    "Duolingo": 6
+   },
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "Rien fait. Zéro outreach, zéro delivery.",
+    "score": 0
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": null,
+    "coucher": "04:00",
+    "lever": "13:00",
+    "heures_sommeil": 9.0,
+    "nutrition_clean": false,
+    "repas": "Burger King — burger boeuf + frites + eau",
+    "goyslop_level": "critique",
+    "goyslop_items": [
+     "Burger King burger boeuf + frites"
+    ],
+    "nutrition_score": 2,
+    "score": 4
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "rien",
+    "score": 2
+   },
+   "mental": {
+    "energie": 3,
+    "focus": 6,
+    "screen_time_reseaux_min": 217,
+    "no_pmo": true,
+    "score": 3
+   },
+   "social": {
+    "interaction_hv": null,
+    "contenu_poste": false,
+    "score": 0
+   }
+  },
+  {
+   "date": "2026-05-24",
+   "score": 30,
+   "note": "KL",
+   "feedback": "0 DMs = bottleneck ignoré. 0 prières. Screen time 3h20 réseaux. Sleep cassé coucher 7h. Positifs : gym, nutrition propre, No PMO, Duolingo.",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs. 0 calls. Delivery : rectification séquences stories Didier + automatisation messages Kenzo VSL (déprioritisé). Bonne journée de delivery, zéro acquisition.",
+    "score_volume": 0,
+    "score_leverage": 4,
+    "score_direction": 1,
+    "score_total": 5,
+    "feedback_text": "La delivery Didier est faite — c'est bien. Mais 0 DMs pour la 4ème journée consécutive. Hormozi (100M Leads) : la delivery sans acquisition ne fait que maintenir ce qui existe, elle ne construit pas. Expert Secrets (Brunson) : un opérateur qui ne prospecte pas chaque jour perd du terrain même s'il exécute bien pour ses clients actuels. Points positifs solides aujourd'hui sur le physique et le mental — il faut transférer cette discipline vers l'outreach.",
+    "what_good": [
+     "Delivery Didier faite : stories + automatisation",
+     "Gym biceps + triceps — 2 séances cette semaine",
+     "Nutrition clean — sushis, steak, graines",
+     "No PMO streak 4 jours",
+     "Duolingo 10 min — régularité"
+    ],
+    "what_bad": [
+     "0 DMs — 4 jours consécutifs sans prospection",
+     "0 prières — spirituel à zéro depuis J1",
+     "Screen time 200 min réseaux — 3h20 de consommation passive",
+     "Coucher 7h — rythme inversé persistant"
+    ],
+    "actions_demain": [
+     "3 DMs ciblés infopreneurs — liste préparée la veille",
+     "1 prière minimum — Isha ou Fajr",
+     "Limiter TikTok/Instagram à 1h total"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-24 20:00"
+   },
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "score": 5
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "biceps + triceps",
+    "coucher": "7h",
+    "lever": "16h",
+    "heures_sommeil": 9,
+    "nutrition_clean": true,
+    "repas": "sushis, amandes/graines, steak boeuf + oeufs, eau de coco",
+    "score": 12
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 1.0,
+    "deep_work_topic": "1h — préparation carousel Instagram",
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "aucun",
+    "score": 7
+   },
+   "mental": {
+    "energie": 8,
+    "focus": 7,
+    "screen_time_reseaux_min": 200,
+    "no_pmo": true,
+    "score": 5
+   },
+   "social": {
+    "interaction_hv": "2 français à la salle de sport",
+    "contenu_poste": false,
+    "score": 1
+   },
+   "activitywatch": {
+    "status": "iPhone day",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true
+  },
+  {
+   "date": "2026-05-25",
+   "score": 23,
+   "note": "KL — J goyslop + screen time catastrophique, mais Fajr+Isha double",
+   "feedback": "Screen time 302 min réseaux = pire journée du suivi (TikTok 3h01 + Instagram 2h01). GOYSLOP BK. 0 gym. 0 DMs. Positifs : Fajr + Isha (premier double), No PMO streak 3j, Duolingo 18min.",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs. 0 calls. Delivery : titre YouTube Didier validé définitivement ('arrête d'acheter des formations'). Aucun outreach.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 1,
+    "score_total": 3,
+    "feedback_text": "0 DMs depuis 5 jours consécutifs = tu n'as pas de système d'acquisition, tu as une intention. Hormozi (100M Leads) : le volume de leads entrants est la seule métrique qui précède le revenu. Le titre YouTube = bonne décision, mais c'est du support. La ONE THING reste les DMs.",
+    "what_good": [
+     "Titre YouTube Didier validé : 'arrête d'acheter des formations (j'ai perdu 15 000€ pour comprendre ça)'"
+    ],
+    "what_bad": [
+     "0 DMs — pipeline vide depuis 5 jours consécutifs",
+     "0 deep work — aucune production actionnable",
+     "Aucune action d'acquisition client"
+    ],
+    "actions_demain": [
+     "3 DMs ciblés dès le premier bloc du matin — téléphone en mode avion avant",
+     "Lancer la vidéo Loom de prospection",
+     "Deep work 2h minimum sur outreach ou delivery Didier"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-25 18:00"
+   },
+   "activitywatch": {
+    "status": "iPhone day",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "Titre + miniature YouTube Didier choisis (titre #2 validé). Aucun outreach.",
+    "score": 3
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": null,
+    "coucher": "07:00",
+    "lever": "15:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": false,
+    "repas": "Burger King (burger bœuf + frites), graines (amandes, cacahuètes, raisins secs), mangue",
+    "goyslop_level": "critique",
+    "goyslop_items": [
+     "Burger King burger bœuf + frites"
+    ],
+    "nutrition_score": 2,
+    "score": 5
+   },
+   "spirituel": {
+    "fajr": true,
+    "prieres": 2,
+    "coran": false,
+    "score": 10
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "duolingo_russe": true,
+    "duolingo_minutes": 18,
+    "apprentissage": "rien",
+    "score": 3
+   },
+   "mental": {
+    "energie": 3,
+    "focus": 6,
+    "screen_time_reseaux_min": 302,
+    "screen_time_details": {
+     "TikTok": 181,
+     "Instagram": 121,
+     "Telegram": 121,
+     "YouTube": 54,
+     "WA Business": 38,
+     "Duolingo": 18,
+     "ChatGPT": 13,
+     "Safari": 8,
+     "Discord": 8,
+     "Whop": 8,
+     "Terminal": 5,
+     "Arc": 5,
+     "Gmail": 3
+    },
+    "no_pmo": true,
+    "score": 2
+   },
+   "social": {
+    "interaction_hv": null,
+    "contenu_poste": false,
+    "score": 0
+   }
+  },
+  {
+   "date": "2026-05-26",
+   "score": 39,
+   "note": "KL — carousel posté, call Dayyan fait, 3h deep work cabine Petronas",
+   "feedback": "0 DMs pour le 6e jour consécutif — pipeline toujours à sec. Mais journée productive : 3h deep work cabine insonorisée, carousel Instagram publié, call Dayyan avec référal Wally Invest. Gym fait. Nutrition correcte sauf cookies. 0 spirituel.",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs. 0 calls bookés. Appel Dayyan fait — non qualifié SaaS (pas de setters) mais référal Wally Invest généré. Carousel Instagram posté.",
+    "score_volume": 0,
+    "score_leverage": 4,
+    "score_direction": 4,
+    "score_total": 8,
+    "feedback_text": "6 jours sans un DM — c'est plus une tendance, c'est une habitude d'évitement. Mais aujourd'hui tu as quand même produit des assets réels : le carousel est un levier permanent, Wally Invest est une fenêtre chaude à saisir demain. Keller (The ONE Thing) : le carousel et l'appel sont du support — la ONE THING reste les DMs. Hormozi (100M Leads) : une référence chaude comme Wally Invest a une durée de vie courte. Contact aujourd'hui ou la fenêtre se ferme.",
+    "what_good": [
+     "Appel Dayyan fait — profil qualifié (entrepreneur ads), networking KL juin planifié",
+     "Lead Wally Invest référé — potentiel SaaS chaud à convertir rapidement",
+     "Carousel Instagram posté — asset de contenu durable pour la prospection",
+     "3h deep work cabine insonorisée salle de sport — meilleure session cognitif de la semaine",
+     "Gym triceps/pecs/dos — discipline physique maintenue"
+    ],
+    "what_bad": [
+     "0 DMs — 6 jours consécutifs sans prospection = pipeline entièrement vide",
+     "Wally Invest référé mais pas encore contacté — fenêtre courte"
+    ],
+    "actions_demain": [
+     "DM Wally Invest aujourd'hui — le référal chaud de Dayyan, ne pas laisser refroidir",
+     "3 DMs infopreneurs ciblés — reprendre l'outreach systématique",
+     "Vidéo Loom prospection — filmer avant d'envoyer les DMs"
+    ],
+    "niveau": "MOYEN",
+    "timestamp": "2026-05-27 05:01"
+   },
+   "activitywatch": {
+    "status": "iPhone day",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "Appel Dayyan fait (référal Wally Invest SaaS). Carousel Instagram posté. 0 outreach.",
+    "score": 8
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Triceps + Pectoraux + Dos",
+    "coucher": "06:00",
+    "lever": "15:00",
+    "heures_sommeil": 9,
+    "nutrition_clean": false,
+    "repas": "Shawarma, fruit de la passion, oeufs, amandes, cookies chocolat",
+    "goyslop_level": "slip",
+    "goyslop_items": [
+     "Cookies chocolat"
+    ],
+    "nutrition_score": 6,
+    "score": 10
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 3,
+    "deep_work_topic": "3h — finalisation + publication carousel Instagram (cabine insonorisée, vue Petronas)",
+    "duolingo_russe": true,
+    "duolingo_minutes": 2,
+    "apprentissage": "Appel Dayyan enrichissant (écosystème ads, networking entrepreneur)",
+    "score": 12
+   },
+   "mental": {
+    "energie": 7,
+    "focus": 7.5,
+    "screen_time_reseaux_min": 169,
+    "screen_time_details": {
+     "Instagram": 162,
+     "Arc": 160,
+     "Telegram": 126,
+     "ChatGPT": 91,
+     "Photos": 56,
+     "YouTube": 17,
+     "Terminal": 15,
+     "WA Business": 12,
+     "Notes": 8,
+     "Snapchat": 7,
+     "Whop": 4,
+     "FaceApp": 4,
+     "Opal": 2,
+     "Duolingo": 2
+    },
+    "no_pmo": true,
+    "score": 4
+   },
+   "social": {
+    "interaction_hv": "Dayyan (@dayyaandm) — entrepreneur ads, référal Wally Invest SaaS, vient à KL juin",
+    "contenu_poste": true,
+    "contenu_details": "Carousel Instagram KL/Chine posté",
+    "score": 5
+   }
+  },
+  {
+   "date": "2026-05-27",
+   "score": 26,
+   "note": "KL — call Léni SaaS positif, Instagram 5h44 catastrophique",
+   "feedback": "7e jour consécutif sans DM. Instagram 5h44 = record absolu du suivi. Gym fait (biceps). 3 goyslops dont burger. 1 prière (Isha). Call Léni = point positif : intéressé par CloseGuard, follow-up 2-3 semaines.",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs — 7 jours consécutifs. Call Léni Constantin 1h+ : SaaS bien reçu, potentiel abonnement dans 2-3 semaines quand il aura plus de clients. 0 delivery.",
+    "score_volume": 0,
+    "score_leverage": 5,
+    "score_direction": 3,
+    "score_total": 8,
+    "feedback_text": "7 jours sans un seul DM. C'est une semaine entière de pipeline mort. Hormozi (100M Leads) : 'Le revenu de demain est généré par les leads d'aujourd'hui.' Le call Léni est positif — mais c'est du pipeline entrant, pas sortant. Tu n'as toujours pas de système d'outreach. Instagram à 5h44 est un signal direct : l'énergie qui devrait aller vers les DMs va vers la consommation passive. Newport (Deep Work) : les réseaux sociaux fragmentent l'attention et détruisent la capacité à produire du travail profond.",
+    "what_good": [
+     "Call Léni Constantin : SaaS apprécié, intéressé, follow-up planifié dans 2-3 semaines",
+     "Gym biceps — discipline physique maintenue malgré rythme inversé",
+     "No PMO streak 6 jours — discipline mentale solide",
+     "1 prière (Isha) — légère continuité spirituelle"
+    ],
+    "what_bad": [
+     "0 DMs — 7 jours consécutifs = une semaine entière de pipeline mort",
+     "Instagram 5h44 = 344 min — record absolu, dopamine loop en cours",
+     "0 deep work — deuxième jour consécutif sans production",
+     "3 goyslops (burger+frites, cookies, glace matcha) — nutrition dégradée"
+    ],
+    "actions_demain": [
+     "3 DMs dès le réveil — téléphone en mode avion jusqu'à ce qu'ils soient envoyés",
+     "Deep work 2h minimum — Loom de prospection ou delivery Didier",
+     "Instagram limité à 45 min total via Screen Time limits"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-28 03:54"
+   },
+   "activitywatch": {
+    "status": "iPhone day",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "Call Léni Constantin 1h+ — SaaS intéressé, follow-up 2-3 semaines. 0 outreach.",
+    "score": 8
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Biceps",
+    "coucher": "07:00",
+    "lever": "15:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": false,
+    "repas": "Sushis, bœuf+riz+sashimi, glace Monaca matcha, cookies, burger+frites, graines+amandes+raisins secs",
+    "goyslop_level": "critique",
+    "goyslop_items": [
+     "Burger + frites",
+     "Cookies",
+     "Glace Monaca matcha"
+    ],
+    "nutrition_score": 3,
+    "score": 7
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 1,
+    "coran": false,
+    "score": 3
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "duolingo_russe": false,
+    "duolingo_minutes": 0,
+    "apprentissage": "rien",
+    "score": 2
+   },
+   "mental": {
+    "energie": 6,
+    "focus": 6.5,
+    "screen_time_reseaux_min": 369,
+    "screen_time_details": {
+     "Instagram": 344,
+     "Arc": 117,
+     "Telegram": 110,
+     "YouTube": 47,
+     "Chrome": 46,
+     "ChatGPT": 34,
+     "Grab": 33,
+     "Snapchat": 25,
+     "Camera": 12,
+     "Safari": 10,
+     "WhatsApp": 9,
+     "DeepSeek": 8,
+     "Photos": 7,
+     "Terminal": 5
+    },
+    "no_pmo": true,
+    "score": 2
+   },
+   "social": {
+    "interaction_hv": "Léni Constantin — operator Adrien Marquis, visio 1h+ SaaS CloseGuard",
+    "contenu_poste": false,
+    "score": 4
+   }
+  },
+  {
+   "date": "2026-05-28",
+   "score": 24,
+   "note": "KL dernier jour complet — vol La Reunion demain, Fajr, Instagram 3h59",
+   "feedback": "8e jour consecutif sans DM. Pas de gym le dernier jour a KL. Fajr fait = signal spirituel positif. Appel Leni (aide install Claude Code). Instagram 3h59 — mieux qu'hier mais encore excessif. Nutrition correcte (sushis). 0 deep work.",
+   "jarvis_feedback": {
+    "business_recap": "0 DMs — 8 jours consecutifs = record negatif. Appel Leni Constantin (support technique install Claude Code). 0 delivery.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 2,
+    "score_total": 4,
+    "feedback_text": "8 jours sans un seul DM. Une semaine pleine + un jour de pipeline mort. Hormozi (100M Leads) : 'Le revenu de demain est genere par les leads d'aujourd'hui.' Aujourd'hui tu as aide Leni a installer un outil — c'est du support, pas du business. Newport (Deep Work) : Instagram a 3h59 avec 0 deep work signifie que ton attention est fragmentee avant meme de commencer. Le retour a La Reunion est une vraie opportunite de reset : nouveau fuseau horaire, nouvelle routine, premiere opportunite de relancer l'outreach depuis 8 jours.",
+    "what_good": [
+     "Fajr fait — premiere priere matinale dans le suivi : effort reel (lever tot pour prier)",
+     "No PMO streak 7 jours — discipline mentale solide",
+     "Appel Leni maintenu — relation prospect entretenue avant le retour",
+     "Nutrition correcte : sushis/sashimi/saumon/boeuf = proteines propres",
+     "Instagram 3h59 vs 5h44 hier — amelioration relative"
+    ],
+    "what_bad": [
+     "0 DMs — 8 jours consecutifs = record negatif du suivi",
+     "0 gym le dernier jour a KL — derniere chance de s'entrainer avant le voyage",
+     "0 deep work — 3e jour consecutif sans production cognitive",
+     "Instagram 3h59 = encore largement au-dessus de la cible 1h"
+    ],
+    "actions_demain": [
+     "Vol La Reunion : profiter du temps d'avion pour planifier la reprise d'outreach",
+     "J+1 Reunion : 3 DMs infopreneurs des le lendemain du vol",
+     "Reset sommeil : objectif coucher avant minuit a La Reunion"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-29 00:45"
+   },
+   "activitywatch": {
+    "status": "iPhone day",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "Appel Leni Constantin (aide install Claude Code). 0 outreach. 8e jour sans DM.",
+    "score": 4
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": "",
+    "coucher": "08:00",
+    "lever": "16:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": false,
+    "repas": "Sushis saumon, sashimi, boeuf + riz, matcha monaka, graines + amandes",
+    "goyslop_level": "slip",
+    "goyslop_items": [
+     "Matcha monaka (dessert sucre)"
+    ],
+    "nutrition_score": 7,
+    "score": 5
+   },
+   "spirituel": {
+    "fajr": true,
+    "prieres": 1,
+    "coran": false,
+    "score": 5
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 5,
+    "apprentissage": "rien de notable",
+    "score": 3
+   },
+   "mental": {
+    "energie": 6.5,
+    "focus": 6.5,
+    "screen_time_reseaux_min": 246,
+    "screen_time_details": {
+     "Instagram": 239,
+     "Telegram": 180,
+     "WA Business": 61,
+     "Arc": 59,
+     "Chrome": 55,
+     "ChatGPT": 41,
+     "YouTube": 39,
+     "Snapchat": 7,
+     "Safari": 6,
+     "Grab": 6,
+     "NordVPN": 5,
+     "Finder": 5,
+     "Photos": 4,
+     "Revolut": 3
+    },
+    "no_pmo": true,
+    "score": 4
+   },
+   "social": {
+    "interaction_hv": "Leni Constantin — appel support technique (install Claude Code), relation prospect maintenue",
+    "contenu_poste": false,
+    "score": 3
+   }
+  },
+  {
+   "date": "2026-05-29",
+   "score": 9,
+   "note": "Journée de voyage : KLIA → Maurice → La Réunion. Arrivée 23h. Biceps en rentrant à 1h du mat.",
+   "feedback": "Journée de transit — 0 business, 0 spirituel. Goyslop avion + BK inévitable. Gym malgré l'arrivée tardive : discipline maintenue.",
+   "activitywatch": {
+    "status": "ok",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "Journée de déplacement total (aéroport KLIA → Maurice → La Réunion). 0 outreach. 0 delivery.",
+    "score": 0
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Biceps",
+    "coucher": "03:00",
+    "lever": "08:00",
+    "heures_sommeil": 5,
+    "nutrition_clean": false,
+    "repas": "Nourriture avion, Burger King, snacks lounge (pain raffiné, quelques viandes)",
+    "goyslop_level": "critique",
+    "goyslop_items": [
+     "Nourriture avion",
+     "Burger King",
+     "Pain raffiné lounge"
+    ],
+    "nutrition_score": 2,
+    "score": 4
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 5,
+    "apprentissage": "rien de notable",
+    "score": 2
+   },
+   "mental": {
+    "energie": 5.5,
+    "focus": 5,
+    "screen_time_reseaux_min": 178,
+    "screen_time_details": {
+     "Instagram": 178,
+     "Telegram": 106,
+     "YouTube": 78,
+     "Arc": 33,
+     "ChatGPT": 31,
+     "WA Business": 17,
+     "Revolut": 8,
+     "DeepSeek": 6,
+     "Terminal": 6,
+     "Opal": 5,
+     "Grab": 5,
+     "Booking.com": 3,
+     "Whop": 3
+    },
+    "no_pmo": true,
+    "score": 3
+   },
+   "social": {
+    "interaction_hv": null,
+    "contenu_poste": false,
+    "score": 0
+   },
+   "jarvis_feedback": {
+    "business_recap": "0 DMs — 9 jours consecutifs. Journee de transit total : KLIA -> Maurice -> La Reunion. 0 outreach, 0 delivery, 0 calls.",
+    "score_volume": 0,
+    "score_leverage": 0,
+    "score_direction": 2,
+    "score_total": 2,
+    "feedback_text": "9 jours sans un seul DM. Hormozi (100M Leads) : 'Le revenu de demain est genere par les leads d'aujourd'hui.' La journee de voyage est une excuse legitime pour aujourd'hui — mais pas pour demain. Tu es a La Reunion maintenant. Le reset commence maintenant. Newport (Deep Work) : la reprise d'un systeme se fait par des rituels fixes, pas par la motivation. Demain matin : 3 DMs avant tout le reste. Avant le telephone, avant Instagram, avant le petit-dejeuner. Le gym fait a 1h du matin apres 7h de vol est le seul signal fort de la journee. Cette discipline doit etre appliquee a l'outreach des demain.",
+    "what_good": [
+     "Gym biceps fait a 1h du matin apres 7h de vol — discipline mentale au-dessus de la moyenne",
+     "No PMO streak 8 jours — regularite solide",
+     "Arrivee a La Reunion = opportunite de reset total du rythme et de la routine"
+    ],
+    "what_bad": [
+     "0 DMs — 9 jours consecutifs = pipeline completement mort",
+     "Instagram 178 min en transit — consommation passive meme en voyage",
+     "0 prières — 0 Fajr — spirituel a plat depuis 2 jours",
+     "Goyslop critique : avion + BK + lounge"
+    ],
+    "actions_demain": [
+     "3 DMs infopreneurs des le matin — avant Instagram, avant tout",
+     "Etablir l'heure de coucher cible a La Reunion (objectif : avant minuit)",
+     "1 priere minimum (Isha ou Fajr)"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-30 02:40"
+   }
+  },
+  {
+   "date": "2026-05-30",
+   "score": 10,
+   "note": "Journée de repos total. Premier jour complet à La Réunion après le retour de Chine.",
+   "feedback": "0 business, 0 gym. Instagram 3h32. Repos assumé mais 10 jours sans DM = pipeline mort.",
+   "activitywatch": {
+    "status": "ok",
+    "total_min": 21,
+    "apps": {
+     "Terminal": 21
+    }
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "0 DMs, 0 calls. Journée de repos total. Aucune action business.",
+    "score": 0
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": "",
+    "coucher": "04:00",
+    "lever": "13:00",
+    "heures_sommeil": 9,
+    "nutrition_clean": false,
+    "repas": "Tacos, shawarma, sashimi",
+    "goyslop_level": "modéré",
+    "goyslop_items": [
+     "Tacos",
+     "Shawarma"
+    ],
+    "nutrition_score": 3,
+    "score": 3
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "notes": "Contenu Richard uniquement",
+    "score": 1
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "rien",
+    "score": 2
+   },
+   "mental": {
+    "energie": 7,
+    "focus": 5,
+    "screen_time_reseaux_min": 224,
+    "screen_time_details": {
+     "Instagram": 212,
+     "Telegram": 93,
+     "Arc": 58,
+     "Chrome": 44,
+     "Photos": 23,
+     "ChatGPT": 22,
+     "Terminal": 21,
+     "Snapchat": 12,
+     "WA Business": 11,
+     "Uber Eats": 6,
+     "Ostrovok": 6,
+     "Revolut": 2,
+     "Duolingo": 1,
+     "Govee Home": 1
+    },
+    "no_pmo": true,
+    "nsdr": false,
+    "score": 3
+   },
+   "social": {
+    "interaction_hv": false,
+    "contenu_poste": false,
+    "score": 1
+   },
+   "jarvis_feedback": {
+    "business_recap": "0 DMs pour le 10eme jour consecutif. 0 calls. Pipeline completement mort depuis le depart en voyage.",
+    "score_volume": 0,
+    "score_leverage": 0,
+    "score_direction": 0,
+    "score_total": 0,
+    "feedback_text": "10 jours sans un seul DM. Hormozi (100M Leads) : 'Un pipeline vide aujourd'hui = zero revenu dans 30 jours.' La Reunion est maintenant le contexte. Les excuses de voyage sont terminées. Newport (Deep Work) : la reprise d'un systeme se fait par un rituel fixe non negociable. Demain : 5 DMs avant d'ouvrir Instagram. Pas apres, pas en meme temps. Avant. Instagram a 3h32 pendant une journee de repos confirme le pattern : le telephone est le premier refuge. Keller (The ONE Thing) : identifie ton UNE chose — aujourd'hui c'est l'outreach. Tout le reste attend. NoPMO streak 9 jours = seule discipline maintenue. Transpose cette meme energie a l'outreach.",
+    "what_good": [
+     "NoPMO streak 9 jours — regularite solide, energie preservee",
+     "Repos assumé apres retour long voyage — recuperation legitime",
+     "Duolingo maintenu meme en journee de repos"
+    ],
+    "what_bad": [
+     "0 DMs — 10 jours consecutifs = pipeline completement mort",
+     "Instagram 3h32 — record equivalent a une journee de dopamine passive",
+     "0 gym — second jour sans mouvement physique",
+     "0 Fajr — 0 prieres — spirituel inexistant",
+     "Coucher 4h / lever 13h — rythme circadien inverse"
+    ],
+    "actions_demain": [
+     "5 DMs infopreneurs avant d'ouvrir Instagram",
+     "Gym — n'importe quel mouvement compte",
+     "Coucher avant minuit ce soir — reset rythme"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-05-31 01:00"
+   }
+  },
+  {
+   "date": "2026-05-31",
+   "score": 14,
+   "note": "Delivery Didier (stories 01/06-07/06). 0 DMs jour 11. NoPMO streak casse.",
+   "feedback": "Delivery done mais pipeline mort. Streak NoPMO reset a 0 apres 9 jours.",
+   "activitywatch": {
+    "status": "ok",
+    "total_min": 13,
+    "apps": {
+     "Terminal": 13
+    }
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "Stories Didier semaine 01/06-07/06 completees (35 slides generes et uploades Drive). 0 DMs, 0 calls.",
+    "score": 4
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": "",
+    "coucher": "04:00",
+    "lever": "11:30",
+    "heures_sommeil": 7.5,
+    "nutrition_clean": false,
+    "repas": "Boeuf hache huile seed oil, tarte aux fraises, quiche legumes",
+    "goyslop_level": "modere",
+    "goyslop_items": [
+     "Boeuf hache seed oil",
+     "Tarte aux fraises"
+    ],
+    "nutrition_score": 3,
+    "score": 3
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 5,
+    "apprentissage": "rien",
+    "score": 2
+   },
+   "mental": {
+    "energie": 5,
+    "focus": 5,
+    "screen_time_reseaux_min": 200,
+    "screen_time_details": {
+     "Instagram": 170,
+     "Telegram": 84,
+     "WA Business": 79,
+     "Photos": 59,
+     "Arc": 38,
+     "Snapchat": 30,
+     "Govee Home": 22,
+     "ChatGPT": 16,
+     "Terminal": 13,
+     "Finder": 9,
+     "Safari": 9,
+     "Saily": 8,
+     "CapCut": 8,
+     "Facebook": 7
+    },
+    "no_pmo": false,
+    "nsdr": false,
+    "score": 2
+   },
+   "social": {
+    "interaction_hv": true,
+    "contenu_poste": false,
+    "details": "Famille toute la journee + appel Fares (co-founder CloseGuard)",
+    "score": 3
+   },
+   "jarvis_feedback": {
+    "business_recap": "Delivery Didier fait (stories completes) mais 0 DMs pour le 11eme jour consecutif. Pipeline completement mort depuis le depart KL.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 2,
+    "score_total": 4,
+    "feedback_text": "NoPMO streak casse apres 9 jours. Hill (Lois du Succes) : la discipline de l'autocontrole est la fondation de toutes les autres. Quand elle cede, les autres domaines suivent. 11 jours sans un seul DM. Hormozi (100M Leads) : 'Sans leads, il n'y a pas de business. Juste un hobby.' La delivery Didier compte comme travail serieux mais c'est du maintenance, pas de la croissance. Keller (The ONE Thing) : l'outreach est ton ONE thing. Tout le reste attend. Aujourd'hui : 3 DMs minimum avant d'ouvrir Instagram. Pas negociable.",
+    "what_good": [
+     "Delivery Didier completee (35 slides stories semaine 01/06-07/06)",
+     "Appel Fares - connexion HV maintenue avec co-founder CloseGuard",
+     "Sommeil 7.5h - recuperation correcte"
+    ],
+    "what_bad": [
+     "NoPMO streak reset a 0 apres 9 jours - energie et mental impactes",
+     "0 DMs - 11eme jour consecutif - pipeline completement mort",
+     "0 prieres - spirituel a zero depuis plusieurs jours",
+     "0 gym - deuxieme semaine sans mouvement physique"
+    ],
+    "actions_demain": [
+     "3 DMs infopreneurs avant d'ouvrir Instagram",
+     "Gym maison : tractions + dips + haltere",
+     "Coucher avant 23h ce soir"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-06-01 14:30"
+   }
+  },
+  {
+   "date": "2026-06-01",
+   "score": 19,
+   "note": "Premier jour cours BUT TC. Call 1h CloseGuard (Fares+Assed). 0 DMs jour 12. PMO oui.",
+   "feedback": "Call CoFounders CloseGuard positif mais 0 outreach. PMO reset energie. 6h sommeil - mieux.",
+   "activitywatch": {
+    "status": "not collected",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "0 DMs. Call 1h CloseGuard (Fares + Assed) : features + review prospects (Leni Constantin, Diane). Premier jour cours BUT TC. 0 contenu poste.",
+    "score": 4
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Alteres biceps (partiel)",
+    "coucher": "02:00",
+    "lever": "08:00",
+    "heures_sommeil": 6,
+    "nutrition_clean": null,
+    "repas": "",
+    "goyslop_level": "non renseigne",
+    "goyslop_items": [],
+    "nutrition_score": 5,
+    "score": 5
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "Quelques minutes Duolingo russe. Rien de notable.",
+    "score": 2
+   },
+   "mental": {
+    "energie": 4,
+    "focus": 6,
+    "screen_time_reseaux_min": 96,
+    "screen_time_details": {
+     "Arc": 143,
+     "Telegram": 131,
+     "WA Business": 89,
+     "Instagram": 81,
+     "Chrome": 59,
+     "Safari": 59,
+     "tldv.io": 52,
+     "Terminal": 31,
+     "Photos": 20,
+     "WhatsApp": 16,
+     "Snapchat": 15,
+     "ChatGPT": 13,
+     "Finder": 12,
+     "Horloge": 10
+    },
+    "no_pmo": false,
+    "nsdr": false,
+    "score": 3
+   },
+   "social": {
+    "interaction_hv": true,
+    "contenu_poste": false,
+    "details": "Universite (contact low value). Call 1h Fares + Assed (CloseGuard co-founders, high value).",
+    "score": 5
+   },
+   "jarvis_feedback": {
+    "business_recap": "0 DMs pour le 12eme jour consecutif. Call 1h CloseGuard (Fares+Assed) : features a developper + review appels Leni/Diane. Direction correcte mais 0 croissance pipeline.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 2,
+    "score_total": 4,
+    "feedback_text": "PMO le jour 1 de la reprise en Reunion. Hill (Lois du Succes) : l'ennemi de la discipline c'est toujours l'habitude qui cede en premier quand l'environnement change. Tu rentres de voyage, routine cassee, PMO revient. Keller (The ONE Thing) : l'outreach c'est ton ONE thing en ce moment. 12 jours a 0 DMs, ca veut dire que CloseGuard et ta croissance perso sont sur pause. Le call CoFounders est bon mais c'est de la strategie, pas de la croissance. Hormozi (100M Leads) : sans leads nouveaux, un business est juste en train de perdre de l'altitude lentement. Cote positif : 6h sommeil (mieux que la semaine KL), gym fait meme partiel, Instagram 1h21 (bien en dessous des records). Coucher 2h du mat : l'objectif reste 23h. Newport (Deep Work) : 2h du mat couche = bloc cognitif du matin sacrifice. Demain : 3 DMs avant 10h. Cest le seul KPI qui compte.",
+    "what_good": [
+     "6h sommeil - meilleur que KL (etait a 3-4h)",
+     "Gym fait (meme partiel : alteres biceps)",
+     "Instagram 1h21 - bien en dessous des records (5h44 le 27/05)",
+     "Call 1h CoFounders CloseGuard - direction reelle maintenue",
+     "Premier jour cours gere"
+    ],
+    "what_bad": [
+     "PMO - energie 4/10, streak reset",
+     "0 DMs - 12eme jour consecutif - pipeline mort",
+     "0 prieres - spirituel a zero",
+     "0 deep work - cognitif a zero hors Duolingo",
+     "Coucher 2h du mat - encore trop tard"
+    ],
+    "actions_demain": [
+     "3 DMs infopreneurs avant 10h (non-negociable)",
+     "Fajr demain matin",
+     "Coucher avant 23h ce soir"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-06-01 22:09"
+   }
+  },
+  {
+   "date": "2026-06-02",
+   "score": 0,
+   "note": "",
+   "feedback": "",
+   "activitywatch": {
+    "status": "error: curl failed: ",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": false,
+   "business": {
+    "score": 0
+   },
+   "physique": {
+    "score": 0
+   },
+   "spirituel": {
+    "score": 0
+   },
+   "cognitif": {
+    "score": 0
+   },
+   "mental": {
+    "score": 0
+   },
+   "social": {
+    "score": 0
+   }
+  },
+  {
+   "date": "2026-06-03",
+   "score": 14,
+   "note": "Rebrand CloseGuard acté (Numa embauché, Fares avance 6350€). 0 DMs jour 13. PMO 3 jours consec. Instagram 3h18 override limite.",
+   "feedback": "Décision CloseGuard solide mais pipeline mort. Nutrition pic glycémique = énergie 3/10. PMO pattern installé.",
+   "activitywatch": {
+    "status": "not collected",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "0 DMs. Appel Fares+Assed : rebrand CloseGuard acté, Numa embauché. Fares avance 6 350€, Shayan rembourse ~2 000€ apres avoir close des infopreneurs. Contact Dayyan Instagram.",
+    "score": 4
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Alteres biceps + pompes (partiel)",
+    "coucher": "05:00",
+    "lever": "12:00",
+    "heures_sommeil": 7,
+    "nutrition_clean": false,
+    "repas": "Matin : lait de soja + sirop de rose + pain de mie + beurre + fromage + cookies granola + pims orange. Soir : steak boeuf.",
+    "goyslop_level": "critique",
+    "goyslop_items": [
+     "lait de soja",
+     "sirop de rose",
+     "cookies granola",
+     "pims orange",
+     "pain de mie"
+    ],
+    "nutrition_score": 2,
+    "score": 3
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "Duolingo russe. Rien de notable.",
+    "score": 2
+   },
+   "mental": {
+    "energie": 3,
+    "focus": 5,
+    "screen_time_reseaux_min": 245,
+    "screen_time_details": {
+     "Instagram": 198,
+     "TikTok": 32,
+     "Govee Home": 153,
+     "Arc": 98,
+     "Telegram": 84,
+     "WA Business": 62,
+     "ChatGPT": 25,
+     "Chrome": 13,
+     "Safari": 12,
+     "Terminal": 12,
+     "X": 12,
+     "Snapchat": 3,
+     "WhatsApp": 4,
+     "Opal": 6,
+     "NordVPN": 5
+    },
+    "no_pmo": false,
+    "nsdr": false,
+    "score": 1
+   },
+   "social": {
+    "interaction_hv": true,
+    "contenu_poste": false,
+    "details": "Appel Fares + Assed (CloseGuard, high value). Contact Dayyan Instagram.",
+    "score": 4
+   },
+   "jarvis_feedback": {
+    "business_recap": "0 DMs pour le 13eme jour consecutif. Rebrand CloseGuard acte avec Numa (designer Yousef Lashuel). Fares avance 6 350€. Shayan doit rembourser ~2 000€ = obligation de closer des infopreneurs.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 2,
+    "score_total": 4,
+    "feedback_text": "PMO 3 jours consecutifs depuis le streak casse. Hill (Lois du Succes) : une habitude se reinstalle en 3 jours, pas en 30. Le premier PMO apres un long streak c'est un accident. Le deuxieme c'est un choix. Le troisieme c'est un pattern. Tu es en train de reposer les fondations de l'ancienne habitude. Instagram 3h18 avec override de ta propre limite : tu as decide de briser ta regle toi-meme. C'est pas l'algo, c'est toi. Newport (Deep Work) : chaque heure sur Instagram est une heure de potentiel cognitif brule. Energie 3/10 directement liee a la nutrition du matin (pic glycemique lait de soja + pims + cookies). Keller : ton ONE thing reste l'outreach. 13 jours a 0 DMs. Le rebrand CloseGuard est une bonne decision strategique mais c'est du travail futur. Ce qui paie tes dettes maintenant c'est des infopreneurs closes. Demain : 3 DMs avant midi. Fajr. Pas de sucre le matin.",
+    "what_good": [
+     "Rebrand CloseGuard acte - decision strategique majeure avec Yousef Lachuel comme levier",
+     "Fares avance le cash - structure financiere trouvee",
+     "Gym fait (partiel), 7h sommeil",
+     "Appel co-founders productif"
+    ],
+    "what_bad": [
+     "PMO 3 jours consecutifs - pattern qui se reinstalle",
+     "Instagram 3h18 avec override de la limite - discipline cassee",
+     "Nutrition catastrophique matin (pic glycemique) = energie 3/10 toute la journee",
+     "0 DMs - 13eme jour consecutif",
+     "Coucher 5h du matin - rythme qui se degrade",
+     "0 prieres"
+    ],
+    "actions_demain": [
+     "3 DMs infopreneurs avant midi (Shayan doit 2000€ a Fares - pipeline = urgence cash)",
+     "Fajr",
+     "Petit-dej proteines : oeufs + viande. Zero sucre zero lait de soja le matin",
+     "Coucher avant minuit ce soir"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-06-03 22:04"
+   }
+  },
+  {
+   "date": "2026-06-04",
+   "score": 0,
+   "note": "",
+   "feedback": "",
+   "activitywatch": {
+    "status": "error: curl failed: ",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": false,
+   "business": {
+    "score": 0
+   },
+   "physique": {
+    "score": 0
+   },
+   "spirituel": {
+    "score": 0
+   },
+   "cognitif": {
+    "score": 0
+   },
+   "mental": {
+    "score": 0
+   },
+   "social": {
+    "score": 0
+   }
+  },
+  {
+   "date": "2026-06-07",
+   "score": 14,
+   "note": "Jour calme, peu d'activité business/spirituel/cognitif, mais journée dominée par la finalisation et la soumission définitive du mémoire BUT TC3 (CloseGuard réécrit, Annexe 1 refaite en infographie). Repos physique volontaire (gym fait la veille). Nutrition mitigée : poulet/riz clean le midi, tacos poulet frit + crêpes le soir (écart assumé). Screen time réseaux en net recul : 1h48 Instagram seulement, 0 TikTok.",
+   "feedback": "Score 14/100. Journée à très faible volume sur presque tous les piliers (0 DM, 0 prière, 0 deep work), mais à mettre en perspective : le mémoire BUT TC3 a été finalisé et déposé définitivement aujourd'hui — accomplissement réel qui ne rentre dans aucune case JARVIS mais compte. No PMO streak maintenu, écrans sociaux en net recul (108 min vs 245+ récemment).",
+   "activitywatch": {
+    "apps": {},
+    "status": "error: curl failed: ",
+    "total_min": 0
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "0 DM, 0 call booké, aucune avancée delivery Didier mentionnée. Journée entièrement consacrée à la finalisation et au dépôt définitif du mémoire BUT TC3 (hors-cadre business mais charge cognitive et enjeu réels).",
+    "score": 2
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": "",
+    "goyslop_items": [
+     "tacos poulet frit + sauce",
+     "crêpes"
+    ],
+    "goyslop_level": "modéré",
+    "nutrition_clean": false,
+    "nutrition_score": 5,
+    "repas": "Midi : poulet + riz (clean). Soir : tacos avec poulet frit + sauce ('vraiment pas terrible' selon Shayan), puis bananes, chocolat noir et crêpes.",
+    "score": 4
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": null,
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "Duolingo russe (un peu plus de 10 min selon Shayan). Pas de deep work, pas d'apprentissage business notable — journée absorbée par la finalisation du mémoire BUT TC3.",
+    "score": 2
+   },
+   "mental": {
+    "energie": 6,
+    "focus": 5,
+    "no_pmo": true,
+    "nsdr": false,
+    "screen_time_reseaux_min": 108,
+    "screen_time_details": {
+     "Telegram": 259,
+     "Arc": 128,
+     "Instagram": 108,
+     "Terminal": 34,
+     "Aperçu": 28,
+     "Ostrovok": 21,
+     "WA Business": 14,
+     "Snapchat": 13,
+     "Safari": 9,
+     "X": 8,
+     "Docs": 8,
+     "Chrome": 7,
+     "digitalflooz.novaris-ai.com": 7,
+     "Govee Home": 7
+    },
+    "score": 6
+   },
+   "social": {
+    "interaction_hv": false,
+    "contenu_poste": false,
+    "details": "0 interaction haute valeur, 0 contenu posté. Réseaux sociaux en net recul (1h48 Instagram, pas de TikTok), Telegram dominant (4h19, en grande partie consacré au travail sur le mémoire).",
+    "score": 0
+   },
+   "jarvis_feedback": {
+    "timestamp": "2026-06-08 09:00",
+    "niveau": "FAIBLE",
+    "score_volume": 1,
+    "score_direction": 3,
+    "score_leverage": 1,
+    "score_total": 5,
+    "what_good": [
+     "Mémoire BUT TC3 finalisé et déposé définitivement aujourd'hui (CloseGuard réécrit, Annexe 1 refaite en infographie complète) — obligation lourde enfin soldée",
+     "No PMO streak maintenu — discipline qui continue malgré une journée à vide ailleurs",
+     "Repos physique assumé et volontaire (gym fait la veille, pas de sur-frequentation)",
+     "Réseaux sociaux en net recul : 1h48 Instagram seulement, 0 TikTok, contre 245-300+ min les jours précédents"
+    ],
+    "what_bad": [
+     "0 DM, 0 call — pipeline business toujours à l'arrêt",
+     "0 prière, 0 Coran — spirituel à zéro depuis plusieurs jours",
+     "0 deep work, 0 contenu posté, 0 interaction haute valeur",
+     "Écart nutrition assumé le soir (tacos poulet frit + crêpes), Shayan lui-même : 'vraiment pas terrible'"
+    ],
+    "business_recap": "Encore une journée à 0 DM et 0 call — la mécanique d'outreach reste à l'arrêt. Mais le vrai sujet du jour était ailleurs : le mémoire BUT TC3 est FINI et SOUMIS. C'était une obligation lourde qui traînait depuis des semaines, et elle est maintenant derrière lui — ce qui libère mentalement de l'espace pour la vraie priorité : CloseGuard et le pipeline de DMs.",
+    "actions_demain": [
+     "Reprendre l'outreach DM dès le réveil — c'est la ONE Thing (Keller), le mémoire ne doit plus servir d'excuse",
+     "Fajr au réveil, premier acte de la journée avant tout écran",
+     "Caler un bloc deep work CloseGuard ou Didier (1h minimum) — capitaliser sur l'esprit libéré du mémoire",
+     "Profiter de la baisse naturelle du temps d'écran social pour la canaliser vers du volume business, pas vers du repos prolongé"
+    ],
+    "feedback_text": "Le score brut (14/100) ne raconte pas toute l'histoire aujourd'hui. Oui, les compteurs business, spirituel et cognitif sont à zéro ou presque — ça reste un vrai problème de fond. Mais la vraie nouvelle du jour, c'est que le mémoire BUT TC3 est terminé et déposé. Ce n'était pas la priorité long terme de Shayan, mais c'était une obligation suspendue au-dessus de sa tête depuis des semaines, et elle est réglée.\n\nNewport (Deep Work) dirait que la discipline est un muscle : le streak No PMO continue de tenir, même un jour à vide ailleurs. C'est la rep qui compte le plus, celle qu'on fait quand il n'y a aucune autre raison de le faire.\n\nKeller (The ONE Thing) est plus tranchant : maintenant que le mémoire est derrière lui, il n'y a plus aucune excuse légitime pour ne pas reprendre l'outreach demain matin. La 'ONE Thing' redevient limpide : DM, calls, closing.\n\nHill (Lois du Succès) rappellerait que le spirituel à zéro depuis plusieurs jours fragilise toute la structure — pas de fondation intérieure stable, pas de socle pour porter l'ambition du reste.\n\nLe positif réel : écrans sociaux en chute nette (108 min vs 245-300+ récemment), repos physique intelligent (pas de sur-frequentation après l'effort de la veille), et une obligation lourde enfin soldée. Maintenant, il faut transformer cet espace mental libéré en volume d'action concret dès demain matin."
+   }
+  },
+  {
+   "date": "2026-06-06",
+   "score": 21,
+   "note": "Gym biceps+triceps. Instagram 3h51 limite dépassée (hourglass). 0 DMs jour 14. 0 prières. No PMO streak maintenu. Mémoire à peine commencé. Steak bœuf midi + poulet/riz/gâteau patate douce soir. Appel Didier pour paiement commission. Restaurant soir.",
+   "feedback": "Score 21/100. Business quasi nul (0 DMs, 0 calls). Instagram encore en dépassement à 3h51. No PMO streak = seul vrai positif mental. Spirituel à zéro. Mémoire deadline demain 23h59.",
+   "activitywatch": {
+    "status": "screen_time_manual",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "0 DMs (jour 14 consécutif sans outreach). Appel Didier pour clarifier paiement commission du mois (mois précédent partiel à cause de ses dettes). Début mémoire BUT TC3 (à peine commencé).",
+    "score": 3
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Biceps + Triceps",
+    "coucher": "04:00",
+    "lever": "12:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": true,
+    "repas": "Midi : steak de bœuf. Soir : poulet + riz + petit gâteau aux patates douces avec chantilly (léger slip dessert).",
+    "goyslop_level": "light",
+    "goyslop_items": [
+     "gâteau patates douces",
+     "chantilly"
+    ],
+    "nutrition_score": 7,
+    "score": 7
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 0
+   },
+   "cognitif": {
+    "deep_work_heures": 0.3,
+    "deep_work_topic": "Mémoire BUT TC3 (début)",
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "Duolingo ~10 min. Rien de notable appris ou appliqué selon Shayan.",
+    "score": 4
+   },
+   "mental": {
+    "energie": 6,
+    "focus": 6,
+    "screen_time_reseaux_min": 245,
+    "screen_time_details": {
+     "Instagram": 231,
+     "Arc": 179,
+     "Telegram": 157,
+     "YouTube": 33,
+     "Snapchat": 14,
+     "Govee Home": 25,
+     "Photos": 21,
+     "ChatGPT": 20,
+     "Chrome": 15,
+     "WA Business": 11,
+     "NordVPN": 5,
+     "Gmail": 5,
+     "Terminal": 5
+    },
+    "no_pmo": true,
+    "nsdr": false,
+    "score": 5
+   },
+   "social": {
+    "interaction_hv": false,
+    "contenu_poste": false,
+    "details": "Restaurant le soir. 0 contenu posté. 0 interaction haute valeur business. Instagram 3h51 avec dépassement de la limite (hourglass affiché).",
+    "score": 2
+   },
+   "jarvis_feedback": {
+    "business_recap": "14ème jour consécutif à 0 DMs. Appel Didier pour régularisation commission : positif sur la relation client mais ça ne remplace pas l'outreach. Mémoire BUT TC3 débuté à peine — deadline dans moins de 24h.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 1,
+    "score_total": 3,
+    "feedback_text": "Le streak PMO est réel et il faut le saluer : c'est de la discipline pure sur 7+ jours. Newport (Deep Work) dit que la discipline s'entraîne comme un muscle — le PMO est ta première rep quotidienne. Garde-la.\n\nMais Instagram 3h51 avec override de ta propre limite, c'est la même chose que PMO sur un autre levier : tu as vu la limite, tu l'as ignorée, tu as continué. C'est pas l'app, c'est une décision.\n\nBusiness : 14 jours sans DM. Keller (The ONE Thing) : si ton unique chose est de closer des infopreneurs pour rembourser Fares et scaler CloseGuard, alors chaque matin sans DM est une journée perdue. Pas une journée moins productive — une journée perdue.\n\nSpirituellement : 0 depuis plusieurs jours. Hill (Lois du Succès) parle de la force intérieure comme fondation de tout le reste. Tu ne peux pas construire sur du sable.\n\nMémoire deadline : demain 23h59. C'est la priorité absolue dès le réveil.",
+    "what_good": [
+     "No PMO streak maintenu — discipline réelle sur plusieurs jours",
+     "Gym fait (biceps + triceps)",
+     "Nutrition propre (léger slip seulement sur le dessert)",
+     "Appel Didier : relation client maintenue, paiement clarifié",
+     "Énergie 6/10 = stable"
+    ],
+    "what_bad": [
+     "Instagram 3h51 avec override de la limite — discipline brisée sur ce levier",
+     "14ème jour consécutif à 0 DMs — pipeline mort",
+     "0 prières — fondation spirituelle absente",
+     "Mémoire à peine commencé — deadline dans 24h",
+     "0 contenu posté",
+     "Duolingo ~10min seulement"
+    ],
+    "actions_demain": [
+     "Mémoire BUT TC3 : rédiger de 14h à 23h59 avec Claude (toute la journée dédiée)",
+     "Fajr au réveil — premier acte de la journée",
+     "Pas d'Instagram avant 20h (mémoire d'abord)",
+     "Confirmer avec Didier que la commission complète est envoyée ce mois"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-06-07 00:42"
+   }
+  },
+  {
+   "date": "2026-06-24",
+   "score": 25,
+   "note": "Reprise du tracking après 17j de pause. 0 DM, 0 call. Tournage intro démo CloseGuard mais inutilisable (accent + qualité vidéo) → Fares a tout re-tourné. Pas de gym. Sommeil fragmenté (réveil 5h, sieste 11h-16h, éveillé jusqu'à 3h38). Fajr fait. 1h cours de russe avec Alexandra + 2h deep work. No PMO repris (jour 1, cassé pendant la pause). Screen time réseaux en chute libre (IG 1h34, TikTok ~0).",
+   "feedback": "Score 25/100. Meilleure trajectoire que début juin grâce au cognitif (cours russe + deep work) et à l'effondrement du screen time. Mais business toujours à 0 et sommeil détruit.",
+   "activitywatch": {
+    "status": "screen_time_manual",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "0 DM, 0 call. Seule activité business : tournage de l'intro de la démo CloseGuard, mais take inutilisable (accent pas assez bon + qualité vidéo insuffisante) → Fares a re-tourné toute l'intro + la démo. Output business net proche de zéro.",
+    "score": 3
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": "",
+    "coucher": "fragmenté",
+    "lever": "05:00",
+    "heures_sommeil": 5,
+    "nutrition_clean": false,
+    "repas": "Midi : sushis + bœuf (clean). Soir : shawarma (sauce = léger goyslop) + dessert crêpe banane chocolat (goyslop).",
+    "goyslop_level": "moderate",
+    "goyslop_items": [
+     "sauce shawarma",
+     "crêpe banane chocolat"
+    ],
+    "nutrition_score": 5,
+    "score": 3
+   },
+   "spirituel": {
+    "fajr": true,
+    "prieres": 1,
+    "coran": false,
+    "score": 2
+   },
+   "cognitif": {
+    "deep_work_heures": 2,
+    "deep_work_topic": "Russe + travail CloseGuard",
+    "duolingo_russe": true,
+    "duolingo_minutes": 15,
+    "apprentissage": "1h de cours de russe avec Alexandra (prof). Appris l'accent tonique : certains O non accentués se prononcent A. + Duolingo.",
+    "score": 8
+   },
+   "mental": {
+    "energie": 6.5,
+    "focus": 6.5,
+    "screen_time_reseaux_min": 99,
+    "screen_time_details": {
+     "Instagram": 94,
+     "WA Business": 90,
+     "Telegram": 71,
+     "Notion": 51,
+     "SoundCloud": 46,
+     "Safari": 20,
+     "Grok": 9,
+     "Grab": 8,
+     "classgap.com": 8,
+     "Photos": 7,
+     "Snapchat": 5,
+     "Whop": 3,
+     "gleneagles.com.my": 3,
+     "Réglages": 3
+    },
+    "no_pmo": true,
+    "nsdr": false,
+    "score": 6
+   },
+   "social": {
+    "interaction_hv": false,
+    "contenu_poste": false,
+    "details": "Sorties le soir avec Dayyan à Kuala Lumpur, vraies discussions, interaction sociale de qualité. Mais 0 contenu posté et 0 interaction haute valeur business.",
+    "score": 3
+   },
+   "jarvis_feedback": {
+    "business_recap": "Reprise du tracking après 17j de silence. Business toujours à 0 DM / 0 call. L'unique action business — filmer l'intro démo CloseGuard — n'a rien produit d'exploitable (accent + qualité), Fares a tout re-tourné. C'est un signal : ta zone de génie n'est pas le tournage, c'est le closing et l'outreach. Délègue le reste, reprends ton levier.",
+    "score_volume": 0,
+    "score_leverage": 2,
+    "score_direction": 1,
+    "score_total": 3,
+    "feedback_text": "Trois vraies victoires aujourd'hui, sois honnête là-dessus.\n\n1) Le screen time s'est effondré : TikTok à ~0, Instagram à 1h34 contre 4-5h il y a quelques semaines. C'est énorme. Newport (Deep Work) : tu viens de récupérer 3h de bande passante attentionnelle par jour. La question n'est pas de l'avoir gagnée, c'est où tu la réinvestis. Aujourd'hui elle est partie dans le sommeil fragmenté, pas dans l'outreach.\n\n2) Le cours de russe + 2h de deep work = vrai travail profond. Mais attention au piège Keller (The ONE Thing) : le russe est important pour Veronika, pas pour ton revenue target. C'est du deep work sur une priorité secondaire pendant que ta ONE thing (closer des infopreneurs) est à 0 depuis des semaines. Le russe ne rembourse pas Fares.\n\n3) No PMO repris. Tu as cassé pendant 17 jours, tu l'as dit franchement, et tu repars. Hill (Lois du Succès) : la maîtrise de soi est la fondation. Jour 1 = jour 1, pas de culpabilité, juste la reprise.\n\nLe vrai problème structurel = ton sommeil. Réveil 5h, rdormi 11h-16h, debout jusqu'à 3h38 : ton corps n'a aucun rythme. Tout le reste (énergie 6.5, focus 6.5, 0 DM) découle de là. Tu ne peux pas faire d'outreach matinal discipliné si tu dors quand le monde travaille. Fixe le sommeil cette semaine, et le business suivra mécaniquement.",
+    "what_good": [
+     "Screen time effondré : TikTok ~0, Instagram 1h34 (vs 4-5h avant) — discipline réelle sur le scroll",
+     "Cours de russe 1h avec Alexandra + 2h de deep work",
+     "No PMO repris (jour 1) après une cassure assumée",
+     "Fajr fait",
+     "Bonne interaction sociale avec Dayyan à KL"
+    ],
+    "what_bad": [
+     "0 DM, 0 call — business toujours à l'arrêt",
+     "Intro démo CloseGuard inutilisable (accent + qualité) → re-tournée par Fares",
+     "Sommeil détruit et fragmenté (réveil 5h, sieste 11h-16h, debout jusqu'à 3h38)",
+     "Pas de gym",
+     "0 contenu posté",
+     "Seulement Fajr, autres prières à 0"
+    ],
+    "actions_demain": [
+     "Gym (tu l'as dit — non négociable)",
+     "Bloc d'outreach matinal : minimum 5 DM à des infopreneurs avant tout le reste",
+     "Fixer un cutoff de sommeil ce soir pour casser le rythme fragmenté",
+     "Fajr au réveil",
+     "Déléguer 100% du tournage à Fares, te concentrer sur le closing"
+    ],
+    "niveau": "FAIBLE",
+    "timestamp": "2026-06-25 03:40"
+   }
+  },
+  {
+   "date": "2026-06-25",
+   "score": 24,
+   "note": "Business : 0 DM, 0 call mais démo CloseGuard mise live sur le player VSL + call avec Assed pour configurer le player (nombreux paramètres pour le rendre conforme à la landing). Gym pecs/dos/biceps. Pesée faite ce matin (valeur non communiquée). Couché 4h, réveil 12h (8h sommeil). Repas : bœuf, œufs, fruits de la passion ; soir shawarma + frites. Seulement Asr (pas de Fajr). 0 deep work, un peu de Duolingo, pas de cours de russe (demain). No PMO maintenu (streak 2). Interaction haute valeur au shawarma : e-commerçant + infopreneur + un gros growth operator très fort (futur contact/client CloseGuard potentiel). Screen time Instagram en forte hausse (3h01 vs 1h34 la veille).",
+   "feedback": "Score 24/100. Le corps repart (gym + 8h de sommeil) et tu as décroché une vraie rencontre de réseau à haute valeur (un opérateur fort = levier direct pour CloseGuard, c'est exactement le type de contact qui change une trajectoire — fais le suivi et envoie-lui la démo cette semaine). Mais : Spirituel et Cognitif se sont effondrés (1 seule prière, 0 deep work, pas de russe), et Instagram a triplé (1h34 → 3h01) — la dérive du scroll revient (Newport, Deep Work : ce que tu laisses entrer le matin colonise ta journée). Côté business, mettre la démo live sur le player VSL est un vrai jalon de lancement CloseGuard, mais ta contrainte reste l'acquisition : 0 DM, 0 call depuis la reprise. Pierre Corey, constraint maxing : tant que l'outreach n'est pas systématisé, le reste est du noise. Demain : 1) bloc outreach en premier, 2) Fajr, 3) follow-up avec l'opérateur rencontré.",
+   "activitywatch": {
+    "status": "screen_time_manual",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "0 DM, 0 call closé. Activité business : démo CloseGuard uploadée et mise live sur le player VSL Vturb + call avec Assed pour configurer le player (paramètres d'édition pour le rendre conforme à la landing page qui hébergera la VSL). Vrai progrès produit/lancement, mais acquisition toujours à zéro.",
+    "score": 4
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Pecs / Dos / Biceps",
+    "coucher": "04:00",
+    "lever": "12:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": false,
+    "repas": "Bœuf + œufs + fruits de la passion (clean). Soir : shawarma + frites (goyslop).",
+    "goyslop_level": "moderate",
+    "goyslop_items": [
+     "shawarma",
+     "frites"
+    ],
+    "nutrition_score": 5,
+    "score": 7
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 1,
+    "coran": false,
+    "score": 1
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 5,
+    "apprentissage": "Rien de notable. Un peu de Duolingo, pas de cours de russe (prévu demain).",
+    "score": 2
+   },
+   "mental": {
+    "energie": 5,
+    "focus": 6,
+    "screen_time_reseaux_min": 190,
+    "screen_time_details": {
+     "Instagram": 181,
+     "Telegram": 74,
+     "Photos": 46,
+     "WA Business": 30,
+     "Snapchat": 9,
+     "Arc": 8,
+     "jarvis-dashboard": 8,
+     "Duolingo": 5,
+     "Fichiers": 5,
+     "Safari": 3,
+     "WeTransfer": 3,
+     "Revolut": 2,
+     "Grab": 2,
+     "ChatGPT": 2
+    },
+    "no_pmo": true,
+    "nsdr": false,
+    "score": 5
+   },
+   "social": {
+    "interaction_hv": true,
+    "contenu_poste": false,
+    "details": "Interaction de haute valeur au restaurant (shawarma) : a entendu un groupe parler d'acquisition/leads, est allé les aborder (initié par Dayyan). Groupe = un e-commerçant, un infopreneur, et un gros growth operator très fort. Excellent contact réseau : potentiel client CloseGuard (démo prévue) voire future collaboration.",
+    "score": 5
+   }
+  }
+ ],
+ "streaks": {
+  "nopmo": 2,
+  "fajr": 0,
+  "gym": 1,
+  "dms": 0
+ },
+ "revenue_velocity": {
+  "current_month": "2026-06",
+  "current_commission": 0,
+  "monthly_target": 3500,
+  "days_elapsed": 7,
+  "days_remaining": 23,
+  "days_in_month": 30,
+  "pct_target": 0,
+  "daily_velocity_needed": 152,
+  "daily_run_rate": 0,
+  "on_track": false
+ },
+ "subscriptions": [
+  {
+   "name": "Revolut Ultra",
+   "cost": 60,
+   "category": "Banking"
+  },
+  {
+   "name": "Meta Verified",
+   "cost": 17,
+   "category": "Social"
+  },
+  {
+   "name": "iCloud",
+   "cost": 10,
+   "category": "Storage"
+  },
+  {
+   "name": "ClarityScale",
+   "cost": 100,
+   "category": "Tools"
+  },
+  {
+   "name": "Claude",
+   "cost": 20,
+   "category": "AI"
+  },
+  {
+   "name": "Vturb",
+   "cost": 40,
+   "category": "Tools"
+  }
+ ]
 }
