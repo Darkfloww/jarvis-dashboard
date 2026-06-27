@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-06-26",
+ "lastUpdated": "2026-06-27",
  "profile": {
   "name": "Shayan",
   "goal": "Top 0.00000001%",
@@ -2250,12 +2250,93 @@
     "details": "Plusieurs interactions de haute valeur lors d'une sortie au match de foot. Notamment un entrepreneur qui a conseillé d'investir dans l'immobilier en France.",
     "score": 5
    }
+  },
+  {
+   "date": "2026-06-27",
+   "score": 17,
+   "note": "Business : 0 DM, 0 call, rien fait (acquisition ET delivery a zero). Pas de gym. Reveil tres tardif (dormi 09h, reveille 17h, 8h sommeil) -> 1 seul repas : wagyu + condiments, puis biscuits panda chocolat au 7-Eleven. Spirituel : 0 priere, pas de Coran. 0 deep work, 1h de cours de russe avec Alexandra, rien appris/applique de notable. Energie 7/10, focus 5/10. No PMO CASSE (relapse, streak 3 -> 0). Social : Dayyan au quotidien (HV) mais aucune nouvelle interaction, 0 contenu poste. Screen time : Instagram 2h55 (remonte vs 1h13 la veille), TikTok 0.",
+   "feedback": "Score 17/100, en chute (29 -> 17). Journee blanche : le reveil a 17h a mange la journee entiere et tout s'est effondre derriere (0 business, 0 gym, 0 spirituel, 1 seul repas). Trois corrections prioritaires : 1) le sommeil decale (09h-17h) n'est pas du repos, c'est une journee perdue. Newport/Deep Work : sans structure horaire, zero travail profond possible, et ca fait 3 jours de suite a 0 deep work. 2) No PMO casse apres 3 jours : le streak etait un ancrage, reprends-le ce soir, c'est le levier mental qui tient le reste (Hill, maitrise de soi = socle). 3) La contrainte n1 ne bouge pas : 0 DM, 0 call depuis la reprise. Pierre Corey, constraint maxing : ton seul goulot c'est l'acquisition, et tu n'y touches pas. Le cash Didier (2 300 euros) tombe le 02/07 sur du travail passe, mais ton pipeline futur reste vide. Demain non negociable, dans l'ordre : reveil avant midi -> Fajr -> bloc outreach EN PREMIER (avant tout ecran). Seul point a garder : 1h de russe tenue. Remets la tete droite (Flow, Csikszentmihalyi) et la journee se realigne.",
+   "activitywatch": {
+    "status": "screen_time_manual",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": false,
+    "recap": "0 DM, 0 call, aucune delivery. Acquisition perso toujours a zero depuis la reprise.",
+    "score": 2
+   },
+   "physique": {
+    "gym": false,
+    "gym_type": "",
+    "coucher": "09:00",
+    "lever": "17:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": false,
+    "repas": "1 seul repas (reveil tardif) : wagyu + condiments. Puis biscuits panda chocolat au 7-Eleven.",
+    "goyslop_level": "light",
+    "goyslop_items": [
+     "biscuits panda chocolat"
+    ],
+    "nutrition_score": 4,
+    "score": 3
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 0,
+    "coran": false,
+    "score": 1
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": false,
+    "duolingo_minutes": 0,
+    "apprentissage": "1h de cours de russe avec Alexandra. Rien d'autre appris ou applique de notable.",
+    "score": 4
+   },
+   "mental": {
+    "energie": 7,
+    "focus": 5,
+    "screen_time_reseaux_min": 184,
+    "screen_time_details": {
+     "Instagram": 175,
+     "Arc": 120,
+     "WhatsApp": 98,
+     "Telegram": 47,
+     "Grab": 12,
+     "Terminal": 10,
+     "Appareil photo": 9,
+     "Snapchat": 9,
+     "Photos": 8,
+     "WA Business": 7,
+     "ChatGPT": 5,
+     "NordVPN": 5,
+     "Safari": 3,
+     "Revolut": 2,
+     "Duolingo": 2
+    },
+    "no_pmo": false,
+    "nsdr": false,
+    "score": 4
+   },
+   "social": {
+    "interaction_hv": true,
+    "contenu_poste": false,
+    "details": "Dayyan au quotidien (interaction de haute valeur) mais aucune nouvelle interaction. 0 contenu poste.",
+    "score": 3
+   }
   }
  ],
  "streaks": {
-  "nopmo": 3,
+  "nopmo": 0,
   "fajr": 0,
-  "gym": 2,
+  "gym": 0,
   "dms": 0
  },
  "revenue_velocity": {
