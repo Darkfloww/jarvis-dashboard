@@ -1754,14 +1754,16 @@ function renderTasks(tasks){
     normale:{ label: 'NORMALE', color: '#3b82f6', icon: '🔵' },
   };
 
+  const doneMap = _getTaskDone();
+  const isDone = t => t.statut === 'done' || !!doneMap[t.id];
+
   let viewTasks = _allTasks;
   if(taskFilterMode === 'today'){
     const today = _todayStr();
-    viewTasks = _allTasks.filter(t => t.do_date === today);
+    // Une tâche planifiée (do_date) reste dans "Aujourd'hui" tant qu'elle n'est pas cochée :
+    // elle roule automatiquement de jour en jour (do_date <= today). Cochée => elle disparaît.
+    viewTasks = _allTasks.filter(t => t.do_date && t.do_date <= today && !isDone(t));
   }
-
-  const doneMap = _getTaskDone();
-  const isDone = t => t.statut === 'done' || !!doneMap[t.id];
 
   const groups = { urgent: [], haute: [], normale: [], done: [] };
   (viewTasks || []).forEach(t => {
