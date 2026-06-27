@@ -119,6 +119,16 @@
    "date_ajout": "2026-06-25",
    "echeance": "",
    "do_date": "2026-06-25"
+  },
+  {
+   "id": 13,
+   "titre": "Acheter un trépied pour Fares avant de quitter KL",
+   "priorite": "haute",
+   "statut": "todo",
+   "contexte": "Trépied à acheter pour Fares (enregistrements / démo) avant le départ de Kuala Lumpur.",
+   "date_ajout": "2026-06-27",
+   "echeance": "2026-07-05",
+   "do_date": ""
   }
  ],
  "crm": {
