@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-06-25",
+ "lastUpdated": "2026-06-26",
  "profile": {
   "name": "Shayan",
   "goal": "Top 0.00000001%",
@@ -305,6 +305,17 @@
     "depenses": 4620,
     "patrimoine_fin": 4000,
     "nb_transactions": 370
+   },
+   {
+    "month": "2026-06",
+    "revenus_total": 0,
+    "commissions_didier": 2300,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 0,
+    "patrimoine_fin": 0,
+    "nb_transactions": 0,
+    "revenus_perso_net": 2300
    }
   ]
  },
@@ -2158,12 +2169,93 @@
     "details": "Interaction de haute valeur au restaurant (shawarma) : a entendu un groupe parler d'acquisition/leads, est allé les aborder (initié par Dayyan). Groupe = un e-commerçant, un infopreneur, et un gros growth operator très fort. Excellent contact réseau : potentiel client CloseGuard (démo prévue) voire future collaboration.",
     "score": 5
    }
+  },
+  {
+   "date": "2026-06-26",
+   "score": 29,
+   "note": "Business : 0 DM, 0 call booké. Call avec Didier (mise au point : il doit être plus réactif). Didier a fait 12 000€ de CA en juin → commission Shayan de 2 300€ (au lieu de 3 000€ prévus), paiement vers le 02/07. Première vraie rentrée depuis la reprise. Gym triceps. Midi steak + œufs (clean), soir burger + frites (goyslop). Couché 4h, réveil 12h (8h sommeil). Spirituel : prière du Jumu'ah (Dhuhr) faite, pas de Fajr. 0 deep work, Duolingo, cours de russe avec Alexandra. Appris (via un entrepreneur croisé au match de foot) un angle sur l'investissement immobilier en France. No PMO maintenu (streak 3). Plusieurs interactions de haute valeur au match. Screen time Instagram redescendu fort (1h13 vs 3h01 la veille).",
+   "feedback": "Score 29/100, en hausse (24 → 29). Deux vraies victoires : 1) la commission Didier qui tombe (2 300€) — preuve que la delivery paie, mais note que Didier t'a coupé 700€ sur les 3 000€ dus (25% de 12k = 3 000) : c'est exactement le genre de fuite que ton call 'sois plus réactif' doit verrouiller, formalise la clause de paiement. 2) Instagram divisé par ~2,5 (3h01 → 1h13) : le scroll est repris en main, garde le cap. Le russe et la gym tiennent. Restent 2 trous structurels : 0 deep work (2 jours de suite) et le spirituel au minimum (1 prière, pas de Fajr). Et SURTOUT la contrainte n°1 inchangée : 0 DM, 0 call booké depuis la reprise. Tu encaisses sur du travail passé (Didier), mais ton pipeline futur est vide. Pierre Corey, constraint maxing : le revenu d'aujourd'hui vient du travail d'hier ; le revenu de demain vient de l'outreach d'aujourd'hui. Demain non négociable : bloc outreach EN PREMIER + Fajr.",
+   "activitywatch": {
+    "status": "screen_time_manual",
+    "total_min": 0,
+    "apps": {}
+   },
+   "screen_time_updated": true,
+   "business": {
+    "dms": 0,
+    "calls_bookes": 0,
+    "calls_closes": 0,
+    "commission_estimee": 0,
+    "delivery_done": true,
+    "recap": "0 DM, 0 call booké. Call de cadrage avec Didier (doit être plus réactif). Didier = 12 000€ CA en juin → commission Shayan 2 300€ (vs 3 000€ dus, 25% de 12k), paiement ~02/07. Enregistré dans Finance (juin). Acquisition perso toujours à zéro.",
+    "score": 4
+   },
+   "physique": {
+    "gym": true,
+    "gym_type": "Triceps",
+    "coucher": "04:00",
+    "lever": "12:00",
+    "heures_sommeil": 8,
+    "nutrition_clean": false,
+    "repas": "Midi : steak + œufs (clean). Soir : burger + frites (goyslop).",
+    "goyslop_level": "moderate",
+    "goyslop_items": [
+     "burger",
+     "frites"
+    ],
+    "nutrition_score": 5,
+    "score": 7
+   },
+   "spirituel": {
+    "fajr": false,
+    "prieres": 1,
+    "coran": false,
+    "score": 2
+   },
+   "cognitif": {
+    "deep_work_heures": 0,
+    "deep_work_topic": "",
+    "duolingo_russe": true,
+    "duolingo_minutes": 10,
+    "apprentissage": "Cours de russe avec Alexandra. + via un entrepreneur croisé au match de foot : angle sur l'investissement immobilier en France.",
+    "score": 5
+   },
+   "mental": {
+    "energie": 6,
+    "focus": 6,
+    "screen_time_reseaux_min": 79,
+    "screen_time_details": {
+     "Arc": 200,
+     "WA Business": 106,
+     "Telegram": 97,
+     "Instagram": 73,
+     "Terminal": 68,
+     "Photos": 16,
+     "Safari": 14,
+     "Grab": 9,
+     "ChatGPT": 9,
+     "WhatsApp": 8,
+     "menuviel.com": 7,
+     "Snapchat": 6,
+     "Google Maps": 2,
+     "closeguard.io": 1
+    },
+    "no_pmo": true,
+    "nsdr": false,
+    "score": 6
+   },
+   "social": {
+    "interaction_hv": true,
+    "contenu_poste": false,
+    "details": "Plusieurs interactions de haute valeur lors d'une sortie au match de foot. Notamment un entrepreneur qui a conseillé d'investir dans l'immobilier en France.",
+    "score": 5
+   }
   }
  ],
  "streaks": {
-  "nopmo": 2,
+  "nopmo": 3,
   "fajr": 0,
-  "gym": 1,
+  "gym": 2,
   "dms": 0
  },
  "revenue_velocity": {
