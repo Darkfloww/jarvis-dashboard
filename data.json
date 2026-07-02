@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-02T18:27:37",
+  "lastUpdated": "2026-07-02T19:37:35",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
     "location": "La Réunion (retour 29 mai)",
-    "patrimoine": 2800,
+    "patrimoine": 4800,
     "client": "Didier (~1500-1750€/mois)"
   },
   "tasks": [
@@ -298,7 +298,7 @@
       {
         "month": "2026-06",
         "revenus_total": 330,
-        "commissions_didier": 2300,
+        "commissions_didier": 2000,
         "commissions_closeGuard": 0,
         "commissions_kenzo": 0,
         "depenses": 3653,
