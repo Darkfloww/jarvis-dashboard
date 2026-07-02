@@ -129,6 +129,15 @@
       "date_ajout": "2026-06-27",
       "echeance": "2026-07-05",
       "do_date": ""
+    },
+    {
+      "id": 14,
+      "titre": "Tourner la vidéo de prospection (Airbnb, vue Petronas, le soir)",
+      "priorite": "haute",
+      "statut": "todo",
+      "contexte": "À tourner le soir dans l'Airbnb avec la vue sur les Petronas. Sert la machine d'acquisition (2e client). 3 rappels Telegram programmés le 03/07.",
+      "date_ajout": "2026-07-03",
+      "echeance": "2026-07-03"
     }
   ],
   "crm": {
