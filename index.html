@@ -353,6 +353,10 @@ nav{
   background:transparent;border:1px solid var(--border);color:var(--text2);white-space:nowrap;}
 .li-btn:hover{border-color:var(--border-hi);color:var(--text);}
 .li-btn.go{border-color:rgba(52,211,153,0.3);color:var(--green);}
+.li-btn.open{border-color:rgba(96,165,250,0.35);color:var(--blue);text-decoration:none;
+  display:inline-flex;align-items:center;line-height:1;}
+.li-btn.open:hover{border-color:var(--blue);background:rgba(96,165,250,0.08);}
+.li-foot{flex-wrap:wrap;row-gap:6px;}
 .li-empty{font-size:11px;color:var(--text3);padding:8px 2px;}
 .li-angle{display:inline-block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;
   color:var(--text2);border:1px solid var(--border);border-radius:100px;padding:2px 8px;margin-bottom:8px;}
@@ -1838,11 +1842,14 @@ function toggleLiMessaged(vanity){
 function liCard(c, kind, messagedOn){
   const safe = s => String(s == null ? '' : s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  let action = '';
+  // Direct route to the profile, where the LinkedIn "Message" button lives.
+  // The /messaging/compose/?recipient= deep link was tested and does NOT
+  // prefill the recipient, so it is not used: it would risk a wrong send.
+  let action = '<a class="li-btn open" href="' + safe(c.url) + '" target="_blank" rel="noopener">Ouvrir le profil</a>';
   if(kind === 'todo'){
-    action = '<button class="li-btn go" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Message envoyé</button>';
+    action += '<button class="li-btn go" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Message envoyé</button>';
   } else if(kind === 'msg'){
-    action = '<button class="li-btn" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Annuler</button>';
+    action += '<button class="li-btn" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Annuler</button>';
   }
   const stamp = kind === 'msg' && messagedOn ? messagedOn : c.date;
 
