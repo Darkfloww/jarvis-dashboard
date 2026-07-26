@@ -354,6 +354,20 @@ nav{
 .li-btn:hover{border-color:var(--border-hi);color:var(--text);}
 .li-btn.go{border-color:rgba(52,211,153,0.3);color:var(--green);}
 .li-empty{font-size:11px;color:var(--text3);padding:8px 2px;}
+.li-angle{display:inline-block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;
+  color:var(--text2);border:1px solid var(--border);border-radius:100px;padding:2px 8px;margin-bottom:8px;}
+.li-open{margin-top:9px;border-top:1px solid var(--border);padding-top:9px;}
+.li-open-t{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--text2);
+  cursor:pointer;display:flex;align-items:center;gap:6px;background:none;border:0;padding:0;}
+.li-open-t:hover{color:var(--text);}
+.li-open-body{display:none;margin-top:8px;}
+.li-open.show .li-open-body{display:block;}
+.li-msg{font-size:11.5px;line-height:1.55;color:var(--text);background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);border-radius:var(--r-sm);padding:9px 10px;margin-bottom:7px;white-space:pre-wrap;}
+.li-copy{font-size:10px;font-weight:600;padding:4px 10px;border-radius:100px;cursor:pointer;
+  background:transparent;border:1px solid var(--border);color:var(--text2);}
+.li-copy:hover{border-color:var(--border-hi);color:var(--text);}
+.li-copy.ok{border-color:rgba(52,211,153,0.35);color:var(--green);}
 @media(max-width:900px){
   .li-board{grid-template-columns:1fr;}
   .li-kpis{grid-template-columns:repeat(2,1fr);}
@@ -1831,11 +1845,53 @@ function liCard(c, kind, messagedOn){
     action = '<button class="li-btn" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Annuler</button>';
   }
   const stamp = kind === 'msg' && messagedOn ? messagedOn : c.date;
+
+  // Suggested opener: expanded where Shayan actually works (accepted column)
+  let opener = '';
+  if(c.opener){
+    const open = kind === 'todo' ? ' show' : '';
+    opener = '<div class="li-open' + open + '">' +
+      '<button class="li-open-t" onclick="this.parentNode.classList.toggle(\'show\')">Message suggéré</button>' +
+      '<div class="li-open-body">' +
+        '<div class="li-msg">' + safe(c.opener) + '</div>' +
+        '<button class="li-copy" onclick="liCopy(this)">Copier</button>' +
+      '</div></div>';
+  }
+  const angle = c.angle ? '<div class="li-angle">' + safe(c.angle) + '</div>' : '';
+
   return '<div class="li-card">' +
     '<a class="li-name" href="' + safe(c.url) + '" target="_blank" rel="noopener">' + safe(c.name) + '</a>' +
+    angle +
     '<div class="li-title">' + safe(c.title) + '</div>' +
     '<div class="li-foot"><span class="li-date">' + safe(stamp) + '</span>' + action + '</div>' +
+    opener +
     '</div>';
+}
+
+function liCopy(btn){
+  const box = btn.parentNode.querySelector('.li-msg');
+  if(!box) return;
+  const txt = box.textContent;
+  const done = () => {
+    btn.textContent = 'Copié';
+    btn.classList.add('ok');
+    setTimeout(() => { btn.textContent = 'Copier'; btn.classList.remove('ok'); }, 1600);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(done).catch(() => liCopyFallback(txt, done));
+  } else {
+    liCopyFallback(txt, done);
+  }
+}
+function liCopyFallback(txt, done){
+  const ta = document.createElement('textarea');
+  ta.value = txt;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); done(); } catch(e){ /* clipboard blocked */ }
+  document.body.removeChild(ta);
 }
 
 function renderLinkedIn(li){
