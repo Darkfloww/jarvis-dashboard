@@ -1,10 +1,10 @@
 {
- "lastUpdated": "2026-07-02T19:37:35",
+ "lastUpdated": "2026-06-27",
  "profile": {
   "name": "Shayan",
   "goal": "Top 0.00000001%",
   "location": "La Réunion (retour 29 mai)",
-  "patrimoine": 4800,
+  "patrimoine": 4000,
   "client": "Didier (~1500-1750€/mois)"
  },
  "tasks": [
@@ -129,15 +129,6 @@
    "date_ajout": "2026-06-27",
    "echeance": "2026-07-05",
    "do_date": ""
-  },
-  {
-   "id": 14,
-   "titre": "Tourner la vidéo de prospection (Airbnb, vue Petronas, le soir)",
-   "priorite": "haute",
-   "statut": "todo",
-   "contexte": "À tourner le soir dans l'Airbnb avec la vue sur les Petronas. Sert la machine d'acquisition (2e client). 3 rappels Telegram programmés le 04/07.",
-   "date_ajout": "2026-07-03",
-   "echeance": "2026-07-04"
   }
  ],
  "crm": {
@@ -204,6 +195,26 @@
    }
   ],
   "months": [
+   {
+    "month": "2025-06",
+    "revenus_total": 80,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 139,
+    "patrimoine_fin": 0,
+    "nb_transactions": 15
+   },
+   {
+    "month": "2025-07",
+    "revenus_total": 154,
+    "commissions_didier": 0,
+    "commissions_closeGuard": 0,
+    "commissions_kenzo": 0,
+    "depenses": 132,
+    "patrimoine_fin": 0,
+    "nb_transactions": 30
+   },
    {
     "month": "2025-08",
     "revenus_total": 388,
@@ -296,33 +307,25 @@
    },
    {
     "month": "2026-05",
-    "revenus_total": 7381,
+    "revenus_total": 5230,
+    "revenus_perso_net": 1600,
     "commissions_didier": 1000,
     "commissions_closeGuard": 0,
     "commissions_kenzo": 0,
-    "depenses": 6323,
+    "depenses": 4620,
     "patrimoine_fin": 4000,
-    "nb_transactions": 495
+    "nb_transactions": 370
    },
    {
     "month": "2026-06",
-    "revenus_total": 330,
-    "commissions_didier": 2000,
+    "revenus_total": 0,
+    "commissions_didier": 2300,
     "commissions_closeGuard": 0,
     "commissions_kenzo": 0,
-    "depenses": 3653,
+    "depenses": 0,
     "patrimoine_fin": 0,
-    "nb_transactions": 252
-   },
-   {
-    "month": "2026-07",
-    "revenus_total": 533,
-    "commissions_didier": 0,
-    "commissions_closeGuard": 0,
-    "commissions_kenzo": 0,
-    "depenses": 1047,
-    "patrimoine_fin": 0,
-    "nb_transactions": 33
+    "nb_transactions": 0,
+    "revenus_perso_net": 2300
    }
   ]
  },
@@ -2389,336 +2392,5 @@
    "cost": 40,
    "category": "Tools"
   }
- ],
- "linkedin": {
-  "updated": "2026-07-26",
-  "sent": 40,
-  "accepted": 14,
-  "rate": 35,
-  "weekly_count": {
-   "2026-W30": 40
-  },
-  "contacts": [
-   {
-    "name": "Stephanie Pineau",
-    "title": "Setter-Closer freelance, 35-45% closing",
-    "url": "https://www.linkedin.com/in/stephanie-pineau-pro/",
-    "vanity": "stephanie-pineau-pro",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Muriel TAULEGNE",
-    "title": "Closer / Setter",
-    "url": "https://www.linkedin.com/in/muriel-taulegne-92819a102/",
-    "vanity": "muriel-taulegne-92819a102",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Michel Farcy",
-    "title": "Setter I Closer",
-    "url": "https://www.linkedin.com/in/michel-farcy-b54527326/",
-    "vanity": "michel-farcy-b54527326",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Meriem SAADOUN",
-    "title": "Consultante Closing High Ticket",
-    "url": "https://www.linkedin.com/in/mériem-saadoun-closing-setting/",
-    "vanity": "mériem-saadoun-closing-setting",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Laurene MOLLARET",
-    "title": "Closer High-Ticket",
-    "url": "https://www.linkedin.com/in/laurène-mollaret-2a5358307/",
-    "vanity": "laurène-mollaret-2a5358307",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Laure Claveau",
-    "title": "Closer freelance",
-    "url": "https://www.linkedin.com/in/laure-claveau-95507482/",
-    "vanity": "laure-claveau-95507482",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Chris Bull",
-    "title": "Founder High-Ticket Closing Academy UK",
-    "url": "https://www.linkedin.com/in/chris-bull-179754262/",
-    "vanity": "chris-bull-179754262",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Cedric Sinama Pongolle",
-    "title": "Closeur high ticket, La Reunion",
-    "url": "https://www.linkedin.com/in/cédric-sinama-pongolle-43281422b/",
-    "vanity": "cédric-sinama-pongolle-43281422b",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Camille Sacliet",
-    "title": "Closeur High-Ticket",
-    "url": "https://www.linkedin.com/in/camille-sacliet-aa9ba1331/",
-    "vanity": "camille-sacliet-aa9ba1331",
-    "date": "2026-07-26",
-    "status": "pending"
-   },
-   {
-    "name": "Camille Crusserey",
-    "title": "Setter / Closer",
-    "url": "https://www.linkedin.com/in/camille-crusserey-9a4714296/",
-    "vanity": "camille-crusserey-9a4714296",
-    "date": "2026-07-26",
-    "status": "accepted"
-   },
-   {
-    "name": "jordan DESMURS",
-    "title": "High ticket closer & Sale Management",
-    "url": "https://www.linkedin.com/in/jordan-desmurs-292904168/",
-    "vanity": "jordan-desmurs-292904168",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Yoann CHEREAU",
-    "title": "High Ticket Closer infopreneurs",
-    "url": "https://www.linkedin.com/in/yoann-chereau-36a6b2107/",
-    "vanity": "yoann-chereau-36a6b2107",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Yaelle Augereau",
-    "title": "Closeuse/Setter infopreneurs",
-    "url": "https://www.linkedin.com/in/yaelle-augereau-683a77267/",
-    "vanity": "yaelle-augereau-683a77267",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Valentin Mouillefert",
-    "title": "Head of Sales externalise SaaS/Agence/Infoproduit",
-    "url": "https://www.linkedin.com/in/valentin-mouillefert-8bba04110/",
-    "vanity": "valentin-mouillefert-8bba04110",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Tom Huet",
-    "title": "Closer independant",
-    "url": "https://www.linkedin.com/in/tom-huet-32b35929a/",
-    "vanity": "tom-huet-32b35929a",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Thibault de Becdelievre",
-    "title": "Growth Outbound Consultant @Oliverlist",
-    "url": "https://www.linkedin.com/in/thibault-de-becdelievre/",
-    "vanity": "thibault-de-becdelievre",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Theo Richoux",
-    "title": "Closer High Ticket",
-    "url": "https://www.linkedin.com/in/théo-richoux/",
-    "vanity": "théo-richoux",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Steve Ruchmann",
-    "title": "Closer, ex Closer B2C chez Jiang coaching",
-    "url": "https://www.linkedin.com/in/steve-ruchmann-closer/",
-    "vanity": "steve-ruchmann-closer",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Stephane Pommier-Wotawa",
-    "title": "Closer HT",
-    "url": "https://www.linkedin.com/in/stephane-pommier-wotawa-9b1258205/",
-    "vanity": "stephane-pommier-wotawa-9b1258205",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Rayan Belainine",
-    "title": "Closer HT coach/formateur",
-    "url": "https://www.linkedin.com/in/rayan-belainine-0a865218b/",
-    "vanity": "rayan-belainine-0a865218b",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Raphael Esposito",
-    "title": "Architecte Sales & IA",
-    "url": "https://www.linkedin.com/in/raphael-esposito-70b83b1a6/",
-    "vanity": "raphael-esposito-70b83b1a6",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Oscar Plessis",
-    "title": "Closer | Closing High Ticket",
-    "url": "https://www.linkedin.com/in/oscar-plessis-1262aa244/",
-    "vanity": "oscar-plessis-1262aa244",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Omar EL GHOUL",
-    "title": "Machines commerciales SDR+closing",
-    "url": "https://www.linkedin.com/in/omar-elghoul-closer/",
-    "vanity": "omar-elghoul-closer",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Olivier Dewismes",
-    "title": "Closer & Business Consultant",
-    "url": "https://www.linkedin.com/in/olivierdewismesbusinessconsultantkovalysneoney/",
-    "vanity": "olivierdewismesbusinessconsultantkovalysneoney",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Nathalie Mestroni Svirgoski",
-    "title": "Head of Sales @striker_agency",
-    "url": "https://www.linkedin.com/in/nathaliemestronisvirgoski/",
-    "vanity": "nathaliemestronisvirgoski",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Najoua Fouillat",
-    "title": "Closer inbound B2C chez Closer Evolution",
-    "url": "https://www.linkedin.com/in/najoua-fouillat-92b50a305/",
-    "vanity": "najoua-fouillat-92b50a305",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Marika DOUIDA",
-    "title": "Closeur chez Closers.group",
-    "url": "https://www.linkedin.com/in/marika-douida-341077402/",
-    "vanity": "marika-douida-341077402",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Magalie Sauze",
-    "title": "Setting/Closing HT lancements",
-    "url": "https://www.linkedin.com/in/magalie-sauze-1574542a7/",
-    "vanity": "magalie-sauze-1574542a7",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "MARJORIE D",
-    "title": "Closer HT chez Closing Influence",
-    "url": "https://www.linkedin.com/in/marjorie-d-71256a109/",
-    "vanity": "marjorie-d-71256a109",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Louis Gautier",
-    "title": "Directeur Commercial @Pitchbase",
-    "url": "https://www.linkedin.com/in/louis-gautier-568995271/",
-    "vanity": "louis-gautier-568995271",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Lorinda ADRAS",
-    "title": "Closer HT coachs et infopreneurs",
-    "url": "https://www.linkedin.com/in/lorinda-adras/",
-    "vanity": "lorinda-adras",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Florian Marjanovic",
-    "title": "Fondateur ClosrGoat Agency",
-    "url": "https://www.linkedin.com/in/florian-marjanovic-a92251216/",
-    "vanity": "florian-marjanovic-a92251216",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Fabien LP",
-    "title": "Closer High Ticket, +6M€ de CA genere",
-    "url": "https://www.linkedin.com/in/fabien-lp-810b6228b/",
-    "vanity": "fabien-lp-810b6228b",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "David WENDLING",
-    "title": "Closing inbound certifie",
-    "url": "https://www.linkedin.com/in/david-wendling-12b45b206/",
-    "vanity": "david-wendling-12b45b206",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Clement L.",
-    "title": "Closing HT +3M€ 52% conversion",
-    "url": "https://www.linkedin.com/in/clemnt-leroy/",
-    "vanity": "clemnt-leroy",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Chloe Pannatier",
-    "title": "Coache closing pour infopreneurs, Suisse",
-    "url": "https://www.linkedin.com/in/chloepannatier-coacheclosing/",
-    "vanity": "chloepannatier-coacheclosing",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Charles Brothier",
-    "title": "Closer HT appels entrants infopreneur",
-    "url": "https://www.linkedin.com/in/charles-brothier-5244bab1/",
-    "vanity": "charles-brothier-5244bab1",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Celine Brasselet",
-    "title": "Closeuse HT chez Sam Closing Business",
-    "url": "https://www.linkedin.com/in/céline-brasselet-6a9b3438a/",
-    "vanity": "céline-brasselet-6a9b3438a",
-    "date": "2026-07-25",
-    "status": "pending"
-   },
-   {
-    "name": "Arnaud C.",
-    "title": "Closer HT + NeoClosing Academy",
-    "url": "https://www.linkedin.com/in/arnaud-c-1a947a219/",
-    "vanity": "arnaud-c-1a947a219",
-    "date": "2026-07-25",
-    "status": "accepted"
-   },
-   {
-    "name": "Alexandre K.",
-    "title": "Closer High Ticket Paris",
-    "url": "https://www.linkedin.com/in/alexandre-k-82aa311ab/",
-    "vanity": "alexandre-k-82aa311ab",
-    "date": "2026-07-25",
-    "status": "accepted"
-   }
-  ]
- }
+ ]
 }

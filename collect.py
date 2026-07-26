@@ -183,6 +183,9 @@ def parse_daily_log_entry(date_str):
         "focus": extract_int("Focus"),
         "screen_time_reseaux_min": extract_int("Screen time"),
         "no_pmo": extract_bool("No PMO"),
+        "morning_effort_first": extract_bool("Morning effort") or extract_bool("Effort matin"),
+        "min_before_phone": extract_int("Minutes avant téléphone") or extract_int("Avant téléphone"),
+        "deep_work_before_social": extract_bool("Deep work avant réseaux"),
         "score": extract_int("score_mental", 0)
     }
 

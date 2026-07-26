@@ -10,6 +10,8 @@ Sends a proactive Telegram message each morning with:
 
 import json
 import subprocess
+import urllib.request
+import urllib.parse
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -28,6 +30,66 @@ def send_telegram(text):
     ]
     result = subprocess.run(cmd, capture_output=True, text=True)
     return result.stdout
+
+
+GDRIVE_CREDS = Path("/Users/shayanisse/.config/gdrive-mcp/.gdrive-server-credentials.json")
+GDRIVE_KEYS = Path("/Users/shayanisse/.config/gdrive-mcp/gcp-oauth.keys.json")
+
+
+def get_gdrive_token():
+    try:
+        with open(GDRIVE_CREDS) as f:
+            creds = json.load(f)
+        with open(GDRIVE_KEYS) as f:
+            keys = json.load(f).get("installed", {})
+        params = {
+            "client_id": keys["client_id"],
+            "client_secret": keys["client_secret"],
+            "refresh_token": creds["refresh_token"],
+            "grant_type": "refresh_token",
+        }
+        req = urllib.request.Request(
+            "https://oauth2.googleapis.com/token",
+            data=urllib.parse.urlencode(params).encode(),
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return json.loads(resp.read())["access_token"]
+    except Exception:
+        return None
+
+
+def find_stories_doc_today():
+    try:
+        with open(GDRIVE_CREDS) as f:
+            creds = json.load(f)
+        with open(GDRIVE_KEYS) as f:
+            keys = json.load(f).get("installed", {})
+        # Refresh token
+        r = subprocess.run([
+            "curl", "-s", "-X", "POST", "https://oauth2.googleapis.com/token",
+            "-d", f"client_id={keys['client_id']}",
+            "-d", f"client_secret={keys['client_secret']}",
+            "-d", f"refresh_token={creds['refresh_token']}",
+            "-d", "grant_type=refresh_token"
+        ], capture_output=True, text=True, timeout=10)
+        token = json.loads(r.stdout).get("access_token", "")
+        if not token:
+            return None
+        today_iso = date.today().isoformat() + "T00:00:00Z"
+        q = f"name contains 'Stories Didier' and mimeType = 'application/vnd.google-apps.document' and modifiedTime > '{today_iso}'"
+        r2 = subprocess.run([
+            "curl", "-s",
+            f"https://www.googleapis.com/drive/v3/files?q={urllib.parse.quote(q)}&fields=files(id,name)&pageSize=5",
+            "-H", f"Authorization: Bearer {token}"
+        ], capture_output=True, text=True, timeout=15)
+        files = json.loads(r2.stdout).get("files", [])
+        if files:
+            doc_id = files[0]["id"]
+            return {"name": files[0].get("name", ""), "url": f"https://docs.google.com/document/d/{doc_id}/edit"}
+        return None
+    except Exception:
+        return None
 
 
 def load_data():
@@ -212,6 +274,14 @@ def build_brief(data):
                 timing = f"Dans {delta} jours ({t['echeance']})"
             lines.append(f"  → {t['titre']} — {timing}")
         lines.append("")
+
+    # STORIES DOC (dimanche uniquement)
+    if date.today().weekday() == 6:  # dimanche = 6
+        stories_doc = find_stories_doc_today()
+        if stories_doc:
+            lines.append("")
+            lines.append("📋 <b>STORIES DIDIER — COPYWRITING PRÊT</b>")
+            lines.append(f"  Valide ici : {stories_doc['url']}")
 
     # SLEEP QUESTION
     lines.append("")

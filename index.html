@@ -333,6 +333,35 @@ nav{
   .pillar-name{min-width:56px;font-size:10px;}
   .score-hero-inner{padding:40px 16px 32px!important;}
 }
+/* ── LINKEDIN CRM ─────────────────────────────────────────── */
+.li-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px;}
+.li-board{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:start;}
+.li-col{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:14px;min-height:120px;}
+.li-col-head{display:flex;align-items:center;gap:8px;font-size:9px;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.14em;color:var(--text2);margin-bottom:14px;}
+.li-count{margin-left:auto;font-variant-numeric:tabular-nums;font-size:11px;color:var(--text2);
+  border:1px solid var(--border);border-radius:100px;padding:2px 9px;letter-spacing:0;}
+.li-card{background:var(--glass);border:1px solid var(--border);border-radius:var(--r-sm);
+  padding:11px 12px;margin-bottom:8px;transition:border-color .15s ease;}
+.li-card:hover{border-color:var(--border-hi);}
+.li-name{font-size:13px;font-weight:600;color:var(--text);text-decoration:none;display:block;margin-bottom:4px;}
+.li-name:hover{color:var(--blue);}
+.li-title{font-size:11px;color:var(--text2);line-height:1.45;margin-bottom:9px;}
+.li-foot{display:flex;align-items:center;gap:8px;}
+.li-date{font-size:10px;color:var(--text3);font-variant-numeric:tabular-nums;margin-right:auto;}
+.li-btn{font-size:10px;font-weight:600;padding:4px 10px;border-radius:100px;cursor:pointer;
+  background:transparent;border:1px solid var(--border);color:var(--text2);white-space:nowrap;}
+.li-btn:hover{border-color:var(--border-hi);color:var(--text);}
+.li-btn.go{border-color:rgba(52,211,153,0.3);color:var(--green);}
+.li-empty{font-size:11px;color:var(--text3);padding:8px 2px;}
+@media(max-width:900px){
+  .li-board{grid-template-columns:1fr;}
+  .li-kpis{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:430px){
+  .li-kpis{grid-template-columns:1fr;}
+  .li-title{font-size:11px;}
+}
 </style>
 </head>
 <body>
@@ -350,6 +379,7 @@ nav{
       <button class="tab" onclick="showTab('finance',event)">Finance</button>
       <button class="tab" onclick="showTab('corps',event)">Corps</button>
       <button class="tab" onclick="showTab('tasks',event)">Tâches</button>
+      <button class="tab" onclick="showTab('linkedin',event)">LinkedIn</button>
       <button class="tab" onclick="showTab('records',event)">Records</button>
     </div>
   </div>
@@ -855,6 +885,36 @@ nav{
   <div id="tasks-haute" style="margin-bottom:12px"></div>
   <div id="tasks-normale" style="margin-bottom:12px"></div>
   <div id="tasks-done" style="margin-bottom:12px"></div>
+</div>
+
+<!-- LINKEDIN CRM -->
+<div id="tab-linkedin" class="section">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div class="sdiv" style="margin:0;flex:1">Pipeline LinkedIn</div>
+    <div style="font-size:11px;color:var(--text2)" id="li-updated">—</div>
+  </div>
+
+  <div class="li-kpis">
+    <div class="kpi"><div class="kpi-label">Invitations envoyées</div><div class="kpi-val" id="li-k-sent">—</div></div>
+    <div class="kpi"><div class="kpi-label">Acceptées</div><div class="kpi-val" id="li-k-acc" style="color:var(--green)">—</div><div class="kpi-sub" id="li-k-rate">—</div></div>
+    <div class="kpi"><div class="kpi-label">À contacter</div><div class="kpi-val" id="li-k-todo" style="color:var(--yellow)">—</div><div class="kpi-sub">acceptées sans message</div></div>
+    <div class="kpi"><div class="kpi-label">Messages envoyés</div><div class="kpi-val" id="li-k-msg" style="color:var(--blue)">—</div></div>
+  </div>
+
+  <div class="li-board">
+    <div class="li-col">
+      <div class="li-col-head"><span class="dot" style="--c:var(--text2)"></span>En attente<span class="li-count" id="li-c-pending">0</span></div>
+      <div id="li-list-pending"></div>
+    </div>
+    <div class="li-col">
+      <div class="li-col-head"><span class="dot" style="--c:var(--yellow)"></span>Acceptées, à contacter<span class="li-count" id="li-c-todo">0</span></div>
+      <div id="li-list-todo"></div>
+    </div>
+    <div class="li-col">
+      <div class="li-col-head"><span class="dot" style="--c:var(--green)"></span>Message envoyé<span class="li-count" id="li-c-msg">0</span></div>
+      <div id="li-list-msg"></div>
+    </div>
+  </div>
 </div>
 
 <!-- RECORDS -->
@@ -1728,6 +1788,7 @@ async function syncTaskDone(){
     if(data && data.done && typeof data.done === 'object'){
       _setTaskDone(data.done);
       renderTasks(_allTasks);
+      if(_liData) renderLinkedIn(_liData);   // server state may hold li:* flags
     }
   } catch(e){ /* offline / not deployed yet: keep local cache */ }
 }
@@ -1746,6 +1807,73 @@ function toggleTaskDone(id){
     .then(d => { if(d && d.done){ _setTaskDone(d.done); } })
     .catch(()=>{});
 }
+// ── LINKEDIN CRM ──────────────────────────────────────────────────────────────
+// "Message envoyé" reuses the task-state store with ids "li:<vanity>", so it
+// persists server-side through /api/tasks without a second endpoint or branch.
+let _liData = null;
+
+function liMsgId(c){ return 'li:' + (c.vanity || c.url); }
+
+function toggleLiMessaged(vanity){
+  const c = (_liData && _liData.contacts || []).find(x => x.vanity === vanity);
+  if(!c) return;
+  toggleTaskDone(liMsgId(c));   // handles optimistic local update + server POST
+  renderLinkedIn(_liData);
+}
+
+function liCard(c, kind, messagedOn){
+  const safe = s => String(s == null ? '' : s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  let action = '';
+  if(kind === 'todo'){
+    action = '<button class="li-btn go" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Message envoyé</button>';
+  } else if(kind === 'msg'){
+    action = '<button class="li-btn" onclick="toggleLiMessaged(\'' + safe(c.vanity) + '\')">Annuler</button>';
+  }
+  const stamp = kind === 'msg' && messagedOn ? messagedOn : c.date;
+  return '<div class="li-card">' +
+    '<a class="li-name" href="' + safe(c.url) + '" target="_blank" rel="noopener">' + safe(c.name) + '</a>' +
+    '<div class="li-title">' + safe(c.title) + '</div>' +
+    '<div class="li-foot"><span class="li-date">' + safe(stamp) + '</span>' + action + '</div>' +
+    '</div>';
+}
+
+function renderLinkedIn(li){
+  if(!li || !li.contacts) return;
+  _liData = li;
+  const doneMap = _getTaskDone();
+  const pending = [], todo = [], msg = [];
+
+  li.contacts.forEach(c => {
+    const messagedOn = doneMap[liMsgId(c)];
+    if(messagedOn) msg.push([c, messagedOn]);
+    else if(c.status === 'accepted') todo.push([c, null]);
+    else pending.push([c, null]);
+  });
+
+  const fill = (elId, rows, kind) => {
+    const el = $(elId);
+    if(!el) return;
+    el.innerHTML = rows.length
+      ? rows.map(([c, on]) => liCard(c, kind, on)).join('')
+      : '<div class="li-empty">Rien ici.</div>';
+  };
+  fill('li-list-pending', pending, 'pending');
+  fill('li-list-todo',    todo,    'todo');
+  fill('li-list-msg',     msg,     'msg');
+
+  const set = (id, v) => { const e = $(id); if(e) e.textContent = v; };
+  set('li-c-pending', pending.length);
+  set('li-c-todo',    todo.length);
+  set('li-c-msg',     msg.length);
+  set('li-k-sent',    li.sent != null ? li.sent : li.contacts.length);
+  set('li-k-acc',     li.accepted != null ? li.accepted : (todo.length + msg.length));
+  set('li-k-rate',    (li.rate != null ? li.rate : 0) + '% de taux d\'acceptation');
+  set('li-k-todo',    todo.length);
+  set('li-k-msg',     msg.length);
+  set('li-updated',   li.updated ? 'Mis à jour le ' + li.updated : '');
+}
+
 function renderTasks(tasks){
   _allTasks = tasks || [];
   const prioCfg = {
@@ -2223,6 +2351,7 @@ async function init(){
     try { renderBusinessTab(data); } catch(e){ console.error('business',e); }
     try { renderCorpsTab(data, data.days); } catch(e){ console.error('corps',e); }
     try { renderTasks(data.tasks); syncTaskDone(); } catch(e){ console.error('tasks',e); }
+    try { renderLinkedIn(data.linkedin); } catch(e){ console.error('linkedin',e); }
     try { renderFinanceChart(data); } catch(e){ console.error('finance',e); }
     try { renderFinanceTab(data); } catch(e){ console.error('finance-tab',e); }
     try { renderStreaksRow(data); } catch(e){ console.error('streaks',e); }
