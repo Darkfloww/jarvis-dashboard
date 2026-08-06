@@ -2421,16 +2421,216 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-05",
-  "sent": 100,
-  "accepted": 49,
-  "rate": 49,
+  "updated": "2026-08-06",
+  "sent": 120,
+  "accepted": 53,
+  "rate": 44,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
-   "2026-W32": 40
+   "2026-W32": 60
   },
   "contacts": [
+   {
+    "name": "Zo Hariniaina Andriamaro",
+    "title": "Fondatrice et Directrice Allô Freedom - agence d'externalisation B2B, téléprospection et assistanat",
+    "url": "https://www.linkedin.com/in/zo-hariniaina-andriamaro-277381293/",
+    "vanity": "zo-hariniaina-andriamaro-277381293",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Bonjour Zo, monter une agence d'externalisation B2B depuis Antananarivo et servir des clients francophones à distance, c'est un vrai pari logistique. Je bosse moi même en remote depuis l'autre bout du monde donc ça me parle. Vous êtes combien dans l'équipe aujourd'hui ?",
+    "angle": "Agence B2B pilotée depuis Antananarivo"
+   },
+   {
+    "name": "Wally Thuillier-Lima",
+    "title": "Fondateur et Directeur de Monkey Closing - agence closing high ticket",
+    "url": "https://www.linkedin.com/in/wally-thuillier-lima-4b28b630b/",
+    "vanity": "wally-thuillier-lima-4b28b630b",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Wally, diriger Monkey Closing depuis Aydius, c'est pas le décor qu'on imagine pour une agence de closing high ticket. J'ai grandi sur une île donc bosser loin des grandes villes ça me parle. Ça change quoi dans ton quotidien ?",
+    "angle": "Dirige une agence de closing depuis un village des Pyrénées"
+   },
+   {
+    "name": "Tom Moreno",
+    "title": "Fondateur - expert Sales & Closing, +1M€ de ventes générées",
+    "url": "https://www.linkedin.com/in/tom-moreno-b65800298/",
+    "vanity": "tom-moreno-b65800298",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Tom, tu es passé de freelance chez Moreno's Consulting à fondateur, et le million de ventes est arrivé quelque part entre les deux. C'est souvent là que tout se joue. Tu as gardé les mêmes clients en changeant de structure ?",
+    "angle": "Passage freelance vers fondateur"
+   },
+   {
+    "name": "Théo Leoszewski",
+    "title": "Co-Founder MYCLOSERS - agence de closing premium, structuration et externalisation de dispositifs",
+    "url": "https://www.linkedin.com/in/th%C3%A9o-leoszewski-7943b8200/",
+    "vanity": "th%C3%A9o-leoszewski-7943b8200",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Théo, tu as monté MYCLOSERS et ton titre LinkedIn est resté sur un simple point, le contraste m'a fait sourire. Ça sent le mec qui préfère construire que se raconter. Tu bosses surtout avec quel type de boîtes ?",
+    "angle": "Dirige une agence de closing, headline vide"
+   },
+   {
+    "name": "Thomas Poncet",
+    "title": "Co-founder CréaPreneur et podcaster Deep Talks",
+    "url": "https://www.linkedin.com/in/thomas-poncet-bb687b169/",
+    "vanity": "thomas-poncet-bb687b169",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Thomas, j'ai vu que tu animais Deep Talks à côté de CréaPreneur. Tenir un podcast en parallèle d'une boîte, c'est une discipline que peu arrivent à garder dans la durée. Tu en es à combien d'épisodes ?",
+    "angle": "Podcast tenu en parallèle de la boîte"
+   },
+   {
+    "name": "Thomas Amelot",
+    "title": "Bras droit emailing & marketing pour coachs et infopreneurs, +2M€ générés, clients Papa In Shape et Giants",
+    "url": "https://www.linkedin.com/in/thomas-amelot-362b69289/",
+    "vanity": "thomas-amelot-362b69289",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Thomas, tu es un des rares à citer ses clients par leur nom sur LinkedIn, Papa In Shape et Giants c'est vérifiable, ça change des chiffres anonymes. Tu bosses avec eux depuis longtemps ?",
+    "angle": "Cite ses clients par leur nom, vérifiable"
+   },
+   {
+    "name": "Sophie Guerin",
+    "title": "Closer freelance B2B & B2C pour infopreneurs, certifiée Closer Evolution",
+    "url": "https://www.linkedin.com/in/sophie-guerin-closer/",
+    "vanity": "sophie-guerin-closer",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Sophie, tenir le B2B et le B2C en closing, c'est deux muscles différents et la plupart finissent par choisir un camp. Tu arrives à garder les deux ou il y en a un qui prend le dessus ?",
+    "angle": "Tient B2B et B2C en parallèle"
+   },
+   {
+    "name": "Sandra Dubuisson",
+    "title": "Closeuse pour infopreneurs, ex-directrice de campus",
+    "url": "https://www.linkedin.com/in/sandradubuisson/",
+    "vanity": "sandradubuisson",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Sandra, ex directrice de campus puis closeuse pour infopreneurs, c'est un virage assez radical. Diriger un campus et closer, ça demande deux énergies très différentes. Le passage s'est fait comment ?",
+    "angle": "Virage direction de campus vers closing"
+   },
+   {
+    "name": "Roy Lambrechts",
+    "title": "Directeur général RL Consult - structuration et management du pôle commercial pour infopreneurs",
+    "url": "https://www.linkedin.com/in/roy-lambrechts/",
+    "vanity": "roy-lambrechts",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Roy, passer de Sales Engineer à la structuration de pôles commerciaux pour infopreneurs, c'est un virage qu'on croise pas souvent. Les deux mondes n'ont pas grand chose en commun sur le papier. Qu'est ce qui t'a fait basculer ?",
+    "angle": "Virage Sales Engineer vers infopreneurs"
+   },
+   {
+    "name": "Rodolphe Le Houx",
+    "title": "CEO Digiqo - agence #1 La Réunion, acquisition digitale, 200+ clients, cofondateur OBN",
+    "url": "https://www.linkedin.com/in/rodolphelehoux/",
+    "vanity": "rodolphelehoux",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Rodolphe, je suis réunionnais et je vois passer Digiqo depuis un moment, c'est une des rares boîtes de l'île qui joue vraiment à l'échelle nationale. Je suis en Asie en ce moment et le contraste est marrant. L'écosystème business a bougé sur l'île ces dernières années ?",
+    "angle": "Connexion réelle : Shayan est réunionnais"
+   },
+   {
+    "name": "Marius Ganille",
+    "title": "Co-fondateur Arko-Média - 50M€ générés en lancement d'info-produit",
+    "url": "https://www.linkedin.com/in/marius-ganille/",
+    "vanity": "marius-ganille",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Marius, 50M€ générés en lancement d'infoproduit, c'est un chiffre qu'on voit rarement écrit aussi net sur LinkedIn, la plupart restent flous sur ce genre de volume. Vous avez commencé par quel type de lancement chez Arko ?",
+    "angle": "Chiffre de lancement rarement affiché aussi net"
+   },
+   {
+    "name": "Marie Cabut",
+    "title": "Founder Starseed - Scale Partner pour infopreneurs bloqués dans leur croissance",
+    "url": "https://www.linkedin.com/in/marie-cabut/",
+    "vanity": "marie-cabut",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Marie, Starseed comme nom de boîte pour du scale, il y a clairement une intention derrière, c'est pas un nom qu'on prend au hasard dans ce milieu. Ça vient d'où ?",
+    "angle": "Le nom Starseed, choix inhabituel dans le milieu"
+   },
+   {
+    "name": "Malo d'Haussy",
+    "title": "Head of Sales & Business Development @ Aurora Video Agency",
+    "url": "https://www.linkedin.com/in/malo-d%E2%80%99haussy-16427720a/",
+    "vanity": "malo-d%E2%80%99haussy-16427720a",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Malo, Head of Sales dans une agence vidéo, c'est un poste plus dur qu'il en a l'air, le produit est sur mesure et jamais deux devis pareils. Tu structures ça comment de ton côté ?",
+    "angle": "Sales dans une agence vidéo, produit sur mesure"
+   },
+   {
+    "name": "Karima Labroud",
+    "title": "Mentore en vente - Head of Sales et Closer, accompagne les entrepreneures à scaler",
+    "url": "https://www.linkedin.com/in/karima-labroud-620711358/",
+    "vanity": "karima-labroud-620711358",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Karima, ta phrase sur le fait qu'on a pas besoin d'être pushy quand le process tient la route, c'est l'inverse exact de ce qu'on lit d'habitude sur le closing. Ça tranche. Tu accompagnes surtout des entrepreneures dans quel secteur ?",
+    "angle": "Sa phrase à contre-courant sur le closing pushy"
+   },
+   {
+    "name": "Ingrid Virlouvet",
+    "title": "Closeuse certifiée high ticket, investisseuse, partenaire de croissance infopreneurs",
+    "url": "https://www.linkedin.com/in/ingrid-virlouvet-29a465106/",
+    "vanity": "ingrid-virlouvet-29a465106",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Bonjour Ingrid, 24 ans dans l'immobilier avant de closer pour des infopreneurs, ça fait une expérience terrain que peu de closeurs ont. Les deux ventes n'ont pourtant rien à voir en rythme. Qu'est ce qui vous a fait franchir le pas ?",
+    "angle": "24 ans d'immobilier avant le closing infopreneur"
+   },
+   {
+    "name": "Flavien Neuens",
+    "title": "Founder & CEO NoGhost - +30% de présence aux rendez-vous commerciaux",
+    "url": "https://www.linkedin.com/in/flavien-neuens/",
+    "vanity": "flavien-neuens",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Flavien, chasseur de fantômes comme titre LinkedIn, il fallait oser, et c'est franchement le nom le plus honnête que j'ai vu pour le problème des no shows. Le nom NoGhost est venu avant ou après le produit ?",
+    "angle": "Positionnement no-show, titre chasseur de fantômes"
+   },
+   {
+    "name": "Fabien Giraudon",
+    "title": "Head of Sales - construction et scaling d'équipes commerciales, +2,5M€ closés perso, +9M€ en dirigeant",
+    "url": "https://www.linkedin.com/in/fabien-giraudon-b50838307/",
+    "vanity": "fabien-giraudon-b50838307",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Fabien, les deux chiffres côte à côte sur ton profil sont parlants, 2,5M closés toi même et 9M en dirigeant des équipes. Peu de bons closers réussissent vraiment ce passage. C'était quoi le plus dur quand tu es passé de l'un à l'autre ?",
+    "angle": "Passage de closer solo à dirigeant d'équipes, chiffré"
+   },
+   {
+    "name": "Emmanuel V.",
+    "title": "Closing éthique, Meta Ads et implémentation IA pour entreprises et infopreneurs",
+    "url": "https://www.linkedin.com/in/closingclean/",
+    "vanity": "closingclean",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Emmanuel, closing, Meta Ads et implémentation IA sur le même profil, c'est rare de voir quelqu'un tenir les trois bouts de la chaîne, la plupart en choisissent un. Lequel des trois est arrivé en premier chez toi ?",
+    "angle": "Trois métiers tenus en parallèle"
+   },
+   {
+    "name": "Emilie De Freitas",
+    "title": "Head of Sales & Coach @ Striker Agency, ambassadrice au KICKS TOUR",
+    "url": "https://www.linkedin.com/in/emilie-de-freitas-9578a31b6/",
+    "vanity": "emilie-de-freitas-9578a31b6",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Emilie, entre Head of Sales chez Striker et ambassadrice au KICKS TOUR, tu as un profil qui sort du lot. C'est rare de voir ces deux univers cohabiter. Le KICKS TOUR, ça t'apporte quoi côté sales ?",
+    "angle": "Head of Sales + ambassadrice KICKS TOUR"
+   },
+   {
+    "name": "Anthony Deblangy",
+    "title": "Freelance & Head of CSM TheEcosystem.io - +100 business high-ticket accompagnés",
+    "url": "https://www.linkedin.com/in/anthonydeblangy/",
+    "vanity": "anthonydeblangy",
+    "date": "2026-08-06",
+    "status": "pending",
+    "opener": "Salut Anthony, tu es un des rares à mettre le Customer Success en avant dans le high ticket, c'est presque toujours la vente qui prend toute la lumière alors que c'est souvent là que ça casse. Tu es arrivé au CSM par quel chemin ?",
+    "angle": "Met le Customer Success en avant, rare en high ticket"
+   },
    {
     "name": "Xavier Cartenet",
     "title": "Head of Sales @ABC Digital Consulting | Structuration de poles commerciaux & management d'equipes Sales",
@@ -2517,7 +2717,7 @@
     "url": "https://www.linkedin.com/in/hugo-werl%C3%A9-052433122/",
     "vanity": "hugo-werlé-052433122",
     "date": "2026-08-05",
-    "status": "pending",
+    "status": "accepted",
     "opener": "",
     "angle": ""
    },
@@ -2527,7 +2727,7 @@
     "url": "https://www.linkedin.com/in/hamza-chaouki-meetyn/",
     "vanity": "hamza-chaouki-meetyn",
     "date": "2026-08-05",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Hamza, tu es founder et Head of Sales de Meetyn en même temps, donc tu vends toujours toi même au lieu de déléguer tout de suite. C'est un choix pour garder le pouls du marché ou une étape que tu comptes passer ?",
     "angle": "Founder ET Head of Sales de Meetyn, vend donc encore lui même"
    },
@@ -2537,7 +2737,7 @@
     "url": "https://www.linkedin.com/in/florent-pestiat-4a392a333/",
     "vanity": "florent-pestiat-4a392a333",
     "date": "2026-08-05",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Florent, +200 mises en relation, ça veut dire que tu as vu passer un paquet de profils de closers. Je suis curieux de savoir ce que tu repères en premier chez quelqu'un qui va vraiment tenir dans la durée ?",
     "angle": "Belge à Namur, +200 mises en relation entre closers et entreprises"
    },
@@ -2577,7 +2777,7 @@
     "url": "https://www.linkedin.com/in/c%C3%A9line-moreau-111a0245/",
     "vanity": "céline-moreau-111a0245",
     "date": "2026-08-05",
-    "status": "pending",
+    "status": "accepted",
     "opener": "",
     "angle": ""
    },
