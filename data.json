@@ -2421,17 +2421,217 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-10",
-  "sent": 160,
-  "accepted": 82,
-  "rate": 51,
+  "updated": "2026-08-11",
+  "sent": 180,
+  "accepted": 88,
+  "rate": 49,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
-   "2026-W33": 20
+   "2026-W33": 40
   },
   "contacts": [
+   {
+    "name": "Zak Loubachria",
+    "title": "Coach en closing et business development, +12 ans sur marchés francophones, fait convertir 34 à 50% des leads pour infopreneurs",
+    "url": "https://www.linkedin.com/in/zak-loubachria-464156264/",
+    "vanity": "zak-loubachria-464156264",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Zak, 12 ans sur le closing francophone c'est rare dans un milieu où la plupart ont deux ans d'ancienneté. Tu as vu le niveau moyen monter ou baisser depuis que tout le monde s'y met ?",
+    "angle": "12 ans d'ancienneté dans un milieu où la moyenne est de deux ans"
+   },
+   {
+    "name": "William Wouaquet",
+    "title": "Co-fondateur Money Trees, scaling d'infopreneurs, mentor closing high-ticket, Lyon",
+    "url": "https://www.linkedin.com/in/william-wouaquet-473844150/",
+    "vanity": "william-wouaquet-473844150",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut William, j'ai croisé plusieurs profils passés par Money Trees avant de tomber sur le tien, l'écosystème que vous avez construit autour du closing est assez dense. Vous avez commencé par former ou par closer pour les autres ?",
+    "angle": "L'écosystème Money Trees revient souvent dans les parcours de closers FR"
+   },
+   {
+    "name": "Valentin Noth",
+    "title": "Sales Coach chez Striker Agency, deux sessions de coaching par semaine",
+    "url": "https://www.linkedin.com/in/valentin-noth-53599b51/",
+    "vanity": "valentin-noth-53599b51",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Valentin, tu coaches les sales de Striker avec deux sessions par semaine, ce rythme là c'est ce qui fait vraiment progresser une équipe. Tu bosses plus sur la technique ou sur le mental ?",
+    "angle": "Le rythme de deux sessions de coaching hebdo pour l'équipe"
+   },
+   {
+    "name": "Tom Chauvet",
+    "title": "Head of Sales chez Digifox, fondateur de Kombineo, pilotage de rentabilité",
+    "url": "https://www.linkedin.com/in/tomchauvet/",
+    "vanity": "tomchauvet",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Tom, ta phrase sur le fait d'arrêter de piloter à l'aveugle résume bien le problème de la majorité des boîtes que je croise. Tu as construit Kombineo parce que tu vivais ça toi même chez Digifox ?",
+    "angle": "Sa phrase sur le fait d'arrêter de piloter à l'aveugle"
+   },
+   {
+    "name": "Sofiane Thesse",
+    "title": "Co-fondateur Genesys, ex-VP Sales Mindeo, +75M€ générés. Connecte les meilleurs closers aux plus gros infopreneurs FR",
+    "url": "https://www.linkedin.com/in/sofiane-thesse/",
+    "vanity": "sofiane-thesse",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Sofiane, ton positionnement d'homme de l'ombre derrière les équipes de vente m'a marqué, c'est rare que quelqu'un assume de ne pas être devant. Tu es passé de VP Sales chez Mindeo à monter Genesys, qu'est ce qui a déclenché le saut ?",
+    "angle": "Se définit comme l'homme de l'ombre derrière les équipes de vente"
+   },
+   {
+    "name": "Sandie Destombes",
+    "title": "Closing et setting inbound, 10 ans d'expérience commerciale, process de vente, follow up et nurturing de leads. Nice",
+    "url": "https://www.linkedin.com/in/sandie-destombes/",
+    "vanity": "sandie-destombes",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Sandie, tu cites le follow up et le nurturing alors que la plupart ne parlent que du closing, c'est pourtant là que se perdent le plus de ventes. Tu relances jusqu'à quand avant de lâcher un lead ?",
+    "angle": "Cite le follow up et le nurturing quand les autres ne parlent que du closing"
+   },
+   {
+    "name": "Pierre-Olivier Lair",
+    "title": "Aide formateurs et coachs à créer et vendre leur formation en ligne premium. Intervenant Université Paris-Sorbonne, auteur chez Nathan",
+    "url": "https://www.linkedin.com/in/pierre-olivier-lair/",
+    "vanity": "pierre-olivier-lair",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Pierre-Olivier, entre la Sorbonne, Nathan et la formation en ligne premium tu navigues entre deux mondes qui se regardent souvent de travers. L'académique t'a aidé ou freiné pour vendre en ligne ?",
+    "angle": "Navigue entre le monde académique et l'infoproduit"
+   },
+   {
+    "name": "Mariem Gamal",
+    "title": "Co-fondatrice de l'agence Impowers Partners, sales et coach BtoB et BtoC, Lyon",
+    "url": "https://www.linkedin.com/in/mariem-gamal-ab2535136/",
+    "vanity": "mariem-gamal-ab2535136",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Mariem, tu couvres le B2B et le B2C en même temps chez Impowers Partners, ce sont deux façons de vendre assez opposées. Tu adaptes vraiment le discours ou tu gardes une base commune ?",
+    "angle": "Couvre le B2B et le B2C, deux logiques de vente opposées"
+   },
+   {
+    "name": "Kevin Gohin",
+    "title": "CEO de Hook, décortique le cold call, l'outbound et l'IA appliquée à la vente. Ex New Business Developer chez MOJU-PROD (post production)",
+    "url": "https://www.linkedin.com/in/kevin-gohin-338600a6/",
+    "vanity": "kevin-gohin-338600a6",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Kevin, tu es passé du dev business dans la post production à décortiquer le cold call, c'est un virage inattendu. C'est l'outbound qui t'a rattrapé ou tu l'as choisi ?",
+    "angle": "Passé de la post production au cold call, virage inattendu"
+   },
+   {
+    "name": "John Agboli",
+    "title": "High-ticket closer, partenaire de croissance pour infopreneurs et formateurs, vente éthique et performante, Paris",
+    "url": "https://www.linkedin.com/in/john-agboli-933b5b23b/",
+    "vanity": "john-agboli-933b5b23b",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut John, tu mets éthique et performante côte à côte alors que beaucoup les opposent encore. Tu as déjà refusé de closer quelqu'un parce que l'offre ne lui correspondait pas ?",
+    "angle": "Met éthique et performante côte à côte alors que beaucoup les opposent"
+   },
+   {
+    "name": "Johann Ettori",
+    "title": "Sales Trainer chez @Antoineblanco99 et @upscale.off, +400 entrepreneurs et closers formés, 1M€ généré en 2024, SALESCLUB",
+    "url": "https://www.linkedin.com/in/johann-ettori-352a09239/",
+    "vanity": "johann-ettori-352a09239",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Johann, après plus de 400 closers formés tu dois voir revenir toujours les mêmes blocages. Il y en a un qui revient plus souvent que les autres ?",
+    "angle": "Plus de 400 closers formés, donc une vision statistique des blocages"
+   },
+   {
+    "name": "Issam Sidi-Yakoub",
+    "title": "Closer à distance FR et AR natifs, transforme les leads dormants en clients pour infopreneurs, coachs et agences. Europe, Maghreb, Golfe. Bruxelles",
+    "url": "https://www.linkedin.com/in/issam-sidi-yakoub-closer/",
+    "vanity": "issam-sidi-yakoub-closer",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Issam, closer en français et en arabe sur l'Europe, le Maghreb et le Golfe, ça veut dire trois rapports à la négociation complètement différents. Lequel des trois t'a demandé le plus d'adaptation ?",
+    "angle": "Vend en français et en arabe sur trois zones culturelles distinctes"
+   },
+   {
+    "name": "Gregory C.",
+    "title": "Consultant RevOps et automatisation pour infopreneurs, aide les business de service à remettre au propre une zone critique de leur fonctionnement",
+    "url": "https://www.linkedin.com/in/gregory-automatisation-business/",
+    "vanity": "gregory-automatisation-business",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Gregory, ta formulation sur la zone critique du fonctionnement est plus honnête que le mot automatisation que tout le monde emploie. C'est laquelle le plus souvent chez les infopreneurs que tu accompagnes ?",
+    "angle": "L'expression zone critique, plus honnête que le mot automatisation"
+   },
+   {
+    "name": "Elie Adorgloh",
+    "title": "Accompagne coachs, consultants et formateurs : offre claire, message précis, système d'acquisition et processus de vente structuré. Canada",
+    "url": "https://www.linkedin.com/in/elie-adorgloh/",
+    "vanity": "elie-adorgloh",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Elie, tu parles de revenus dignes et pas de revenus maximum, la nuance change tout le positionnement. C'est un choix de mots réfléchi ou ça vient de ton parcours ?",
+    "angle": "Parle de revenus dignes et non de revenus maximum"
+   },
+   {
+    "name": "Dominique A.",
+    "title": "High-Ticket Setter Strategist, aligne marketing, nurturing et conversion sur les leads inbound issus de webinars et VSL. Madagascar",
+    "url": "https://www.linkedin.com/in/dominique-andre-setter/",
+    "vanity": "dominique-andre-setter",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Dominique, tu te positionnes sur l'alignement entre le marketing et le setting alors que les deux tournent souvent en silo. Selon toi c'est le décalage de promesse qui abîme le plus les leads de webinar ?",
+    "angle": "Se positionne sur l'alignement marketing / setting, souvent en silo"
+   },
+   {
+    "name": "Christophe Vander Donckt",
+    "title": "Setter et Closer Senior Freelance, vente high ticket, décisions engageantes, +20 ans d'expérience commerciale. Belgique",
+    "url": "https://www.linkedin.com/in/christophe-m-a-vander-donckt-407bb0297/",
+    "vanity": "christophe-m-a-vander-donckt-407bb0297",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Christophe, l'expression décisions engageantes en dit plus long que le mot closing, ça remet la responsabilité du côté du prospect. Après 20 ans, c'est ce qui a le plus changé dans ta façon de vendre ?",
+    "angle": "L'expression décisions engageantes, qui remet la responsabilité côté prospect"
+   },
+   {
+    "name": "Christofer Plön",
+    "title": "Place des closers et setters pour infopreneurs high ticket, matching en -10j puis suivi 30 à 60 jours",
+    "url": "https://www.linkedin.com/in/christofer-pl%C3%B6n-constellation/",
+    "vanity": "christofer-pl%C3%B6n-constellation",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Christofer, ce qui m'a accroché chez toi c'est le suivi 30 à 60 jours après le placement, la plupart s'arrêtent au matching et disparaissent. C'est venu d'un placement qui avait mal tourné ?",
+    "angle": "Le suivi 30 à 60 jours après le placement, là où les autres s'arrêtent au matching"
+   },
+   {
+    "name": "Aurélien Vezzani",
+    "title": "Accompagne coachs et formateurs à recruter et manager setters/closers. Directeur des admissions The Body Contouring Academy, basé à Belgrade",
+    "url": "https://www.linkedin.com/in/aurelienvezzani/",
+    "vanity": "aurelienvezzani",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Aurélien, tu conseilles des coachs sur le recrutement de closers tout en dirigeant les admissions chez The Body Contouring Academy, donc tu testes sur ton propre terrain avant de conseiller. Et Belgrade, c'est un choix de vie ou de business ?",
+    "angle": "Conseille sur le recrutement de closers tout en dirigeant lui-même un pôle admissions"
+   },
+   {
+    "name": "Angelo D'Acunto",
+    "title": "Aide les closers à devenir indispensables : closing, management, recrutement, revenu. Sales & Revenue Advisor chez Ares Advisory",
+    "url": "https://www.linkedin.com/in/angelodacunto/",
+    "vanity": "angelodacunto",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Angelo, ton angle sur les closers qui deviennent indispensables plutôt qu'interchangeables m'a parlé, c'est ce qui sépare ceux qui durent des autres. Selon toi ça se joue plus sur la compétence ou sur la posture ?",
+    "angle": "Le mot indispensables plutôt qu'interchangeables"
+   },
+   {
+    "name": "Alicia Spatschek",
+    "title": "Sales Manager et Closer Senior chez Closers.group, structuration et scaling d'équipes, recrutement sales, remote",
+    "url": "https://www.linkedin.com/in/alicia-spatschek-393bbb84/",
+    "vanity": "alicia-spatschek-393bbb84",
+    "date": "2026-08-11",
+    "status": "pending",
+    "opener": "Salut Alicia, tu as fait le chemin de closeuse senior à la structuration d'équipes, c'est un virage que peu de bons closers arrivent à prendre. Le plus dur c'était de lâcher tes propres appels ?",
+    "angle": "A fait le passage de closeuse senior à la structuration d'équipes"
+   },
    {
     "name": "Yannick Jarrand",
     "title": "Accompagne les agences a signer plus de clients, podcast LoveBrand, 14,8k abonnes",
@@ -2468,7 +2668,7 @@
     "url": "https://www.linkedin.com/in/rd06/",
     "vanity": "rd06",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Raphaël, merci d'avoir accepté. Bosser uniquement en commission-based, c'est le modèle que j'ai choisi aussi, ça change vraiment la façon de sélectionner avec qui on travaille. Tu filtres sur quoi avant d'accepter une boîte ?",
     "angle": "Modele 100% commission-based"
    },
@@ -2498,7 +2698,7 @@
     "url": "https://www.linkedin.com/in/matthieu-leclerc-03a3b478/",
     "vanity": "matthieu-leclerc-03a3b478",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Matthieu, merci pour la connexion. Closer pour des agences web et des SaaS, c'est un cycle de vente très différent du high ticket classique en B2C. Tu es plutôt sur des deals courts ou ça s'étale sur plusieurs semaines ?",
     "angle": "Closing sur agences web et SaaS"
    },
@@ -2538,7 +2738,7 @@
     "url": "https://www.linkedin.com/in/jennifer-rodrigues-605099168/",
     "vanity": "jennifer-rodrigues-605099168",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Jennifer, merci d'avoir accepté. Piloter les ventes dans la formation sur des métiers en tension comme frigoriste, la demande existe déjà et tout se joue sur le sourcing des candidats. C'est le recrutement des élèves le vrai goulot chez vous ?",
     "angle": "Vente en centre de formation, metiers en tension"
    },
@@ -2598,7 +2798,7 @@
     "url": "https://www.linkedin.com/in/elodie-savy/",
     "vanity": "elodie-savy",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Elodie, merci d'avoir accepté. Arriver au closing après 17 ans dans des métiers de la relation, ça donne un rapport à l'appel très différent de ceux qui sortent d'une formation de trois mois. Qu'est-ce qui t'a fait basculer vers le high ticket ?",
     "angle": "17 ans de relation avant le closing"
    },
@@ -2618,7 +2818,7 @@
     "url": "https://www.linkedin.com/in/copychief/",
     "vanity": "copychief",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Charles, merci d'avoir accepté. Ton post sur le passage de 12h à 4h de travail par jour après le deuxième enfant m'a marqué, la contrainte force une discipline que personne ne s'impose volontairement. Tu dirais que la qualité du travail a baissé ou l'inverse ?",
     "angle": "Son post : de 12h a 4h de travail par jour"
    },
@@ -3188,7 +3388,7 @@
     "url": "https://www.linkedin.com/in/benjamin-perret-004884246/",
     "vanity": "benjamin-perret-004884246",
     "date": "2026-08-05",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Benjamin, tu bosses depuis Malte avec des clients francophones, je suis moi aussi en remote loin de la France en ce moment. Je me demandais si le décalage avec tes clients t'avait forcé à changer ta façon de bosser ou si ça n'a rien changé pour toi ?",
     "angle": "Basé à Sliema à Malte alors que ses clients infopreneurs sont francophones"
    },
