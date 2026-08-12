@@ -2421,17 +2421,217 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-11",
-  "sent": 180,
-  "accepted": 88,
-  "rate": 49,
+  "updated": "2026-08-12",
+  "sent": 200,
+  "accepted": 97,
+  "rate": 48,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
-   "2026-W33": 40
+   "2026-W33": 60
   },
   "contacts": [
+   {
+    "name": "Wassim Oulad-Akouz",
+    "title": "Head of Sales chez Seeds Agency. Bordeaux",
+    "url": "https://www.linkedin.com/in/wassim-oulad-akouz-2b4600243/",
+    "vanity": "wassim-oulad-akouz-2b4600243",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Wassim, merci pour la connexion. Tu diriges le sales chez Seeds depuis Bordeaux, loin de l'aspirateur parisien, et tu publies régulièrement. La distance c'est un avantage ou il faut compenser sur le réseau ?",
+    "angle": "Head of sales"
+   },
+   {
+    "name": "Virgile Cahon",
+    "title": "Head of Sales B2C chez Alegria.group, pilote la strategie de vente et coache les closers",
+    "url": "https://www.linkedin.com/in/virgile-cahon/",
+    "vanity": "virgile-cahon",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Virgile, merci d'avoir accepté. Tu pilotes la stratégie sales d'Alegria et tu coaches les reps en parallèle, donc tu vois les chiffres et le terrain le même jour. Tu arrives encore à dégager du temps pour écouter des appels ?",
+    "angle": "Head of sales"
+   },
+   {
+    "name": "Timeo Nivard",
+    "title": "CEO THE-WARMUP.IO, gere le pole vente de ses clients pour les sortir de l'operationnel, +28 boites accompagnees. Bordeaux",
+    "url": "https://www.linkedin.com/in/tim%C3%A9o-nivard-b75bb0314/",
+    "vanity": "tim%C3%A9o-nivard-b75bb0314",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Timéo, merci pour la connexion. Ta promesse c'est de sortir le dirigeant de l'opérationnel, pas de lui vendre des leads en plus, et 28 boîtes accompagnées c'est déjà un vrai échantillon. Ils résistent au moment de lâcher les appels de vente, ou ils sont soulagés ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Sylvie Segond",
+    "title": "Creatrice de The Inner Closing, decrypte les mecanismes de decision en call de vente, accompagne closers, coachs et entrepreneurs. Bordeaux",
+    "url": "https://www.linkedin.com/in/sylvie-segond-154109a3/",
+    "vanity": "sylvie-segond-154109a3",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Sylvie, merci d'avoir accepté. Ton angle sur ce qui se joue vraiment dans la tête du prospect pendant un call sort complètement du discours technique habituel sur le closing. C'est venu de ton parcours avant The Inner Closing ?",
+    "angle": "Coach de closers"
+   },
+   {
+    "name": "Soizic Z",
+    "title": "Lioness Closing, premiere formation et agence de closing 100% feminine, +500 closeuses formees et certifiees",
+    "url": "https://www.linkedin.com/in/soizic-z-2696012ab/",
+    "vanity": "soizic-z-2696012ab",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Soizic, merci d'avoir accepté. Une agence de closing 100% féminine avec 500 closeuses formées, je n'avais jamais croisé ce positionnement avant Lioness. Ça vient d'un constat précis sur le terrain ou c'était une intuition de départ ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Sohif Bezzaou",
+    "title": "Cartesia Formations, expert et coach en closing et conseil, jusqu'a 80% de closing, +2M EUR factures. Paris",
+    "url": "https://www.linkedin.com/in/sohif-bezzaou-closing/",
+    "vanity": "sohif-bezzaou-closing",
+    "date": "2026-08-12",
+    "status": "accepted",
+    "opener": "Salut Sohif, merci d'avoir accepté aussi vite. 80% de closing annoncé, c'est un chiffre que peu de gens osent mettre en avant parce qu'il se vérifie vite. Ça tient plutôt à la qualification en amont ou vraiment à la conduite de l'appel ?",
+    "angle": "Coach de closers"
+   },
+   {
+    "name": "Romain Fernandez",
+    "title": "Aide les closers a trouver des infopreneurs et signer leur premier contrat en 30 jours. Base en Pologne",
+    "url": "https://www.linkedin.com/in/%E2%AD%90romain-exelerateur-closing%E2%AD%90/",
+    "vanity": "%E2%AD%90romain-exelerateur-closing%E2%AD%90",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Romain, merci pour la connexion. Tu bosses sur le premier contrat des closers, donc pile là où la majorité abandonne, après la formation et avant le premier euro. Et tu fais ça depuis la Pologne, tu es parti là bas pour le cadre de travail ?",
+    "angle": "Place des closers"
+   },
+   {
+    "name": "Mouhamadou Mbengue",
+    "title": "Funnel Builders, head of sales et top closer, aide independants et infopreneurs sur le high ticket. Paris",
+    "url": "https://www.linkedin.com/in/mouhamadou-closing-setting/",
+    "vanity": "mouhamadou-closing-setting",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Mouhamadou, merci pour la connexion. Head of sales chez Funnel Builders et closer en même temps, tu vois donc le funnel et l'appel, alors que d'habitude les deux équipes se renvoient la faute. Ça se joue plus en amont ou pendant l'appel selon toi ?",
+    "angle": "Head of sales"
+   },
+   {
+    "name": "Kylian Baude",
+    "title": "Audit des process sales et placement d'A-Players. +5 000 appels de vente, +5,2M EUR encaisses. Base a Dubai",
+    "url": "https://www.linkedin.com/in/kylian-baude-10310125b/",
+    "vanity": "kylian-baude-10310125b",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Kylian, merci pour la connexion. +5 000 appels passés avant de basculer côté process, c'est ce qui rend ton positionnement crédible, et depuis Dubaï en plus. Il y a un truc que tu n'as vu qu'après plusieurs milliers d'appels ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Jonathan Provang",
+    "title": "Closer freelance, formation et analyse d'appels, structuration des process, consulting closing. Strasbourg",
+    "url": "https://www.linkedin.com/in/provang-jonathan-73a91316b/",
+    "vanity": "provang-jonathan-73a91316b",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Jonathan, merci d'avoir accepté. Tu mets l'analyse d'appels au même niveau que le closing dans ton titre, ce n'est pas courant, la plupart s'arrêtent au script. Tu les réécoutes comment, en direct ou après coup ?",
+    "angle": "Analyse d'appels"
+   },
+   {
+    "name": "Jessy Besancon",
+    "title": "Optimate.fr, Closer High Ticket et Head of Sales freelance, a monte une equipe de vente jusqu'a 24 closers, +1M EUR de CA genere. Nantes",
+    "url": "https://www.linkedin.com/in/jessy-besan%C3%A7on-5051a2168/",
+    "vanity": "jessy-besan%C3%A7on-5051a2168",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Jessy, merci d'avoir accepté. Tu es passé de closer à une équipe de 24, c'est exactement là où la plupart calent, manager des gens qui vendent quand on vendait soi même c'est un autre métier. Le plus dur ça a été le recrutement ou le suivi une fois en poste ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Hugo Loison",
+    "title": "Growth and Conversion Strategy, closing high-ticket, structuration et optimisation de funnels, laureat French Tech. Montpellier",
+    "url": "https://www.linkedin.com/in/hugoloison/",
+    "vanity": "hugoloison",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Hugo, merci d'avoir accepté. Tu couvres l'acquisition et le closing alors que la plupart des growth s'arrêtent au rendez vous pris, et lauréat French Tech en plus. Tu as commencé par quel côté des deux ?",
+    "angle": "Growth et closing"
+   },
+   {
+    "name": "Hugo Flechet",
+    "title": "Agence commerciale 100% a la perf, recrute et forme des closers/setters freelance sur offres premium (formation, IA, B2B), 8 ans de vente et management. Lyon",
+    "url": "https://www.linkedin.com/in/hugo-flechet/",
+    "vanity": "hugo-flechet",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Hugo, merci pour la connexion. Ce qui m'a arrêté sur ton profil c'est d'assumer le 100% commission comme un choix de cadre et pas juste comme un mode de rémunération, c'est rare de le dire aussi frontalement quand on monte une agence. Tu as mis combien de temps à trouver des freelances qui tiennent ce cadre ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Gwenael Jegou",
+    "title": "Neurocloser, aide les closers qui plafonnent a progresser et a se faire recruter. Nice",
+    "url": "https://www.linkedin.com/in/gwenael-jegou/",
+    "vanity": "gwenael-jegou",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Gwénaël, merci pour la connexion. Tu t'adresses aux closers qui plafonnent plutôt qu'aux débutants, c'est un public bien plus dur à aider parce qu'ils croient déjà savoir. Le blocage il est où le plus souvent, technique ou mental ?",
+    "angle": "Coach de closers"
+   },
+   {
+    "name": "Florent Bardout",
+    "title": "Cofondateur de Disruptive Closing, structure des organisations commerciales pour les dirigeants et accompagne les commerciaux dans leur carriere. Paris",
+    "url": "https://www.linkedin.com/in/florentbardout/",
+    "vanity": "florentbardout",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Florent, merci d'avoir accepté. Disruptive Closing adresse les dirigeants et les commerciaux en même temps, ce qui est inhabituel vu que les deux côtés n'ont pas toujours les mêmes intérêts. Tu tiens les deux comment sans que ça tire dans des directions opposées ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Clemence Bourel",
+    "title": "Head of Sales, ex Head of Growth Sales and Marketing chez Reacteev. Formation IMC Krems, Autriche",
+    "url": "https://www.linkedin.com/in/clemencebourel/",
+    "vanity": "clemencebourel",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Clémence, merci pour la connexion. Tu es passée du growth au sales chez Reacteev, dans ce sens là et pas l'inverse, ce qui doit donner une lecture assez différente du pipe. C'était un choix ou une opportunité ?",
+    "angle": "Head of sales"
+   },
+   {
+    "name": "Boni Yai",
+    "title": "Setter, genere +20 RDV qualifies par mois pour des independants sans budget publicitaire. Ancien technicien superieur en mecanique. Cotonou, Benin",
+    "url": "https://www.linkedin.com/in/boni-yai-75332b2a2/",
+    "vanity": "boni-yai-75332b2a2",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Boni, merci pour la connexion. Technicien en mécanique avant de passer au setting, c'est un écart de départ assez fort, et tu tiens 20 RDV qualifiés par mois sans un euro de pub. La rigueur du premier métier t'a servi là dedans ?",
+    "angle": "Setter"
+   },
+   {
+    "name": "Anthony Crowther-Alwyn",
+    "title": "Head of sales and strategy chez SAD Marketing, formation ingenieur UTC. Lille",
+    "url": "https://www.linkedin.com/in/anthony-crowther-alwyn/",
+    "vanity": "anthony-crowther-alwyn",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Anthony, merci d'avoir accepté. Un parcours UTC qui finit head of sales, c'est un virage que je ne croise pas souvent, et l'approche ingénieur doit changer pas mal ta façon de structurer une équipe. C'est un atout ou tu as dû désapprendre des choses ?",
+    "angle": "Head of sales"
+   },
+   {
+    "name": "Alexandre Berthon",
+    "title": "Recrute, forme et place des sales teams (setters/SDR/closers) chez ses clients, dont des createurs de contenu. Chez Cryptent depuis 2024",
+    "url": "https://www.linkedin.com/in/alexandre-berthon-setter/",
+    "vanity": "alexandre-berthon-setter",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Alexandre, merci d'avoir accepté. Tu places des sales teams entières là où la plupart se contentent de former des closers isolés, et deux ans chez Cryptent là dessus ça doit donner une vision assez nette du marché. C'est quoi le profil que tu as le plus de mal à trouver en ce moment ?",
+    "angle": "Dirige une structure"
+   },
+   {
+    "name": "Ahmed Biaggini",
+    "title": "StarsBridgesSystem, infrastructure commerciale et marketing pour entrepreneurs musulmans visant 150K/mois. Paris",
+    "url": "https://www.linkedin.com/in/ahmed-biaggini-3687151a6/",
+    "vanity": "ahmed-biaggini-3687151a6",
+    "date": "2026-08-12",
+    "status": "pending",
+    "opener": "Salut Ahmed, merci pour la connexion. Tu t'adresses explicitement aux entrepreneurs musulmans, c'est une position rare à assumer publiquement dans le business francophone. Je suis musulman aussi et cette question du cadre me travaille pas mal, ça change quoi concrètement dans ta façon d'accompagner ?",
+    "angle": "Dirige une structure"
+   },
    {
     "name": "Zak Loubachria",
     "title": "Coach en closing et business development, +12 ans sur marchés francophones, fait convertir 34 à 50% des leads pour infopreneurs",
@@ -2518,7 +2718,7 @@
     "url": "https://www.linkedin.com/in/kevin-gohin-338600a6/",
     "vanity": "kevin-gohin-338600a6",
     "date": "2026-08-11",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Kevin, tu es passé du dev business dans la post production à décortiquer le cold call, c'est un virage inattendu. C'est l'outbound qui t'a rattrapé ou tu l'as choisi ?",
     "angle": "Passé de la post production au cold call, virage inattendu"
    },
@@ -2548,7 +2748,7 @@
     "url": "https://www.linkedin.com/in/issam-sidi-yakoub-closer/",
     "vanity": "issam-sidi-yakoub-closer",
     "date": "2026-08-11",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Issam, closer en français et en arabe sur l'Europe, le Maghreb et le Golfe, ça veut dire trois rapports à la négociation complètement différents. Lequel des trois t'a demandé le plus d'adaptation ?",
     "angle": "Vend en français et en arabe sur trois zones culturelles distinctes"
    },
@@ -2598,7 +2798,7 @@
     "url": "https://www.linkedin.com/in/christofer-pl%C3%B6n-constellation/",
     "vanity": "christofer-pl%C3%B6n-constellation",
     "date": "2026-08-11",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Christofer, ce qui m'a accroché chez toi c'est le suivi 30 à 60 jours après le placement, la plupart s'arrêtent au matching et disparaissent. C'est venu d'un placement qui avait mal tourné ?",
     "angle": "Le suivi 30 à 60 jours après le placement, là où les autres s'arrêtent au matching"
    },
@@ -2728,7 +2928,7 @@
     "url": "https://www.linkedin.com/in/jerome-lain-43b345232/",
     "vanity": "jerome-lain-43b345232",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Jérôme, merci pour la connexion. 15 ans de commercial avant de passer indépendant, ça change complètement la façon de mener un appel consultatif. Tu as gardé des réflexes du terrain que le closing moderne a un peu perdus ?",
     "angle": "15 ans de commercial avant l'independance"
    },
@@ -2758,7 +2958,7 @@
     "url": "https://www.linkedin.com/in/gaetanmj/",
     "vanity": "gaetanmj",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Gaëtan, merci pour la connexion. Ton post sur les heures passées à rédiger des fiches produits avant de trouver comment automatiser, c'est le genre de tâche que tout le monde repousse au lieu de la régler. Tu es toujours sur l'e-commerce aujourd'hui ou tu as basculé sur autre chose ?",
     "angle": "Son post sur les fiches produits e-commerce"
    },
@@ -2808,7 +3008,7 @@
     "url": "https://www.linkedin.com/in/clarck-milongo-155b8b294/",
     "vanity": "clarck-milongo-155b8b294",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Clarck, merci pour la connexion. Se lancer dans le closing pour des infopreneurs en sortant de formation, tout se joue sur les premiers appels. Tu as déjà décroché une première mission ou tu es encore en phase de prospection ?",
     "angle": "Debut de parcours closing infopreneurs"
    },
@@ -2828,7 +3028,7 @@
     "url": "https://www.linkedin.com/in/bamaye-savane/",
     "vanity": "bamaye-savane",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Bamaye, merci pour la connexion. Ton angle sur le fait que le talent ne suffit pas et qu'il faut un système, c'est ce qui sépare l'expert qui plafonne de celui qui construit vraiment une boîte. Après plus de 100 formateurs accompagnés, c'est quoi le blocage qui revient le plus souvent ?",
     "angle": "100 formateurs accompagnes, le systeme avant le talent"
    },
@@ -4088,7 +4288,7 @@
     "url": "https://www.linkedin.com/in/najoua-fouillat-92b50a305/",
     "vanity": "najoua-fouillat-92b50a305",
     "date": "2026-07-25",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Najoua, merci pour la connexion. Tu es sur de l'inbound B2C, donc des gens qui viennent d'eux-mêmes mais qui décident avec leur propre argent. Le taux de closing est vraiment plus haut qu'en B2B selon toi ?",
     "angle": "Closer solo"
    },
