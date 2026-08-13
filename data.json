@@ -2421,24 +2421,224 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-12",
-  "sent": 200,
-  "accepted": 97,
-  "rate": 48,
+  "updated": "2026-08-13",
+  "sent": 220,
+  "accepted": 110,
+  "rate": 50,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
-   "2026-W33": 60
+   "2026-W33": 80
   },
   "contacts": [
+   {
+    "name": "Timothée Fortin",
+    "title": "Scalingflow.io, agence d'ads DFY au pourcentage pour business high-ticket, +80 business scalés. Paris",
+    "url": "https://www.linkedin.com/in/timotheefortin/",
+    "vanity": "timotheefortin",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Timothée, une agence d'ads payée au pourcentage, ça veut dire manger le risque avec le client. Je bosse en commission pure aussi donc je vois bien ce que ça implique. T'as eu du mal à imposer ce modèle au début ?",
+    "angle": "Agence d'ads au pourcentage"
+   },
+   {
+    "name": "Rémi Prepa",
+    "title": "Ton Head of Sales, fondateur d'Operya. Structure, recrute et manage ton pôle vente avec pilotage par la DATA. Bali",
+    "url": "https://www.linkedin.com/in/remiprepa/",
+    "vanity": "remiprepa",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Rémi, j'ai vu que tu bossais depuis Bali. Je suis aussi en remote total, je rentre d'un run de deux mois entre Kuala Lumpur et Hainan. T'y es installé pour de bon ou tu bouges régulièrement ?",
+    "angle": "Nomade / Bali"
+   },
+   {
+    "name": "Romain Barre",
+    "title": "Fondateur Playlift. Offre high-ticket + équipe de vente 100% à la performance, +10M€ vendus",
+    "url": "https://www.linkedin.com/in/rombarre/",
+    "vanity": "rombarre",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Romain, le 100% à la performance c'est assez rare pour être noté, je bosse aussi en commission pure de mon côté. Ça change tout dans le rapport avec le client je trouve. T'as commencé direct comme ça ou t'es passé par du retainer avant ?",
+    "angle": "Modèle 100% performance"
+   },
+   {
+    "name": "Nicolas Plumier",
+    "title": "Marketing Partner pour infopreneurs, du setting au closing en passant par le copy. Angers",
+    "url": "https://www.linkedin.com/in/nicolas-plumier/",
+    "vanity": "nicolas-plumier",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Nicolas, ton idée que le problème c'est le système et pas la taille de l'équipe, je la partage complètement. Beaucoup recrutent pour masquer un process bancal. Tu arrives à faire passer ce message en amont ou tes clients arrivent déjà convaincus ?",
+    "angle": "Système avant équipe"
+   },
+   {
+    "name": "Nicolas Kern",
+    "title": "Expert tunnels de vente, business en ligne et scaling high ticket depuis 2014. Paris",
+    "url": "https://www.linkedin.com/in/growthmeup/",
+    "vanity": "growthmeup",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Nicolas, être dans le business en ligne depuis 2014, ça veut dire avoir vu passer trois ou quatre cycles complets du marché. C'est rare de croiser cette ancienneté. Qu'est-ce qui a le plus changé selon toi entre l'époque et aujourd'hui ?",
+    "angle": "Dans le jeu depuis 2014"
+   },
+   {
+    "name": "Marie-Christine Guilhou",
+    "title": "Business Developer, formatrice. Développe les équipes commerciales et recrute les talents. Bordeaux",
+    "url": "https://www.linkedin.com/in/guilhou-mc/",
+    "vanity": "guilhou-mc",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Bonjour Marie-Christine, j'ai vu que vous recrutiez en ce moment tout en formant des équipes commerciales à côté. Recruter pour soi quand on passe déjà ses journées à recruter pour les autres, ça doit faire un drôle d'effet. Vous cherchez quel profil exactement ?",
+    "angle": "Recrute pendant qu'elle forme"
+   },
+   {
+    "name": "Margaux Herve",
+    "title": "Head of Sales externalisée, Performance Sales, +10 ans B2B, ex-Spendesk. Rennes",
+    "url": "https://www.linkedin.com/in/margaux-herv%C3%A9x/",
+    "vanity": "margaux-herv%C3%A9x",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Margaux, passer de Spendesk à un modèle de Head of Sales externalisée, c'est un vrai saut. Je suis curieux de ce qui a déclenché le move. C'est le format indépendant qui t'attirait ou plutôt la variété des boîtes ?",
+    "angle": "Sortie de Spendesk vers l'externalisé"
+   },
+   {
+    "name": "Lucas Cureau",
+    "title": "Professionnalise et gère ton pôle vente de A à Z. 4M encaissés par mois avec ses équipes. Paris",
+    "url": "https://www.linkedin.com/in/lucas-cureau-6b3ba6243/",
+    "vanity": "lucas-cureau-6b3ba6243",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Lucas, 4M encaissés par mois avec tes équipes en deux ans, la montée a été rapide. Ce qui m'intrigue le plus c'est de tenir plusieurs pôles en parallèle. Tu en gères combien en simultané aujourd'hui ?",
+    "angle": "Dirige plusieurs pôles vente"
+   },
+   {
+    "name": "Luc Saudemont",
+    "title": "Head of Setter. Stratégie, recrutement du setter, process, KPI. Groupe de +200 setters formés",
+    "url": "https://www.linkedin.com/in/luc-saudemont/",
+    "vanity": "luc-saudemont",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Luc, un groupe WhatsApp avec plus de 200 setters formés, ça ne se construit pas en deux mois. Je suis curieux de savoir comment ça vit au quotidien. C'est né de ton accompagnement ou tu l'avais lancé avant ?",
+    "angle": "Communauté 200 setters"
+   },
+   {
+    "name": "Jeremy Kohlmann",
+    "title": "Fondateur Kohlmann Publishing et Pation.io. +10M€ d'offres high-ticket, +3000 entrepreneurs. Paris",
+    "url": "https://www.linkedin.com/in/jeremy-kohlmann-7028401b/",
+    "vanity": "jeremy-kohlmann-7028401b",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Jeremy, mener Kohlmann Publishing et Pation.io en parallèle, ce sont deux métiers assez différents à porter en même temps. Je suis moi-même entre de l'opérationnel client et un SaaS en cofondation, donc le sujet me parle. Tu arrives à cloisonner les deux ou ça déborde ?",
+    "angle": "Publishing + SaaS en parallèle"
+   },
+   {
+    "name": "Jed Jday",
+    "title": "OdySales. Coach sales B2B, expert prospection et cold call, forme commerciaux et dirigeants. Paris",
+    "url": "https://www.linkedin.com/in/jed-jday-24b891172/",
+    "vanity": "jed-jday-24b891172",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Jed, défendre le cold call en 2026 pendant que tout le monde jure par l'automatisation, j'aime bien. Je fais beaucoup de cold outreach de mon côté et le contact direct reste imbattable. Tu formes surtout des équipes en interne ou des indépendants ?",
+    "angle": "Défend le cold call"
+   },
+   {
+    "name": "Jean-Philippe Ablo",
+    "title": "Ecopreneur. Performance du département commercial, psychologie de la vente et neurovente. Paris",
+    "url": "https://www.linkedin.com/in/jean-philippe-ablo-0028656b/",
+    "vanity": "jean-philippe-ablo-0028656b",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Jean-Philippe, la partie psychologie de la vente dans ton approche m'a accroché, c'est un angle que je creuse pas mal en ce moment. La plupart s'arrêtent aux scripts. T'es venu à la neurovente par la pratique ou par la lecture ?",
+    "angle": "Psychologie de la vente"
+   },
+   {
+    "name": "Hamza Issa",
+    "title": "Scale Partner (Upstairs). Débloque coachs et infopreneurs coincés à leur palier, acquisition + conversion + pilotage",
+    "url": "https://www.linkedin.com/in/hamza-scale-partner/",
+    "vanity": "hamza-scale-partner",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Hamza, ton positionnement en négatif, ni agence ni consultant ni freelance growth, c'est ce qui m'a fait m'arrêter sur ton profil. J'ai le même réflexe de vouloir sortir du lot. Le terme Scale Partner, tu l'as choisi ou ce sont tes clients qui te l'ont collé ?",
+    "angle": "Positionnement en négatif"
+   },
+   {
+    "name": "Elise Colas",
+    "title": "Founder & Head of Sales, Sales Signature. Structure le département commercial d'infopreneurs FR 30-100K/mois. Dubaï",
+    "url": "https://www.linkedin.com/in/elise-colas1/",
+    "vanity": "elise-colas1",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Elise, gérer le marché infopreneur francophone depuis Dubaï, le décalage doit être sportif sur les calls. Je bosse aussi avec des infopreneurs FR mais depuis l'Asie, donc je vois bien le problème. Tu t'es calée sur les horaires France ou tu as imposé les tiens ?",
+    "angle": "Dubaï, marché FR"
+   },
+   {
+    "name": "Elias Sislay",
+    "title": "Construit des écosystèmes high-ticket pour coachs en ligne, +9M€ générés. Barcelone",
+    "url": "https://www.linkedin.com/in/elias-sislay/",
+    "vanity": "elias-sislay",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Elias, j'ai vu que tu opérais depuis Barcelone. Je suis nomade de mon côté, je rentre tout juste d'un passage entre la Malaisie et la Chine. T'es parti là-bas pour le cadre de travail ou c'est arrivé un peu par hasard ?",
+    "angle": "Expat Barcelone"
+   },
+   {
+    "name": "Carl Wybo",
+    "title": "Dolphin Society. Partners with personal brands to scale high-ticket offers with paid ads. Maurice",
+    "url": "https://www.linkedin.com/in/carl-wybo-57a4441b3/",
+    "vanity": "carl-wybo-57a4441b3",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Hey Carl, saw you're running things from Mauritius. I'm fully remote too, just wrapped two months between Kuala Lumpur and Hainan. Did you move there for the setup or was it more of an accident?",
+    "angle": "Remote / Mauritius (anglophone)"
+   },
+   {
+    "name": "Brayan Wallace",
+    "title": "Take Care Consulting. Aide coachs et infopreneurs à x2/x10 leur CA via la LTV, +2M générés",
+    "url": "https://www.linkedin.com/in/brayanwallace/",
+    "vanity": "brayanwallace",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Brayan, travailler la LTV plutôt que rajouter de l'acquisition, c'est le sujet dont personne ne veut s'occuper alors que c'est là qu'est l'argent. J'ai le même biais côté back-end. Tu attaques ça par l'offre ou par la rétention pure ?",
+    "angle": "Angle LTV plutôt qu'acquisition"
+   },
+   {
+    "name": "Anthony Brunet",
+    "title": "Head of Sales @ Striker Agency, freelance sales consultant, investisseur. Paris",
+    "url": "https://www.linkedin.com/in/anthonybrunet/",
+    "vanity": "anthonybrunet",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Anthony, entre Striker, le consulting freelance et l'investissement, tu portes trois casquettes en même temps. Je suis dans la même logique et le vrai sujet reste l'arbitrage du temps. Tu protèges comment tes blocs de deep work ?",
+    "angle": "Trois casquettes en parallèle"
+   },
+   {
+    "name": "Alexis Pinotie",
+    "title": "Manager d'équipe commerciale B2B, 10 commerciaux. Fondateur NovaStratéo. Strasbourg",
+    "url": "https://www.linkedin.com/in/alexispinotie/",
+    "vanity": "alexispinotie",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Alexis, manager 10 commerciaux tout en gardant du coaching terrain, ça laisse peu de place au reste. Je me demande comment tu tiens la cadence sur le suivi individuel. Tu fais un point hebdo avec chacun ou tu passes par tes seniors ?",
+    "angle": "Manage 10 commerciaux"
+   },
+   {
+    "name": "Alexandre Raymond",
+    "title": "Cofondateur Ellyzia. Scale les business d'accompagnement high-ticket en 90 jours. Montpellier",
+    "url": "https://www.linkedin.com/in/alexandre-raymond-b9b754171/",
+    "vanity": "alexandre-raymond-b9b754171",
+    "date": "2026-08-13",
+    "status": "pending",
+    "opener": "Salut Alexandre, un accompagnement calé sur 90 jours pile, c'est tranché quand la plupart partent sur du récurrent ouvert. Ça oblige à livrer vite. C'est venu d'un constat terrain ou c'était le format dès le départ ?",
+    "angle": "Format 90 jours"
+   },
    {
     "name": "Wassim Oulad-Akouz",
     "title": "Head of Sales chez Seeds Agency. Bordeaux",
     "url": "https://www.linkedin.com/in/wassim-oulad-akouz-2b4600243/",
     "vanity": "wassim-oulad-akouz-2b4600243",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Wassim, merci pour la connexion. Tu diriges le sales chez Seeds depuis Bordeaux, loin de l'aspirateur parisien, et tu publies régulièrement. La distance c'est un avantage ou il faut compenser sur le réseau ?",
     "angle": "Head of sales"
    },
@@ -2458,7 +2658,7 @@
     "url": "https://www.linkedin.com/in/tim%C3%A9o-nivard-b75bb0314/",
     "vanity": "tim%C3%A9o-nivard-b75bb0314",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Timéo, merci pour la connexion. Ta promesse c'est de sortir le dirigeant de l'opérationnel, pas de lui vendre des leads en plus, et 28 boîtes accompagnées c'est déjà un vrai échantillon. Ils résistent au moment de lâcher les appels de vente, ou ils sont soulagés ?",
     "angle": "Dirige une structure"
    },
@@ -2468,7 +2668,7 @@
     "url": "https://www.linkedin.com/in/sylvie-segond-154109a3/",
     "vanity": "sylvie-segond-154109a3",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Sylvie, merci d'avoir accepté. Ton angle sur ce qui se joue vraiment dans la tête du prospect pendant un call sort complètement du discours technique habituel sur le closing. C'est venu de ton parcours avant The Inner Closing ?",
     "angle": "Coach de closers"
    },
@@ -2528,7 +2728,7 @@
     "url": "https://www.linkedin.com/in/provang-jonathan-73a91316b/",
     "vanity": "provang-jonathan-73a91316b",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Jonathan, merci d'avoir accepté. Tu mets l'analyse d'appels au même niveau que le closing dans ton titre, ce n'est pas courant, la plupart s'arrêtent au script. Tu les réécoutes comment, en direct ou après coup ?",
     "angle": "Analyse d'appels"
    },
@@ -2538,7 +2738,7 @@
     "url": "https://www.linkedin.com/in/jessy-besan%C3%A7on-5051a2168/",
     "vanity": "jessy-besan%C3%A7on-5051a2168",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Jessy, merci d'avoir accepté. Tu es passé de closer à une équipe de 24, c'est exactement là où la plupart calent, manager des gens qui vendent quand on vendait soi même c'est un autre métier. Le plus dur ça a été le recrutement ou le suivi une fois en poste ?",
     "angle": "Dirige une structure"
    },
@@ -2568,7 +2768,7 @@
     "url": "https://www.linkedin.com/in/gwenael-jegou/",
     "vanity": "gwenael-jegou",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Gwénaël, merci pour la connexion. Tu t'adresses aux closers qui plafonnent plutôt qu'aux débutants, c'est un public bien plus dur à aider parce qu'ils croient déjà savoir. Le blocage il est où le plus souvent, technique ou mental ?",
     "angle": "Coach de closers"
    },
@@ -2578,7 +2778,7 @@
     "url": "https://www.linkedin.com/in/florentbardout/",
     "vanity": "florentbardout",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Florent, merci d'avoir accepté. Disruptive Closing adresse les dirigeants et les commerciaux en même temps, ce qui est inhabituel vu que les deux côtés n'ont pas toujours les mêmes intérêts. Tu tiens les deux comment sans que ça tire dans des directions opposées ?",
     "angle": "Dirige une structure"
    },
@@ -2588,7 +2788,7 @@
     "url": "https://www.linkedin.com/in/clemencebourel/",
     "vanity": "clemencebourel",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Clémence, merci pour la connexion. Tu es passée du growth au sales chez Reacteev, dans ce sens là et pas l'inverse, ce qui doit donner une lecture assez différente du pipe. C'était un choix ou une opportunité ?",
     "angle": "Head of sales"
    },
@@ -2628,7 +2828,7 @@
     "url": "https://www.linkedin.com/in/ahmed-biaggini-3687151a6/",
     "vanity": "ahmed-biaggini-3687151a6",
     "date": "2026-08-12",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Ahmed, merci pour la connexion. Tu t'adresses explicitement aux entrepreneurs musulmans, c'est une position rare à assumer publiquement dans le business francophone. Je suis musulman aussi et cette question du cadre me travaille pas mal, ça change quoi concrètement dans ta façon d'accompagner ?",
     "angle": "Dirige une structure"
    },
@@ -2698,7 +2898,7 @@
     "url": "https://www.linkedin.com/in/pierre-olivier-lair/",
     "vanity": "pierre-olivier-lair",
     "date": "2026-08-11",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Pierre-Olivier, entre la Sorbonne, Nathan et la formation en ligne premium tu navigues entre deux mondes qui se regardent souvent de travers. L'académique t'a aidé ou freiné pour vendre en ligne ?",
     "angle": "Navigue entre le monde académique et l'infoproduit"
    },
@@ -2788,7 +2988,7 @@
     "url": "https://www.linkedin.com/in/christophe-m-a-vander-donckt-407bb0297/",
     "vanity": "christophe-m-a-vander-donckt-407bb0297",
     "date": "2026-08-11",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Christophe, l'expression décisions engageantes en dit plus long que le mot closing, ça remet la responsabilité du côté du prospect. Après 20 ans, c'est ce qui a le plus changé dans ta façon de vendre ?",
     "angle": "L'expression décisions engageantes, qui remet la responsabilité côté prospect"
    },
@@ -3398,7 +3598,7 @@
     "url": "https://www.linkedin.com/in/fabien-giraudon-b50838307/",
     "vanity": "fabien-giraudon-b50838307",
     "date": "2026-08-06",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Fabien, les deux chiffres côte à côte sur ton profil sont parlants, 2,5M closés toi même et 9M en dirigeant des équipes. Peu de bons closers réussissent vraiment ce passage. C'était quoi le plus dur quand tu es passé de l'un à l'autre ?",
     "angle": "Passage de closer solo à dirigeant d'équipes, chiffré"
    },
@@ -3478,7 +3678,7 @@
     "url": "https://www.linkedin.com/in/mathieu-chevry-7aa356280/",
     "vanity": "mathieu-chevry-7aa356280",
     "date": "2026-08-05",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Mathieu, +3M closés avant de passer côté performance des équipes, tu as donc vu les deux côtés du miroir. Ce qui me rend curieux c'est le déclic. C'est l'ennui du terrain ou l'envie d'avoir plus d'impact qui t'a fait basculer ?",
     "angle": "+3M closés, se concentre sur la performance commerciale des business high ticket"
    },
