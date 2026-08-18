@@ -2421,18 +2421,218 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-17",
-  "sent": 260,
-  "accepted": 137,
-  "rate": 53,
+  "updated": "2026-08-18",
+  "sent": 280,
+  "accepted": 150,
+  "rate": 54,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
    "2026-W33": 100,
-   "2026-W34": 20
+   "2026-W34": 40
   },
   "contacts": [
+   {
+    "name": "William Hourson",
+    "title": "Co-Fondateur & CEO de Drakkar Conseil | Pôle commercial externalisé et formation de commerciaux",
+    "url": "https://www.linkedin.com/in/william-hourson/",
+    "vanity": "william-hourson",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut William, externaliser le pôle commercial et former les commerciaux en interne, ce sont presque deux promesses opposées. Comment tu choisis laquelle proposer quand un dirigeant te contacte ?",
+    "angle": "Deux promesses opposées : externaliser ou former en interne"
+   },
+   {
+    "name": "Vincent Dejean",
+    "title": "Head of Sales PME B2B - CRO Externalisé - IA & Automatisations commerciales | Fondateur @Willnow | Variable sur résultats",
+    "url": "https://www.linkedin.com/in/vincentdejean-willnow/",
+    "vanity": "vincentdejean-willnow",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Vincent, bosser en variable sur résultats en tant que Head of Sales externalisé, ça demande une sacrée confiance dans ton process. T'as toujours travaillé comme ça ou t'as basculé en cours de route ?",
+    "angle": "Il travaille 100 % en variable sur résultats"
+   },
+   {
+    "name": "Théo Jeannin",
+    "title": "Sales Partner | Je récupère les ventes que ton marketing génère déjà | J'augmente ton chiffre d'affaires sans rien changer à ton acquisition",
+    "url": "https://www.linkedin.com/in/theojeannin/",
+    "vanity": "theojeannin",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Théo, ton angle est clair : aller chercher les ventes déjà générées plutôt que d'en créer des nouvelles. Tu tombes souvent sur des boîtes qui croient avoir un problème d'acquisition alors que non ?",
+    "angle": "Son angle : récupérer l'existant plutôt que créer du nouveau"
+   },
+   {
+    "name": "Thomas Durand",
+    "title": "Je construis ton équipe commerciale, de la prospection au closing",
+    "url": "https://www.linkedin.com/in/thomas-durand-warmr/",
+    "vanity": "thomas-durand-warmr",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Thomas, tu couvres toute la chaîne, de la prospection au closing, alors que la plupart se spécialisent d'un côté ou de l'autre. C'est quoi le maillon qui casse le plus souvent chez tes clients ?",
+    "angle": "Il couvre toute la chaîne au lieu de se spécialiser"
+   },
+   {
+    "name": "Taya Shtayn",
+    "title": "High Ticket Closing Expert, Sales Manager, Growth Partner | Multiple 7 Figures Generated",
+    "url": "https://www.linkedin.com/in/taya-shtayn-234b60265/",
+    "vanity": "taya-shtayn-234b60265",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Hey Taya, you went from setter to closer to sales manager, which is the full path most people never finish. Which jump was the hardest for you?",
+    "angle": "Setter puis closer puis sales manager, le chemin complet"
+   },
+   {
+    "name": "Peter Borreggine",
+    "title": "Scaling High-Ticket Coaching, Consulting, Agency & Service Businesses | Sales Team Builder | Setter & Closer Team Optimization",
+    "url": "https://www.linkedin.com/in/peter-borreggine/",
+    "vanity": "peter-borreggine",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Hey Peter, most people either build sales teams or optimize existing ones, you seem to do both. When you step into an existing setter/closer team, what usually turns out to be broken first?",
+    "angle": "Builds and optimizes setter/closer teams"
+   },
+   {
+    "name": "Mohammed Ali El Hadaoui",
+    "title": "Fondateur Sales Influence | Nous construisons et pilotons des pôles vente qui scalent | +80 M€ générés depuis 2022 | Fondateur de l'École Closing Influence",
+    "url": "https://www.linkedin.com/in/mohammed-ali-el-hadaoui-b6ba4b11a/",
+    "vanity": "mohammed-ali-el-hadaoui-b6ba4b11a",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Mohammed Ali, j'ai vu que t'as monté Sales Influence et l'École Closing Influence en parallèle. Construire les pôles vente des autres et former la relève en même temps, c'est deux métiers assez différents. Lequel des deux te prend le plus d'énergie en ce moment ?",
+    "angle": "Fait tourner une agence de pôles vente et une école de closing en parallèle"
+   },
+   {
+    "name": "Jonathan Barrat",
+    "title": "Mentor closing 1:1 | Traiter la cause profonde des objections, détecter les schémas bloquants et les mécaniques de décision",
+    "url": "https://www.linkedin.com/in/jonathan-barrat-544699357/",
+    "vanity": "jonathan-barrat-544699357",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Jonathan, ta phrase sur les gens qui récitent des réponses aux objections m'a fait sourire, c'est exactement ce qu'on entend dans la majorité des calls. Tu arrives à leur faire désapprendre ça facilement ?",
+    "angle": "Sa punchline sur les closers qui récitent des réponses aux objections"
+   },
+   {
+    "name": "Jean-Luc Bouysset",
+    "title": "Head of Sales & High Ticket Closer chez Indépendant",
+    "url": "https://www.linkedin.com/in/jeanlucbouysset/",
+    "vanity": "jeanlucbouysset",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Jean-Luc, tu portes les deux casquettes, Head of Sales et closer. T'arrives à garder du temps en call ou le management prend tout ?",
+    "angle": "Il porte les deux casquettes en même temps"
+   },
+   {
+    "name": "Jack Roberts",
+    "title": "Founder @ iCloseCapital | 300+ Biz Owners Trained On High Ticket Sales",
+    "url": "https://www.linkedin.com/in/jack-roberts-8029a344/",
+    "vanity": "jack-roberts-8029a344",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Hey Jack, training business owners on high-ticket sales rather than training closers is a different bet. Do the owners actually stay in the seat, or do they hand it off once they get good?",
+    "angle": "Trains owners rather than closers"
+   },
+   {
+    "name": "Inès Mira",
+    "title": "Expertise Setting & Closing Inbound B2C | J'aide les infopreneurs santé & bien-être à développer et scaler leur business, ancienne infirmière",
+    "url": "https://www.linkedin.com/in/in%C3%A8s-mira-358849148/",
+    "vanity": "in%C3%A8s-mira-358849148",
+    "date": "2026-08-18",
+    "status": "accepted",
+    "opener": "Salut Inès, passer d'infirmière au closing pour des infopreneurs santé, c'est une reconversion qui a du sens sur le papier. Sur le terrain, l'écoute soignante ça t'a vraiment servi en call ?",
+    "angle": "Reconversion infirmière vers le closing santé"
+   },
+   {
+    "name": "Houraye Dieye",
+    "title": "Stratège commerciale (+17 ans d'exp) | Conférencière TEDx | Auteure « Le Jeu de la Vente » | Accompagne dirigeants, experts & équipes sales",
+    "url": "https://www.linkedin.com/in/houraye/",
+    "vanity": "houraye",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Houraye, j'ai vu que t'as écrit Le Jeu de la Vente. Écrire un livre après 17 ans de terrain, c'était pour figer ta méthode ou pour la confronter ?",
+    "angle": "Elle a écrit un livre après 17 ans de terrain"
+   },
+   {
+    "name": "Geoffrey Prosec",
+    "title": "Commercial freelance / Closer High Ticket | Closer High Ticket et head of sales chez TAÏG FIT",
+    "url": "https://www.linkedin.com/in/geoffrey-prosec-a7686b11a/",
+    "vanity": "geoffrey-prosec-a7686b11a",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Geoffrey, closer sur du fitness en ligne, c'est un marché où les leads arrivent très émotionnels. Tu trouves ça plus facile ou plus dur à closer que du B2B ?",
+    "angle": "Il close sur du fitness en ligne"
+   },
+   {
+    "name": "Geoffrey Jacqueau",
+    "title": "De setter à Head of Sales. Je mets en relation setters/closers avec infopreneurs",
+    "url": "https://www.linkedin.com/in/geoffrey-jacqueau/",
+    "vanity": "geoffrey-jacqueau",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Geoffrey, passer de setter à Head of Sales puis à la mise en relation, c'est un parcours qu'on voit peu. C'est le terrain qui t'a poussé vers le matching ou c'était prévu depuis le début ?",
+    "angle": "Parcours setter puis Head of Sales puis matching"
+   },
+   {
+    "name": "Cindy Gesell",
+    "title": "Directrice des opérations | Team leader équipe de closers",
+    "url": "https://www.linkedin.com/in/cindygesell/",
+    "vanity": "cindygesell",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Cindy, diriger une équipe de closers depuis la Corse, c'est pas le setup le plus courant. Le remote total ça marche bien pour toi ou ça complique le management ?",
+    "angle": "Manage une équipe de closers depuis la Corse"
+   },
+   {
+    "name": "Chirine M.",
+    "title": "Head of Sales & High Ticket Closer | 1,5M€ généré en 6 mois | Infoprenariat",
+    "url": "https://www.linkedin.com/in/chirine-m-a13a63393/",
+    "vanity": "chirine-m-a13a63393",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Chirine, 1,5M€ en six mois sur de l'infoprenariat, c'est un rythme assez violent. C'était sur une seule offre ou tu jonglais entre plusieurs clients ?",
+    "angle": "1,5M€ en six mois sur de l'infoprenariat"
+   },
+   {
+    "name": "Charly Delaporte",
+    "title": "Coach & Mentor pour Setters | De setter exécutant à business strategist | Accès missions premium & structuration de pôles setting",
+    "url": "https://www.linkedin.com/in/charly-delaporte-a576b4156/",
+    "vanity": "charly-delaporte-a576b4156",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Charly, ta ligne « de setter exécutant à business strategist » résume bien ce qui bloque la plupart des setters. Selon toi c'est un problème de compétence ou juste de posture ?",
+    "angle": "Sa formule sur le passage d'exécutant à stratège"
+   },
+   {
+    "name": "Axel Sophie",
+    "title": "J'aide les infopreneurs à scaler leur pôle commercial en y intégrant des systèmes et une équipe de Top Sales (Closers, Setters)",
+    "url": "https://www.linkedin.com/in/frenchcloser/",
+    "vanity": "frenchcloser",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Axel, ton positionnement m'a parlé : tu mets le système avant les closers, c'est assez rare dans ce milieu. Sur tes missions tu commences par quoi en général, le système ou le recrutement ?",
+    "angle": "Il met le système avant les closers, c'est rare"
+   },
+   {
+    "name": "Audrey Le Dantec",
+    "title": "Je forme vos commerciaux | Cold Call > Négo > Closing | +20 ans d'XP en vente | +500 Play'r formés",
+    "url": "https://www.linkedin.com/in/audrey-le-dantec/",
+    "vanity": "audrey-le-dantec",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Salut Audrey, +500 commerciaux formés et tu les appelles encore des Play'r, j'aime bien l'idée. Après 20 ans de terrain, c'est quoi la partie qu'ils ratent le plus, le cold call ou le closing ?",
+    "angle": "Elle appelle ses élèves des « Play'r »"
+   },
+   {
+    "name": "Adam Cerra",
+    "title": "Author, CEO & Founder DFY High-Ticket Closer agency & Closer Academy",
+    "url": "https://www.linkedin.com/in/adamcerra/",
+    "vanity": "adamcerra",
+    "date": "2026-08-18",
+    "status": "pending",
+    "opener": "Hey Adam, running a DFY closing agency and a closer academy at the same time is an interesting mix, one probably feeds the other. Do most of your academy grads end up placed through the agency?",
+    "angle": "Runs both a DFY agency and a closer academy"
+   },
    {
     "name": "Youcef H",
     "title": "Business Developer, vente & closing high ticket, partenaire de croissance des entrepreneurs, Paris",
@@ -2519,7 +2719,7 @@
     "url": "https://www.linkedin.com/in/morgan-ocanafreelance/",
     "vanity": "morgan-ocanafreelance",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Morgan, merci d'avoir accepté. Cibler les freelances qui vendent des prestas à 500-2000 euros plutôt que le high ticket classique, c'est un marché énorme que personne n'adresse. Ils viennent via ton contenu ou tu vas les chercher ?",
     "angle": "Aide les freelances à closer 500-2000€"
    },
@@ -2539,7 +2739,7 @@
     "url": "https://www.linkedin.com/in/mehdi-g-a57614306/",
     "vanity": "mehdi-g-a57614306",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Mehdi, merci pour la connexion. J'ai vu que tu fais setting et closing pour infopreneurs, être sur les deux bouts de la conversation ça change la lecture des prospects. Tu es en mission en ce moment ?",
     "angle": "Setter + closer infopreneurs"
    },
@@ -2579,7 +2779,7 @@
     "url": "https://www.linkedin.com/in/emilio---fernandez/",
     "vanity": "emilio---fernandez",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Emilio, merci pour la connexion. J'ai vu que tu es passé par Closing Influence, on croise pas mal de closers formés là-bas en ce moment. Tu closes sur quel type d'offres depuis ?",
     "angle": "Formé Closing Influence"
    },
@@ -2589,7 +2789,7 @@
     "url": "https://www.linkedin.com/in/davy-smith-684808245/",
     "vanity": "davy-smith-684808245",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Davy, merci pour la connexion. Monter une boite qui installe closers, process et tracking chez le client c'est un autre sport que le closing en solo. Tu recrutes tes closers en interne ou tu vas les chercher mission par mission ?",
     "angle": "Dirige une structure sales (SalesTeam Lab)"
    },
@@ -2619,7 +2819,7 @@
     "url": "https://www.linkedin.com/in/anneclosing/",
     "vanity": "anneclosing",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Anne, merci pour la connexion. Ta niche reconversion professionnelle est maligne, les prospects arrivent avec un vrai enjeu de vie donc les appels doivent être denses. C'est ce qui t'a attirée vers ce secteur ?",
     "angle": "Niche reconversion professionnelle"
    },
@@ -2639,7 +2839,7 @@
     "url": "https://www.linkedin.com/in/william-loriente/",
     "vanity": "william-loriente",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut William, merci pour la connexion. Prendre l'équipe de vente ET les outils métiers c'est un périmètre large, en général les clients veulent bien lâcher la prospection mais gardent le CRM. Ils te laissent vraiment la main sur les deux ?",
     "angle": "Externalise l'opérationnel commercial complet"
    },
@@ -2679,7 +2879,7 @@
     "url": "https://www.linkedin.com/in/simon-nabet-vente/",
     "vanity": "simon-nabet-vente",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Simon, merci d'avoir accepté. 882 000 calls sur une année ça donne une vision du cold call que presque personne n'a en France. À ce niveau-là, qu'est-ce qui fait vraiment la différence entre un commercial qui perce et un qui décroche ?",
     "angle": "882K cold calls sur une année"
    },
@@ -2709,7 +2909,7 @@
     "url": "https://www.linkedin.com/in/patrick-puginier-30324336a/",
     "vanity": "patrick-puginier-30324336a",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Patrick, merci d'avoir accepté. Ta méthode en 6 phases m'a interpellé, découper le closing en étapes nommées c'est ce qui manque à la plupart des formations qui restent au niveau du mindset. C'est né de ta propre expérience terrain ?",
     "angle": "Méthode découpée en 6 phases"
    },
@@ -2809,7 +3009,7 @@
     "url": "https://www.linkedin.com/in/anthony-vst-054211289/",
     "vanity": "anthony-vst-054211289",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Anthony, merci d'avoir accepté. Déployer des setters ET des closers chez le client c'est plus dur à tenir que de placer juste un closer, parce que la passation entre les deux casse vite. Tu les formes en interne avant de les envoyer ?",
     "angle": "Déploie des setters ET des closers"
    },
@@ -3449,7 +3649,7 @@
     "url": "https://www.linkedin.com/in/romain-nevo-a88431204/",
     "vanity": "romain-nevo-a88431204",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Romain, merci d'avoir accepté. Faire du paid à la fois pour des DNVB et pour des infopreneurs, ce sont deux logiques de rentabilité assez opposées. Tu trouves lequel des deux le plus dur à tenir dans la durée ?",
     "angle": "Paid media DNVB et infopreneurs"
    },
@@ -3459,7 +3659,7 @@
     "url": "https://www.linkedin.com/in/romain-agbo/",
     "vanity": "romain-agbo",
     "date": "2026-08-10",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Romain, merci pour la connexion. Ta logique de découper le cycle commercial en trois moments avec un outil sur chacun est plus claire que la plupart des stacks que je vois passer. Les équipes adoptent les trois ou il y en a toujours un qui saute ?",
     "angle": "Sa stack en trois moments du cycle commercial"
    },
@@ -4819,7 +5019,7 @@
     "url": "https://www.linkedin.com/in/stephane-pommier-wotawa-9b1258205/",
     "vanity": "stephane-pommier-wotawa-9b1258205",
     "date": "2026-07-25",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Stéphane, merci pour la connexion. Tu parles de conversion durable, ce qui suppose de regarder ce qui se passe après la vente, contrairement à la plupart. Tu as un retour sur les clients que tu as closés il y a six mois ?",
     "angle": "Closer solo"
    },
