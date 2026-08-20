@@ -2421,18 +2421,218 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-19",
-  "sent": 300,
-  "accepted": 161,
+  "updated": "2026-08-20",
+  "sent": 320,
+  "accepted": 172,
   "rate": 54,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
    "2026-W33": 100,
-   "2026-W34": 60
+   "2026-W34": 80
   },
   "contacts": [
+   {
+    "name": "Yoann Lerouxel",
+    "title": "Structure des offres a +2000EUR pour coachs et consultants | +87 business high-ticket",
+    "url": "https://www.linkedin.com/in/yoannlerouxel/",
+    "vanity": "yoannlerouxel",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Yoann, l'angle neurosciences applique a la vente c'est rare, la plupart restent sur des scripts. Tu es venu a la psycho avant le business ou l'inverse ?",
+    "angle": "Neurosciences appliquees a la vente"
+   },
+   {
+    "name": "Thomas Lopin",
+    "title": "Facebook & Instagram Ads pour coachs & infopreneurs | ROI x5 | +9M EUR generes | +8 ans",
+    "url": "https://www.linkedin.com/in/thomas-lopin-ads/",
+    "vanity": "thomas-lopin-ads",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Thomas, 8 ans sur Meta Ads, t'as vu passer a peu pres toutes les versions de la plateforme. C'est quoi le changement qui t'a le plus force a revoir ta facon de bosser ?",
+    "angle": "8 ans sur Meta Ads, toutes les versions de la plateforme"
+   },
+   {
+    "name": "Steven Bos",
+    "title": "Accompagne coachs et agences a scaler a 30-50k EUR/mois | Dubai",
+    "url": "https://www.linkedin.com/in/steven-bos/",
+    "vanity": "steven-bos",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Steven, tu accompagnes des agences depuis Dubai, ca fait un decalage pas evident avec la clientele francophone. Tu t'es installe la-bas pour le business ou pour autre chose ?",
+    "angle": "Installe a Dubai avec une clientele francophone"
+   },
+   {
+    "name": "Sofiane Nait Daoud",
+    "title": "Growth Partner & Sales Expert | +7 ans, +10M EUR de CA genere",
+    "url": "https://www.linkedin.com/in/sofiane-nait/",
+    "vanity": "sofiane-nait",
+    "date": "2026-08-20",
+    "status": "accepted",
+    "opener": "Salut Sofiane, passer d'Account Manager a Growth Partner en independant, c'est un vrai saut. Ce qui t'a manque en interne, c'etait la liberte ou les resultats ?",
+    "angle": "Saut d'Account Manager a independant"
+   },
+   {
+    "name": "Rachid Laichaoui",
+    "title": "CEO & Founder @LeadSysteme | Systeme ContinuumLead | +700 entrepreneurs sur Skool",
+    "url": "https://www.linkedin.com/in/rachidlaichaoui/",
+    "vanity": "rachidlaichaoui",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Rachid, +700 personnes sur ton Skool alors que tu donnes tout gratuitement, c'est un pari que peu tiennent. Ca t'a pris combien de temps avant que la communaute prenne vraiment ?",
+    "angle": "Communaute Skool de 700 personnes construite en gratuit"
+   },
+   {
+    "name": "Pauline Perez",
+    "title": "Fondatrice @Boucan Factory - agence de prospection | forme a remplir l'agenda de RDV qualifies",
+    "url": "https://www.linkedin.com/in/pauline-perez-pp/",
+    "vanity": "pauline-perez-pp",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Pauline, « Call Queen » c'est assume, j'aime bien. Entre former les gens a decrocher leur telephone et le faire a leur place, tu preferes laquelle des deux ?",
+    "angle": "Call Queen : former vs faire a leur place"
+   },
+   {
+    "name": "Nathan Millard",
+    "title": "Responsable admissions chez ProfAccelerator | Sales - Closing",
+    "url": "https://www.linkedin.com/in/nathan-millard-b186583aa/",
+    "vanity": "nathan-millard-b186583aa",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Nathan, les admissions chez ProfAccelerator, donc tu parles a des profs qui envisagent de tout changer. C'est quoi qui les fait basculer le plus souvent ?",
+    "angle": "Parle a des profs qui envisagent de tout changer"
+   },
+   {
+    "name": "Mehdi E.",
+    "title": "Commercial en ligne | Setter & Closer | SDR & BDR | +11 ans d'experience",
+    "url": "https://www.linkedin.com/in/mehdi-elk/",
+    "vanity": "mehdi-elk",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Mehdi, 11 ans de vente et t'es passe par a peu pres tous les postes, du SDR au closing. Il y en a un que tu referais pas ?",
+    "angle": "11 ans, passe par tous les postes de la vente"
+   },
+   {
+    "name": "Mathieu Bouvet",
+    "title": "Tunnels de vente, VSL, systeme automatise pour coachs et infopreneurs",
+    "url": "https://www.linkedin.com/in/mathieubouvet/",
+    "vanity": "mathieubouvet",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Mathieu, bosser sur des tunnels depuis Annecy, tu dois avoir un cadre plus sain que la plupart des gens du milieu. C'est un choix de vie assume ou t'es de la region ?",
+    "angle": "Bosser depuis Annecy plutot que le milieu parisien"
+   },
+   {
+    "name": "Maryline Leroy",
+    "title": "Sales Coach @Freesales | de la prospection au closing",
+    "url": "https://www.linkedin.com/in/maryline-leroy/",
+    "vanity": "maryline-leroy",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Maryline, tu parles de la prospection jusqu'au closing, alors que la plupart des coachs ne prennent que la partie facile. C'est la prospection que les gens ratent le plus, ou le closing ?",
+    "angle": "Couvre la prospection, pas seulement le closing"
+   },
+   {
+    "name": "Kevin Aziosmanoff",
+    "title": "CEO @Architaide & @Maxleva | Systeme P.A.C.S | diagnostic de croissance",
+    "url": "https://www.linkedin.com/in/architaide-kevin-aziosmanoff/",
+    "vanity": "architaide-kevin-aziosmanoff",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Kevin, « des boites qui ne tiennent pas sur un seul fil », ca sent le vecu plus que le slogan. C'est une galere que t'as traversee toi-meme ?",
+    "angle": "Le slogan sonne comme du vecu"
+   },
+   {
+    "name": "Jordi Daal",
+    "title": "Info Product Operator - High Ticket Closer | Pays-Bas",
+    "url": "https://www.linkedin.com/in/jordi-daal-a0a5b3237/",
+    "vanity": "jordi-daal-a0a5b3237",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Hey Jordi, « info product operator » is a title I rarely see people claim, most just say closer. Did you move into the operator side after closing, or the other way around?",
+    "angle": "Revendique operator plutot que closer (anglophone)"
+   },
+   {
+    "name": "Joachim Leo",
+    "title": "Lead Club - l'agence qui mache le travail de tes commerciaux | +400k EUR/mois de budget pub",
+    "url": "https://www.linkedin.com/in/joachim-leo-leadclub/",
+    "vanity": "joachim-leo-leadclub",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Joachim, « macher le travail des commerciaux » c'est une facon de positionner une agence media que je n'avais pas vue. Ca vient d'un commercial frustre par la qualite des leads ?",
+    "angle": "Positionnement inhabituel : macher le travail des commerciaux"
+   },
+   {
+    "name": "Flavien Reviriego",
+    "title": "CEO @Let's Growth | Prospection B2B & Cold Outreach | +150 entreprises accompagnees",
+    "url": "https://www.linkedin.com/in/flavien-reviriego-letsgrowth/",
+    "vanity": "flavien-reviriego-letsgrowth",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Flavien, piloter une boite d'outbound depuis la Corse c'est pas commun. Le fait d'etre loin des hubs parisiens, ca t'a jamais pose de souci cote clients ?",
+    "angle": "Piloter une boite d'outbound depuis la Corse"
+   },
+   {
+    "name": "Cedric Bernard",
+    "title": "Scale ton agence de 5K a 40K+/mois | +140 clients accompagnes",
+    "url": "https://www.linkedin.com/in/cedricbernard06/",
+    "vanity": "cedricbernard06",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Cedric, +140 agences accompagnees, tu dois voir les memes plafonds revenir en boucle. C'est quoi celui qui bloque le plus de monde entre 5 et 10K ?",
+    "angle": "140 agences vues, les memes plafonds qui reviennent"
+   },
+   {
+    "name": "Augustin Baduel",
+    "title": "Founder @Mooniz - Agence de prospection commerciale B2B | Ex-Nespresso",
+    "url": "https://www.linkedin.com/in/augustin-baduel-49ab7027/",
+    "vanity": "augustin-baduel-49ab7027",
+    "date": "2026-08-20",
+    "status": "accepted",
+    "opener": "Salut Augustin, passer de Nespresso a monter Mooniz, c'est un virage que peu de gens font vraiment. Je suis curieux : c'est quoi qui t'a decide a lacher le grand groupe pour la prospection ?",
+    "angle": "Virage Nespresso vers sa propre agence outbound"
+   },
+   {
+    "name": "Antoine Ferrando",
+    "title": "Co-fondateur @Aakize | Top 20 mondial agence d'acquisition lemlist | ex-Partoo & Malt",
+    "url": "https://www.linkedin.com/in/antoine-ferrando/",
+    "vanity": "antoine-ferrando",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Antoine, Partoo puis Malt puis ta propre boite, ca fait une trajectoire assez nette. Ce qui m'intrigue c'est le « en 48h » : tu tenais ce delai des le debut ou c'est venu apres ?",
+    "angle": "Trajectoire Partoo puis Malt puis sa boite"
+   },
+   {
+    "name": "Alexia Rivier",
+    "title": "Top 30 mondial lemlist Partner | machine d'acquisition en 48h | ex-Partoo & Malt",
+    "url": "https://www.linkedin.com/in/alexia-rivier/",
+    "vanity": "alexia-rivier",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Alexia, j'ai vu que tu avais fait Partoo et Malt avant de monter ta structure. Entre les deux, c'est laquelle qui t'a le plus appris sur l'acquisition ?",
+    "angle": "Ce que Partoo et Malt lui ont appris"
+   },
+   {
+    "name": "Adrien De Candia",
+    "title": "Founder & CEO @ACED Innovations | Growth Partner | Geneve",
+    "url": "https://www.linkedin.com/in/adrien-de-candia/",
+    "vanity": "adrien-de-candia",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Adrien, monter ACED depuis Geneve avec une clientele qui scale, ca doit changer pas mal la donne. Tu bosses surtout avec des boites suisses ou c'est plus large ?",
+    "angle": "Batir depuis Geneve"
+   },
+   {
+    "name": "Adam A.",
+    "title": "Fondateur @La Deballe | Formation, Closing, Prospection B2B | Performance commerciale",
+    "url": "https://www.linkedin.com/in/adamammouch/",
+    "vanity": "adamammouch",
+    "date": "2026-08-20",
+    "status": "pending",
+    "opener": "Salut Adam, croiser l'impro et la performance commerciale c'est pas un rapprochement evident. Tu faisais de l'impro avant de te mettre a la vente ?",
+    "angle": "Croisement impro et performance commerciale"
+   },
    {
     "name": "Victor Carrillo",
     "title": "Sales Manager | Senior Closer | Closer Coach | B2C & B2B Remote (Mexique)",
@@ -2509,7 +2709,7 @@
     "url": "https://www.linkedin.com/in/khurram-haider-5784a61a3/",
     "vanity": "khurram-haider-5784a61a3",
     "date": "2026-08-19",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Khurram, 14 years of building sales teams across setter, SDR and closer roles is a rare span, most people stay in one lane. I'd guess the hiring bar you use now looks nothing like the one you started with. What changed the most?",
     "angle": "14 ans a couvrir setter, SDR et closer, span rare"
    },
@@ -2519,7 +2719,7 @@
     "url": "https://www.linkedin.com/in/kassam-asghar-b61427134/",
     "vanity": "kassam-asghar-b61427134",
     "date": "2026-08-19",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Kassam, doing both setting and closing gives you a view most closers never get, you see exactly how a call was set up before it lands on you. Does a badly set call ever really recover?",
     "angle": "Setting et closing, il voit comment l'appel a ete prepare"
    },
@@ -2609,7 +2809,7 @@
     "url": "https://www.linkedin.com/in/cherine-khoury-8a6053173/",
     "vanity": "cherine-khoury-8a6053173",
     "date": "2026-08-19",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Cherine, working with coaches on their own closing is a strange mirror, they teach people to act and then have to sell that themselves. Do you find they resist the sales part more than other clients?",
     "angle": "Vendre a des coaches qui enseignent eux-memes le passage a l'action"
    },
@@ -2619,7 +2819,7 @@
     "url": "https://www.linkedin.com/in/charlotte-favresse-32bb6a21a/",
     "vanity": "charlotte-favresse-32bb6a21a",
     "date": "2026-08-19",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Charlotte, tenir les trois casquettes setting, closing et sales manager en indépendante, ça veut dire voir le cycle complet là où la plupart n'en voient qu'un morceau. C'est venu par choix ou parce que les clients demandaient les trois ?",
     "angle": "Les trois casquettes, donc vue du cycle complet"
    },
@@ -2629,7 +2829,7 @@
     "url": "https://www.linkedin.com/in/candiceroz/",
     "vanity": "candiceroz",
     "date": "2026-08-19",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Candice, la phrase « tout commence par une conversation » résume mieux la vente que la plupart des formations que j'ai vues. Et écrire un livre en plus d'accompagner 200 élèves, c'est un autre exercice. Le livre est venu avant ou après l'accompagnement ?",
     "angle": "Sa phrase sur la conversation, et le livre en plus de l'accompagnement"
    },
@@ -2659,7 +2859,7 @@
     "url": "https://www.linkedin.com/in/theojeannin/",
     "vanity": "theojeannin",
     "date": "2026-08-18",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Théo, ton angle est clair : aller chercher les ventes déjà générées plutôt que d'en créer des nouvelles. Tu tombes souvent sur des boîtes qui croient avoir un problème d'acquisition alors que non ?",
     "angle": "Son angle : récupérer l'existant plutôt que créer du nouveau"
    },
@@ -2999,7 +3199,7 @@
     "url": "https://www.linkedin.com/in/damien-reynaud-55834228b/",
     "vanity": "damien-reynaud-55834228b",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Damien, merci d'avoir accepté. Promettre des setters opérationnels en 48h ça suppose un vivier déjà formé derrière, c'est pas rien à maintenir. Tu les formes toi-même ou tu sélectionnes des profils déjà en poste ?",
     "angle": "Place des setters (structure)"
    },
@@ -3099,7 +3299,7 @@
     "url": "https://www.linkedin.com/in/pierre-bodiot/",
     "vanity": "pierre-bodiot",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Pierre, merci pour la connexion. Tu es passé du développement commercial en poste à monter Leadavia, c'est un saut que beaucoup repoussent des années. Tu referais le même timing avec le recul ?",
     "angle": "Est passé du poste salarié à sa boîte"
    },
@@ -3129,7 +3329,7 @@
     "url": "https://www.linkedin.com/in/maxime-crescent-565626206/",
     "vanity": "maxime-crescent-565626206",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Maxime, merci pour la connexion. Zontro attaque le recrutement commercial et la performance des équipes dans le même produit, alors que la plupart s'arrêtent au recrutement et laissent le client se débrouiller après. Tu as commencé par lequel des deux ?",
     "angle": "Recrutement et performance dans le même produit"
    },
