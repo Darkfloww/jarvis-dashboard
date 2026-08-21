@@ -2421,18 +2421,218 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-20",
-  "sent": 320,
-  "accepted": 172,
+  "updated": "2026-08-21",
+  "sent": 340,
+  "accepted": 184,
   "rate": 54,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
    "2026-W33": 100,
-   "2026-W34": 80
+   "2026-W34": 100
   },
   "contacts": [
+   {
+    "name": "Tristan Lemee",
+    "title": "Fondateur Social Media Pro - agence marketing digital + formation setting et scraping",
+    "url": "https://www.linkedin.com/in/tristan-lemee/",
+    "vanity": "tristan-lemee",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Tristan, merci d'avoir accepté. Faire tourner une agence et former en parallèle sur le setting et le scraping, ça demande deux casquettes assez opposées. La formation est venue d'une demande de tes clients ?",
+    "angle": "Deux casquettes agence et formation"
+   },
+   {
+    "name": "Théo Rossi",
+    "title": "CEO L'Academie - agence de scaling pour infopreneurs et agences, +500K EUR/mois, +290 clients",
+    "url": "https://www.linkedin.com/in/th%C3%A9o-rossi/",
+    "vanity": "th%C3%A9o-rossi",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Théo, merci pour la connexion. Ce qui m'intrigue chez toi c'est d'avoir accompagné +290 infopreneurs ET agences, ce sont deux mondes qui ne fonctionnent pas pareil du tout. Lequel des deux t'a le plus surpris au début ?",
+    "angle": "Deux marches (infopreneurs et agences)"
+   },
+   {
+    "name": "Simon Barille",
+    "title": "Ex sergent-chef, dirige une equipe qui convertit les leads en CA, Geneve",
+    "url": "https://www.linkedin.com/in/simon-barill%C3%A9-629180147/",
+    "vanity": "simon-barill%C3%A9-629180147",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Simon, merci pour la connexion. Les 7 ans dans l'Armée de Terre avant l'entrepreneuriat, ça m'a arrêté, on ne croise pas beaucoup ce parcours dans la vente. Qu'est-ce qui t'a le plus servi de cette période ?",
+    "angle": "7 ans dans l'Armée de Terre"
+   },
+   {
+    "name": "Romain Simonneau",
+    "title": "Directeur commercial B2B freelance, sales coach specialise cold call, manager de transition",
+    "url": "https://www.linkedin.com/in/romain-simonneau/",
+    "vanity": "romain-simonneau",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Romain, content d'être connecté. Le cold call en 2026, tout le monde l'enterre et toi tu en as fait ta spécialité. Qu'est-ce qui te fait dire que le canal tient encore ?",
+    "angle": "Le cold call que tout le monde enterre"
+   },
+   {
+    "name": "Quentin Siesse",
+    "title": "Fondateur Neptunedigital.fr - systeme de scaling integral pour infopreneurs, +30 a 150K EUR/mois",
+    "url": "https://www.linkedin.com/in/quentin-siesse/",
+    "vanity": "quentin-siesse",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Quentin, content d'être connecté. Le mot qui m'a arrêté sur ton profil c'est « intégral » : la plupart des gens vendent une brique et laissent le client assembler le reste. Tu as commencé comme ça ou tu es parti direct sur le tout-en-un ?",
+    "angle": "Le choix du tout-en-un"
+   },
+   {
+    "name": "Pervanche Belo",
+    "title": "Aide coachs et infopreneurs a briser leur plafond de CA via webinaires et challenges, methode B.O.L.D",
+    "url": "https://www.linkedin.com/in/pervanche-belo/",
+    "vanity": "pervanche-belo",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Pervanche, content d'être connecté. J'ai vu que tu as nommé ta méthode B.O.L.D, ça veut dire que tu as pris le temps de la formaliser plutôt que d'improviser à chaque client. Le nom, il vient d'où ?",
+    "angle": "Méthode formalisée et nommée"
+   },
+   {
+    "name": "Nathan Pollyn",
+    "title": "Fait passer les freelances au modele agence, +107 clients, Bruxelles",
+    "url": "https://www.linkedin.com/in/nathanpollyn/",
+    "vanity": "nathanpollyn",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Nathan, merci pour la connexion. Ton angle freelance vers agence me parle, c'est exactement le mur sur lequel la plupart des indépendants se cassent les dents. Tu l'as vécu toi-même avant d'en faire ton offre ?",
+    "angle": "Le mur freelance vers agence"
+   },
+   {
+    "name": "Mehdi Ben Chaffi",
+    "title": "Aide infopreneurs et coachs a relancer leurs ventes, derriere +30M EUR de business en ligne",
+    "url": "https://www.linkedin.com/in/mehdi-ben-chaffi-00431b32/",
+    "vanity": "mehdi-ben-chaffi-00431b32",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Mehdi, merci pour la connexion. « Passer son prochain palier sans tout exploser », c'est la phrase la plus honnête que j'ai lue cette semaine sur LinkedIn, la plupart vendent le palier sans jamais parler de la casse. Tu l'as apprise sur quel business ?",
+    "angle": "Honnêteté du positionnement"
+   },
+   {
+    "name": "Lucas Orchiller",
+    "title": "CEO Luco Media - 3 a 5 RDV qualifies/jour, offre, ads, funnel, tracking",
+    "url": "https://www.linkedin.com/in/lucas-orchiller-bbb28a193/",
+    "vanity": "lucas-orchiller-bbb28a193",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Lucas, merci d'avoir accepté. Promettre des RDV « sans prospecter » c'est courageux, c'est le genre de phrase qui t'oblige à livrer derrière. Tu tiens ce rythme depuis combien de temps ?",
+    "angle": "Promesse chiffrée engageante"
+   },
+   {
+    "name": "Lauriano Kpanou",
+    "title": "Scale Partner - structure et scale les business d'accompagnement premium vers +50k EUR/mois",
+    "url": "https://www.linkedin.com/in/lauriano-kpanou-1a3482268/",
+    "vanity": "lauriano-kpanou-1a3482268",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Lauriano, merci pour la connexion. Bosser depuis Cotonou sur du haut de gamme francophone, c'est un positionnement que je trouve malin et que je vois rarement. Tes clients sont plutôt en Afrique ou en Europe ?",
+    "angle": "Haut de gamme depuis Cotonou"
+   },
+   {
+    "name": "Guillaume H.",
+    "title": "Convertit les inscrits webinaires et challenges des infopreneurs en participants puis en clients",
+    "url": "https://www.linkedin.com/in/guillaume-hanauer/",
+    "vanity": "guillaume-hanauer",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Guillaume, merci pour la connexion. Le fait que tu sépares inscrits, participants et clients en trois étapes distinctes, c'est rare, la plupart des gens ne regardent que la première et la dernière. C'est laquelle des deux marches qui coûte le plus cher en vrai ?",
+    "angle": "Distingue inscrits, participants, clients"
+   },
+   {
+    "name": "David Varol",
+    "title": "Scale des business d'education en ligne - Challenge & Webinaire, ex Head of Sales, Dubai",
+    "url": "https://www.linkedin.com/in/davidvarol/",
+    "vanity": "davidvarol",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut David, merci d'avoir accepté. J'ai vu que tu étais Head of Sales avant de lancer ton agence, c'est un chemin assez rare, la plupart des agences sont montées par des marketeux. Ça change quoi concrètement dans ta façon de bosser les challenges ?",
+    "angle": "Head of Sales avant l'agence"
+   },
+   {
+    "name": "Daniel EMP",
+    "title": "Elevate Media Partner - acquisition, conversion et sales systems pour scaler",
+    "url": "https://www.linkedin.com/in/daniel-andria/",
+    "vanity": "daniel-andria",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Daniel, merci pour la connexion. Tenir acquisition, conversion et systèmes de vente ensemble plutôt qu'une seule brique, c'est plus dur à vendre mais bien plus utile au client. Tu es parti de laquelle des trois au début ?",
+    "angle": "Tenir les trois briques ensemble"
+   },
+   {
+    "name": "Damien Smagghe",
+    "title": "Admissions & phoning externalises a la performance - +41 CFA, OF et ecoles accompagnes",
+    "url": "https://www.linkedin.com/in/damien-smagghe-phoning-prospection-telephonique/",
+    "vanity": "damien-smagghe-phoning-prospection-telephonique",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Damien, merci d'avoir accepté. Le monde des CFA et des écoles, c'est un secteur dont personne ne parle sur LinkedIn alors que le volume d'appels doit être énorme. Comment tu es tombé dedans ?",
+    "angle": "Secteur invisible sur LinkedIn"
+   },
+   {
+    "name": "Benoit Cappelletti",
+    "title": "Co-fondateur agence Supernovads - acquisition de leads reseaux sociaux, SEA et IA",
+    "url": "https://www.linkedin.com/in/benoitcappelletti/",
+    "vanity": "benoitcappelletti",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Benoit, content d'être connecté. Monter une agence à deux plutôt que seul, c'est un choix que je vois de moins en moins. Vous vous êtes répartis les rôles comment au départ ?",
+    "angle": "Monter à deux"
+   },
+   {
+    "name": "Bastien Oswald",
+    "title": "Associe chez Soarly - traitement et conversion des leads des agences",
+    "url": "https://www.linkedin.com/in/bastien-oswald/",
+    "vanity": "bastien-oswald",
+    "date": "2026-08-21",
+    "status": "accepted",
+    "opener": "Salut Bastien, merci d'avoir accepté. Ta phrase sur les agences qui génèrent des leads sans savoir qui les traite derrière, je l'ai vue se vérifier trop de fois. Tu l'as construite à partir de quoi ?",
+    "angle": "Qui traite les leads derrière"
+   },
+   {
+    "name": "Arnaud Gazet",
+    "title": "Co-fondateur Agence Personnelle - +500 experts transformes en medias, +1Md de vues/an",
+    "url": "https://www.linkedin.com/in/arnaudgazet/",
+    "vanity": "arnaudgazet",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Arnaud, merci pour la connexion. +500 experts transformés en médias, ça veut dire que tu as vu passer énormément de gens persuadés de n'avoir rien à dire. C'est quoi le point commun entre ceux qui décrochent vraiment ?",
+    "angle": "500 experts vus passer"
+   },
+   {
+    "name": "Antoine Magliulo",
+    "title": "Fondateur GetYourCall.io - centaines d'appels entrants qualifies/mois pour les equipes sales",
+    "url": "https://www.linkedin.com/in/antoine-magliulo/",
+    "vanity": "antoine-magliulo",
+    "date": "2026-08-21",
+    "status": "accepted",
+    "opener": "Salut Antoine, merci pour la connexion. Ton positionnement sur les appels entrants m'a interpellé, presque tout le monde autour de moi ne parle que de sortant en ce moment. Tu as fait ce choix dès le départ ?",
+    "angle": "Pari sur l'entrant"
+   },
+   {
+    "name": "Alejandra Rosquin",
+    "title": "Gerante PDG CALL - structure de telemarketing FR/CH, autrice et formatrice",
+    "url": "https://www.linkedin.com/in/alejandra-rosquin-b13715185/",
+    "vanity": "alejandra-rosquin-b13715185",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Alejandra, content d'être connecté. Diriger une structure de télémarketing et écrire un livre en parallèle, ce sont deux rythmes de vie très différents. Le livre est venu avant ou après l'entreprise ?",
+    "angle": "Dirigeante et autrice"
+   },
+   {
+    "name": "Adel A.",
+    "title": "Partner Croissance pour agences d'IA - specialiste appointment setting, +20% de pipe garanti",
+    "url": "https://www.linkedin.com/in/adel-alicherif/",
+    "vanity": "adel-alicherif",
+    "date": "2026-08-21",
+    "status": "pending",
+    "opener": "Salut Adel, content d'être connecté. Te spécialiser sur les agences d'IA plutôt que sur tout le monde, c'est un pari de niche assez tranché. Le marché est déjà assez mûr pour tenir sur cette seule verticale ?",
+    "angle": "Niche verticale assumée"
+   },
    {
     "name": "Yoann Lerouxel",
     "title": "Structure des offres a +2000EUR pour coachs et consultants | +87 business high-ticket",
@@ -2499,7 +2699,7 @@
     "url": "https://www.linkedin.com/in/nathan-millard-b186583aa/",
     "vanity": "nathan-millard-b186583aa",
     "date": "2026-08-20",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Nathan, les admissions chez ProfAccelerator, donc tu parles a des profs qui envisagent de tout changer. C'est quoi qui les fait basculer le plus souvent ?",
     "angle": "Parle a des profs qui envisagent de tout changer"
    },
@@ -2509,7 +2709,7 @@
     "url": "https://www.linkedin.com/in/mehdi-elk/",
     "vanity": "mehdi-elk",
     "date": "2026-08-20",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Mehdi, 11 ans de vente et t'es passe par a peu pres tous les postes, du SDR au closing. Il y en a un que tu referais pas ?",
     "angle": "11 ans, passe par tous les postes de la vente"
    },
@@ -2539,7 +2739,7 @@
     "url": "https://www.linkedin.com/in/architaide-kevin-aziosmanoff/",
     "vanity": "architaide-kevin-aziosmanoff",
     "date": "2026-08-20",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Kevin, « des boites qui ne tiennent pas sur un seul fil », ca sent le vecu plus que le slogan. C'est une galere que t'as traversee toi-meme ?",
     "angle": "Le slogan sonne comme du vecu"
    },
@@ -2569,7 +2769,7 @@
     "url": "https://www.linkedin.com/in/flavien-reviriego-letsgrowth/",
     "vanity": "flavien-reviriego-letsgrowth",
     "date": "2026-08-20",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Flavien, piloter une boite d'outbound depuis la Corse c'est pas commun. Le fait d'etre loin des hubs parisiens, ca t'a jamais pose de souci cote clients ?",
     "angle": "Piloter une boite d'outbound depuis la Corse"
    },
@@ -2629,7 +2829,7 @@
     "url": "https://www.linkedin.com/in/adamammouch/",
     "vanity": "adamammouch",
     "date": "2026-08-20",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Adam, croiser l'impro et la performance commerciale c'est pas un rapprochement evident. Tu faisais de l'impro avant de te mettre a la vente ?",
     "angle": "Croisement impro et performance commerciale"
    },
@@ -2659,7 +2859,7 @@
     "url": "https://www.linkedin.com/in/peggy-touvier-73ba63318/",
     "vanity": "peggy-touvier-73ba63318",
     "date": "2026-08-19",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Peggy, la qualification c'est le poste où on décide qui passe et qui ne passe pas, et c'est rarement celui qu'on met en avant alors qu'il conditionne tout le reste. Tu te fies plus à ce que le prospect dit ou à ce qu'il fait entre deux échanges ?",
     "angle": "La qualification decide qui passe, poste jamais mis en avant"
    },
@@ -2949,7 +3149,7 @@
     "url": "https://www.linkedin.com/in/houraye/",
     "vanity": "houraye",
     "date": "2026-08-18",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Houraye, j'ai vu que t'as écrit Le Jeu de la Vente. Écrire un livre après 17 ans de terrain, c'était pour figer ta méthode ou pour la confronter ?",
     "angle": "Elle a écrit un livre après 17 ans de terrain"
    },
@@ -3159,7 +3359,7 @@
     "url": "https://www.linkedin.com/in/lucie-neuville-gl%C3%A9met-a99b09387/",
     "vanity": "lucie-neuville-gl%C3%A9met-a99b09387",
     "date": "2026-08-17",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Lucie, merci pour la connexion. Ton positionnement sans manipulation avec un vrai process de qualification tranche avec le closing agressif qu'on voit partout. Ce process tu l'as construit seule ou en t'appuyant sur une méthode existante ?",
     "angle": "Closing sans manipulation, process quali"
    },
@@ -4529,7 +4729,7 @@
     "url": "https://www.linkedin.com/in/rodolphelehoux/",
     "vanity": "rodolphelehoux",
     "date": "2026-08-06",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Rodolphe, je suis réunionnais et je vois passer Digiqo depuis un moment, c'est une des rares boîtes de l'île qui joue vraiment à l'échelle nationale. Je suis en Asie en ce moment et le contraste est marrant. L'écosystème business a bougé sur l'île ces dernières années ?",
     "angle": "Connexion réelle : Shayan est réunionnais"
    },
@@ -5269,7 +5469,7 @@
     "url": "https://www.linkedin.com/in/mériem-saadoun-closing-setting/",
     "vanity": "mériem-saadoun-closing-setting",
     "date": "2026-07-26",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Mériem, merci d'avoir accepté. Tu viens du coaching de transition avant le closing, donc tu as l'habitude d'écouter avant de convaincre. Ça change beaucoup ta façon de mener un appel de vente ?",
     "angle": "Coach + closing"
    },
