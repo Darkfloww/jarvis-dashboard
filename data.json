@@ -2421,19 +2421,219 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-24",
-  "sent": 360,
-  "accepted": 205,
-  "rate": 57,
+  "updated": "2026-08-25",
+  "sent": 380,
+  "accepted": 220,
+  "rate": 58,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
    "2026-W33": 100,
    "2026-W34": 100,
-   "2026-W35": 20
+   "2026-W35": 40
   },
   "contacts": [
+   {
+    "name": "Ulrich Kamsu",
+    "title": "Consultant RH & Closer | Recrutement pour infopreneurs : sourcing, chasse de tete, entretiens | Closing / vente a distance B2C",
+    "url": "https://www.linkedin.com/in/ulrich-kamsu-43b356131/",
+    "vanity": "ulrich-kamsu-43b356131",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Ulrich, tu fais du recrutement de closers pour infopreneurs, c'est un poste d'observation assez rare. Tu vois passer beaucoup de profils. C'est quoi le signal qui te fait dire tout de suite qu'un closer va tenir ?",
+    "angle": "Recrute des closers pour des infopreneurs"
+   },
+   {
+    "name": "Mohammad Woomed",
+    "title": "Growth operating | Closer independant, amelioration des taux de closing et des process de vente",
+    "url": "https://www.linkedin.com/in/mohammad-woomed-917188195/",
+    "vanity": "mohammad-woomed-917188195",
+    "date": "2026-08-25",
+    "status": "accepted",
+    "opener": "Salut Mohammad, tu parles de process de vente et pas seulement de taux de closing, c'est une nuance que peu de closers font. Tu interviens surtout en amont sur la qualif ou vraiment sur le deroule du call ?",
+    "angle": "Bosse sur les process de vente, pas juste sur le call"
+   },
+   {
+    "name": "Mathieu Thomas",
+    "title": "BellTalk.io | Je structure le funnel de conversion des entrepreneurs high ticket et donne 2x plus de leads chauds a tes closers",
+    "url": "https://www.linkedin.com/in/mathieu-thomas-ai/",
+    "vanity": "mathieu-thomas-ai",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Mathieu, ton angle sur BellTalk m'a parle : la plupart des gens optimisent le funnel ou les closers, jamais la jonction entre les deux. Tu arrives a faire bosser les deux equipes ensemble ou c'est toujours la guerre ?",
+    "angle": "Fait le lien entre funnel et closers"
+   },
+   {
+    "name": "Mathieu Thomas",
+    "title": "Sales manager closer chez Closing",
+    "url": "https://www.linkedin.com/in/mathieu-thomas-b2b626297/",
+    "vanity": "mathieu-thomas-b2b626297",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Mathieu, on a une dizaine de relations en commun dans l'univers du closing, on tourne clairement dans le meme cercle. Tu bosses sur des offres plutot B2C high ticket ou tu es passe au B2B ?",
+    "angle": "Sales manager cote closing, relations communes"
+   },
+   {
+    "name": "Lucas Maycock",
+    "title": "Clicknland : on installe et pilote un ecosysteme d'acquisition DFY pour scaler ton business | CEO Mhax Agency",
+    "url": "https://www.linkedin.com/in/lucasmaycock/",
+    "vanity": "lucasmaycock",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Lucas, ce qui m'a accroche chez Clicknland c'est que vous installez ET pilotez, alors que la plupart des agences livrent et disparaissent. Tu gardes la main combien de temps sur un compte avant de rendre les cles ?",
+    "angle": "Installe et pilote l'acquisition, pas juste la conseiller"
+   },
+   {
+    "name": "Luc Kerrad",
+    "title": "Je te fais exploser en vente | Fondateur chez La Vente",
+    "url": "https://www.linkedin.com/in/luc-kerrad-66457b285/",
+    "vanity": "luc-kerrad-66457b285",
+    "date": "2026-08-25",
+    "status": "accepted",
+    "opener": "Salut Luc, ta headline fait quatre mots la ou tout le monde entasse des chiffres, et tu as 3k abonnes quand meme. C'est assume ou tu as juste jamais pris le temps de la rallonger ?",
+    "angle": "Headline ultra courte, 3k abonnes"
+   },
+   {
+    "name": "Johanna Martin",
+    "title": "Head of sales | Closeuse inbound | Setting",
+    "url": "https://www.linkedin.com/in/johanna-martin-closing/",
+    "vanity": "johanna-martin-closing",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Johanna, tu fais a la fois head of sales et closeuse inbound, c'est rare de garder les deux casquettes. On a une trentaine de relations en commun d'ailleurs. Tu prends encore des calls toi-meme ou tu commences a lacher ?",
+    "angle": "Head of sales et closeuse en meme temps"
+   },
+   {
+    "name": "Jeremie Atcho",
+    "title": "Je gere le LinkedIn des entrepreneurs occupes | Contenu, Design, Engagement, Prospection | Gestionnaire d'equipe LinkedIn chez Solo Growth",
+    "url": "https://www.linkedin.com/in/syst%C3%A8me-contenu-engagement/",
+    "vanity": "syst%C3%A8me-contenu-engagement",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Jeremie, tu geres le LinkedIn d'entrepreneurs de bout en bout, contenu, design et prospection, alors que la plupart ne prennent qu'un morceau. Tes clients sont surtout en France ou tu bosses aussi sur l'Afrique de l'Ouest ?",
+    "angle": "Gere le LinkedIn d'entrepreneurs depuis le Benin"
+   },
+   {
+    "name": "Hichem Behar",
+    "title": "GTM Engineer @Growth-A | AI-Powered Lead Gen & Outbound Systems | Scaled 5-Day Challenges: 150K EUR ad spend to 1.3M+ genere",
+    "url": "https://www.linkedin.com/in/hichem-behar/",
+    "vanity": "hichem-behar",
+    "date": "2026-08-25",
+    "status": "accepted",
+    "opener": "Hi Hichem, the 5-day challenge numbers on your profile caught my eye, 150K in ad spend turned into 1.3M is a serious ratio. Curious whether that model still holds up in 2026 or if the format is getting tired?",
+    "angle": "Scaled 5-day challenges, ad spend to revenue"
+   },
+   {
+    "name": "Helene Goupil",
+    "title": "Setter & Closer High Ticket | J'aide coachs, formateurs & infopreneurs a convertir leurs prospects | +15 ans d'experience commerciale",
+    "url": "https://www.linkedin.com/in/helene-goupil-dufeu-06a89a146/",
+    "vanity": "helene-goupil-dufeu-06a89a146",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Helene, passer de 15 ans de commercial B2B au closing high ticket pour infopreneurs, c'est un changement de terrain assez brutal. Qu'est-ce qui t'a surprise le plus en arrivant sur le B2C ?",
+    "angle": "15 ans de B2B avant de basculer sur le high ticket B2C"
+   },
+   {
+    "name": "Francky D.",
+    "title": "J'aide les e-commercants et infopreneurs a rentabiliser leur pub | Meta Ads | TikTok Ads | Fondateur IDI ADS COMPANY",
+    "url": "https://www.linkedin.com/in/francky-d-883964223/",
+    "vanity": "francky-d-883964223",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Francky, tu fais tourner de la pub a la fois pour de l'e-commerce et pour des infopreneurs, ce sont deux logiques de compte assez opposees. Tu as une preference entre les deux ou tu prends ce qui vient ?",
+    "angle": "Jongle entre e-commerce et infoproduit"
+   },
+   {
+    "name": "Cyril Kasser",
+    "title": "J'aide les infopreneurs et coachs a debloquer leur business en 60 jours",
+    "url": "https://www.linkedin.com/in/cyril-kasser-627b25110/",
+    "vanity": "cyril-kasser-627b25110",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Cyril, on a une vingtaine de relations en commun dans le milieu infopreneur. Ta promesse de debloquer un business en 60 jours est plutot serree comme fenetre. C'est quoi le blocage que tu retrouves le plus souvent chez eux ?",
+    "angle": "Promesse en 60 jours, relations communes"
+   },
+   {
+    "name": "Charles Simon",
+    "title": "Closer & Setter freelance | J'aide les infopreneurs a doubler leur taux de conversion",
+    "url": "https://www.linkedin.com/in/charles-simon-404063270/",
+    "vanity": "charles-simon-404063270",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Charles, tu fais du closing freelance en parallele d'un poste de conseiller commercial chez EDF, c'est une double vie assez rare a tenir. Tu comptes basculer a 100% sur le freelance ou l'equilibre te va comme ca ?",
+    "angle": "Mene closing freelance et poste chez EDF en parallele"
+   },
+   {
+    "name": "Camille Coulloch",
+    "title": "J'arrive quand ca bloque, je pars quand ca tourne | CRM, IA, Automatisation | Growth Operator freelance",
+    "url": "https://www.linkedin.com/in/camille-coulloch/",
+    "vanity": "camille-coulloch",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Camille, j'arrive quand ca bloque, je pars quand ca tourne, c'est la meilleure description de poste que j'ai lue cette semaine. Les clients te laissent vraiment partir ou ils essaient tous de te garder ?",
+    "angle": "Sa phrase sur arriver quand ca bloque et partir quand ca tourne"
+   },
+   {
+    "name": "Arnaud Clamens",
+    "title": "Co-Fondateur @DM-Partenairs | Implementations de DM-Setters pour infopreneurs, consultants, coachs & agences",
+    "url": "https://www.linkedin.com/in/arnaud-clamens-%F0%9F%A6%85-dm-setters-570378214/",
+    "vanity": "arnaud-clamens-%F0%9F%A6%85-dm-setters-570378214",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Arnaud, j'ai vu que tu implementes des DM-setters chez tes clients. Ce qui m'intrigue c'est le passage de setter solo a une equipe, tout le monde bloque la. C'est quoi le truc qui casse en premier quand tu passes a plusieurs setters ?",
+    "angle": "A monte une structure autour du DM setting"
+   },
+   {
+    "name": "Anthony Berger",
+    "title": "J'aide les prestataires et infopreneurs a generer des clients avec Meta Ads | Acquisition client | Meta Ads | Funnels",
+    "url": "https://www.linkedin.com/in/berger-anthony/",
+    "vanity": "berger-anthony",
+    "date": "2026-08-25",
+    "status": "accepted",
+    "opener": "Salut Anthony, tu es un des rares a assumer Meta Ads specifiquement pour les infopreneurs plutot que de faire du ads generaliste. On a Didier en relation commune d'ailleurs. Tu tournes encore bien sur Meta en ce moment ou tu bascules ailleurs ?",
+    "angle": "Meta Ads specifiquement pour prestataires et infopreneurs"
+   },
+   {
+    "name": "Ammine Ayad",
+    "title": "Closer independant | J'aide les infopreneurs a convertir leurs prospects en clients grace a un closing ethique",
+    "url": "https://www.linkedin.com/in/ammine-ayad-43b8ba301/",
+    "vanity": "ammine-ayad-43b8ba301",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Ammine, tu mets l'ethique en avant dans ta facon de closer, ce qui va a contre-courant de pas mal de ce qu'on voit passer sur le high ticket. Ca te ferme des portes cote clients ou au contraire ca te selectionne les bons ?",
+    "angle": "Insiste sur le closing ethique"
+   },
+   {
+    "name": "Alexandra Manga",
+    "title": "Apporteuse de solutions | Closing & Setting alignes | 13 ans en relation client",
+    "url": "https://www.linkedin.com/in/alexandra-manga-ab130961/",
+    "vanity": "alexandra-manga-ab130961",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Alexandra, 13 ans en relation client avant de passer au closing, ca doit changer completement la facon d'ecouter en call. Tu trouves que ca t'avantage ou que ca te ralentit sur du high ticket ?",
+    "angle": "13 ans de relation client avant le closing"
+   },
+   {
+    "name": "Alain Celebrin",
+    "title": "Setter/Closer inbound | J'aide les infopreneurs a vendre leurs programmes de bien-etre et de transformation personnelle",
+    "url": "https://www.linkedin.com/in/closerfreelance/",
+    "vanity": "closerfreelance",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Alain, tu closes specifiquement sur des programmes de bien-etre et de transformation personnelle, une niche ou les prospects sont souvent tres emotionnels. Tu adaptes vraiment ton approche par rapport a du closing business classique ?",
+    "angle": "Niche bien-etre et transformation personnelle"
+   },
+   {
+    "name": "Aina Raharimalala",
+    "title": "Structuration commerciale | Pilotage de forces de vente externalisees a Madagascar",
+    "url": "https://www.linkedin.com/in/aina-raharimalala-529567b2/",
+    "vanity": "aina-raharimalala-529567b2",
+    "date": "2026-08-25",
+    "status": "pending",
+    "opener": "Salut Aina, piloter des forces de vente externalisees depuis Madagascar depuis 7 ans, ca doit donner un point de vue assez unique sur le marche francophone. Tes clients viennent surtout de France ou tu bosses aussi sur l'ocean Indien ?",
+    "angle": "Pilote des forces de vente externalisees depuis Madagascar"
+   },
    {
     "name": "Virginie Casson",
     "title": "Scale ton agence IA avec tes leads dormants, +100k€ en 6 mois",
@@ -2480,7 +2680,7 @@
     "url": "https://www.linkedin.com/in/mike-peron-a4a898295/",
     "vanity": "mike-peron-a4a898295",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Mike, +5000 personnes formées à l'IA, tu as dû voir les objections évoluer vite en deux ans. Aujourd'hui les dirigeants bloquent encore sur l'outil ou c'est devenu autre chose ?",
     "angle": "5000 personnes formées à l'IA"
    },
@@ -2500,7 +2700,7 @@
     "url": "https://www.linkedin.com/in/marinenardou/",
     "vanity": "marinenardou",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Marine, tu t'es positionnée sur le delivery des infopreneurs alors que tout le monde se bat sur l'acquisition. C'est là que tu as vu le plus de dégâts chez tes clients ?",
     "angle": "Delivery plutôt qu'acquisition"
    },
@@ -2510,7 +2710,7 @@
     "url": "https://www.linkedin.com/in/loubie/",
     "vanity": "loubie",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Léa, tu prospectes sur le marché français, le Benelux et l'EMEA, ce qui fait autant de codes différents à maîtriser. Le Benelux réagit vraiment différemment du marché français en prospection ?",
     "angle": "Prospection multi-marchés"
    },
@@ -2530,7 +2730,7 @@
     "url": "https://www.linkedin.com/in/ks5588/",
     "vanity": "ks5588",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Kévin, tu fais du setting sur LinkedIn et Instagram en parallèle de la prod vidéo. Les deux plateformes demandent des approches vraiment différentes en DM ou tu gardes la même trame ?",
     "angle": "Setting LinkedIn et Instagram"
    },
@@ -2550,7 +2750,7 @@
     "url": "https://www.linkedin.com/in/guillaume-vuillier/",
     "vanity": "guillaume-vuillier",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Guillaume, tu bosses à la fois avec des e-commerçants et des infopreneurs sur Meta, deux mondes assez différents. Tu gardes la même méthode d'acquisition ou tu repars de zéro selon le type de client ?",
     "angle": "E-commerce et infoprenariat sur Meta"
    },
@@ -2570,7 +2770,7 @@
     "url": "https://www.linkedin.com/in/basilevierne/",
     "vanity": "basilevierne",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Basile, entre le contenu pour les Sales B2B et le fait d'enseigner la vente, tu es des deux côtés du truc. Enseigner ça t'a fait changer ta propre façon de vendre ou pas du tout ?",
     "angle": "Enseigner la vente et la pratiquer"
    },
@@ -2600,7 +2800,7 @@
     "url": "https://www.linkedin.com/in/arnoldntantu/",
     "vanity": "arnoldntantu",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Arnold, tu construis depuis Kinshasa avec une audience largement hors RDC, c'est un positionnement que je trouve intéressant. Tes clients sont surtout sur le continent ou en Europe ?",
     "angle": "Construire depuis Kinshasa"
    },
@@ -2620,7 +2820,7 @@
     "url": "https://www.linkedin.com/in/alexandre-amiel-dev/",
     "vanity": "alexandre-amiel-dev",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Alex, promettre 20 RDV par mois sans que le client prospecte, ça met une vraie pression sur ta delivery. Le plus dur c'est de générer les RDV ou de les rendre qualifiés ?",
     "angle": "Promesse de 20 RDV par mois"
    },
@@ -2630,7 +2830,7 @@
     "url": "https://www.linkedin.com/in/albin-a-a80471269/",
     "vanity": "albin-a-a80471269",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Albin, tu es Head of sales et tu construis aussi les CRM, c'est une combinaison qu'on voit rarement. Le fait de vendre toi-même change beaucoup ta façon de penser l'outil ?",
     "angle": "Head of sales qui code son CRM"
    },
@@ -3750,7 +3950,7 @@
     "url": "https://www.linkedin.com/in/manon-brasseur-034954192/",
     "vanity": "manon-brasseur-034954192",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Manon, merci pour la connexion. Mener le closing et PrepaGPX en parallèle c'est deux mondes très différents, et beaucoup lâchent le second projet au bout de six mois. Les deux se nourrissent ou tu cloisonnes ?",
     "angle": "Mène le closing et PrepaGPX en parallèle"
    },
@@ -3790,7 +3990,7 @@
     "url": "https://www.linkedin.com/in/florian-bruchon-b35a8a383/",
     "vanity": "florian-bruchon-b35a8a383",
     "date": "2026-08-14",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Florian, merci d'avoir accepté. Cibler les coachs bien-être bloqués au présentiel c'est beaucoup plus fin que le coach générique que tout le monde vise. Tu viens de ce milieu-là toi aussi ?",
     "angle": "Cible précisément les coachs bien-être"
    },
