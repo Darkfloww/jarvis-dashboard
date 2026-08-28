@@ -2421,19 +2421,219 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-27",
-  "sent": 400,
-  "accepted": 240,
-  "rate": 60,
+  "updated": "2026-08-28",
+  "sent": 420,
+  "accepted": 246,
+  "rate": 59,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
    "2026-W33": 100,
    "2026-W34": 100,
-   "2026-W35": 60
+   "2026-W35": 80
   },
   "contacts": [
+   {
+    "name": "aurelien G.",
+    "title": "Closer / Setter high ticket, missions freelance France / Quebec",
+    "url": "https://www.linkedin.com/in/aur%C3%A9lien-girard/",
+    "vanity": "aur%C3%A9lien-girard",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Bosser entre la France et le Quebec sur du high ticket, j'imagine que le rapport a l'argent n'est pas le meme des deux cotes. C'est le genre de detail qui change tout un appel. Tu as du adapter ta facon d'amener le prix ?",
+    "angle": "France et Quebec"
+   },
+   {
+    "name": "Yanis El Hessouni",
+    "title": "Top closer dans un ecosysteme a +600k/mois (Sales Cartel)",
+    "url": "https://www.linkedin.com/in/yanis-el-hessouni-6b652332a/",
+    "vanity": "yanis-el-hessouni-6b652332a",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Bosser dans un ecosysteme a 600k par mois, ca veut dire un volume d'appels que peu de gens tiennent. Je me demande toujours comment on garde la qualite de conversation a ce rythme la. Tu fais comment pour ne pas partir en pilote automatique ?",
+    "angle": "Volume d'appels enorme"
+   },
+   {
+    "name": "Tugdual D.",
+    "title": "High Ticket Setter | Service & conseil aux entreprises (EcomRevolution)",
+    "url": "https://www.linkedin.com/in/tugdual-d-284410301/",
+    "vanity": "tugdual-d-284410301",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Setter chez EcomRevolution, tu es sur la partie la plus ingrate et la plus determinante du funnel. Un setter qui qualifie mal fait perdre tout le reste de la chaine. Tu as une question qui te sert de filtre principal ?",
+    "angle": "Setter sur la partie determinante"
+   },
+   {
+    "name": "Timothee Darnick",
+    "title": "Setter - Closer | conversion et ventes a forte valeur pour infopreneurs, coachs/formateurs et agences",
+    "url": "https://www.linkedin.com/in/timoth%C3%A9e-darnick-b72403205/",
+    "vanity": "timoth%C3%A9e-darnick-b72403205",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Faire du setting et du closing pour des infopreneurs francophones depuis Libreville, c'est du remote assume jusqu'au bout. Le decalage doit jouer sur les creneaux d'appels. Ca se passe comment cote organisation ?",
+    "angle": "Remote depuis Libreville"
+   },
+   {
+    "name": "Thomas Shamoev",
+    "title": "Fondateur CloseOS, le SaaS des closers et infopreneurs | ClosersLab, forme les closers debutants",
+    "url": "https://www.linkedin.com/in/thomas-shamoev/",
+    "vanity": "thomas-shamoev",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Ton parcours closer et setter avant de passer au code, c'est rare dans ce sens. La plupart des gens qui construisent des outils de vente n'ont jamais pris un appel de leur vie. C'est quoi le truc que tu avais vu de l'interieur et que personne ne voulait croire ?",
+    "angle": "Ancien closer devenu builder"
+   },
+   {
+    "name": "Terry Khennavong",
+    "title": "Co-fondateur Kommunify et de l'Incubateur, aide coachs et formateurs a scaler a +25k/mois",
+    "url": "https://www.linkedin.com/in/terry-khennavong/",
+    "vanity": "terry-khennavong",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Passer de l'accompagnement un a un a un incubateur, c'est un changement de metier complet. Beaucoup restent coinces au premier stade parce que c'est confortable. Qu'est-ce qui t'a decide a monter l'incubateur ?",
+    "angle": "Passage a l'incubateur"
+   },
+   {
+    "name": "Tenzin Kalsang",
+    "title": "Appointment Setter & Sales Closer | Remote Sales | Hiring & Training Setters (US)",
+    "url": "https://www.linkedin.com/in/tenzin-kalsang-102714126/",
+    "vanity": "tenzin-kalsang-102714126",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Going from hospitality and retail into remote sales is a jump most people don't survive. What caught my eye is that you now train setters instead of only closing yourself. What did hospitality teach you that you still use on calls ?",
+    "angle": "Hospitality vers remote sales"
+   },
+   {
+    "name": "Simon Stervinou",
+    "title": "Closing High Ticket | 10 ans de vente SaaS B2B et closing B2C",
+    "url": "https://www.linkedin.com/in/simon-stervinou-92018978/",
+    "vanity": "simon-stervinou-92018978",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Dix ans de SaaS B2B puis du closing B2C, ce sont deux facons de vendre opposees. D'un cote des cycles longs, de l'autre tout se joue sur un seul appel. Lequel des deux t'a demande le plus d'adaptation ?",
+    "angle": "SaaS B2B puis closing B2C"
+   },
+   {
+    "name": "Simon Aubineau",
+    "title": "Closer / Setter High ticket, aide les infopreneurs a convertir leurs leads qualifies",
+    "url": "https://www.linkedin.com/in/simon-aubineau-b32a83218/",
+    "vanity": "simon-aubineau-b32a83218",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Setter et closer en independant, ca veut dire que tu tiens la conversation de bout en bout. Beaucoup separent les deux et perdent le fil entre les deux etapes. Toi tu gardes les deux volontairement ou c'est venu comme ca ?",
+    "angle": "Tient setting et closing"
+   },
+   {
+    "name": "Maxence Lepagnot",
+    "title": "Closer specialise coaching & formation | Conversion & ventes",
+    "url": "https://www.linkedin.com/in/maxence-lepagnot-2208453b1/",
+    "vanity": "maxence-lepagnot-2208453b1",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "La Gendarmerie puis le closing, je n'avais pas vu venir cet enchainement. Le sang-froid doit servir, mais j'imagine que le reste du logiciel est a jeter. Qu'est-ce qui a ete le plus dur a desapprendre ?",
+    "angle": "Ex Gendarmerie Nationale"
+   },
+   {
+    "name": "Marine Leclerc",
+    "title": "Closeuse certifiee (Closer Evolution)",
+    "url": "https://www.linkedin.com/in/marine-leclerc-877008188/",
+    "vanity": "marine-leclerc-877008188",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Ta phrase sur le fait que ce n'est pas un manque d'envie mais un manque de clarte, c'est exactement ce que la plupart ratent. Ils poussent alors qu'il faudrait clarifier. Tu es arrivee a cette lecture apres combien d'appels ?",
+    "angle": "Manque de clarte, pas d'envie"
+   },
+   {
+    "name": "Marie Duperray",
+    "title": "Customer Success Manager freelance | Closer inbound B2B | Offres High ticket",
+    "url": "https://www.linkedin.com/in/marie-duperray/",
+    "vanity": "marie-duperray",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Ton idee que la vente ne s'arrete pas a la signature, peu de closers la portent. Logique, la plupart ne voient jamais ce qui se passe apres. Le fait d'etre aussi CSM, ca change ce que tu promets pendant l'appel ?",
+    "angle": "Closer et CSM a la fois"
+   },
+   {
+    "name": "Frances co",
+    "title": "Closer professionnel B2C/B2B High Ticket, specialise reconversion professionnelle",
+    "url": "https://www.linkedin.com/in/frances-co/",
+    "vanity": "frances-co",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "25 ans d'artisanat puis closer sur la reconversion professionnelle, tu vends a des gens qui vivent exactement ce que tu as vecu. C'est un avantage tres difficile a copier. Ca t'arrive de le dire en appel ou tu le gardes pour toi ?",
+    "angle": "Ex artisan qui vend de la reconversion"
+   },
+   {
+    "name": "Fatima ESSAFFAR",
+    "title": "Setter & Closer, accompagne les entrepreneurs sante et parentalite a booster leur pole commercial",
+    "url": "https://www.linkedin.com/in/fatima-essaffar/",
+    "vanity": "fatima-essaffar",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Sante et parentalite, ce sont des sujets ou les prospects sont dans l'emotion bien avant d'etre dans la decision. La vente y est plus delicate qu'ailleurs. Tu t'es specialisee la-dessus par choix personnel ?",
+    "angle": "Niche sante et parentalite"
+   },
+   {
+    "name": "David HARLEY",
+    "title": "Setter/Closer, aide les coachs sante et bien-etre a convertir leurs leads (Closer Evolution)",
+    "url": "https://www.linkedin.com/in/david-harley-801080246/",
+    "vanity": "david-harley-801080246",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Tu accompagnes des coachs sante et bien-etre et le sport est partout sur ton profil, donc tu vends a des gens dont tu parles vraiment la langue. Ca evite le decalage classique du closer qui decouvre le secteur. C'est ton parcours sportif qui t'a amene la ?",
+    "angle": "Parle la langue de ses clients"
+   },
+   {
+    "name": "Chahine Abdessalem",
+    "title": "Closer | Sales Coach (shaperoom)",
+    "url": "https://www.linkedin.com/in/chahineabdessalam/",
+    "vanity": "chahineabdessalam",
+    "date": "2026-08-28",
+    "status": "accepted",
+    "opener": "Closer et sales coach en meme temps, c'est deux metiers differents. Coacher oblige a verbaliser des choses qu'on fait a l'instinct quand on est en appel. Tu as trouve ca dur au debut de mettre des mots dessus ?",
+    "angle": "Closer et coach en meme temps"
+   },
+   {
+    "name": "Cathy SALAUN",
+    "title": "High Ticket Sales Closer",
+    "url": "https://www.linkedin.com/in/cathy-salaun-07399a31/",
+    "vanity": "cathy-salaun-07399a31",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "J'ai vu que tu relaies beaucoup de contenu de praticiennes qui accompagnent des transitions de vie. C'est un public qui vend quelque chose de tres intime, la vente y est forcement differente d'ailleurs. C'est une clientele que tu as choisie ou qui est venue a toi ?",
+    "angle": "Relaie des praticiennes de transition de vie"
+   },
+   {
+    "name": "Anne Capblancq",
+    "title": "Accompagne les infopreneurs a developper leur CA en vente high ticket / closing (Beyond Closer Arena)",
+    "url": "https://www.linkedin.com/in/anne-capblancq-6298ba3/",
+    "vanity": "anne-capblancq-6298ba3",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "18 ans en direction marketing dans l'agro puis le closing pour infopreneurs, c'est un virage que je n'avais encore jamais croise. Les deux mondes n'ont rien a voir en apparence. Il y a un reflexe de l'agro qui te sert encore aujourd'hui ?",
+    "angle": "18 ans en direction marketing agro"
+   },
+   {
+    "name": "Alexandre Sisavath",
+    "title": "Remote High-ticket Sales Closer",
+    "url": "https://www.linkedin.com/in/alexandre-sisavath-26b3752bb/",
+    "vanity": "alexandre-sisavath-26b3752bb",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "J'ai vu ton post ou tu partageais tes premiers mois comme closer remote. C'est rare que quelqu'un documente cette phase au lieu d'attendre d'avoir des chiffres a montrer. Ca se passe comment depuis ?",
+    "angle": "Documente ses debuts"
+   },
+   {
+    "name": "Aleksandra Podgorsek",
+    "title": "High Ticket Setter & Closer, Closers.io, +2M de CA genere en 9 mois",
+    "url": "https://www.linkedin.com/in/aleksandra-podgorsek-000252199/",
+    "vanity": "aleksandra-podgorsek-000252199",
+    "date": "2026-08-28",
+    "status": "pending",
+    "opener": "Natural sciences and engineering in Ljubljana, then high ticket setting and closing. That is not a path anyone plans in advance. Did the technical training change how you read a call, or did you have to unlearn most of it ?",
+    "angle": "Sciences puis closing"
+   },
    {
     "name": "Younes Guechir",
     "title": "Closer & specialiste du developpement commercial, ex Closers International",
@@ -2460,7 +2660,7 @@
     "url": "https://www.linkedin.com/in/remi-le-bechec/",
     "vanity": "remi-le-bechec",
     "date": "2026-08-27",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Remi, Revenue Architect c'est un titre que je vois rarement, la plupart des gens s'arretent a business developer. Tu l'as choisi parce que le job a vraiment change ou parce que le mot portait mieux ce que tu fais ?",
     "angle": "Le titre Revenue Architect, rare face au classique business developer"
    },
@@ -2480,7 +2680,7 @@
     "url": "https://www.linkedin.com/in/mr-imad-el-86750522b/",
     "vanity": "mr-imad-el-86750522b",
     "date": "2026-08-27",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Imad, tu mets l'influence au meme niveau que la performance commerciale sur ton profil, alors que beaucoup de closers ne parlent que de chiffres. Tu es venu au closing par quel chemin ?",
     "angle": "L'influence mise au meme niveau que la performance commerciale"
    },
@@ -2540,7 +2740,7 @@
     "url": "https://www.linkedin.com/in/garance-accarias/",
     "vanity": "garance-accarias",
     "date": "2026-08-27",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Garance, closer au sein d'une structure comme Lioness plutot qu'en solo, ca doit changer pas mal de choses au quotidien, ne serait ce que sur les leads qui arrivent. Tu y es depuis longtemps ?",
     "angle": "Closer en structure (Lioness Closing) plutot qu'en solo"
    },
@@ -2560,7 +2760,7 @@
     "url": "https://www.linkedin.com/in/daniel-de-oliveira-200a40216/",
     "vanity": "daniel-de-oliveira-200a40216",
     "date": "2026-08-27",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Daniel, Head of Sales dans une boite qui vend justement du rendez vous qualifie, ca veut dire que tu es ton propre cas d'usage tous les jours. J'imagine que ca met une pression particuliere sur tes chiffres. Tu le vis comment ?",
     "angle": "Head of Sales dans une boite qui vend du RDV qualifie, donc son propre cas d'usage"
    },
@@ -2600,7 +2800,7 @@
     "url": "https://www.linkedin.com/in/antoine-panau/",
     "vanity": "antoine-panau",
     "date": "2026-08-27",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Antoine, tenir le B2B et le B2C en meme temps c'est deux facons de vendre assez differentes, la plupart finissent par choisir. Tu arrives a garder les deux sans que ca se marche dessus ?",
     "angle": "Tenir le B2B et le B2C en meme temps, deux facons de vendre differentes"
    },
