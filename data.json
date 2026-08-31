@@ -2421,19 +2421,220 @@
   }
  ],
  "linkedin": {
-  "updated": "2026-08-28",
-  "sent": 420,
-  "accepted": 246,
-  "rate": 59,
+  "updated": "2026-08-31",
+  "sent": 440,
+  "accepted": 262,
+  "rate": 60,
   "weekly_count": {
    "2026-W30": 40,
    "2026-W31": 20,
    "2026-W32": 80,
    "2026-W33": 100,
    "2026-W34": 100,
-   "2026-W35": 80
+   "2026-W35": 80,
+   "2026-W36": 20
   },
   "contacts": [
+   {
+    "name": "ofer S.",
+    "title": "High-Ticket Closer & Client Advisor | Trust-Based Sales | B2B, Tokyo",
+    "url": "https://www.linkedin.com/in/ofershahar/",
+    "vanity": "ofershahar",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Ofer, you position on trust-based selling and helping prospects decide, which reads very differently from the usual high ticket pitch. Is that a personal conviction, or something the market in Japan pushed you toward?",
+    "angle": "Trust-based sales from Tokyo"
+   },
+   {
+    "name": "Zille H.",
+    "title": "Outbound Operator for B2B Founders | Building Pipeline Systems That Actually Close, Italie",
+    "url": "https://www.linkedin.com/in/zille-h/",
+    "vanity": "zille-h",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Zille, you frame your work as building pipeline systems rather than just sending volume, which is a distinction most outbound people skip. Did you land on that after watching spray-and-pray stop working?",
+    "angle": "Systems over volume in outbound"
+   },
+   {
+    "name": "Yonden Sherpa",
+    "title": "Founder | Growth Operator | GEO/SEO, Content & Demand Gen for DTC and B2B brands, Canada",
+    "url": "https://www.linkedin.com/in/yondensherpa/",
+    "vanity": "yondensherpa",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Yonden, your line about building growth engines for brands that can't rely on ads stuck with me. Most people in your space lead with paid. Was that a deliberate positioning choice, or did it come from a client you couldn't solve with ads?",
+    "angle": "Builds growth engines, not ads"
+   },
+   {
+    "name": "William Kpossou",
+    "title": "GTM & RevOps Engineer | systemes go-to-market automatises no-code & IA | n8n, Make, Clay, HubSpot",
+    "url": "https://www.linkedin.com/in/williamkpossou/",
+    "vanity": "williamkpossou",
+    "date": "2026-08-31",
+    "status": "accepted",
+    "opener": "Salut William, merci pour la connexion. Ton parcours m'a arrete : product designer chez Accor puis GTM et RevOps sur du n8n et du Clay. C'est un virage assez net. Qu'est-ce qui t'a fait basculer du design vers les systemes d'acquisition ?",
+    "angle": "Passage du design au RevOps"
+   },
+   {
+    "name": "Ron Basnet",
+    "title": "CEO | High-Ticket Sales Closer | Remote Closer & Setter, Nagoya",
+    "url": "https://www.linkedin.com/in/ronbasnet/",
+    "vanity": "ronbasnet",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Ron, remote closing out of Nagoya is a setup I don't come across often, most people in high ticket cluster in the US or Dubai. Do the time zones work in your favour, or is that the hard part?",
+    "angle": "High ticket closer based in Japan"
+   },
+   {
+    "name": "Remi Larrivee",
+    "title": "Setter-Closer High Ticket independant, Orleans",
+    "url": "https://www.linkedin.com/in/r%C3%A9mi-larriv%C3%A9e-3820b0284/",
+    "vanity": "r%C3%A9mi-larriv%C3%A9e-3820b0284",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Remi, t'es le premier closer que je vois afficher son ENFJ-A en clair sur son profil. Tu trouves vraiment que ca change ta facon de mener un call, ou c'est surtout un filtre pour attirer les bons clients ?",
+    "angle": "Affiche son type MBTI"
+   },
+   {
+    "name": "Nour Berjawi",
+    "title": "Certified High Ticket Closing | Elite Sales Mastery Academy | helps coaches and consultants convert leads, Liban",
+    "url": "https://www.linkedin.com/in/nour-berjawi-62b62a208/",
+    "vanity": "nour-berjawi-62b62a208",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Nour, you describe your approach as pressure-free, which is almost the opposite of how high ticket closing usually gets taught. Did you start out with the harder scripts and move away from them?",
+    "angle": "Ethical, pressure-free closing"
+   },
+   {
+    "name": "Nicolas Gouaux",
+    "title": "Closer d'offres high ticket, Monte-Carlo",
+    "url": "https://www.linkedin.com/in/nicolas-gouaux-a6903a254/",
+    "vanity": "nicolas-gouaux-a6903a254",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Nicolas, ton resume parle d'apprendre a lire les gens avant de closer, ce qui est assez loin des profils qui vendent surtout du script. Tu as construit ca sur le terrain ou quelqu'un te l'a transmis ?",
+    "angle": "Closing depuis Monaco"
+   },
+   {
+    "name": "Nadia Charra",
+    "title": "Setter/Closer, Grenoble",
+    "url": "https://www.linkedin.com/in/nadia-charra-406a01409/",
+    "vanity": "nadia-charra-406a01409",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Nadia, tu tiens le setting et le closing sur la meme ligne, alors que la plupart se specialisent d'un cote ou de l'autre. Tu preferes garder le prospect de bout en bout ? Je me demande si ca change vraiment le taux de closing.",
+    "angle": "Setter et closer a la fois"
+   },
+   {
+    "name": "Malone Blain",
+    "title": "Closer High Ticket, Orvault",
+    "url": "https://www.linkedin.com/in/malone-blain-588456273/",
+    "vanity": "malone-blain-588456273",
+    "date": "2026-08-31",
+    "status": "accepted",
+    "opener": "Salut Malone, merci d'avoir accepte si vite. J'ai vu que tu closes en high ticket sous ta propre structure plutot qu'en freelance rattache a une agence. Tu as commence directement comme ca ou tu es passe par une equipe avant ?",
+    "angle": "A monte sa propre structure"
+   },
+   {
+    "name": "Lucas Strabach",
+    "title": "Head of Sales | Closer independant, Epinal",
+    "url": "https://www.linkedin.com/in/lucas-strabach-6762b2253/",
+    "vanity": "lucas-strabach-6762b2253",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Lucas, j'ai vu que tu es Head of Sales et ouvert a de nouvelles opportunites en ce moment. Tu cherches plutot a reprendre une equipe en interne, ou a rester sur du closing en independant ?",
+    "angle": "Head of Sales en transition"
+   },
+   {
+    "name": "Julien Richard",
+    "title": "Fondateur des agences Scale & Hook | crea, methodo, paid qui scale | +100 marques accompagnees",
+    "url": "https://www.linkedin.com/in/julien-richard-0401/",
+    "vanity": "julien-richard-0401",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Julien, j'ai vu que tu fais tourner Scale et Hook en parallele plutot que d'avoir tout fusionne sous une seule marque. C'est un choix qu'on voit rarement. C'etait pour separer la creation de l'acquisition, ou c'est venu autrement ?",
+    "angle": "Deux agences en parallele"
+   },
+   {
+    "name": "Julien Petit",
+    "title": "Business Developer @ Kraak (acquisition LinkedIn automatisee), Toulouse",
+    "url": "https://www.linkedin.com/in/jupetit1/",
+    "vanity": "jupetit1",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Julien, tu fais du business development chez Kraak, donc tu prospectes sur LinkedIn pour vendre un outil de prospection LinkedIn. J'imagine que tu es oblige d'etre irreprochable sur ta propre approche. Ca met la pression ou ca aide ?",
+    "angle": "Business dev cote outil LinkedIn"
+   },
+   {
+    "name": "Jimmy Beja",
+    "title": "Closer high ticket independant, Marigny-les-Usages",
+    "url": "https://www.linkedin.com/in/jimmy-beja-302025176/",
+    "vanity": "jimmy-beja-302025176",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Jimmy, closer high ticket en independant depuis le Loiret, loin des hubs habituels. Tu bosses surtout avec des clients francais ou tu vas chercher ailleurs ?",
+    "angle": "Closer independant hors grande ville"
+   },
+   {
+    "name": "Gustav Lilja",
+    "title": "Growth & Commercial Leader | Scaling Digital Businesses | Independent Commercial & Growth Advisor, Stockholm",
+    "url": "https://www.linkedin.com/in/gustav-lilja/",
+    "vanity": "gustav-lilja",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Gustav, you moved from commercial leadership roles into advising independently. That's a jump a lot of people talk about and few actually make. What pushed you to go independent?",
+    "angle": "Went independent after leading"
+   },
+   {
+    "name": "Evan-Gabriel Maillard",
+    "title": "Traffic Manager & Growth Operator | SEO, CRM, e-commerce & prospection B2B",
+    "url": "https://www.linkedin.com/in/evan-gabriel-maillard/",
+    "vanity": "evan-gabriel-maillard",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Evan-Gabriel, ton profil sort du lot : la plupart des gens choisissent leur camp entre le SEO et la prospection sortante, toi tu pilotes les deux. Tu trouves que les deux se nourrissent, ou tu les gardes vraiment separes ?",
+    "angle": "SEO et prospection en meme temps"
+   },
+   {
+    "name": "David Ishimwe",
+    "title": "Remote Growth Operator, France",
+    "url": "https://www.linkedin.com/in/david-ishimwe-a82b86138/",
+    "vanity": "david-ishimwe-a82b86138",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut David, growth operator en remote total, c'est exactement le format que je fais tourner de mon cote. Tu bosses sur combien de clients en parallele en general ? J'ai du mal a trouver le bon curseur.",
+    "angle": "Growth operator full remote"
+   },
+   {
+    "name": "Clemence Siret",
+    "title": "Commercial chez SforSales Academy (academie de vente/closing), Bordeaux",
+    "url": "https://www.linkedin.com/in/clemencesiret/",
+    "vanity": "clemencesiret",
+    "date": "2026-08-31",
+    "status": "accepted",
+    "opener": "Salut Clemence, merci d'avoir accepte. Tu es commerciale chez SforSales, donc tu vends de la formation a la vente a des gens qui vendent deja. J'imagine que les objections que tu prends sont d'un autre niveau que la moyenne. C'est plus dur ou plus simple qu'un produit classique ?",
+    "angle": "Vendre une academie de vente"
+   },
+   {
+    "name": "Amani Sarout",
+    "title": "High Ticket Sales Closer / Remote / Closing High Value Deals & Driving Revenue, Edmonton",
+    "url": "https://www.linkedin.com/in/amani-sarout-52ba311a1/",
+    "vanity": "amani-sarout-52ba311a1",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Hey Amani, closing high value deals remotely out of Edmonton is a setup I don't see often. Are your clients mostly local, or are you working across borders?",
+    "angle": "Closing high value deals remote"
+   },
+   {
+    "name": "Alessandro Danessi",
+    "title": "Account Executive Manager, closing fast sales cycles, 500k+ rev vendu, Zurich",
+    "url": "https://www.linkedin.com/in/alessandro-danessi-608b91277/",
+    "vanity": "alessandro-danessi-608b91277",
+    "date": "2026-08-31",
+    "status": "pending",
+    "opener": "Salut Alessandro, tu te positionnes sur les cycles de vente courts, alors que la plupart des AE mettent en avant les gros contrats longs. C'est un choix de ta part ou c'est le produit qui impose ce rythme ?",
+    "angle": "Specialise sur les cycles courts"
+   },
    {
     "name": "aurelien G.",
     "title": "Closer / Setter high ticket, missions freelance France / Quebec",
@@ -2450,7 +2651,7 @@
     "url": "https://www.linkedin.com/in/yanis-el-hessouni-6b652332a/",
     "vanity": "yanis-el-hessouni-6b652332a",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Bosser dans un ecosysteme a 600k par mois, ca veut dire un volume d'appels que peu de gens tiennent. Je me demande toujours comment on garde la qualite de conversation a ce rythme la. Tu fais comment pour ne pas partir en pilote automatique ?",
     "angle": "Volume d'appels enorme"
    },
@@ -2470,7 +2671,7 @@
     "url": "https://www.linkedin.com/in/timoth%C3%A9e-darnick-b72403205/",
     "vanity": "timoth%C3%A9e-darnick-b72403205",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Faire du setting et du closing pour des infopreneurs francophones depuis Libreville, c'est du remote assume jusqu'au bout. Le decalage doit jouer sur les creneaux d'appels. Ca se passe comment cote organisation ?",
     "angle": "Remote depuis Libreville"
    },
@@ -2480,7 +2681,7 @@
     "url": "https://www.linkedin.com/in/thomas-shamoev/",
     "vanity": "thomas-shamoev",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Ton parcours closer et setter avant de passer au code, c'est rare dans ce sens. La plupart des gens qui construisent des outils de vente n'ont jamais pris un appel de leur vie. C'est quoi le truc que tu avais vu de l'interieur et que personne ne voulait croire ?",
     "angle": "Ancien closer devenu builder"
    },
@@ -2510,7 +2711,7 @@
     "url": "https://www.linkedin.com/in/simon-stervinou-92018978/",
     "vanity": "simon-stervinou-92018978",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Dix ans de SaaS B2B puis du closing B2C, ce sont deux facons de vendre opposees. D'un cote des cycles longs, de l'autre tout se joue sur un seul appel. Lequel des deux t'a demande le plus d'adaptation ?",
     "angle": "SaaS B2B puis closing B2C"
    },
@@ -2520,7 +2721,7 @@
     "url": "https://www.linkedin.com/in/simon-aubineau-b32a83218/",
     "vanity": "simon-aubineau-b32a83218",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Setter et closer en independant, ca veut dire que tu tiens la conversation de bout en bout. Beaucoup separent les deux et perdent le fil entre les deux etapes. Toi tu gardes les deux volontairement ou c'est venu comme ca ?",
     "angle": "Tient setting et closing"
    },
@@ -2530,7 +2731,7 @@
     "url": "https://www.linkedin.com/in/maxence-lepagnot-2208453b1/",
     "vanity": "maxence-lepagnot-2208453b1",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "La Gendarmerie puis le closing, je n'avais pas vu venir cet enchainement. Le sang-froid doit servir, mais j'imagine que le reste du logiciel est a jeter. Qu'est-ce qui a ete le plus dur a desapprendre ?",
     "angle": "Ex Gendarmerie Nationale"
    },
@@ -2540,7 +2741,7 @@
     "url": "https://www.linkedin.com/in/marine-leclerc-877008188/",
     "vanity": "marine-leclerc-877008188",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Ta phrase sur le fait que ce n'est pas un manque d'envie mais un manque de clarte, c'est exactement ce que la plupart ratent. Ils poussent alors qu'il faudrait clarifier. Tu es arrivee a cette lecture apres combien d'appels ?",
     "angle": "Manque de clarte, pas d'envie"
    },
@@ -2560,7 +2761,7 @@
     "url": "https://www.linkedin.com/in/frances-co/",
     "vanity": "frances-co",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "25 ans d'artisanat puis closer sur la reconversion professionnelle, tu vends a des gens qui vivent exactement ce que tu as vecu. C'est un avantage tres difficile a copier. Ca t'arrive de le dire en appel ou tu le gardes pour toi ?",
     "angle": "Ex artisan qui vend de la reconversion"
    },
@@ -2570,7 +2771,7 @@
     "url": "https://www.linkedin.com/in/fatima-essaffar/",
     "vanity": "fatima-essaffar",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Sante et parentalite, ce sont des sujets ou les prospects sont dans l'emotion bien avant d'etre dans la decision. La vente y est plus delicate qu'ailleurs. Tu t'es specialisee la-dessus par choix personnel ?",
     "angle": "Niche sante et parentalite"
    },
@@ -2600,7 +2801,7 @@
     "url": "https://www.linkedin.com/in/cathy-salaun-07399a31/",
     "vanity": "cathy-salaun-07399a31",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "J'ai vu que tu relaies beaucoup de contenu de praticiennes qui accompagnent des transitions de vie. C'est un public qui vend quelque chose de tres intime, la vente y est forcement differente d'ailleurs. C'est une clientele que tu as choisie ou qui est venue a toi ?",
     "angle": "Relaie des praticiennes de transition de vie"
    },
@@ -2630,7 +2831,7 @@
     "url": "https://www.linkedin.com/in/aleksandra-podgorsek-000252199/",
     "vanity": "aleksandra-podgorsek-000252199",
     "date": "2026-08-28",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Natural sciences and engineering in Ljubljana, then high ticket setting and closing. That is not a path anyone plans in advance. Did the technical training change how you read a call, or did you have to unlearn most of it ?",
     "angle": "Sciences puis closing"
    },
@@ -3030,7 +3231,7 @@
     "url": "https://www.linkedin.com/in/aina-raharimalala-529567b2/",
     "vanity": "aina-raharimalala-529567b2",
     "date": "2026-08-25",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Aina, piloter des forces de vente externalisees depuis Madagascar depuis 7 ans, ca doit donner un point de vue assez unique sur le marche francophone. Tes clients viennent surtout de France ou tu bosses aussi sur l'ocean Indien ?",
     "angle": "Pilote des forces de vente externalisees depuis Madagascar"
    },
@@ -3040,7 +3241,7 @@
     "url": "https://www.linkedin.com/in/virginie-casson-1226303a3/",
     "vanity": "virginie-casson-1226303a3",
     "date": "2026-08-24",
-    "status": "pending",
+    "status": "accepted",
     "opener": "Salut Virginie, l'angle des leads dormants est malin, tout le monde court après du nouveau lead en oubliant la base existante. Sur une agence classique, il y a vraiment autant à récupérer dans l'ancien fichier ?",
     "angle": "Leads dormants plutôt que nouveaux leads"
    },
