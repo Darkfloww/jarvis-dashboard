@@ -93,7 +93,13 @@ def parse_daily_log_entry(date_str):
     if not DAILY_LOG.exists():
         return {}
 
-    content = DAILY_LOG.read_text(encoding="utf-8")
+    try:
+        content = DAILY_LOG.read_text(encoding="utf-8")
+    except (PermissionError, OSError) as e:
+        # launchd runs without Full Disk Access, so ~/Documents is off limits (macOS TCC).
+        # The vault is only one of several sources — never let it kill the whole run.
+        print(f"  ⚠️  DAILY LOG unreadable ({e.__class__.__name__}) — skipping vault parse")
+        return {}
 
     # Strip HTML comments (<!-- ... -->) to avoid parsing the template
     content = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL)
