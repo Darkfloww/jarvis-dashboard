@@ -3210,7 +3210,7 @@
         },
         "strain": {
           "jour": 7.4,
-          "calories": 1767,
+          "calories": 1789,
           "fc_moyenne": 69,
           "fc_max": 158
         },
@@ -7927,7 +7927,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-02T03:57:46",
+    "last_sync": "2026-09-02T04:13:40",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
