@@ -197,6 +197,9 @@ nav{
   padding-bottom:12px;margin-bottom:4px;border-bottom:1px solid var(--border);}
 .wh-zone-legend span i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;font-style:normal;}
 .wh-nap{display:flex;justify-content:space-between;font-size:11px;color:var(--text2);padding:5px 0;}
+/* Declared, not measured — the counterpart of the whoop tag */
+.wh-src-tag{display:inline-block;font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text2);border:1px solid var(--border);border-radius:3px;padding:1px 5px;margin-left:6px;vertical-align:1px;}
 .wh-gauge-wrap{margin-top:14px;}
 .wh-gauge-hd{display:flex;justify-content:space-between;font-size:10px;color:var(--text2);
   text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px;}
@@ -478,7 +481,6 @@ nav{
       <button class="tab" onclick="showTab('trends',event)">Tendances</button>
       <button class="tab" onclick="showTab('business',event)">Business</button>
       <button class="tab" onclick="showTab('finance',event)">Finance</button>
-      <button class="tab" onclick="showTab('whoop',event)">Whoop</button>
       <button class="tab" onclick="showTab('corps',event)">Corps</button>
       <button class="tab" onclick="showTab('tasks',event)">Tâches</button>
       <button class="tab" onclick="showTab('linkedin',event)">LinkedIn</button>
@@ -666,6 +668,42 @@ nav{
     </div>
   </div>
 
+  <!-- ── ÉTAT DU CORPS — mesuré, pas déclaré ─────────────────────── -->
+  <div class="sdiv fade-up-3" style="display:flex;align-items:center;justify-content:space-between">
+    <span>État du corps <span class="whoop-tag" style="margin-left:2px">whoop</span></span>
+    <span id="wh-sync" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0">—</span>
+  </div>
+  <div class="card fade-up-3" style="margin-bottom:12px;--c:#00F19F">
+    <div class="card-hd">
+      <div class="card-title"><div class="dot" style="background:#00F19F"></div> <span id="wh-day-lbl">Dernier jour</span></div>
+      <div class="card-score" id="wh-strain-hd">—</div>
+    </div>
+    <div class="wh-hero">
+      <div class="wh-rings">
+        <div class="wh-ring">
+          <svg viewBox="0 0 120 120"><circle class="wh-ring-bg" cx="60" cy="60" r="52"/><circle class="wh-ring-fg" id="wh-ring-rec" cx="60" cy="60" r="52"/></svg>
+          <div class="wh-ring-c"><div class="wh-ring-v" id="wh-ring-rec-v">—</div><div class="wh-ring-l">Recovery</div></div>
+        </div>
+        <div class="wh-ring">
+          <svg viewBox="0 0 120 120"><circle class="wh-ring-bg" cx="60" cy="60" r="52"/><circle class="wh-ring-fg" id="wh-ring-slp" cx="60" cy="60" r="52"/></svg>
+          <div class="wh-ring-c"><div class="wh-ring-v" id="wh-ring-slp-v">—</div><div class="wh-ring-l">Sommeil</div></div>
+        </div>
+        <div class="wh-ring">
+          <svg viewBox="0 0 120 120"><circle class="wh-ring-bg" cx="60" cy="60" r="52"/><circle class="wh-ring-fg" id="wh-ring-str" cx="60" cy="60" r="52"/></svg>
+          <div class="wh-ring-c"><div class="wh-ring-v" id="wh-ring-str-v">—</div><div class="wh-ring-l">Strain</div></div>
+        </div>
+      </div>
+      <div class="wh-hero-side">
+        <div id="wh-verdict" style="font-size:12px;line-height:1.7;color:var(--text2)"></div>
+      </div>
+    </div>
+    <div class="wh-gauge-wrap">
+      <div class="wh-gauge-hd"><span>Charge cardiovasculaire</span><span id="wh-gauge-lbl">—</span></div>
+      <div class="wh-gauge"><div class="wh-gauge-fill" id="wh-gauge-fill"></div><div class="wh-gauge-avg" id="wh-gauge-avg"></div></div>
+      <div class="wh-gauge-scale"><span>0</span><span>léger</span><span>modéré</span><span>intense</span><span>21</span></div>
+    </div>
+  </div>
+
   <div class="sdiv fade-up-3">Métriques détaillées</div>
   <div class="g3">
     <div class="card" style="--c:var(--yellow)">
@@ -823,6 +861,39 @@ nav{
   <div class="card">
     <div id="correlations-content"><div style="font-size:12px;color:var(--text2)">Calcul en cours...</div></div>
   </div>
+
+  <div class="sdiv">Physiologie <span class="whoop-tag">whoop</span> <span id="wh-trend-lbl" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0;margin-left:6px">—</span></div>
+  <div class="card" style="margin-bottom:12px;--c:#00F19F">
+    <div class="card-hd"><div class="card-title"><div class="dot" style="background:#00F19F"></div> Charge encaissée vs état du corps</div><div class="card-score">strain / recovery</div></div>
+    <div class="ch" style="height:200px"><canvas id="whMixChart"></canvas></div>
+    <div class="wh-legend" style="margin-top:12px"><span><i style="background:#00F19F"></i>Recovery (%)</span><span><i style="background:#F87171"></i>Strain (0-21)</span></div>
+    <div id="wh-mix-read" style="font-size:12px;line-height:1.7;color:var(--text2);border-top:1px solid var(--border);padding-top:12px;margin-top:12px"></div>
+  </div>
+  <div class="g2" style="margin-bottom:12px">
+    <div class="card" style="--c:#00F19F">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:#00F19F"></div> Recovery</div><div class="card-score" id="wh-rec-avg">—</div></div>
+      <div class="ch" style="height:130px"><canvas id="whRecChart"></canvas></div>
+    </div>
+    <div class="card" style="--c:var(--cyan)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--cyan)"></div> HRV</div><div class="card-score" id="wh-hrv-avg">—</div></div>
+      <div class="ch" style="height:130px"><canvas id="whHrvChart"></canvas></div>
+    </div>
+  </div>
+  <div class="g2" style="margin-bottom:12px">
+    <div class="card" style="--c:var(--orange)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> FC au repos</div><div class="card-score" id="wh-rhr-avg">—</div></div>
+      <div class="ch" style="height:130px"><canvas id="whRhrChart"></canvas></div>
+    </div>
+    <div class="card" style="--c:var(--red)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Calories brûlées</div><div class="card-score" id="wh-kcal-avg">—</div></div>
+      <div class="ch" style="height:130px"><canvas id="whKcalChart"></canvas></div>
+    </div>
+  </div>
+  <div class="card" style="margin-bottom:12px;--c:var(--purple)">
+    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--purple)"></div> Sommeil par stade</div><div class="card-score" id="wh-sleep-avg">—</div></div>
+    <div class="ch" style="height:170px"><canvas id="whSleepChart"></canvas></div>
+    <div class="wh-legend" style="margin-top:12px" id="wh-sleep-legend"></div>
+  </div>
 </div>
 
 <!-- BUSINESS -->
@@ -948,58 +1019,27 @@ nav{
 </div>
 
 <!-- CORPS -->
-<!-- WHOOP -->
-<div id="tab-whoop" class="section">
+<!-- CORPS -->
+<div id="tab-corps" class="section">
 
-  <!-- ══ ÉTAT DU JOUR ════════════════════════════════════════════════ -->
-  <div class="sdiv" style="display:flex;align-items:center;justify-content:space-between">
-    <span>État du jour <span class="whoop-tag" style="margin-left:2px">whoop</span></span>
-    <span id="wh-sync" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0">—</span>
-  </div>
+  <!-- ── MESURES DU JOUR ─────────────────────────────────────────── -->
+  <div class="sdiv">Mesures du jour <span class="whoop-tag">whoop</span></div>
   <div class="card" style="margin-bottom:12px;--c:#00F19F">
-    <div class="card-hd">
-      <div class="card-title"><div class="dot" style="background:#00F19F"></div> <span id="wh-day-lbl">Dernier jour</span></div>
-      <div class="card-score" id="wh-strain-hd">—</div>
-    </div>
-    <div class="wh-hero">
-      <div class="wh-rings">
-        <div class="wh-ring">
-          <svg viewBox="0 0 120 120"><circle class="wh-ring-bg" cx="60" cy="60" r="52"/><circle class="wh-ring-fg" id="wh-ring-rec" cx="60" cy="60" r="52"/></svg>
-          <div class="wh-ring-c"><div class="wh-ring-v" id="wh-ring-rec-v">—</div><div class="wh-ring-l">Recovery</div></div>
-        </div>
-        <div class="wh-ring">
-          <svg viewBox="0 0 120 120"><circle class="wh-ring-bg" cx="60" cy="60" r="52"/><circle class="wh-ring-fg" id="wh-ring-slp" cx="60" cy="60" r="52"/></svg>
-          <div class="wh-ring-c"><div class="wh-ring-v" id="wh-ring-slp-v">—</div><div class="wh-ring-l">Sommeil</div></div>
-        </div>
-        <div class="wh-ring">
-          <svg viewBox="0 0 120 120"><circle class="wh-ring-bg" cx="60" cy="60" r="52"/><circle class="wh-ring-fg" id="wh-ring-str" cx="60" cy="60" r="52"/></svg>
-          <div class="wh-ring-c"><div class="wh-ring-v" id="wh-ring-str-v">—</div><div class="wh-ring-l">Strain</div></div>
-        </div>
-      </div>
-      <div class="wh-hero-side">
-        <div id="wh-verdict" style="font-size:12px;line-height:1.7;color:var(--text2)"></div>
-      </div>
-    </div>
-    <div class="wh-grid" style="margin-top:16px">
+    <div class="wh-grid">
       <div class="wh-tile"><div class="wh-tile-lbl">HRV</div><div class="wh-tile-val" id="wh-hrv">—</div><div class="wh-tile-sub" id="wh-hrv-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">FC repos</div><div class="wh-tile-val" id="wh-rhr">—</div><div class="wh-tile-sub" id="wh-rhr-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">SpO₂</div><div class="wh-tile-val" id="wh-spo2">—</div><div class="wh-tile-sub" id="wh-spo2-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">Temp. cutanée</div><div class="wh-tile-val" id="wh-temp">—</div><div class="wh-tile-sub">peau</div></div>
     </div>
-    <div class="wh-grid">
+    <div class="wh-grid" style="margin-bottom:0">
       <div class="wh-tile"><div class="wh-tile-lbl">FC moyenne</div><div class="wh-tile-val" id="wh-fcmoy">—</div><div class="wh-tile-sub" id="wh-fcmax-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">Calories</div><div class="wh-tile-val" id="wh-kcal">—</div><div class="wh-tile-sub" id="wh-kcal-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">Perturbations</div><div class="wh-tile-val" id="wh-dist">—</div><div class="wh-tile-sub" id="wh-dist-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">Respiration</div><div class="wh-tile-val" id="wh-resp">—</div><div class="wh-tile-sub">au repos</div></div>
     </div>
-    <div class="wh-gauge-wrap">
-      <div class="wh-gauge-hd"><span>Charge cardiovasculaire</span><span id="wh-gauge-lbl">—</span></div>
-      <div class="wh-gauge"><div class="wh-gauge-fill" id="wh-gauge-fill"></div><div class="wh-gauge-avg" id="wh-gauge-avg"></div></div>
-      <div class="wh-gauge-scale"><span>0</span><span>léger</span><span>modéré</span><span>intense</span><span>21</span></div>
-    </div>
   </div>
 
-  <!-- ══ SOMMEIL ═════════════════════════════════════════════════════ -->
+  <!-- ── SOMMEIL ─────────────────────────────────────────────────── -->
   <div class="sdiv">Sommeil <span class="whoop-tag">whoop</span></div>
   <div class="g2" style="margin-bottom:12px">
     <div class="card" style="--c:var(--purple)">
@@ -1036,7 +1076,7 @@ nav{
     <div id="wh-nights"><div style="font-size:12px;color:var(--text2)">—</div></div>
   </div>
 
-  <!-- ══ SÉANCES ═════════════════════════════════════════════════════ -->
+  <!-- ── ENTRAÎNEMENT — mesuré puis programmé ────────────────────── -->
   <div class="sdiv" style="display:flex;align-items:center;justify-content:space-between">
     <span>Séances mesurées <span class="whoop-tag">whoop</span></span>
     <span id="wh-wk-count" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0">—</span>
@@ -1046,55 +1086,6 @@ nav{
     <div id="wh-workouts"><div style="font-size:12px;color:var(--text2)">—</div></div>
   </div>
 
-  <!-- ══ TENDANCES ═══════════════════════════════════════════════════ -->
-  <div class="sdiv" style="display:flex;align-items:center;justify-content:space-between">
-    <span>Tendances <span class="whoop-tag">whoop</span></span>
-    <span id="wh-trend-lbl" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0">—</span>
-  </div>
-  <div class="card" style="margin-bottom:12px;--c:#00F19F">
-    <div class="card-hd"><div class="card-title"><div class="dot" style="background:#00F19F"></div> Charge encaissée vs état du corps</div><div class="card-score">strain / recovery</div></div>
-    <div class="ch" style="height:200px"><canvas id="whMixChart"></canvas></div>
-    <div class="wh-legend" style="margin-top:12px"><span><i style="background:#00F19F"></i>Recovery (%)</span><span><i style="background:#F87171"></i>Strain (0-21)</span></div>
-    <div id="wh-mix-read" style="font-size:12px;line-height:1.7;color:var(--text2);border-top:1px solid var(--border);padding-top:12px;margin-top:12px"></div>
-  </div>
-  <div class="g2" style="margin-bottom:12px">
-    <div class="card" style="--c:#00F19F">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:#00F19F"></div> Recovery</div><div class="card-score" id="wh-rec-avg">—</div></div>
-      <div class="ch" style="height:130px"><canvas id="whRecChart"></canvas></div>
-    </div>
-    <div class="card" style="--c:var(--cyan)">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--cyan)"></div> HRV</div><div class="card-score" id="wh-hrv-avg">—</div></div>
-      <div class="ch" style="height:130px"><canvas id="whHrvChart"></canvas></div>
-    </div>
-  </div>
-  <div class="g2" style="margin-bottom:12px">
-    <div class="card" style="--c:var(--orange)">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> FC au repos</div><div class="card-score" id="wh-rhr-avg">—</div></div>
-      <div class="ch" style="height:130px"><canvas id="whRhrChart"></canvas></div>
-    </div>
-    <div class="card" style="--c:var(--red)">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Calories brûlées</div><div class="card-score" id="wh-kcal-avg">—</div></div>
-      <div class="ch" style="height:130px"><canvas id="whKcalChart"></canvas></div>
-    </div>
-  </div>
-  <div class="card" style="margin-bottom:12px;--c:var(--purple)">
-    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--purple)"></div> Sommeil par stade</div><div class="card-score" id="wh-sleep-avg">—</div></div>
-    <div class="ch" style="height:170px"><canvas id="whSleepChart"></canvas></div>
-    <div class="wh-legend" style="margin-top:12px" id="wh-sleep-legend"></div>
-  </div>
-  <div class="card" style="margin-bottom:12px;--c:var(--orange)">
-    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> Références</div><div class="card-score" id="wh-b-days">—</div></div>
-    <div class="wh-ref-hd"><span>Métrique</span><span>Aujourd'hui</span><span>Moyenne</span></div>
-    <div id="wh-refs"></div>
-    <div class="mrow" style="border-top:1px solid var(--border);margin-top:4px"><div class="lbl">Poids / taille / FC max</div><div class="val" id="wh-b-body">—</div></div>
-    <div class="mrow"><div class="lbl">Séances / siestes sur la période</div><div class="val" id="wh-b-counts">—</div></div>
-  </div>
-
-</div>
-
-<!-- CORPS -->
-<div id="tab-corps" class="section">
-
   <div class="sdiv">Programme d'entraînement</div>
   <div class="card" style="margin-bottom:12px;--c:var(--red)">
     <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div><div class="card-score" id="train-freq">4 séances/sem</div></div>
@@ -1102,7 +1093,18 @@ nav{
     <div id="train-sessions"><div style="font-size:12px;color:var(--text2)">Aucune séance log.</div></div>
   </div>
 
-  <div class="sdiv">Objectifs physiques</div>
+  <!-- ── RÉFÉRENCES ──────────────────────────────────────────────── -->
+  <div class="sdiv">Références <span class="whoop-tag">whoop</span></div>
+  <div class="card" style="margin-bottom:12px;--c:var(--orange)">
+    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> Aujourd'hui vs ta norme</div><div class="card-score" id="wh-b-days">—</div></div>
+    <div class="wh-ref-hd"><span>Métrique</span><span>Aujourd'hui</span><span>Moyenne</span></div>
+    <div id="wh-refs"></div>
+    <div class="mrow" style="border-top:1px solid var(--border);margin-top:4px"><div class="lbl">Poids / taille / FC max</div><div class="val" id="wh-b-body">—</div></div>
+    <div class="mrow"><div class="lbl">Séances / siestes sur la période</div><div class="val" id="wh-b-counts">—</div></div>
+  </div>
+
+  <!-- ── DÉCLARÉ AU CHECK-IN — ce que le bracelet ne mesure pas ──── -->
+  <div class="sdiv">Objectifs physiques <span class="wh-src-tag">check-in vocal</span></div>
   <div class="card" style="margin-bottom:12px">
     <div class="mrow"><div class="lbl">Objectif</div><div class="val" style="font-size:11px;max-width:200px;text-align:right">Pecs, épaules, bras, dos, abdos+obliques</div></div>
     <div class="mrow"><div class="lbl">Fréquence cible</div><div class="val">4 séances/semaine</div></div>
@@ -1170,6 +1172,15 @@ nav{
     <div class="rec-card" style="--c:var(--yellow)"><div class="rec-val" id="r-best-dms">—</div><div class="rec-lbl">Max DMs en 1 jour</div></div>
     <div class="rec-card" style="--c:var(--blue)"><div class="rec-val" id="r-best-dw">—h</div><div class="rec-lbl">Max Deep Work 1 jour</div></div>
     <div class="rec-card" style="--c:var(--orange)"><div class="rec-val" id="r-avg-score">—</div><div class="rec-lbl">Score moyen 7 jours</div></div>
+  </div>
+  <div class="sdiv">Records physiologiques <span class="whoop-tag">whoop</span></div>
+  <div class="rec-grid" style="margin-bottom:12px">
+    <div class="rec-card" style="--c:#00F19F"><div class="rec-val" id="r-wh-rec">—</div><div class="rec-lbl">Meilleur recovery</div></div>
+    <div class="rec-card" style="--c:var(--purple)"><div class="rec-val" id="r-wh-sleep">—</div><div class="rec-lbl">Plus longue nuit</div></div>
+    <div class="rec-card" style="--c:var(--red)"><div class="rec-val" id="r-wh-strain">—</div><div class="rec-lbl">Strain max en 1 jour</div></div>
+    <div class="rec-card" style="--c:var(--cyan)"><div class="rec-val" id="r-wh-hrv">—</div><div class="rec-lbl">HRV max</div></div>
+    <div class="rec-card" style="--c:var(--orange)"><div class="rec-val" id="r-wh-rhr">—</div><div class="rec-lbl">FC repos la plus basse</div></div>
+    <div class="rec-card" style="--c:var(--yellow)"><div class="rec-val" id="r-wh-wk">—</div><div class="rec-lbl">Séance la plus dure</div></div>
   </div>
   <div class="sdiv">Objectifs long terme</div>
   <div class="card">
@@ -1614,7 +1625,11 @@ function renderMetrics(day){
 
   // Physique
   $('ph-score').textContent=`${p.score||0}/20`;
-  $('ph-gym').innerHTML=p.gym!==undefined?boolTag(p.gym)+(p.gym_type?` <span style="color:#64748b;font-size:11px">(${p.gym_type})</span>`:''):'—';
+  // Whoop detects the session itself; only its type still comes from the check-in.
+  $('ph-gym').innerHTML=p.gym!==undefined
+    ? boolTag(p.gym)+(p.gym_type?` <span style="color:#64748b;font-size:11px">(${p.gym_type})</span>`:'')
+      +(p.gym_source==='whoop'?'<span class="whoop-tag">whoop</span>':'')
+    : '—';
   $('ph-sleep').textContent=p.coucher&&p.lever?`${p.coucher} → ${p.lever}`:p.coucher?`Couché ${p.coucher}`:'—';
   $('ph-sleeph').textContent=p.heures_sommeil?p.heures_sommeil+'h':'—h';
   // Whoop rows — objective, tagged so a glance separates measured from declared
@@ -2233,6 +2248,18 @@ function renderWhoop(data, allDays){
   }).join(''));
   const bd=W.body||{};
   set('wh-b-body', `${bd.poids_kg ?? '—'}kg · ${bd.taille_m ?? '—'}m · ${bd.fc_max ?? '—'}bpm`);
+
+  // ── Records physiologiques : ce que Whoop apporte aux Personal Bests
+  const best=(vals,cmp)=>vals.filter(v=>v[0]!=null).sort((x,y)=>cmp(x[0],y[0]))[0];
+  const dLbl=d=>new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{day:'numeric',month:'short'});
+  const asc=(x,y)=>x-y, desc=(x,y)=>y-x;
+  const setRec=(id,r,fmtv)=>{ const e=$(id); if(e) e.innerHTML = r ? fmtv(r[0])+`<span style="display:block;font-size:9px;color:var(--text2);font-weight:400;margin-top:4px">${dLbl(r[1])}</span>` : '—'; };
+  setRec('r-wh-rec',   best(whDays.map(d=>[d.whoop.recovery?.score, d.date]), desc), v=>v+'%');
+  setRec('r-wh-sleep', best(whDays.map(d=>[d.whoop.sleep?.heures_sommeil, d.date]), desc), v=>v+'h');
+  setRec('r-wh-strain',best(whDays.map(d=>[d.whoop.strain?.jour, d.date]), desc), v=>String(v));
+  setRec('r-wh-hrv',   best(whDays.map(d=>[d.whoop.recovery?.hrv, d.date]), desc), v=>v+'ms');
+  setRec('r-wh-rhr',   best(whDays.map(d=>[d.whoop.recovery?.rhr, d.date]), asc),  v=>v+'bpm');
+  setRec('r-wh-wk',    best(allWk.map(k=>[k.strain, k.date]), desc), v=>String(v));
   set('wh-b-counts', `${b.seances_total ?? '—'} séances sur ${b.jours_avec_seance ?? '—'} jours · ${b.siestes_total ?? '—'} siestes`);
 }
 function renderCorpsTab(data, allDays){
