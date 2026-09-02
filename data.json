@@ -3210,7 +3210,7 @@
         },
         "strain": {
           "jour": 7.4,
-          "calories": 1789,
+          "calories": 1812,
           "fc_moyenne": 69,
           "fc_max": 158
         },
@@ -3242,7 +3242,13 @@
         "score": 0
       },
       "physique": {
-        "score": 0
+        "score": 0,
+        "coucher": "04:23",
+        "lever": "09:49",
+        "heures_sommeil": 5.24,
+        "sommeil_source": "whoop",
+        "gym": false,
+        "gym_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3255,6 +3261,41 @@
       },
       "social": {
         "score": 0
+      },
+      "whoop": {
+        "recovery": {
+          "score": 71,
+          "hrv": 55.8,
+          "rhr": 57,
+          "spo2": 94.1,
+          "temp_peau": 34.6,
+          "calibrating": false
+        },
+        "sleep": {
+          "coucher": "04:23",
+          "lever": "09:49",
+          "heures_sommeil": 5.24,
+          "heures_au_lit": 5.44,
+          "rem_h": 1.03,
+          "deep_h": 1.8,
+          "light_h": 2.4,
+          "awake_h": 0.2,
+          "cycles": 3,
+          "perturbations": 8,
+          "performance_pct": 71.0,
+          "efficiency_pct": 96.3,
+          "consistency_pct": 46.0,
+          "respiratory_rate": 14.2,
+          "dette_h": 0.16,
+          "besoin_h": 8.17
+        },
+        "strain": {
+          "jour": 4.1,
+          "calories": 524,
+          "fc_moyenne": 58,
+          "fc_max": 113
+        },
+        "workouts": []
       }
     }
   ],
@@ -7927,7 +7968,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-02T04:13:40",
+    "last_sync": "2026-09-02T12:14:00",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -7935,16 +7976,16 @@
       "fc_max": 188
     },
     "baselines": {
-      "jours": 12,
-      "recovery_moy": 61.1,
+      "jours": 13,
+      "recovery_moy": 61.9,
       "hrv_moy": 55.7,
-      "rhr_moy": 56.5,
-      "sommeil_moy_h": 7.0,
-      "sleep_perf_moy": 77.2,
-      "consistency_moy": 47.1,
-      "strain_moy": 7.9
+      "rhr_moy": 56.6,
+      "sommeil_moy_h": 6.8,
+      "sleep_perf_moy": 76.7,
+      "consistency_moy": 47.0,
+      "strain_moy": 7.6
     },
-    "jours_couverts": 12,
+    "jours_couverts": 13,
     "premier_jour": "2026-08-21"
   }
 }
