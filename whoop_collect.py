@@ -126,7 +126,22 @@ def build_days(sleeps, recoveries, cycles, workouts):
 
     # 1. Sleep — the anchor
     for s in sleeps:
-        if s.get("score_state") != "SCORED" or s.get("nap"):
+        if s.get("score_state") != "SCORED":
+            continue
+        # Naps were skipped entirely, yet Whoop counts them and subtracts them from the
+        # night's sleep need. Filed on the day they happened, apart from the main sleep.
+        if s.get("nap"):
+            off = s.get("timezone_offset")
+            n_start, n_end = local_dt(s["start"], off), local_dt(s["end"], off)
+            n_st = s["score"]["stage_summary"]
+            n_asleep = n_st["total_in_bed_time_milli"] - n_st["total_awake_time_milli"]
+            slot(n_start.date().isoformat()).setdefault("siestes", []).append({
+                "debut": hm(n_start),
+                "fin": hm(n_end),
+                "duree_h": round(n_asleep / 3_600_000, 2),
+                "profond_h": round(n_st["total_slow_wave_sleep_time_milli"] / 3_600_000, 2),
+                "rem_h": round(n_st["total_rem_sleep_time_milli"] / 3_600_000, 2),
+            })
             continue
         off = s.get("timezone_offset")
         start, end = local_dt(s["start"], off), local_dt(s["end"], off)
@@ -154,6 +169,13 @@ def build_days(sleeps, recoveries, cycles, workouts):
             "besoin_h": round(sum(need.get(k, 0) or 0 for k in (
                 "baseline_milli", "need_from_sleep_debt_milli",
                 "need_from_recent_strain_milli", "need_from_recent_nap_milli")) / 3_600_000, 2),
+            # The four terms Whoop adds up. Collapsing them hid why the need moved.
+            "besoin_detail": {
+                "base_h": round((need.get("baseline_milli") or 0) / 3_600_000, 2),
+                "dette_h": round((need.get("need_from_sleep_debt_milli") or 0) / 3_600_000, 2),
+                "strain_h": round((need.get("need_from_recent_strain_milli") or 0) / 3_600_000, 2),
+                "siestes_h": round((need.get("need_from_recent_nap_milli") or 0) / 3_600_000, 2),
+            },
         }
         if s.get("cycle_id"):
             cycle_to_date[s["cycle_id"]] = d
@@ -213,6 +235,16 @@ def build_days(sleeps, recoveries, cycles, workouts):
             "fc_moyenne": sc.get("average_heart_rate"),
             "fc_max": sc.get("max_heart_rate"),
             "calories": round(sc["kilojoule"] / 4.184) if sc.get("kilojoule") else None,
+            # Six HR zones, in minutes. Two sessions of equal strain are not the same
+            # session: this is what separates a walk from an actual set.
+            "zones_min": [
+                round((zd.get(k) or 0) / 60000, 1) for k in (
+                    "zone_zero_milli", "zone_one_milli", "zone_two_milli",
+                    "zone_three_milli", "zone_four_milli", "zone_five_milli")
+            ] if (zd := sc.get("zone_durations") or {}) else None,
+            "distance_m": round(sc["distance_meter"]) if sc.get("distance_meter") else None,
+            "denivele_m": round(sc["altitude_gain_meter"]) if sc.get("altitude_gain_meter") else None,
+            "pct_enregistre": round(sc["percent_recorded"] * 100) if sc.get("percent_recorded") else None,
         })
 
     # A Whoop cycle straddles midnight, so clock strings do not sort — order on the UTC stamp.
@@ -248,6 +280,13 @@ def baselines(by_date, n=30):
         "sleep_perf_moy": avg(["sleep", "performance_pct"]),
         "consistency_moy": avg(["sleep", "consistency_pct"]),
         "strain_moy": avg(["strain", "jour"]),
+        "kcal_moy": avg(["strain", "calories"]),
+        "profond_moy_h": avg(["sleep", "deep_h"]),
+        "rem_moy_h": avg(["sleep", "rem_h"]),
+        "perturbations_moy": avg(["sleep", "perturbations"]),
+        "seances_total": sum(len(by_date[d].get("workouts") or []) for d in dates),
+        "siestes_total": sum(len(by_date[d].get("siestes") or []) for d in dates),
+        "jours_avec_seance": sum(1 for d in dates if by_date[d].get("workouts")),
     }
 
 
@@ -295,6 +334,7 @@ def merge(data, by_date):
             "sleep": sleep,
             "strain": w.get("strain"),
             "workouts": workouts,
+            "siestes": w.get("siestes") or [],
         }
 
     days.sort(key=lambda d: d["date"])
