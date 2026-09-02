@@ -2371,17 +2371,28 @@
     },
     {
       "date": "2026-08-21",
-      "score": 0,
+      "score": 4.0,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 4.0,
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "entrainement": 4.0
+        },
+        "score_manquant": [
+          "nutrition",
+          "recovery",
+          "regularite",
+          "sommeil"
+        ],
+        "score_dispo": 5,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2439,20 +2450,31 @@
     },
     {
       "date": "2026-08-22",
-      "score": 0,
+      "score": 7.5,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 7.5,
         "coucher": "03:36",
         "lever": "10:59",
         "heures_sommeil": 7.09,
         "sommeil_source": "whoop",
         "gym": false,
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 5.0,
+          "recovery": 2.5,
+          "regularite": 0.0,
+          "entrainement": 0.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2511,21 +2533,32 @@
     },
     {
       "date": "2026-08-23",
-      "score": 0,
+      "score": 10.6,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 10.6,
         "coucher": "04:33",
         "lever": "11:00",
         "heures_sommeil": 5.81,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 4.1,
+          "recovery": 2.5,
+          "regularite": 0.0,
+          "entrainement": 4.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2605,21 +2638,32 @@
     },
     {
       "date": "2026-08-24",
-      "score": 0,
+      "score": 10.8,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 10.8,
         "coucher": "04:02",
         "lever": "15:16",
         "heures_sommeil": 10.06,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 3.95,
+          "recovery": 2.5,
+          "regularite": 0.84,
+          "entrainement": 3.5
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2699,21 +2743,32 @@
     },
     {
       "date": "2026-08-25",
-      "score": 0,
+      "score": 11.2,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 11.2,
         "coucher": "07:05",
         "lever": "14:32",
         "heures_sommeil": 6.78,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "bodybuilding",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 3.8,
+          "recovery": 2.5,
+          "regularite": 0.86,
+          "entrainement": 4.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2793,21 +2848,32 @@
     },
     {
       "date": "2026-08-26",
-      "score": 0,
+      "score": 11.3,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 11.3,
         "coucher": "05:14",
         "lever": "12:20",
         "heures_sommeil": 6.98,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 4.0,
+          "recovery": 2.5,
+          "regularite": 1.32,
+          "entrainement": 3.5
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2887,20 +2953,31 @@
     },
     {
       "date": "2026-08-27",
-      "score": 0,
+      "score": 8.8,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 8.8,
         "coucher": "05:53",
         "lever": "12:15",
         "heures_sommeil": 5.81,
         "sommeil_source": "whoop",
         "gym": false,
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 3.9,
+          "recovery": 3.5,
+          "regularite": 1.42,
+          "entrainement": 0.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -2959,20 +3036,31 @@
     },
     {
       "date": "2026-08-28",
-      "score": 0,
+      "score": 6.7,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 6.7,
         "coucher": "06:35",
         "lever": "15:38",
         "heures_sommeil": 7.16,
         "sommeil_source": "whoop",
         "gym": false,
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 2.95,
+          "recovery": 2.5,
+          "regularite": 1.2,
+          "entrainement": 0.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3031,21 +3119,32 @@
     },
     {
       "date": "2026-08-29",
-      "score": 0,
+      "score": 12.2,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 12.2,
         "coucher": "05:41",
         "lever": "11:45",
         "heures_sommeil": 5.82,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 3.8,
+          "recovery": 3.5,
+          "regularite": 1.4,
+          "entrainement": 3.5
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3125,21 +3224,32 @@
     },
     {
       "date": "2026-08-30",
-      "score": 0,
+      "score": 12.9,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 12.9,
         "coucher": "04:56",
         "lever": "12:48",
         "heures_sommeil": 7.39,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 4.0,
+          "recovery": 4.0,
+          "regularite": 1.4,
+          "entrainement": 3.5
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3267,20 +3377,31 @@
     },
     {
       "date": "2026-08-31",
-      "score": 0,
+      "score": 5.4,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 5.4,
         "coucher": "07:47",
         "lever": "12:30",
         "heures_sommeil": 4.28,
         "sommeil_source": "whoop",
         "gym": false,
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 2.95,
+          "recovery": 1.5,
+          "regularite": 0.96,
+          "entrainement": 0.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3339,21 +3460,32 @@
     },
     {
       "date": "2026-09-01",
-      "score": 0,
+      "score": 11.0,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 11.0,
         "coucher": "03:30",
         "lever": "13:34",
         "heures_sommeil": 9.63,
         "sommeil_source": "whoop",
         "gym": true,
         "gym_type": "activity",
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 4.0,
+          "recovery": 2.5,
+          "regularite": 0.96,
+          "entrainement": 3.5
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3433,7 +3565,7 @@
     },
     {
       "date": "2026-09-02",
-      "score": 0,
+      "score": 8.0,
       "note": "",
       "feedback": "",
       "activitywatch": {
@@ -3446,13 +3578,24 @@
         "score": 0
       },
       "physique": {
-        "score": 0,
+        "score": 8.0,
         "coucher": "04:23",
         "lever": "09:49",
         "heures_sommeil": 5.24,
         "sommeil_source": "whoop",
         "gym": false,
-        "gym_source": "whoop"
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 3.55,
+          "recovery": 3.5,
+          "regularite": 0.92,
+          "entrainement": 0.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -3501,9 +3644,9 @@
         },
         "strain": {
           "jour": 5.1,
-          "calories": 1012,
-          "fc_moyenne": 60,
-          "fc_max": 129
+          "calories": 1086,
+          "fc_moyenne": 61,
+          "fc_max": 131
         },
         "workouts": [],
         "siestes": [
@@ -8187,7 +8330,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-02T18:58:59",
+    "last_sync": "2026-09-02T20:10:57",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -8203,7 +8346,7 @@
       "sleep_perf_moy": 76.7,
       "consistency_moy": 47.0,
       "strain_moy": 7.6,
-      "kcal_moy": 1683.8,
+      "kcal_moy": 1689.5,
       "profond_moy_h": 1.9,
       "rem_moy_h": 1.7,
       "perturbations_moy": 11.2,

@@ -290,6 +290,91 @@ def baselines(by_date, n=30):
     }
 
 
+# ── SCORING ───────────────────────────────────────────────────────────
+# Le pilier Physique vaut 20 points. Whoop en mesure 16 objectivement ;
+# seule la nutrition reste déclarée au check-in du soir.
+#
+#   Sommeil vs besoin   5 pts   sleep.performance_pct
+#   Recovery            4 pts   recovery.score, sur les paliers de Whoop
+#   Régularité          2 pts   sleep.consistency_pct
+#   Entraînement        5 pts   séance détectée + charge de la séance
+#   Nutrition           4 pts   déclaré (goyslop)
+
+PHYSIQUE_MAX = {"sommeil": 5, "recovery": 4, "regularite": 2, "entrainement": 5, "nutrition": 4}
+NUTRITION_PTS = {"aucun": 4.0, "slip": 3.0, "modere": 1.5, "critique": 0.0}
+
+
+def _band(v, paliers):
+    """paliers = [(seuil, points), ...] du plus haut au plus bas."""
+    for seuil, pts in paliers:
+        if v >= seuil:
+            return pts
+    return 0.0
+
+
+def score_physique(day):
+    """Recalcule le pilier Physique. Ne note que ce qui est connu : une
+    composante sans donnée reste absente du détail plutôt que de valoir zéro,
+    sinon une journée non mesurée serait punie comme une mauvaise journée."""
+    w = day.get("whoop") or {}
+    rec = w.get("recovery") or {}
+    slp = w.get("sleep") or {}
+    wks = w.get("workouts") or []
+    ph = day.setdefault("physique", {"score": 0})
+    porte = bool(slp or rec)
+    detail = {}
+
+    if slp.get("performance_pct") is not None:
+        detail["sommeil"] = round(min(5.0, slp["performance_pct"] / 100 * 5), 2)
+
+    if rec.get("score") is not None:
+        detail["recovery"] = _band(rec["score"], [(85, 4.0), (67, 3.5), (50, 2.5), (34, 1.5), (0, 0.5)])
+
+    if slp.get("consistency_pct") is not None:
+        detail["regularite"] = round(min(2.0, slp["consistency_pct"] / 100 * 2), 2)
+
+    if wks:
+        # Une séance vaut déjà la moitié des points ; le reste dépend de sa charge.
+        charge = max((k.get("strain") or 0) for k in wks)
+        detail["entrainement"] = round(min(5.0, 2.5 + _band(charge, [
+            (12, 2.5), (9, 2.0), (6, 1.5), (3, 1.0), (0, 0.5)])), 2)
+    elif porte:
+        # Bracelet porté, aucune séance : c'est un vrai zéro, pas une donnée manquante.
+        detail["entrainement"] = 0.0
+
+    niveau = ph.get("goyslop_level")
+    if niveau is None and ph.get("nutrition_clean") is not None:
+        niveau = "aucun" if ph["nutrition_clean"] else "critique"
+    if niveau in NUTRITION_PTS:
+        detail["nutrition"] = NUTRITION_PTS[niveau]
+
+    if not detail:
+        return 0.0
+
+    ph["score_detail"] = detail
+    ph["score_manquant"] = sorted(k for k in PHYSIQUE_MAX if k not in detail)
+    ph["score_dispo"] = sum(PHYSIQUE_MAX[k] for k in detail)
+    ph["score_source"] = "whoop" if "nutrition" not in detail else "whoop+check-in"
+    ph["score"] = round(sum(detail.values()), 1)
+    return ph["score"]
+
+
+def rescore(data):
+    """Le total de la journée est la somme des piliers. Sans ce recalcul, le
+    pilier Physique pouvait valoir 12 pendant que la journée affichait 0."""
+    touched = 0
+    for day in data.get("days", []):
+        if not day.get("whoop"):
+            continue
+        score_physique(day)
+        day["score"] = round(sum(
+            (day.get(k) or {}).get("score") or 0
+            for k in ("business", "physique", "spirituel", "cognitif", "mental", "social")
+        ), 1)
+        touched += 1
+    return touched
+
+
 # ── MERGE ─────────────────────────────────────────────────────────────
 
 def merge(data, by_date):
@@ -373,6 +458,7 @@ def main():
 
     data = json.loads(DATA_JSON.read_text())
     created, updated = merge(data, by_date)
+    scored = rescore(data)
 
     data["whoop"] = {
         "connected": True,
@@ -390,6 +476,7 @@ def main():
 
     DATA_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=2))
     print(f"[Whoop] data.json : {created} jours créés, {updated} mis à jour")
+    print(f"[Whoop] pilier Physique recalculé sur {scored} jours")
 
     last = sorted(by_date)[-1] if by_date else None
     if last:

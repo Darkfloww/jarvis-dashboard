@@ -200,6 +200,12 @@ nav{
 /* Declared, not measured — the counterpart of the whoop tag */
 .wh-src-tag{display:inline-block;font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
   color:var(--text2);border:1px solid var(--border);border-radius:3px;padding:1px 5px;margin-left:6px;vertical-align:1px;}
+/* Where the pillar's points come from — a score with no breakdown is not auditable */
+.ph-detail{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+.ph-chip{display:inline-flex;align-items:baseline;gap:4px;font-size:9.5px;padding:3px 7px;
+  border:1px solid var(--border);border-radius:100px;color:var(--text2);font-variant-numeric:tabular-nums;}
+.ph-chip b{font-weight:700;}
+.ph-chip.missing{opacity:.55;border-style:dashed;}
 .wh-gauge-wrap{margin-top:14px;}
 .wh-gauge-hd{display:flex;justify-content:space-between;font-size:10px;color:var(--text2);
   text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px;}
@@ -727,6 +733,7 @@ nav{
       <div class="mrow"><div class="lbl">Goyslop détecté</div><div class="val" id="ph-goyslop-items" style="font-size:11px;max-width:140px;text-align:right;color:var(--text2)">—</div></div>
       <div class="mrow"><div class="lbl">Repas</div><div class="val" id="ph-repas" style="font-size:11px;max-width:140px;text-align:right;word-break:break-word;">—</div></div>
       <div class="pbar"><div class="pfill" id="ph-p" style="background:var(--red)"></div></div>
+      <div id="ph-detail" class="ph-detail"></div>
     </div>
     <div class="card" style="--c:var(--green)">
       <div class="card-hd"><div class="card-title"><div class="dot"></div> Spirituel</div><div class="card-score" id="sp-score">0/20</div></div>
@@ -1652,6 +1659,24 @@ function renderMetrics(day){
   $('ph-goyslop-items').textContent = p.goyslop_items?.join(', ') || '—';
   $('ph-repas').textContent=p.repas||'—';
   $('ph-p').style.width=(p.score||0)/20*100+'%';
+  // Breakdown of the pillar: measured components, then what the check-in still owes.
+  const PH_MAX={sommeil:5,recovery:4,regularite:2,entrainement:5,nutrition:4};
+  const PH_LBL={sommeil:'Sommeil',recovery:'Recovery',regularite:'Régularité',entrainement:'Séance',nutrition:'Nutrition'};
+  const det=p.score_detail;
+  if($('ph-detail')){
+    if(det){
+      const chips=Object.keys(PH_MAX).map(k=>{
+        if(det[k]==null) return `<span class="ph-chip missing">${PH_LBL[k]} <b>—</b>/${PH_MAX[k]}</span>`;
+        const ratio=det[k]/PH_MAX[k];
+        const col=ratio>=.8?'#00F19F':ratio>=.5?'var(--yellow)':'#FF6B6B';
+        return `<span class="ph-chip">${PH_LBL[k]} <b style="color:${col}">${det[k]}</b>/${PH_MAX[k]}</span>`;
+      }).join('');
+      $('ph-detail').innerHTML = chips;
+    } else {
+      $('ph-detail').innerHTML='';
+    }
+  }
+  $('ph-score').textContent=`${p.score||0}/20`+(p.score_dispo&&p.score_dispo<20?` · ${p.score_dispo} mesurés`:'');
 
   // Spirituel
   $('sp-score').textContent=`${sp.score||0}/20`;
