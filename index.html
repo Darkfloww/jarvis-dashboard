@@ -149,12 +149,42 @@ nav{
 .wh-tile{border:1px solid var(--border);border-radius:8px;padding:14px 12px;text-align:center;}
 .wh-tile-lbl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:7px;}
 .wh-tile-val{font-size:24px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em;}
+.wh-tile-val span{letter-spacing:0;margin-left:2px;}
 .wh-tile-sub{font-size:10px;color:var(--text2);margin-top:6px;}
 .wh-stages{display:flex;height:26px;border-radius:6px;overflow:hidden;margin:10px 0 8px;background:var(--border);}
 .wh-stages div{display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#0b0b0f;}
 .wh-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:10px;color:var(--text2);}
 .wh-legend span i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;font-style:normal;}
 @media(max-width:640px){.wh-grid{grid-template-columns:repeat(2,1fr);}}
+/* Strain gauge — Whoop's 0-21 scale with the personal average marked on it */
+.wh-gauge-wrap{margin-top:14px;}
+.wh-gauge-hd{display:flex;justify-content:space-between;font-size:10px;color:var(--text2);
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px;}
+.wh-gauge-hd span:last-child{color:var(--text);font-weight:700;letter-spacing:0;text-transform:none;}
+.wh-gauge{position:relative;height:8px;border-radius:100px;background:var(--border);overflow:visible;}
+.wh-gauge-fill{height:100%;border-radius:100px;width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1);}
+.wh-gauge-avg{position:absolute;top:-3px;width:1px;height:14px;background:var(--text2);opacity:.75;}
+.wh-gauge-scale{display:flex;justify-content:space-between;font-size:9px;color:var(--text2);margin-top:6px;}
+/* Nightly sleep history — one stacked bar per night */
+.wh-night{display:grid;grid-template-columns:78px 1fr 52px;align-items:center;gap:10px;
+  padding:8px 0;border-bottom:1px solid var(--border);font-size:11px;}
+.wh-night:last-child{border-bottom:none;}
+.wh-night-d{color:var(--text2);}
+.wh-night-t{font-size:9px;color:var(--text2);opacity:.7;margin-top:2px;font-variant-numeric:tabular-nums;}
+.wh-night-bar{display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--border);}
+.wh-night-h{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;}
+/* Baseline table — a mean is only useful next to today's value */
+.wh-ref-hd,.wh-ref-row{display:grid;grid-template-columns:1fr 78px 78px;align-items:center;gap:8px;}
+.wh-ref-hd{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.08em;
+  padding-bottom:8px;border-bottom:1px solid var(--border);}
+.wh-ref-hd span:not(:first-child),.wh-ref-row span:not(:first-child){text-align:right;}
+.wh-ref-row{font-size:12px;padding:10px 0;border-bottom:1px solid var(--border);
+  font-variant-numeric:tabular-nums;}
+.wh-ref-row .lbl{color:var(--text2);}
+@media(max-width:640px){
+  .wh-night{grid-template-columns:70px 1fr 46px;}
+  .wh-ref-hd,.wh-ref-row{grid-template-columns:1fr 62px 62px;}
+}
 .mrow .lbl{color:var(--text2);}
 .mrow .val{font-weight:600;font-variant-numeric:tabular-nums;}
 
@@ -879,9 +909,9 @@ nav{
 <!-- CORPS -->
 <div id="tab-corps" class="section">
 
-  <!-- ── WHOOP — objective physiology, replaces declared sleep/training ── -->
+  <!-- ══ BLOC 1 — ÉTAT DU JOUR ═══════════════════════════════════════ -->
   <div class="sdiv" style="display:flex;align-items:center;justify-content:space-between">
-    <span>Physiologie <span class="whoop-tag" style="margin-left:2px">whoop</span></span>
+    <span>État du jour <span class="whoop-tag" style="margin-left:2px">whoop</span></span>
     <span id="wh-sync" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0">—</span>
   </div>
   <div class="card" style="margin-bottom:12px;--c:#00F19F">
@@ -893,57 +923,103 @@ nav{
       <div class="wh-tile"><div class="wh-tile-lbl">Recovery</div><div class="wh-tile-val" id="wh-rec">—</div><div class="wh-tile-sub" id="wh-rec-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">HRV</div><div class="wh-tile-val" id="wh-hrv">—</div><div class="wh-tile-sub" id="wh-hrv-sub">—</div></div>
       <div class="wh-tile"><div class="wh-tile-lbl">FC repos</div><div class="wh-tile-val" id="wh-rhr">—</div><div class="wh-tile-sub" id="wh-rhr-sub">—</div></div>
-      <div class="wh-tile"><div class="wh-tile-lbl">Strain</div><div class="wh-tile-val" id="wh-strain">—</div><div class="wh-tile-sub" id="wh-strain-sub">—</div></div>
+      <div class="wh-tile"><div class="wh-tile-lbl">Sommeil</div><div class="wh-tile-val" id="wh-slp">—</div><div class="wh-tile-sub" id="wh-slp-sub">—</div></div>
     </div>
-    <div id="wh-verdict" style="font-size:12px;line-height:1.7;color:var(--text2);border-top:1px solid var(--border);padding-top:12px"></div>
+    <div class="wh-grid">
+      <div class="wh-tile"><div class="wh-tile-lbl">SpO₂</div><div class="wh-tile-val" id="wh-spo2">—</div><div class="wh-tile-sub" id="wh-spo2-sub">saturation O₂</div></div>
+      <div class="wh-tile"><div class="wh-tile-lbl">Temp. cutanée</div><div class="wh-tile-val" id="wh-temp">—</div><div class="wh-tile-sub" id="wh-temp-sub">peau</div></div>
+      <div class="wh-tile"><div class="wh-tile-lbl">FC moyenne</div><div class="wh-tile-val" id="wh-fcmoy">—</div><div class="wh-tile-sub" id="wh-fcmax-sub">—</div></div>
+      <div class="wh-tile"><div class="wh-tile-lbl">Calories</div><div class="wh-tile-val" id="wh-kcal">—</div><div class="wh-tile-sub">dépense du jour</div></div>
+    </div>
+    <div class="wh-gauge-wrap">
+      <div class="wh-gauge-hd"><span>Charge cardiovasculaire</span><span id="wh-gauge-lbl">—</span></div>
+      <div class="wh-gauge"><div class="wh-gauge-fill" id="wh-gauge-fill"></div><div class="wh-gauge-avg" id="wh-gauge-avg"></div></div>
+      <div class="wh-gauge-scale"><span>0</span><span>léger</span><span>modéré</span><span>intense</span><span>21</span></div>
+    </div>
+    <div id="wh-verdict" style="font-size:12px;line-height:1.7;color:var(--text2);border-top:1px solid var(--border);padding-top:12px;margin-top:14px"></div>
   </div>
 
+  <!-- ══ BLOC 2 — SOMMEIL ════════════════════════════════════════════ -->
+  <div class="sdiv">Sommeil <span class="whoop-tag">whoop</span></div>
   <div class="g2" style="margin-bottom:12px">
     <div class="card" style="--c:var(--purple)">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--purple)"></div> Architecture du sommeil</div><div class="card-score" id="wh-sleep-h">—</div></div>
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--purple)"></div> Architecture de la nuit</div><div class="card-score" id="wh-sleep-h">—</div></div>
       <div class="wh-stages" id="wh-stages"></div>
       <div class="wh-legend" id="wh-stages-legend"></div>
       <div style="margin-top:14px">
+        <div class="mrow"><div class="lbl">Dormi / au lit</div><div class="val" id="wh-inbed">—</div></div>
+        <div class="mrow"><div class="lbl">Besoin calculé</div><div class="val" id="wh-need">—</div></div>
+        <div class="mrow"><div class="lbl">Dette de sommeil</div><div class="val" id="wh-debt">—</div></div>
+        <div class="mrow"><div class="lbl">Cycles complets</div><div class="val" id="wh-cycles">—</div></div>
         <div class="mrow"><div class="lbl">Performance</div><div class="val" id="wh-perf">—</div></div>
         <div class="mrow"><div class="lbl">Efficacité</div><div class="val" id="wh-eff">—</div></div>
         <div class="mrow"><div class="lbl">Régularité</div><div class="val" id="wh-cons">—</div></div>
-        <div class="mrow"><div class="lbl">Dette de sommeil</div><div class="val" id="wh-debt">—</div></div>
         <div class="mrow"><div class="lbl">Perturbations</div><div class="val" id="wh-dist">—</div></div>
         <div class="mrow"><div class="lbl">Fréquence respiratoire</div><div class="val" id="wh-resp">—</div></div>
       </div>
     </div>
+    <div class="card" style="--c:var(--cyan)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--cyan)"></div> 7 dernières nuits</div><div class="card-score" id="wh-n-avg">—</div></div>
+      <div class="g2" style="gap:8px;margin-bottom:14px">
+        <div class="wh-tile"><div class="wh-tile-lbl">Coucher moyen</div><div class="wh-tile-val" style="font-size:22px;color:var(--purple)" id="wh-avg-bed">—</div></div>
+        <div class="wh-tile"><div class="wh-tile-lbl">Réveil moyen</div><div class="wh-tile-val" style="font-size:22px;color:var(--cyan)" id="wh-avg-wake">—</div></div>
+      </div>
+      <div id="wh-nights"><div style="font-size:12px;color:var(--text2)">—</div></div>
+    </div>
+  </div>
+
+  <!-- ══ BLOC 3 — CHARGE & ENTRAÎNEMENT ══════════════════════════════ -->
+  <div class="sdiv">Charge &amp; entraînement</div>
+  <div class="g2" style="margin-bottom:12px">
+    <div class="card" style="--c:var(--red)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Séances détectées <span class="whoop-tag">whoop</span></div><div class="card-score" id="wh-wk-count">—</div></div>
+      <div id="wh-workouts"><div style="font-size:12px;color:var(--text2)">—</div></div>
+    </div>
+    <div class="card" style="--c:var(--red)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div><div class="card-score" id="train-freq">4 séances/sem</div></div>
+      <div id="train-programme" style="margin-bottom:14px"></div>
+      <div id="train-sessions"><div style="font-size:12px;color:var(--text2)">Aucune séance log.</div></div>
+    </div>
+  </div>
+
+  <!-- ══ BLOC 4 — TENDANCES ══════════════════════════════════════════ -->
+  <div class="sdiv" style="display:flex;align-items:center;justify-content:space-between">
+    <span>Tendances <span class="whoop-tag">whoop</span></span>
+    <span id="wh-trend-lbl" style="font-size:9px;color:var(--text2);text-transform:none;letter-spacing:0">—</span>
+  </div>
+  <div class="g2" style="margin-bottom:12px">
     <div class="card" style="--c:#00F19F">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:#00F19F"></div> Recovery — 14 jours</div><div class="card-score" id="wh-rec-avg">—</div></div>
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:#00F19F"></div> Recovery</div><div class="card-score" id="wh-rec-avg">—</div></div>
       <div class="ch" style="height:130px"><canvas id="whRecChart"></canvas></div>
-      <div class="card-hd" style="margin-top:16px"><div class="card-title"><div class="dot" style="background:var(--cyan)"></div> HRV — 14 jours</div><div class="card-score" id="wh-hrv-avg">—</div></div>
+    </div>
+    <div class="card" style="--c:var(--cyan)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--cyan)"></div> HRV</div><div class="card-score" id="wh-hrv-avg">—</div></div>
       <div class="ch" style="height:130px"><canvas id="whHrvChart"></canvas></div>
     </div>
   </div>
-
   <div class="g2" style="margin-bottom:12px">
-    <div class="card" style="--c:var(--red)">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Séances détectées</div><div class="card-score" id="wh-wk-count">—</div></div>
-      <div id="wh-workouts"><div style="font-size:12px;color:var(--text2)">—</div></div>
-    </div>
     <div class="card" style="--c:var(--orange)">
-      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> Références 30 jours</div></div>
-      <div class="mrow"><div class="lbl">Recovery moyen</div><div class="val" id="wh-b-rec">—</div></div>
-      <div class="mrow"><div class="lbl">HRV moyen</div><div class="val" id="wh-b-hrv">—</div></div>
-      <div class="mrow"><div class="lbl">FC repos moyenne</div><div class="val" id="wh-b-rhr">—</div></div>
-      <div class="mrow"><div class="lbl">Sommeil moyen</div><div class="val" id="wh-b-sleep">—</div></div>
-      <div class="mrow"><div class="lbl">Performance sommeil</div><div class="val" id="wh-b-perf">—</div></div>
-      <div class="mrow"><div class="lbl">Régularité sommeil</div><div class="val" id="wh-b-cons">—</div></div>
-      <div class="mrow"><div class="lbl">Strain moyen</div><div class="val" id="wh-b-strain">—</div></div>
-      <div class="mrow"><div class="lbl">Poids / taille / FC max</div><div class="val" id="wh-b-body">—</div></div>
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> FC au repos</div><div class="card-score" id="wh-rhr-avg">—</div></div>
+      <div class="ch" style="height:130px"><canvas id="whRhrChart"></canvas></div>
     </div>
+    <div class="card" style="--c:var(--red)">
+      <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Strain</div><div class="card-score" id="wh-strain-avg">—</div></div>
+      <div class="ch" style="height:130px"><canvas id="whStrainChart"></canvas></div>
+    </div>
+  </div>
+  <div class="card" style="margin-bottom:12px;--c:var(--purple)">
+    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--purple)"></div> Sommeil par stade</div><div class="card-score" id="wh-sleep-avg">—</div></div>
+    <div class="ch" style="height:170px"><canvas id="whSleepChart"></canvas></div>
+    <div class="wh-legend" style="margin-top:12px" id="wh-sleep-legend"></div>
+  </div>
+  <div class="card" style="margin-bottom:12px;--c:var(--orange)">
+    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--orange)"></div> Références</div><div class="card-score" id="wh-b-days">—</div></div>
+    <div class="wh-ref-hd"><span>Métrique</span><span>Aujourd'hui</span><span>Moyenne</span></div>
+    <div id="wh-refs"></div>
+    <div class="mrow" style="border-top:1px solid var(--border);margin-top:4px"><div class="lbl">Poids / taille / FC max</div><div class="val" id="wh-b-body">—</div></div>
   </div>
 
-  <div class="sdiv">Programme d'entraînement</div>
-  <div class="card" style="margin-bottom:12px">
-    <div class="card-hd"><div class="card-title"><div class="dot" style="background:var(--red)"></div> Push / Pull / Core</div><div class="card-score" id="train-freq">4 séances/sem</div></div>
-    <div id="train-programme" style="margin-bottom:14px"></div>
-    <div id="train-sessions"><div style="font-size:12px;color:var(--text2)">Aucune séance log.</div></div>
-  </div>
+  <!-- ══ OBJECTIFS ═══════════════════════════════════════════════════ -->
   <div class="sdiv">Objectifs physiques</div>
   <div class="card" style="margin-bottom:12px">
     <div class="mrow"><div class="lbl">Objectif</div><div class="val" style="font-size:11px;max-width:200px;text-align:right">Pecs, épaules, bras, dos, abdos+obliques</div></div>
@@ -953,16 +1029,6 @@ nav{
     <div class="mrow"><div class="lbl">Duolingo russe</div><div class="val">Tous les jours</div></div>
     <div class="mrow"><div class="lbl">No PMO</div><div class="val">Streak : <span id="corps-streak" style="color:var(--cyan);font-weight:800">—j</span></div></div>
   </div>
-  <div class="sdiv">Sommeil — 7 jours</div>
-  <div class="card" style="margin-bottom:12px">
-    <div class="g2" style="margin-bottom:12px;gap:8px">
-      <div style="border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center"><div style="font-size:9px;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Coucher moyen</div><div style="font-size:22px;font-weight:800;color:var(--purple)" id="sleep-avg-bed">—</div></div>
-      <div style="border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center"><div style="font-size:9px;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Réveil moyen</div><div style="font-size:22px;font-weight:800;color:var(--cyan)" id="sleep-avg-wake">—</div></div>
-    </div>
-    <div class="ch" style="height:150px"><canvas id="sleepChart"></canvas></div>
-  </div>
-  <div class="sdiv">Log sommeil récent</div>
-  <div class="card" id="sleep-log-card"><div style="font-size:12px;color:var(--text2)">Données disponibles après les premiers check-ins.</div></div>
 </div>
 
 <!-- TASKS -->
@@ -1736,99 +1802,71 @@ function renderRecords(days){
 }
 
 // ── CORPS TAB ──────────────────────────────────────────────────────
-function timeToFloat(t){
-  if(!t) return null;
-  const m = t.match(/(\d{1,2})[h:](\d{0,2})/);
-  if(!m) return null;
-  let h = parseInt(m[1]), min = m[2]?parseInt(m[2]):0;
-  // Normalize: bedtimes after midnight (0-12h) shift to 24+
-  if(h < 12) h += 24;
-  return h + min/60;
-}
-
-function floatToTime(f){
-  if(!f) return '—';
-  const h = Math.floor(f) % 24;
-  const m = Math.round((f % 1) * 60);
-  return `${h}h${String(m).padStart(2,'0')}`;
-}
-
-function renderSleepSection(allDays){
-  const last7 = allDays.slice(-7);
-  const labels = last7.map(d => new Date(d.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'}));
-
-  const bedTimes = last7.map(d => timeToFloat(d.physique?.coucher));
-  const wakeTimes = last7.map(d => {
-    let wt = timeToFloat(d.physique?.lever);
-    return wt;
-  });
-  const hours = last7.map(d => d.physique?.heures_sommeil || null);
-
-  // Averages
-  const validBed = bedTimes.filter(v=>v!==null);
-  const validWake = wakeTimes.filter(v=>v!==null);
-  if($('sleep-avg-bed')) $('sleep-avg-bed').textContent = validBed.length ? floatToTime(validBed.reduce((a,b)=>a+b,0)/validBed.length) : '—';
-  if($('sleep-avg-wake')) $('sleep-avg-wake').textContent = validWake.length ? floatToTime(validWake.reduce((a,b)=>a+b,0)/validWake.length) : '—';
-
-  // Sleep hours chart
-  const c = $('sleepChart');
-  if(c && hours.some(h=>h)){
-    const ctx = c.getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels,
-        datasets: [{
-          label: 'Heures de sommeil',
-          data: hours,
-          backgroundColor: hours.map(h => !h?'transparent':h>=7?'rgba(34,197,94,.3)':h>=6?'rgba(245,158,11,.3)':'rgba(239,68,68,.3)'),
-          borderColor: hours.map(h => !h?'transparent':h>=7?'#22C55E':h>=6?'#F59E0B':'#ef4444'),
-          borderWidth: 1, borderRadius: 4
-        }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false },
-          tooltip: { backgroundColor: 'rgba(5,5,8,.95)', borderColor: 'rgba(255,255,255,.1)', borderWidth: 1,
-            callbacks: { label: c => `${c.parsed.y}h de sommeil` } }
-        },
-        scales: {
-          y: { min: 0, max: 12, grid: { color: 'rgba(255,255,255,.04)' },
-            ticks: { color: '#475569', font: { size: 10 }, callback: v => v+'h' },
-            border: { display: false } },
-          x: { grid: { display: false }, ticks: { color: '#475569', font: { size: 10 } }, border: { display: false } }
-        }
-      }
-    });
-  }
-
-  // Sleep log
-  const logEl = $('sleep-log-card');
-  if(logEl){
-    const daysWithSleep = last7.filter(d => d.physique?.coucher || d.physique?.lever).reverse();
-    if(!daysWithSleep.length){
-      logEl.innerHTML = '<div style="font-size:13px;color:var(--muted)">Données disponibles après les premiers check-ins.</div>';
-    } else {
-      logEl.innerHTML = daysWithSleep.map(d=>{
-        const dt = new Date(d.date+'T12:00:00');
-        const lbl = dt.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'});
-        const h = d.physique?.heures_sommeil;
-        const col = !h?'#475569':h>=7?'#22c55e':h>=6?'#eab308':'#ef4444';
-        return `<div class="mrow">
-          <div class="lbl">${lbl}</div>
-          <div class="val" style="font-size:12px">
-            ${d.physique?.coucher||'?'} → ${d.physique?.lever||'?'}
-            ${h?`<span style="color:${col};margin-left:8px;font-weight:700">${h}h</span>`:''}
-          </div>
-        </div>`;
-      }).join('');
-    }
-  }
-}
-
 // ── WHOOP ──────────────────────────────────────────────────────────
 // Whoop's own bands: >=67 green (ready), 34-66 yellow (maintain), <34 red (rest).
 function recColor(v){ return v>=67?'#00F19F':v>=34?'#FFDE00':'#FF0026'; }
+
+const WH_STAGES=[
+  {k:'deep_h', n:'Profond', c:'#4C6FFF'},
+  {k:'rem_h',  n:'REM',     c:'#A855F7'},
+  {k:'light_h',n:'Léger',   c:'#38BDF8'},
+  {k:'awake_h',n:'Éveillé', c:'#64748B'},
+];
+
+// Clock times wrap at midnight, so a plain arithmetic mean is wrong: bedtimes at
+// 23h50 and 00h10 average to 12h00. Average the angles instead.
+function circMeanTime(times){
+  const pts=times.filter(Boolean).map(t=>{
+    const m=String(t).match(/(\d{1,2})[h:](\d{1,2})/);
+    if(!m) return null;
+    return ((+m[1])+(+m[2])/60)/24*2*Math.PI;
+  }).filter(v=>v!==null);
+  if(!pts.length) return null;
+  const x=pts.reduce((a,p)=>a+Math.cos(p),0)/pts.length;
+  const y=pts.reduce((a,p)=>a+Math.sin(p),0)/pts.length;
+  let ang=Math.atan2(y,x);
+  if(ang<0) ang+=2*Math.PI;
+  return ang/(2*Math.PI)*24;
+}
+
+function whHHMM(f){
+  if(f==null) return '—';
+  let h=Math.floor(f)%24, m=Math.round((f%1)*60);
+  if(m===60){ m=0; h=(h+1)%24; }
+  return String(h).padStart(2,'0')+'h'+String(m).padStart(2,'0');
+}
+
+function whLineChart(id,labels,data,color,max){
+  const c=$(id);
+  if(!c) return;
+  const prev=(typeof Chart.getChart==='function') ? Chart.getChart(c) : null;
+  if(prev) prev.destroy();
+  miniChart(id,labels,data,color,max);
+}
+
+function whStackedSleepChart(id,days,labels){
+  const c=$(id);
+  if(!c) return;
+  const prev=(typeof Chart.getChart==='function') ? Chart.getChart(c) : null;
+  if(prev) prev.destroy();
+  const stages=WH_STAGES.filter(s=>s.k!=='awake_h');
+  new Chart(c,{
+    type:'bar',
+    data:{labels,datasets:stages.map(s=>({
+      label:s.n,
+      data:days.map(d=>d.whoop?.sleep?.[s.k] ?? 0),
+      backgroundColor:s.c, borderWidth:0,
+    }))},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},
+        tooltip:{backgroundColor:'rgba(5,5,8,.95)',borderColor:'rgba(255,255,255,.1)',borderWidth:1,
+          callbacks:{label:ctx=>`${ctx.dataset.label} ${ctx.parsed.y.toFixed(1)}h`}}},
+      scales:{
+        x:{stacked:true,grid:{display:false},ticks:{color:'#475569',font:{size:9}},border:{display:false}},
+        y:{stacked:true,min:0,grid:{color:'rgba(255,255,255,.04)'},
+           ticks:{color:'#475569',font:{size:9},callback:v=>v+'h'},border:{display:false}}}}
+  });
+}
 
 function renderWhoop(data, allDays){
   const W = data.whoop;
@@ -1838,12 +1876,12 @@ function renderWhoop(data, allDays){
   const whDays = allDays.filter(d => d.whoop && (d.whoop.recovery || d.whoop.sleep));
   if(!whDays.length) return;
   const day = whDays[whDays.length-1];
-  const w = day.whoop, rec = w.recovery||{}, slp = w.sleep||{}, str = w.strain||{}, wks = w.workouts||[];
+  const w = day.whoop, rec = w.recovery||{}, slp = w.sleep||{}, str = w.strain||{};
 
   const set=(id,v)=>{ const e=$(id); if(e) e.textContent=v; };
   const setH=(id,v)=>{ const e=$(id); if(e) e.innerHTML=v; };
   const fmt=v=>v==null?'—':v;
-  // Signed delta against Shayan's own 30-day norm — an absolute HRV number means nothing alone.
+  // Signed delta against Shayan's own norm — an absolute HRV number means nothing alone.
   const delta=(v,base,unit='',better='up')=>{
     if(v==null||base==null) return '—';
     const d=+(v-base).toFixed(1);
@@ -1852,18 +1890,43 @@ function renderWhoop(data, allDays){
     return `<span style="color:${good?'#00F19F':'#FF6B6B'}">${d>0?'+':''}${d}${unit}</span> vs moy.`;
   };
 
-  set('wh-sync', W.last_sync ? `sync ${W.last_sync.replace('T',' ').slice(0,16)} · ${W.jours_couverts} jours` : '—');
+  set('wh-sync', W.last_sync ? `dernière sync ${W.last_sync.replace('T',' ').slice(0,16)}` : '—');
   set('wh-day-lbl', new Date(day.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'}));
   set('wh-strain-hd', str.jour!=null ? `strain ${str.jour}` : '—');
 
+  // ── Bloc 1 : état du jour
   setH('wh-rec', rec.score!=null ? `<span style="color:${recColor(rec.score)}">${rec.score}<span style="font-size:14px">%</span></span>` : '—');
   setH('wh-rec-sub', delta(rec.score, b.recovery_moy, ' pts'));
   setH('wh-hrv', rec.hrv!=null ? `${rec.hrv}<span style="font-size:12px;color:var(--text2)">ms</span>` : '—');
   setH('wh-hrv-sub', delta(rec.hrv, b.hrv_moy, 'ms'));
   setH('wh-rhr', rec.rhr!=null ? `${rec.rhr}<span style="font-size:12px;color:var(--text2)">bpm</span>` : '—');
   setH('wh-rhr-sub', delta(rec.rhr, b.rhr_moy, 'bpm', 'down'));
-  setH('wh-strain', str.jour!=null ? `${str.jour}<span style="font-size:12px;color:var(--text2)">/21</span>` : '—');
-  setH('wh-strain-sub', delta(str.jour, b.strain_moy));
+  setH('wh-slp', slp.heures_sommeil!=null ? `${slp.heures_sommeil}<span style="font-size:12px;color:var(--text2)">h</span>` : '—');
+  setH('wh-slp-sub', delta(slp.heures_sommeil, b.sommeil_moy_h, 'h'));
+
+  setH('wh-spo2', rec.spo2!=null ? `${rec.spo2}<span style="font-size:12px;color:var(--text2)">%</span>` : '—');
+  // Below 95% at rest is the threshold Whoop itself flags.
+  set('wh-spo2-sub', rec.spo2==null ? 'saturation O₂' : (rec.spo2>=95 ? 'normal' : 'sous 95%'));
+  setH('wh-temp', rec.temp_peau!=null ? `${rec.temp_peau}<span style="font-size:12px;color:var(--text2)">°C</span>` : '—');
+  set('wh-temp-sub', 'peau');
+  setH('wh-fcmoy', str.fc_moyenne!=null ? `${str.fc_moyenne}<span style="font-size:12px;color:var(--text2)">bpm</span>` : '—');
+  set('wh-fcmax-sub', str.fc_max!=null ? `max ${str.fc_max} bpm` : '—');
+  setH('wh-kcal', str.calories!=null ? `${str.calories}<span style="font-size:12px;color:var(--text2)">kcal</span>` : '—');
+
+  // Strain gauge — Whoop's 0-21 scale, with the personal average marked on it
+  if(str.jour!=null){
+    const pct=Math.max(0,Math.min(100,str.jour/21*100));
+    const sc = str.jour>=14 ? 'var(--red)' : str.jour>=10 ? 'var(--orange)' : 'var(--cyan)';
+    const gf=$('wh-gauge-fill');
+    if(gf){ gf.style.width=pct+'%'; gf.style.background=sc; }
+    const ga=$('wh-gauge-avg');
+    if(ga && b.strain_moy!=null){
+      ga.style.left=Math.max(0,Math.min(100,b.strain_moy/21*100))+'%';
+      ga.title=`moyenne ${b.strain_moy}`;
+    }
+    const zone = str.jour>=18?'toutes réserves':str.jour>=14?'intense':str.jour>=10?'modéré':str.jour>=6?'léger':'repos';
+    set('wh-gauge-lbl', `${str.jour} / 21 · ${zone}`);
+  }
 
   // Verdict — the reading Shayan would otherwise have to do himself
   const v=[];
@@ -1879,60 +1942,106 @@ function renderWhoop(data, allDays){
   if(slp.consistency_pct!=null && slp.consistency_pct<60)
     v.push(`Régularité ${slp.consistency_pct}% : horaires de coucher instables, c'est le levier n°1 sur le recovery.`);
   if(slp.dette_h>1) v.push(`Dette de sommeil accumulée : ${slp.dette_h}h.`);
+  if(rec.spo2!=null && rec.spo2<95) v.push(`SpO₂ ${rec.spo2}% : sous le seuil de 95%, à surveiller si ça persiste.`);
+  if(str.jour!=null && rec.score!=null && str.jour<6 && rec.score>=67)
+    v.push(`Strain ${str.jour} pour un recovery de ${rec.score}% : réserve non utilisée, la journée était sous-chargée.`);
   setH('wh-verdict', v.length ? v.map(t=>`<div style="margin-bottom:5px">${t}</div>`).join('') : 'Pas assez de données pour un verdict.');
 
-  // Sleep architecture
+  // ── Bloc 2 : sommeil
   set('wh-sleep-h', slp.heures_sommeil!=null ? `${slp.heures_sommeil}h dormies` : '—');
-  const stages=[
-    {k:'deep_h', n:'Profond', c:'#4C6FFF'},
-    {k:'rem_h', n:'REM', c:'#A855F7'},
-    {k:'light_h', n:'Léger', c:'#38BDF8'},
-    {k:'awake_h', n:'Éveillé', c:'#64748B'},
-  ];
-  const tot=stages.reduce((a,s)=>a+(slp[s.k]||0),0);
+  const tot=WH_STAGES.reduce((a,s)=>a+(slp[s.k]||0),0);
   if(tot>0){
-    setH('wh-stages', stages.map(s=>{
+    setH('wh-stages', WH_STAGES.map(s=>{
       const pct=(slp[s.k]||0)/tot*100;
-      return pct<1?'':`<div style="width:${pct}%;background:${s.c}" title="${s.n}">${pct>11?Math.round(pct)+'%':''}</div>`;
+      return pct<1?'':`<div style="width:${pct}%;background:${s.c}" title="${s.n} ${(slp[s.k]||0).toFixed(1)}h">${pct>11?Math.round(pct)+'%':''}</div>`;
     }).join(''));
-    setH('wh-stages-legend', stages.map(s=>
+    setH('wh-stages-legend', WH_STAGES.map(s=>
       `<span><i style="background:${s.c}"></i>${s.n} ${(slp[s.k]||0).toFixed(1)}h</span>`).join(''));
   }
+  set('wh-inbed', slp.heures_sommeil!=null ? `${slp.heures_sommeil}h / ${fmt(slp.heures_au_lit)}h` : '—');
+  set('wh-need', slp.besoin_h!=null ? slp.besoin_h+'h' : '—');
+  setH('wh-debt', slp.dette_h!=null ? `<span style="color:${slp.dette_h>1?'#FF6B6B':'var(--text)'}">${slp.dette_h}h</span>` : '—');
+  set('wh-cycles', fmt(slp.cycles));
   setH('wh-perf', slp.performance_pct!=null ? `<span style="color:${recColor(slp.performance_pct)}">${slp.performance_pct}%</span>` : '—');
   set('wh-eff', slp.efficiency_pct!=null ? slp.efficiency_pct+'%' : '—');
   setH('wh-cons', slp.consistency_pct!=null ? `<span style="color:${recColor(slp.consistency_pct)}">${slp.consistency_pct}%</span>` : '—');
-  set('wh-debt', slp.dette_h!=null ? slp.dette_h+'h' : '—');
   set('wh-dist', fmt(slp.perturbations));
   set('wh-resp', slp.respiratory_rate!=null ? slp.respiratory_rate+' r/min' : '—');
 
-  // Trends
-  const last14=whDays.slice(-14);
-  const labels=last14.map(d=>new Date(d.date+'T12:00:00').toLocaleDateString('fr-FR',{day:'numeric',month:'short'}));
-  miniChart('whRecChart', labels, last14.map(d=>d.whoop?.recovery?.score ?? null), '#00F19F', 100);
-  miniChart('whHrvChart', labels, last14.map(d=>d.whoop?.recovery?.hrv ?? null), '#22D3EE');
+  // 7 dernières nuits — mesurées, plus aucun doublon avec le déclaratif
+  const nights=whDays.filter(d=>d.whoop.sleep).slice(-7);
+  set('wh-avg-bed',  whHHMM(circMeanTime(nights.map(d=>d.whoop.sleep.coucher))));
+  set('wh-avg-wake', whHHMM(circMeanTime(nights.map(d=>d.whoop.sleep.lever))));
+  const nh=nights.map(d=>d.whoop.sleep.heures_sommeil).filter(x=>x!=null);
+  set('wh-n-avg', nh.length ? `moy ${(nh.reduce((a,x)=>a+x,0)/nh.length).toFixed(1)}h` : '—');
+  const maxN=Math.max(9, ...nh);
+  setH('wh-nights', nights.length ? nights.slice().reverse().map(d=>{
+    const s=d.whoop.sleep, h=s.heures_sommeil||0;
+    const col=h>=7?'#22C55E':h>=6?'#F59E0B':'#ef4444';
+    const bars=WH_STAGES.map(st=>{
+      const val=s[st.k]||0;
+      return val<=0?'':`<div style="width:${val/maxN*100}%;background:${st.c}" title="${st.n} ${val.toFixed(1)}h"></div>`;
+    }).join('');
+    return `<div class="wh-night">
+      <div><div class="wh-night-d">${new Date(d.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'})}</div>
+        <div class="wh-night-t">${s.coucher||'?'} → ${s.lever||'?'}</div></div>
+      <div class="wh-night-bar">${bars}</div>
+      <div class="wh-night-h" style="color:${col}">${h.toFixed(2)}h</div>
+    </div>`;
+  }).join('') : '<div style="font-size:12px;color:var(--text2)">Aucune nuit mesurée.</div>');
+
+  // ── Bloc 3 : séances détectées, sur tout l'historique et pas seulement aujourd'hui
+  const allWk=[];
+  whDays.forEach(d=>(d.whoop.workouts||[]).forEach(k=>allWk.push({...k, date:d.date})));
+  const wkToday=(day.whoop.workouts||[]).length;
+  const wornDays=allDays.filter(d=>d.whoop && Object.keys(d.whoop).length).length;
+  set('wh-wk-count', `${wkToday} aujourd'hui · ${allWk.length} sur ${wornDays}j`);
+  setH('wh-workouts', allWk.length ? allWk.slice(-6).reverse().map(k=>`
+    <div class="mrow">
+      <div class="lbl">${new Date(k.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'})} ${k.debut} — <span style="color:var(--red);font-weight:600">${k.sport}</span></div>
+      <div class="val" style="font-size:11px">${k.duree_min}min · strain ${k.strain ?? '—'} · ${k.fc_moyenne ?? '—'}/${k.fc_max ?? '—'}bpm · ${k.calories ?? '—'}kcal</div>
+    </div>`).join('') : '<div style="font-size:12px;color:var(--text2)">Aucune séance détectée sur la période.</div>');
+
+  // ── Bloc 4 : tendances sur toute la fenêtre réellement couverte
+  const trend=whDays.slice(-30);
+  const labels=trend.map(d=>new Date(d.date+'T12:00:00').toLocaleDateString('fr-FR',{day:'numeric',month:'short'}));
+  set('wh-trend-lbl', `${trend.length} jour${trend.length>1?'s':''} mesuré${trend.length>1?'s':''}`);
+  whLineChart('whRecChart', labels, trend.map(d=>d.whoop?.recovery?.score ?? null), '#00F19F', 100);
+  whLineChart('whHrvChart', labels, trend.map(d=>d.whoop?.recovery?.hrv ?? null), '#22D3EE');
+  whLineChart('whRhrChart', labels, trend.map(d=>d.whoop?.recovery?.rhr ?? null), '#F59E0B');
+  whLineChart('whStrainChart', labels, trend.map(d=>d.whoop?.strain?.jour ?? null), '#F87171', 21);
+  whStackedSleepChart('whSleepChart', trend, labels);
+  setH('wh-sleep-legend', WH_STAGES.filter(s=>s.k!=='awake_h').map(s=>`<span><i style="background:${s.c}"></i>${s.n}</span>`).join(''));
+
   set('wh-rec-avg', b.recovery_moy!=null ? `moy ${b.recovery_moy}%` : '—');
   set('wh-hrv-avg', b.hrv_moy!=null ? `moy ${b.hrv_moy}ms` : '—');
+  set('wh-rhr-avg', b.rhr_moy!=null ? `moy ${b.rhr_moy}bpm` : '—');
+  set('wh-strain-avg', b.strain_moy!=null ? `moy ${b.strain_moy}` : '—');
+  set('wh-sleep-avg', b.sommeil_moy_h!=null ? `moy ${b.sommeil_moy_h}h` : '—');
 
-  // Workouts
-  set('wh-wk-count', `${wks.length} le ${day.date.slice(8)}/${day.date.slice(5,7)}`);
-  setH('wh-workouts', wks.length ? wks.map(k=>`
-    <div class="mrow">
-      <div class="lbl">${k.debut} — <span style="color:var(--red);font-weight:600">${k.sport}</span></div>
-      <div class="val" style="font-size:11px">${k.duree_min}min · strain ${k.strain ?? '—'} · ${k.fc_moyenne ?? '—'}bpm moy · ${k.calories ?? '—'}kcal</div>
-    </div>`).join('') : '<div style="font-size:12px;color:var(--text2)">Aucune séance détectée sur ce cycle.</div>');
-
-  // Baselines
-  set('wh-b-rec', b.recovery_moy!=null ? b.recovery_moy+'%' : '—');
-  set('wh-b-hrv', b.hrv_moy!=null ? b.hrv_moy+'ms' : '—');
-  set('wh-b-rhr', b.rhr_moy!=null ? b.rhr_moy+' bpm' : '—');
-  set('wh-b-sleep', b.sommeil_moy_h!=null ? b.sommeil_moy_h+'h' : '—');
-  set('wh-b-perf', b.sleep_perf_moy!=null ? b.sleep_perf_moy+'%' : '—');
-  set('wh-b-cons', b.consistency_moy!=null ? b.consistency_moy+'%' : '—');
-  set('wh-b-strain', b.strain_moy ?? '—');
+  // ── Références : la moyenne ne sert que comparée à aujourd'hui
+  set('wh-b-days', b.jours!=null ? `sur ${b.jours} jours` : '—');
+  const refs=[
+    ['Recovery',      rec.score,          b.recovery_moy,   '%',    'up'],
+    ['HRV',           rec.hrv,            b.hrv_moy,        'ms',   'up'],
+    ['FC au repos',   rec.rhr,            b.rhr_moy,        'bpm',  'down'],
+    ['Sommeil',       slp.heures_sommeil, b.sommeil_moy_h,  'h',    'up'],
+    ['Performance',   slp.performance_pct,b.sleep_perf_moy, '%',    'up'],
+    ['Régularité',    slp.consistency_pct,b.consistency_moy,'%',    'up'],
+    ['Strain',        str.jour,           b.strain_moy,     '',     'up'],
+  ];
+  setH('wh-refs', refs.map(([n,cur,avg,u,better])=>{
+    let col='var(--text)';
+    if(cur!=null && avg!=null) col=((better==='up') === (cur>=avg)) ? '#00F19F' : '#FF6B6B';
+    return `<div class="wh-ref-row">
+      <span class="lbl">${n}</span>
+      <span style="color:${col};font-weight:700">${cur==null?'—':cur+u}</span>
+      <span style="color:var(--text2)">${avg==null?'—':avg+u}</span>
+    </div>`;
+  }).join(''));
   const bd=W.body||{};
   set('wh-b-body', `${bd.poids_kg ?? '—'}kg · ${bd.taille_m ?? '—'}m · ${bd.fc_max ?? '—'}bpm`);
 }
-
 function renderCorpsTab(data, allDays){
   const training = data.training || {};
   if($('train-freq')) $('train-freq').textContent = training.frequence || '4 séances/sem';
@@ -1963,7 +2072,6 @@ function renderCorpsTab(data, allDays){
   const streak = calcStreak(allDays);
   if($('corps-streak')) $('corps-streak').textContent = streak + 'j';
 
-  renderSleepSection(allDays);
 }
 
 // ── TASKS TAB ──────────────────────────────────────────────────────
