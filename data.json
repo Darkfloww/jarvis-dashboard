@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02",
+  "lastUpdated": "2026-09-03",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -3565,7 +3565,7 @@
     },
     {
       "date": "2026-09-02",
-      "score": 8.0,
+      "score": 12.5,
       "note": "",
       "feedback": "",
       "activitywatch": {
@@ -3578,24 +3578,25 @@
         "score": 0
       },
       "physique": {
-        "score": 8.0,
+        "score": 12.5,
         "coucher": "04:23",
         "lever": "09:49",
         "heures_sommeil": 5.24,
         "sommeil_source": "whoop",
-        "gym": false,
+        "gym": true,
         "gym_source": "whoop",
         "score_detail": {
           "sommeil": 3.55,
           "recovery": 3.5,
           "regularite": 0.92,
-          "entrainement": 0.0
+          "entrainement": 4.5
         },
         "score_manquant": [
           "nutrition"
         ],
         "score_dispo": 16,
-        "score_source": "whoop"
+        "score_source": "whoop",
+        "gym_type": "activity"
       },
       "spirituel": {
         "score": 0
@@ -3643,12 +3644,33 @@
           }
         },
         "strain": {
-          "jour": 5.1,
-          "calories": 1102,
-          "fc_moyenne": 62,
-          "fc_max": 131
+          "jour": 11.6,
+          "calories": 1952,
+          "fc_moyenne": 70,
+          "fc_max": 180
         },
-        "workouts": [],
+        "workouts": [
+          {
+            "sport": "activity",
+            "debut": "01:24",
+            "duree_min": 33,
+            "strain": 9.4,
+            "fc_moyenne": 131,
+            "fc_max": 180,
+            "calories": 263,
+            "zones_min": [
+              0.2,
+              20.8,
+              3.1,
+              5.8,
+              2.0,
+              1.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
+          }
+        ],
         "siestes": [
           {
             "debut": "12:40",
@@ -3658,6 +3680,36 @@
             "rem_h": 0.55
           }
         ]
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "error: curl failed: ",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
       }
     }
   ],
@@ -3671,11 +3723,11 @@
     "current_month": "2026-09",
     "current_commission": 0,
     "monthly_target": 14000,
-    "days_elapsed": 2,
-    "days_remaining": 28,
+    "days_elapsed": 3,
+    "days_remaining": 27,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 500,
+    "daily_velocity_needed": 519,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -8330,7 +8382,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-02T20:14:26",
+    "last_sync": "2026-09-03T04:14:47",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -8345,14 +8397,14 @@
       "sommeil_moy_h": 6.8,
       "sleep_perf_moy": 76.7,
       "consistency_moy": 47.0,
-      "strain_moy": 7.6,
-      "kcal_moy": 1690.8,
+      "strain_moy": 8.1,
+      "kcal_moy": 1756.2,
       "profond_moy_h": 1.9,
       "rem_moy_h": 1.7,
       "perturbations_moy": 11.2,
-      "seances_total": 10,
+      "seances_total": 11,
       "siestes_total": 3,
-      "jours_avec_seance": 8
+      "jours_avec_seance": 9
     },
     "jours_couverts": 13,
     "premier_jour": "2026-08-21"
