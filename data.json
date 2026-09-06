@@ -4093,9 +4093,9 @@
           }
         },
         "strain": {
-          "jour": 4.8,
-          "calories": 498,
-          "fc_moyenne": 60,
+          "jour": 6.3,
+          "calories": 1081,
+          "fc_moyenne": 71,
           "fc_max": 138
         },
         "workouts": [],
@@ -9372,7 +9372,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-06T12:26:15",
+    "last_sync": "2026-09-06T20:26:39",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -9387,8 +9387,8 @@
       "sommeil_moy_h": 6.7,
       "sleep_perf_moy": 76.3,
       "consistency_moy": 48.9,
-      "strain_moy": 8.3,
-      "kcal_moy": 1747.4,
+      "strain_moy": 8.4,
+      "kcal_moy": 1781.7,
       "profond_moy_h": 1.9,
       "rem_moy_h": 1.7,
       "perturbations_moy": 10.6,
