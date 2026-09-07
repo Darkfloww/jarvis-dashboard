@@ -303,6 +303,48 @@ def baselines(by_date, n=30):
 PHYSIQUE_MAX = {"sommeil": 5, "recovery": 4, "regularite": 2, "entrainement": 5, "nutrition": 4}
 NUTRITION_PTS = {"aucun": 4.0, "slip": 3.0, "modere": 1.5, "critique": 0.0}
 
+# ── PROTOCOLE INTRABEAUTE ─────────────────────────────────────────────
+# Source : 5 RESSOURCES/YouTube/ANTHONY GOSSET - BEAUTE BLUEPRINT.
+# La these : la peau et le visage sont un affichage de la biologie interne.
+# Les quatre items ci-dessous remplacent le "goyslop oui/non" binaire et
+# remplissent les 4 points de nutrition qui restaient vides depuis le 25/05.
+#
+# Volet lumiere : Shayan retire l'exposition de la PEAU (objectif eclaircissement).
+# Il garde les deux entrees qui pilotent le rythme circadien sans pigmenter,
+# la lumiere du matin dans les YEUX et l'obscurite du soir. Ces deux items sont
+# suivis mais NON notes : ils n'ont pas a rapporter de points declaratifs,
+# leur effet reel se lit dans regularite et sommeil, que la Whoop mesure seule.
+INTRABEAUTE_NUTRITION = {
+    "base_animale": "viande rouge grasse, oeufs, poisson gras ou foie au repas principal",
+    "sans_transforme": "zero ultra-transforme et zero huile de graine",
+    "sans_sucre_alcool_cafe": "zero sucre ajoute, zero alcool, zero cafe",
+    "hydratation": "eau minerale (jamais robinet), zero sel ajoute, pas de compensation potassium",
+}
+INTRABEAUTE_LUMIERE = {
+    "lumiere_matin": "lumiere du matin dans les yeux, peau couverte",
+    "lumiere_soir": "filtre chaud des le coucher du soleil, chambre noire et fraiche",
+}
+INTRABEAUTE_HEBDO = {"foie": 1, "huitres": 2}  # occurrences attendues par semaine
+
+
+def score_intrabeaute(ph):
+    """Convertit la checklist intrabeaute en points de nutrition (1 pt par item).
+    Retourne None si aucun item n'est renseigne, pour que la journee reste
+    'non mesuree' plutot que notee zero. Les items lumiere ne rapportent rien."""
+    ib = ph.get("intrabeaute")
+    if not isinstance(ib, dict):
+        return None
+    ph["intrabeaute_manquant"] = sorted(
+        k for k in list(INTRABEAUTE_NUTRITION) + list(INTRABEAUTE_LUMIERE)
+        if not isinstance(ib.get(k), bool)
+    )
+    # Les 4 points se jouent toujours sur les 4 items. Une checklist incomplete
+    # n'est pas notee : sinon declarer un seul item vrai rapporterait le maximum.
+    # Le check-in du soir doit reclamer les items manquants avant de scorer.
+    if any(not isinstance(ib.get(k), bool) for k in INTRABEAUTE_NUTRITION):
+        return None
+    return round(sum(1.0 for k in INTRABEAUTE_NUTRITION if ib[k]), 2)
+
 
 def _band(v, paliers):
     """paliers = [(seuil, points), ...] du plus haut au plus bas."""
@@ -342,11 +384,17 @@ def score_physique(day):
         # Bracelet porté, aucune séance : c'est un vrai zéro, pas une donnée manquante.
         detail["entrainement"] = 0.0
 
-    niveau = ph.get("goyslop_level")
-    if niveau is None and ph.get("nutrition_clean") is not None:
-        niveau = "aucun" if ph["nutrition_clean"] else "critique"
-    if niveau in NUTRITION_PTS:
-        detail["nutrition"] = NUTRITION_PTS[niveau]
+    # La checklist intrabeaute prime ; le goyslop binaire reste le repli
+    # pour toutes les journees anterieures au protocole.
+    pts_ib = score_intrabeaute(ph)
+    if pts_ib is not None:
+        detail["nutrition"] = pts_ib
+    else:
+        niveau = ph.get("goyslop_level")
+        if niveau is None and ph.get("nutrition_clean") is not None:
+            niveau = "aucun" if ph["nutrition_clean"] else "critique"
+        if niveau in NUTRITION_PTS:
+            detail["nutrition"] = NUTRITION_PTS[niveau]
 
     if not detail:
         return 0.0
@@ -355,6 +403,8 @@ def score_physique(day):
     ph["score_manquant"] = sorted(k for k in PHYSIQUE_MAX if k not in detail)
     ph["score_dispo"] = sum(PHYSIQUE_MAX[k] for k in detail)
     ph["score_source"] = "whoop" if "nutrition" not in detail else "whoop+check-in"
+    if isinstance(ph.get("intrabeaute"), dict):
+        ph["score_source"] = "whoop+intrabeaute"
     ph["score"] = round(sum(detail.values()), 1)
     return ph["score"]
 

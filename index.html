@@ -1651,12 +1651,28 @@ function renderMetrics(day){
   if(p.sommeil_source==='whoop'){
     $('ph-sleep').innerHTML=(p.coucher&&p.lever?`${p.coucher} → ${p.lever}`:'—')+tag;
   }
-  // Nutrition rating
-  const gLevel = p.goyslop_level || (p.nutrition_clean === true ? 'aucun' : p.nutrition_clean === false ? 'critique' : null);
-  const gColors = {aucun:'#22c55e', slip:'#eab308', modere:'#f97316', critique:'#ef4444'};
-  const gLabels = {aucun:'✓ Aucun goyslop', slip:'Slip mineur', modere:'Modéré', critique:'Critique'};
-  $('ph-goyslop').innerHTML = gLevel ? `<span style="color:${gColors[gLevel]||'#64748b'};font-weight:700">${gLabels[gLevel]||gLevel}</span>` + (p.nutrition_score ? ` <span style="color:#64748b;font-size:11px">${p.nutrition_score}/10</span>` : '') : '—';
-  $('ph-goyslop-items').textContent = p.goyslop_items?.join(', ') || '—';
+  // Nutrition rating. Le protocole intrabeauté prime, le goyslop reste le repli historique.
+  const IB_NUT=['base_animale','sans_transforme','sans_sucre_alcool_cafe','hydratation'];
+  const IB_LUM=['lumiere_matin','lumiere_soir'];
+  const IB_LBL={base_animale:'Base animale',sans_transforme:'Sans transformé',sans_sucre_alcool_cafe:'Sans sucre/alcool/café',hydratation:'Hydratation',lumiere_matin:'Lumière matin',lumiere_soir:'Lumière soir'};
+  const ib=p.intrabeaute;
+  if(ib){
+    const tenus=IB_NUT.filter(k=>ib[k]===true).length;
+    const declares=IB_NUT.filter(k=>typeof ib[k]==='boolean').length;
+    const col=declares<IB_NUT.length?'#64748b':tenus===4?'#22c55e':tenus>=3?'#eab308':tenus>=2?'#f97316':'#ef4444';
+    const txt=declares<IB_NUT.length?`${declares}/4 déclarés`:`${tenus}/4 tenus`;
+    $('ph-goyslop').innerHTML=`<span style="color:${col};font-weight:700">${txt}</span>`;
+    // Les items lumière sont suivis sans points : leur preuve est la régularité Whoop.
+    const rate=k=>ib[k]===true?'✓':ib[k]===false?'✗':'—';
+    $('ph-goyslop-items').innerHTML=IB_NUT.concat(IB_LUM)
+      .map(k=>`${rate(k)} ${IB_LBL[k]}${IB_LUM.includes(k)?' <span style="opacity:.5">(non noté)</span>':''}`).join('<br>');
+  } else {
+    const gLevel = p.goyslop_level || (p.nutrition_clean === true ? 'aucun' : p.nutrition_clean === false ? 'critique' : null);
+    const gColors = {aucun:'#22c55e', slip:'#eab308', modere:'#f97316', critique:'#ef4444'};
+    const gLabels = {aucun:'✓ Aucun goyslop', slip:'Slip mineur', modere:'Modéré', critique:'Critique'};
+    $('ph-goyslop').innerHTML = gLevel ? `<span style="color:${gColors[gLevel]||'#64748b'};font-weight:700">${gLabels[gLevel]||gLevel}</span>` + (p.nutrition_score ? ` <span style="color:#64748b;font-size:11px">${p.nutrition_score}/10</span>` : '') : '—';
+    $('ph-goyslop-items').textContent = p.goyslop_items?.join(', ') || '—';
+  }
   $('ph-repas').textContent=p.repas||'—';
   $('ph-p').style.width=(p.score||0)/20*100+'%';
   // Breakdown of the pillar: measured components, then what the check-in still owes.
