@@ -57,23 +57,14 @@ def get_aw_activity():
         today = str(date.today())
         buckets = aw_get("/buckets")
 
-        # Un changement de nom d'hote laisse un ancien bucket derriere lui. Prendre
-        # le premier qui matche renvoyait celui du 30/05, donc 0 minute a vie :
-        # on prend systematiquement le plus recemment alimente.
-        candidats = [b for b in buckets if 'window' in b.lower()]
-        if not candidats:
+        # Find window watcher bucket
+        window_bucket = next((b for b in buckets if 'window' in b.lower()), None)
+        if not window_bucket:
             return {"status": "no_bucket", "total_min": 0, "apps": {}}
-        window_bucket = max(
-            candidats,
-            key=lambda b: (buckets[b].get("last_updated") or "") if isinstance(buckets, dict) else ""
-        )
 
-        # La journee doit etre bornee sur l'heure locale : en UTC+4, une fenetre
-        # 00h-24h UTC coupait les 4 premieres heures et empietait sur la veille.
-        offset = datetime.now().astimezone().strftime("%z")  # ex. +0400
-        off = f"{offset[:3]}%3A{offset[3:]}".replace("+", "%2B")
-        start = f"{today}T00%3A00%3A00{off}"
-        end = f"{today}T23%3A59%3A59{off}"
+        # Get events for today — URL-encode + as %2B (AW server issue)
+        start = f"{today}T00%3A00%3A00%2B00%3A00"
+        end = f"{today}T23%3A59%3A59%2B00%3A00"
         events_url = f"buckets/{window_bucket}/events?start={start}&end={end}&limit=2000"
         events = aw_get(events_url)
         if isinstance(events, dict):
