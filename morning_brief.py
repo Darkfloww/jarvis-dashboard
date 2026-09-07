@@ -170,6 +170,10 @@ def build_brief(data):
         pmo = "✓" if m.get("no_pmo") else "✗" if m.get("no_pmo") is False else "?"
 
         lines.append(f"  DMs {dms}/2 | Gym {gym} | Fajr {fajr} | Deep work {dw}h | No PMO {pmo}")
+        # Le sommeil n'est plus demandé : la Whoop le fournit, on l'affiche.
+        if p.get("coucher") and p.get("lever"):
+            h = p.get("heures_sommeil")
+            lines.append(f"  Sommeil {p['coucher']} → {p['lever']}" + (f" ({h}h)" if h else ""))
         lines.append("")
     else:
         lines.append("⚪ Pas de données pour hier.")
@@ -192,8 +196,19 @@ def build_brief(data):
             mins = m.get("screen_time_reseaux_min", 0)
             h, mi = floor(mins/60), mins%60
             alerts.append(f"📱 {h}h{str(mi).zfill(2)} de réseaux hier — laisse ton téléphone jusqu'à 18h.")
-        if p.get("nutrition_clean") is False:
+        ib = p.get("intrabeaute") or {}
+        rates = [k for k in ("base_animale", "sans_transforme",
+                             "sans_sucre_alcool_cafe", "hydratation")
+                 if ib.get(k) is False]
+        if rates:
+            libelles = {"base_animale": "base animale", "sans_transforme": "ultra-transformé",
+                        "sans_sucre_alcool_cafe": "sucre/alcool/café", "hydratation": "hydratation"}
+            manques = ", ".join(libelles[k] for k in rates)
+            alerts.append(f"🥩 Intrabeauté hier : {len(rates)}/4 non tenus ({manques}).")
+        elif p.get("nutrition_clean") is False:
             alerts.append("🍔 Goyslop hier — discipline absolue aujourd'hui.")
+        if ib.get("lumiere_matin") is False:
+            alerts.append("🌅 Lumière du matin ratée hier — yeux dehors au lever, peau couverte.")
 
     if alerts:
         lines.append("🚨 <b>POINTS CRITIQUES</b>")
@@ -282,11 +297,6 @@ def build_brief(data):
             lines.append("")
             lines.append("📋 <b>STORIES DIDIER — COPYWRITING PRÊT</b>")
             lines.append(f"  Valide ici : {stories_doc['url']}")
-
-    # SLEEP QUESTION
-    lines.append("")
-    lines.append("😴 <b>Question sommeil :</b> À quelle heure t'es couché hier soir ?")
-    lines.append("(Réponds directement ici, ex: \"2h30\")")
 
     # CLOSER
     lines.append("")

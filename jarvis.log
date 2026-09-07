@@ -1,1056 +1,940 @@
-=== JARVIS DAILY PUSH Fri May 22 08:00:04 +08 2026 ===
-[JARVIS Collect] 2026-05-22
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 360, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 294, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat May 23 08:00:03 +08 2026 ===
-[JARVIS Collect] 2026-05-23
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 360, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 294, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun May 24 08:00:05 +08 2026 ===
-[JARVIS Collect] 2026-05-24
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon May 25 08:00:00 +08 2026 ===
-[JARVIS Collect] 2026-05-25
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue May 26 08:00:03 +08 2026 ===
-[JARVIS Collect] 2026-05-26
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed May 27 08:00:02 +08 2026 ===
-[JARVIS Collect] 2026-05-27
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu May 28 08:00:01 +08 2026 ===
-[JARVIS Collect] 2026-05-28
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri May 29 08:00:00 +08 2026 ===
-[JARVIS Collect] 2026-05-29
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat May 30 04:00:05 +04 2026 ===
-[JARVIS Collect] 2026-05-30
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun May 31 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-05-31
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jun  1 08:00:04 +04 2026 ===
-[JARVIS Collect] 2026-06-01
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jun  2 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-02
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jun  3 08:00:04 +04 2026 ===
-[JARVIS Collect] 2026-06-03
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jun  4 08:00:03 +04 2026 ===
-[JARVIS Collect] 2026-06-04
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jun  5 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-05
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jun  6 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-06
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jun  7 08:00:04 +04 2026 ===
-[JARVIS Collect] 2026-06-07
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jun  8 08:00:02 +04 2026 ===
-[JARVIS Collect] 2026-06-08
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jun  9 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-09
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jun 10 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-10
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jun 11 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-11
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jun 12 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-12
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jun 13 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-13
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jun 14 08:00:00 +04 2026 ===
-[JARVIS Collect] 2026-06-14
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jun 15 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-15
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jun 16 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-16
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jun 17 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-17
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jun 18 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-18
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jun 19 08:00:01 +04 2026 ===
-[JARVIS Collect] 2026-06-19
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jun 20 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-20
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jun 21 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-21
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jun 22 08:00:05 +04 2026 ===
-[JARVIS Collect] 2026-06-22
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jun 23 08:02:46 +04 2026 ===
-[JARVIS Collect] 2026-06-23
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jun 24 12:00:05 +08 2026 ===
-[JARVIS Collect] 2026-06-24
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jun 25 12:00:05 +08 2026 ===
-[JARVIS Collect] 2026-06-25
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jun 26 12:00:05 +08 2026 ===
-[JARVIS Collect] 2026-06-26
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jun 27 12:00:04 +08 2026 ===
-[JARVIS Collect] 2026-06-27
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jun 28 12:00:04 +08 2026 ===
-[JARVIS Collect] 2026-06-28
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jun 29 08:00:03 +08 2026 ===
-[JARVIS Collect] 2026-06-29
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jun 30 08:00:05 +08 2026 ===
-[JARVIS Collect] 2026-06-30
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jul  1 08:00:05 +08 2026 ===
-[JARVIS Collect] 2026-07-01
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jul  2 08:00:05 +08 2026 ===
-[JARVIS Collect] 2026-07-02
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jul  3 08:00:05 +08 2026 ===
-[JARVIS Collect] 2026-07-03
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jul  4 08:00:04 +08 2026 ===
-[JARVIS Collect] 2026-07-04
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jul  5 08:04:16 +08 2026 ===
-[JARVIS Collect] 2026-07-05
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jul  6 15:23:49 +08 2026 ===
-[JARVIS Collect] 2026-07-06
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jul  7 02:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-07
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jul  8 02:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-08
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jul  9 02:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-09
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jul 10 02:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-10
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jul 11 02:00:01 CEST 2026 ===
-[JARVIS Collect] 2026-07-11
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jul 12 02:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-12
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jul 13 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-13
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jul 14 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-14
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jul 15 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-15
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jul 16 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-16
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jul 17 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-17
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jul 18 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-18
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jul 19 08:00:04 CEST 2026 ===
-[JARVIS Collect] 2026-07-19
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Mon Jul 20 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-20
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Tue Jul 21 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-21
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Wed Jul 22 08:00:04 CEST 2026 ===
-[JARVIS Collect] 2026-07-22
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Thu Jul 23 08:00:04 CEST 2026 ===
-[JARVIS Collect] 2026-07-23
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Fri Jul 24 08:00:02 CEST 2026 ===
-[JARVIS Collect] 2026-07-24
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sat Jul 25 08:00:01 CEST 2026 ===
-[JARVIS Collect] 2026-07-25
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
-=== JARVIS DAILY PUSH Sun Jul 26 08:00:05 CEST 2026 ===
-[JARVIS Collect] 2026-07-26
-Traceback (most recent call last):
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 363, in <module>
-    update_data()
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 297, in update_data
-    parsed = parse_daily_log_entry(today)
-  File "/Users/shayanisse/jarvis-dashboard/collect.py", line 96, in parse_daily_log_entry
-    content = DAILY_LOG.read_text(encoding="utf-8")
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
-    return self._accessor.open(self, flags, mode)
-PermissionError: [Errno 1] Operation not permitted: '/Users/shayanisse/Documents/Obsidian Vault/2 CAPS/JARVIS/DAILY LOG.md'
+=== JARVIS DAILY PUSH Wed Sep  2 04:13:35 +04 2026 ===
+[JARVIS Collect] 2026-09-02
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-08-26
+  Updated existing entry for 2026-09-02
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-03)
+[Whoop] token rafraîchi
+[Whoop] 13 sommeils · 11 recoveries · 12 cycles · 10 workouts
+[Whoop] 12 jours de physiologie
+[Whoop] data.json : 0 jours créés, 12 mis à jour
+[Whoop] dernier jour 2026-09-01 — recovery 66% · sommeil 9.63h · strain 7.4
+[main ba1a4da] data: daily update 2026-09-02
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   8a5a2b4..ba1a4da  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/393.9KB)
+Uploading [=====---------------] (113.3KB/393.9KB)
+Uploading [==========----------] (209.3KB/393.9KB)
+Uploading [===============-----] (305.3KB/393.9KB)
+Uploading [====================] (393.9KB/393.9KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/EMXS1eM4xnNoxJS6Wynx1hNQwTon
+▲ Production  https://jarvis-dashboard-cblw1945s-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-cblw1945s-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 22 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [137ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-cblw1945s-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 11s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Wed Sep  2 12:13:56 +04 2026 ===
+[JARVIS Collect] 2026-09-02
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-08-26
+  Updated existing entry for 2026-09-02
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-03)
+[Whoop] token rafraîchi
+[Whoop] 14 sommeils · 12 recoveries · 13 cycles · 10 workouts
+[Whoop] 13 jours de physiologie
+[Whoop] data.json : 0 jours créés, 13 mis à jour
+[Whoop] dernier jour 2026-09-02 — recovery 71% · sommeil 5.24h · strain 4.1
+[main 9a3bc41] data: daily update 2026-09-02
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 52 insertions(+), 11 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   ba1a4da..9a3bc41  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/680.9KB)
+Uploading [=====---------------] (179.9KB/680.9KB)
+Uploading [==========----------] (355.9KB/680.9KB)
+Uploading [===============-----] (511.2KB/680.9KB)
+Uploading [====================] (680.9KB/680.9KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/DmeXzZX8JXPVc3rqaYLPvrg9PGWC
+▲ Production  https://jarvis-dashboard-961cdsrgh-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-961cdsrgh-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 22 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [95ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-961cdsrgh-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Wed Sep  2 20:14:20 +04 2026 ===
+[JARVIS Collect] 2026-09-02
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-08-26
+  Updated existing entry for 2026-09-02
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-03)
+[Whoop] token rafraîchi
+[Whoop] 15 sommeils · 12 recoveries · 13 cycles · 10 workouts
+[Whoop] 13 jours de physiologie
+[Whoop] data.json : 0 jours créés, 13 mis à jour
+[Whoop] pilier Physique recalculé sur 13 jours
+[Whoop] dernier jour 2026-09-02 — recovery 71% · sommeil 5.24h · strain 5.1
+[main df383c5] data: daily update 2026-09-02
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   400b4f6..df383c5  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/409.1KB)
+Uploading [=====---------------] (102.7KB/409.1KB)
+Uploading [==========----------] (214.7KB/409.1KB)
+Uploading [===============-----] (310.7KB/409.1KB)
+Uploading [====================] (409.1KB/409.1KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/8Huek4z54fVCwKfpHje7mLhG8sBr
+▲ Production  https://jarvis-dashboard-29hr86mt1-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-29hr86mt1-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [133ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-29hr86mt1-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 11s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Thu Sep  3 04:14:43 +04 2026 ===
+[JARVIS Collect] 2026-09-03
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-08-26
+  Added new entry for 2026-09-03
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-04)
+[Whoop] token rafraîchi
+[Whoop] 15 sommeils · 12 recoveries · 13 cycles · 11 workouts
+[Whoop] 13 jours de physiologie
+[Whoop] data.json : 0 jours créés, 13 mis à jour
+[Whoop] pilier Physique recalculé sur 13 jours
+[Whoop] dernier jour 2026-09-02 — recovery 71% · sommeil 5.24h · strain 11.6
+[main 39ecc18] data: daily update 2026-09-03
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 71 insertions(+), 19 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   df383c5..39ecc18  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/415.3KB)
+Uploading [=====---------------] (107.8KB/415.3KB)
+Uploading [==========----------] (219.8KB/415.3KB)
+Uploading [===============-----] (315.8KB/415.3KB)
+Uploading [====================] (415.3KB/415.3KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/4yvsBds5qZZjzBQ6qKi8ndfSLUBj
+▲ Production  https://jarvis-dashboard-bf4e788ye-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-bf4e788ye-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [141ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-bf4e788ye-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Thu Sep  3 12:15:07 +04 2026 ===
+[JARVIS Collect] 2026-09-03
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-08-26
+  Updated existing entry for 2026-09-03
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-04)
+[Whoop] token rafraîchi
+[Whoop] 16 sommeils · 13 recoveries · 14 cycles · 11 workouts
+[Whoop] 14 jours de physiologie
+[Whoop] data.json : 0 jours créés, 14 mis à jour
+[Whoop] pilier Physique recalculé sur 14 jours
+[Whoop] dernier jour 2026-09-03 — recovery 64% · sommeil 5.1h · strain 4.0
+[main f23d328] data: daily update 2026-09-03
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 75 insertions(+), 16 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   39ecc18..f23d328  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/704KB)
+Uploading [=====---------------] (188.1KB/704KB)
+Uploading [==========----------] (363.0KB/704KB)
+Uploading [===============-----] (539.0KB/704KB)
+Uploading [====================] (704.0KB/704KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/JDMiuXuRUvY3JkdXmdQ1w2CiT5Rz
+▲ Production  https://jarvis-dashboard-3jr4y20j9-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-3jr4y20j9-isseshayan-4576s-projects.vercel.appBuilding…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [106ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-3jr4y20j9-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+─────────────────────────────────────────────────────────────────────────
+
+Update available! v54.2.0 ≫ v59.11.2
+Changelog: https://github.com/vercel/vercel/releases/tag/vercel%4059.11.2
+Run `npm i -g vercel@latest` to update.
+
+─────────────────────────────────────────────────────────────────────────
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Thu Sep  3 20:15:32 +04 2026 ===
+[JARVIS Collect] 2026-09-03
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: updated today
+  Updated existing entry for 2026-09-03
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-04)
+[Whoop] token rafraîchi
+[Whoop] 16 sommeils · 13 recoveries · 14 cycles · 13 workouts
+[Whoop] 14 jours de physiologie
+[Whoop] data.json : 0 jours créés, 14 mis à jour
+[Whoop] pilier Physique recalculé sur 14 jours
+[Whoop] dernier jour 2026-09-03 — recovery 64% · sommeil 5.1h · strain 14.9
+[main e510adb] data: daily update 2026-09-03
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 8643 insertions(+), 8601 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   7321059..e510adb  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/434.3KB)
+Uploading [=====---------------] (111.5KB/434.3KB)
+Uploading [==========----------] (223.5KB/434.3KB)
+Uploading [===============-----] (335.5KB/434.3KB)
+Uploading [====================] (434.3KB/434.3KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/4STrthpDeJfYWAFBRe6ZqFrNSF1H
+▲ Production  https://jarvis-dashboard-9d1onpqt7-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-9d1onpqt7-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [95ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-9d1onpqt7-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Fri Sep  4 04:15:57 +04 2026 ===
+[JARVIS Collect] 2026-09-04
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-03
+  Added new entry for 2026-09-04
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-05)
+[Whoop] token rafraîchi
+[Whoop] 16 sommeils · 13 recoveries · 14 cycles · 13 workouts
+[Whoop] 14 jours de physiologie
+[Whoop] data.json : 0 jours créés, 14 mis à jour
+[Whoop] pilier Physique recalculé sur 14 jours
+[Whoop] dernier jour 2026-09-03 — recovery 64% · sommeil 5.1h · strain 16.7
+[main f31d054] data: daily update 2026-09-04
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 41 insertions(+), 11 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   e510adb..f31d054  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/439.9KB)
+Uploading [=====---------------] (116.6KB/439.9KB)
+Uploading [==========----------] (228.6KB/439.9KB)
+Uploading [===============-----] (340.6KB/439.9KB)
+Uploading [====================] (439.9KB/439.9KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/2trQ27JA27BVXcPMFLTHeKLoiUVo
+▲ Production  https://jarvis-dashboard-pdsbpwj5b-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-pdsbpwj5b-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [95ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-pdsbpwj5b-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 11s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Fri Sep  4 12:16:19 +04 2026 ===
+[JARVIS Collect] 2026-09-04
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-03
+  Updated existing entry for 2026-09-04
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-05)
+[Whoop] token rafraîchi
+[Whoop] 17 sommeils · 14 recoveries · 15 cycles · 13 workouts
+[Whoop] 15 jours de physiologie
+[Whoop] data.json : 0 jours créés, 15 mis à jour
+[Whoop] pilier Physique recalculé sur 15 jours
+[Whoop] dernier jour 2026-09-04 — recovery 48% · sommeil 6.61h · strain 4.1
+[main 034443c] data: daily update 2026-09-04
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 71 insertions(+), 12 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   f31d054..034443c  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/732.3KB)
+Uploading [=====---------------] (196.9KB/732.3KB)
+Uploading [==========----------] (372.9KB/732.3KB)
+Uploading [===============-----] (551.5KB/732.3KB)
+Uploading [====================] (732.3KB/732.3KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/4CS8sq5GZnLvAzab5He545UAgJ33
+▲ Production  https://jarvis-dashboard-q5kp2dtcp-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-q5kp2dtcp-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [89ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-q5kp2dtcp-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 10s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Fri Sep  4 20:16:41 +04 2026 ===
+[JARVIS Collect] 2026-09-04
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: updated today
+  Updated existing entry for 2026-09-04
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-05)
+[Whoop] token rafraîchi
+[Whoop] 17 sommeils · 14 recoveries · 15 cycles · 13 workouts
+[Whoop] 15 jours de physiologie
+[Whoop] data.json : 0 jours créés, 15 mis à jour
+[Whoop] pilier Physique recalculé sur 15 jours
+[Whoop] dernier jour 2026-09-04 — recovery 48% · sommeil 6.61h · strain 4.4
+[main 0a48810] data: daily update 2026-09-04
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9131 insertions(+), 9131 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   1bd5dc3..0a48810  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/462KB)
+Uploading [=====---------------] (119.7KB/462KB)
+Uploading [==========----------] (231.7KB/462KB)
+Uploading [===============-----] (359.7KB/462KB)
+Uploading [====================] (462.0KB/462KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/47wkcXXnvne5yVBuYGPosrnUGKDo
+▲ Production  https://jarvis-dashboard-myr4crkzk-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-myr4crkzk-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.3.0
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [95ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-myr4crkzk-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Sat Sep  5 20:25:26 +04 2026 ===
+[JARVIS Collect] 2026-09-05
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-04
+  Added new entry for 2026-09-05
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-06)
+[Whoop] token rafraîchi
+[Whoop] 18 sommeils · 15 recoveries · 16 cycles · 14 workouts
+[Whoop] 16 jours de physiologie
+[Whoop] data.json : 0 jours créés, 16 mis à jour
+[Whoop] pilier Physique recalculé sur 16 jours
+[Whoop] dernier jour 2026-09-05 — recovery 70% · sommeil 8.57h · strain 4.2
+[main 446ae47] data: daily update 2026-09-05
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 137 insertions(+), 26 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   0a48810..446ae47  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/763.8KB)
+Uploading [=====---------------] (204.8KB/763.8KB)
+Uploading [==========----------] (396.8KB/763.8KB)
+Uploading [===============-----] (581.7KB/763.8KB)
+Uploading [====================] (763.8KB/763.8KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/6z4pvvFWvRxzCWCv9ZxEom2aE9BT
+▲ Production  https://jarvis-dashboard-5cou0e0oq-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-5cou0e0oq-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [87ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-5cou0e0oq-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 10s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Sun Sep  6 04:25:46 +04 2026 ===
+[JARVIS Collect] 2026-09-06
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-04
+  Added new entry for 2026-09-06
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-07)
+[Whoop] token rafraîchi
+[Whoop] 18 sommeils · 15 recoveries · 16 cycles · 14 workouts
+[Whoop] 16 jours de physiologie
+[Whoop] data.json : 0 jours créés, 16 mis à jour
+[Whoop] pilier Physique recalculé sur 16 jours
+[Whoop] dernier jour 2026-09-05 — recovery 70% · sommeil 8.57h · strain 5.6
+[main e7a0393] data: daily update 2026-09-06
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 40 insertions(+), 10 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   446ae47..e7a0393  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/472.9KB)
+Uploading [=====---------------] (127.5KB/472.9KB)
+Uploading [==========----------] (239.5KB/472.9KB)
+Uploading [===============-----] (367.5KB/472.9KB)
+Uploading [====================] (472.9KB/472.9KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/Cr721EHZQoMqtbRWS4tr1h8egUMr
+▲ Production  https://jarvis-dashboard-b81qi1ogy-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-b81qi1ogy-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [99ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-b81qi1ogy-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 12s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+─────────────────────────────────────────────────────────────────────────
+
+Update available! v54.2.0 ≫ v59.11.7
+Changelog: https://github.com/vercel/vercel/releases/tag/vercel%4059.11.7
+Run `npm i -g vercel@latest` to update.
+
+─────────────────────────────────────────────────────────────────────────
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Sun Sep  6 12:26:09 +04 2026 ===
+[JARVIS Collect] 2026-09-06
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-04
+  Updated existing entry for 2026-09-06
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-07)
+[Whoop] token rafraîchi
+[Whoop] 19 sommeils · 16 recoveries · 17 cycles · 14 workouts
+[Whoop] 17 jours de physiologie
+[Whoop] data.json : 0 jours créés, 17 mis à jour
+[Whoop] pilier Physique recalculé sur 17 jours
+[Whoop] dernier jour 2026-09-06 — recovery 54% · sommeil 5.33h · strain 4.8
+[main 0fe8817] data: daily update 2026-09-06
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 74 insertions(+), 15 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   e7a0393..0fe8817  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/781.7KB)
+Uploading [=====---------------] (201.1KB/781.7KB)
+Uploading [==========----------] (393.1KB/781.7KB)
+Uploading [===============-----] (596.0KB/781.7KB)
+Uploading [====================] (781.7KB/781.7KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/4kcXj5CaiRdPv32NMQBGoStPQ1co
+▲ Production  https://jarvis-dashboard-g4324n7kp-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-g4324n7kp-isseshayan-4576s-projects.vercel.appBuilding…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [88ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-g4324n7kp-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Sun Sep  6 20:26:34 +04 2026 ===
+[JARVIS Collect] 2026-09-06
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-04
+  Updated existing entry for 2026-09-06
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-07)
+[Whoop] token rafraîchi
+[Whoop] 19 sommeils · 16 recoveries · 17 cycles · 14 workouts
+[Whoop] 17 jours de physiologie
+[Whoop] data.json : 0 jours créés, 17 mis à jour
+[Whoop] pilier Physique recalculé sur 17 jours
+[Whoop] dernier jour 2026-09-06 — recovery 54% · sommeil 5.33h · strain 6.3
+[main e303e74] data: daily update 2026-09-06
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   0fe8817..e303e74  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/478.1KB)
+Uploading [=====---------------] (131.2KB/478.1KB)
+Uploading [==========----------] (243.2KB/478.1KB)
+Uploading [===============-----] (371.2KB/478.1KB)
+Uploading [====================] (478.1KB/478.1KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/HLVzfecrKWdiv1crnZMDDRAzzzez
+▲ Production  https://jarvis-dashboard-c5ijj1aw0-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-c5ijj1aw0-isseshayan-4576s-projects.vercel.appBuilding…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [95ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-c5ijj1aw0-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 13s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Mon Sep  7 04:26:59 +04 2026 ===
+[JARVIS Collect] 2026-09-07
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-04
+  Added new entry for 2026-09-07
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-08)
+[Whoop] token rafraîchi
+[Whoop] 19 sommeils · 16 recoveries · 17 cycles · 14 workouts
+[Whoop] 17 jours de physiologie
+[Whoop] data.json : 0 jours créés, 17 mis à jour
+[Whoop] pilier Physique recalculé sur 17 jours
+[Whoop] dernier jour 2026-09-06 — recovery 54% · sommeil 5.33h · strain 9.4
+[main 021226c] data: daily update 2026-09-07
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 41 insertions(+), 11 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   e303e74..021226c  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/483.8KB)
+Uploading [=====---------------] (136.4KB/483.8KB)
+Uploading [==========----------] (248.4KB/483.8KB)
+Uploading [===============-----] (376.4KB/483.8KB)
+Uploading [====================] (483.8KB/483.8KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/8BjfekrqJhpTfpLcRV4H2NuZmsih
+▲ Production  https://jarvis-dashboard-ooroejyaw-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-ooroejyaw-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [115ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-ooroejyaw-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 12s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Mon Sep  7 12:27:22 +04 2026 ===
+[JARVIS Collect] 2026-09-07
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: last updated 2026-09-04
+  Updated existing entry for 2026-09-07
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-08)
+[Whoop] token rafraîchi
+[Whoop] 19 sommeils · 16 recoveries · 17 cycles · 14 workouts
+[Whoop] 17 jours de physiologie
+[Whoop] data.json : 0 jours créés, 17 mis à jour
+[Whoop] pilier Physique recalculé sur 17 jours
+[Whoop] dernier jour 2026-09-06 — recovery 54% · sommeil 5.33h · strain 9.4
+[main 55022c0] data: daily update 2026-09-07
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   021226c..55022c0  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/785.4KB)
+Uploading [=====---------------] (200.7KB/785.4KB)
+Uploading [==========----------] (408.7KB/785.4KB)
+Uploading [===============-----] (596.1KB/785.4KB)
+Uploading [====================] (785.4KB/785.4KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/4aZoMcAyaBTKdRPn1vUjF6vATPar
+▲ Production  https://jarvis-dashboard-q9xvlmyrb-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-q9xvlmyrb-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [90ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-q9xvlmyrb-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 12s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
+=== JARVIS DAILY PUSH Mon Sep  7 20:27:44 +04 2026 ===
+[JARVIS Collect] 2026-09-07
+  Daily log parsed: score=0
+  ActivityWatch: error: curl failed:  — 0min
+  Screen Time PNG: updated today
+  Updated existing entry for 2026-09-07
+  data.json updated.
+[Whoop] fenêtre : 30 jours (depuis 2026-08-08)
+[Whoop] token rafraîchi
+[Whoop] 20 sommeils · 17 recoveries · 18 cycles · 14 workouts
+[Whoop] 18 jours de physiologie
+[Whoop] data.json : 0 jours créés, 18 mis à jour
+[Whoop] pilier Physique recalculé sur 18 jours
+[Whoop] dernier jour 2026-09-07 — recovery 77% · sommeil 9.46h · strain 4.3
+[main 00a7b14] data: daily update 2026-09-07
+ Committer: Shayan ISSE <shayanisse@macbook-air-de-shayan.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9618 insertions(+), 9559 deletions(-)
+To https://github.com/Darkfloww/jarvis-dashboard.git
+   1f3cd0a..00a7b14  main -> main
+Retrieving project…
+Deploying isseshayan-4576s-projects/jarvis-dashboard
+Uploading [--------------------] (0.0B/499.9KB)
+Uploading [=====---------------] (139.4KB/499.9KB)
+Uploading [==========----------] (251.4KB/499.9KB)
+Uploading [===============-----] (379.4KB/499.9KB)
+Uploading [====================] (499.9KB/499.9KB)
+  Inspect     https://vercel.com/isseshayan-4576s-projects/jarvis-dashboard/FtBtrLji3oL7twAxfPgMQVhJAzKi
+▲ Production  https://jarvis-dashboard-1z1crjhjc-isseshayan-4576s-projects.vercel.app
+https://jarvis-dashboard-1z1crjhjc-isseshayan-4576s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 27 deployment files...
+Running "vercel build"
+Vercel CLI 59.11.7
+WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Build Completed in /vercel/output [88ms]
+Deploying outputs...
+[2K[1A[2K[G▲ Production  https://jarvis-dashboard-1z1crjhjc-isseshayan-4576s-projects.vercel.app
+Completing…
+▲ Aliased     https://jarvis-dashboard-lemon.vercel.app
+
+✓ Ready in 14s
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+=== Done. Dashboard updated. ===
