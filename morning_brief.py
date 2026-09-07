@@ -127,6 +127,92 @@ def score_emoji(score):
     return "⚪"
 
 
+
+def hhmm(heures):
+    """9.46 → '9h28'."""
+    if not heures:
+        return None
+    h = int(heures)
+    return f"{h}h{int(round((heures - h) * 60)):02d}"
+
+
+def moyenne_21j(days, chemin, sauf_date):
+    """Moyenne d'une métrique Whoop sur les 21 derniers jours, la nuit en cours exclue."""
+    vals = []
+    for d in days[-22:]:
+        if d.get("date") == sauf_date:
+            continue
+        cur = d.get("whoop") or {}
+        for k in chemin:
+            cur = (cur or {}).get(k) if isinstance(cur, dict) else None
+        if isinstance(cur, (int, float)) and cur:
+            vals.append(cur)
+    return sum(vals) / len(vals) if vals else None
+
+
+def bloc_sommeil(data, today_data, today):
+    """La nuit qui vient de se terminer, telle que la Whoop l'a mesurée.
+
+    C'est le coeur du brief depuis qu'il se declenche au reveil : la nuit est
+    classee sur sa date de REVEIL, donc celle qui vient de finir est celle
+    d'aujourd'hui, pas celle d'hier."""
+    w = (today_data or {}).get("whoop") or {}
+    slp, rec = w.get("sleep") or {}, w.get("recovery") or {}
+    if not slp.get("coucher"):
+        return []
+
+    out = ["😴 <b>TA NUIT</b>"]
+    duree = hhmm(slp.get("heures_sommeil"))
+    out.append(f"  {slp['coucher']} → {slp.get('lever', '?')}" + (f" · {duree} de sommeil" if duree else ""))
+
+    detail = []
+    if slp.get("deep_h"):
+        detail.append(f"Profond {hhmm(slp['deep_h'])}")
+    if slp.get("rem_h"):
+        detail.append(f"REM {hhmm(slp['rem_h'])}")
+    if slp.get("performance_pct"):
+        detail.append(f"Besoin couvert {slp['performance_pct']:.0f}%")
+    if detail:
+        out.append("  " + " · ".join(detail))
+
+    physio = []
+    if rec.get("score"):
+        physio.append(f"Recovery {rec['score']}%")
+    if rec.get("hrv"):
+        physio.append(f"HRV {rec['hrv']:.0f}")
+    if rec.get("rhr"):
+        physio.append(f"FC repos {rec['rhr']}")
+    if physio:
+        out.append("  " + " · ".join(physio))
+
+    # Comparaisons : une valeur seule ne dit rien, c'est l'ecart qui parle.
+    days = data.get("days", [])
+    ecarts = []
+    for libelle, chemin, valeur, sens in [
+        ("Régularité", ["sleep", "consistency_pct"], slp.get("consistency_pct"), "haut"),
+        ("FC repos", ["recovery", "rhr"], rec.get("rhr"), "bas"),
+    ]:
+        moy = moyenne_21j(days, chemin, today)
+        if valeur is None or moy is None:
+            continue
+        delta = valeur - moy
+        # Sous 1 point l'écart disparaît à l'affichage arrondi : une flèche entre
+        # deux nombres identiques donne l'impression d'un bug. On n'affiche rien.
+        if abs(delta) < 1:
+            continue
+        fleche = "↑" if delta > 0 else "↓"
+        bon = (delta > 0) if sens == "haut" else (delta < 0)
+        ecarts.append(f"{libelle} {valeur:.0f} {fleche} (moy 21j {moy:.0f})" + (" ✓" if bon else ""))
+    for e in ecarts:
+        out.append(f"  {e}")
+
+    if slp.get("dette_h") and slp["dette_h"] >= 1:
+        out.append(f"  ⚠ Dette de sommeil : {hhmm(slp['dette_h'])}")
+
+    out.append("")
+    return out
+
+
 def build_brief(data):
     today = str(date.today())
     yesterday = str(date.today() - timedelta(days=1))
@@ -148,6 +234,7 @@ def build_brief(data):
     today_fr = datetime.now().strftime("%A %d %B").capitalize()
     lines.append(f"⚡ <b>JARVIS MORNING BRIEF — {today_fr}</b>")
     lines.append("")
+    lines += bloc_sommeil(data, today_data, today)
 
     # YESTERDAY PERFORMANCE
     if yesterday_data:
@@ -170,10 +257,6 @@ def build_brief(data):
         pmo = "✓" if m.get("no_pmo") else "✗" if m.get("no_pmo") is False else "?"
 
         lines.append(f"  DMs {dms}/2 | Gym {gym} | Fajr {fajr} | Deep work {dw}h | No PMO {pmo}")
-        # Le sommeil n'est plus demandé : la Whoop le fournit, on l'affiche.
-        if p.get("coucher") and p.get("lever"):
-            h = p.get("heures_sommeil")
-            lines.append(f"  Sommeil {p['coucher']} → {p['lever']}" + (f" ({h}h)" if h else ""))
         lines.append("")
     else:
         lines.append("⚪ Pas de données pour hier.")
