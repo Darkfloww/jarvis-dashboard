@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06",
+  "lastUpdated": "2026-09-07",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -4093,13 +4093,43 @@
           }
         },
         "strain": {
-          "jour": 6.3,
-          "calories": 1081,
-          "fc_moyenne": 71,
-          "fc_max": 138
+          "jour": 9.4,
+          "calories": 1762,
+          "fc_moyenne": 75,
+          "fc_max": 171
         },
         "workouts": [],
         "siestes": []
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "error: curl failed: ",
+        "total_min": 0,
+        "apps": {}
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
       }
     }
   ],
@@ -4113,11 +4143,11 @@
     "current_month": "2026-09",
     "current_commission": 0,
     "monthly_target": 14000,
-    "days_elapsed": 6,
-    "days_remaining": 24,
+    "days_elapsed": 7,
+    "days_remaining": 23,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 583,
+    "daily_velocity_needed": 609,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -9372,7 +9402,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-06T20:26:39",
+    "last_sync": "2026-09-07T04:27:04",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -9387,8 +9417,8 @@
       "sommeil_moy_h": 6.7,
       "sleep_perf_moy": 76.3,
       "consistency_moy": 48.9,
-      "strain_moy": 8.4,
-      "kcal_moy": 1781.7,
+      "strain_moy": 8.6,
+      "kcal_moy": 1821.8,
       "profond_moy_h": 1.9,
       "rem_moy_h": 1.7,
       "perturbations_moy": 10.6,
