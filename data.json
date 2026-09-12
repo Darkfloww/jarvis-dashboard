@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-12",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -4635,9 +4635,9 @@
           }
         },
         "strain": {
-          "jour": 13.1,
-          "calories": 1992,
-          "fc_moyenne": 80,
+          "jour": 13.3,
+          "calories": 2537,
+          "fc_moyenne": 78,
           "fc_max": 151
         },
         "workouts": [
@@ -4664,6 +4664,43 @@
         ],
         "siestes": []
       }
+    },
+    {
+      "date": "2026-09-12",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 283,
+        "apps": {
+          "UserNotificationCenter": 141,
+          "Arc": 104,
+          "Terminal": 30,
+          "Google Chrome": 8,
+          "‎WhatsApp": 1,
+          "NordVPN": 0
+        }
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
@@ -4676,11 +4713,11 @@
     "current_month": "2026-09",
     "current_commission": 0,
     "monthly_target": 14000,
-    "days_elapsed": 11,
-    "days_remaining": 19,
+    "days_elapsed": 12,
+    "days_remaining": 18,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 737,
+    "daily_velocity_needed": 778,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -10946,7 +10983,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-11T20:42:50",
+    "last_sync": "2026-09-12T04:43:14",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -10962,7 +10999,7 @@
       "sleep_perf_moy": 76.1,
       "consistency_moy": 50.6,
       "strain_moy": 8.9,
-      "kcal_moy": 1829.5,
+      "kcal_moy": 1854.2,
       "profond_moy_h": 1.9,
       "rem_moy_h": 1.7,
       "perturbations_moy": 11.6,
