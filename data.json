@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16",
+  "lastUpdated": "2026-09-17",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -5185,9 +5185,9 @@
           }
         },
         "strain": {
-          "jour": 8.1,
-          "calories": 1226,
-          "fc_moyenne": 69,
+          "jour": 8.2,
+          "calories": 1775,
+          "fc_moyenne": 71,
           "fc_max": 143
         },
         "workouts": [
@@ -5214,23 +5214,58 @@
         ],
         "siestes": []
       }
+    },
+    {
+      "date": "2026-09-17",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 290,
+        "apps": {
+          "Terminal": 191,
+          "Arc": 75,
+          "Finder": 20,
+          "QuickTime Player": 4
+        }
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
     "nopmo": 0,
     "fajr": 0,
-    "gym": 0,
+    "gym": 3,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-09",
     "current_commission": 0,
     "monthly_target": 14000,
-    "days_elapsed": 16,
-    "days_remaining": 14,
+    "days_elapsed": 17,
+    "days_remaining": 13,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 1000,
+    "daily_velocity_needed": 1077,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -12097,7 +12132,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-16T20:49:14",
+    "last_sync": "2026-09-17T04:49:41",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -12113,7 +12148,7 @@
       "sleep_perf_moy": 76.2,
       "consistency_moy": 50.2,
       "strain_moy": 8.9,
-      "kcal_moy": 1838.0,
+      "kcal_moy": 1858.3,
       "profond_moy_h": 1.9,
       "rem_moy_h": 1.9,
       "perturbations_moy": 12.0,
