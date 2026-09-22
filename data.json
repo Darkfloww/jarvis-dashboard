@@ -5730,9 +5730,9 @@
     },
     {
       "date": "2026-09-22",
-      "score": 8.9,
-      "note": "",
-      "feedback": "",
+      "score": 27.9,
+      "note": "0 DM Instagram, 0 call. Outreach LinkedIn Closium + 2 reels Closium montés via Editing OS (non postés). Pas de séance (Whoop), recovery 79, sommeil 10h10. Nutrition cassée : wrap poulet frit, sauce algérienne, biscuits au beurre. 1 prière sur 5, Fajr raté, pas de Coran. 0 deep work, Duolingo 5 min. Focus 2/10. Clash Royale 1h49, Instagram 1h15. No PMO tenu.",
+      "feedback": "Score 27.9/100. Journée creuse : business sans levier Didier, focus à 2, spirituel à 1 prière. Les 2 reels Closium sont le seul actif créé, et ils ne comptent qu'une fois postés.",
       "activitywatch": {
         "status": "ok",
         "total_min": 951,
@@ -5744,12 +5744,20 @@
           "Finder": 0
         }
       },
-      "screen_time_updated": false,
+      "screen_time_updated": true,
       "business": {
-        "score": 0
+        "score": 9,
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "linkedin_invitations": 20,
+        "reels_produits": 2,
+        "recap": "0 DM Instagram, 0 call booké ou closé, rien sur Didier. Actions : outreach LinkedIn Closium (20 invitations dans le log) et 2 reels Closium montés avec Editing OS, pas encore postés."
       },
       "physique": {
-        "score": 8.9,
+        "score": 10.9,
         "coucher": "03:23",
         "lever": "14:18",
         "heures_sommeil": 10.17,
@@ -5760,24 +5768,71 @@
           "sommeil": 4.1,
           "recovery": 3.5,
           "regularite": 1.3,
-          "entrainement": 0.0
+          "entrainement": 0.0,
+          "nutrition": 2.0
         },
-        "score_manquant": [
-          "nutrition"
+        "score_manquant": [],
+        "score_dispo": 20,
+        "score_source": "whoop+intrabeaute",
+        "gym_type": "",
+        "repas": "Midi : wrap poulet croustillant frit (huile de graine probable) + sauce algérienne. Soir : filet de bœuf + pommes de terre, banane, biscuits au beurre. Eau minérale uniquement, zéro sel ajouté.",
+        "goyslop_items": [
+          "wrap (pain industriel)",
+          "poulet croustillant frit",
+          "sauce algérienne",
+          "biscuits au beurre"
         ],
-        "score_dispo": 16,
-        "score_source": "whoop"
+        "intrabeaute": {
+          "base_animale": true,
+          "sans_transforme": false,
+          "sans_sucre_alcool_cafe": false,
+          "hydratation": true,
+          "lumiere_matin": false,
+          "lumiere_soir": true
+        },
+        "intrabeaute_manquant": []
       },
       "spirituel": {
-        "score": 0
+        "fajr": false,
+        "prieres": 1,
+        "coran": false,
+        "score": 2
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 5,
+        "apprentissage": "Rien de notable.",
+        "score": 2
       },
       "mental": {
-        "score": 0
+        "energie": 7,
+        "focus": 2,
+        "screen_time_reseaux_min": 75,
+        "screen_time_details": {
+          "Terminal": 204,
+          "Clash Royale": 109,
+          "Arc": 99,
+          "Instagram": 75,
+          "WA Business": 50,
+          "Telegram": 47,
+          "Govee Home": 32,
+          "Finder": 11,
+          "LinkedIn": 10,
+          "Uber Eats": 7,
+          "Safari": 2,
+          "Photos": 1,
+          "google.com": 1
+        },
+        "no_pmo": true,
+        "nsdr": false,
+        "score": 4
       },
       "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "details": "Aucune interaction haute valeur, aucun contenu posté (les 2 reels restent en attente).",
         "score": 0
       },
       "whoop": {
@@ -5821,6 +5876,41 @@
         },
         "workouts": [],
         "siestes": []
+      },
+      "jarvis_feedback": {
+        "business_recap": "0 DM, 0 call, Didier pas touché. Le seul travail business est côté Closium : 20 invitations LinkedIn et 2 reels montés mais pas postés. Aucune action n'a rapproché une vente aujourd'hui.",
+        "score_volume": 2,
+        "score_leverage": 4,
+        "score_direction": 3,
+        "score_total": 9,
+        "feedback_text": "Fajr raté, et une seule prière sur cinq. C'est le premier point, avant le business.\n\nSur le business, le problème n'est pas l'effort, c'est la direction. Keller (The ONE Thing) : quelle est la seule chose qui rend tout le reste plus simple ? Aujourd'hui c'était une vente, sur Didier (ton levier #1 en cash) ou sur Closium. Tu as produit deux reels, ce qui est un vrai actif, mais un reel non posté ne vaut rien. Tant qu'il n'est pas en ligne, c'est de l'inventaire, pas du levier.\n\nLe vrai signal de la journée : focus à 2/10 pour une énergie à 7/10. L'énergie était là, la Whoop confirme (recovery 79, 10h de sommeil). Elle est partie dans Clash Royale (1h49, plus que ton temps LinkedIn, Instagram pro et WhatsApp réunis) et dans Instagram (1h15). Newport (Deep Work) : le coût d'une distraction n'est pas le temps qu'elle prend, c'est la capacité de concentration qu'elle détruit pour le reste de la journée. Clash Royale explique ton 0 heure de deep work.\n\nNutrition : le wrap, la sauce et les biscuits sont du goyslop, tu le sais déjà. Pas besoin d'en dire plus. Garde juste en tête que le filet de bœuf du soir ne rattrape pas le déjeuner.\n\nCe qui tient : No PMO, eau minérale uniquement, LED rouges le soir. Ce sont les fondations. Construis dessus.",
+        "what_good": [
+          "Outreach LinkedIn Closium (20 invitations)",
+          "2 reels Closium montés avec Editing OS",
+          "No PMO tenu",
+          "Eau minérale uniquement, zéro sel ajouté",
+          "LED rouges le soir (lumière soir tenue)",
+          "Recovery 79, 10h10 de sommeil"
+        ],
+        "what_bad": [
+          "Fajr raté, 1 prière sur 5, pas de Coran",
+          "0 DM, 0 call, Didier pas touché",
+          "0 heure de deep work, focus 2/10",
+          "Clash Royale 1h49 + Instagram 1h15",
+          "Wrap frit + sauce algérienne + biscuits au beurre",
+          "Pas de séance, pas de lumière du matin",
+          "Reels produits mais pas postés"
+        ],
+        "actions_demain": [
+          "Fajr, puis 4 autres prières",
+          "Poster les 2 reels Closium",
+          "Un bloc de deep work de 2h sans téléphone sur Didier ou Closium, avant toute app",
+          "Supprimer Clash Royale du téléphone",
+          "Séance de sport",
+          "Lumière du matin dans les yeux dans l'heure qui suit le réveil"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-09-23 01:25"
       }
     },
     {
@@ -5857,7 +5947,7 @@
     }
   ],
   "streaks": {
-    "nopmo": 0,
+    "nopmo": 1,
     "fajr": 0,
     "gym": 0,
     "dms": 0
