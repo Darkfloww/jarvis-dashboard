@@ -5730,7 +5730,7 @@
     },
     {
       "date": "2026-09-22",
-      "score": 27.9,
+      "score": 32.4,
       "note": "0 DM Instagram, 0 call. Outreach LinkedIn Closium + 2 reels Closium montés via Editing OS (non postés). Pas de séance (Whoop), recovery 79, sommeil 10h10. Nutrition cassée : wrap poulet frit, sauce algérienne, biscuits au beurre. 1 prière sur 5, Fajr raté, pas de Coran. 0 deep work, Duolingo 5 min. Focus 2/10. Clash Royale 1h49, Instagram 1h15. No PMO tenu.",
       "feedback": "Score 27.9/100. Journée creuse : business sans levier Didier, focus à 2, spirituel à 1 prière. Les 2 reels Closium sont le seul actif créé, et ils ne comptent qu'une fois postés.",
       "activitywatch": {
@@ -5757,24 +5757,24 @@
         "recap": "0 DM Instagram, 0 call booké ou closé, rien sur Didier. Actions : outreach LinkedIn Closium (20 invitations dans le log) et 2 reels Closium montés avec Editing OS, pas encore postés."
       },
       "physique": {
-        "score": 10.9,
+        "score": 15.4,
         "coucher": "03:23",
         "lever": "14:18",
         "heures_sommeil": 10.17,
         "sommeil_source": "whoop",
-        "gym": false,
+        "gym": true,
         "gym_source": "whoop",
         "score_detail": {
           "sommeil": 4.1,
           "recovery": 3.5,
           "regularite": 1.3,
-          "entrainement": 0.0,
+          "entrainement": 4.5,
           "nutrition": 2.0
         },
         "score_manquant": [],
         "score_dispo": 20,
         "score_source": "whoop+intrabeaute",
-        "gym_type": "",
+        "gym_type": "activity",
         "repas": "Midi : wrap poulet croustillant frit (huile de graine probable) + sauce algérienne. Soir : filet de bœuf + pommes de terre, banane, biscuits au beurre. Eau minérale uniquement, zéro sel ajouté.",
         "goyslop_items": [
           "wrap (pain industriel)",
@@ -5869,12 +5869,33 @@
           }
         },
         "strain": {
-          "jour": 12.7,
-          "calories": 1877,
-          "fc_moyenne": 71,
+          "jour": 13.0,
+          "calories": 2439,
+          "fc_moyenne": 70,
           "fc_max": 173
         },
-        "workouts": [],
+        "workouts": [
+          {
+            "sport": "activity",
+            "debut": "23:31",
+            "duree_min": 49,
+            "strain": 10.9,
+            "fc_moyenne": 128,
+            "fc_max": 173,
+            "calories": 364,
+            "zones_min": [
+              9.9,
+              19.5,
+              7.9,
+              7.8,
+              4.0,
+              0.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
+          }
+        ],
         "siestes": []
       },
       "jarvis_feedback": {
@@ -5920,9 +5941,9 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 29,
+        "total_min": 509,
         "apps": {
-          "Terminal": 29
+          "Terminal": 509
         }
       },
       "screen_time_updated": false,
@@ -13628,7 +13649,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-23T00:29:06",
+    "last_sync": "2026-09-23T08:29:33",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -13644,15 +13665,15 @@
       "sleep_perf_moy": 76.2,
       "consistency_moy": 56.5,
       "strain_moy": 9.2,
-      "kcal_moy": 1909.3,
+      "kcal_moy": 1928.0,
       "profond_moy_h": 2.0,
       "rem_moy_h": 1.9,
       "perturbations_moy": 12.1,
-      "seances_total": 24,
+      "seances_total": 25,
       "siestes_total": 2,
-      "jours_avec_seance": 20
+      "jours_avec_seance": 21
     },
-    "jours_couverts": 31,
-    "premier_jour": "2026-08-23"
+    "jours_couverts": 30,
+    "premier_jour": "2026-08-24"
   }
 }
