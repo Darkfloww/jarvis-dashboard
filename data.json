@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-24",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -2605,28 +2605,7 @@
           "fc_moyenne": 67,
           "fc_max": 149
         },
-        "workouts": [
-          {
-            "sport": "activity",
-            "debut": "17:54",
-            "duree_min": 16,
-            "strain": 4.5,
-            "fc_moyenne": 102,
-            "fc_max": 148,
-            "calories": 43,
-            "zones_min": [
-              10.4,
-              4.9,
-              0.7,
-              0.0,
-              0.0,
-              0.0
-            ],
-            "distance_m": null,
-            "denivele_m": null,
-            "pct_enregistre": 100
-          }
-        ],
+        "workouts": [],
         "siestes": []
       }
     },
@@ -5906,7 +5885,7 @@
     },
     {
       "date": "2026-09-23",
-      "score": 7.9,
+      "score": 11.9,
       "note": "",
       "feedback": "",
       "activitywatch": {
@@ -5929,24 +5908,25 @@
         "score": 0
       },
       "physique": {
-        "score": 7.9,
+        "score": 11.9,
         "coucher": "02:11",
         "lever": "13:52",
         "heures_sommeil": 10.97,
         "sommeil_source": "whoop",
-        "gym": false,
+        "gym": true,
         "gym_source": "whoop",
         "score_detail": {
           "sommeil": 4.1,
           "recovery": 2.5,
           "regularite": 1.28,
-          "entrainement": 0.0
+          "entrainement": 4.0
         },
         "score_manquant": [
           "nutrition"
         ],
         "score_dispo": 16,
-        "score_source": "whoop"
+        "score_source": "whoop",
+        "gym_type": "bodybuilding"
       },
       "spirituel": {
         "score": 0
@@ -5994,13 +5974,67 @@
           }
         },
         "strain": {
-          "jour": 5.0,
-          "calories": 999,
-          "fc_moyenne": 61,
-          "fc_max": 126
+          "jour": 11.6,
+          "calories": 1953,
+          "fc_moyenne": 71,
+          "fc_max": 167
         },
-        "workouts": [],
+        "workouts": [
+          {
+            "sport": "bodybuilding",
+            "debut": "18:13",
+            "duree_min": 46,
+            "strain": 8.8,
+            "fc_moyenne": 126,
+            "fc_max": 167,
+            "calories": 322,
+            "zones_min": [
+              1.9,
+              32.9,
+              8.5,
+              1.9,
+              0.8,
+              0.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
+          }
+        ],
         "siestes": []
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 31,
+        "apps": {
+          "Terminal": 20,
+          "Arc": 11
+        }
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
       }
     }
   ],
@@ -6014,11 +6048,11 @@
     "current_month": "2026-09",
     "current_commission": 0,
     "monthly_target": 14000,
-    "days_elapsed": 23,
-    "days_remaining": 7,
+    "days_elapsed": 24,
+    "days_remaining": 6,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 2000,
+    "daily_velocity_needed": 2333,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -13886,7 +13920,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-23T16:30:02",
+    "last_sync": "2026-09-24T00:30:33",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -13901,14 +13935,14 @@
       "sommeil_moy_h": 7.5,
       "sleep_perf_moy": 76.3,
       "consistency_moy": 57.3,
-      "strain_moy": 9.1,
-      "kcal_moy": 1881.3,
+      "strain_moy": 9.3,
+      "kcal_moy": 1913.1,
       "profond_moy_h": 2.0,
       "rem_moy_h": 1.9,
       "perturbations_moy": 12.0,
-      "seances_total": 24,
+      "seances_total": 25,
       "siestes_total": 2,
-      "jours_avec_seance": 20
+      "jours_avec_seance": 21
     },
     "jours_couverts": 31,
     "premier_jour": "2026-08-24"
