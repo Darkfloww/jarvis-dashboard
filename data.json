@@ -5996,9 +5996,9 @@
     },
     {
       "date": "2026-09-24",
-      "score": 10.8,
-      "note": "",
-      "feedback": "",
+      "score": 29.8,
+      "note": "0 DM, 0 call, Didier pas touché. Reels Closium postés, stratégie LinkedIn de Clément récupérée (cas Bertrand). Muscu (Whoop, 68 min), sommeil 4h47. Nutrition : saucisses + éclair. 0 prière, pas de Coran. 0 deep work, Duolingo 5 min. Énergie 6, focus 6. PMO le matin. Instagram 4h04.",
+      "feedback": "Score 29.8/100. Zéro prière, 0 deep work pour 4h d'Instagram. Le seul bon move : la stratégie de Clément récupérée gratuitement, à transformer en plan d'action.",
       "activitywatch": {
         "status": "ok",
         "total_min": 992,
@@ -6013,10 +6013,19 @@
       },
       "screen_time_updated": true,
       "business": {
-        "score": 0
+        "score": 11,
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "linkedin_invitations": 20,
+        "reels_produits": 2,
+        "reels_postes": true,
+        "recap": "0 DM Instagram, 0 call booké ou closé, rien sur Didier. Reels Closium postés. Call avec Clément (vendeur d'une stratégie LinkedIn pour SaaS à 1 500 €) : son cas client (Bertrand) récupéré pour reproduire la stratégie sans payer. 20 invitations LinkedIn (batch auto)."
       },
       "physique": {
-        "score": 10.8,
+        "score": 12.8,
         "coucher": "02:37",
         "lever": "07:38",
         "heures_sommeil": 4.78,
@@ -6027,25 +6036,68 @@
           "sommeil": 3.05,
           "recovery": 2.5,
           "regularite": 0.7,
-          "entrainement": 4.5
+          "entrainement": 4.5,
+          "nutrition": 2.0
         },
-        "score_manquant": [
-          "nutrition"
+        "score_manquant": [],
+        "score_dispo": 20,
+        "score_source": "whoop+intrabeaute",
+        "gym_type": "bodybuilding",
+        "repas": "Midi chez la grand-mère : saucisses + riz. Soir : pommes de terre, fromage, poulet. Éclair à la pistache. Eau minérale uniquement, zéro sel ajouté, zéro café.",
+        "goyslop_items": [
+          "saucisses (ultra-transformé)",
+          "éclair à la pistache (sucre)"
         ],
-        "score_dispo": 16,
-        "score_source": "whoop",
-        "gym_type": "activity"
+        "intrabeaute": {
+          "base_animale": true,
+          "sans_transforme": false,
+          "sans_sucre_alcool_cafe": false,
+          "hydratation": true
+        },
+        "intrabeaute_manquant": []
       },
       "spirituel": {
+        "fajr": false,
+        "prieres": 0,
+        "coran": false,
         "score": 0
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 5,
+        "apprentissage": "Rétro-ingénierie de la stratégie LinkedIn pour SaaS de Clément via son cas client Bertrand (profil + posts qui ont ramené des leads).",
+        "score": 3
       },
       "mental": {
-        "score": 0
+        "energie": 6,
+        "focus": 6,
+        "screen_time_reseaux_min": 256,
+        "screen_time_details": {
+          "Finder": 268,
+          "Instagram": 244,
+          "Telegram": 165,
+          "Arc": 102,
+          "WA Business": 35,
+          "Terminal": 30,
+          "ru.keepcoder.Telegram": 10,
+          "X": 7,
+          "ChatGPT": 7,
+          "Snapchat": 5,
+          "LinkedIn": 5,
+          "WHOOP": 4,
+          "Duolingo": 1,
+          "Safari": 1
+        },
+        "no_pmo": false,
+        "nsdr": false,
+        "score": 3
       },
       "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "details": "Aucune interaction haute valeur, aucun contenu perso posté (les reels sont sur la page Closium).",
         "score": 0
       },
       "whoop": {
@@ -6110,13 +6162,21 @@
           }
         ],
         "siestes": []
+      },
+      "jarvis_feedback": {
+        "business_recap": "0 DM, 0 call, Didier pas touché. Reels Closium postés, et la stratégie LinkedIn de Clément récupérée via son cas Bertrand sans payer les 1 500 €. Aucune action n'a rapproché une vente aujourd'hui.",
+        "score_volume": 3,
+        "score_leverage": 5,
+        "score_direction": 3,
+        "score_total": 11,
+        "feedback_text": "Zéro prière sur cinq. Premier point, avant tout le reste. Tu dis que la spiritualité est la clé de la matrice : aujourd'hui, elle a eu zéro minute.\n\nBusiness : le meilleur move de la journée, c'est le call avec Clément. Tu as récupéré sa stratégie LinkedIn via le cas de Bertrand, sans sortir 1 500 €. Mais une stratégie récupérée ne vaut rien tant qu'elle n'est pas appliquée. Transforme-la en note dans le vault et en plan d'action pour Closium cette semaine, sinon c'est de la consommation déguisée. Les reels sont postés, c'est un vrai progrès sur le 22/09. En face : 0 DM, 0 call, Didier pas touché. Keller (The ONE Thing) : ta ONE Thing en cash reste Didier, et il a eu zéro minute.\n\nLe vrai signal : Instagram 4h04. Énergie et focus à 6, donc la capacité était là, et elle est partie dans le scroll. Newport (Deep Work) : 0 heure de deep work pour 4 heures d'Instagram, c'est exactement l'échange qui te garde au même niveau. Et le PMO du matin a cassé la série.\n\nPhysique : séance de muscu validée par la Whoop (68 min, strain 12), c'est ce qui tient. Mais 4h47 de sommeil pour un besoin de 8h20, et une régularité à 35 %. Nutrition 2/4 : les saucisses et l'éclair. Chez la grand-mère tu subis, l'éclair tu l'as choisi.\n\nDemain : les 5 prières d'abord, Fajr compris. Puis un bloc d'1 h sur Didier avant d'ouvrir Instagram."
       }
     }
   ],
   "streaks": {
-    "nopmo": 1,
+    "nopmo": 0,
     "fajr": 0,
-    "gym": 0,
+    "gym": 11,
     "dms": 0
   },
   "revenue_velocity": {
