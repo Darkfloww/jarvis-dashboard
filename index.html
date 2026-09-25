@@ -1384,6 +1384,7 @@ function showTab(name,e){
 }
 
 // ── DATE PICKER CALENDAR ──────────────────────────────────────────────────────
+let _whoopData=null;
 let _allDays=[], _selectedIdx=0, _calYear=new Date().getFullYear(), _calMonth=new Date().getMonth();
 let _daysMap={};
 let _calOpen=false;
@@ -1460,6 +1461,7 @@ function selectDay(idx){
   _selectedIdx=idx;
   const day=_allDays[idx];
   renderDayView(day, _allDays);
+  if(_whoopData){ try { renderWhoop(_whoopData, _allDays); } catch(e){ console.error('whoop',e); } }
 }
 
 // Close calendar when clicking outside
@@ -1638,7 +1640,7 @@ function renderMetrics(day){
       +(p.gym_source==='whoop'?'<span class="whoop-tag">whoop</span>':'')
     : '—';
   $('ph-sleep').textContent=p.coucher&&p.lever?`${p.coucher} → ${p.lever}`:p.coucher?`Couché ${p.coucher}`:'—';
-  $('ph-sleeph').textContent=p.heures_sommeil?p.heures_sommeil+'h':'—h';
+  $('ph-sleeph').textContent=p.heures_sommeil?hm(p.heures_sommeil):'—';
   // Whoop rows — objective, tagged so a glance separates measured from declared
   const wh=day.whoop||{}, whR=wh.recovery||{}, whS=wh.strain||{};
   const tag='<span class="whoop-tag">whoop</span>';
@@ -2049,13 +2051,27 @@ function whMixChart(id,days,labels){
   });
 }
 
+// Heures décimales -> « 9h52 ». 9.86 h ne se lit pas.
+function hm(v){
+  if(v==null || isNaN(v)) return '—';
+  const neg = v<0; v=Math.abs(v);
+  let h=Math.floor(v), m=Math.round((v-h)*60);
+  if(m===60){ h+=1; m=0; }
+  return (neg?'-':'')+h+'h'+String(m).padStart(2,'0');
+}
 function renderWhoop(data, allDays){
   const W = data.whoop;
   if(!W || !W.connected) return;
   const b = W.baselines || {};
 
-  const whDays = allDays.filter(d => d.whoop && (d.whoop.recovery || d.whoop.sleep));
-  if(!whDays.length) return;
+  _whoopData = data;
+  const measured = allDays.filter(d => d.whoop && (d.whoop.recovery || d.whoop.sleep));
+  if(!measured.length) return;
+  // La section Whoop suit le jour sélectionné : sinon elle montrait toujours la dernière
+  // nuit mesurée pendant que la carte du jour affichait une autre date (4h47 vs 9h52 le 24/09).
+  const sel = allDays[_selectedIdx];
+  const upTo = measured.filter(d => !sel || d.date <= sel.date);
+  const whDays = upTo.length ? upTo : measured;
   const day = whDays[whDays.length-1];
   const w = day.whoop, rec = w.recovery||{}, slp = w.sleep||{}, str = w.strain||{};
 
@@ -2080,7 +2096,7 @@ function renderWhoop(data, allDays){
     rec.score!=null?`${rec.score}<span style="font-size:13px">%</span>`:'—', recColor(rec.score??0));
   const slpPct=(slp.performance_pct??0)/100;
   whRing('wh-ring-slp','wh-ring-slp-v', slpPct,
-    slp.heures_sommeil!=null?`${slp.heures_sommeil}<span style="font-size:13px">h</span>`:'—', recColor(slp.performance_pct??0));
+    slp.heures_sommeil!=null?hm(slp.heures_sommeil):'—', recColor(slp.performance_pct??0));
   whRing('wh-ring-str','wh-ring-str-v', (str.jour??0)/21,
     str.jour!=null?`${str.jour}`:'—', str.jour>=14?'#FF0026':str.jour>=10?'#F97316':'#38BDF8');
 
@@ -2125,19 +2141,19 @@ function renderWhoop(data, allDays){
   }
   if(slp.heures_sommeil!=null && slp.besoin_h){
     const gap=+(slp.besoin_h-slp.heures_sommeil).toFixed(1);
-    if(gap>0.5) v.push(`Manque ${gap}h par rapport au besoin calculé (${slp.besoin_h}h).`);
+    if(gap>0.5) v.push(`Manque ${hm(gap)} par rapport au besoin calculé (${hm(slp.besoin_h)}).`);
   }
   if(slp.consistency_pct!=null && slp.consistency_pct<60)
     v.push(`Régularité ${slp.consistency_pct}% : horaires de coucher instables, c'est le levier n°1 sur le recovery.`);
   if(rec.spo2!=null && rec.spo2<95) v.push(`SpO₂ ${rec.spo2}% : sous le seuil de 95%, à surveiller si ça persiste.`);
   const naps=w.siestes||[];
-  if(naps.length) v.push(`${naps.length} sieste${naps.length>1?'s':''} détectée${naps.length>1?'s':''} aujourd'hui (${naps.reduce((a,n)=>a+(n.duree_h||0),0).toFixed(1)}h).`);
+  if(naps.length) v.push(`${naps.length} sieste${naps.length>1?'s':''} détectée${naps.length>1?'s':''} aujourd'hui (${hm(naps.reduce((a,n)=>a+(n.duree_h||0),0))}).`);
   if(str.jour!=null && rec.score!=null && str.jour<6 && rec.score>=67)
     v.push(`Strain ${str.jour} pour un recovery de ${rec.score}% : réserve non utilisée, la journée était sous-chargée.`);
   setH('wh-verdict', v.length ? v.map(t=>`<div style="margin-bottom:6px">${t}</div>`).join('') : 'Pas assez de données pour un verdict.');
 
   // ── Sommeil : architecture
-  set('wh-sleep-h', slp.heures_sommeil!=null ? `${slp.heures_sommeil}h dormies` : '—');
+  set('wh-sleep-h', slp.heures_sommeil!=null ? `${hm(slp.heures_sommeil)} dormies` : '—');
   const tot=WH_STAGES.reduce((a,s)=>a+(slp[s.k]||0),0);
   if(tot>0){
     setH('wh-stages', WH_STAGES.map(s=>{
@@ -2147,7 +2163,7 @@ function renderWhoop(data, allDays){
     setH('wh-stages-legend', WH_STAGES.map(s=>
       `<span><i style="background:${s.c}"></i>${s.n} ${(slp[s.k]||0).toFixed(1)}h</span>`).join(''));
   }
-  set('wh-inbed', slp.heures_sommeil!=null ? `${slp.heures_sommeil}h / ${fmt(slp.heures_au_lit)}h` : '—');
+  set('wh-inbed', slp.heures_sommeil!=null ? `${hm(slp.heures_sommeil)} / ${hm(slp.heures_au_lit)}` : '—');
   set('wh-cycles', fmt(slp.cycles));
   setH('wh-perf', slp.performance_pct!=null ? `<span style="color:${recColor(slp.performance_pct)}">${slp.performance_pct}%</span>` : '—');
   set('wh-eff', slp.efficiency_pct!=null ? slp.efficiency_pct+'%' : '—');
@@ -2155,7 +2171,7 @@ function renderWhoop(data, allDays){
 
   // ── Sommeil : d'où vient le besoin (les 4 termes que Whoop additionne)
   const nd=slp.besoin_detail||{};
-  set('wh-need-hd', slp.besoin_h!=null ? `${slp.besoin_h}h requises` : '—');
+  set('wh-need-hd', slp.besoin_h!=null ? `${hm(slp.besoin_h)} requises` : '—');
   const wf=[
     ['Base',        nd.base_h,    '#38BDF8'],
     ['Dette',       nd.dette_h,   '#F97316'],
@@ -2172,7 +2188,7 @@ function renderWhoop(data, allDays){
     return `<div class="wh-wf-row">
       <span class="lbl">${n}</span>
       <span class="wh-wf-track"><span class="wh-wf-seg" style="${style}"></span></span>
-      <span class="wh-wf-v" style="color:${val<0?'#A855F7':'var(--text)'}">${val>0?'+':''}${val.toFixed(2)}h</span>
+      <span class="wh-wf-v" style="color:${val<0?'#A855F7':'var(--text)'}">${val>0?'+':''}${hm(val)}</span>
     </div>`;
   }).join('') : '<div style="font-size:12px;color:var(--text2)">Détail indisponible.</div>');
   if(slp.besoin_h && slp.heures_sommeil!=null){
@@ -2182,32 +2198,32 @@ function renderWhoop(data, allDays){
       nf.style.width=Math.max(0,Math.min(100,ratio*100))+'%';
       nf.style.background=recColor(ratio*100);
     }
-    set('wh-need-slept', `${slp.heures_sommeil}h dormies`);
-    set('wh-need-target', `objectif ${slp.besoin_h}h`);
+    set('wh-need-slept', `${hm(slp.heures_sommeil)} dormies`);
+    set('wh-need-target', `objectif ${hm(slp.besoin_h)}`);
   }
-  set('wh-naps', naps.length ? `${naps.length} · ${naps.reduce((a,n)=>a+(n.duree_h||0),0).toFixed(2)}h` : 'aucune');
+  set('wh-naps', naps.length ? `${naps.length} · ${hm(naps.reduce((a,n)=>a+(n.duree_h||0),0))}` : 'aucune');
   setH('wh-naps-list', naps.map(n=>
-    `<div class="wh-nap"><span>${n.debut} → ${n.fin}</span><span>${n.duree_h}h</span></div>`).join(''));
+    `<div class="wh-nap"><span>${n.debut} → ${n.fin}</span><span>${hm(n.duree_h)}</span></div>`).join(''));
 
   // ── 7 dernières nuits — mesurées, plus aucun doublon avec le déclaratif
   const nights=whDays.filter(d=>d.whoop.sleep).slice(-7);
   set('wh-avg-bed',  whHHMM(circMeanTime(nights.map(d=>d.whoop.sleep.coucher))));
   set('wh-avg-wake', whHHMM(circMeanTime(nights.map(d=>d.whoop.sleep.lever))));
   const nh=nights.map(d=>d.whoop.sleep.heures_sommeil).filter(x=>x!=null);
-  set('wh-n-avg', nh.length ? `moy ${(nh.reduce((a,x)=>a+x,0)/nh.length).toFixed(1)}h` : '—');
+  set('wh-n-avg', nh.length ? `moy ${hm(nh.reduce((a,x)=>a+x,0)/nh.length)}` : '—');
   const maxN=Math.max(9, ...nh);
   setH('wh-nights', nights.length ? nights.slice().reverse().map(d=>{
     const s=d.whoop.sleep, h=s.heures_sommeil||0;
     const col=h>=7?'#22C55E':h>=6?'#F59E0B':'#ef4444';
     const bars=WH_STAGES.map(st=>{
       const val=s[st.k]||0;
-      return val<=0?'':`<div style="width:${val/maxN*100}%;background:${st.c}" title="${st.n} ${val.toFixed(1)}h"></div>`;
+      return val<=0?'':`<div style="width:${val/maxN*100}%;background:${st.c}" title="${st.n} ${hm(val)}"></div>`;
     }).join('');
     return `<div class="wh-night">
       <div><div class="wh-night-d">${new Date(d.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'})}</div>
         <div class="wh-night-t">${s.coucher||'?'} → ${s.lever||'?'}</div></div>
       <div class="wh-night-bar">${bars}</div>
-      <div class="wh-night-h" style="color:${col}">${h.toFixed(2)}h</div>
+      <div class="wh-night-h" style="color:${col}">${hm(h)}</div>
     </div>`;
   }).join('') : '<div style="font-size:12px;color:var(--text2)">Aucune nuit mesurée.</div>');
 
@@ -2261,7 +2277,7 @@ function renderWhoop(data, allDays){
   set('wh-hrv-avg', b.hrv_moy!=null ? `moy ${b.hrv_moy}ms` : '—');
   set('wh-rhr-avg', b.rhr_moy!=null ? `moy ${b.rhr_moy}bpm` : '—');
   set('wh-kcal-avg', b.kcal_moy!=null ? `moy ${Math.round(b.kcal_moy)}kcal` : '—');
-  set('wh-sleep-avg', b.sommeil_moy_h!=null ? `moy ${b.sommeil_moy_h}h` : '—');
+  set('wh-sleep-avg', b.sommeil_moy_h!=null ? `moy ${hm(b.sommeil_moy_h)}` : '—');
 
   // ── Références : la moyenne ne sert que comparée à aujourd'hui
   set('wh-b-days', b.jours!=null ? `sur ${b.jours} jours` : '—');
@@ -2283,8 +2299,8 @@ function renderWhoop(data, allDays){
     if(cur!=null && avg!=null) col=((better==='up') === (cur>=avg)) ? '#00F19F' : '#FF6B6B';
     return `<div class="wh-ref-row">
       <span class="lbl">${n}</span>
-      <span style="color:${col};font-weight:700">${cur==null?'—':cur+u}</span>
-      <span style="color:var(--text2)">${avg==null?'—':avg+u}</span>
+      <span style="color:${col};font-weight:700">${cur==null?'—':(u==='h'?hm(cur):cur+u)}</span>
+      <span style="color:var(--text2)">${avg==null?'—':(u==='h'?hm(avg):avg+u)}</span>
     </div>`;
   }).join(''));
   const bd=W.body||{};
@@ -2296,7 +2312,7 @@ function renderWhoop(data, allDays){
   const asc=(x,y)=>x-y, desc=(x,y)=>y-x;
   const setRec=(id,r,fmtv)=>{ const e=$(id); if(e) e.innerHTML = r ? fmtv(r[0])+`<span style="display:block;font-size:9px;color:var(--text2);font-weight:400;margin-top:4px">${dLbl(r[1])}</span>` : '—'; };
   setRec('r-wh-rec',   best(whDays.map(d=>[d.whoop.recovery?.score, d.date]), desc), v=>v+'%');
-  setRec('r-wh-sleep', best(whDays.map(d=>[d.whoop.sleep?.heures_sommeil, d.date]), desc), v=>v+'h');
+  setRec('r-wh-sleep', best(whDays.map(d=>[d.whoop.sleep?.heures_sommeil, d.date]), desc), v=>hm(v));
   setRec('r-wh-strain',best(whDays.map(d=>[d.whoop.strain?.jour, d.date]), desc), v=>String(v));
   setRec('r-wh-hrv',   best(whDays.map(d=>[d.whoop.recovery?.hrv, d.date]), desc), v=>v+'ms');
   setRec('r-wh-rhr',   best(whDays.map(d=>[d.whoop.recovery?.rhr, d.date]), asc),  v=>v+'bpm');
