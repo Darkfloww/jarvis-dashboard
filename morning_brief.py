@@ -359,6 +359,14 @@ def build_brief(data):
         except Exception:
             pass
 
+    # Tâches quotidiennes : rappelées chaque matin tant qu'elles existent.
+    daily = [t for t in tasks if t.get("recurrent") and t.get("statut") != "done"]
+    if daily:
+        lines.append("🔁 <b>À FAIRE AUJOURD'HUI (QUOTIDIEN)</b>")
+        for t in daily:
+            lines.append(f"  → {t['titre']}")
+        lines.append("")
+
     if due_soon:
         lines.append("📋 <b>TÂCHES — ÉCHÉANCES PROCHES</b>")
         for t, delta in due_soon:

@@ -375,7 +375,11 @@ def score_physique(day):
     if slp.get("consistency_pct") is not None:
         detail["regularite"] = round(min(2.0, slp["consistency_pct"] / 100 * 2), 2)
 
-    if wks:
+    if ph.get("gym_declare") is False and porte:
+        # Le check-in dément la séance : Whoop détecte parfois une simple marche
+        # comme « activity ». La parole de Shayan prime sur la détection auto.
+        detail["entrainement"] = 0.0
+    elif wks:
         # Une séance vaut déjà la moitié des points ; le reste dépend de sa charge.
         charge = max((k.get("strain") or 0) for k in wks)
         detail["entrainement"] = round(min(5.0, 2.5 + _band(charge, [

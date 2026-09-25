@@ -138,6 +138,16 @@
       "contexte": "À tourner le soir dans l'Airbnb avec la vue sur les Petronas. Sert la machine d'acquisition (2e client). 3 rappels Telegram programmés le 04/07.",
       "date_ajout": "2026-07-03",
       "echeance": "2026-07-04"
+    },
+    {
+      "id": 15,
+      "titre": "Faire plus de séquences de stories lead magnet pour Didier",
+      "priorite": "urgent",
+      "statut": "todo",
+      "recurrent": true,
+      "contexte": "Tâche quotidienne : rappelée chaque matin dans le brief, à cocher chaque jour. Demandée le 26/09.",
+      "date_ajout": "2026-09-26",
+      "echeance": ""
     }
   ],
   "crm": {
@@ -6167,43 +6177,101 @@
     },
     {
       "date": "2026-09-25",
-      "score": 12.5,
-      "note": "",
-      "feedback": "",
+      "score": 28.0,
+      "note": "0 DM, 0 call, Didier pas touché. Stories Closium postées. Aucune séance. Sommeil 9h52, recovery 98 %. Nutrition : huile de tournesol + tarte. 2 prières (Jumu'a + Isha), Fajr raté, pas de Coran. 0 deep work, Duolingo 5 min. Énergie 5, focus 5. No PMO tenu. Instagram 1h37.",
+      "feedback": "Score 28.0/100. Recovery à 98 % et 9h52 de sommeil : le corps était au maximum, la journée a produit des stories et rien d'autre. Le No PMO tenu est la seule victoire à protéger.",
       "business": {
-        "score": 0
+        "score": 7,
+        "dms": 0,
+        "calls_bookes": 0,
+        "calls_closes": 0,
+        "commission_estimee": 0,
+        "delivery_done": false,
+        "linkedin_invitations": 20,
+        "reels_produits": 2,
+        "reels_postes": false,
+        "stories_closium_postees": true,
+        "recap": "0 DM Instagram, 0 call booké ou closé, rien sur Didier. Stories Closium postées. En automatique : 20 invitations LinkedIn et 2 reels produits (EN + FR)."
       },
       "physique": {
-        "score": 12.5,
+        "score": 11.0,
         "coucher": "01:08",
         "lever": "11:45",
         "heures_sommeil": 9.86,
         "sommeil_source": "whoop",
-        "gym": true,
+        "gym": false,
         "gym_source": "whoop",
         "score_detail": {
           "sommeil": 4.0,
           "recovery": 4.0,
           "regularite": 0.98,
-          "entrainement": 3.5
+          "entrainement": 0.0,
+          "nutrition": 2.0
         },
-        "score_manquant": [
-          "nutrition"
+        "score_manquant": [],
+        "score_dispo": 20,
+        "score_source": "whoop+intrabeaute",
+        "gym_type": "aucune (2 « activity » Whoop = déplacements, démenti au check-in)",
+        "gym_declare": false,
+        "repas": "Midi chez la grand-mère : steak haché cuit à l'huile de tournesol, riz, sauce yaourt pasteurisé. Soir : brochettes poulet, pommes de terre, poulet et fromage. Tarte à la framboise. Eau minérale.",
+        "goyslop_items": [
+          "huile de tournesol (huile de graine)",
+          "tarte à la framboise (sucre)"
         ],
-        "score_dispo": 16,
-        "score_source": "whoop",
-        "gym_type": "activity"
+        "intrabeaute": {
+          "base_animale": true,
+          "sans_transforme": false,
+          "sans_sucre_alcool_cafe": false,
+          "hydratation": true,
+          "lumiere_matin": false
+        },
+        "intrabeaute_manquant": [
+          "lumiere_soir"
+        ]
       },
       "spirituel": {
-        "score": 0
+        "fajr": false,
+        "prieres": 2,
+        "prieres_detail": "Jumu'a + Isha",
+        "coran": false,
+        "score": 4
       },
       "cognitif": {
-        "score": 0
+        "deep_work_heures": 0,
+        "deep_work_topic": "",
+        "duolingo_russe": true,
+        "duolingo_minutes": 5,
+        "apprentissage": "Rien appliqué.",
+        "score": 2
       },
       "mental": {
-        "score": 0
+        "energie": 5,
+        "focus": 5,
+        "screen_time_reseaux_min": 102,
+        "screen_time_details": {
+          "Arc": 172,
+          "Instagram": 97,
+          "Telegram": 74,
+          "Terminal": 24,
+          "Photos": 20,
+          "WA Business": 9,
+          "YouTube": 5,
+          "LinkedIn": 5,
+          "WHOOP": 3,
+          "Safari": 3,
+          "ChatGPT": 3,
+          "Chrome": 2,
+          "Revolut": 2,
+          "SoundCloud": 1
+        },
+        "no_pmo": true,
+        "nsdr": false,
+        "score": 4
       },
       "social": {
+        "interaction_hv": false,
+        "contenu_poste": false,
+        "details": "Aucune interaction haute valeur. Les stories sont sur la page Closium, pas du contenu perso.",
         "score": 0
       },
       "whoop": {
@@ -6302,11 +6370,40 @@
           "UserNotificationCenter": 0
         }
       },
-      "screen_time_updated": false
+      "screen_time_updated": true,
+      "jarvis_feedback": {
+        "business_recap": "0 DM, 0 call, Didier pas touché. Stories Closium postées ; LinkedIn et reels tournent en automatique sans toi. Aucune action n'a rapproché une vente.",
+        "score_volume": 2,
+        "score_leverage": 3,
+        "score_direction": 2,
+        "score_total": 7,
+        "feedback_text": "Fajr raté, encore. Deux prières sur cinq, et c'est quand même mieux qu'hier (zéro). Jumu'a faite, c'est la bonne base : demain on vise les cinq.\n\nLe vrai scandale de la journée : recovery à 98 %, HRV à 64, 9h52 de sommeil. Ton corps t'a donné une journée à 100 % de capacité et tu l'as rendue avec énergie 5, focus 5, zéro deep work, zéro DM. Newport (Deep Work) : la capacité non utilisée ne se stocke pas. Une journée à 98 % de recovery, c'est le jour où tu poses 3 heures sur Didier.\n\nBusiness : les stories Closium sont postées, et l'automatique (LinkedIn, reels) avance sans toi. Mais Keller (The ONE Thing) : ta ONE Thing en cash reste Didier, et il a eu zéro minute pour la deuxième journée de suite. Et tu viens de te fixer toi-même la réponse : les séquences de stories lead magnet pour Didier. C'est le premier bloc de demain.\n\nPhysique : aucune séance, donc la série de muscu est cassée. Nutrition 2/4 : l'huile de tournesol chez la grand-mère tu la subis, la tarte tu l'as choisie.\n\nMental : No PMO tenu, série relancée à 1. Instagram 1h37 pour 0 DM : moins qu'hier (4h04), mais toujours du temps de prospection parti dans le scroll.",
+        "what_good": [
+          "No PMO tenu (série à 1)",
+          "Jumu'a + Isha (2 prières contre 0 hier)",
+          "Stories Closium postées",
+          "Instagram divisé par 2,5 vs hier (1h37 contre 4h04)"
+        ],
+        "what_bad": [
+          "Fajr raté, pas de Coran",
+          "0 DM, 0 call, Didier pas touché 2 jours de suite",
+          "0 deep work avec une recovery à 98 %",
+          "Aucune séance : série muscu cassée",
+          "Tarte à la framboise choisie"
+        ],
+        "actions_demain": [
+          "Fajr + les 5 prières",
+          "1er bloc : une séquence de stories lead magnet pour Didier",
+          "Muscu (relancer la série)",
+          "Instagram uniquement pour des DM"
+        ],
+        "niveau": "FAIBLE",
+        "timestamp": "2026-09-26 01:20"
+      }
     }
   ],
   "streaks": {
-    "nopmo": 0,
+    "nopmo": 1,
     "fajr": 0,
     "gym": 0,
     "dms": 0

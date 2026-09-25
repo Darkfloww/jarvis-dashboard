@@ -2510,14 +2510,15 @@ function renderTasks(tasks){
   };
 
   const doneMap = _getTaskDone();
-  const isDone = t => t.statut === 'done' || !!doneMap[t.id];
+  // Une tâche quotidienne (recurrent) n'est cochée que pour le jour même : elle revient chaque matin.
+  const isDone = t => t.statut === 'done' || (t.recurrent ? doneMap[t.id] === _todayStr() : !!doneMap[t.id]);
 
   let viewTasks = _allTasks;
   if(taskFilterMode === 'today'){
     const today = _todayStr();
     // Une tâche planifiée (do_date) reste dans "Aujourd'hui" tant qu'elle n'est pas cochée :
     // elle roule automatiquement de jour en jour (do_date <= today). Cochée => elle disparaît.
-    viewTasks = _allTasks.filter(t => t.do_date && t.do_date <= today && !isDone(t));
+    viewTasks = _allTasks.filter(t => ((t.do_date && t.do_date <= today) || t.recurrent) && !isDone(t));
   }
 
   const groups = { urgent: [], haute: [], normale: [], done: [] };
@@ -2539,7 +2540,7 @@ function renderTasks(tasks){
             <div style="flex:1">
               <div style="font-size:14px;font-weight:600;margin-bottom:4px;color:${done?'#475569':'#e2e8f0'};${done?'text-decoration:line-through':''}">${t.titre}</div>
               ${t.contexte?`<div style="font-size:12px;color:#64748b">${t.contexte}</div>`:''}
-              <div style="font-size:11px;color:#475569;margin-top:6px">Ajouté le ${t.date_ajout}${t.echeance?' · Échéance : '+t.echeance:''}${doneMap[t.id]?' · ✅ Fait le '+doneMap[t.id]:''}</div>
+              <div style="font-size:11px;color:#475569;margin-top:6px">${t.recurrent?'🔁 Chaque jour · ':''}Ajouté le ${t.date_ajout}${t.echeance?' · Échéance : '+t.echeance:''}${doneMap[t.id]?' · ✅ Fait le '+doneMap[t.id]:''}</div>
             </div>
           </div>`; }).join('')}
       </div>`;
