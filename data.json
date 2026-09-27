@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26",
+  "lastUpdated": "2026-09-27",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -6463,9 +6463,9 @@
           }
         },
         "strain": {
-          "jour": 9.0,
-          "calories": 1459,
-          "fc_moyenne": 70,
+          "jour": 9.6,
+          "calories": 2022,
+          "fc_moyenne": 71,
           "fc_max": 154
         },
         "workouts": [
@@ -6492,23 +6492,58 @@
         ],
         "siestes": []
       }
+    },
+    {
+      "date": "2026-09-27",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 350,
+        "apps": {
+          "Terminal": 180,
+          "Arc": 166,
+          "Google Chrome": 3,
+          "UserNotificationCenter": 1
+        }
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
     "nopmo": 1,
     "fajr": 0,
-    "gym": 0,
+    "gym": 13,
     "dms": 0
   },
   "revenue_velocity": {
     "current_month": "2026-09",
     "current_commission": 0,
     "monthly_target": 14000,
-    "days_elapsed": 26,
-    "days_remaining": 4,
+    "days_elapsed": 27,
+    "days_remaining": 3,
     "days_in_month": 30,
     "pct_target": 0,
-    "daily_velocity_needed": 3500,
+    "daily_velocity_needed": 4667,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -14776,7 +14811,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-26T21:49:41",
+    "last_sync": "2026-09-27T05:50:14",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -14791,8 +14826,8 @@
       "sommeil_moy_h": 7.6,
       "sleep_perf_moy": 75.9,
       "consistency_moy": 56.2,
-      "strain_moy": 9.8,
-      "kcal_moy": 1946.0,
+      "strain_moy": 9.9,
+      "kcal_moy": 1964.7,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.0,
       "perturbations_moy": 12.1,
