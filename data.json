@@ -2982,46 +2982,6 @@
         "workouts": [
           {
             "sport": "activity",
-            "debut": "15:57",
-            "duree_min": 36,
-            "strain": 5.0,
-            "fc_moyenne": 101,
-            "fc_max": 127,
-            "calories": 85,
-            "zones_min": [
-              25.9,
-              10.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ],
-            "distance_m": null,
-            "denivele_m": null,
-            "pct_enregistre": 100
-          },
-          {
-            "sport": "activity",
-            "debut": "18:56",
-            "duree_min": 24,
-            "strain": 4.7,
-            "fc_moyenne": 102,
-            "fc_max": 134,
-            "calories": 66,
-            "zones_min": [
-              13.5,
-              10.5,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ],
-            "distance_m": null,
-            "denivele_m": null,
-            "pct_enregistre": 100
-          },
-          {
-            "sport": "activity",
             "debut": "02:09",
             "duree_min": 23,
             "strain": 5.3,
@@ -6595,14 +6555,16 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 833,
+        "total_min": 1314,
         "apps": {
-          "Terminal": 447,
+          "Terminal": 653,
+          "Arc": 395,
           "UserNotificationCenter": 230,
-          "Arc": 143,
-          "Finder": 12,
+          "‎WhatsApp": 18,
+          "Finder": 17,
           "Google Chrome": 2,
-          "‎WhatsApp": 0
+          "NordVPN": 0,
+          "Fathom": 0
         }
       },
       "screen_time_updated": false,
@@ -6675,9 +6637,9 @@
           }
         },
         "strain": {
-          "jour": 2.5,
-          "calories": 698,
-          "fc_moyenne": 56,
+          "jour": 4.4,
+          "calories": 1241,
+          "fc_moyenne": 64,
           "fc_max": 124
         },
         "workouts": [],
@@ -15368,7 +15330,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-29T13:53:27",
+    "last_sync": "2026-09-29T21:53:53",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -15384,7 +15346,7 @@
       "sleep_perf_moy": 77.2,
       "consistency_moy": 56.8,
       "strain_moy": 9.7,
-      "kcal_moy": 1919.8,
+      "kcal_moy": 1937.9,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.1,
       "perturbations_moy": 11.9,
