@@ -6636,12 +6636,16 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 835,
+        "total_min": 1315,
         "apps": {
-          "Terminal": 599,
-          "Arc": 133,
+          "Terminal": 606,
+          "Arc": 450,
+          "Finder": 129,
           "UserNotificationCenter": 94,
-          "‎WhatsApp": 9
+          "‎WhatsApp": 14,
+          "Telegram": 13,
+          "Calculatrice": 9,
+          "Google Chrome": 0
         }
       },
       "screen_time_updated": false,
@@ -6715,9 +6719,9 @@
           }
         },
         "strain": {
-          "jour": 9.4,
-          "calories": 1066,
-          "fc_moyenne": 69,
+          "jour": 11.4,
+          "calories": 1721,
+          "fc_moyenne": 74,
           "fc_max": 170
         },
         "workouts": [
@@ -6760,6 +6764,26 @@
             "distance_m": null,
             "denivele_m": null,
             "pct_enregistre": 100
+          },
+          {
+            "sport": "activity",
+            "debut": "18:20",
+            "duree_min": 24,
+            "strain": 5.4,
+            "fc_moyenne": 112,
+            "fc_max": 151,
+            "calories": 104,
+            "zones_min": [
+              9.6,
+              12.1,
+              2.1,
+              0.1,
+              0.0,
+              0.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
           }
         ],
         "siestes": []
@@ -6769,7 +6793,7 @@
   "streaks": {
     "nopmo": 1,
     "fajr": 0,
-    "gym": 0,
+    "gym": 17,
     "dms": 0
   },
   "revenue_velocity": {
@@ -15649,7 +15673,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-09-30T13:54:49",
+    "last_sync": "2026-09-30T21:55:16",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -15665,11 +15689,11 @@
       "sleep_perf_moy": 77.8,
       "consistency_moy": 56.9,
       "strain_moy": 10.1,
-      "kcal_moy": 1950.9,
+      "kcal_moy": 1972.7,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.1,
       "perturbations_moy": 11.9,
-      "seances_total": 31,
+      "seances_total": 32,
       "siestes_total": 1,
       "jours_avec_seance": 24
     },
