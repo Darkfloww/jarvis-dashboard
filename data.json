@@ -3189,15 +3189,7 @@
             "pct_enregistre": 100
           }
         ],
-        "siestes": [
-          {
-            "debut": "12:40",
-            "fin": "16:35",
-            "duree_h": 3.83,
-            "profond_h": 1.12,
-            "rem_h": 0.55
-          }
-        ]
+        "siestes": []
       }
     },
     {
@@ -6898,17 +6890,18 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 837,
+        "total_min": 1066,
         "apps": {
-          "Terminal": 616,
-          "Arc": 169,
+          "Terminal": 663,
+          "Arc": 264,
+          "QuickTime Player": 52,
           "Google Chrome": 48,
-          "Finder": 2,
+          "Telegram": 26,
+          "Finder": 7,
+          "‎WhatsApp": 4,
           "Moody": 2,
           "UserNotificationCenter": 0,
-          "Telegram": 0,
-          "universalAccessAuthWarn": 0,
-          "Réglages Système": 0
+          "loginwindow": 0
         }
       },
       "screen_time_updated": true,
@@ -6982,9 +6975,9 @@
           }
         },
         "strain": {
-          "jour": 9.6,
-          "calories": 1159,
-          "fc_moyenne": 69,
+          "jour": 12.0,
+          "calories": 1875,
+          "fc_moyenne": 75,
           "fc_max": 169
         },
         "workouts": [
@@ -7016,7 +7009,7 @@
   "streaks": {
     "nopmo": 1,
     "fajr": 0,
-    "gym": 0,
+    "gym": 19,
     "dms": 0
   },
   "revenue_velocity": {
@@ -16296,7 +16289,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-02T13:57:34",
+    "last_sync": "2026-10-02T21:58:07",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -16311,8 +16304,8 @@
       "sommeil_moy_h": 7.8,
       "sleep_perf_moy": 78.0,
       "consistency_moy": 57.3,
-      "strain_moy": 10.2,
-      "kcal_moy": 1963.3,
+      "strain_moy": 10.3,
+      "kcal_moy": 1987.1,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.1,
       "perturbations_moy": 12.0,
