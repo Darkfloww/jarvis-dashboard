@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02",
+  "lastUpdated": "2026-10-03",
   "profile": {
     "name": "Shayan",
     "goal": "Top 0.00000001%",
@@ -6975,8 +6975,8 @@
           }
         },
         "strain": {
-          "jour": 12.0,
-          "calories": 1875,
+          "jour": 13.1,
+          "calories": 2554,
           "fc_moyenne": 75,
           "fc_max": 169
         },
@@ -7004,6 +7004,40 @@
         ],
         "siestes": []
       }
+    },
+    {
+      "date": "2026-10-03",
+      "score": 0,
+      "note": "",
+      "feedback": "",
+      "activitywatch": {
+        "status": "ok",
+        "total_min": 358,
+        "apps": {
+          "Terminal": 281,
+          "QuickTime Player": 48,
+          "Arc": 29
+        }
+      },
+      "screen_time_updated": false,
+      "business": {
+        "score": 0
+      },
+      "physique": {
+        "score": 0
+      },
+      "spirituel": {
+        "score": 0
+      },
+      "cognitif": {
+        "score": 0
+      },
+      "mental": {
+        "score": 0
+      },
+      "social": {
+        "score": 0
+      }
     }
   ],
   "streaks": {
@@ -7016,11 +7050,11 @@
     "current_month": "2026-10",
     "current_commission": 0,
     "monthly_target": 17000,
-    "days_elapsed": 2,
-    "days_remaining": 29,
+    "days_elapsed": 3,
+    "days_remaining": 28,
     "days_in_month": 31,
     "pct_target": 0,
-    "daily_velocity_needed": 586,
+    "daily_velocity_needed": 607,
     "daily_run_rate": 0,
     "on_track": false
   },
@@ -16289,7 +16323,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-02T21:58:07",
+    "last_sync": "2026-10-03T05:58:32",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -16305,7 +16339,7 @@
       "sleep_perf_moy": 78.0,
       "consistency_moy": 57.3,
       "strain_moy": 10.3,
-      "kcal_moy": 1987.1,
+      "kcal_moy": 2009.8,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.1,
       "perturbations_moy": 12.0,
@@ -16313,7 +16347,7 @@
       "siestes_total": 0,
       "jours_avec_seance": 24
     },
-    "jours_couverts": 31,
-    "premier_jour": "2026-09-02"
+    "jours_couverts": 30,
+    "premier_jour": "2026-09-03"
   }
 }
