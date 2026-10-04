@@ -7011,17 +7011,13 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 883,
+        "total_min": 132,
         "apps": {
-          "Terminal": 757,
-          "Arc": 83,
-          "AirCard": 17,
-          "‎WhatsApp": 11,
-          "QuickTime Player": 7,
+          "Terminal": 75,
+          "Arc": 49,
           "Finder": 5,
-          "Réglages Système": 1,
-          "Google Chrome": 0,
-          "UserNotificationCenter": 0
+          "Google Chrome": 2,
+          "Aperçu": 0
         }
       },
       "screen_time_updated": true,
@@ -7095,9 +7091,9 @@
           }
         },
         "strain": {
-          "jour": 13.0,
-          "calories": 1362,
-          "fc_moyenne": 72,
+          "jour": 14.2,
+          "calories": 2061,
+          "fc_moyenne": 76,
           "fc_max": 171
         },
         "workouts": [
@@ -7120,6 +7116,46 @@
             "distance_m": null,
             "denivele_m": null,
             "pct_enregistre": 100
+          },
+          {
+            "sport": "activity",
+            "debut": "16:21",
+            "duree_min": 32,
+            "strain": 4.7,
+            "fc_moyenne": 100,
+            "fc_max": 123,
+            "calories": 67,
+            "zones_min": [
+              27.1,
+              4.9,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
+          },
+          {
+            "sport": "activity",
+            "debut": "18:09",
+            "duree_min": 17,
+            "strain": 4.6,
+            "fc_moyenne": 104,
+            "fc_max": 129,
+            "calories": 48,
+            "zones_min": [
+              10.2,
+              6.8,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
           }
         ],
         "siestes": []
@@ -7129,7 +7165,7 @@
   "streaks": {
     "nopmo": 1,
     "fajr": 0,
-    "gym": 0,
+    "gym": 1,
     "dms": 0
   },
   "revenue_velocity": {
@@ -16409,7 +16445,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-04T14:42:47",
+    "last_sync": "2026-10-04T22:43:14",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -16425,11 +16461,11 @@
       "sleep_perf_moy": 78.2,
       "consistency_moy": 57.8,
       "strain_moy": 10.1,
-      "kcal_moy": 1949.6,
+      "kcal_moy": 1972.9,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.2,
       "perturbations_moy": 12.1,
-      "seances_total": 32,
+      "seances_total": 34,
       "siestes_total": 0,
       "jours_avec_seance": 23
     },
