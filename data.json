@@ -3380,38 +3380,8 @@
         "score": 0
       },
       "whoop": {
-        "recovery": {
-          "score": 70,
-          "hrv": 53.8,
-          "rhr": 58,
-          "spo2": 95.1,
-          "temp_peau": 34.6,
-          "calibrating": false
-        },
-        "sleep": {
-          "coucher": "04:09",
-          "lever": "14:00",
-          "heures_sommeil": 8.57,
-          "heures_au_lit": 9.84,
-          "rem_h": 2.34,
-          "deep_h": 2.14,
-          "light_h": 4.09,
-          "awake_h": 1.27,
-          "cycles": 7,
-          "perturbations": 7,
-          "performance_pct": 78.0,
-          "efficiency_pct": 87.1,
-          "consistency_pct": 60.0,
-          "respiratory_rate": 15.3,
-          "dette_h": 1.67,
-          "besoin_h": 9.73,
-          "besoin_detail": {
-            "base_h": 7.92,
-            "dette_h": 1.67,
-            "strain_h": 0.14,
-            "siestes_h": 0.0
-          }
-        },
+        "recovery": null,
+        "sleep": null,
         "strain": {
           "jour": 5.6,
           "calories": 1747,
@@ -7092,8 +7062,8 @@
         },
         "strain": {
           "jour": 15.2,
-          "calories": 2769,
-          "fc_moyenne": 75,
+          "calories": 2526,
+          "fc_moyenne": 78,
           "fc_max": 171
         },
         "workouts": [
@@ -7183,14 +7153,15 @@
     },
     {
       "date": "2026-10-05",
-      "score": 0,
+      "score": 8.0,
       "note": "",
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 404,
+        "total_min": 884,
         "apps": {
-          "Terminal": 292,
+          "Terminal": 429,
+          "UserNotificationCenter": 344,
           "Arc": 111,
           "‎WhatsApp": 1,
           "Google Chrome": 0
@@ -7201,7 +7172,24 @@
         "score": 0
       },
       "physique": {
-        "score": 0
+        "score": 8.0,
+        "coucher": "02:51",
+        "lever": "13:23",
+        "heures_sommeil": 9.77,
+        "sommeil_source": "whoop",
+        "gym": false,
+        "gym_source": "whoop",
+        "score_detail": {
+          "sommeil": 4.2,
+          "recovery": 2.5,
+          "regularite": 1.28,
+          "entrainement": 0.0
+        },
+        "score_manquant": [
+          "nutrition"
+        ],
+        "score_dispo": 16,
+        "score_source": "whoop"
       },
       "spirituel": {
         "score": 0
@@ -7214,13 +7202,55 @@
       },
       "social": {
         "score": 0
+      },
+      "whoop": {
+        "recovery": {
+          "score": 63,
+          "hrv": 55.6,
+          "rhr": 58,
+          "spo2": 97.2,
+          "temp_peau": 34.2,
+          "calibrating": false
+        },
+        "sleep": {
+          "coucher": "02:51",
+          "lever": "13:23",
+          "heures_sommeil": 9.77,
+          "heures_au_lit": 10.53,
+          "rem_h": 3.33,
+          "deep_h": 1.98,
+          "light_h": 4.47,
+          "awake_h": 0.76,
+          "cycles": 8,
+          "perturbations": 17,
+          "performance_pct": 84.0,
+          "efficiency_pct": 92.8,
+          "consistency_pct": 64.0,
+          "respiratory_rate": 15.1,
+          "dette_h": 0.72,
+          "besoin_h": 9.26,
+          "besoin_detail": {
+            "base_h": 7.91,
+            "dette_h": 0.72,
+            "strain_h": 0.63,
+            "siestes_h": 0.0
+          }
+        },
+        "strain": {
+          "jour": 4.1,
+          "calories": 751,
+          "fc_moyenne": 57,
+          "fc_max": 125
+        },
+        "workouts": [],
+        "siestes": []
       }
     }
   ],
   "streaks": {
     "nopmo": 1,
     "fajr": 0,
-    "gym": 1,
+    "gym": 0,
     "dms": 0
   },
   "revenue_velocity": {
@@ -16500,7 +16530,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-05T06:43:41",
+    "last_sync": "2026-10-05T14:44:08",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -16509,22 +16539,22 @@
     },
     "baselines": {
       "jours": 30,
-      "recovery_moy": 74.2,
-      "hrv_moy": 56.0,
+      "recovery_moy": 74.0,
+      "hrv_moy": 56.1,
       "rhr_moy": 57.0,
       "sommeil_moy_h": 8.0,
-      "sleep_perf_moy": 78.2,
-      "consistency_moy": 57.8,
+      "sleep_perf_moy": 78.4,
+      "consistency_moy": 57.9,
       "strain_moy": 10.1,
-      "kcal_moy": 1996.5,
+      "kcal_moy": 1955.2,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.2,
-      "perturbations_moy": 12.1,
+      "perturbations_moy": 12.5,
       "seances_total": 35,
       "siestes_total": 0,
       "jours_avec_seance": 23
     },
-    "jours_couverts": 30,
+    "jours_couverts": 31,
     "premier_jour": "2026-09-05"
   }
 }
