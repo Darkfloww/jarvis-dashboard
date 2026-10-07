@@ -3498,38 +3498,8 @@
         "score": 0
       },
       "whoop": {
-        "recovery": {
-          "score": 77,
-          "hrv": 53.9,
-          "rhr": 57,
-          "spo2": 97.5,
-          "temp_peau": 34.2,
-          "calibrating": false
-        },
-        "sleep": {
-          "coucher": "03:18",
-          "lever": "13:07",
-          "heures_sommeil": 9.46,
-          "heures_au_lit": 9.81,
-          "rem_h": 2.58,
-          "deep_h": 2.22,
-          "light_h": 4.66,
-          "awake_h": 0.35,
-          "cycles": 9,
-          "perturbations": 25,
-          "performance_pct": 83.0,
-          "efficiency_pct": 96.4,
-          "consistency_pct": 61.0,
-          "respiratory_rate": 14.7,
-          "dette_h": 1.7,
-          "besoin_h": 9.78,
-          "besoin_detail": {
-            "base_h": 7.92,
-            "dette_h": 1.7,
-            "strain_h": 0.17,
-            "siestes_h": 0.0
-          }
-        },
+        "recovery": null,
+        "sleep": null,
         "strain": {
           "jour": 5.1,
           "calories": 1699,
@@ -7455,19 +7425,23 @@
           }
         },
         "strain": {
-          "jour": 0.1,
-          "calories": 398,
-          "fc_moyenne": 56,
-          "fc_max": 100
+          "jour": 4.5,
+          "calories": 952,
+          "fc_moyenne": 65,
+          "fc_max": 129
         },
         "workouts": [],
         "siestes": []
       },
       "activitywatch": {
         "status": "ok",
-        "total_min": 406,
+        "total_min": 887,
         "apps": {
-          "Terminal": 406
+          "Terminal": 570,
+          "Arc": 315,
+          "Telegram": 1,
+          "UserNotificationCenter": 0,
+          "Google Chrome": 0
         }
       },
       "screen_time_updated": false
@@ -16987,7 +16961,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-07T06:46:25",
+    "last_sync": "2026-10-07T14:46:54",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -17002,8 +16976,8 @@
       "sommeil_moy_h": 8.0,
       "sleep_perf_moy": 78.4,
       "consistency_moy": 57.2,
-      "strain_moy": 10.2,
-      "kcal_moy": 1956.4,
+      "strain_moy": 10.3,
+      "kcal_moy": 1974.8,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.2,
       "perturbations_moy": 12.1,
