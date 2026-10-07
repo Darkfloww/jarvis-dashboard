@@ -7353,31 +7353,32 @@
     },
     {
       "date": "2026-10-07",
-      "score": 6.5,
+      "score": 10.0,
       "note": "",
       "feedback": "",
       "business": {
         "score": 0
       },
       "physique": {
-        "score": 6.5,
+        "score": 10.0,
         "coucher": "00:42",
         "lever": "06:19",
         "heures_sommeil": 5.36,
         "sommeil_source": "whoop",
-        "gym": false,
+        "gym": true,
         "gym_source": "whoop",
         "score_detail": {
           "sommeil": 3.4,
           "recovery": 2.5,
           "regularite": 0.6,
-          "entrainement": 0.0
+          "entrainement": 3.5
         },
         "score_manquant": [
           "nutrition"
         ],
         "score_dispo": 16,
-        "score_source": "whoop"
+        "score_source": "whoop",
+        "gym_type": "activity"
       },
       "spirituel": {
         "score": 0
@@ -7425,23 +7426,48 @@
           }
         },
         "strain": {
-          "jour": 4.5,
-          "calories": 952,
-          "fc_moyenne": 65,
-          "fc_max": 129
+          "jour": 7.3,
+          "calories": 1608,
+          "fc_moyenne": 71,
+          "fc_max": 163
         },
-        "workouts": [],
+        "workouts": [
+          {
+            "sport": "activity",
+            "debut": "18:03",
+            "duree_min": 19,
+            "strain": 4.9,
+            "fc_moyenne": 105,
+            "fc_max": 163,
+            "calories": 59,
+            "zones_min": [
+              11.8,
+              5.2,
+              1.1,
+              0.9,
+              0.0,
+              0.0
+            ],
+            "distance_m": null,
+            "denivele_m": null,
+            "pct_enregistre": 100
+          }
+        ],
         "siestes": []
       },
       "activitywatch": {
         "status": "ok",
-        "total_min": 887,
+        "total_min": 718,
         "apps": {
-          "Terminal": 570,
-          "Arc": 315,
-          "Telegram": 1,
-          "UserNotificationCenter": 0,
-          "Google Chrome": 0
+          "Arc": 447,
+          "Telegram": 109,
+          "Aperçu": 80,
+          "Terminal": 72,
+          "Calculatrice": 7,
+          "‎WhatsApp": 1,
+          "Google Chrome": 1,
+          "Finder": 0,
+          "Fathom": 0
         }
       },
       "screen_time_updated": false
@@ -16961,7 +16987,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-07T14:46:54",
+    "last_sync": "2026-10-07T22:47:21",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -16976,14 +17002,14 @@
       "sommeil_moy_h": 8.0,
       "sleep_perf_moy": 78.4,
       "consistency_moy": 57.2,
-      "strain_moy": 10.3,
-      "kcal_moy": 1974.8,
+      "strain_moy": 10.4,
+      "kcal_moy": 1996.7,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.2,
       "perturbations_moy": 12.1,
-      "seances_total": 38,
+      "seances_total": 39,
       "siestes_total": 0,
-      "jours_avec_seance": 25
+      "jours_avec_seance": 26
     },
     "jours_couverts": 31,
     "premier_jour": "2026-09-07"
