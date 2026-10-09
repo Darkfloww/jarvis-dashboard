@@ -7516,16 +7516,18 @@
       "feedback": "",
       "activitywatch": {
         "status": "ok",
-        "total_min": 890,
+        "total_min": 1370,
         "apps": {
-          "Terminal": 582,
-          "Arc": 176,
+          "Terminal": 586,
+          "Arc": 539,
           "UserNotificationCenter": 109,
-          "Notes": 13,
+          "Telegram": 63,
+          "Notes": 44,
+          "Aperçu": 17,
           "Google Chrome": 9,
-          "Telegram": 0,
+          "Flux": 1,
           "Finder": 0,
-          "Aperçu": 0
+          "App Store": 0
         }
       },
       "screen_time_updated": true,
@@ -7599,9 +7601,9 @@
           }
         },
         "strain": {
-          "jour": 11.5,
-          "calories": 1313,
-          "fc_moyenne": 70,
+          "jour": 13.5,
+          "calories": 2089,
+          "fc_moyenne": 76,
           "fc_max": 173
         },
         "workouts": [
@@ -7673,7 +7675,7 @@
   "streaks": {
     "nopmo": 1,
     "fajr": 0,
-    "gym": 0,
+    "gym": 6,
     "dms": 0
   },
   "revenue_velocity": {
@@ -17184,7 +17186,7 @@
   },
   "whoop": {
     "connected": true,
-    "last_sync": "2026-10-09T14:49:43",
+    "last_sync": "2026-10-09T22:50:28",
     "user": "Shayan ISSE",
     "body": {
       "taille_m": 1.74,
@@ -17199,8 +17201,8 @@
       "sommeil_moy_h": 7.9,
       "sleep_perf_moy": 77.8,
       "consistency_moy": 56.4,
-      "strain_moy": 10.5,
-      "kcal_moy": 1981.5,
+      "strain_moy": 10.6,
+      "kcal_moy": 2007.4,
       "profond_moy_h": 2.0,
       "rem_moy_h": 2.2,
       "perturbations_moy": 11.9,
